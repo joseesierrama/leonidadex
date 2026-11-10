@@ -1,14 +1,9 @@
 {
   "meta": {
-    "actualizado": "2026-11-10T08:32:00+01:00",
+    "actualizado": "2026-11-10T17:14:25+01:00",
     "lanzamiento": "2026-11-19T00:00:00",
     "nota_lanzamiento": "Medianoche hora local · PS5 y Xbox Series X|S",
     "fase": "prelanzamiento",
-    "horario_actualizaciones": [
-      "08:23",
-      "14:23",
-      "21:23"
-    ],
     "aviso": ""
   },
   "hitos": [
@@ -33,11 +28,6 @@
       "titulo": "Precarga"
     },
     {
-      "id": "analisis",
-      "fecha": "2026-11-18",
-      "titulo": "Análisis de la prensa"
-    },
-    {
       "id": "lanzamiento",
       "fecha": "2026-11-19",
       "titulo": "Lanzamiento"
@@ -46,9 +36,15 @@
   "eventos": [
     {
       "fecha": "2026-11-12",
-      "titulo": "Ediciones físicas en tiendas (código en la caja)",
+      "titulo": "Inicio previsto de envíos y recogida de cajas con código",
       "lugar": "Tiendas",
-      "estado": "oficial"
+      "estado": "oficial",
+      "fuentes": [
+        {
+          "nombre": "Rockstar: versiones y códigos",
+          "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
+        }
+      ]
     },
     {
       "fecha": "2026-11-12",
@@ -66,7 +62,7 @@
     },
     {
       "fecha": "2026-11-18",
-      "titulo": "Se levanta el embargo de los análisis (12:01–13:01, hora peninsular)",
+      "titulo": "Posible publicación de análisis: fecha no confirmada",
       "lugar": "Prensa",
       "estado": "rumor"
     },
@@ -98,17 +94,49 @@
     {
       "fecha": "2026-11-21",
       "titulo": "Grand Theft Auto VI: The Festival",
-      "lugar": "Miami",
-      "estado": "oficial"
+      "lugar": "Mana Wynwood, Miami · 17+",
+      "estado": "oficial",
+      "fuentes": [
+        {
+          "nombre": "Rockstar: evento oficial",
+          "url": "https://www.rockstargames.com/VI/gtavi-thefestival"
+        }
+      ]
     },
     {
       "fecha": "2026-11-22",
       "titulo": "BAYO block party gratuita patrocinada por Rockstar",
       "lugar": "Little Haiti, Miami",
       "estado": "prensa"
+    },
+    {
+      "fecha": "2026-12-11",
+      "titulo": "Publicación del Original Score de Justice",
+      "lugar": "Plataformas de música, CD y vinilo",
+      "estado": "oficial",
+      "fuentes": [
+        {
+          "nombre": "Rockstar",
+          "url": "https://www.rockstargames.com/newswire/article/39ak8a12395591/grand-theft-auto-vi-original-score-by-justice"
+        }
+      ]
     }
   ],
   "noticias": [
+    {
+      "id": "rendimiento-y-nube-oficial",
+      "fecha": "2026-11-10",
+      "categoria": "Técnica",
+      "estado": "oficial",
+      "titulo": "Rockstar confirma 30 fps, mejoras de PS5 Pro y juego en la nube",
+      "resumen": "Objetivo de 30 fps en consolas actuales. PS5 Pro incorpora PSSR y sombras con trazado de rayos. Xbox One podrá acceder por Xbox Cloud Gaming, sin versión nativa. El rendimiento por streaming depende de la conexión.",
+      "fuentes": [
+        {
+          "nombre": "Rockstar: anuncio del 10 de noviembre",
+          "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now"
+        }
+      ]
+    },
     {
       "id": "precarga-abierta",
       "fecha": "2026-11-10",
@@ -119,12 +147,12 @@
       "resumen": "La precarga digital se abrió a medianoche (hora local) del 10 de noviembre en PS5 y a las 00:00 GMT en Xbox Series X|S, que en la España peninsular fue la 01:00. Necesitas hasta 212 GB libres, según la consola. Precargar no adelanta nada: el juego se desbloquea el 19 de noviembre a medianoche, hora local. Los jugadores de Nueva Zelanda fueron los primeros en empezar la descarga por la diferencia horaria.",
       "fuentes": [
         {
-          "nombre": "PlayNews",
-          "url": "https://www.playnews.gg/es/fechas-de-lanzamiento/la-precarga-de-gta-6-empieza-el-10-de-noviembre-con-hasta-212-gb-y-codigos-en-caja-desde-el-12-de-noviembre"
+          "nombre": "Rockstar: horarios regionales",
+          "url": "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s"
         },
         {
-          "nombre": "EGW News",
-          "url": "https://egw.news/gaming/news/38350/rockstar-games-announced-grand-theft-auto-vi-the-f-U4cOvK4oc"
+          "nombre": "Rockstar: requisitos de instalación",
+          "url": "https://support.rockstargames.com/articles/M6h7B5fJZMwG1dnzQkt4Z/grand-theft-auto-vi-installation-requirements"
         }
       ]
     },
@@ -134,15 +162,11 @@
       "categoria": "Negocio",
       "estado": "oficial",
       "titulo": "Take-Two: a diez días del lanzamiento, reservas «sin precedentes»",
-      "resumen": "En sus resultados del segundo trimestre fiscal, Take-Two dice que las reservas de GTA VI siguen en niveles nunca vistos y que espera un año histórico. Strauss Zelnick añadió a Variety que las preventas van muy por encima de lo previsto, aunque no hay cifras oficiales.",
+      "resumen": "Take-Two mantiene el estreno del 19 de noviembre y describe las reservas como sin precedentes en sus resultados del segundo trimestre fiscal de 2027. No publica una cifra de unidades reservadas; las estimaciones de consultoras siguen siendo datos distintos.",
       "fuentes": [
         {
-          "nombre": "Take-Two (SEC)",
-          "url": "https://www.sec.gov/Archives/edgar/data/0000946581/000162828026072175/ttwo2q27earningsrelease.htm"
-        },
-        {
-          "nombre": "Variety",
-          "url": "https://variety.com/2026/gaming/news/gta-6-preorders-expectations-launch-1236943278/"
+          "nombre": "Take-Two: resultados del segundo trimestre fiscal de 2027",
+          "url": "https://ir.take2games.com/static-files/a43ab8e3-c03a-4b7e-a6a8-f3cd2485e2df"
         }
       ]
     },
@@ -152,11 +176,11 @@
       "categoria": "Evento",
       "estado": "oficial",
       "titulo": "Rockstar anuncia «Grand Theft Auto VI: The Festival» en Miami",
-      "resumen": "Un evento musical en directo para el 21 de noviembre, dos días después del lanzamiento. Iremos ampliando cartel, recinto y entradas en cuanto Rockstar publique todos los detalles.",
+      "resumen": "La cita será el 21 de noviembre en Mana Wynwood, Miami, para mayores de 17 años. Rockstar y PlayStation presentan el evento producido por III Points. El registro en Laylo da acceso a un sorteo para comprar entradas mediante DICE; no garantiza entrada ni acceso gratuito.",
       "fuentes": [
         {
-          "nombre": "EGW News",
-          "url": "https://egw.news/gaming/news/38350/rockstar-games-announced-grand-theft-auto-vi-the-f-U4cOvK4oc"
+          "nombre": "Rockstar: The Festival, cartel y entradas",
+          "url": "https://www.rockstargames.com/VI/gtavi-thefestival"
         }
       ]
     },
@@ -207,6 +231,24 @@
       ]
     },
     {
+      "id": "galeria-lanzamiento-oficial",
+      "fecha": "2026-11-05",
+      "categoria": "Multimedia",
+      "estado": "oficial",
+      "titulo": "La galería de lanzamiento muestra nuevas imágenes de Leonida",
+      "resumen": "Rockstar ha abierto una colección de capturas de Vice City y otras zonas del estado. Puedes verla completa en su web; se añade también al apartado Multimedia de LeonidaDex.",
+      "fuentes": [
+        {
+          "nombre": "Rockstar: anuncio de la galería",
+          "url": "https://www.rockstargames.com/newswire/article/39ak81277255o9/explore-the-grand-theft-auto-vi-launch-gallery"
+        },
+        {
+          "nombre": "Galería oficial",
+          "url": "https://www.rockstargames.com/VI/launch-gallery"
+        }
+      ]
+    },
+    {
       "id": "the-vault-club-space",
       "fecha": "2026-11-05",
       "categoria": "Evento",
@@ -230,7 +272,7 @@
       "categoria": "Técnica",
       "estado": "rumor",
       "titulo": "Filtración: PSSR y trazado de rayos avanzado en PS5 Pro",
-      "resumen": "Una página de PlayStation publicada antes de tiempo listaba dos mejoras para PS5 Pro: escalado PSSR y trazado de rayos avanzado. Ni Sony ni Rockstar lo han confirmado. En las previews de agosto, la demo corría a 30 fps en una PS5 normal.",
+      "resumen": "Esta noticia recogía una filtración todavía sin confirmar el 4 de noviembre. Actualización del 10 de noviembre: Rockstar confirma PSSR y sombras con trazado de rayos en PS5 Pro. Consulta la noticia técnica de hoy; el rumor queda archivado como antecedente.",
       "fuentes": [
         {
           "nombre": "GTA Boom",
@@ -239,6 +281,24 @@
         {
           "nombre": "Power Up Gaming",
           "url": "https://powerupgaming.co.uk/2026/11/04/gta-6-ps5-pro-leak-raises-doubts/"
+        },
+        {
+          "nombre": "Actualización oficial de Rockstar, 10 de noviembre",
+          "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now"
+        }
+      ]
+    },
+    {
+      "id": "mapa-imprimible-anunciado",
+      "fecha": "2026-11-03",
+      "categoria": "Mapa",
+      "estado": "oficial",
+      "titulo": "Rockstar anuncia un mapa imprimible gratuito para el día 19",
+      "resumen": "La web oficial ofrecerá el mapa de Leonida y el póster para imprimir el 19 de noviembre. Es una publicación anunciada para el lanzamiento: el mapa interactivo de LeonidaDex sigue usando datos comunitarios de GTADB.",
+      "fuentes": [
+        {
+          "nombre": "Rockstar: preparativos del lanzamiento",
+          "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10"
         }
       ]
     },
@@ -257,6 +317,20 @@
         {
           "nombre": "MP1st",
           "url": "https://mp1st.com/?p=317929"
+        }
+      ]
+    },
+    {
+      "id": "justice-banda-sonora",
+      "fecha": "2026-10-29",
+      "categoria": "Música",
+      "estado": "oficial",
+      "titulo": "Justice firma la música original: el álbum llegará el 11 de diciembre",
+      "resumen": "Original Score reunirá 30 pistas y un extra digital, con ediciones en plataformas de música, CD y vinilo. Es una publicación diferente de The Album y de las canciones de las emisoras.",
+      "fuentes": [
+        {
+          "nombre": "Rockstar: Original Score by Justice",
+          "url": "https://www.rockstargames.com/newswire/article/39ak8a12395591/grand-theft-auto-vi-original-score-by-justice"
         }
       ]
     },
@@ -987,11 +1061,79 @@
       ]
     }
   ],
-  "guias_nuevas": [],
+  "guias_nuevas": [
+    {
+      "id": "codigos-y-region",
+      "titulo": "Antes de comprar un código: plataforma y región",
+      "categoria": "Compra",
+      "nivel": "Básico",
+      "tiempo": "2 min",
+      "estado": "disponible",
+      "resumen": "Comprueba la cuenta que lo recibirá antes de pagar.",
+      "pasos": [
+        "Verifica si el código corresponde a PlayStation o Xbox.",
+        "En PlayStation, comprueba que la región del código admite el país de tu cuenta; consulta la lista oficial.",
+        "Conserva el justificante de compra y canjea únicamente en la plataforma oficial. No compartas el código en público."
+      ],
+      "consejos": [
+        "Si hay dudas sobre la región, consulta al vendedor antes de comprar."
+      ],
+      "fuentes": [
+        {
+          "nombre": "Rockstar: restricciones de códigos",
+          "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
+        }
+      ]
+    },
+    {
+      "id": "festival-entradas",
+      "titulo": "The Festival: cómo funciona el acceso a entradas",
+      "categoria": "Comunidad",
+      "nivel": "Básico",
+      "tiempo": "2 min",
+      "estado": "disponible",
+      "resumen": "21 de noviembre, Mana Wynwood (Miami), 17+.",
+      "pasos": [
+        "Consulta el cartel y las condiciones en la página oficial de Rockstar.",
+        "El registro en Laylo participa en la selección para obtener un código de compra.",
+        "La compra se realiza en DICE con el código correspondiente. Registrarse no garantiza conseguir una entrada."
+      ],
+      "consejos": [
+        "Comprueba edad mínima y condiciones antes de organizar el viaje."
+      ],
+      "fuentes": [
+        {
+          "nombre": "Rockstar: The Festival",
+          "url": "https://www.rockstargames.com/VI/gtavi-thefestival"
+        }
+      ]
+    }
+  ],
   "misiones": [],
   "trucos_gta6": [],
   "misterios_nuevos": [],
-  "cronologia_nueva": [],
+  "cronologia_nueva": [
+    {
+      "fecha": "2026-10-29",
+      "titulo": "Anunciada la música original de Justice"
+    },
+    {
+      "fecha": "2026-11-05",
+      "titulo": "Galería de lanzamiento oficial"
+    },
+    {
+      "fecha": "2026-11-09",
+      "titulo": "Anunciado The Festival en Miami"
+    },
+    {
+      "fecha": "2026-11-10",
+      "titulo": "Rockstar detalla rendimiento y nube"
+    },
+    {
+      "fecha": "2026-12-11",
+      "titulo": "Original Score de Justice (fecha anunciada)"
+    }
+  ],
   "mapa_lugares": [],
   "articulos_nuevos": [],
   "videos_nuevos": [],
