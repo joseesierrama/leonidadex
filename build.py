@@ -187,7 +187,7 @@ def main():
         urls.append((u, a.get("fecha", upd)))
 
     # --- personajes ---
-    lis = "".join(f'<li id="{E(p["id"])}"><span class="news-date">{E(p.get("rol", ""))}</span><h2>{E(p["nombre"])}</h2><p>{E(p.get("bio", ""))}</p><p class="note">Visto en: {E(p.get("visto", ""))}</p></li>' for p in base.get("personajes", []))
+    lis = "".join(f'<li id="{E(p["id"])}"><span class="news-date">{E(p.get("rol", ""))}</span><h2>{E(p["nombre"])}</h2><p>{E(p.get("bio", ""))}</p><p class="note">Visto en: {E(p.get("visto", ""))}</p>{fuentes(p.get("fuentes"))}</li>' for p in base.get("personajes", []))
     u = url + "personajes/"
     write("personajes/index.html", shell(1, "Personajes de GTA VI: Jason, Lucia y el resto | LeonidaDex", "Quién es quién en GTA VI: Jason Duval, Lucia Caminos y los personajes que ha presentado Rockstar, con lo que se sabe de cada uno.", u,
                                          f'<p class="crumbs"><a href="../">LeonidaDex</a> › Personajes</p><div class="sec-head"><p class="eyebrow">Personajes</p><h1>Personajes de GTA VI</h1></div><ul class="list">{lis}</ul>'))
@@ -195,7 +195,7 @@ def main():
 
     # --- regiones ---
     lis = "".join(f'<li id="{E(r["id"])}"><span class="news-date">Inspirada en: {E(r.get("inspiracion", ""))}</span><h2>{E(r["nombre"])}</h2><p><em>{E(r.get("lema", ""))}</em></p><p>{E(r.get("texto", ""))}</p>'
-                  f'<p><strong>Lugares:</strong> {E(", ".join(r.get("lugares", [])))}. <strong>Qué hacer:</strong> {E(", ".join(r.get("actividades", [])))}.</p></li>' for r in base.get("regiones", []))
+                  f'<p><strong>Lugares:</strong> {E(", ".join(r.get("lugares", [])))}. <strong>Qué hacer:</strong> {E(", ".join(r.get("actividades", [])))}.</p>{fuentes(r.get("fuentes"))}</li>' for r in base.get("regiones", []))
     u = url + "leonida/"
     write("leonida/index.html", shell(1, "Mapa de GTA VI: las regiones de Leonida | LeonidaDex", "Las seis regiones de Leonida en GTA VI: Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia y Mount Kalaga, con sus lugares confirmados.", u,
                                       f'<p class="crumbs"><a href="../">LeonidaDex</a> › Leonida</p><div class="sec-head"><p class="eyebrow">El estado de Leonida</p><h1>Las regiones de Leonida</h1><p class="lede"><a href="../#mapa">Abrir el mapa interactivo</a></p></div><ul class="list">{lis}</ul>'))
@@ -203,7 +203,7 @@ def main():
 
     # --- preguntas frecuentes ---
     faq = base.get("faq", [])
-    lis = "".join(f'<li><h2>{E(q["q"])}</h2><p>{E(q["a"])}</p></li>' for q in faq)
+    lis = "".join(f'<li><h2>{E(q["q"])}</h2><p>{E(q["a"])}</p>{fuentes(q.get("fuentes"))}</li>' for q in faq)
     u = url + "preguntas-frecuentes/"
     write("preguntas-frecuentes/index.html", shell(1, "GTA VI: preguntas frecuentes (fecha, hora, precio, PC) | LeonidaDex", "Respuestas rápidas sobre GTA VI: cuándo sale en España y a qué hora, precio, ediciones, precarga, PC, online y más.", u,
                                                    f'<p class="crumbs"><a href="../">LeonidaDex</a> › Preguntas frecuentes</p><div class="sec-head"><p class="eyebrow">FAQ</p><h1>Preguntas frecuentes sobre GTA VI</h1></div><ul class="list">{lis}</ul>',

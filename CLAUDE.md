@@ -8,6 +8,8 @@ GitHub es la fuente de la versión vigente. Consulta la rama `main` actual antes
 - Comprueba cada fuente antes de publicar. Una etiqueta «oficial» necesita respaldo de Rockstar o Take-Two o una atribución clara y verificable. Tener un enlace no prueba el hecho.
 - No inventes detalles, fuentes, precios, fechas ni artículos para rellenar secciones. Si no hay novedades, no finjas una revisión o una fecha de actualización del contenido.
 - `src/base.json` contiene datos de referencia y artículos de fondo. Revísalos cuando cambie un hecho: el contenido fijo no se actualiza por cambiar noticias.
+- Si un rumor se confirma o se desmiente, conserva su fecha original y añade una corrección fechada con la fuente nueva. Revisa la FAQ, fichas de lanzamiento y reportajes relacionados para evitar contradicciones.
+- Las fuentes opcionales de FAQ, personajes, regiones, sistemas y música se muestran al publicar. `fuentes_secciones` enlaza referencias por sección. Mantén estas atribuciones y distingue versión nativa, streaming y datos de avances.
 - Si completas una guía o misión, revisa también cualquier descripción estática que todavía la anuncie como pendiente. Evita duplicar IDs de `base.json` en listas nuevas.
 
 ## Conservar la configuración del sitio
