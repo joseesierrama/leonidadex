@@ -15,11 +15,14 @@ import os
 import pathlib
 import re
 import shutil
+from site_support import analytics, footer as site_footer, head as site_head, info_pages, load_config, menu, privacy_ready
+from content_validation import validate_content
 
 ROOT = pathlib.Path(__file__).parent
 SRC = ROOT / "src"
 OUT = ROOT / "site"
 E = html.escape
+CONFIG = load_config(SRC)
 
 
 def base_url():
@@ -46,8 +49,8 @@ def fecha_larga(iso):
     return f"{int(d)} de {meses[int(m) - 1]} de {y}"
 
 
-def shell(depth, title, desc, url, body, jsonld=None):
-    up = "../" * depth
+def shell(depth, title, desc, url, body, jsonld=None, up_override=None):
+    up = up_override if up_override is not None else "../" * depth
     ld = f'<script type="application/ld+json">{embed(jsonld)}</script>' if jsonld else ""
     return f"""<!DOCTYPE html>
 <html lang="es">
@@ -69,18 +72,19 @@ def shell(depth, title, desc, url, body, jsonld=None):
 <link rel="stylesheet" href="{up}assets/estilo.css">
 <style>.static main{{padding:56px 0 80px}}.static .list{{list-style:none;margin:0;padding:0;display:grid;gap:0}}.static .list li{{padding:18px 0;border-top:1px solid var(--line)}}.static .list h2,.static .list h3{{font-size:1.4rem;margin:4px 0 6px;transform:none;text-shadow:none}}.static .prose{{max-width:72ch}}.static .prose p,.static .prose li{{line-height:1.75;color:#f0dde8}}.static .prose h2{{font-size:1.6rem;margin:30px 0 8px;transform:none;text-shadow:none;color:var(--flamingo)}}.static h1{{font:900 clamp(2.4rem,6vw,4.2rem)/.95 var(--font-display);text-transform:uppercase;margin:0 0 10px;text-wrap:balance}}.crumbs{{font:500 .75rem/1 var(--font-mono);color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px}}.crumbs a{{color:var(--muted)}}</style>
 {ld}
+{site_head(up, base_url()[0])}
 </head>
 <body class="static">
+<a class="skip" href="#contenido">Saltar al contenido</a>
 <header class="topbar"><div class="wrap">
-  <a class="brand" href="{up}"><span class="b-word">LEONIDA</span><span class="b-script">Dex</span></a>
-  <nav class="nav" aria-label="Secciones">
-    <a href="{up}">Inicio</a><a href="{up}noticias/">Noticias</a><a href="{up}reportajes/">Reportajes</a><a href="{up}personajes/">Personajes</a><a href="{up}leonida/">Leonida</a><a href="{up}preguntas-frecuentes/">Preguntas</a><a href="{up}#mapa">Mapa interactivo</a>
-  </nav>
+  <a class="brand" href="{up}"><img class="brand-icon" src="{up}assets/caiman-192.png" width="36" height="36" alt=""><span class="b-word">LEONIDA</span><span class="b-script">Dex</span></a>
+  {menu(up)}
 </div></header>
-<main><div class="wrap">
+<main id="contenido" tabindex="-1"><div class="wrap">
 {body}
 </div></main>
-<footer><div class="wrap"><p class="disclaimer">LeonidaDex es una enciclopedia hecha por fans, no oficial. No está afiliada a Rockstar Games ni a Take-Two Interactive. Grand Theft Auto y GTA VI son marcas de Take-Two Interactive.</p></div></footer>
+<footer><div class="wrap"><p class="disclaimer">LeonidaDex es una enciclopedia hecha por fans, no oficial. No está afiliada a Rockstar Games ni a Take-Two Interactive. Grand Theft Auto y GTA VI son marcas de Take-Two Interactive.</p></div>{site_footer(up, CONFIG)}</footer>
+{analytics(up, CONFIG)}
 </body>
 </html>
 """
@@ -102,6 +106,7 @@ def write(rel, text):
 def main():
     base = json.loads((SRC / "base.json").read_text("utf-8"))
     dyn = json.loads((SRC / "actualizaciones.json").read_text("utf-8"))
+    validate_content(base, dyn)
     url, dominio = base_url()
     if OUT.exists():
         shutil.rmtree(OUT)
@@ -113,14 +118,22 @@ def main():
     tpl = (SRC / "template.html").read_text("utf-8")
     css = re.search(r"<style>(.*?)</style>", tpl, re.S).group(1)
     write("assets/estilo.css", css)
+    shutil.copytree(SRC / "assets", OUT / "assets", dirs_exist_ok=True)
+    shutil.copy(SRC / "assets" / "favicon.ico", OUT / "favicon.ico")
+    write("site.webmanifest", json.dumps({"name": "LeonidaDex", "short_name": "LeonidaDex", "lang": "es",
+        "start_url": "./", "scope": "./", "display": "standalone", "background_color": "#120a1c", "theme_color": "#120a1c",
+        "icons": [{"src": f"assets/caiman-{size}.png", "sizes": f"{size}x{size}", "type": "image/png"} for size in (192, 512)]}, ensure_ascii=False))
     mani = json.loads((SRC / "tiles" / "mapa" / "manifest.json").read_text("utf-8"))
     idx = tpl.replace("__BASE__", embed(base)).replace("__DYN__", embed(dyn)).replace("__MANI__", embed(mani))
     head_extra = f'<link rel="canonical" href="{E(url)}">\n<meta property="og:url" content="{E(url)}">\n'
+    head_extra += site_head("", url)
     idx = idx.replace("<meta name=\"theme-color\"", head_extra + "<meta name=\"theme-color\"", 1)
     links = ('<nav class="wrap" aria-label="Más en LeonidaDex" style="padding:0 0 24px;display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.88rem">'
              '<a href="noticias/">Todas las noticias</a><a href="reportajes/">Reportajes</a><a href="personajes/">Personajes</a>'
              '<a href="leonida/">Regiones de Leonida</a><a href="preguntas-frecuentes/">Preguntas frecuentes</a></nav>\n</footer>')
     idx = idx.replace("</footer>", links, 1)
+    idx = idx.replace("</footer>", site_footer("", CONFIG) + "</footer>", 1)
+    idx = idx.replace("</body>", analytics("", CONFIG) + "\n</body>", 1)
     write("index.html", idx)
     write("datos/actualizaciones.json", json.dumps(dyn, ensure_ascii=False, indent=2) + "\n")
     # Mapa: teselas y puntos de GTADB (CC BY 4.0, https://map.gtadb.org)
@@ -137,9 +150,17 @@ def main():
         for n in news)
     body = f'<p class="crumbs"><a href="../">LeonidaDex</a> › Noticias</p><div class="sec-head"><p class="eyebrow">Noticias</p><h1>Noticias de GTA VI</h1><p class="lede">Todas las novedades de Grand Theft Auto VI en español, de la más reciente a la más antigua, con su fuente. Actualizado el {E(fecha_larga(upd)) if upd else ""}.</p></div><ul class="list">{items}</ul>'
     u = url + "noticias/"
-    write("noticias/index.html", shell(1, "Noticias de GTA VI en español | LeonidaDex", "Todas las noticias de GTA VI: lanzamiento, tráileres, retrasos, reservas, jugabilidad y más, con fuentes. Se actualiza tres veces al día.", u, body,
+    write("noticias/index.html", shell(1, "Noticias de GTA VI en español | LeonidaDex", "Noticias de GTA VI: lanzamiento, tráileres, retrasos, reservas y jugabilidad, con enlaces a sus fuentes y fecha de actualización.", u, body,
                                        {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Noticias de GTA VI", "url": u, "inLanguage": "es"}))
     urls.append((u, upd))
+
+    # --- proyecto, contacto y privacidad (solo con datos reales del titular) ---
+    for slug, (title, desc, text) in info_pages(CONFIG).items():
+        u = url + slug + "/"
+        body = (f'<p class="crumbs"><a href="../">LeonidaDex</a> › {E(title)}</p>'
+                f'<article class="prose"><h1>{E(title)}</h1>{text}</article>')
+        write(f"{slug}/index.html", shell(1, title + " | LeonidaDex", desc, u, body))
+        urls.append((u, ""))
 
     # --- reportajes ---
     arts = list(dyn.get("articulos_nuevos", [])) + list(base.get("articulos", []))
@@ -190,7 +211,10 @@ def main():
     urls.append((u, upd))
 
     # --- 404, robots, sitemap, CNAME, archivos públicos ---
-    write("404.html", shell(0, "Página no encontrada | LeonidaDex", "Esta página no existe.", url, '<div class="sec-head"><h1>Esta página no existe</h1><p class="lede"><a href="./">Volver a LeonidaDex</a></p></div>').replace('href="assets/', f'href="{url}assets/' if url != "/" else 'href="/assets/'))
+    write("404.html", shell(0, "Página no encontrada | LeonidaDex", "Esta página no existe.", url,
+                           f'<div class="sec-head"><h1>Esta página no existe</h1><p class="lede"><a href="{E(url)}">Volver a LeonidaDex</a></p></div>', up_override=url))
+    if CONFIG["adsense_publisher_id"]:
+        write("ads.txt", f'google.com, {CONFIG["adsense_publisher_id"]}, DIRECT, f08c47fec0942fa0\n')
     write("robots.txt", f"User-agent: *\nAllow: /\nSitemap: {url}sitemap.xml\n")
     sm = "".join(f"<url><loc>{E(u)}</loc>{f'<lastmod>{d[:10]}</lastmod>' if d else ''}</url>" for u, d in urls)
     write("sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{sm}</urlset>\n')
@@ -203,6 +227,8 @@ def main():
             if f.is_file():
                 shutil.copy(f, OUT / f.name)
     print(f"site/ listo: {len(urls)} URLs, base {url}")
+    if not privacy_ready(CONFIG):
+        print("Pendiente: titular y correo de contacto. No se publican políticas incompletas ni se habilita medición.")
 
 
 if __name__ == "__main__":
