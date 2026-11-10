@@ -9,7 +9,7 @@ from urllib.parse import unquote, urlsplit
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 import build
-from site_support import info_pages, load_config, privacy_ready
+from site_support import info_pages, load_config, privacy_ready, legal_ready
 
 
 class Links(HTMLParser):
@@ -36,9 +36,11 @@ class BuildTests(unittest.TestCase):
                 dyn = json.loads((build.SRC / "actualizaciones.json").read_text("utf-8"))
                 expected = len(base["articulos"]) + len(dyn.get("articulos_nuevos", [])) + 9
                 expected += 2 if privacy_ready(build.CONFIG) else 0
+                expected += 1 if legal_ready(build.CONFIG) else 0
                 self.assertEqual(len(pages), expected)
                 self.assertEqual((output / "ads.txt").exists(), bool(build.CONFIG["adsense_publisher_id"]))
                 self.assertEqual((output / "privacidad").exists(), privacy_ready(build.CONFIG))
+                self.assertEqual((output / "aviso-legal").exists(), legal_ready(build.CONFIG))
                 # The standalone FAQ must retain source links, not just the answers.
                 faq_page = (output / "preguntas-frecuentes/index.html").read_text("utf-8")
                 faq_links = Links()
@@ -89,6 +91,17 @@ class BuildTests(unittest.TestCase):
         config["ga4_id"] = "G-TEST123456"
         self.assertIn("Si aceptas la medición", info_pages(config)["privacidad"][2])
         self.assertIn("_ga", info_pages(config)["cookies"][2])
+
+    def test_legal_notice_requires_complete_data_and_escapes_it(self):
+        config = self.config(responsable="Titular", correo_contacto="prueba@example.org")
+        self.assertNotIn("aviso-legal", info_pages(config))
+        with self.assertRaisesRegex(ValueError, "NIF y domicilio"):
+            self.config(responsable="Titular", correo_contacto="prueba@example.org", nif="ID-PRUEBA")
+        config = self.config(responsable="Titular", correo_contacto="prueba@example.org",
+                             nif="ID <prueba>", domicilio="Dirección <prueba>")
+        legal = info_pages(config)["aviso-legal"][2]
+        self.assertIn("ID &lt;prueba&gt;", legal)
+        self.assertIn("Dirección &lt;prueba&gt;", legal)
 
 
 if __name__ == "__main__":
