@@ -11,7 +11,7 @@ MENU = [("", "Inicio"), ("noticias/", "Noticias"), ("reportajes/", "Reportajes")
 
 def load_config(src):
     config = json.loads((src / "sitio.json").read_text("utf-8"))
-    for key in ("responsable", "correo_contacto", "ga4_id", "adsense_publisher_id"):
+    for key in ("responsable", "correo_contacto", "ga4_id", "adsense_publisher_id", "nif", "domicilio"):
         config[key] = str(config.get(key) or "").strip()
     if config["correo_contacto"] and not re.fullmatch(r"[^\s<>@]+@[^\s<>@]+\.[^\s<>@]+", config["correo_contacto"]):
         raise ValueError("correo_contacto debe ser un correo real del titular")
@@ -21,11 +21,17 @@ def load_config(src):
         raise ValueError("adsense_publisher_id debe ser el identificador pub-… real de AdSense")
     if (config["ga4_id"] or config["adsense_publisher_id"]) and not privacy_ready(config):
         raise ValueError("Completa responsable y correo_contacto antes de habilitar medición o ads.txt")
+    if bool(config["nif"]) != bool(config["domicilio"]):
+        raise ValueError("Completa NIF y domicilio antes de publicar el aviso legal")
     return config
 
 
 def privacy_ready(config):
     return bool(config["responsable"] and config["correo_contacto"])
+
+
+def legal_ready(config):
+    return privacy_ready(config) and bool(config.get("nif") and config.get("domicilio"))
 
 
 def menu(up):
@@ -36,6 +42,8 @@ def menu(up):
 
 def footer(up, config):
     links = [("sobre-leonidadex/", "Sobre LeonidaDex"), ("contacto/", "Contacto")]
+    if legal_ready(config):
+        links.append(("aviso-legal/", "Aviso legal"))
     if privacy_ready(config):
         links += [("privacidad/", "Privacidad"), ("cookies/", "Cookies y almacenamiento")]
     body = "".join(f'<a href="{E(up + path)}">{label}</a>' for path, label in links)
@@ -112,4 +120,16 @@ def info_pages(config):
         '<tr><td>gl:…</td><td>Progreso de mapa, misiones y listas</td><td>Hasta que lo borres desde la web o el navegador</td></tr>' + cookies_analytics + '</tbody></table></div>'
         + ('<p>La medición es opcional. Puedes aceptarla, rechazarla o cambiar tu decisión desde «Preferencias de privacidad», en el pie de página. Al retirarla se detiene la medición y se eliminan las cookies de Analytics accesibles para este sitio.</p>' if config["ga4_id"] else '<p>No se instalan cookies de Google Analytics ni de publicidad desde el código de esta versión.</p>') +
         '<p>Los servicios de alojamiento y los enlaces externos se rigen por sus propias políticas. Puedes bloquear o borrar cookies y almacenamiento en los ajustes de tu navegador. Borrar el almacenamiento funcional elimina el progreso guardado.</p><p><a href="../privacidad/">Política de privacidad y contacto</a>.</p>')
+    if legal_ready(config):
+        pages["aviso-legal"] = ("Aviso legal", "Titular y condiciones de información de LeonidaDex.net.",
+            f'<p>Actualizado el {E(config["fecha_privacidad"])}.</p><h2>Titular y contacto</h2>'
+            f'<dl><dt>Titular</dt><dd>{owner}</dd><dt>NIF</dt><dd>{E(config["nif"])}</dd>'
+            f'<dt>Domicilio</dt><dd>{E(config["domicilio"])}</dd><dt>Correo electrónico</dt><dd>{contact}</dd></dl>'
+            '<h2>Finalidad del sitio</h2><p>LeonidaDex.net es un proyecto independiente que ofrece información, noticias y guías en español sobre Grand Theft Auto VI. Es una web de fans sin afiliación con Rockstar Games ni Take-Two Interactive.</p>'
+            '<p>Las noticias enlazan sus fuentes y distinguen información oficial, cobertura de prensa y rumores. El contenido puede cambiar cuando aparezcan nuevos datos. Las guías basadas en avances están identificadas como tales; no equivalen a una comprobación del juego final.</p>'
+            '<h2>Contenidos y derechos de terceros</h2><p>Grand Theft Auto, GTA VI y los nombres relacionados pertenecen a sus respectivos titulares. Los enlaces a materiales de terceros permiten consultar las fuentes originales y no transfieren sus derechos a LeonidaDex.</p>'
+            '<p>El mapa comunitario y los datos de lugares se atribuyen a GTADB, Yanis y sus colaboradores, conforme a <a href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a>. En la web se indican las adaptaciones realizadas y los enlaces de licencia.</p>'
+            f'<p>Para comunicar una atribución incorrecta, un error o una consulta sobre derechos de contenido, escribe a {contact} e identifica la página y el material correspondiente.</p>'
+            '<h2>Privacidad y publicidad</h2><p>La información sobre datos personales se encuentra en la <a href="../privacidad/">política de privacidad</a> y la del almacenamiento del navegador en <a href="../cookies/">cookies y almacenamiento</a>.</p>'
+            '<p>La activación de anuncios dependerá de la aprobación y configuración del servicio publicitario y del consentimiento aplicable. Las políticas se actualizarán para reflejar los servicios realmente utilizados.</p>')
     return pages
