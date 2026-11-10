@@ -30,6 +30,8 @@ def base_url():
         return os.environ["BASE_URL"].rstrip("/") + "/", ""
     owner, repo = os.environ.get("OWNER", ""), os.environ.get("REPO", "")
     if owner and repo:
+        if repo.lower() == f"{owner.lower()}.github.io":
+            return f"https://{repo.lower()}/", ""
         return f"https://{owner.lower()}.github.io/{repo}/", ""
     return "/", ""
 
