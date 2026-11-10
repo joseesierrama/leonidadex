@@ -6,7 +6,7 @@
   regiones de Leonida y preguntas frecuentes, con títulos, descripciones y datos estructurados.
 - sitemap.xml, robots.txt, 404.html y CNAME (si existe dominio.txt).
 
-Variables de entorno opcionales: BASE_URL (p. ej. https://leonidadex.com/), OWNER y REPO (GitHub).
+Variables de entorno opcionales: BASE_URL (p. ej. https://leonidadex.net/), OWNER y REPO (GitHub).
 No modifica los datos: la fecha de actualización la pone quien edita src/actualizaciones.json.
 """
 import html

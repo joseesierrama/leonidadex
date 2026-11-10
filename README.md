@@ -10,7 +10,7 @@ Enciclopedia de fans de GTA VI en español. No oficial: no está afiliada a Rock
 - `.github/workflows/publicar.yml`: cada cambio en `main` regenera y publica la web en GitHub Pages.
 
 ## Dominio propio
-Crea un archivo `dominio.txt` con el dominio (por ejemplo `leonidadex.com`) y apunta el DNS a GitHub Pages:
+Crea un archivo `dominio.txt` con el dominio (por ejemplo `leonidadex.net`) y apunta el DNS a GitHub Pages:
 registros A de `@` a 185.199.108.153, 185.199.109.153, 185.199.110.153 y 185.199.111.153, y un CNAME de `www` a `USUARIO.github.io`.
 
 ## Google
