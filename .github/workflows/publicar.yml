@@ -20,6 +20,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Comprobar páginas, contenido y consentimiento
+        run: |
+          python -m unittest discover -s tests
+          node --test tests/consent.test.cjs
       - name: Actualizar los puntos de la comunidad (GTADB, CC BY 4.0)
         run: |
           git clone --depth 1 https://github.com/rolux/gtadb.org /tmp/gtadb
