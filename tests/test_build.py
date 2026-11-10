@@ -39,6 +39,13 @@ class BuildTests(unittest.TestCase):
                 self.assertEqual(len(pages), expected)
                 self.assertEqual((output / "ads.txt").exists(), bool(build.CONFIG["adsense_publisher_id"]))
                 self.assertEqual((output / "privacidad").exists(), privacy_ready(build.CONFIG))
+                # The standalone FAQ must retain source links, not just the answers.
+                faq_page = (output / "preguntas-frecuentes/index.html").read_text("utf-8")
+                faq_links = Links()
+                faq_links.feed(faq_page)
+                for answer in base["faq"]:
+                    for source in answer.get("fuentes", []):
+                        self.assertIn(source["url"], faq_links.hrefs)
                 for page in pages:
                     text = page.read_text("utf-8")
                     self.assertEqual('data-ga4=' in text, bool(build.CONFIG["ga4_id"]))
