@@ -926,7 +926,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     <div class="sec-head">
       <p class="eyebrow">06 · Mapa</p>
       <h2 id="h-mapa">El estado de <em>Leonida</em></h2>
-      <p class="lede">Más de 100 lugares con su fuente sobre el mapa de la comunidad <a href="https://map.gtadb.org" target="_blank" rel="noopener">GTADB</a>, el más detallado que existe: calles, barrios y más de 3.300 edificios identificados con su equivalente real en Florida. Filtra, marca lo que vayas descubriendo y comparte cualquier punto. Rockstar aún no ha publicado el mapa oficial: la base es un trabajo de fans y se irá afinando.</p>
+      <p class="lede">Más de 100 lugares con su fuente sobre el mapa de la comunidad <a href="https://map.gtadb.org" target="_blank" rel="noopener">GTADB</a>, con calles, barrios y más de 3.300 edificios identificados con su equivalente real en Florida. Filtra, marca lo que vayas descubriendo y comparte cualquier punto. Rockstar aún no ha publicado el mapa oficial: la base es un trabajo de fans y se irá afinando.</p>
     </div>
     <div class="map-grid">
       <div class="map-box" id="mapBox">
@@ -1010,7 +1010,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     <div class="sec-head">
       <p class="eyebrow">08 · Jugabilidad</p>
       <h2 id="h-jug">Cómo se <em>juega</em></h2>
-      <p class="lede">Los sistemas confirmados en el Extended Look y en las previews de la prensa que visitó Rockstar North. Se revisarán con el juego final.</p>
+      <p class="lede">Sistemas descritos en el Extended Look y en avances de prensa, junto a las confirmaciones técnicas oficiales. Las mecánicas se revisarán con el juego final.</p>
     </div>
     <div class="sys">
       <div class="sys-tabs" id="sysTabs" role="tablist" aria-label="Sistemas de juego"></div>
@@ -1049,7 +1049,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     <div class="sec-head">
       <p class="eyebrow">11 · Misiones</p>
       <h2 id="h-mis">Registro de <em>misiones</em></h2>
-      <p class="lede" id="misLede">Rockstar no ha publicado nombres de misiones. Este registro se rellenará a partir del 19 de noviembre, y podrás marcar las que completes.</p>
+      <p class="lede" id="misLede">No tenemos una lista oficial de misiones. Los títulos de las escenas de abajo son descriptivos: no indican nombres, orden ni recompensas confirmados. Añadiremos guías cuando puedan comprobarse.</p>
     </div>
     <div id="missions"></div>
   </div>
@@ -1344,6 +1344,16 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
   function isNew(f) { var d = parseLocal(f); var y = startOfToday(); y.setDate(y.getDate() - 1); return d >= y; }
   function sortedNews() { return arr(DYN.noticias).slice().sort(function (a, b) { return a.fecha < b.fecha ? 1 : a.fecha > b.fecha ? -1 : 0; }); }
   function srcLinks(f) { return arr(f).map(function (s) { return '<a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.nombre) + "</a>"; }).join(" · "); }
+  function renderSectionSources() {
+    Object.keys(BASE.fuentes_secciones || {}).forEach(function (id) {
+      var head = document.querySelector('#' + id + ' .sec-head');
+      if (!head) return;
+      var note = document.createElement('p');
+      note.className = 'src-note';
+      note.innerHTML = 'Consultar fuentes: ' + srcLinks(BASE.fuentes_secciones[id]);
+      head.appendChild(note);
+    });
+  }
   function renderNewsFilters() {
     var cats = ["Todas"]; sortedNews().forEach(function (n) { if (cats.indexOf(n.categoria) < 0) cats.push(n.categoria); });
     if (cats.indexOf(newsState.cat) < 0) newsState.cat = "Todas";
@@ -1943,7 +1953,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     $("#sysTabs").innerHTML = BASE.sistemas.map(function (s) { return '<button class="sys-tab" role="tab" type="button" id="s-' + s.id + '" data-s="' + s.id + '" aria-selected="' + (s.id === sysSel) + '" aria-controls="sysPanel" tabindex="' + (s.id === sysSel ? 0 : -1) + '"><span class="ic" aria-hidden="true">' + esc(s.icono) + "</span>" + esc(s.titulo) + "</button>"; }).join("");
     var s = BASE.sistemas.find(function (x) { return x.id === sysSel; });
     $("#sysPanel").setAttribute("aria-labelledby", "s-" + s.id);
-    $("#sysPanel").innerHTML = "<h3>" + esc(s.titulo) + '</h3><p class="intro">' + esc(s.intro) + "</p><ol>" + s.puntos.map(function (p) { return "<li><span>" + esc(p) + "</span></li>"; }).join("") + '</ol><p class="src-note">Fuentes: Extended Look y previews de Edge, IGN, The New York Times, Game Informer y Kinda Funny. Ver «Fuentes principales» al pie.</p>';
+    $("#sysPanel").innerHTML = "<h3>" + esc(s.titulo) + '</h3><p class="intro">' + esc(s.intro) + "</p><ol>" + s.puntos.map(function (p) { return "<li><span>" + esc(p) + "</span></li>"; }).join("") + '</ol><p class="src-note">' + (arr(s.fuentes).length ? 'Fuentes: ' + srcLinks(s.fuentes) : 'Basado en Extended Look y avances de prensa. Pendiente de comprobar con el juego final. Consulta las fuentes del reportaje de jugabilidad.') + '</p>';
   }
   $("#sysTabs").addEventListener("click", function (e) { var b = e.target.closest("button"); if (!b) return; sysSel = b.dataset.s; renderSys(); $("#s-" + sysSel).focus(); });
   $("#sysTabs").addEventListener("keydown", function (e) {
@@ -2025,7 +2035,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
   function renderCheats() {
     var t6 = arr(DYN.trucos_gta6);
     if (!t6.length) {
-      $("#cheatVI").innerHTML = '<div class="zero"><div class="n">0</div><div><h3>Trucos confirmados de GTA VI</h3><p>Rockstar no ha anunciado trucos y nadie puede tenerlos antes de que salga el juego. Todos los GTA principales desde GTA III han incluido trucos en el modo historia, así que es muy probable que vuelvan. Los añadiremos aquí, con su fuente, en cuanto se verifiquen.</p><p class="note">En GTA V los trucos no funcionaban online y desactivaban trofeos y logros durante esa partida.</p></div></div><div class="warn-box"><strong>Cuidado con las estafas.</strong> Cualquier web, vídeo o app que hoy prometa trucos, dinero, llaves o acceso anticipado a GTA VI se lo está inventando. Nunca des tu cuenta ni instales nada para «desbloquear» trucos.</div>';
+      $("#cheatVI").innerHTML = '<div class="zero"><div class="n">0</div><div><h3>Trucos confirmados de GTA VI</h3><p>Todavía no hay códigos de GTA VI verificados en LeonidaDex. Los añadiremos con su fuente cuando puedan comprobarse. El archivo de GTA V y Vice City corresponde a esos juegos.</p><p class="note">En GTA V los trucos no funcionaban online y desactivaban trofeos y logros durante esa partida.</p></div></div><div class="warn-box"><strong>Cuidado con las estafas.</strong> Desconfía de promesas de dinero ilimitado, generadores de claves o acceso anticipado sin respaldo de los canales oficiales. Nunca des tu cuenta ni instales nada para «desbloquear» trucos.</div>';
     } else {
       $("#cheatVI").innerHTML = '<div class="cheat-scroll"><table class="c-table"><thead><tr><th>Efecto</th><th>PS5</th><th>Xbox</th><th>Otro</th></tr></thead><tbody>' + t6.map(function (c) {
         return '<tr id="t6-' + esc(c.id) + '"><td><strong>' + esc(c.efecto) + "</strong>" + (c.notas ? '<br><span class="note">' + esc(c.notas) + "</span>" : "") + (c.fuente ? '<br><span class="src">Fuente: ' + srcLinks([c.fuente]) + "</span>" : "") + "</td><td><code>" + esc(c.ps5 || "—") + "</code></td><td><code>" + esc(c.xbox || "—") + "</code></td><td><code>" + esc(c.telefono || c.otro || "—") + "</code></td></tr>";
@@ -2074,7 +2084,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     $("#stations").innerHTML = BASE.radio.map(function (r, i) {
       return '<article class="station" id="radio-' + i + '"><div class="lcd"><span>' + esc(r.nombre) + "</span><small>" + pad(i + 1) + '/06</small></div><p class="genre">' + esc(r.genero) + '</p><p class="hosts">' + esc(r.hosts) + "</p><ol>" + r.temas.map(function (t) { return "<li>" + esc(t) + "</li>"; }).join("") + "</ol></article>";
     }).join("");
-    $("#musicExtra").innerHTML = BASE.musica_extra.map(function (m, i) { return '<article id="mx-' + i + '"><h3>' + esc(m.titulo) + "</h3><p>" + esc(m.texto) + "</p></article>"; }).join("");
+    $("#musicExtra").innerHTML = BASE.musica_extra.map(function (m, i) { return '<article id="mx-' + i + '"><h3>' + esc(m.titulo) + "</h3><p>" + esc(m.texto) + "</p>" + (arr(m.fuentes).length ? '<p class="src-note">' + srcLinks(m.fuentes) + '</p>' : '') + "</article>"; }).join("");
   }
 
   /* ---------------- Cronología ---------------- */
@@ -2091,7 +2101,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
 
   /* ---------------- FAQ y fuentes ---------------- */
   function renderFaq() {
-    $("#faqList").innerHTML = BASE.faq.map(function (f, i) { return '<details id="f-' + i + '"><summary>' + esc(f.q) + "</summary><p>" + esc(f.a) + "</p></details>"; }).join("");
+    $("#faqList").innerHTML = BASE.faq.map(function (f, i) { return '<details id="f-' + i + '"><summary>' + esc(f.q) + "</summary><p>" + esc(f.a) + "</p>" + (arr(f.fuentes).length ? '<p class="src-note">' + srcLinks(f.fuentes) + '</p>' : '') + "</details>"; }).join("");
     $("#sources").innerHTML = BASE.fuentes.map(function (s) { return '<li><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.nombre) + "</a></li>"; }).join("");
   }
 
@@ -2215,7 +2225,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     }).catch(function () { source = "copia integrada"; renderStatus(); });
   }
 
-  renderLaunch(); renderStory(); renderPeople(); mapInit(); renderScale(); renderArts(); renderMedia(); renderDex(); renderSys(); renderMusic(); renderFaq();
+  renderLaunch(); renderStory(); renderPeople(); mapInit(); renderScale(); renderArts(); renderMedia(); renderDex(); renderSys(); renderMusic(); renderFaq(); renderSectionSources();
   renderDynamic();
   tick(); setInterval(tick, 1000);
   startSky();

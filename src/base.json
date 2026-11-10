@@ -27,7 +27,7 @@
    },
    {
     "k": "Edición física",
-    "v": "Código en la caja, sin disco (desde el 12 nov)"
+    "v": "Caja con código, sin disco; envíos previstos desde el 12 nov"
    },
    {
     "k": "Edad",
@@ -36,6 +36,10 @@
    {
     "k": "Modo",
     "v": "Un jugador; el nuevo online no está anunciado"
+   },
+   {
+    "k": "Rendimiento",
+    "v": "Objetivo de 30 fps"
    }
   ],
   "precarga": [
@@ -51,8 +55,8 @@
    },
    {
     "plataforma": "Caja con código",
-    "cuando": "Desde el 12 nov",
-    "nota": "Canjea el código y descarga."
+    "cuando": "Al recibir el código",
+    "nota": "Envíos y recogida previstos desde el 12 nov; canjeable al recibirlo."
    }
   ],
   "ediciones": {
@@ -108,7 +112,7 @@
      ]
     }
    ],
-   "nota": "El pack Vintage Vice City se incluye con las compras digitales hechas hasta el 20 de noviembre y con las reservas físicas mientras haya existencias. El contenido Ultimate se va desbloqueando capítulo a capítulo durante la historia."
+   "nota": "El pack Vintage Vice City se incluye con las compras digitales hechas antes del 20 de noviembre y con las reservas físicas mientras haya existencias. El contenido Ultimate se va desbloqueando capítulo a capítulo durante la historia."
   },
   "pack_reserva": [
    "Sedán '55 Vapid Stanier y garaje Shore Court en Ocean Beach, con taquilla de armas y punto para vender mercancía robada",
@@ -167,7 +171,13 @@
     "Brian Heder",
     "Cal Hampton"
    ],
-   "visto": "Tráilers 1 y 2, Extended Look"
+   "visto": "Tráilers 1 y 2, Extended Look",
+   "fuentes": [
+    {
+     "nombre": "Rockstar: personajes de Leonida",
+     "url": "https://www.rockstargames.com/VI/only-in-leonida"
+    }
+   ]
   },
   {
    "id": "lucia",
@@ -175,12 +185,18 @@
    "grupo": "protagonista",
    "rol": "Protagonista",
    "color": "flamingo",
-   "bio": "Primera protagonista de un GTA principal. Su padre le enseñó a pelear casi antes de andar. Defender a su familia la llevó a la Penitenciaría de Leonida y salió de allí por pura suerte. Quiere la buena vida que su madre soñaba desde sus días en Liberty City, y ahora solo hará jugadas inteligentes.",
+   "bio": "Una de las dos protagonistas de GTA VI. Su padre le enseñó a pelear casi antes de andar. Defender a su familia la llevó a la Penitenciaría de Leonida y salió de allí por pura suerte. Quiere la buena vida que su madre soñaba desde sus días en Liberty City, y ahora solo hará jugadas inteligentes.",
    "vinculos": [
     "Jason Duval",
     "Liberty City"
    ],
-   "visto": "Tráilers 1 y 2, Extended Look"
+   "visto": "Tráilers 1 y 2, Extended Look",
+   "fuentes": [
+    {
+     "nombre": "Rockstar: personajes de Leonida",
+     "url": "https://www.rockstargames.com/VI/only-in-leonida"
+    }
+   ]
   },
   {
    "id": "cal",
@@ -193,7 +209,13 @@
     "Jason Duval",
     "Brian Heder"
    ],
-   "visto": "Tráiler 2"
+   "visto": "Tráiler 2",
+   "fuentes": [
+    {
+     "nombre": "Rockstar: personajes de Leonida",
+     "url": "https://www.rockstargames.com/VI/only-in-leonida"
+    }
+   ]
   },
   {
    "id": "boobie",
@@ -207,7 +229,13 @@
     "Real Dimez",
     "Jack of Hearts"
    ],
-   "visto": "Tráiler 2"
+   "visto": "Tráiler 2",
+   "fuentes": [
+    {
+     "nombre": "Rockstar: personajes de Leonida",
+     "url": "https://www.rockstargames.com/VI/only-in-leonida"
+    }
+   ]
   },
   {
    "id": "drequan",
@@ -220,7 +248,13 @@
     "Boobie Ike",
     "Real Dimez"
    ],
-   "visto": "Tráiler 2"
+   "visto": "Tráiler 2",
+   "fuentes": [
+    {
+     "nombre": "Rockstar: personajes de Leonida",
+     "url": "https://www.rockstargames.com/VI/only-in-leonida"
+    }
+   ]
   },
   {
    "id": "realdimez",
@@ -234,7 +268,13 @@
     "Boobie Ike",
     "DWNPLY"
    ],
-   "visto": "Tráiler 2"
+   "visto": "Tráiler 2",
+   "fuentes": [
+    {
+     "nombre": "Rockstar: personajes de Leonida",
+     "url": "https://www.rockstargames.com/VI/only-in-leonida"
+    }
+   ]
   },
   {
    "id": "raul",
@@ -247,7 +287,13 @@
     "Jason Duval",
     "Lucia Caminos"
    ],
-   "visto": "Tráiler 2"
+   "visto": "Tráiler 2",
+   "fuentes": [
+    {
+     "nombre": "Rockstar: personajes de Leonida",
+     "url": "https://www.rockstargames.com/VI/only-in-leonida"
+    }
+   ]
   },
   {
    "id": "brian",
@@ -261,7 +307,13 @@
     "Cal Hampton",
     "Lori Heder"
    ],
-   "visto": "Tráiler 2"
+   "visto": "Tráiler 2",
+   "fuentes": [
+    {
+     "nombre": "Rockstar: personajes de Leonida",
+     "url": "https://www.rockstargames.com/VI/only-in-leonida"
+    }
+   ]
   }
  ],
  "regiones": [
@@ -283,6 +335,12 @@
     "Playas",
     "Atracos a tiendas y joyerías",
     "Carreras callejeras"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Rockstar: regiones de Leonida",
+     "url": "https://www.rockstargames.com/VI"
+    }
    ]
   },
   {
@@ -299,6 +357,12 @@
     "Barcos y motos de agua",
     "Buceo",
     "Pesca"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Rockstar: regiones de Leonida",
+     "url": "https://www.rockstargames.com/VI"
+    }
    ]
   },
   {
@@ -315,6 +379,12 @@
     "Hidrodeslizadores (fanboats)",
     "Canoas",
     "Observar y cazar fauna"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Rockstar: regiones de Leonida",
+     "url": "https://www.rockstargames.com/VI"
+    }
    ]
   },
   {
@@ -330,6 +400,12 @@
    "actividades": [
     "Trabajos de contrabando",
     "Exploración"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Rockstar: regiones de Leonida",
+     "url": "https://www.rockstargames.com/VI"
+    }
    ]
   },
   {
@@ -345,6 +421,12 @@
    "actividades": [
     "Moteros",
     "Rutas por carretera"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Rockstar: regiones de Leonida",
+     "url": "https://www.rockstargames.com/VI"
+    }
    ]
   },
   {
@@ -362,6 +444,12 @@
     "Caza",
     "Pesca",
     "Todoterreno"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Rockstar: regiones de Leonida",
+     "url": "https://www.rockstargames.com/VI"
+    }
    ]
   }
  ],
@@ -504,6 +592,27 @@
     "Caza y pesca en las zonas salvajes.",
     "Clubes, playa, bici, gimnasio y, por supuesto, acariciar perros."
    ]
+  },
+  {
+   "id": "tecnica",
+   "titulo": "Consolas y rendimiento",
+   "icono": "◉",
+   "intro": "Confirmaciones técnicas del 10 de noviembre; no constituyen una medición independiente.",
+   "puntos": [
+    "Objetivo de 30 fps; PS5 Pro ofrece PSSR y sombras con trazado de rayos.",
+    "Xbox One accede por la nube, sin edición nativa anunciada.",
+    "PS5 incorpora funciones DualSense y audio Tempest 3D; los ajustes de accesibilidad permiten adaptar la respuesta háptica."
+   ],
+   "fuentes": [
+    {
+     "nombre": "Rockstar: anuncio técnico",
+     "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now"
+    },
+    {
+     "nombre": "PlayStation: funciones PS5",
+     "url": "https://www.playstation.com/en-us/games/grand-theft-auto-vi/"
+    }
+   ]
   }
  ],
  "guias": [
@@ -516,16 +625,26 @@
    "estado": "disponible",
    "resumen": "Deja la consola lista para jugar el 19 a las 00:00 sin esperas.",
    "pasos": [
-    "Compra o reserva el juego en PlayStation Store. Si tienes la caja, canjea el código desde PlayStation Store con el menú «…» › Canjear código (las cajas llegan el 12 de noviembre).",
+    "Abre el juego reservado en tu Biblioteca de PlayStation y comprueba la opción de descarga. Si compraste una caja con código, canjéalo cuando lo recibas; el envío y la recogida están previstos desde el 12 de noviembre.",
     "Libera espacio: hasta 212 GB. En una PS5 de 825 GB es casi un tercio del disco. Revisa Ajustes › Almacenamiento.",
     "Activa las descargas en reposo: Ajustes › Sistema › Ahorro de energía › Funciones disponibles en modo de reposo › Mantener conexión a Internet.",
     "Activa Ajustes › Datos guardados y ajustes de juegos/aplicaciones › Actualizaciones automáticas › Descarga automática e Instalación automática en modo de reposo.",
     "Comprueba en la Biblioteca que GTA VI aparece descargándose. Si no, ábrelo y pulsa Descargar.",
-    "El 19 de noviembre a las 00:00 (hora local) se desbloquea. Puede pedir un pequeño parche de lanzamiento: deja la consola en reposo esa noche."
+    "El desbloqueo está previsto para el 19 de noviembre a medianoche local. Comprueba antes de jugar si la consola solicita actualizaciones; no hay un tamaño de parche de lanzamiento confirmado aquí."
    ],
    "consejos": [
     "Los nombres de los menús pueden variar un poco según la versión del sistema.",
     "Actualiza el firmware antes del día 19 para no perder tiempo."
+   ],
+   "fuentes": [
+    {
+     "nombre": "Rockstar: precarga y desbloqueo",
+     "url": "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s"
+    },
+    {
+     "nombre": "Rockstar: espacio requerido",
+     "url": "https://support.rockstargames.com/articles/M6h7B5fJZMwG1dnzQkt4Z/grand-theft-auto-vi-installation-requirements"
+    }
    ]
   },
   {
@@ -546,6 +665,16 @@
    ],
    "consejos": [
     "La ruta exacta de los menús puede cambiar con las actualizaciones del sistema."
+   ],
+   "fuentes": [
+    {
+     "nombre": "Rockstar: precarga y desbloqueo",
+     "url": "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s"
+    },
+    {
+     "nombre": "Rockstar: espacio requerido",
+     "url": "https://support.rockstargames.com/articles/M6h7B5fJZMwG1dnzQkt4Z/grand-theft-auto-vi-installation-requirements"
+    }
    ]
   },
   {
@@ -564,7 +693,13 @@
     "Si quieres caja física, solo existe la Estándar con código dentro."
    ],
    "consejos": [
-    "El pack Vintage Vice City va con cualquiera de las dos si compras en digital hasta el 20 de noviembre."
+    "El extra digital exige comprar antes del 20 de noviembre. Revisa precio y condiciones en tu tienda."
+   ],
+   "fuentes": [
+    {
+     "nombre": "Rockstar: diferencias entre ediciones",
+     "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
+    }
    ]
   },
   {
@@ -574,7 +709,7 @@
    "nivel": "Intermedio",
    "tiempo": "6 min",
    "estado": "disponible",
-   "resumen": "La táctica de GTA V ya no basta. Así funciona según lo mostrado por Rockstar.",
+   "resumen": "Guía orientativa basada en avances de prensa; pendiente de comprobar con el juego final. La táctica de GTA V ya no basta. Así funciona según lo mostrado por Rockstar.",
    "pasos": [
     "Antes del golpe: busca cámaras y testigos. Sin ellos, puede que nadie llegue a buscarte.",
     "Después de un atraco en tienda, entra en la trastienda y borra las grabaciones de seguridad.",
@@ -586,7 +721,18 @@
    ],
    "consejos": [
     "Pintar el coche no se presenta como forma fiable de despistar.",
-    "Guía basada en previews; la revisaremos con el juego final."
+    "Guía basada en previews; la revisaremos con el juego final.",
+    "Pendiente de verificar con el juego final; las mecánicas pueden cambiar."
+   ],
+   "fuentes": [
+    {
+     "nombre": "Avances recogidos en nuestro reportaje de jugabilidad",
+     "url": "https://leonidadex.net/reportajes/jugabilidad-confirmada/"
+    },
+    {
+     "nombre": "Rockstar: vídeos oficiales",
+     "url": "https://www.rockstargames.com/VI/media"
+    }
    ]
   },
   {
@@ -596,7 +742,7 @@
    "nivel": "Intermedio",
    "tiempo": "5 min",
    "estado": "disponible",
-   "resumen": "WAINK, rastreadores, peristas y gasolina: el nuevo oficio de robar coches.",
+   "resumen": "Guía orientativa basada en avances de prensa; pendiente de comprobar con el juego final. WAINK, rastreadores, peristas y gasolina: el nuevo oficio de robar coches.",
    "pasos": [
     "Escanea con WAINK: cierre, alarma, rastreador, valor de reventa y coste de registro.",
     "Empieza por coches antiguos: se abren sin herramientas especiales. Los modernos piden clonar la llave digital.",
@@ -606,7 +752,18 @@
     "Si te gusta, regístralo a tu nombre (pagando) y podrás pedirlo después con Scooter Bros."
    ],
    "consejos": [
-    "No todas las herramientas estarán disponibles desde el principio: el sistema tiene progresión."
+    "No todas las herramientas estarán disponibles desde el principio: el sistema tiene progresión.",
+    "Pendiente de verificar con el juego final; las mecánicas pueden cambiar."
+   ],
+   "fuentes": [
+    {
+     "nombre": "Avances recogidos en nuestro reportaje de jugabilidad",
+     "url": "https://leonidadex.net/reportajes/jugabilidad-confirmada/"
+    },
+    {
+     "nombre": "Rockstar: vídeos oficiales",
+     "url": "https://www.rockstargames.com/VI/media"
+    }
    ]
   },
   {
@@ -616,7 +773,7 @@
    "nivel": "Básico",
    "tiempo": "4 min",
    "estado": "disponible",
-   "resumen": "En GTA VI el dinero importa durante toda la partida. Fuentes confirmadas hasta ahora.",
+   "resumen": "Guía orientativa basada en avances de prensa; pendiente de comprobar con el juego final. En GTA VI el dinero importa durante toda la partida. ",
    "pasos": [
     "Algunas fases de la historia te piden reunir dinero antes de seguir, así que no lo malgastes.",
     "Fuentes confirmadas: atracos a gasolineras y joyerías, robo de coches para peristas y trabajos para clientes.",
@@ -624,7 +781,18 @@
     "Ingresa el efectivo en un cajero: si mueres o te arrestan, pierdes lo que llevas encima."
    ],
    "consejos": [
-    "Cuando salga el juego añadiremos las mejores rutas de dinero reales."
+    "Cuando salga el juego añadiremos las mejores rutas de dinero reales.",
+    "Pendiente de verificar con el juego final; las mecánicas pueden cambiar."
+   ],
+   "fuentes": [
+    {
+     "nombre": "Avances recogidos en nuestro reportaje de jugabilidad",
+     "url": "https://leonidadex.net/reportajes/jugabilidad-confirmada/"
+    },
+    {
+     "nombre": "Rockstar: vídeos oficiales",
+     "url": "https://www.rockstargames.com/VI/media"
+    }
    ]
   },
   {
@@ -634,14 +802,26 @@
    "nivel": "Básico",
    "tiempo": "3 min",
    "estado": "disponible",
-   "resumen": "Gimnasio, sueño, comida y pareja: los sistemas que te hacen más fuerte.",
+   "resumen": "Guía orientativa basada en avances de prensa; pendiente de comprobar con el juego final. Gimnasio, sueño, comida y pareja: los sistemas que te hacen más fuerte.",
    "pasos": [
     "Entrena en el gimnasio: mejora tus capacidades y cambia el físico. Requiere técnica.",
     "Duerme de vez en cuando: varios días sin dormir reducen la regeneración.",
     "Café para el aguante, batido de proteínas para la salud.",
     "Pasa tiempo con tu pareja para subir la relación (playa, bici, coche, gimnasio)."
    ],
-   "consejos": []
+   "consejos": [
+    "Pendiente de verificar con el juego final; las mecánicas pueden cambiar."
+   ],
+   "fuentes": [
+    {
+     "nombre": "Avances recogidos en nuestro reportaje de jugabilidad",
+     "url": "https://leonidadex.net/reportajes/jugabilidad-confirmada/"
+    },
+    {
+     "nombre": "Rockstar: vídeos oficiales",
+     "url": "https://www.rockstargames.com/VI/media"
+    }
+   ]
   },
   {
    "id": "checklist-lanzamiento",
@@ -652,15 +832,28 @@
    "estado": "disponible",
    "resumen": "Marca lo que ya tienes hecho. Se guarda en este navegador.",
    "checklist": [
-    "Juego comprado o reservado",
-    "212 GB libres en la consola",
-    "Descargas en modo reposo activadas",
+    "Juego adquirido para la plataforma correcta",
+    "Espacio libre comprobado: hasta 212 GB según el dispositivo",
     "Precarga terminada",
-    "Código de la caja canjeado (si es edición física)",
-    "Firmware de la consola actualizado",
-    "Análisis leídos (18 nov, sin confirmar)",
-    "Póster-mapa gratuito descargado",
-    "Noche del 18 al 19 libre para jugar a las 00:00"
+    "Código de la caja canjeado si ya lo he recibido",
+    "Sistema y juego actualizados",
+    "Horario local de desbloqueo comprobado",
+    "Buscar el mapa imprimible oficial a partir del 19 de noviembre",
+    "Elegir si quiero consultar análisis evitando spoilers (fecha del embargo sin confirmar)"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Rockstar: horarios",
+     "url": "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s"
+    },
+    {
+     "nombre": "Rockstar: instalación",
+     "url": "https://support.rockstargames.com/articles/M6h7B5fJZMwG1dnzQkt4Z/grand-theft-auto-vi-installation-requirements"
+    },
+    {
+     "nombre": "Rockstar: mapa anunciado",
+     "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10"
+    }
    ]
   },
   {
@@ -700,19 +893,19 @@
  "misiones_conocidas": [
   {
    "titulo": "El edificio de apartamentos",
-   "texto": "Una de las primeras misiones: Jason y Lucia entran en un edificio y Jason es jugable. Aparece en el Extended Look."
+   "texto": "Descripción de una escena de avance, no un nombre oficial de misión. En el avance, Jason y Lucia entran en un edificio y Jason es jugable. Aparece en el Extended Look."
   },
   {
    "titulo": "Huida tras un atraco en el supermercado",
-   "texto": "Mostrada en la demo de Edge: escapada en coche después de un robo."
+   "texto": "Descripción de una escena de avance, no un nombre oficial de misión. Mostrada en la demo de Edge: escapada en coche después de un robo."
   },
   {
    "titulo": "Persecución en moto",
-   "texto": "Jason conduce con Lucia detrás armada; la policía despliega una banda de pinchos."
+   "texto": "Descripción de una escena de avance, no un nombre oficial de misión. Jason conduce con Lucia detrás armada; la policía despliega una banda de pinchos."
   },
   {
    "titulo": "Golpe en un rascacielos",
-   "texto": "Tiroteo con coberturas en una torre, del Extended Look."
+   "texto": "Descripción de una escena de avance, no un nombre oficial de misión. Tiroteo con coberturas en una torre, del Extended Look."
   }
  ],
  "misterios": [
@@ -1177,7 +1370,23 @@
  "musica_extra": [
   {
    "titulo": "GTA VI: The Album",
-   "texto": "Álbum de canciones originales hecho con Atlantic Records: 34 temas, con seis sencillos ya publicados y el resto el día del lanzamiento. Tiene ediciones en vinilo y CD."
+   "texto": "Álbum de canciones originales hecho con Atlantic Records: 34 temas, con seis sencillos ya publicados y el resto el día del lanzamiento. Tiene ediciones en vinilo y CD.",
+   "fuentes": [
+    {
+     "nombre": "Rockstar: música",
+     "url": "https://www.rockstargames.com/VI/music"
+    }
+   ]
+  },
+  {
+   "titulo": "Original Score de Justice · 11 de diciembre",
+   "texto": "Música original del juego: 30 pistas y un extra digital. Publicación anunciada para el 11 de diciembre en streaming, CD y vinilo; distinta de The Album.",
+   "fuentes": [
+    {
+     "nombre": "Rockstar: Justice",
+     "url": "https://www.rockstargames.com/newswire/article/39ak8a12395591/grand-theft-auto-vi-original-score-by-justice"
+    }
+   ]
   },
   {
    "titulo": "Radio a pie y podcasts",
@@ -1309,7 +1518,13 @@
   },
   {
    "q": "Si precargo, ¿puedo jugar antes?",
-   "a": "No. La precarga solo descarga los archivos; el juego se desbloquea a medianoche del día 19."
+   "a": "La precarga descarga los archivos. El desbloqueo es el 19 de noviembre a medianoche local en PS5 y Xbox Series X|S.",
+   "fuentes": [
+    {
+     "nombre": "Rockstar: horarios regionales",
+     "url": "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s"
+    }
+   ]
   },
   {
    "q": "¿Sale en PC?",
@@ -1317,19 +1532,43 @@
   },
   {
    "q": "¿Y en PS4, Xbox One o Switch 2?",
-   "a": "No. Solo PS5 (también PS5 Pro) y Xbox Series X|S."
+   "a": "No hay versión nativa anunciada para esas consolas. Xbox One sí tendrá acceso mediante Xbox Cloud Gaming.",
+   "fuentes": [
+    {
+     "nombre": "Rockstar: plataformas y nube",
+     "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now"
+    }
+   ]
   },
   {
    "q": "¿Tiene modo online?",
-   "a": "Sale como juego de un jugador. El nuevo GTA Online no está anunciado; hay quien apunta a 2027. El GTA Online actual seguirá con soporte."
+   "a": "No hay anuncio oficial del nuevo modo online de GTA VI ni fecha confirmada. El GTA Online actual es un producto distinto.",
+   "fuentes": [
+    {
+     "nombre": "Rockstar: GTA VI",
+     "url": "https://www.rockstargames.com/VI"
+    }
+   ]
   },
   {
    "q": "¿Cuánto ocupa?",
-   "a": "Hasta 212 GB, según la consola."
+   "a": "Rockstar indica hasta 212 GB, según el dispositivo. Comprueba el espacio disponible y el tamaño que indique tu consola.",
+   "fuentes": [
+    {
+     "nombre": "Rockstar: instalación",
+     "url": "https://support.rockstargames.com/articles/M6h7B5fJZMwG1dnzQkt4Z/grand-theft-auto-vi-installation-requirements"
+    }
+   ]
   },
   {
    "q": "¿La edición física trae disco?",
-   "a": "No. La caja lleva un código de descarga y un póster. Llega a las tiendas el 12 de noviembre."
+   "a": "No incluye disco: se canjea un código. Los envíos y la recogida están previstos a partir del 12 de noviembre.",
+   "fuentes": [
+    {
+     "nombre": "Rockstar: formatos",
+     "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
+    }
+   ]
   },
   {
    "q": "¿Cuánto cuesta?",
@@ -1337,7 +1576,13 @@
   },
   {
    "q": "¿Hasta cuándo tengo el pack Vintage Vice City?",
-   "a": "Con compras digitales hasta el 20 de noviembre y con reservas físicas mientras haya existencias."
+   "a": "En digital, con compras anteriores al 20 de noviembre de 2026; también en reservas físicas. Comprueba las condiciones de la tienda.",
+   "fuentes": [
+    {
+     "nombre": "Rockstar: ediciones",
+     "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
+    }
+   ]
   },
   {
    "q": "¿Cuánto dura?",
@@ -1349,7 +1594,13 @@
   },
   {
    "q": "¿A cuántos fps va?",
-   "a": "En las previews, la demo iba a 30 fps en una PS5 normal y no se ha confirmado un modo a 60. Una filtración apunta a PSSR y trazado de rayos avanzado en PS5 Pro."
+   "a": "Rockstar fija un objetivo de 30 fps. PS5 Pro añade PSSR y sombras con trazado de rayos; no se ha anunciado un modo a 60 fps.",
+   "fuentes": [
+    {
+     "nombre": "Rockstar: rendimiento",
+     "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now"
+    }
+   ]
   },
   {
    "q": "¿Tiene micropagos?",
@@ -1361,11 +1612,41 @@
   },
   {
    "q": "¿Habrá trucos?",
-   "a": "No hay ninguno confirmado. Todos los GTA principales desde GTA III han tenido, así que es muy probable. En cuanto salgan, los verás en la sección Trucos."
+   "a": "Todavía no hay códigos de GTA VI verificados en LeonidaDex. El archivo de GTA V y Vice City pertenece a esos juegos, no a GTA VI.",
+   "fuentes": [
+    {
+     "nombre": "Rockstar: información de GTA VI",
+     "url": "https://www.rockstargames.com/VI"
+    }
+   ]
   },
   {
    "q": "¿Cuándo salen los análisis?",
    "a": "Según varios insiders, el 18 de noviembre. Rockstar no lo ha confirmado."
+  },
+  {
+   "q": "¿Cuándo estará el mapa oficial para imprimir?",
+   "a": "Rockstar lo anuncia para el 19 de noviembre. Nuestro mapa interactivo utiliza datos comunitarios y no es ese mapa oficial.",
+   "fuentes": [
+    {
+     "nombre": "Rockstar: anuncio del mapa",
+     "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10"
+    }
+   ]
+  },
+  {
+   "q": "¿The Album y Original Score son lo mismo?",
+   "a": "No. The Album reúne canciones; Original Score es la música original de Justice y está anunciado para el 11 de diciembre.",
+   "fuentes": [
+    {
+     "nombre": "Rockstar: música",
+     "url": "https://www.rockstargames.com/VI/music"
+    },
+    {
+     "nombre": "Rockstar: Justice",
+     "url": "https://www.rockstargames.com/newswire/article/39ak8a12395591/grand-theft-auto-vi-original-score-by-justice"
+    }
+   ]
   }
  ],
  "fuentes": [
@@ -1420,6 +1701,38 @@
   {
    "nombre": "Insider Gaming: embargo de análisis",
    "url": "https://insider-gaming.com/grand-theft-auto-6-review-embargo/"
+  },
+  {
+   "nombre": "Rockstar: anuncio técnico del 10 de noviembre",
+   "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now"
+  },
+  {
+   "nombre": "Rockstar: horarios de precarga y lanzamiento",
+   "url": "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s"
+  },
+  {
+   "nombre": "Rockstar: instalación",
+   "url": "https://support.rockstargames.com/articles/M6h7B5fJZMwG1dnzQkt4Z/grand-theft-auto-vi-installation-requirements"
+  },
+  {
+   "nombre": "Rockstar: ediciones y códigos",
+   "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
+  },
+  {
+   "nombre": "Rockstar: música",
+   "url": "https://www.rockstargames.com/VI/music"
+  },
+  {
+   "nombre": "Rockstar: The Festival",
+   "url": "https://www.rockstargames.com/VI/gtavi-thefestival"
+  },
+  {
+   "nombre": "Rockstar: galería de lanzamiento",
+   "url": "https://www.rockstargames.com/VI/launch-gallery"
+  },
+  {
+   "nombre": "Take-Two: resultados del 9 de noviembre",
+   "url": "https://ir.take2games.com/static-files/a43ab8e3-c03a-4b7e-a6a8-f3cd2485e2df"
   }
  ],
  "mapa_lugares": [
@@ -3087,6 +3400,9 @@
     },
     {
      "p": "Take-Two mantuvo la fecha en febrero y mayo, las reservas abrieron el 25 de junio y en agosto una filtración de vídeos de juego precedió al gran estreno: el Extended Look, 26 minutos de juego real emitidos primero en Netflix. Después vinieron la portada de Game Informer, la calificación PEGI 18, las radios, el tráiler de lanzamiento del 15 de octubre y la precarga."
+    },
+    {
+     "p": "En octubre se anunció la música original de Justice, prevista para el 11 de diciembre. Noviembre añade la galería de lanzamiento, el festival del día 21 y la apertura de la precarga del día 10."
     }
    ],
    "fuentes": [
@@ -3105,6 +3421,18 @@
     {
      "nombre": "Red Bull",
      "url": "https://www.redbull.com/za-en/gta-6-extended-look-everything-revealed"
+    },
+    {
+     "nombre": "Rockstar: música original",
+     "url": "https://www.rockstargames.com/newswire/article/39ak8a12395591/grand-theft-auto-vi-original-score-by-justice"
+    },
+    {
+     "nombre": "Rockstar: galería",
+     "url": "https://www.rockstargames.com/newswire/article/39ak81277255o9/explore-the-grand-theft-auto-vi-launch-gallery"
+    },
+    {
+     "nombre": "Rockstar: precarga",
+     "url": "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s"
     }
    ]
   },
@@ -3182,7 +3510,7 @@
      "h": "A qué hora empieza"
     },
     {
-     "p": "Las fichas de la PlayStation Store muestran un desbloqueo a medianoche local de cada país. En la España peninsular serán las 00:00 del jueves 19 de noviembre; Nueva Zelanda es el primer territorio y Centroamérica el último, unas 19 horas después. Rockstar no ha detallado los horarios de Xbox."
+     "p": "El soporte oficial fija el desbloqueo para PS5 y Xbox Series X|S a las 00:00 locales del 19 de noviembre. La precarga comenzó el 10: medianoche local en PS5 y 00:00 GMT en Xbox, que en la España peninsular fue la 01:00."
     },
     {
      "h": "Antes de pulsar «comprar»"
@@ -3190,24 +3518,34 @@
     {
      "ul": [
       "Los análisis llegarían el 18 de noviembre, según varios medios; Rockstar no lo ha confirmado.",
-      "En consolas funciona a 30 fps; no hay modo de 60 anunciado, tampoco en PS5 Pro.",
+      "El objetivo anunciado es 30 fps; no hay modo de 60 anunciado.",
       "No hay versión de PC con fecha.",
       "Desconfía de webs que vendan acceso anticipado, dinero o trucos: es una estafa."
      ]
+    },
+    {
+     "p": "Distingue la versión instalada de la nube. El acceso anunciado para Xbox One es por streaming y depende de la conexión; no equivale a una edición nativa para esa consola."
+    },
+    {
+     "p": "El pack digital se ofrece con compras anteriores al 20 de noviembre. Comprueba siempre el importe y las condiciones en la tienda de tu región antes de pagar."
     }
    ],
    "fuentes": [
     {
-     "nombre": "God is a Geek",
-     "url": "https://godisageek.com/2026/09/gta-6-release-times-by-region/"
+     "nombre": "Rockstar: ediciones y códigos",
+     "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
     },
     {
-     "nombre": "TechRadar",
-     "url": "https://techradar.com/gaming/gta-6-will-launch-at-30fps-on-ps5-and-xbox-for-now-confirms-rockstar-but-while-60fps-is-reportedly-possible-its-a-40fps-mode-we-really-want-to-see"
+     "nombre": "Rockstar: horarios oficiales",
+     "url": "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s"
     },
     {
-     "nombre": "tbreak",
-     "url": "https://tbreak.com/gta-6-review-codes-embargo-november-18/"
+     "nombre": "Rockstar: instalación",
+     "url": "https://support.rockstargames.com/articles/M6h7B5fJZMwG1dnzQkt4Z/grand-theft-auto-vi-installation-requirements"
+    },
+    {
+     "nombre": "Rockstar: rendimiento",
+     "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now"
     }
    ]
   },
@@ -3242,6 +3580,12 @@
     },
     {
      "p": "Game Informer contó un sistema meteorológico avanzado y más de 170 especies animales; Edge habló de un mapa del doble que el de GTA V. El móvil incluye redes sociales funcionales. En consolas, el juego corre a 30 imágenes por segundo."
+    },
+    {
+     "h": "Qué queda por comprobar"
+    },
+    {
+     "p": "Este reportaje reúne lo mostrado y lo descrito por prensa antes del estreno. No es una prueba del juego final: equilibrio, controles y progresión deben revisarse al publicarse. La confirmación técnica del 10 de noviembre fija un objetivo de 30 fps."
     }
    ],
    "fuentes": [
@@ -3256,6 +3600,10 @@
     {
      "nombre": "Power Up Gaming",
      "url": "https://powerupgaming.co.uk/2026/08/27/every-major-gameplay-detail-revealed-in-netflixs-gta-6-extended-look/"
+    },
+    {
+     "nombre": "Rockstar: anuncio técnico",
+     "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now"
     }
    ]
   },
@@ -3329,7 +3677,7 @@
      ]
     },
     {
-     "p": "Ningún medio ha relacionado el proceso con un cambio de fecha. Lo que sí puede afectar es al soporte de los primeros días si hubiera conflicto."
+     "p": "No hay un cambio de fecha de lanzamiento comunicado oficialmente en relación con este proceso. Las noticias laborales deben seguir atribuidas a sus fuentes; no permiten anticipar efectos sobre el servicio del juego."
     }
    ],
    "fuentes": [
@@ -3366,6 +3714,9 @@
     },
     {
      "p": "Ojo: salvo las cifras de visitas que comunicó Rockstar, el resto son estimaciones de consultoras, no datos oficiales de Take-Two. Xbox, por su parte, asegura que el juego bate récords de reservas en su plataforma."
+    },
+    {
+     "p": "Actualización del 10 de noviembre: el comunicado de resultados de Take-Two del día 9 habla de reservas sin precedentes, pero no da un número de unidades. Por tanto, no convierte las estimaciones anteriores en cifras oficiales."
     }
    ],
    "fuentes": [
@@ -3384,6 +3735,10 @@
     {
      "nombre": "Instant Gaming News",
      "url": "https://news.instant-gaming.com/en/articles/22561-gta-vi-may-have-already-surpassed-6-million-in-pre-orders-alone"
+    },
+    {
+     "nombre": "Take-Two: resultados oficiales",
+     "url": "https://ir.take2games.com/static-files/a43ab8e3-c03a-4b7e-a6a8-f3cd2485e2df"
     }
    ]
   },
@@ -3430,6 +3785,14 @@
  ],
  "videos": [
   {
+   "titulo": "Pre-Load Now",
+   "corto": "Precarga",
+   "fecha_txt": "10 nov 2026",
+   "duracion": "0:30",
+   "texto": "Nuevo vídeo oficial; canción de Tove Lo",
+   "url": "https://www.rockstargames.com/VI/media"
+  },
+  {
    "titulo": "Tráiler 1",
    "corto": "Tráiler 1",
    "fecha_txt": "4 dic 2023",
@@ -3443,7 +3806,7 @@
    "fecha_txt": "6 may 2025",
    "duracion": "2:47",
    "texto": "Jason y Lucia; grabado en PS5",
-   "url": "https://www.rockstargames.com/VI"
+   "url": "https://www.rockstargames.com/VI/media"
   },
   {
    "titulo": "An Extended Look",
@@ -3451,7 +3814,7 @@
    "fecha_txt": "27 ago 2026",
    "duracion": "26:48",
    "texto": "Primer vídeo de juego real (Netflix y YouTube)",
-   "url": "https://www.rockstargames.com/VI"
+   "url": "https://www.rockstargames.com/VI/media"
   },
   {
    "titulo": "Tráiler de lanzamiento",
@@ -3463,6 +3826,12 @@
   }
  ],
  "capturas": [
+  {
+   "icono": "📷",
+   "titulo": "Galería de lanzamiento",
+   "texto": "Capturas oficiales de Vice City y Leonida · 5 nov 2026",
+   "url": "https://www.rockstargames.com/VI/launch-gallery"
+  },
   {
    "icono": "🌴",
    "titulo": "Web oficial de GTA VI",
@@ -3498,6 +3867,12 @@
    "titulo": "Reportaje de Dazed",
    "texto": "Sesión de fotos y primer avance oficial",
    "url": "https://www.igrandtheftauto.com/gta6/news/dazed-brings-us-the-first-official-gta-6-preview"
+  },
+  {
+   "icono": "↓",
+   "titulo": "Descargas oficiales",
+   "texto": "Imágenes y materiales disponibles en Rockstar",
+   "url": "https://www.rockstargames.com/VI/media"
   }
  ],
  "dex": [
@@ -3508,8 +3883,8 @@
    "estado": "oficial",
    "nota": "Viene con el pack de reserva Vintage Vice City, junto a un garaje en Ocean Beach.",
    "fuente": {
-    "nombre": "Rockstar (contenido de ediciones)",
-    "url": "https://www.rockstargames.com/VI"
+    "nombre": "Rockstar: contenido de ediciones",
+    "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
    }
   },
   {
@@ -3519,8 +3894,8 @@
    "estado": "oficial",
    "nota": "Contenido de la edición Ultimate, con decoración minimalista.",
    "fuente": {
-    "nombre": "Rockstar (contenido de ediciones)",
-    "url": "https://www.rockstargames.com/VI"
+    "nombre": "Rockstar: contenido de ediciones",
+    "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
    }
   },
   {
@@ -3530,8 +3905,8 @@
    "estado": "oficial",
    "nota": "Edición Ultimate, con garaje en Watson Bay.",
    "fuente": {
-    "nombre": "Rockstar (contenido de ediciones)",
-    "url": "https://www.rockstargames.com/VI"
+    "nombre": "Rockstar: contenido de ediciones",
+    "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
    }
   },
   {
@@ -3541,8 +3916,8 @@
    "estado": "oficial",
    "nota": "Edición Ultimate.",
    "fuente": {
-    "nombre": "Rockstar (contenido de ediciones)",
-    "url": "https://www.rockstargames.com/VI"
+    "nombre": "Rockstar: contenido de ediciones",
+    "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
    }
   },
   {
@@ -3552,8 +3927,8 @@
    "estado": "oficial",
    "nota": "Vehículo del piso franco de Jason en la edición Ultimate.",
    "fuente": {
-    "nombre": "Rockstar (contenido de ediciones)",
-    "url": "https://www.rockstargames.com/VI"
+    "nombre": "Rockstar: contenido de ediciones",
+    "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
    }
   },
   {
@@ -3563,8 +3938,8 @@
    "estado": "oficial",
    "nota": "Edición Ultimate; aparece en Washington Beach con una caja de explosivos.",
    "fuente": {
-    "nombre": "Rockstar (contenido de ediciones)",
-    "url": "https://www.rockstargames.com/VI"
+    "nombre": "Rockstar: contenido de ediciones",
+    "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
    }
   },
   {
@@ -3574,8 +3949,8 @@
    "estado": "oficial",
    "nota": "Kayak del piso franco de Jason, edición Ultimate.",
    "fuente": {
-    "nombre": "Rockstar (contenido de ediciones)",
-    "url": "https://www.rockstargames.com/VI"
+    "nombre": "Rockstar: contenido de ediciones",
+    "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
    }
   },
   {
@@ -3673,8 +4048,8 @@
    "estado": "oficial",
    "nota": "Versión de él y de ella, en la edición Ultimate.",
    "fuente": {
-    "nombre": "Rockstar (contenido de ediciones)",
-    "url": "https://www.rockstargames.com/VI"
+    "nombre": "Rockstar: contenido de ediciones",
+    "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
    }
   },
   {
@@ -3684,8 +4059,8 @@
    "estado": "oficial",
    "nota": "La pistola personalizada de Jason (Ultimate).",
    "fuente": {
-    "nombre": "Rockstar (contenido de ediciones)",
-    "url": "https://www.rockstargames.com/VI"
+    "nombre": "Rockstar: contenido de ediciones",
+    "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
    }
   },
   {
@@ -3695,8 +4070,8 @@
    "estado": "oficial",
    "nota": "La pistola personalizada de Lucia (Ultimate).",
    "fuente": {
-    "nombre": "Rockstar (contenido de ediciones)",
-    "url": "https://www.rockstargames.com/VI"
+    "nombre": "Rockstar: contenido de ediciones",
+    "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
    }
   },
   {
@@ -3706,8 +4081,8 @@
    "estado": "oficial",
    "nota": "Diseño tropical para la mayoría de armas, del pack de reserva.",
    "fuente": {
-    "nombre": "Rockstar (contenido de ediciones)",
-    "url": "https://www.rockstargames.com/VI"
+    "nombre": "Rockstar: contenido de ediciones",
+    "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
    }
   },
   {
@@ -3970,5 +4345,65 @@
     "url": "https://www.gtaboss.gg/gta-6/guides/gta-6-map"
    }
   }
- ]
+ ],
+ "fuentes_secciones": {
+  "lanzamiento": [
+   {
+    "nombre": "Horarios oficiales",
+    "url": "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s"
+   },
+   {
+    "nombre": "Ediciones",
+    "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
+   },
+   {
+    "nombre": "Instalación",
+    "url": "https://support.rockstargames.com/articles/M6h7B5fJZMwG1dnzQkt4Z/grand-theft-auto-vi-installation-requirements"
+   }
+  ],
+  "historia": [
+   {
+    "nombre": "Sinopsis oficial",
+    "url": "https://www.rockstargames.com/VI"
+   }
+  ],
+  "personajes": [
+   {
+    "nombre": "Perfiles oficiales",
+    "url": "https://www.rockstargames.com/VI/only-in-leonida"
+   }
+  ],
+  "mapa": [
+   {
+    "nombre": "Mapa comunitario GTADB",
+    "url": "https://map.gtadb.org"
+   },
+   {
+    "nombre": "Mapa imprimible anunciado para el 19 nov",
+    "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10"
+   }
+  ],
+  "musica": [
+   {
+    "nombre": "Música oficial",
+    "url": "https://www.rockstargames.com/VI/music"
+   }
+  ],
+  "faq": [
+   {
+    "nombre": "Soporte oficial de GTA VI",
+    "url": "https://support.rockstargames.com/VI"
+   }
+  ],
+  "fotos": [
+   {
+    "nombre": "Vídeos y descargas oficiales",
+    "url": "https://www.rockstargames.com/VI/media"
+   },
+   {
+    "nombre": "Galería de lanzamiento",
+    "url": "https://www.rockstargames.com/VI/launch-gallery"
+   }
+  ]
+ }
 }
