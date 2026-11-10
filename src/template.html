@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LeonidaDex</title>
-<meta name="description" content="LeonidaDex, la enciclopedia en español de GTA VI que se actualiza sola: cuenta atrás, noticias, mapa de Leonida, personajes, sistemas de juego, guías, misiones, trucos y misterios.">
+<title>LeonidaDex | GTA VI en español: mapa, noticias y guías</title>
+<meta name="description" content="La enciclopedia en español de GTA VI: noticias con fuentes, mapa de Leonida, personajes, sistemas de juego, guías, misiones, trucos y misterios.">
 <meta name="theme-color" content="#120a1c">
 <meta property="og:title" content="LeonidaDex · La enciclopedia de GTA VI">
 <meta property="og:description" content="Cuenta atrás, noticias diarias, mapa de Leonida, guías, trucos y misterios de Grand Theft Auto VI.">
@@ -745,7 +745,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
 
 <header class="topbar">
   <div class="wrap">
-    <a class="brand" href="#inicio" aria-label="LeonidaDex.net, inicio"><span class="b-word">LEONIDA</span><span class="b-script">Dex</span><span class="b-tld">.net</span></a>
+    <a class="brand" href="#inicio" aria-label="LeonidaDex.net, inicio"><img class="brand-icon" src="assets/caiman-192.png" width="36" height="36" alt=""><span class="b-word">LEONIDA</span><span class="b-script">Dex</span><span class="b-tld">.net</span></a>
     <nav class="nav" aria-label="Secciones">
       <a class="nav-top" href="#noticias">Noticias</a>
       <a class="nav-top" href="#mapa">Mapa</a>
@@ -797,7 +797,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
       <p class="rec" aria-hidden="true"><i></i>REC · <span id="recClock">--:--:--</span> · Vice City</p>
       <p class="script">La enciclopedia de GTA VI</p>
       <h1>Leonida<span class="dex">Dex</span></h1>
-      <p class="thesis">Todo lo que se sabe de <strong>Grand Theft Auto VI</strong>, en español y al día: noticias, mapa, sistemas, guías, misiones, trucos y misterios. <strong>Se actualiza sola tres veces al día.</strong></p>
+      <p class="thesis">Todo lo que se sabe de <strong>Grand Theft Auto VI</strong>, en español: noticias, mapa, sistemas, guías, misiones, trucos y misterios. <strong>Con fuentes y fecha de actualización.</strong></p>
       <div class="cta">
         <a class="btn btn-primary" href="#noticias">Últimas noticias</a>
         <a class="btn btn-ghost" href="#mapa">Explorar el mapa</a>
@@ -1146,7 +1146,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
 <footer>
   <div class="wrap foot">
     <div>
-      <a class="brand" href="#inicio"><span class="b-word">LEONIDA</span><span class="b-script">Dex</span><span class="b-tld">.net</span></a>
+      <a class="brand" href="#inicio"><img class="brand-icon" src="assets/caiman-192.png" width="36" height="36" alt=""><span class="b-word">LEONIDA</span><span class="b-script">Dex</span><span class="b-tld">.net</span></a>
       <p class="disclaimer">LeonidaDex es una enciclopedia hecha por fans, no oficial. No está afiliada a Rockstar Games ni a Take-Two Interactive. Grand Theft Auto, GTA VI y los nombres relacionados son marcas de sus propietarios. Los textos son resúmenes propios con enlace a cada fuente.</p>
       <p class="disclaimer">Mapa base y puntos de la comunidad: «GTA VI Map Tiles» y «GTA VI Landmarks Data» (CC BY 4.0) — <a href="https://map.gtadb.org" target="_blank" rel="noopener">map.gtadb.org</a>, de Yanis y los colaboradores de GTADB. Adaptación: recorte, teselas WebP, coordenadas convertidas y textos en español. <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" rel="noopener">Licencia</a>.</p>
       <p class="disclaimer" id="footStatus"></p>
@@ -1400,21 +1400,13 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
   }
 
   var fmtUpd = new Intl.DateTimeFormat("es-ES", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit", timeZone: "Europe/Madrid" });
-  function nextSlot() {
-    var slots = arr(DYN.meta && DYN.meta.horario_actualizaciones);
-    if (!slots.length) return "";
-    var p = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Madrid", hour: "2-digit", minute: "2-digit", hour12: false }).format(new Date());
-    var nx = slots.filter(function (s) { return s > p; })[0];
-    return nx ? nx : slots[0] + " (mañana)";
-  }
   function renderStatus() {
     var meta = DYN.meta || {}, upd = meta.actualizado ? new Date(meta.actualizado) : null;
     var stale = upd ? (Date.now() - upd.getTime()) > 14 * 3600000 : true;
     $("#statusDot").classList.toggle("warn", stale);
     var txt = upd ? "Actualizada el " + fmtUpd.format(upd) + " (hora peninsular)" : "Sin fecha de actualización";
-    var nx = nextSlot();
-    $("#statusText").textContent = txt + (nx ? " · Próxima revisión: " + nx : "") + (stale ? " · Revisión pendiente" : "");
-    $("#footStatus").textContent = txt + ". Revisiones automáticas a las " + arr(meta.horario_actualizaciones).join(", ") + " (hora peninsular). Datos: " + source + ".";
+    $("#statusText").textContent = txt;
+    $("#footStatus").textContent = txt + ". Consulta las fuentes de cada noticia.";
   }
 
   /* ---------------- Lanzamiento ---------------- */
@@ -1983,7 +1975,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
       if (arr(g.checklist).length) body += checklistHTML(g.id, g.checklist);
       if (arr(g.consejos).length) body += '<ul class="tips">' + g.consejos.map(function (p) { return "<li>" + esc(p) + "</li>"; }).join("") + "</ul>";
       if (arr(g.fuentes).length) body += '<p class="src" style="margin-top:10px">Fuente: ' + srcLinks(g.fuentes) + "</p>";
-      if (pend) body = '<p class="note">Esta guía se completará cuando salga el juego, el 19 de noviembre. Las actualizaciones automáticas la irán rellenando.</p>';
+      if (pend) body = '<p class="note">Esta guía se completará cuando haya información contrastada después del lanzamiento del juego.</p>';
       var id = "g-" + g.id;
       return '<details class="guide' + (pend ? " pendiente" : "") + '" id="' + esc(id) + '"' + (openIds.indexOf(id) >= 0 ? " open" : "") + '><summary><div class="g-meta"><span class="badge ' + (pend ? "pendiente" : "disponible") + '">' + (pend ? "Desde el 19 nov" : "Disponible") + '</span><span class="badge">' + esc(g.categoria) + '</span><span class="tm">' + esc(g.nivel || "") + (g.tiempo && g.tiempo !== "—" ? " · " + esc(g.tiempo) : "") + "</span></div><h3>" + esc(g.titulo) + "</h3><p>" + esc(g.resumen) + '</p></summary><div class="g-body">' + body + "</div></details>";
     }).join("");
@@ -2003,7 +1995,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
   function renderMissions() {
     var ms = arr(DYN.misiones);
     if (!ms.length) {
-      $("#missions").innerHTML = '<div class="missions-empty"><div class="locked"><div class="big">Se desbloquea el 19 nov</div><p>En cuanto salga el juego, las revisiones automáticas irán añadiendo cada misión con objetivos, recompensas y consejos, ordenadas por capítulos.</p><p class="note">Recuerda: entre misiones habrá momentos en los que tendrás que reunir dinero para avanzar.</p></div><div><h3>Lo que ya hemos visto</h3><ul class="known">' + BASE.misiones_conocidas.map(function (m, i) { return '<li id="mk-' + i + '"><b>' + esc(m.titulo) + "</b><span>" + esc(m.texto) + "</span></li>"; }).join("") + "</ul></div></div>";
+      $("#missions").innerHTML = '<div class="missions-empty"><div class="locked"><div class="big">Desde el lanzamiento</div><p>Añadiremos misiones con objetivos, recompensas y consejos, ordenadas por capítulos, cuando haya información contrastada.</p><p class="note">Recuerda: entre misiones habrá momentos en los que tendrás que reunir dinero para avanzar.</p></div><div><h3>Lo que ya hemos visto</h3><ul class="known">' + BASE.misiones_conocidas.map(function (m, i) { return '<li id="mk-' + i + '"><b>' + esc(m.titulo) + "</b><span>" + esc(m.texto) + "</span></li>"; }).join("") + "</ul></div></div>";
       return;
     }
     $("#misLede").textContent = "Marca las misiones que completes; se guardan en este navegador. Cada misión enlaza a su fuente.";
