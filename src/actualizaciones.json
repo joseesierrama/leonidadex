@@ -1,0 +1,999 @@
+{
+  "meta": {
+    "actualizado": "2026-11-10T08:32:00+01:00",
+    "lanzamiento": "2026-11-19T00:00:00",
+    "nota_lanzamiento": "Medianoche hora local · PS5 y Xbox Series X|S",
+    "fase": "prelanzamiento",
+    "horario_actualizaciones": [
+      "08:23",
+      "14:23",
+      "21:23"
+    ],
+    "aviso": ""
+  },
+  "hitos": [
+    {
+      "id": "reservas",
+      "fecha": "2026-06-25",
+      "titulo": "Reservas abiertas"
+    },
+    {
+      "id": "extended",
+      "fecha": "2026-08-27",
+      "titulo": "An Extended Look"
+    },
+    {
+      "id": "trailer-lanzamiento",
+      "fecha": "2026-10-15",
+      "titulo": "Tráiler de lanzamiento"
+    },
+    {
+      "id": "precarga",
+      "fecha": "2026-11-10",
+      "titulo": "Precarga"
+    },
+    {
+      "id": "analisis",
+      "fecha": "2026-11-18",
+      "titulo": "Análisis de la prensa"
+    },
+    {
+      "id": "lanzamiento",
+      "fecha": "2026-11-19",
+      "titulo": "Lanzamiento"
+    }
+  ],
+  "eventos": [
+    {
+      "fecha": "2026-11-12",
+      "titulo": "Ediciones físicas en tiendas (código en la caja)",
+      "lugar": "Tiendas",
+      "estado": "oficial"
+    },
+    {
+      "fecha": "2026-11-12",
+      "fin": "2026-11-26",
+      "titulo": "Votación sindical de la plantilla británica de Rockstar",
+      "lugar": "Reino Unido",
+      "estado": "prensa"
+    },
+    {
+      "fecha": "2026-11-17",
+      "fin": "2026-11-18",
+      "titulo": "Alegatos finales del juicio por los despidos de 2025",
+      "lugar": "Tribunal laboral, Glasgow",
+      "estado": "prensa"
+    },
+    {
+      "fecha": "2026-11-18",
+      "titulo": "Se levanta el embargo de los análisis (12:01–13:01, hora peninsular)",
+      "lugar": "Prensa",
+      "estado": "rumor"
+    },
+    {
+      "fecha": "2026-11-18",
+      "titulo": "«A Night in Vice City»: Miami Heat contra Milwaukee Bucks",
+      "lugar": "Kaseya Center, Miami",
+      "estado": "oficial"
+    },
+    {
+      "fecha": "2026-11-19",
+      "titulo": "Lanzamiento mundial de GTA VI a las 00:00 de tu hora local",
+      "lugar": "PS5 y Xbox Series X|S",
+      "estado": "oficial"
+    },
+    {
+      "fecha": "2026-11-20",
+      "titulo": "Fiesta de lanzamiento en NINE1NINE",
+      "lugar": "E11EVEN, Miami",
+      "estado": "oficial"
+    },
+    {
+      "fecha": "2026-11-20",
+      "fin": "2026-11-22",
+      "titulo": "«The Vault»: tres noches temáticas de Vice City",
+      "lugar": "Club Space, Miami",
+      "estado": "oficial"
+    },
+    {
+      "fecha": "2026-11-21",
+      "titulo": "Grand Theft Auto VI: The Festival",
+      "lugar": "Miami",
+      "estado": "oficial"
+    },
+    {
+      "fecha": "2026-11-22",
+      "titulo": "BAYO block party gratuita patrocinada por Rockstar",
+      "lugar": "Little Haiti, Miami",
+      "estado": "prensa"
+    }
+  ],
+  "noticias": [
+    {
+      "id": "precarga-abierta",
+      "fecha": "2026-11-10",
+      "categoria": "Lanzamiento",
+      "estado": "oficial",
+      "destacada": true,
+      "titulo": "Ya puedes precargar GTA VI",
+      "resumen": "La precarga digital se abrió a medianoche (hora local) del 10 de noviembre en PS5 y a las 00:00 GMT en Xbox Series X|S, que en la España peninsular fue la 01:00. Necesitas hasta 212 GB libres, según la consola. Precargar no adelanta nada: el juego se desbloquea el 19 de noviembre a medianoche, hora local. Los jugadores de Nueva Zelanda fueron los primeros en empezar la descarga por la diferencia horaria.",
+      "fuentes": [
+        {
+          "nombre": "PlayNews",
+          "url": "https://www.playnews.gg/es/fechas-de-lanzamiento/la-precarga-de-gta-6-empieza-el-10-de-noviembre-con-hasta-212-gb-y-codigos-en-caja-desde-el-12-de-noviembre"
+        },
+        {
+          "nombre": "EGW News",
+          "url": "https://egw.news/gaming/news/38350/rockstar-games-announced-grand-theft-auto-vi-the-f-U4cOvK4oc"
+        }
+      ]
+    },
+    {
+      "id": "take-two-q2-fy27",
+      "fecha": "2026-11-09",
+      "categoria": "Negocio",
+      "estado": "oficial",
+      "titulo": "Take-Two: a diez días del lanzamiento, reservas «sin precedentes»",
+      "resumen": "En sus resultados del segundo trimestre fiscal, Take-Two dice que las reservas de GTA VI siguen en niveles nunca vistos y que espera un año histórico. Strauss Zelnick añadió a Variety que las preventas van muy por encima de lo previsto, aunque no hay cifras oficiales.",
+      "fuentes": [
+        {
+          "nombre": "Take-Two (SEC)",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000946581/000162828026072175/ttwo2q27earningsrelease.htm"
+        },
+        {
+          "nombre": "Variety",
+          "url": "https://variety.com/2026/gaming/news/gta-6-preorders-expectations-launch-1236943278/"
+        }
+      ]
+    },
+    {
+      "id": "the-festival",
+      "fecha": "2026-11-09",
+      "categoria": "Evento",
+      "estado": "oficial",
+      "titulo": "Rockstar anuncia «Grand Theft Auto VI: The Festival» en Miami",
+      "resumen": "Un evento musical en directo para el 21 de noviembre, dos días después del lanzamiento. Iremos ampliando cartel, recinto y entradas en cuanto Rockstar publique todos los detalles.",
+      "fuentes": [
+        {
+          "nombre": "EGW News",
+          "url": "https://egw.news/gaming/news/38350/rockstar-games-announced-grand-theft-auto-vi-the-f-U4cOvK4oc"
+        }
+      ]
+    },
+    {
+      "id": "uk-dias-libres",
+      "fecha": "2026-11-09",
+      "categoria": "Curiosidad",
+      "estado": "prensa",
+      "titulo": "Reino Unido: 83.000 trabajadores piden libre el 19 de noviembre",
+      "resumen": "Un estudio recogido por LADbible calcula que decenas de miles de británicos han pedido vacaciones para jugar el día del lanzamiento, con un coste en permisos retribuidos de unos 12 millones de libras.",
+      "fuentes": [
+        {
+          "nombre": "LADbible",
+          "url": "https://www.ladbible.com/news/uk-news/gta-employees-time-off-requests-779084-20261109"
+        }
+      ]
+    },
+    {
+      "id": "cajas-poster",
+      "fecha": "2026-11-07",
+      "categoria": "Lanzamiento",
+      "estado": "prensa",
+      "titulo": "Llegan las cajas: código de descarga y póster de regalo",
+      "resumen": "La edición física no trae disco: incluye un código de descarga y estará a la venta desde el 12 de noviembre para que puedas precargar. Cada caja con código incluye un póster de doble cara. La trasera muestra un icono de funciones online, que apunta al futuro modo en línea.",
+      "fuentes": [
+        {
+          "nombre": "RockstarINTEL",
+          "url": "https://rockstarintel.com/gta-6-box-copies-begin-arriving-reveals-online-feature-new-screenshots-and-more/"
+        }
+      ]
+    },
+    {
+      "id": "nine1nine",
+      "fecha": "2026-11-06",
+      "categoria": "Evento",
+      "estado": "oficial",
+      "titulo": "E11EVEN se convierte en NINE1NINE, el club de Vice City",
+      "resumen": "El famoso club de Miami se transformó el 6 de noviembre en NINE1NINE, su parodia dentro del juego, con Flo Rida como cabeza de cartel. Prepara otra fiesta de lanzamiento para el 20 de noviembre.",
+      "fuentes": [
+        {
+          "nombre": "DJ Mag",
+          "url": "https://djmag.com/news/gta-vi-inspired-nine1nine-nightclub-open-one-night-miami"
+        },
+        {
+          "nombre": "games.gg",
+          "url": "https://games.gg/news/gta-6-e11even-miami-nine1nine-takeover/"
+        }
+      ]
+    },
+    {
+      "id": "the-vault-club-space",
+      "fecha": "2026-11-05",
+      "categoria": "Evento",
+      "estado": "oficial",
+      "titulo": "Club Space será «The Vault» del 20 al 22 de noviembre",
+      "resumen": "Club Space, que según DJ Mag inspiró al club The Vault del juego, organiza tres noches temáticas. El domingo 22 la programa CircoLoco Records Radio, con Palms Trax, que en el juego es «Palmsy», copresentador de AfroBank FM.",
+      "fuentes": [
+        {
+          "nombre": "DJ Mag",
+          "url": "https://djmag.com/news/miamis-club-space-transform-gta-vis-fictional-nightclub-vault"
+        },
+        {
+          "nombre": "EDM House Network",
+          "url": "https://edmhousenetwork.com/vice-citys-circoloco-records-radio-set-to-take-over-club-space/"
+        }
+      ]
+    },
+    {
+      "id": "ps5-pro-filtracion",
+      "fecha": "2026-11-04",
+      "categoria": "Técnica",
+      "estado": "rumor",
+      "titulo": "Filtración: PSSR y trazado de rayos avanzado en PS5 Pro",
+      "resumen": "Una página de PlayStation publicada antes de tiempo listaba dos mejoras para PS5 Pro: escalado PSSR y trazado de rayos avanzado. Ni Sony ni Rockstar lo han confirmado. En las previews de agosto, la demo corría a 30 fps en una PS5 normal.",
+      "fuentes": [
+        {
+          "nombre": "GTA Boom",
+          "url": "https://www.gtaboom.com/leaked-playstation-page-reveals-ps5-pro-upgrades-for-gta-6-43c1"
+        },
+        {
+          "nombre": "Power Up Gaming",
+          "url": "https://powerupgaming.co.uk/2026/11/04/gta-6-ps5-pro-leak-raises-doubts/"
+        }
+      ]
+    },
+    {
+      "id": "212gb",
+      "fecha": "2026-11-03",
+      "categoria": "Lanzamiento",
+      "estado": "oficial",
+      "titulo": "212 GB y precarga adelantada al 10 de noviembre",
+      "resumen": "Rockstar confirmó que hacen falta hasta 212 GB libres y adelantó dos días la precarga, que antes se esperaba para el 12. También ofrecerá gratis un póster con el mapa de Leonida para imprimir en casa.",
+      "fuentes": [
+        {
+          "nombre": "TweakTown",
+          "url": "https://www.tweaktown.com/news/114473/rockstar-reveals-gta-6-pre-load-times-confirms-212gb-install-size/index.html"
+        },
+        {
+          "nombre": "MP1st",
+          "url": "https://mp1st.com/?p=317929"
+        }
+      ]
+    },
+    {
+      "id": "edge-430",
+      "fecha": "2026-10-29",
+      "categoria": "Jugabilidad",
+      "estado": "prensa",
+      "titulo": "Edge #430: el mapa dobla al de GTA V y la policía tiene memoria",
+      "resumen": "Edge vio 90 minutos de juego en Rockstar North. Leonida dobla el mapa de GTA V y su superficie se acerca a la suma de GTA IV, GTA V y Red Dead Redemption 2. Las calles son más estrechas, el día dura más y la policía arma tu descripción con tu ropa, tu arma, tu acompañante y las cámaras de seguridad.",
+      "fuentes": [
+        {
+          "nombre": "GTA Boom",
+          "url": "https://gtaboom.com/gta-6-edge-preview-new-gameplay-details-5848"
+        },
+        {
+          "nombre": "tbreak",
+          "url": "https://tbreak.com/gta-6-map-size-gta-4-gta-5-rdr2-combined/"
+        }
+      ]
+    },
+    {
+      "id": "votacion-sindical",
+      "fecha": "2026-10-27",
+      "categoria": "Negocio",
+      "estado": "prensa",
+      "destacada": false,
+      "titulo": "Votación sindical en Rockstar del 12 al 26 de noviembre",
+      "resumen": "La plantilla británica de Rockstar votará entre el 12 y el 26 de noviembre si reconoce al sindicato IWGB, un plazo que abarca el lanzamiento. Aparte, un tribunal de Glasgow revisa los despidos de 2025; los alegatos finales están previstos el 17 y 18 de noviembre.",
+      "fuentes": [
+        {
+          "nombre": "Game Developer",
+          "url": "https://www.gamedeveloper.com/business/rockstar-workers-to-vote-on-unionization-ahead-of-grand-theft-auto-vi-release"
+        },
+        {
+          "nombre": "God is a Geek",
+          "url": "https://godisageek.com/?p=313702"
+        }
+      ]
+    },
+    {
+      "id": "embargo-analisis",
+      "fecha": "2026-10-26",
+      "categoria": "Lanzamiento",
+      "estado": "rumor",
+      "titulo": "Los análisis llegarían el 18 de noviembre",
+      "resumen": "Según el insider NateTheHate, cuya información Insider Gaming dice haber verificado, Rockstar ya ha repartido copias a la prensa con embargo el 18 de noviembre. Se habla de una ventana entre las 12:01 y las 13:01, hora peninsular. Rockstar no lo ha confirmado.",
+      "fuentes": [
+        {
+          "nombre": "Insider Gaming",
+          "url": "https://insider-gaming.com/grand-theft-auto-6-review-embargo/"
+        },
+        {
+          "nombre": "tbreak",
+          "url": "https://tbreak.com/gta-6-review-codes-embargo-november-18/"
+        }
+      ]
+    },
+    {
+      "id": "trailer-lanzamiento",
+      "fecha": "2026-10-15",
+      "categoria": "Oficial",
+      "estado": "oficial",
+      "titulo": "Tráiler de lanzamiento, por sorpresa",
+      "resumen": "Sin aviso previo, Rockstar publicó un tráiler de lanzamiento de alrededor de minuto y medio, capturado en PS5, que vuelve a confirmar el 19 de noviembre.",
+      "fuentes": [
+        {
+          "nombre": "Insider Gaming",
+          "url": "https://insider-gaming.com/gta-trailers-timeline-gta-6/"
+        },
+        {
+          "nombre": "Mezha",
+          "url": "https://mezha.ua/en/news/gta-6-release-trailer-316212/"
+        }
+      ]
+    },
+    {
+      "id": "seis-millones",
+      "fecha": "2026-10-13",
+      "categoria": "Negocio",
+      "estado": "prensa",
+      "destacada": false,
+      "titulo": "Más de seis millones de reservas digitales",
+      "resumen": "Sensor Tower calcula unas 6,08 millones de reservas digitales a 13 de octubre, con alrededor de 594 millones de dólares de ingresos: 74 % en PS5 y 26 % en Xbox. No incluye copias físicas ni son datos oficiales de Take-Two.",
+      "fuentes": [
+        {
+          "nombre": "Instant Gaming News",
+          "url": "https://news.instant-gaming.com/en/articles/22561-gta-vi-may-have-already-surpassed-6-million-in-pre-orders-alone"
+        }
+      ]
+    },
+    {
+      "id": "radios",
+      "fecha": "2026-10-08",
+      "categoria": "Música",
+      "estado": "oficial",
+      "titulo": "Seis emisoras y presentadores de primera",
+      "resumen": "Cocoteo FM (Bad Bunny y RaiNao), Back Country Radio (Morgan Wallen y Lana Del Rey), AfroBank FM (Burna Boy y Palms Trax), The Chamber 106.6 (Kerry King y Tom Araya), Flash FM (Robyn y Alex Consani) y Dirty South Classics (Trick Daddy y Trina). La radio también se escucha a pie, con auriculares conectados al móvil del personaje, y habrá podcasts bajo demanda.",
+      "fuentes": [
+        {
+          "nombre": "PC Guide",
+          "url": "https://pcguide.com/news/rockstar-reveals-six-gta-6-radio-stations-and-confirmed-songs-so-far-with-a-stacked-lineup-of-real-world-hosts"
+        }
+      ]
+    },
+    {
+      "id": "pegi-esrb",
+      "fecha": "2026-10-02",
+      "categoria": "Oficial",
+      "estado": "oficial",
+      "titulo": "Calificación oficial: PEGI 18 y ESRB Mature 17+",
+      "resumen": "En EE. UU. lleva siete descriptores: sangre, violencia intensa, humor adulto, desnudos, lenguaje fuerte, contenido sexual explícito y consumo de drogas y alcohol, además de compras dentro del juego. En Europa es PEGI 18.",
+      "fuentes": [
+        {
+          "nombre": "GTA Boom",
+          "url": "https://www.gtaboom.com/gta-6-ratings-sex-scenes-in-game-purchases-c8c7"
+        },
+        {
+          "nombre": "iTechGuides",
+          "url": "https://www.itechguides.com/gta-6-age-rating-and-mature-content-what-parents-should-know/"
+        }
+      ]
+    },
+    {
+      "id": "heat-vice-city",
+      "fecha": "2026-10-02",
+      "categoria": "Evento",
+      "estado": "oficial",
+      "titulo": "Los Miami Heat serán «Vice City» por una noche",
+      "resumen": "El 18 de noviembre, víspera del lanzamiento, los Heat reciben a los Bucks en «A Night in Vice City», con pista, uniformes y colección de ropa especiales. En el tejado del Kaseya Center ya luce un enorme «Welcome to Vice City».",
+      "fuentes": [
+        {
+          "nombre": "The Source",
+          "url": "https://thesource.com/2026/10/02/miami-heat-rockstar-games-night-in-vice-city-gta-vi/"
+        },
+        {
+          "nombre": "KeenGamer",
+          "url": "https://www.keengamer.com/articles/news/gta-vi-and-miami-heat-team-up-for-a-night-in-vice-city-on-november-18/"
+        }
+      ]
+    },
+    {
+      "id": "game-informer",
+      "fecha": "2026-09-29",
+      "categoria": "Jugabilidad",
+      "estado": "prensa",
+      "titulo": "Game Informer: tormentas y más de 170 especies animales",
+      "resumen": "La portada de Game Informer (14 páginas y 12 capturas nuevas) detalla un clima que imita el lado menos soleado de Florida y una fauna de más de 170 especies en tierra, mar y aire.",
+      "fuentes": [
+        {
+          "nombre": "GamerFuzion",
+          "url": "https://www.gamerfuzion.com/gta-6-game-informer-hurricanes-170-animal-species/"
+        },
+        {
+          "nombre": "ARY News",
+          "url": "https://arynews.tv/gta-6-will-feature-wildlife-ecosystem-with-over-170-animal-species"
+        }
+      ]
+    },
+    {
+      "id": "coleccionable-400",
+      "fecha": "2026-09-24",
+      "categoria": "Curiosidad",
+      "estado": "oficial",
+      "titulo": "Set coleccionable de 400 $, sin juego dentro",
+      "resumen": "Rockstar presentó «The Goodtime State – Vice City Collection», un coleccionable de unos 400 dólares. Importante: no incluye una copia del juego.",
+      "fuentes": [
+        {
+          "nombre": "RockstarINTEL",
+          "url": "https://rockstarintel.com/new-gta-6-details-to-be-revealed-in-game-informer-cover-story/"
+        },
+        {
+          "nombre": "Mezha",
+          "url": "https://mezha.ua/en/news/gta-6-release-trailer-316212/"
+        }
+      ]
+    },
+    {
+      "id": "xbox-record",
+      "fecha": "2026-09-24",
+      "categoria": "Negocio",
+      "estado": "oficial",
+      "destacada": false,
+      "titulo": "Xbox presume de récord de reservas",
+      "resumen": "Ante informes que hablaban de una enorme ventaja de PS5, Matthew Ball, de Xbox, afirmó que GTA VI ya bate récords de reservas en su plataforma y que su cuota coincide con la del mercado de consolas. Sensor Tower estimaba un reparto del 77 % para PlayStation y el 23 % para Xbox.",
+      "fuentes": [
+        {
+          "nombre": "The Source",
+          "url": "https://thesource.com/2026/09/25/xbox-says-gta-6-is-breaking-its-preorder-records-as-playstation-leads-the-conversation/"
+        },
+        {
+          "nombre": "God is a Geek",
+          "url": "https://godisageek.com/2026/09/gta-6-preorders-xbox-ps5/"
+        }
+      ]
+    },
+    {
+      "id": "online-2027",
+      "fecha": "2026-09-17",
+      "categoria": "Online",
+      "estado": "rumor",
+      "titulo": "¿El nuevo GTA Online en 2027?",
+      "resumen": "El CEO de Twitch, Dan Clancy, dijo a Bloomberg que el gran salto llegará «el año que viene», cuando se lance el multijugador. Rockstar no ha anunciado el nuevo online. Take-Two sí asegura que seguirá dando soporte al GTA Online actual.",
+      "fuentes": [
+        {
+          "nombre": "TheSixthAxis",
+          "url": "https://www.thesixthaxis.com/2026/09/17/twitch-ceo-claims-gta-6-online-will-launch-in-2027/"
+        },
+        {
+          "nombre": "The Shortcut",
+          "url": "https://www.theshortcut.com/p/gta-6-online-could-arrive-next-year-says-twitch-ceo"
+        }
+      ]
+    },
+    {
+      "id": "artistas",
+      "fecha": "2026-09-15",
+      "categoria": "Música",
+      "estado": "prensa",
+      "titulo": "Travis Scott, Future y Metro Boomin, dentro del juego",
+      "resumen": "Varios artistas anunciaron su participación con imágenes al estilo GTA VI: Travis Scott, Future, Metro Boomin, Keith Richards, Morgan Wallen, Rauw Alejandro, PinkPantheress y Yung Lean, entre otros. Travis Scott se vinculó al club Jack of Hearts.",
+      "fuentes": [
+        {
+          "nombre": "Notebookcheck",
+          "url": "https://www.notebookcheck.org/Se-revelan-las-colaboraciones-de-GTA-6-Travis-Scott-Future-Keith-Richards-y-otros-comparten-avances.1400303.0.html"
+        },
+        {
+          "nombre": "HotNewHipHop",
+          "url": "https://www.hotnewhiphop.com/1009779-future-metro-boomin-gta-vi"
+        }
+      ]
+    },
+    {
+      "id": "horarios-desbloqueo",
+      "fecha": "2026-09-07",
+      "categoria": "Lanzamiento",
+      "estado": "prensa",
+      "destacada": false,
+      "titulo": "Se desbloquea a medianoche de cada país",
+      "resumen": "Las fichas de la PlayStation Store muestran un lanzamiento escalonado a las 00:00 locales del 19 de noviembre: Nueva Zelanda abre primero y Centroamérica cierra la ronda unas 19 horas después. En la España peninsular, a las 00:00 del jueves 19. Rockstar no ha detallado horarios de Xbox.",
+      "fuentes": [
+        {
+          "nombre": "God is a Geek",
+          "url": "https://godisageek.com/2026/09/gta-6-release-times-by-region/"
+        },
+        {
+          "nombre": "Dexerto",
+          "url": "https://www.dexerto.com/gta/north-american-gta-6-fans-will-be-among-the-last-to-play-thanks-to-regional-launch-3406565/"
+        }
+      ]
+    },
+    {
+      "id": "nyt-80-horas",
+      "fecha": "2026-08-28",
+      "categoria": "Jugabilidad",
+      "estado": "prensa",
+      "titulo": "80 horas, 600.000 animaciones y un mapa tres veces el de RDR2",
+      "resumen": "En The New York Times, Rob Nelson (Rockstar North) contó que su última partida completa, en febrero, duró unas 80 horas con algunos objetivos opcionales que cambian la historia. El juego supera las 600.000 animaciones, frente a unas 55.000 en GTA V y unas 300.000 en RDR2.",
+      "fuentes": [
+        {
+          "nombre": "iGrandTheftAuto",
+          "url": "https://www.igrandtheftauto.com/gta6/news/new-york-times-reveals-new-gta-6-details-600000-animations-huge-map-80-hour-playthrough-and-more"
+        },
+        {
+          "nombre": "TechRadar",
+          "url": "https://techradar.com/gaming/gta-6-will-be-a-massive-game-and-rockstars-longest-yet-as-the-studio-confirms-it-can-take-up-to-80-hours-to-beat"
+        }
+      ]
+    },
+    {
+      "id": "perfil-criminal",
+      "fecha": "2026-08-28",
+      "categoria": "Jugabilidad",
+      "estado": "prensa",
+      "titulo": "Perfil criminal: tu reputación como delincuente",
+      "resumen": "Rob Nelson explicó a IGN el Perfil Criminal: no mide si eres bueno o malo, sino cómo cometes los delitos. Va de «Profesional» a «Irredimible» y se combina con una policía que busca a partir de descripciones de sospechosos.",
+      "fuentes": [
+        {
+          "nombre": "GamingBolt",
+          "url": "https://gamingbolt.com/?p=651669"
+        },
+        {
+          "nombre": "Gfinity",
+          "url": "https://www.gfinityesports.com/article/gta-6-how-the-criminal-profile-works"
+        }
+      ]
+    },
+    {
+      "id": "30fps",
+      "fecha": "2026-08-28",
+      "categoria": "Técnica",
+      "estado": "prensa",
+      "destacada": false,
+      "titulo": "30 fps en consolas, también en PS5 Pro (de momento)",
+      "resumen": "Rob Nelson, de Rockstar North, explicó en un avance que el juego funciona a 30 imágenes por segundo en consolas durante el desarrollo y que aún deben decidir si habrá un modo de 60. El Extended Look se grabó en una PS5 estándar a esa tasa.",
+      "fuentes": [
+        {
+          "nombre": "TechRadar",
+          "url": "https://techradar.com/gaming/gta-6-will-launch-at-30fps-on-ps5-and-xbox-for-now-confirms-rockstar-but-while-60fps-is-reportedly-possible-its-a-40fps-mode-we-really-want-to-see"
+        },
+        {
+          "nombre": "Push Square",
+          "url": "https://www.pushsquare.com/news/2026/08/gta-6-targeting-30fps-on-ps5-undecided-on-performance-mode"
+        }
+      ]
+    },
+    {
+      "id": "reservas-netflix",
+      "fecha": "2026-08-28",
+      "categoria": "Negocio",
+      "estado": "prensa",
+      "destacada": false,
+      "titulo": "Las reservas se disparan tras el Extended Look",
+      "resumen": "Según Sensor Tower, las reservas del 27 de agosto superaron en más de un 570 % la media diaria reciente, con un salto mucho mayor en PlayStation que en Xbox. El vídeo llegó a ser lo más visto en la lista de películas de Netflix.",
+      "fuentes": [
+        {
+          "nombre": "iGrandTheftAuto",
+          "url": "https://www.igrandtheftauto.com/gta6/news/gta-6-pre-orders-surge-570-percent-following-netflix-extended-look"
+        }
+      ]
+    },
+    {
+      "id": "extended-look",
+      "fecha": "2026-08-27",
+      "categoria": "Oficial",
+      "estado": "oficial",
+      "titulo": "An Extended Look: 26 minutos de juego real",
+      "resumen": "Primero en Netflix y horas después en YouTube, Rockstar mostró gameplay capturado en una PS5 normal: seis estrellas de búsqueda, modo focus a cámara lenta, cambio rápido entre Jason y Lucia, salto base, buceo, motos de agua y carreras.",
+      "fuentes": [
+        {
+          "nombre": "TechRadar",
+          "url": "https://techradar.com/gaming/ps5/16-new-gta-6-details-we-learned-from-the-big-extended-look-gameplay-video-captured-in-game-on-a-ps5"
+        },
+        {
+          "nombre": "Red Bull",
+          "url": "https://www.redbull.com/za-en/gta-6-extended-look-everything-revealed"
+        }
+      ]
+    },
+    {
+      "id": "rockstar-casi-terminado",
+      "fecha": "2026-08-26",
+      "categoria": "Oficial",
+      "estado": "oficial",
+      "destacada": false,
+      "titulo": "Rockstar rompe el silencio: «casi terminado»",
+      "resumen": "Rockstar calificó las filtraciones de desgarradoras para su equipo, pidió perdón por lo larga que ha sido la espera y aseguró que el juego está casi listo. Confirmó que la fecha del 19 de noviembre no cambia y pidió a los fans que lo descubran jugando.",
+      "fuentes": [
+        {
+          "nombre": "Engadget",
+          "url": "https://engadget.com/2244659/rockstar-calls-gta-6-leaks-heartbreaking-says-game-is-nearly-finished/"
+        },
+        {
+          "nombre": "Push Square",
+          "url": "https://www.pushsquare.com/news/2026/08/rockstar-issues-statement-on-gta-6-leaks-apologises-for-how-long-gameplay-reveal-has-taken"
+        }
+      ]
+    },
+    {
+      "id": "dazed-cuerpo",
+      "fecha": "2026-08-26",
+      "categoria": "Jugabilidad",
+      "estado": "oficial",
+      "destacada": false,
+      "titulo": "Comer, entrenar y dormir cambiarán a Jason y Lucia",
+      "resumen": "En el primer reportaje oficial, publicado por la revista Dazed, Rockstar North confirmó que la comida afecta al peso, el ejercicio marca músculo y la falta de sueño se nota en la cara. Vuelve así una idea de San Andreas, ampliada. También habrá redes sociales funcionales en el móvil.",
+      "fuentes": [
+        {
+          "nombre": "GamingBolt",
+          "url": "https://gamingbolt.com/gta-6-brings-back-san-andreass-weight-and-exercise-systems-along-with-encouraging-you-to-sleep"
+        },
+        {
+          "nombre": "iGrandTheftAuto",
+          "url": "https://www.igrandtheftauto.com/gta6/news/dazed-brings-us-the-first-official-gta-6-preview"
+        }
+      ]
+    },
+    {
+      "id": "cyberleek",
+      "fecha": "2026-08-18",
+      "categoria": "Técnica",
+      "estado": "prensa",
+      "destacada": false,
+      "titulo": "Filtración masiva: «CyberLeek» publica vídeos de juego",
+      "resumen": "Desde el 18 de agosto, un usuario o grupo llamado CyberLeek fue difundiendo clips de juego, capturas del mapa y parte del prólogo de Lucia, con marcas de agua de una criptomoneda. Take-Two pidió ante un tribunal de Nueva York datos a Microsoft y Discord para identificarle. Aquí no enlazamos ese material.",
+      "fuentes": [
+        {
+          "nombre": "Windows Central",
+          "url": "https://www.windowscentral.com/gaming/microsoft-has-been-served-a-court-subpoena-by-take-two-over-grand-theft-auto-6"
+        },
+        {
+          "nombre": "Notebookcheck",
+          "url": "https://notebookcheck.net/GTA-6-hacker-CyberLeek-goes-offline-as-Take-Two-and-Microsoft-mount-legal-crackdown.1375698.0.html"
+        }
+      ]
+    },
+    {
+      "id": "newzoo-260",
+      "fecha": "2026-07-16",
+      "categoria": "Negocio",
+      "estado": "prensa",
+      "destacada": false,
+      "titulo": "Newzoo: 260 millones en reservas digitales la primera semana",
+      "resumen": "La consultora Newzoo estimó que las reservas digitales de GTA VI generaron unos 260 millones de dólares en su primera semana, la mayor apertura que ha observado. Calcula que la primera semana a la venta podría mover entre 3.250 y 5.200 millones.",
+      "fuentes": [
+        {
+          "nombre": "Game World Observer",
+          "url": "https://gameworldobserver.com/2026/07/16/pre-orders-for-gta-vi-brought-take-two-a-record-260-million-in-one-week-newzoo"
+        },
+        {
+          "nombre": "Outlook Respawn",
+          "url": "https://respawn.outlookindia.com/gaming/gaming-news/gta-vi-pre-order-record-signals-potential-52b-first-week"
+        }
+      ]
+    },
+    {
+      "id": "sindicato-reconocimiento",
+      "fecha": "2026-06-30",
+      "categoria": "Negocio",
+      "estado": "prensa",
+      "destacada": false,
+      "titulo": "La plantilla británica pide reconocer su sindicato antes del estreno",
+      "resumen": "Trabajadores de los estudios de Rockstar en Reino Unido solicitaron el reconocimiento voluntario del sindicato IWGB, con el lanzamiento del 19 de noviembre como plazo. Piden más transparencia salarial, menos «crunch» y horarios más flexibles; se habló incluso de posibles huelgas.",
+      "fuentes": [
+        {
+          "nombre": "Dexerto",
+          "url": "https://www.dexerto.com/gta/rockstar-games-could-strike-before-gta-6-launches-over-unionization-3381083/"
+        },
+        {
+          "nombre": "GTA Boom",
+          "url": "https://www.gtaboom.com/gta-6-developers-are-threatening-rockstar-with-unionization-3764"
+        }
+      ]
+    },
+    {
+      "id": "reservas",
+      "fecha": "2026-06-25",
+      "categoria": "Oficial",
+      "estado": "oficial",
+      "titulo": "Reservas abiertas: 79,99 € y 99,99 €",
+      "resumen": "Arrancan las reservas en PS5 y Xbox Series X|S: edición Estándar a 79,99 € y Ultimate a 99,99 €. Todas las reservas reciben el pack Vintage Vice City y las digitales, un mes de GTA+.",
+      "fuentes": [
+        {
+          "nombre": "Vandal",
+          "url": "https://vandal.elespanol.com/noticia/1350791132/gta-6-ya-se-puede-reservar-en-espana-para-ps5-y-xbox-series-poniendo-fin-a-una-larga-espera/"
+        },
+        {
+          "nombre": "Infobae",
+          "url": "https://www.infobae.com/tecno/2026/06/25/gta-6-precio-en-preventa-cuanto-cuesta-el-juego-de-rockstar-en-argentina-colombia-mexico-y-espana/"
+        }
+      ]
+    },
+    {
+      "id": "mejor-en-ps5",
+      "fecha": "2026-06-24",
+      "categoria": "Oficial",
+      "estado": "oficial",
+      "destacada": false,
+      "titulo": "«Se juega mejor en PS5», dicen Sony y Rockstar",
+      "resumen": "Una entrada del PlayStation Blog firmada por Sony y Rockstar aseguró que GTA VI se jugará mejor en PS5, justo cuando se anunciaban las reservas. Es la señal más clara de la alianza comercial entre ambas compañías.",
+      "fuentes": [
+        {
+          "nombre": "AltChar",
+          "url": "https://www.altchar.com/game-news/rockstar-say-gta-6-plays-best-on-ps5-hinting-at-potential-marketing-deal-with-sony-aD55V5n0S4ji"
+        }
+      ]
+    },
+    {
+      "id": "portada",
+      "fecha": "2026-06-18",
+      "categoria": "Oficial",
+      "estado": "oficial",
+      "titulo": "Portada oficial y fecha de reservas",
+      "resumen": "Rockstar enseñó la portada del juego en un vídeo de 30 segundos y fijó la apertura de reservas para el 25 de junio.",
+      "fuentes": [
+        {
+          "nombre": "Insider Gaming",
+          "url": "https://insider-gaming.com/gta-trailers-timeline-gta-6/"
+        }
+      ]
+    },
+    {
+      "id": "take-two-q4-fy26",
+      "fecha": "2026-05-21",
+      "categoria": "Negocio",
+      "estado": "oficial",
+      "titulo": "Take-Two confirma el 19 de noviembre y la campaña de verano",
+      "resumen": "Con sus resultados anuales, Take-Two reafirmó la fecha, habló de un posible «año de ruptura» y anunció que el marketing de GTA VI empezaría en verano.",
+      "fuentes": [
+        {
+          "nombre": "MarketBeat",
+          "url": "https://www.marketbeat.com/instant-alerts/take-two-interactive-software-q4-earnings-call-highlights-2026-05-21/"
+        }
+      ]
+    },
+    {
+      "id": "acuerdo-playstation",
+      "fecha": "2026-05-05",
+      "categoria": "Negocio",
+      "estado": "prensa",
+      "destacada": false,
+      "titulo": "Take-Two deja entrever un acuerdo de marketing con PlayStation",
+      "resumen": "El consejero delegado de Take-Two, Strauss Zelnick, se refirió a un acuerdo de marketing con Sony al hablar de GTA VI, y aclaró que no tiene que ver con que no haya versión de PC de salida. Ni Sony ni Rockstar lo han anunciado formalmente.",
+      "fuentes": [
+        {
+          "nombre": "Push Square",
+          "url": "https://www.pushsquare.com/news/2026/05/playstation-seemingly-lands-gta-6-ps5-marketing-deal"
+        },
+        {
+          "nombre": "Multiplayer.it",
+          "url": "https://multiplayer.it/notizie/gta-6-ha-un-accordo-con-playstation-per-lesclusiva-sul-marketing-conferma-take-two.html"
+        }
+      ]
+    },
+    {
+      "id": "take-two-q3-fy26",
+      "fecha": "2026-02-03",
+      "categoria": "Negocio",
+      "estado": "oficial",
+      "destacada": false,
+      "titulo": "Take-Two mantiene el 19 de noviembre y promete marketing en verano",
+      "resumen": "En sus resultados trimestrales, Take-Two reafirmó la fecha y anunció que la campaña de lanzamiento empezaría en verano. Llegaba tras unas declaraciones de Jason Schreier (Bloomberg) en enero, según las cuales el juego aún no tenía todo su contenido terminado.",
+      "fuentes": [
+        {
+          "nombre": "MarketBeat",
+          "url": "https://www.marketbeat.com/instant-alerts/take-two-interactive-software-q3-earnings-call-highlights-2026-02-03/?.tsrc=rss"
+        },
+        {
+          "nombre": "VideoGamer",
+          "url": "https://www.videogamer.com/?p=1370926"
+        }
+      ]
+    },
+    {
+      "id": "retraso-noviembre",
+      "fecha": "2025-11-06",
+      "categoria": "Oficial",
+      "estado": "oficial",
+      "titulo": "Segundo retraso: 19 de noviembre de 2026",
+      "resumen": "Rockstar movió el lanzamiento del 26 de mayo al jueves 19 de noviembre de 2026 para dar al juego más pulido.",
+      "fuentes": [
+        {
+          "nombre": "PC Gamer",
+          "url": "https://www.pcgamer.com/games/action/grand-theft-auto-6-is-delayed-to-november-these-extra-months-will-allow-us-to-finish-the-game-with-the-level-of-polish-you-have-come-to-expect-and-deserve"
+        }
+      ]
+    },
+    {
+      "id": "despidos-sindicato",
+      "fecha": "2025-10-31",
+      "categoria": "Negocio",
+      "estado": "prensa",
+      "destacada": false,
+      "titulo": "Rockstar despide a más de 30 empleados y estalla la polémica sindical",
+      "resumen": "Según Bloomberg, Rockstar despidió el 30 de octubre a entre 30 y 40 trabajadores de Reino Unido y Canadá que participaban en un chat sindical privado. El sindicato IWGB lo calificó de represalia; Take-Two lo negó y alegó falta grave por difundir información confidencial.",
+      "fuentes": [
+        {
+          "nombre": "PC Gamer",
+          "url": "https://www.pcgamer.com/gaming-industry/rockstar-accused-of-the-most-ruthless-act-of-union-busting-in-the-history-of-the-uk-games-industry-after-firing-dozens-of-employees-who-were-allegedly-attempting-to-form-a-union"
+        },
+        {
+          "nombre": "Notebookcheck",
+          "url": "https://www.notebookcheck.net/Rockstar-Games-fires-30-to-40-workers-with-accusations-that-GTA-6-studio-is-union-busting.1152387.0.html"
+        }
+      ]
+    },
+    {
+      "id": "record-475",
+      "fecha": "2025-05-08",
+      "categoria": "Curiosidad",
+      "estado": "oficial",
+      "destacada": false,
+      "titulo": "475 millones de visualizaciones en un día",
+      "resumen": "Rockstar contó a The Hollywood Reporter que el segundo tráiler sumó más de 475 millones de visualizaciones entre todas las plataformas en 24 horas, por encima del tráiler de Deadpool y Lobezno. La canción del vídeo, «Hot Together» de The Pointer Sisters, disparó sus escuchas en Spotify.",
+      "fuentes": [
+        {
+          "nombre": "TechRadar",
+          "url": "https://www.techradar.com/gaming/the-latest-grand-theft-auto-6-trailer-has-set-a-major-record-by-racking-up-475-million-views-in-just-24-hours"
+        },
+        {
+          "nombre": "VGC",
+          "url": "https://www.videogameschronicle.com/news/at-nearly-half-a-billion-views-rockstar-says-gta-6s-new-trailer-is-the-biggest-video-launch-of-all-time"
+        }
+      ]
+    },
+    {
+      "id": "trailer-2",
+      "fecha": "2025-05-06",
+      "categoria": "Oficial",
+      "estado": "oficial",
+      "destacada": false,
+      "titulo": "Tráiler 2 por sorpresa, grabado en una PS5",
+      "resumen": "Cuatro días después del retraso, Rockstar publicó sin aviso el segundo tráiler, centrado en Jason y Lucia. Según el estudio, mezcla a partes iguales juego y escenas cinemáticas, todo capturado en una PS5 estándar. La web oficial estrenó a la vez fichas de personajes y regiones.",
+      "fuentes": [
+        {
+          "nombre": "India TV",
+          "url": "https://www.indiatvnews.com/technology/news/gta-6-trailer-2-becomes-biggest-video-launch-ever-with-475-million-views-know-why-2025-05-09-989456"
+        },
+        {
+          "nombre": "Insider Gaming",
+          "url": "https://insider-gaming.com/?p=115682"
+        }
+      ]
+    },
+    {
+      "id": "retraso-mayo-2026",
+      "fecha": "2025-05-02",
+      "categoria": "Lanzamiento",
+      "estado": "oficial",
+      "destacada": false,
+      "titulo": "Primer retraso: 26 de mayo de 2026",
+      "resumen": "Rockstar anunció que GTA VI no llegaría en 2025 y le puso por primera vez fecha concreta: 26 de mayo de 2026. El estudio pidió disculpas por la espera y explicó que necesitaba más tiempo para alcanzar el nivel de acabado que se espera de sus juegos.",
+      "fuentes": [
+        {
+          "nombre": "GamesRadar+",
+          "url": "https://gamesradar.com/games/grand-theft-auto/gta-6-release-date-set-for-may-2026-as-rockstars-long-awaited-open-world-blockbuster-is-delayed-out-of-this-year"
+        },
+        {
+          "nombre": "MP1st",
+          "url": "https://mp1st.com/news/gta-6-a-release-date-may-2026"
+        }
+      ]
+    },
+    {
+      "id": "ventana-otono-2025",
+      "fecha": "2024-05-16",
+      "categoria": "Negocio",
+      "estado": "oficial",
+      "destacada": false,
+      "titulo": "Take-Two concreta: otoño de 2025",
+      "resumen": "En su presentación de resultados, Take-Two acotó la salida de GTA VI al otoño de 2025, dentro del año que ya anunciaba el primer tráiler. Sería el primer plazo que acabaría cambiando.",
+      "fuentes": [
+        {
+          "nombre": "Military.com (cronología)",
+          "url": "https://365.military.com/off-duty/games/february-3-will-be-defining-day-gta-6-and-stakes-couldnt-be-higher.html"
+        }
+      ]
+    },
+    {
+      "id": "hacker-2022-sentencia",
+      "fecha": "2023-12-21",
+      "categoria": "Curiosidad",
+      "estado": "prensa",
+      "destacada": false,
+      "titulo": "El autor de la filtración de 2022, internado por orden judicial",
+      "resumen": "Arion Kurtaj, miembro del grupo Lapsus$ que en septiembre de 2022 robó y publicó unos 90 vídeos de una versión temprana del juego, fue sometido por un tribunal británico a un internamiento hospitalario indefinido. Rockstar cifró el daño del ataque en unos 5 millones de dólares.",
+      "fuentes": [
+        {
+          "nombre": "VGC",
+          "url": "https://www.videogameschronicle.com/news/gta-6-hacker-sentenced-to-an-indefinite-hospital-order/"
+        },
+        {
+          "nombre": "MP1st",
+          "url": "https://mp1st.com/news/gta-6-hacker-sentenced-indefinitely-to-a-secure-hospital"
+        }
+      ]
+    },
+    {
+      "id": "record-guinness-t1",
+      "fecha": "2023-12-05",
+      "categoria": "Curiosidad",
+      "estado": "oficial",
+      "destacada": false,
+      "titulo": "Récord Guinness: 90,4 millones de visitas en 24 horas",
+      "resumen": "Guinness World Records reconoció al primer tráiler como la presentación de un videojuego más vista en YouTube en sus primeras 24 horas, con 90.421.491 reproducciones. También superó el récord de vídeo no musical que tenía MrBeast.",
+      "fuentes": [
+        {
+          "nombre": "Push Square",
+          "url": "https://www.pushsquare.com/news/2023/12/gta-6-trailer-pulls-90-million-views-in-24-hours-sets-new-world-records"
+        },
+        {
+          "nombre": "Kotaku",
+          "url": "https://kotaku.com/gta-6-rockstar-games-trailer-90-million-views-record-1851075122"
+        }
+      ]
+    },
+    {
+      "id": "trailer-1",
+      "fecha": "2023-12-04",
+      "categoria": "Oficial",
+      "estado": "oficial",
+      "destacada": false,
+      "titulo": "Tráiler 1: se filtra y Rockstar lo publica antes de tiempo",
+      "resumen": "Una copia de baja calidad del tráiler apareció en redes la tarde del 4 de diciembre y Rockstar respondió subiendo el vídeo oficial unas 12-15 horas antes de lo previsto. El tráiler presentó a Lucia, Vice City y el año 2025 como fecha prevista, en PS5 y Xbox Series X|S, sin versión de PC.",
+      "fuentes": [
+        {
+          "nombre": "Tom's Guide",
+          "url": "https://www.tomsguide.com/news/gta-6-trailer-released-early-due-to-leaks-heres-what-we-know"
+        },
+        {
+          "nombre": "MP1st",
+          "url": "https://mp1st.com/news/gta-6-platforms-confirmed-for-ps5-xbox-series-but-not-pc"
+        }
+      ]
+    },
+    {
+      "id": "houser-trailer-diciembre",
+      "fecha": "2023-11-08",
+      "categoria": "Oficial",
+      "estado": "oficial",
+      "destacada": false,
+      "titulo": "Sam Houser anuncia el primer tráiler para diciembre",
+      "resumen": "Con motivo de los 25 años de Rockstar, su presidente Sam Houser avanzó que el primer tráiler del próximo GTA llegaría a principios de diciembre. Días después, el estudio fijó el estreno para el 5 de diciembre.",
+      "fuentes": [
+        {
+          "nombre": "LADbible",
+          "url": "https://ladbible.com/entertainment/gaming/gta-6-trailer-grand-theft-auto-gaming-reaction-182053-20231205"
+        }
+      ]
+    },
+    {
+      "id": "anuncio-desarrollo",
+      "fecha": "2022-02-04",
+      "categoria": "Oficial",
+      "estado": "oficial",
+      "destacada": false,
+      "titulo": "Rockstar confirma que el nuevo GTA está en marcha",
+      "resumen": "En una actualización de la comunidad de GTA Online, Rockstar confirmó por primera vez que el desarrollo de la siguiente entrega de la saga estaba «bien encaminado». No dio nombre ni plataformas: solo pidió seguir el Newswire para futuras novedades.",
+      "fuentes": [
+        {
+          "nombre": "Gematsu",
+          "url": "https://www.gematsu.com/2022/02/rockstar-games-active-development-for-the-next-entry-in-the-grand-theft-auto-series-is-well-underway"
+        },
+        {
+          "nombre": "PC Gamer",
+          "url": "https://www.pcgamer.com/its-finally-official-grand-theft-auto-6-is-coming"
+        }
+      ]
+    }
+  ],
+  "guias_nuevas": [],
+  "misiones": [],
+  "trucos_gta6": [],
+  "misterios_nuevos": [],
+  "cronologia_nueva": [],
+  "mapa_lugares": [],
+  "articulos_nuevos": [],
+  "videos_nuevos": [],
+  "dex_nuevos": []
+}

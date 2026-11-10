@@ -1,0 +1,45 @@
+name: Publicar LeonidaDex
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 5 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Actualizar los puntos de la comunidad (GTADB, CC BY 4.0)
+        run: |
+          git clone --depth 1 https://github.com/rolux/gtadb.org /tmp/gtadb
+          python scripts/gtadb.py /tmp/gtadb/map/data/6/landmarks.json src/tiles/datos/gtadb-6.json
+        continue-on-error: true
+      - name: Generar la web
+        run: python build.py
+        env:
+          OWNER: ${{ github.repository_owner }}
+          REPO: ${{ github.event.repository.name }}
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

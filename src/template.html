@@ -1,0 +1,2236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LeonidaDex</title>
+<meta name="description" content="LeonidaDex, la enciclopedia en español de GTA VI que se actualiza sola: cuenta atrás, noticias, mapa de Leonida, personajes, sistemas de juego, guías, misiones, trucos y misterios.">
+<meta name="theme-color" content="#120a1c">
+<meta property="og:title" content="LeonidaDex · La enciclopedia de GTA VI">
+<meta property="og:description" content="Cuenta atrás, noticias diarias, mapa de Leonida, guías, trucos y misterios de Grand Theft Auto VI.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=IBM+Plex+Mono:wght@500&family=Schibsted+Grotesk:wght@400;500;700&family=Yellowtail&display=swap">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"LeonidaDex.com","inLanguage":"es","about":{"@type":"VideoGame","name":"Grand Theft Auto VI","gamePlatform":["PlayStation 5","Xbox Series X|S"],"publisher":"Rockstar Games"}}</script>
+<style>
+:root {
+  /* Vice City al anochecer: postal de puesta de sol encima, pizarra de comisaría debajo */
+  --night: #120a1c;
+  --night-2: #1a0f28;
+  --card: #211431;
+  --card-2: #2b1a3e;
+  --line: rgba(255, 214, 236, 0.13);
+  --text: #fbeef4;
+  --muted: #bfa8c8;
+  --flamingo: #ff4fa3;
+  --sunset: #ff8f3f;
+  --peach: #ffd49a;
+  --aqua: #35e3d0;
+  --amber: #ffc24a;
+  --font-display: "Big Shoulders Display", "Arial Narrow", "Roboto Condensed", Impact, sans-serif;
+  --font-body: "Schibsted Grotesk", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --font-script: "Yellowtail", "Brush Script MT", "Segoe Script", cursive;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--night); color: var(--text); font: 400 1rem/1.6 var(--font-body); }
+img, svg, canvas { max-width: 100%; }
+a { color: var(--aqua); text-underline-offset: 3px; }
+a:hover { color: var(--peach); }
+:focus-visible { outline: 2px solid var(--aqua); outline-offset: 3px; border-radius: 4px; }
+button { font: inherit; color: inherit; cursor: pointer; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.skip { position: absolute; left: 12px; top: -60px; z-index: 100; background: var(--peach); color: var(--night); padding: 10px 14px; border-radius: 8px; font-weight: 700; }
+.skip:focus { top: 12px; }
+.wrap { width: min(1180px, 100% - 32px); margin-inline: auto; }
+
+/* ---------- Barra superior ---------- */
+.topbar { position: sticky; top: 0; z-index: 60; background: rgba(18, 10, 28, 0.82); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+.topbar .wrap { display: flex; align-items: center; gap: 16px; height: 60px; }
+.brand { display: inline-flex; align-items: baseline; gap: 2px; text-decoration: none; color: var(--text); white-space: nowrap; }
+.brand .b-script { font: 400 1.5rem/1 var(--font-script); color: var(--flamingo); margin: 0 2px 0 3px; }
+.brand .b-word { font: 900 1.35rem/1 var(--font-display); letter-spacing: 0.04em; }
+.brand .b-tld { font: 500 0.7rem/1 var(--font-mono); color: var(--muted); }
+.nav { flex: 1; display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; mask-image: linear-gradient(90deg, #000 92%, transparent); }
+.nav::-webkit-scrollbar { display: none; }
+.nav a { color: var(--muted); text-decoration: none; font-size: 0.84rem; font-weight: 500; padding: 8px 8px; border-radius: 8px; white-space: nowrap; }
+.nav a:hover, .nav a.on { color: var(--text); background: rgba(255, 255, 255, 0.06); }
+.tb-right { display: flex; align-items: center; gap: 10px; }
+.mini-count { font: 500 0.78rem/1 var(--font-mono); color: var(--peach); white-space: nowrap; opacity: 0; transition: opacity 0.3s; }
+.mini-count.show { opacity: 1; }
+.search-btn { display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.06); border: 1px solid var(--line); border-radius: 999px; padding: 7px 12px; font-size: 0.86rem; color: var(--text); }
+.search-btn kbd { font: 500 0.7rem/1 var(--font-mono); border: 1px solid var(--line); border-radius: 4px; padding: 2px 5px; color: var(--muted); }
+
+/* ---------- Portada ---------- */
+.hero { position: relative; overflow: hidden; isolation: isolate; border-bottom: 1px solid var(--line); }
+.hero canvas { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -2; display: block; }
+.hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(18, 10, 28, 0.86) 0%, rgba(18, 10, 28, 0.55) 45%, rgba(18, 10, 28, 0.1) 75%), linear-gradient(0deg, rgba(18, 10, 28, 0.95) 0%, rgba(18, 10, 28, 0) 32%); }
+.hero-inner { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 40px; align-items: center; padding: 64px 0 36px; }
+.hero .script { font: 400 clamp(1.9rem, 4vw, 2.8rem)/1 var(--font-script); color: var(--peach); margin: 0 0 -6px 4px; transform: rotate(-4deg); transform-origin: left; }
+.hero h1 { margin: 0; font: 900 clamp(3.4rem, 7.8vw, 7.4rem)/0.82 var(--font-display); letter-spacing: 0.02em; text-transform: uppercase; background: linear-gradient(180deg, #ffe7b8 0%, var(--sunset) 55%, var(--flamingo) 100%); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 6px 30px rgba(255, 79, 163, 0.35)); }
+.hero h1 .dex { font: 400 0.4em/1 var(--font-script); text-transform: none; color: var(--flamingo); -webkit-text-fill-color: var(--flamingo); margin-left: 0.06em; letter-spacing: 0; }
+.hero .thesis { font-size: clamp(1.02rem, 1.6vw, 1.15rem); max-width: 46ch; margin: 18px 0 22px; color: #f3dfea; }
+.hero .thesis strong { color: var(--peach); font-weight: 700; }
+.cta { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 18px; border-radius: 999px; font-weight: 700; text-decoration: none; border: 1px solid transparent; font-size: 0.95rem; }
+.btn-primary { background: linear-gradient(90deg, var(--flamingo), var(--sunset)); color: #23081a; }
+.btn-primary:hover { color: #23081a; filter: brightness(1.08); }
+.btn-ghost { border-color: rgba(255, 255, 255, 0.32); color: var(--text); background: rgba(18, 10, 28, 0.35); }
+.btn-ghost:hover { color: var(--text); border-color: var(--peach); }
+
+.count-card { background: rgba(18, 10, 28, 0.62); border: 1px solid rgba(255, 212, 154, 0.22); border-radius: 18px; padding: 24px 24px 20px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+.count-card .eyebrow { margin-bottom: 12px; }
+.count { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.unit { text-align: center; }
+.unit b { display: block; font: 900 clamp(2.6rem, 5.8vw, 5rem)/0.9 var(--font-display); font-variant-numeric: tabular-nums; color: var(--peach); text-shadow: 0 0 24px rgba(255, 143, 63, 0.45); }
+.unit span { font: 500 0.68rem/1 var(--font-mono); letter-spacing: 0.16em; color: var(--muted); text-transform: uppercase; }
+.count-date { margin: 14px 0 0; font-size: 0.9rem; color: #f3dfea; text-align: center; }
+.count.launched { grid-template-columns: 1fr; }
+.wanted { display: flex; justify-content: center; gap: 6px; margin-top: 16px; }
+.wanted svg { width: 26px; height: 26px; }
+.wanted .lit path { fill: var(--peach); stroke: #fff2d6; filter: drop-shadow(0 0 6px rgba(255, 212, 154, 0.8)); }
+.wanted .off path { fill: rgba(255, 255, 255, 0.04); stroke: rgba(255, 255, 255, 0.35); }
+.wanted .next { animation: blink 1.1s steps(2, end) infinite; }
+.wanted .next path { stroke: var(--peach); }
+@keyframes blink { 50% { opacity: 0.25; } }
+.wanted-cap { text-align: center; font: 500 0.74rem/1.4 var(--font-mono); color: var(--muted); margin: 8px 0 0; letter-spacing: 0.04em; }
+.ticker { display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: start; padding: 14px 0 22px; }
+.ticker .lbl { font: 500 0.72rem/1.9 var(--font-mono); letter-spacing: 0.14em; color: var(--night); background: var(--peach); padding: 0 8px; border-radius: 4px; text-transform: uppercase; }
+.ticker ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 22px; }
+.ticker a { color: var(--text); text-decoration: none; font-size: 0.92rem; }
+.ticker a:hover { color: var(--peach); text-decoration: underline; }
+.ticker time { font: 500 0.72rem/1 var(--font-mono); color: var(--sunset); margin-right: 6px; }
+
+/* ---------- Secciones ---------- */
+section.block { padding: 76px 0; scroll-margin-top: 64px; border-bottom: 1px solid var(--line); }
+section.block:nth-of-type(even) { background: var(--night-2); }
+.sec-head { display: grid; gap: 8px; margin-bottom: 30px; max-width: 72ch; }
+.eyebrow { font: 500 0.74rem/1.2 var(--font-mono); letter-spacing: 0.15em; text-transform: uppercase; color: var(--sunset); margin: 0; }
+h2 { font: 800 clamp(2.4rem, 5.4vw, 3.9rem)/0.92 var(--font-display); text-transform: uppercase; letter-spacing: 0.01em; margin: 0; text-wrap: balance; }
+h2 em { font: 400 0.72em/1 var(--font-script); text-transform: none; color: var(--flamingo); font-style: normal; margin-left: 4px; }
+h3 { font: 800 1.45rem/1.05 var(--font-display); text-transform: uppercase; letter-spacing: 0.02em; margin: 0 0 8px; text-wrap: balance; }
+.lede { color: var(--muted); margin: 0; max-width: 65ch; }
+.note { font-size: 0.86rem; color: var(--muted); }
+.mono { font-family: var(--font-mono); }
+
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
+.chip { font: 500 0.72rem/1 var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; padding: 8px 10px; border-radius: 6px; border: 1px solid var(--line); background: transparent; color: var(--muted); }
+.chip:hover { color: var(--text); border-color: rgba(255, 255, 255, 0.3); }
+.chip[aria-pressed="true"], .chip[aria-selected="true"] { background: var(--text); color: var(--night); border-color: var(--text); }
+.badge { display: inline-block; font: 500 0.66rem/1 var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 6px; border-radius: 4px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
+.badge.oficial, .badge.confirmado, .badge.disponible { color: var(--aqua); border-color: rgba(53, 227, 208, 0.45); }
+.badge.prensa { color: var(--peach); border-color: rgba(255, 212, 154, 0.45); }
+.badge.rumor, .badge.teoria { color: var(--amber); border-color: rgba(255, 194, 74, 0.55); border-style: dashed; }
+.badge.pendiente { color: var(--muted); border-style: dotted; }
+.badge.nuevo { background: var(--flamingo); border-color: var(--flamingo); color: #23081a; }
+
+/* Noticias */
+.news-grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+.field { background: var(--card); border: 1px solid var(--line); border-radius: 10px; color: var(--text); padding: 10px 12px; font: inherit; font-size: 0.92rem; min-width: 0; }
+.field::placeholder { color: #9b86a6; }
+.news-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.news-item { display: grid; grid-template-columns: 74px 1fr; gap: 16px; padding: 18px 0; border-top: 1px solid var(--line); scroll-margin-top: 80px; }
+.news-item:first-child { border-top: 0; }
+.news-date { font: 500 0.72rem/1.25 var(--font-mono); color: var(--sunset); text-transform: uppercase; letter-spacing: 0.06em; padding-top: 4px; }
+.news-date b { display: block; font: 900 2rem/1 var(--font-display); color: var(--text); letter-spacing: 0; }
+.news-item h3 { font-size: 1.35rem; margin: 6px 0 6px; }
+.news-item.destacada h3 { font-size: 1.8rem; color: var(--peach); }
+.news-item p { margin: 0 0 8px; color: #e9d7e2; max-width: 68ch; }
+.meta-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.src { font-size: 0.8rem; color: var(--muted); }
+.src a { color: var(--muted); }
+.src a:hover { color: var(--aqua); }
+.more { margin-top: 14px; }
+.aside-card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px; position: sticky; top: 80px; }
+.events { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.events li { display: grid; grid-template-columns: 52px 1fr; gap: 12px; align-items: start; }
+.ev-date { text-align: center; border: 1px solid var(--line); border-radius: 10px; padding: 6px 0; font: 500 0.64rem/1.1 var(--font-mono); text-transform: uppercase; color: var(--muted); }
+.ev-date b { display: block; font: 900 1.5rem/1 var(--font-display); color: var(--text); }
+.events li.today .ev-date { border-color: var(--flamingo); }
+.events li.past { opacity: 0.5; }
+.ev-title { font-size: 0.92rem; font-weight: 500; line-height: 1.35; }
+.ev-sub { font-size: 0.78rem; color: var(--muted); }
+.status-line { display: flex; align-items: center; gap: 8px; font: 500 0.74rem/1.4 var(--font-mono); color: var(--muted); margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--aqua); box-shadow: 0 0 10px var(--aqua); flex: none; }
+.dot.warn { background: var(--amber); box-shadow: 0 0 10px var(--amber); }
+
+/* Lanzamiento */
+.launch-grid { display: grid; grid-template-columns: 1fr 1.25fr; gap: 28px; align-items: start; }
+.facts { display: grid; grid-template-columns: 1fr; margin: 0; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+.facts div { display: grid; grid-template-columns: 130px 1fr; gap: 12px; padding: 12px 16px; border-top: 1px solid var(--line); }
+.facts div:first-child { border-top: 0; }
+.facts dt { font: 500 0.72rem/1.6 var(--font-mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+.facts dd { margin: 0; font-weight: 500; }
+.preload { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 16px; }
+.preload div { border: 1px solid var(--line); border-radius: 12px; padding: 12px; background: var(--card); }
+.preload b { display: block; font: 800 1.1rem/1.1 var(--font-display); text-transform: uppercase; }
+.preload span { display: block; font-size: 0.88rem; color: var(--peach); }
+.preload small { color: var(--muted); font-size: 0.78rem; }
+.ed-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+.ed-table th, .ed-table td { padding: 11px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+.ed-table thead th { font: 800 1.3rem/1 var(--font-display); text-transform: uppercase; }
+.ed-table thead th small { display: block; font: 500 1rem/1.4 var(--font-mono); color: var(--peach); text-transform: none; margin-top: 4px; }
+.ed-table td.y { color: var(--aqua); font-weight: 700; }
+.ed-table td.n { color: #8f7a99; }
+.table-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 16px; background: var(--card); }
+.contents { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 18px; }
+.contents details { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; }
+.contents summary { cursor: pointer; font: 800 1.15rem/1.2 var(--font-display); text-transform: uppercase; }
+.contents ul { margin: 10px 0 0; padding-left: 18px; color: #e9d7e2; font-size: 0.92rem; }
+.contents li { margin: 4px 0; }
+
+/* Historia */
+.story { display: grid; grid-template-columns: 1.1fr 1fr; gap: 32px; align-items: start; }
+.premise { font-size: 1.18rem; line-height: 1.55; margin: 0; color: #f6e6ef; }
+.premise::first-letter { font: 900 3.6em/0.8 var(--font-display); float: left; margin: 6px 10px 0 0; color: var(--flamingo); }
+.tone { margin-top: 18px; padding-left: 14px; border-left: 3px solid var(--sunset); color: var(--muted); }
+.story-blocks { display: grid; gap: 12px; }
+.story-blocks article { padding: 16px 18px; border-radius: 14px; background: var(--card); border: 1px solid var(--line); }
+.story-blocks p { margin: 0; color: #e9d7e2; font-size: 0.95rem; }
+
+/* Personajes */
+.people { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.dossier { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; scroll-margin-top: 80px; }
+.dossier .strip { display: flex; justify-content: space-between; align-items: center; padding: 8px 14px; font: 500 0.66rem/1 var(--font-mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--night); }
+.dossier .body { padding: 16px; display: grid; gap: 10px; flex: 1; }
+.dossier .who { display: flex; gap: 12px; align-items: center; }
+.mono-badge { flex: none; width: 54px; height: 54px; border-radius: 12px; display: grid; place-items: center; font: 900 1.5rem/1 var(--font-display); color: var(--night); }
+.dossier h3 { margin: 0; font-size: 1.5rem; }
+.dossier .role { font-size: 0.82rem; color: var(--muted); }
+.dossier p { margin: 0; font-size: 0.92rem; color: #e9d7e2; }
+.links { display: flex; flex-wrap: wrap; gap: 6px; }
+.links span { font-size: 0.74rem; padding: 3px 8px; border-radius: 999px; background: rgba(255, 255, 255, 0.06); color: var(--muted); }
+.seen { font: 500 0.7rem/1.3 var(--font-mono); color: var(--muted); padding-top: 8px; border-top: 1px dashed var(--line); }
+.c-aqua { background: var(--aqua); } .c-flamingo { background: var(--flamingo); } .c-peach { background: var(--peach); } .c-sunset { background: var(--sunset); } .c-amber { background: var(--amber); }
+
+/* Mapa */
+.map-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 28px; align-items: start; }
+.map-box { background: radial-gradient(120% 90% at 70% 80%, #1c3550 0%, #12203a 45%, #0e1328 100%); border: 1px solid var(--line); border-radius: 18px; padding: 10px; }
+.map-box svg { display: block; width: 100%; height: auto; }
+.region { cursor: pointer; transition: fill-opacity 0.2s, stroke-width 0.2s; fill-opacity: 0.55; stroke: #120a1c; stroke-width: 1.5; }
+.region:hover, .region:focus-visible { fill-opacity: 0.8; outline: none; }
+.region.sel { fill-opacity: 0.95; stroke: #fff2d6; stroke-width: 3; }
+.map-label { font: 800 15px var(--font-display); letter-spacing: 0.08em; fill: #fff; pointer-events: none; text-transform: uppercase; paint-order: stroke; stroke: rgba(18, 10, 28, 0.85); stroke-width: 3px; }
+.map-label.sm { font: 500 10px var(--font-mono); letter-spacing: 0.06em; text-transform: none; }
+.map-hint { font-size: 0.8rem; color: var(--muted); margin: 8px 4px 2px; }
+.region-panel { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px; }
+.region-panel .insp { font: 500 0.74rem/1 var(--font-mono); color: var(--aqua); letter-spacing: 0.1em; text-transform: uppercase; }
+.region-panel h3 { font-size: 2.2rem; margin-top: 8px; }
+.region-panel .lema { font: 400 1.35rem/1.2 var(--font-script); color: var(--peach); margin: 0 0 12px; }
+.region-panel h4 { font: 500 0.72rem/1 var(--font-mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 18px 0 8px; }
+.region-panel ul { margin: 0; padding-left: 18px; }
+.region-tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+.scale { margin-top: 22px; background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 20px; }
+.scale h3 { font-size: 1.2rem; }
+.bars { display: grid; gap: 12px; margin-top: 12px; }
+.bar-row { display: grid; grid-template-columns: 190px 1fr; gap: 12px; align-items: center; }
+.bar-row .lbl { font-size: 0.88rem; }
+.bar-track { position: relative; height: 26px; }
+.bar { height: 100%; border-radius: 0 4px 4px 0; background: #7d6a8a; display: flex; align-items: center; justify-content: flex-end; padding-right: 8px; min-width: 42px; }
+.bar.hi { background: linear-gradient(90deg, var(--sunset), var(--flamingo)); }
+.bar span { font: 500 0.78rem/1 var(--font-mono); color: var(--night); font-variant-numeric: tabular-nums; }
+.bar-row .why { grid-column: 2; font-size: 0.75rem; color: var(--muted); margin-top: -6px; }
+
+/* Sistemas */
+.sys { display: grid; grid-template-columns: 240px 1fr; gap: 24px; align-items: start; }
+.sys-tabs { display: grid; gap: 4px; }
+.sys-tab { text-align: left; background: transparent; border: 1px solid transparent; border-radius: 10px; padding: 11px 14px; display: flex; gap: 10px; align-items: center; color: var(--muted); font-weight: 500; }
+.sys-tab .ic { width: 26px; height: 26px; border-radius: 7px; display: grid; place-items: center; background: rgba(255, 255, 255, 0.06); color: var(--peach); font-size: 0.9rem; flex: none; }
+.sys-tab:hover { color: var(--text); background: rgba(255, 255, 255, 0.04); }
+.sys-tab[aria-selected="true"] { color: var(--text); background: var(--card); border-color: var(--line); }
+.sys-tab[aria-selected="true"] .ic { background: var(--flamingo); color: var(--night); }
+.sys-panel { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 24px 26px; min-height: 360px; }
+.sys-panel h3 { font-size: 2rem; }
+.sys-panel .intro { font-size: 1.05rem; color: var(--peach); margin: 0 0 14px; }
+.sys-panel ol { margin: 0; padding: 0; list-style: none; counter-reset: p; display: grid; gap: 10px; }
+.sys-panel ol li { counter-increment: p; display: grid; grid-template-columns: 32px 1fr; gap: 10px; color: #ecdbe6; }
+.sys-panel ol li::before { content: counter(p, decimal-leading-zero); font: 500 0.74rem/1.9 var(--font-mono); color: var(--sunset); }
+.sys-panel .src-note { margin-top: 16px; font-size: 0.8rem; color: var(--muted); }
+
+/* Guías */
+.guides { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 14px; align-items: start; }
+details.guide { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--flamingo); border-radius: 12px; scroll-margin-top: 80px; }
+details.guide.pendiente { border-left-color: #6d5a79; opacity: 0.8; }
+details.guide > summary { list-style: none; cursor: pointer; padding: 16px 18px; display: grid; gap: 6px; }
+details.guide > summary::-webkit-details-marker { display: none; }
+details.guide > summary h3 { font-size: 1.3rem; margin: 0; }
+details.guide > summary p { margin: 0; font-size: 0.9rem; color: var(--muted); }
+details.guide[open] > summary { border-bottom: 1px solid var(--line); }
+.g-meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.g-meta .tm { font: 500 0.7rem/1 var(--font-mono); color: var(--muted); }
+.g-body { padding: 14px 18px 18px; }
+.g-body ol { margin: 0; padding-left: 20px; display: grid; gap: 8px; color: #ecdbe6; font-size: 0.94rem; }
+.g-body ul.tips { margin: 12px 0 0; padding: 10px 12px 10px 28px; background: rgba(255, 212, 154, 0.07); border-radius: 10px; font-size: 0.86rem; color: var(--peach); }
+.checklist { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.checklist label { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; padding: 6px 8px; border-radius: 8px; }
+.checklist label:hover { background: rgba(255, 255, 255, 0.04); }
+.checklist input { accent-color: var(--flamingo); width: 18px; height: 18px; margin-top: 3px; flex: none; }
+.checklist input:checked + span { color: var(--muted); text-decoration: line-through; }
+.progress { height: 6px; border-radius: 999px; background: rgba(255, 255, 255, 0.08); overflow: hidden; margin: 4px 0 12px; }
+.progress i { display: block; height: 100%; background: linear-gradient(90deg, var(--aqua), var(--flamingo)); width: 0; transition: width 0.3s; }
+
+/* Misiones */
+.missions-empty { display: grid; grid-template-columns: 1fr 1.2fr; gap: 24px; align-items: start; }
+.locked { border: 1px dashed rgba(255, 212, 154, 0.4); border-radius: 18px; padding: 24px; background: repeating-linear-gradient(135deg, rgba(255, 212, 154, 0.04) 0 10px, transparent 10px 20px); }
+.locked .big { font: 900 2.4rem/1 var(--font-display); text-transform: uppercase; color: var(--peach); }
+.known { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.known li { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; scroll-margin-top: 80px; }
+.known b { display: block; font: 800 1.1rem/1.2 var(--font-display); text-transform: uppercase; }
+.known span { font-size: 0.9rem; color: #e9d7e2; }
+.chapter { margin-bottom: 26px; }
+.chapter h3 { color: var(--peach); }
+.mission { display: grid; grid-template-columns: auto 1fr; gap: 12px; padding: 12px 0; border-top: 1px solid var(--line); scroll-margin-top: 80px; }
+.mission input { accent-color: var(--flamingo); width: 20px; height: 20px; margin-top: 4px; }
+.mission h4 { margin: 0; font: 800 1.15rem/1.2 var(--font-display); text-transform: uppercase; }
+.mission p { margin: 4px 0; font-size: 0.92rem; color: #e9d7e2; }
+.mission ul { margin: 4px 0; padding-left: 18px; font-size: 0.88rem; color: var(--muted); }
+
+/* Trucos */
+.cheat-tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
+.cheat-panel[hidden] { display: none; }
+.zero { display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: center; background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 24px; }
+.zero .n { font: 900 6rem/0.8 var(--font-display); color: var(--amber); }
+.zero p { margin: 0 0 8px; }
+.warn-box { margin-top: 16px; padding: 14px 16px; border-radius: 12px; border: 1px solid rgba(255, 194, 74, 0.5); background: rgba(255, 194, 74, 0.08); font-size: 0.92rem; }
+.c-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.c-table th { text-align: left; font: 500 0.7rem/1 var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); padding: 12px; border-bottom: 1px solid var(--line); position: sticky; top: 0; background: var(--card); }
+.c-table td { padding: 10px 12px; border-bottom: 1px solid var(--line); }
+.c-table tr { scroll-margin-top: 90px; }
+.c-table code { font: 500 0.86rem/1 var(--font-mono); color: var(--peach); }
+.copy { background: transparent; border: 1px solid var(--line); border-radius: 6px; padding: 4px 8px; font: 500 0.7rem/1 var(--font-mono); color: var(--muted); }
+.copy:hover { color: var(--text); border-color: var(--aqua); }
+.cheat-scroll { max-height: 520px; overflow: auto; border: 1px solid var(--line); border-radius: 16px; background: var(--card); }
+.dialer { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 24px; }
+.phone { background: #0b0612; border: 2px solid #3b2650; border-radius: 26px; padding: 22px; text-align: center; }
+.phone output { display: block; font: 500 1.4rem/1.3 var(--font-mono); color: var(--aqua); min-height: 2.6em; word-break: break-all; }
+.phone small { color: var(--muted); }
+
+/* Misterios */
+.mysteries { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+.mystery { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px; scroll-margin-top: 80px; }
+.mystery .stamp { position: absolute; top: 14px; right: 14px; transform: rotate(4deg); }
+.mystery h3 { font-size: 1.25rem; padding-right: 90px; }
+.mystery p { margin: 0; font-size: 0.92rem; color: #e9d7e2; }
+.tradition { margin-top: 30px; }
+.tradition ul { list-style: none; padding: 0; margin: 12px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
+.tradition li { border: 1px dashed var(--line); border-radius: 12px; padding: 14px; font-size: 0.88rem; color: var(--muted); }
+.tradition b { display: block; color: var(--text); font-weight: 700; margin: 2px 0 4px; }
+.tradition .g { font: 500 0.66rem/1 var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--sunset); }
+
+/* Música */
+.stations { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+.station { background: #0d0816; border: 1px solid #3a2550; border-radius: 16px; padding: 16px; scroll-margin-top: 80px; }
+.lcd { background: #10261f; border-radius: 8px; padding: 10px 12px; font: 500 1.05rem/1.2 var(--font-mono); color: #7fffd8; letter-spacing: 0.06em; text-transform: uppercase; box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.6); text-shadow: 0 0 8px rgba(127, 255, 216, 0.5); display: flex; justify-content: space-between; gap: 8px; }
+.lcd small { font-size: 0.7rem; opacity: 0.8; }
+.station .genre { margin: 10px 0 4px; color: var(--peach); font-weight: 700; }
+.station .hosts { font-size: 0.86rem; color: var(--muted); margin: 0 0 8px; }
+.station ol { margin: 0; padding-left: 20px; font-size: 0.88rem; color: #e9d7e2; display: grid; gap: 3px; }
+.music-extra { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 18px; }
+.music-extra article { border-top: 3px solid var(--aqua); padding-top: 12px; }
+.music-extra p { margin: 0; font-size: 0.9rem; color: #e9d7e2; }
+
+/* Cronología */
+.timeline { list-style: none; margin: 0; padding: 0; position: relative; display: grid; gap: 0; max-width: 820px; }
+.timeline::before { content: ""; position: absolute; left: 119px; top: 6px; bottom: 6px; width: 2px; background: linear-gradient(var(--flamingo), var(--sunset), var(--aqua)); opacity: 0.6; }
+.timeline li { display: grid; grid-template-columns: 96px 24px 1fr; gap: 0 12px; align-items: start; padding: 8px 0; scroll-margin-top: 80px; }
+.timeline time { font: 500 0.74rem/1.6 var(--font-mono); color: var(--muted); text-align: right; text-transform: uppercase; }
+.timeline .pin { width: 14px; height: 14px; border-radius: 50%; background: var(--sunset); margin: 4px 0 0 0; justify-self: center; box-shadow: 0 0 0 4px var(--night-2); }
+.timeline li.future .pin { background: var(--night-2); border: 2px solid var(--aqua); }
+.timeline li.future span { color: var(--aqua); }
+.timeline .yr { grid-column: 1 / -1; font: 900 1.6rem/1 var(--font-display); color: var(--flamingo); padding: 18px 0 6px 0; }
+
+/* FAQ */
+.faq { display: grid; gap: 8px; max-width: 860px; }
+.faq details { border: 1px solid var(--line); border-radius: 12px; background: var(--card); scroll-margin-top: 80px; }
+.faq summary { cursor: pointer; padding: 14px 16px; font-weight: 700; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; font: 800 1.4rem/1 var(--font-display); color: var(--sunset); }
+.faq details[open] summary::after { content: "–"; }
+.faq p { margin: 0; padding: 0 16px 16px; color: #e9d7e2; }
+
+/* Pie */
+footer { padding: 56px 0 80px; background: #0c0713; }
+.foot { display: grid; grid-template-columns: 1.1fr 1fr; gap: 36px; }
+.foot h3 { font-size: 1.1rem; }
+.foot ul { margin: 0; padding-left: 18px; font-size: 0.86rem; display: grid; gap: 4px; }
+.foot ul a { color: var(--muted); }
+.disclaimer { font-size: 0.82rem; color: var(--muted); max-width: 60ch; }
+
+/* Buscador */
+.search { position: fixed; inset: 0; z-index: 90; background: rgba(8, 4, 14, 0.72); backdrop-filter: blur(6px); display: grid; place-items: start center; padding: 10vh 16px 16px; }
+.search[hidden] { display: none; }
+.search-box { width: min(680px, 100%); background: var(--night-2); border: 1px solid rgba(255, 212, 154, 0.3); border-radius: 18px; overflow: hidden; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6); }
+.search-box input { width: 100%; background: transparent; border: 0; border-bottom: 1px solid var(--line); padding: 18px 20px; font: 500 1.1rem/1.2 var(--font-body); color: var(--text); }
+.search-box input:focus { outline: none; }
+.results { list-style: none; margin: 0; padding: 8px; max-height: 60vh; overflow: auto; }
+.results li a { display: block; padding: 10px 12px; border-radius: 10px; text-decoration: none; color: var(--text); }
+.results li a:hover, .results li a.act { background: rgba(255, 255, 255, 0.07); }
+.results .sec { font: 500 0.64rem/1 var(--font-mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--sunset); }
+.results .t { display: block; font-weight: 700; margin-top: 3px; }
+.results .d { display: block; font-size: 0.82rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.results .empty { padding: 18px; color: var(--muted); }
+.search-foot { padding: 10px 16px; font: 500 0.7rem/1 var(--font-mono); color: var(--muted); border-top: 1px solid var(--line); display: flex; justify-content: space-between; }
+.flash { animation: flash 2.2s ease-out; }
+@keyframes flash { 0%, 30% { box-shadow: 0 0 0 3px var(--peach); } 100% { box-shadow: 0 0 0 3px transparent; } }
+.toast { position: fixed; left: 50%; bottom: 22px; transform: translate(-50%, 20px); background: var(--text); color: var(--night); padding: 10px 16px; border-radius: 999px; font-weight: 700; font-size: 0.9rem; opacity: 0; pointer-events: none; transition: 0.25s; z-index: 95; }
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+/* Responsive */
+@media (max-width: 980px) {
+  .hero-inner, .news-grid, .launch-grid, .story, .map-grid, .missions-empty, .foot, .dialer { grid-template-columns: 1fr; }
+  .sys { grid-template-columns: 1fr; }
+  .sys-tabs { display: flex; overflow-x: auto; gap: 6px; padding-bottom: 4px; }
+  .sys-tab { white-space: nowrap; }
+  .aside-card { position: static; }
+  .music-extra { grid-template-columns: 1fr; }
+  .topbar .wrap { flex-wrap: wrap; height: auto; padding-top: 10px; gap: 6px 12px; }
+  .brand { flex: 1; }
+  .nav { order: 3; flex-basis: 100%; padding-bottom: 6px; }
+  .mini-count { opacity: 1; }
+  section.block, .news-item, .dossier, details.guide, .known li, .mission, .mystery, .station, .timeline li, .faq details { scroll-margin-top: 112px; }
+}
+@media (max-width: 600px) {
+  .hero-inner { padding-top: 40px; gap: 26px; }
+  .count-card { padding: 18px 12px 16px; }
+  .preload, .contents { grid-template-columns: 1fr; }
+  .facts div { grid-template-columns: 1fr; gap: 2px; }
+  .news-item { grid-template-columns: 1fr; gap: 6px; }
+  .news-date b { display: inline; font-size: 1.1rem; margin-right: 6px; }
+  .bar-row { grid-template-columns: 1fr; gap: 4px; }
+  .bar-row .why { grid-column: 1; margin-top: 0; }
+  .zero { grid-template-columns: 1fr; }
+  .timeline::before { left: 8px; }
+  .timeline li { grid-template-columns: 18px 1fr; }
+  .timeline time { grid-column: 2; text-align: left; order: -1; }
+  .timeline .pin { grid-row: 1 / span 2; grid-column: 1; }
+  .timeline .yr { padding-left: 26px; }
+  .search-btn .lbl-long, .search-btn kbd { display: none; }
+  .topbar .brand .b-tld { display: none; }
+  .mini-count { font-size: 0.7rem; }
+  .tb-right { flex: none; gap: 8px; }
+  .ticker { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+
+
+
+/* Navegación agrupada */
+.nav { overflow: visible; mask-image: none; -webkit-mask-image: none; align-items: center; gap: 4px; }
+.nav-top { color: var(--muted); text-decoration: none; font: 500 0.92rem/1 var(--font-body); padding: 10px 12px; border-radius: 10px; background: none; border: 0; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; }
+.nav-top i { font-style: normal; font-size: 0.7rem; opacity: 0.7; transition: transform 0.2s; }
+.nav-top:hover, .nav-top.on, .nav-grp.on > .nav-top, .nav-grp.open > .nav-top { color: var(--text); background: rgba(255, 255, 255, 0.07); }
+.nav-grp.on > .nav-top { box-shadow: inset 0 -2px 0 var(--hot); }
+.nav-top.on { box-shadow: inset 0 -2px 0 var(--hot); }
+.nav-grp { position: relative; }
+.nav-grp.open > .nav-top i { transform: rotate(180deg); }
+.nav-pop { position: absolute; top: calc(100% + 10px); left: -8px; min-width: 290px; display: grid; gap: 2px; padding: 8px; background: rgba(18, 10, 28, 0.97); border: 1px solid rgba(255, 79, 163, 0.35); border-radius: 14px; box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55), 0 0 30px -10px rgba(255, 46, 136, 0.5); opacity: 0; visibility: hidden; transform: translateY(-6px); transition: opacity 0.16s, transform 0.16s, visibility 0.16s; z-index: 70; }
+.nav-grp.open .nav-pop { opacity: 1; visibility: visible; transform: none; }
+.nav-pop a { display: block; padding: 10px 12px; border-radius: 10px; text-decoration: none; }
+.nav-pop a b { display: block; color: var(--text); font-weight: 700; font-size: 0.95rem; }
+.nav-pop a span { font-size: 0.8rem; color: var(--muted); }
+.nav-pop a:hover, .nav-pop a:focus-visible, .nav-pop a.on { background: rgba(255, 255, 255, 0.07); }
+.nav-pop a.on b { color: var(--peach); }
+.menu-btn { display: none; align-items: center; gap: 6px; background: var(--hot); color: #fff; border: 0; border-radius: 999px; padding: 8px 14px; font: 700 0.88rem/1 var(--font-body); }
+.mmenu { position: fixed; inset: 0; z-index: 97; background: rgba(8, 4, 14, 0.94); backdrop-filter: blur(8px); overflow: auto; }
+.mmenu[hidden] { display: none; }
+.mmenu-box { width: min(560px, 100%); margin: 0 auto; padding: 16px 16px 40px; }
+.mmenu-head { display: flex; justify-content: space-between; align-items: center; padding: 6px 2px 14px; }
+.mmenu-head b { font: 900 1.6rem/1 var(--font-display); text-transform: uppercase; }
+.mmenu-head button { width: 42px; height: 42px; border-radius: 12px; border: 1px solid var(--line); background: rgba(255, 255, 255, 0.05); color: var(--text); font-size: 1.5rem; }
+.mmenu h4 { font: 500 0.72rem/1 var(--font-mono); letter-spacing: 0.14em; text-transform: uppercase; color: var(--hot); margin: 18px 2px 8px; }
+.mm-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.mm-grid a { display: block; padding: 13px 12px; border-radius: 12px; border: 1px solid var(--line); background: var(--card); color: var(--text); text-decoration: none; }
+.mm-grid a b { display: block; font-weight: 700; }
+.mm-grid a span { font-size: 0.78rem; color: var(--muted); }
+.mm-grid a.big { grid-column: span 1; background: linear-gradient(135deg, rgba(255, 79, 163, 0.25), rgba(255, 143, 63, 0.15)); border-color: rgba(255, 79, 163, 0.5); }
+@media (max-width: 980px) {
+  .topbar .wrap { flex-wrap: nowrap; height: 60px; padding-top: 0; }
+  .nav { display: none; }
+  .menu-btn { display: inline-flex; }
+  .brand { flex: 1; }
+  section.block, .news-item, .dossier, details.guide, .known li, .mission, .mystery, .station, .timeline li, .faq details { scroll-margin-top: 70px; }
+}
+@media (max-width: 600px) { .mini-count { display: none; } .search-btn { padding: 8px 10px; } }
+
+/* Mapa v2 */
+.map-grid { grid-template-columns: minmax(0, 1.5fr) minmax(300px, 1fr); }
+.map-box { padding: 10px; }
+.map-stage { max-height: 82vh; }
+.map-search { position: absolute; left: 10px; top: 10px; width: min(300px, calc(100% - 70px)); z-index: 3; }
+.map-search .field { width: 100%; background: rgba(18, 10, 28, 0.9); border-color: rgba(255, 255, 255, 0.2); padding: 9px 12px; font-size: 0.9rem; }
+.map-search .map-q-res { position: static; margin-top: 6px; max-width: none; max-height: 46vh; }
+.map-card { position: absolute; left: 10px; bottom: 10px; width: min(360px, calc(100% - 20px)); z-index: 4; background: rgba(18, 10, 28, 0.96); border: 1px solid rgba(255, 79, 163, 0.5); border-radius: 16px; padding: 14px 16px; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55), 0 0 30px -12px rgba(255, 46, 136, 0.6); }
+.map-card[hidden] { display: none; }
+.map-card .mc-top { display: flex; align-items: center; gap: 8px; }
+.map-card .mc-cat { display: inline-flex; align-items: center; gap: 6px; font: 500 0.68rem/1 var(--font-mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+.map-card .mc-x { margin-left: auto; background: transparent; border: 1px solid var(--line); border-radius: 8px; color: var(--muted); width: 30px; height: 30px; }
+.map-card h3 { font-size: 1.45rem; margin: 8px 0 4px; }
+.map-card p { margin: 0 0 6px; font-size: 0.9rem; color: #f0dde8; }
+.map-card .mc-insp { font-size: 0.8rem; color: var(--peach); }
+.map-card .mc-meta { font: 500 0.68rem/1.4 var(--font-mono); color: var(--muted); }
+.map-card .mc-act { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; align-items: center; }
+.map-card .mc-act button { border-radius: 999px; padding: 7px 12px; font: 700 0.8rem/1 var(--font-body); border: 1px solid var(--line); background: rgba(255, 255, 255, 0.05); color: var(--text); }
+.map-card .mc-act button.done { background: var(--aqua); color: #0d1a18; border-color: var(--aqua); }
+.map-card .src { font-size: 0.76rem; }
+.dotg { display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; font-size: 0.68rem; font-weight: 700; color: #120a1c; border: 2px solid #120a1c; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3); flex: none; }
+.map-side { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 14px; position: sticky; top: 74px; max-height: calc(100vh - 90px); display: flex; flex-direction: column; min-height: 0; }
+.ms-progress { font-size: 0.86rem; color: var(--muted); margin-bottom: 10px; }
+.ms-progress b { color: var(--text); font: 900 1.25rem/1 var(--font-display); }
+.ms-progress .bar { height: 6px; border-radius: 999px; background: rgba(255, 255, 255, 0.08); overflow: hidden; margin-top: 8px; }
+.ms-progress .bar i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--aqua), var(--hot)); transition: width 0.3s; }
+.ms-tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; background: rgba(0, 0, 0, 0.25); padding: 4px; border-radius: 12px; margin-bottom: 10px; }
+.ms-tabs button { border: 0; border-radius: 9px; padding: 9px 6px; background: transparent; color: var(--muted); font: 700 0.84rem/1 var(--font-body); }
+.ms-tabs button[aria-selected="true"] { background: var(--hot); color: #fff; }
+.ms-pane { overflow: auto; min-height: 0; padding-right: 4px; }
+.ms-pane[hidden] { display: none; }
+.ms-actions { display: flex; gap: 6px; margin-bottom: 8px; }
+.ms-actions button, .link-btn { border: 1px solid var(--line); border-radius: 8px; background: transparent; color: var(--muted); padding: 6px 10px; font-size: 0.8rem; }
+.ms-actions button:hover, .link-btn:hover { color: var(--text); border-color: rgba(255, 255, 255, 0.3); }
+.cat-list { list-style: none; margin: 0 0 10px; padding: 0; display: grid; gap: 4px; }
+.cat-list label { display: grid; grid-template-columns: auto auto 1fr auto; gap: 10px; align-items: center; padding: 8px 10px; border-radius: 10px; cursor: pointer; border: 1px solid transparent; }
+.cat-list label:hover { background: rgba(255, 255, 255, 0.04); }
+.cat-list input { accent-color: var(--hot); width: 16px; height: 16px; }
+.cat-list .cn { font-weight: 600; font-size: 0.9rem; }
+.cat-list .cc { font: 500 0.72rem/1 var(--font-mono); color: var(--muted); }
+.cat-list .cp { grid-column: 3 / 5; height: 3px; border-radius: 3px; background: rgba(255, 255, 255, 0.07); overflow: hidden; margin-top: -4px; }
+.cat-list .cp i { display: block; height: 100%; background: var(--aqua); }
+.cat-list li.off label { opacity: 0.45; }
+.toggles { display: grid; gap: 6px; padding: 10px 2px; border-top: 1px dashed var(--line); margin-bottom: 8px; font-size: 0.86rem; }
+.toggles label { display: flex; gap: 8px; align-items: center; cursor: pointer; }
+.toggles input { accent-color: var(--hot); }
+.pl-group h4 { display: flex; justify-content: space-between; font: 500 0.72rem/1 var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--hot); margin: 14px 2px 6px; }
+.pl-group h4 span { color: var(--muted); }
+.pl-row { display: grid; grid-template-columns: auto auto 1fr; gap: 8px; align-items: center; padding: 5px 6px; border-radius: 8px; }
+.pl-row:hover { background: rgba(255, 255, 255, 0.04); }
+.pl-row input { accent-color: var(--aqua); }
+.pl-row button { background: none; border: 0; color: var(--text); text-align: left; padding: 2px 0; font-size: 0.88rem; }
+.pl-row.done button { color: var(--muted); text-decoration: line-through; }
+.pl-row small { color: var(--muted); font-size: 0.7rem; }
+.pl-unplaced { font-size: 0.84rem; color: var(--muted); padding: 6px; border-top: 1px dashed var(--line); }
+.pl-unplaced b { color: var(--text); }
+.mpin .pg { font: 700 15px/1 var(--font-body); fill: #120a1c; pointer-events: none; }
+.mpin.found .pb { opacity: 0.55; }
+.mpin.found .pg { fill: #0b3d36; }
+.mclu { cursor: pointer; }
+.mclu circle.c1 { fill: rgba(255, 46, 136, 0.92); stroke: #fff; stroke-width: 2.5; }
+.mclu circle.c2 { fill: none; stroke: rgba(255, 46, 136, 0.45); stroke-width: 6; }
+.mclu text { font: 800 15px/1 var(--font-body); fill: #fff; pointer-events: none; }
+.mclu:hover circle.c1, .mclu:focus-visible circle.c1 { fill: var(--sunset); }
+@media (max-width: 980px) { .map-grid { grid-template-columns: 1fr; } .map-side { position: static; max-height: none; } .ms-pane { max-height: 60vh; } }
+@media (max-width: 600px) { .map-card { left: 6px; right: 6px; bottom: 6px; width: auto; } .map-search { width: calc(100% - 64px); } }
+
+/* La Dex */
+.dex-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; margin: 14px 0; }
+.dex-card { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 14px 12px 64px; min-height: 96px; }
+.dex-card .n { position: absolute; left: 12px; top: 14px; width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; font: 900 0.95rem/1 var(--font-display); color: var(--night); }
+.dex-card .n.vehiculos { background: var(--flamingo); } .dex-card .n.armas { background: var(--amber); } .dex-card .n.fauna { background: var(--aqua); } .dex-card .n.marcas { background: var(--peach); }
+.dex-card b { display: block; font: 800 1.12rem/1.1 var(--font-display); text-transform: uppercase; }
+.dex-card .t { font: 500 0.68rem/1.4 var(--font-mono); color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.dex-card p { margin: 6px 0 4px; font-size: 0.86rem; color: #e9d7e2; }
+.dex-card .src { font-size: 0.74rem; }
+.dex-card .badge { display: inline-block; margin-bottom: 6px; }
+
+/* Reportajes */
+.articles { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+.art { position: relative; display: flex; flex-direction: column; gap: 10px; text-align: left; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 0 0 18px; color: var(--text); overflow: hidden; cursor: pointer; transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s; }
+.art:hover, .art:focus-visible { border-color: rgba(255, 79, 163, 0.55); box-shadow: 0 14px 40px -12px rgba(255, 46, 136, 0.5); transform: translateY(-2px); }
+.art .cover { height: 120px; position: relative; display: flex; align-items: flex-end; padding: 12px 16px; }
+.art .cover b { font: 900 3.4rem/0.8 var(--font-display); color: rgba(18, 10, 28, 0.55); letter-spacing: 0.02em; }
+.art .cover .badge { position: absolute; top: 12px; left: 14px; background: rgba(18, 10, 28, 0.75); color: #fff; border-color: transparent; }
+.art h3 { font-size: 1.45rem; margin: 0; padding: 0 18px; }
+.art p { margin: 0; padding: 0 18px; color: #e9d7e2; font-size: 0.92rem; }
+.art .meta { padding: 0 18px; font: 500 0.7rem/1 var(--font-mono); color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; margin-top: auto; }
+.cv-1 { background: linear-gradient(135deg, #ff4fa3, #ff8f3f); } .cv-2 { background: linear-gradient(135deg, #35e3d0, #3f7cff); } .cv-3 { background: linear-gradient(135deg, #ffd49a, #ff8f3f); } .cv-4 { background: linear-gradient(135deg, #8aa0ff, #ff4fa3); } .cv-5 { background: linear-gradient(135deg, #a3c74a, #35e3d0); } .cv-0 { background: linear-gradient(135deg, #ffc24a, #ff4fa3); }
+.reader { position: fixed; inset: 0; z-index: 95; background: rgba(8, 4, 14, 0.8); backdrop-filter: blur(6px); display: grid; place-items: start center; padding: 6vh 14px 14px; overflow: auto; }
+.reader[hidden] { display: none; }
+.reader-box { position: relative; width: min(760px, 100%); background: var(--night-2); border: 1px solid rgba(255, 79, 163, 0.4); border-radius: 18px; padding: 34px clamp(18px, 5vw, 48px) 40px; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6); }
+.reader-x { position: absolute; top: 12px; right: 12px; width: 40px; height: 40px; border-radius: 10px; border: 1px solid var(--line); background: rgba(255, 255, 255, 0.05); color: var(--text); font-size: 1.4rem; }
+.reader h2 { font-size: clamp(2rem, 5vw, 3rem); margin: 10px 0 12px; text-shadow: none; transform: none; }
+.reader .ent { font-size: 1.12rem; color: var(--peach); margin: 0 0 20px; }
+.reader h4 { font: 800 1.3rem/1.1 var(--font-display); text-transform: uppercase; margin: 26px 0 8px; color: var(--flamingo); }
+.reader p, .reader li { color: #f0dde8; line-height: 1.7; }
+.reader ul { padding-left: 20px; display: grid; gap: 6px; }
+.reader .fuentes { margin-top: 26px; padding-top: 14px; border-top: 1px dashed var(--line); font-size: 0.85rem; color: var(--muted); }
+.reader .fuentes a { color: var(--aqua); }
+/* Fotos y vídeos */
+.sub-h { font-size: 1.5rem; margin: 30px 0 14px; }
+.sub-h .note { font: 500 0.72rem/1 var(--font-mono); text-transform: uppercase; letter-spacing: 0.08em; margin-left: 8px; }
+.videos { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+.vid { display: grid; grid-template-rows: auto 1fr; text-decoration: none; color: var(--text); background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s; }
+.vid:hover { color: var(--text); border-color: rgba(255, 79, 163, 0.55); transform: translateY(-2px); box-shadow: 0 14px 40px -12px rgba(255, 46, 136, 0.5); }
+.vid .scr { position: relative; aspect-ratio: 16 / 9; display: grid; place-items: center; overflow: hidden; }
+.vid .scr::before { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.18) 0 1px, transparent 1px 3px); }
+.vid .scr span { position: absolute; left: 10px; bottom: 8px; font: 900 1.5rem/1 var(--font-display); color: rgba(18, 10, 28, 0.7); text-transform: uppercase; }
+.vid .play { width: 58px; height: 58px; border-radius: 50%; background: rgba(18, 10, 28, 0.75); display: grid; place-items: center; box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.8); z-index: 1; }
+.vid .play::after { content: ""; border-left: 18px solid #fff; border-top: 11px solid transparent; border-bottom: 11px solid transparent; margin-left: 5px; }
+.vid .dur { position: absolute; right: 8px; top: 8px; font: 500 0.7rem/1 var(--font-mono); background: rgba(18, 10, 28, 0.8); color: #fff; padding: 4px 6px; border-radius: 4px; z-index: 1; }
+.vid .inf { padding: 12px 14px 14px; display: grid; gap: 4px; }
+.vid .inf b { font: 800 1.15rem/1.1 var(--font-display); text-transform: uppercase; }
+.vid .inf small { color: var(--muted); font-size: 0.82rem; }
+.shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.shot { display: flex; gap: 12px; align-items: center; padding: 14px; text-decoration: none; color: var(--text); background: var(--card); border: 1px solid var(--line); border-radius: 12px; }
+.shot:hover { color: var(--text); border-color: var(--aqua); }
+.shot i { flex: none; width: 44px; height: 44px; border-radius: 10px; display: grid; place-items: center; font-style: normal; font-size: 1.3rem; background: rgba(53, 227, 208, 0.12); }
+.shot b { display: block; }
+.shot small { color: var(--muted); font-size: 0.8rem; }
+.postcards { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+.postcard { margin: 0; background: #fff8ec; padding: 10px 10px 12px; border-radius: 6px; box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45); transform: rotate(var(--r, -1.5deg)); transition: transform 0.25s; cursor: pointer; }
+.postcard:hover, .postcard:focus-visible { transform: rotate(0deg) scale(1.03); }
+.postcard svg { display: block; width: 100%; height: auto; border-radius: 3px; }
+.postcard figcaption { font: 400 1.35rem/1.1 var(--font-script); color: #c2185b; text-align: center; margin-top: 8px; }
+.postcard figcaption small { display: block; font: 500 0.66rem/1.2 var(--font-mono); color: #6b5a6e; text-transform: uppercase; letter-spacing: 0.08em; margin-top: 3px; }
+
+/* Mapa interactivo */
+.map-box { padding: 12px; }
+.map-tools { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.map-tools .chips { margin: 0; }
+.map-q { width: 190px; padding: 8px 10px; font-size: 0.86rem; }
+.map-stage { position: relative; aspect-ratio: 5 / 6; max-height: 78vh; margin-inline: auto; border-radius: 12px; overflow: hidden; background: radial-gradient(120% 90% at 70% 80%, #1c3550 0%, #12203a 45%, #0e1328 100%); }
+#mapSvg { display: block; width: 100%; height: 100%; touch-action: pan-y; cursor: grab; user-select: none; -webkit-user-select: none; --z: 1; }
+.map-stage.zoomed #mapSvg { touch-action: none; }
+#mapSvg.dragging { cursor: grabbing; }
+#mapSvg .region { fill-opacity: 0.5; stroke: #120a1c; stroke-width: 2; vector-effect: non-scaling-stroke; }
+#mapSvg .region:hover, #mapSvg .region:focus-visible { fill-opacity: 0.72; }
+#mapSvg .region.sel { fill-opacity: 0.82; stroke: #fff2d6; stroke-width: 2.5; }
+#mapSvg .keys path { stroke: #120a1c; stroke-width: 1.2; vector-effect: non-scaling-stroke; }
+#mapSvg .keys .keys-hit { stroke: transparent; }
+#mapSvg .tex { pointer-events: none; }
+#mapSvg .roads path { fill: none; stroke: #ffd49a; stroke-opacity: 0.45; stroke-width: 1.6; vector-effect: non-scaling-stroke; pointer-events: none; }
+#mapSvg .roads .hw { stroke: #ffb067; stroke-opacity: 0.75; stroke-width: 2.4; }
+#mapSvg .map-label.sm2 { font-size: calc(14px * var(--z)); }
+#mapSvg .roads .bridge { stroke: #35e3d0; stroke-dasharray: 3 5; }
+#mapSvg .map-label { font-size: calc(30px * var(--z)); stroke-width: calc(6px * var(--z)); letter-spacing: 0.08em; }
+#mapSvg .map-label.sm { font-size: calc(17px * var(--z)); stroke-width: calc(4px * var(--z)); }
+#mapSvg .map-label.sea { fill: rgba(160, 220, 255, 0.55); stroke: none; font: 400 calc(30px * var(--z)) var(--font-script); letter-spacing: 0.02em; text-transform: none; }
+#mapSvg.no-regiones .region { fill-opacity: 0.1; }
+#mapSvg.no-regiones .tex { display: none; }
+#mapSvg.no-lugares #mapPins { display: none; }
+#mapSvg.no-carreteras .roads { display: none; }
+#mapSvg.no-nombres .labels { display: none; }
+.mpin { cursor: pointer; outline: none; }
+.mpin .pb { stroke: #120a1c; stroke-width: 2.5; transition: transform 0.15s; }
+.mpin .pc { fill: #120a1c; }
+.mpin.cat-barrio .pb { fill: #ff4fa3; } .mpin.cat-ocio .pb { fill: #ffd49a; } .mpin.cat-naturaleza .pb { fill: #35e3d0; } .mpin.cat-industria .pb { fill: #8aa0ff; }
+.mpin.nuevo .pb { stroke: #fff; }
+.mpin .pl { display: none; font: 700 15px var(--font-body); fill: #fff; paint-order: stroke; stroke: rgba(18, 10, 28, 0.92); stroke-width: 5px; pointer-events: none; }
+#mapSvg.zin .mpin .pl, .mpin:hover .pl, .mpin:focus-visible .pl, .mpin.sel .pl { display: block; }
+.mpin:hover .pb, .mpin:focus-visible .pb { transform: scale(1.15); transform-origin: 0 0; }
+.mpin.sel .pb { fill: #fff; stroke: #ff2e88; stroke-width: 3.5; }
+.mpin.dim { opacity: 0.18; }
+.mpin .halo { fill: none; stroke: #fff; stroke-width: 2; opacity: 0; }
+.mpin.sel .halo { opacity: 0.8; animation: halo 1.6s ease-out infinite; transform-origin: 0 -22px; }
+@keyframes halo { from { transform: scale(0.6); opacity: 0.9; } to { transform: scale(1.8); opacity: 0; } }
+.zoom-ctl { position: absolute; right: 10px; top: 10px; display: grid; gap: 6px; }
+.zoom-ctl button { width: 38px; height: 38px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.25); background: rgba(18, 10, 28, 0.78); color: var(--text); font: 700 1.2rem/1 var(--font-body); display: grid; place-items: center; }
+.zoom-ctl button:hover { border-color: var(--flamingo); color: var(--peach); }
+.zoom-badge { position: absolute; left: 10px; bottom: 10px; font: 500 0.7rem/1 var(--font-mono); color: var(--muted); background: rgba(18, 10, 28, 0.7); padding: 5px 7px; border-radius: 6px; pointer-events: none; }
+.map-q-res { position: absolute; left: 10px; top: 10px; right: 60px; max-width: 320px; background: rgba(18, 10, 28, 0.94); border: 1px solid rgba(255, 79, 163, 0.45); border-radius: 12px; padding: 6px; display: grid; gap: 2px; max-height: 50%; overflow: auto; }
+.map-q-res[hidden] { display: none; }
+.map-q-res button { text-align: left; background: transparent; border: 0; padding: 8px 10px; border-radius: 8px; color: var(--text); font-size: 0.88rem; }
+.map-q-res button:hover { background: rgba(255, 255, 255, 0.07); }
+.map-q-res small { display: block; color: var(--muted); font-size: 0.74rem; }
+.map-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 10px 4px 0; font-size: 0.8rem; color: var(--muted); }
+.map-legend i { display: inline-block; width: 11px; height: 11px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; border: 2px solid #120a1c; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25); }
+.lg-barrio { background: #ff4fa3; } .lg-ocio { background: #ffd49a; } .lg-naturaleza { background: #35e3d0; } .lg-industria { background: #8aa0ff; }
+.place-card { background: linear-gradient(160deg, rgba(255, 79, 163, 0.16), rgba(255, 143, 63, 0.08)); border: 1px solid rgba(255, 79, 163, 0.5); border-radius: 18px; padding: 18px 20px; margin-bottom: 14px; box-shadow: 0 0 30px -10px rgba(255, 46, 136, 0.5); }
+.place-card .pc-top { display: flex; justify-content: space-between; gap: 10px; align-items: start; }
+.place-card h3 { font-size: 1.7rem; margin: 6px 0 6px; }
+.place-card p { margin: 0 0 8px; color: #f0dde8; }
+.place-card .aprox { font: 500 0.7rem/1.4 var(--font-mono); color: var(--muted); letter-spacing: 0.04em; }
+.place-card .x { background: transparent; border: 1px solid var(--line); border-radius: 8px; color: var(--muted); padding: 4px 9px; }
+.region-panel li button.plink { background: none; border: 0; padding: 0; color: var(--text); text-decoration: underline dotted rgba(255, 212, 154, 0.6); text-underline-offset: 4px; text-align: left; }
+.region-panel li button.plink:hover { color: var(--peach); }
+.map-box:fullscreen { background: #0e1328; padding: 14px; display: flex; flex-direction: column; border-radius: 0; }
+.map-box:fullscreen .map-stage { flex: 1; aspect-ratio: auto; max-height: none; width: 100%; }
+.map-box:fullscreen .map-hint { display: none; }
+/* Mapa sobre GTADB */
+.map-stage { aspect-ratio: auto; height: clamp(440px, 78vh, 900px); max-height: none; background: #2c66a5; }
+@media (max-width: 600px) { .map-stage { height: 74vh; min-height: 380px; } }
+.map-box:fullscreen .map-stage { height: auto; }
+#mapTiles image { opacity: 0; transition: opacity 0.35s; }
+#mapTiles image.ok { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { #mapTiles image { transition: none; } }
+#mapSvg.zin:not(.no-pl) .mpin .pl { display: block; }
+#mapSvg.no-pl .mpin .pl { display: none; }
+#mapSvg.no-pl .mpin:hover .pl, #mapSvg.no-pl .mpin:focus-visible .pl, #mapSvg.no-pl .mpin.sel .pl { display: block; }
+.mpin .pb { filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.45)); }
+.gd { stroke: #120a1c; stroke-width: 1.3px; vector-effect: non-scaling-stroke; cursor: pointer; }
+.gd.nm { stroke-width: 1.8px; }
+.gd-sel { fill: rgba(255, 46, 136, 0.25); stroke: #ff2e88; stroke-width: 2.5px; vector-effect: non-scaling-stroke; pointer-events: none; }
+.map-attr { position: absolute; right: 8px; bottom: 8px; z-index: 2; font: 500 0.66rem/1.2 var(--font-mono); color: #e9eef7; background: rgba(18, 10, 28, 0.72); padding: 4px 7px; border-radius: 6px; }
+.map-attr a { color: #fff; }
+.map-fail { display: none; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); margin: 0; max-width: 80%; text-align: center; background: rgba(18, 10, 28, 0.85); padding: 10px 14px; border-radius: 10px; font-size: 0.86rem; }
+.map-stage.no-tiles:not(.tiles-ok) .map-fail { display: block; }
+.zoom-badge { max-width: calc(100% - 230px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.gta-box { border-top: 1px dashed var(--line); padding: 10px 2px; margin-bottom: 8px; }
+.gta-box.off { opacity: 0.5; }
+.gta-box h4 { display: flex; justify-content: space-between; font: 500 0.72rem/1 var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--aqua); margin: 2px 0 6px; }
+.gta-box h4 span { color: var(--muted); letter-spacing: 0.04em; }
+.gta-box p { font-size: 0.8rem; color: var(--muted); margin: 0 0 8px; }
+.gta-types { display: flex; flex-wrap: wrap; gap: 5px; }
+.gt-chip { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); background: rgba(255, 255, 255, 0.04); color: var(--text); border-radius: 999px; padding: 5px 9px; font-size: 0.76rem; }
+.gt-chip small { color: var(--muted); font-family: var(--font-mono); font-size: 0.66rem; }
+.gt-chip[aria-pressed="false"] { opacity: 0.4; text-decoration: line-through; }
+.gt-chip i, .gt-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; border: 1.5px solid #120a1c; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.35); flex: none; }
+.map-q-res .gt-dot { margin-right: 8px; vertical-align: 0; }
+.mq-h { font: 500 0.66rem/1 var(--font-mono); text-transform: uppercase; letter-spacing: 0.1em; color: var(--aqua); margin: 8px 10px 4px; }
+.map-card .mc-meta a { color: var(--aqua); }
+
+@media (max-width: 600px) { .map-q { width: 100%; } .map-tools { display: grid; } .map-stage { max-height: 70vh; } }
+
+/* ---------- Calle: grano, cinta policial, pegatinas, neón ---------- */
+:root { --tape: #ffd23f; --hot: #ff2e88; }
+body::after { content: ""; position: fixed; inset: 0; z-index: 200; pointer-events: none; opacity: 0.09; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+.hero .scan { position: absolute; inset: 0; z-index: -1; pointer-events: none; background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.16) 0 1px, transparent 1px 3px); }
+.hero .vf { position: absolute; inset: 14px; z-index: -1; pointer-events: none; }
+.hero .vf i { position: absolute; width: 26px; height: 26px; border: 2px solid rgba(255, 255, 255, 0.55); }
+.hero .vf i:nth-child(1) { top: 0; left: 0; border-right: 0; border-bottom: 0; }
+.hero .vf i:nth-child(2) { top: 0; right: 0; border-left: 0; border-bottom: 0; }
+.hero .vf i:nth-child(3) { bottom: 0; left: 0; border-right: 0; border-top: 0; }
+.hero .vf i:nth-child(4) { bottom: 0; right: 0; border-left: 0; border-top: 0; }
+.rec { display: inline-flex; align-items: center; gap: 8px; font: 500 0.74rem/1 var(--font-mono); letter-spacing: 0.14em; text-transform: uppercase; color: #fff; background: rgba(0, 0, 0, 0.45); padding: 6px 10px; border-radius: 4px; margin: 0 0 18px; }
+.rec i { width: 9px; height: 9px; border-radius: 50%; background: #ff3b3b; box-shadow: 0 0 10px #ff3b3b; animation: blink 1.1s steps(2, end) infinite; }
+.hero-copy { position: relative; z-index: 0; }
+.hero-copy::before { content: "Vice City"; position: absolute; left: -24px; top: 18px; z-index: -1; font: 400 clamp(6rem, 15vw, 12rem)/1 var(--font-script); color: transparent; -webkit-text-stroke: 1.5px rgba(255, 79, 163, 0.32); transform: rotate(-9deg); white-space: nowrap; pointer-events: none; }
+.hero h1 .dex { text-shadow: 0 0 6px rgba(255, 79, 163, 0.9), 0 0 22px rgba(255, 79, 163, 0.7), 0 0 48px rgba(255, 46, 136, 0.5); animation: neon 6s infinite; }
+@keyframes neon { 0%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1; } 20%, 24%, 55% { opacity: 0.55; } }
+.count-card { border-color: rgba(255, 79, 163, 0.45); box-shadow: 0 0 0 1px rgba(255, 79, 163, 0.15), 0 0 40px -6px rgba(255, 79, 163, 0.45), inset 0 0 30px rgba(255, 79, 163, 0.08); }
+.ticker .lbl { background: #ff3b3b; color: #fff; }
+.tape { position: relative; height: 92px; overflow: hidden; pointer-events: none; margin-top: -24px; }
+.tape .band { position: absolute; left: -5%; width: 110%; background: var(--tape); color: #111; font: 900 1.15rem/1 var(--font-display); letter-spacing: 0.16em; text-transform: uppercase; white-space: nowrap; padding: 9px 0; border-block: 3px solid #111; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); }
+.tape .band span { display: inline-block; animation: tape 40s linear infinite; }
+.tape .b1 { top: 26px; transform: rotate(-2.2deg); z-index: 1; }
+.tape .b2 { top: 30px; transform: rotate(1.6deg); background: #f2c230; opacity: 0.92; }
+.tape .b2 span { animation-direction: reverse; animation-duration: 55s; }
+@keyframes tape { to { transform: translateX(-50%); } }
+.tape.foot-tape { margin: 0; height: 70px; background: #0c0713; }
+.tape.foot-tape .b1 { top: 16px; transform: rotate(-1deg); }
+section.block { position: relative; }
+section.block::before { content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 2px; background: linear-gradient(90deg, transparent, var(--hot) 20%, var(--sunset) 55%, var(--aqua) 85%, transparent); box-shadow: 0 0 14px rgba(255, 46, 136, 0.7); opacity: 0.8; }
+.sec-head .eyebrow { justify-self: start; background: var(--hot); color: #fff; padding: 6px 10px 5px; transform: rotate(-2deg); box-shadow: 3px 3px 0 #000; letter-spacing: 0.18em; }
+h2 { transform: skewX(-6deg); transform-origin: left bottom; text-shadow: 3px 3px 0 #000, 5px 5px 0 rgba(255, 46, 136, 0.55); }
+h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 136, 0.45); display: inline-block; transform: rotate(-3deg) skewX(6deg); }
+.chip[aria-pressed="true"], .chip[aria-selected="true"] { background: var(--hot); color: #fff; border-color: var(--hot); box-shadow: 0 0 14px rgba(255, 46, 136, 0.45); }
+.btn-primary { box-shadow: 0 0 22px rgba(255, 46, 136, 0.45); }
+.dossier, .mystery, details.guide, .station, .known li, .faq details, .story-blocks article { transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s; }
+.dossier:hover, .mystery:hover, details.guide:hover, .station:hover, .known li:hover { border-color: rgba(255, 79, 163, 0.55); box-shadow: 0 0 0 1px rgba(255, 79, 163, 0.2), 0 14px 40px -12px rgba(255, 46, 136, 0.5); transform: translateY(-2px); }
+.dossier .strip { font-weight: 700; }
+.dossier .who { position: relative; padding: 12px; margin: -4px -4px 0; border-radius: 10px; background:
+  linear-gradient(90deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.04)),
+  repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.13) 0 1px, transparent 1px 12px); }
+.dossier .who::after { content: attr(data-n); position: absolute; right: 10px; top: 8px; font: 500 0.66rem/1 var(--font-mono); letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.55); }
+.dossier .mono-badge { width: 62px; height: 72px; border-radius: 6px; box-shadow: 3px 3px 0 #000; font-size: 1.7rem; }
+.mystery .stamp { box-shadow: 2px 2px 0 #000; }
+.news-item.destacada h3 { text-shadow: 0 0 18px rgba(255, 143, 63, 0.35); }
+@media (max-width: 600px) {
+  .hero-copy::before { font-size: 5.4rem; left: -10px; }
+  .tape { height: 74px; } .tape .band { font-size: 0.95rem; }
+  .hero .vf { inset: 8px; }
+}
+@media (prefers-reduced-motion: reduce) { .tape .band span { transform: none; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="LeonidaDex.com, inicio"><span class="b-word">LEONIDA</span><span class="b-script">Dex</span><span class="b-tld">.com</span></a>
+    <nav class="nav" aria-label="Secciones">
+      <a class="nav-top" href="#noticias">Noticias</a>
+      <a class="nav-top" href="#mapa">Mapa</a>
+      <div class="nav-grp"><button class="nav-top" type="button" aria-expanded="false" aria-controls="ng1">Guías <i aria-hidden="true">▾</i></button>
+        <div class="nav-pop" id="ng1">
+          <a href="#guias"><b>Guías</b><span>Paso a paso, listas y progreso</span></a>
+          <a href="#misiones"><b>Misiones</b><span>Registro por capítulos</span></a>
+          <a href="#trucos"><b>Trucos</b><span>Códigos y marcador de teléfono</span></a>
+          <a href="#misterios"><b>Misterios</b><span>Secretos y teorías</span></a>
+        </div></div>
+      <div class="nav-grp"><button class="nav-top" type="button" aria-expanded="false" aria-controls="ng2">El juego <i aria-hidden="true">▾</i></button>
+        <div class="nav-pop" id="ng2">
+          <a href="#lanzamiento"><b>Salida y ediciones</b><span>Fecha, hora, precios y precarga</span></a>
+          <a href="#historia"><b>Historia</b><span>De qué va GTA VI</span></a>
+          <a href="#personajes"><b>Personajes</b><span>Fichas de Leonida</span></a>
+          <a href="#jugabilidad"><b>Sistemas</b><span>Policía, coches, combate…</span></a>
+          <a href="#dex"><b>La Dex</b><span>Vehículos, armas, fauna y marcas</span></a>
+          <a href="#musica"><b>Radio</b><span>Emisoras y canciones</span></a>
+        </div></div>
+      <div class="nav-grp"><button class="nav-top" type="button" aria-expanded="false" aria-controls="ng3">Más <i aria-hidden="true">▾</i></button>
+        <div class="nav-pop" id="ng3">
+          <a href="#reportajes"><b>Reportajes</b><span>Artículos a fondo</span></a>
+          <a href="#fotos"><b>Fotos y vídeos</b><span>Tráileres y capturas oficiales</span></a>
+          <a href="#cronologia"><b>Cronología</b><span>De 2022 al lanzamiento</span></a>
+          <a href="#faq"><b>Preguntas frecuentes</b><span>Respuestas rápidas</span></a>
+        </div></div>
+    </nav>
+    <div class="tb-right">
+      <span class="mini-count" id="miniCount" aria-hidden="true"></span>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileMenu"><span aria-hidden="true">☰</span> Menú</button>
+      <button class="search-btn" id="searchBtn" type="button" aria-label="Buscar en la guía"><span aria-hidden="true">⌕</span><span class="lbl-long">Buscar</span><kbd>/</kbd></button>
+    </div>
+  </div>
+</header>
+
+<div class="mmenu" id="mobileMenu" hidden>
+  <div class="mmenu-box" role="dialog" aria-modal="true" aria-label="Menú de secciones">
+    <div class="mmenu-head"><b>Secciones</b><button type="button" id="menuClose" aria-label="Cerrar menú">×</button></div>
+    <div id="mmenuBody"></div>
+  </div>
+</div>
+
+<section class="hero" id="inicio" aria-label="Portada">
+  <canvas id="sky" aria-hidden="true"></canvas>
+  <div class="scan" aria-hidden="true"></div>
+  <div class="vf" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="rec" aria-hidden="true"><i></i>REC · <span id="recClock">--:--:--</span> · Vice City</p>
+      <p class="script">La enciclopedia de GTA VI</p>
+      <h1>Leonida<span class="dex">Dex</span></h1>
+      <p class="thesis">Todo lo que se sabe de <strong>Grand Theft Auto VI</strong>, en español y al día: noticias, mapa, sistemas, guías, misiones, trucos y misterios. <strong>Se actualiza sola tres veces al día.</strong></p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#noticias">Últimas noticias</a>
+        <a class="btn btn-ghost" href="#mapa">Explorar el mapa</a>
+        <a class="btn btn-ghost" href="#guias">Guías</a>
+      </div>
+    </div>
+    <div class="count-card" role="group" aria-labelledby="countTitle">
+      <p class="eyebrow" id="countTitle">Faltan para el lanzamiento</p>
+      <div class="count" id="count">
+        <div class="unit"><b id="cd-d">--</b><span>días</span></div>
+        <div class="unit"><b id="cd-h">--</b><span>horas</span></div>
+        <div class="unit"><b id="cd-m">--</b><span>min</span></div>
+        <div class="unit"><b id="cd-s">--</b><span>seg</span></div>
+      </div>
+      <p class="count-date" id="countDate">Jueves 19 de noviembre de 2026 · 00:00 hora local · PS5 y Xbox Series X|S</p>
+      <div class="wanted" id="wanted" aria-hidden="true"></div>
+      <p class="wanted-cap" id="wantedCap"></p>
+    </div>
+  </div>
+  <div class="wrap ticker"><span class="lbl">Última hora</span><ul id="ticker"></ul></div>
+  <div class="tape" aria-hidden="true"><div class="band b2"><span>NO PASAR · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · NO PASAR · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · NO PASAR · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · NO PASAR · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · NO PASAR · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · NO PASAR · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · </span></div><div class="band b1"><span>NO PASAR · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · NO PASAR · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · NO PASAR · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · NO PASAR · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · NO PASAR · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · NO PASAR · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · </span></div></div>
+</section>
+
+<main id="contenido">
+
+<section class="block" id="noticias" aria-labelledby="h-noticias">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">01 · Noticias</p>
+      <h2 id="h-noticias">Lo último de <em>Vice City</em></h2>
+      <p class="lede">Cada noticia indica si viene de Rockstar o Take-Two (oficial), de la prensa que ha visto el juego o de rumores e insiders. Siempre con enlace a la fuente.</p>
+    </div>
+    <div class="news-grid">
+      <div>
+        <div class="toolbar">
+          <div class="chips" id="newsCats" role="group" aria-label="Filtrar por categoría"></div>
+          <label class="sr-only" for="newsQ">Buscar en noticias</label>
+          <input class="field" id="newsQ" type="search" placeholder="Buscar en noticias…" autocomplete="off">
+        </div>
+        <div class="chips" id="newsStates" role="group" aria-label="Filtrar por fiabilidad"></div>
+        <ul class="news-list" id="newsList"></ul>
+        <div class="more"><button class="btn btn-ghost" id="newsMore" type="button">Ver más noticias</button></div>
+      </div>
+      <aside class="aside-card" aria-labelledby="h-eventos">
+        <h3 id="h-eventos">Próximas fechas</h3>
+        <ul class="events" id="events"></ul>
+        <div class="status-line"><span class="dot" id="statusDot"></span><span id="statusText">Cargando estado…</span></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="reportajes" aria-labelledby="h-rep">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">02 · Reportajes</p>
+      <h2 id="h-rep">Reportajes <em>a fondo</em></h2>
+      <p class="lede">Artículos propios para entenderlo todo de un tirón: la historia del desarrollo, los retrasos, qué comprar, cómo se juega y las cifras. Cada uno enlaza sus fuentes.</p>
+    </div>
+    <div class="chips" id="artCats" role="group" aria-label="Filtrar reportajes"></div>
+    <div class="articles" id="articles"></div>
+  </div>
+</section>
+
+<div class="reader" id="reader" hidden>
+  <div class="reader-box" role="dialog" aria-modal="true" aria-labelledby="readerTitle">
+    <button class="reader-x" type="button" id="readerClose" aria-label="Cerrar artículo">×</button>
+    <article id="readerBody"></article>
+  </div>
+</div>
+
+<section class="block" id="lanzamiento" aria-labelledby="h-lanz">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">03 · Lanzamiento</p>
+      <h2 id="h-lanz">Fecha, precio y <em>ediciones</em></h2>
+      <p class="lede">Lo esencial para tener el juego listo el día 19, con precios de España.</p>
+    </div>
+    <div class="launch-grid">
+      <div>
+        <dl class="facts" id="facts"></dl>
+        <div class="preload" id="preload"></div>
+      </div>
+      <div>
+        <div class="table-scroll"><table class="ed-table" id="edTable"></table></div>
+        <p class="note" id="edNote"></p>
+      </div>
+    </div>
+    <div class="contents">
+      <details open><summary>Pack de reserva Vintage Vice City</summary><ul id="packList"></ul></details>
+      <details><summary>Contenido de la Ultimate</summary><ul id="ultList"></ul></details>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="historia" aria-labelledby="h-hist">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">04 · Historia</p>
+      <h2 id="h-hist">Bienvenidos a <em>Leonida</em></h2>
+    </div>
+    <div class="story">
+      <div>
+        <p class="premise" id="premise"></p>
+        <p class="tone" id="tone"></p>
+      </div>
+      <div class="story-blocks" id="storyBlocks"></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="personajes" aria-labelledby="h-pers">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">05 · Personajes</p>
+      <h2 id="h-pers">Fichas <em>de Leonida</em></h2>
+      <p class="lede">Los ocho perfiles oficiales que ha publicado Rockstar (nueve personas, porque Real Dimez es un dúo).</p>
+    </div>
+    <div class="chips" id="peopleTabs" role="group" aria-label="Filtrar personajes"></div>
+    <div class="people" id="people"></div>
+  </div>
+</section>
+
+<section class="block" id="mapa" aria-labelledby="h-mapa">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">06 · Mapa</p>
+      <h2 id="h-mapa">El estado de <em>Leonida</em></h2>
+      <p class="lede">Más de 100 lugares con su fuente sobre el mapa de la comunidad <a href="https://map.gtadb.org" target="_blank" rel="noopener">GTADB</a>, el más detallado que existe: calles, barrios y más de 3.300 edificios identificados con su equivalente real en Florida. Filtra, marca lo que vayas descubriendo y comparte cualquier punto. Rockstar aún no ha publicado el mapa oficial: la base es un trabajo de fans y se irá afinando.</p>
+    </div>
+    <div class="map-grid">
+      <div class="map-box" id="mapBox">
+        <div class="map-stage" id="mapStage">
+          <svg id="mapSvg" viewBox="150 150 475 650" preserveAspectRatio="xMidYMid meet" role="group" aria-label="Mapa interactivo de Leonida sobre el mapa de la comunidad GTADB" aria-describedby="mapHelp">
+            <g id="mapTiles" aria-hidden="true"><g data-z="2"></g><g data-z="3"></g><g data-z="4"></g><g data-z="5"></g></g>
+            <g id="gtaDots" aria-hidden="true"></g>
+            <g id="mapPins"></g>
+          </svg>
+          <div class="zoom-ctl" role="group" aria-label="Zoom">
+            <button type="button" id="zIn" aria-label="Acercar">+</button>
+            <button type="button" id="zOut" aria-label="Alejar">−</button>
+            <button type="button" id="zReset" aria-label="Ver todo Leonida">⟲</button>
+            <button type="button" id="zFull" aria-label="Pantalla completa">⛶</button>
+          </div>
+          <div class="map-search"><input class="field" id="mapQ" type="search" placeholder="Buscar un lugar…" aria-label="Buscar un lugar en el mapa" autocomplete="off"><div class="map-q-res" id="mapQRes" hidden></div></div>
+          <div class="map-card" id="mapCard" aria-live="polite" hidden></div>
+          <div class="zoom-badge" id="zoomBadge" aria-hidden="true">x1</div>
+          <div class="map-attr">Mapa: <a href="https://map.gtadb.org" target="_blank" rel="noopener">Yanis y GTADB</a> · <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" rel="noopener">CC BY 4.0</a> · adaptado</div>
+          <p class="map-fail">No se ha podido cargar el mapa base. Los marcadores siguen funcionando.</p>
+        </div>
+        <p class="map-hint" id="mapHelp">Arrastra para moverte, usa la rueda o pellizca para el zoom y haz doble clic para acercar. Al acercarte aparecen los puntos de la comunidad: tócalos para ver su equivalente real. Base cartográfica: «GTA VI Map Tiles» (Yanis y colaboradores) y «GTA VI Landmarks Data», de <a href="https://map.gtadb.org" target="_blank" rel="noopener">map.gtadb.org</a>, con licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" rel="noopener">CC BY 4.0</a>. LeonidaDex los ha recortado, convertido a teselas y traducido. No es el mapa oficial de Rockstar.</p>
+      </div>
+      <aside class="map-side" aria-label="Panel del mapa">
+        <div class="ms-progress"><div><b id="foundTxt">0 / 0</b> lugares descubiertos</div><div class="bar" aria-hidden="true"><i id="foundBar"></i></div></div>
+        <div class="ms-tabs" role="tablist" aria-label="Panel del mapa">
+          <button type="button" role="tab" id="tab-filtros" aria-selected="true" aria-controls="paneFiltros" data-t="Filtros">Filtros</button>
+          <button type="button" role="tab" id="tab-lista" aria-selected="false" aria-controls="paneLista" data-t="Lista">Lugares</button>
+          <button type="button" role="tab" id="tab-region" aria-selected="false" aria-controls="paneRegion" data-t="Region">Regiones</button>
+        </div>
+        <div class="ms-pane" id="paneFiltros" role="tabpanel" aria-labelledby="tab-filtros">
+          <div class="ms-actions"><button type="button" id="catAll">Mostrar todo</button><button type="button" id="catNone">Ocultar todo</button></div>
+          <ul class="cat-list" id="catList"></ul>
+          <div class="toggles">
+            <label><input type="checkbox" id="tgHideFound"> Ocultar lo descubierto</label>
+            <label><input type="checkbox" id="tgOficial"> Solo lugares oficiales</label>
+            <label><input type="checkbox" id="tgCluster" checked> Agrupar marcadores cercanos</label>
+            <label><input type="checkbox" id="tgLabels" checked> Nombres de los marcadores al acercar</label>
+            <label><input type="checkbox" id="tgGta" checked> Puntos de la comunidad (GTADB)</label>
+          </div>
+          <div class="gta-box" id="gtaBox">
+            <h4>Puntos de la comunidad <span id="gtaCount"></span></h4>
+            <p>Edificios y sitios identificados por los colaboradores de GTADB con su equivalente real. Aparecen al acercar el mapa; toca un tipo para ocultarlo.</p>
+            <div class="gta-types" id="gtaTypes"></div>
+          </div>
+          <button type="button" class="link-btn" id="resetFound">Borrar mi progreso</button>
+        </div>
+        <div class="ms-pane" id="paneLista" role="tabpanel" aria-labelledby="tab-lista" hidden><div id="placeList"></div></div>
+        <div class="ms-pane" id="paneRegion" role="tabpanel" aria-labelledby="tab-region" hidden>
+          <div class="region-tabs" id="regionTabs" role="group" aria-label="Elegir región"></div>
+          <div class="region-panel" id="regionPanel" aria-live="polite"></div>
+        </div>
+      </aside>
+    </div>
+    <div class="scale" id="scale">
+      <h3>¿Cómo de grande es Leonida?</h3>
+      <p class="note">Tamaño relativo según lo que ha dicho Rockstar (GTA V = 1). No hay cifras oficiales en km². Además, Vice City sola mide aproximadamente el doble que Los Santos.</p>
+      <div class="bars" id="bars"></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="fotos" aria-labelledby="h-fotos">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">07 · Fotos y vídeos</p>
+      <h2 id="h-fotos">Fotos <em>y vídeos</em></h2>
+      <p class="lede">Todos los vídeos oficiales y dónde ver las capturas de Rockstar, más nuestras postales ilustradas de cada región. Las imágenes del juego son de Rockstar, así que te llevamos a sus canales oficiales en lugar de copiarlas.</p>
+    </div>
+    <h3 class="sub-h">Vídeos oficiales</h3>
+    <div class="videos" id="videos"></div>
+    <h3 class="sub-h">Capturas oficiales</h3>
+    <div class="shots" id="shots"></div>
+    <h3 class="sub-h">Postales de Leonida <span class="note">ilustraciones de LeonidaDex</span></h3>
+    <div class="postcards" id="postcards"></div>
+  </div>
+</section>
+
+<section class="block" id="jugabilidad" aria-labelledby="h-jug">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">08 · Jugabilidad</p>
+      <h2 id="h-jug">Cómo se <em>juega</em></h2>
+      <p class="lede">Los sistemas confirmados en el Extended Look y en las previews de la prensa que visitó Rockstar North. Se revisarán con el juego final.</p>
+    </div>
+    <div class="sys">
+      <div class="sys-tabs" id="sysTabs" role="tablist" aria-label="Sistemas de juego"></div>
+      <div class="sys-panel" id="sysPanel" role="tabpanel"></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="dex" aria-labelledby="h-dex">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">09 · La Dex</p>
+      <h2 id="h-dex">La <em>Dex</em></h2>
+      <p class="lede">El fichero de LeonidaDex: vehículos, armas, fauna y marcas confirmados por Rockstar o vistos en el material oficial. Tras el lanzamiento iremos completándolo con todo lo que aparezca en el juego.</p>
+    </div>
+    <div class="toolbar"><div class="chips" id="dexTabs" role="group" aria-label="Categoría"></div><input class="field" id="dexQ" type="search" placeholder="Buscar en la Dex…" aria-label="Buscar en la Dex"></div>
+    <div class="dex-grid" id="dexGrid"></div>
+    <p class="note">«Oficial»: confirmado por Rockstar (fichas, ediciones o entrevistas). «Visto en tráiler»: identificado en material oficial por medios y comunidad.</p>
+  </div>
+</section>
+
+<section class="block" id="guias" aria-labelledby="h-guias">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">10 · Guías</p>
+      <h2 id="h-guias">Guías <em>prácticas</em></h2>
+      <p class="lede">Ya disponibles las de preparación y las basadas en lo que Rockstar ha enseñado. Las de misiones, coleccionables y vehículos se irán completando desde el día del lanzamiento.</p>
+    </div>
+    <div class="chips" id="guideCats" role="group" aria-label="Filtrar guías"></div>
+    <div class="guides" id="guides"></div>
+  </div>
+</section>
+
+<section class="block" id="misiones" aria-labelledby="h-mis">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">11 · Misiones</p>
+      <h2 id="h-mis">Registro de <em>misiones</em></h2>
+      <p class="lede" id="misLede">Rockstar no ha publicado nombres de misiones. Este registro se rellenará a partir del 19 de noviembre, y podrás marcar las que completes.</p>
+    </div>
+    <div id="missions"></div>
+  </div>
+</section>
+
+<section class="block" id="trucos" aria-labelledby="h-trucos">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">12 · Trucos</p>
+      <h2 id="h-trucos">Trucos y <em>códigos</em></h2>
+      <p class="lede">Los de GTA VI aparecerán aquí en cuanto se confirmen. Mientras, el archivo de GTA V y Vice City y un marcador para entender cómo funcionaban los trucos por teléfono.</p>
+    </div>
+    <div class="cheat-tabs" role="tablist" aria-label="Juego" id="cheatTabs">
+      <button class="chip" role="tab" aria-selected="true" data-t="vi" type="button">GTA VI</button>
+      <button class="chip" role="tab" aria-selected="false" data-t="v" type="button">GTA V</button>
+      <button class="chip" role="tab" aria-selected="false" data-t="vc" type="button">Vice City</button>
+      <button class="chip" role="tab" aria-selected="false" data-t="tel" type="button">Marcador</button>
+    </div>
+    <div class="cheat-panel" data-p="vi" id="cheatVI"></div>
+    <div class="cheat-panel" data-p="v" hidden>
+      <div class="toolbar"><label class="sr-only" for="cvQ">Filtrar trucos de GTA V</label><input class="field" id="cvQ" type="search" placeholder="Filtrar trucos de GTA V…" autocomplete="off"><span class="note">En PC: pulsa ~ y escribe la palabra. En consola: marca el número en el móvil del juego.</span></div>
+      <div class="cheat-scroll"><table class="c-table"><thead><tr><th>Efecto</th><th>PC</th><th>Móvil</th><th><span class="sr-only">Copiar</span></th></tr></thead><tbody id="cvBody"></tbody></table></div>
+    </div>
+    <div class="cheat-panel" data-p="vc" hidden>
+      <p class="note">Vice City (PC y Definitive Edition en PC): escribe el código durante la partida, sin pausar.</p>
+      <div class="cheat-scroll"><table class="c-table"><thead><tr><th>Efecto</th><th>Código</th><th>Tipo</th><th><span class="sr-only">Copiar</span></th></tr></thead><tbody id="vcBody"></tbody></table></div>
+    </div>
+    <div class="cheat-panel" data-p="tel" hidden>
+      <div class="dialer">
+        <div>
+          <h3>Marcador 1-999</h3>
+          <p>En GTA V, los trucos por teléfono son la palabra del truco tecleada en un teclado de móvil, precedida de 1-999. Escribe una palabra y verás el número. Si es un truco de GTA V, te diremos qué hace.</p>
+          <label class="sr-only" for="telIn">Palabra</label>
+          <input class="field" id="telIn" type="text" placeholder="Prueba con TURTLE" maxlength="24" autocomplete="off" style="width:100%">
+        </div>
+        <div class="phone"><output id="telOut" for="telIn">1-999-</output><small id="telInfo">El número aparecerá aquí.</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="misterios" aria-labelledby="h-mist">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">13 · Misterios</p>
+      <h2 id="h-mist">Misterios y <em>detalles</em></h2>
+      <p class="lede">Cada tarjeta indica si es un dato confirmado, una teoría de la comunidad o algo por descubrir cuando salga el juego.</p>
+    </div>
+    <div class="chips" id="mystTabs" role="group" aria-label="Filtrar misterios"></div>
+    <div class="mysteries" id="mysteries"></div>
+    <div class="tradition">
+      <h3>La tradición Rockstar</h3>
+      <p class="note">Secretos famosos de juegos anteriores, para saber qué buscar en Leonida.</p>
+      <ul id="tradition"></ul>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="musica" aria-labelledby="h-mus">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">14 · Radio</p>
+      <h2 id="h-mus">Las emisoras <em>de Leonida</em></h2>
+      <p class="lede">Las seis emisoras que Rockstar ha presentado, con sus presentadores y los temas del avance oficial. Habrá más.</p>
+    </div>
+    <div class="stations" id="stations"></div>
+    <div class="music-extra" id="musicExtra"></div>
+  </div>
+</section>
+
+<section class="block" id="cronologia" aria-labelledby="h-cron">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">15 · Cronología</p>
+      <h2 id="h-cron">El camino <em>a Vice City</em></h2>
+    </div>
+    <ol class="timeline" id="timeline"></ol>
+  </div>
+</section>
+
+<section class="block" id="faq" aria-labelledby="h-faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">16 · Preguntas frecuentes</p>
+      <h2 id="h-faq">Respuestas <em>rápidas</em></h2>
+    </div>
+    <div class="faq" id="faqList"></div>
+  </div>
+</section>
+
+</main>
+
+<div class="tape foot-tape" aria-hidden="true"><div class="band b1"><span>NO PASAR · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · NO PASAR · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · NO PASAR · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · NO PASAR · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · NO PASAR · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · NO PASAR · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · ESCENA DEL CRIMEN · LEONIDA PD · NO PASAR · LEONIDADEX · </span></div></div>
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="brand" href="#inicio"><span class="b-word">LEONIDA</span><span class="b-script">Dex</span><span class="b-tld">.com</span></a>
+      <p class="disclaimer">LeonidaDex es una enciclopedia hecha por fans, no oficial. No está afiliada a Rockstar Games ni a Take-Two Interactive. Grand Theft Auto, GTA VI y los nombres relacionados son marcas de sus propietarios. Los textos son resúmenes propios con enlace a cada fuente.</p>
+      <p class="disclaimer">Mapa base y puntos de la comunidad: «GTA VI Map Tiles» y «GTA VI Landmarks Data» (CC BY 4.0) — <a href="https://map.gtadb.org" target="_blank" rel="noopener">map.gtadb.org</a>, de Yanis y los colaboradores de GTADB. Adaptación: recorte, teselas WebP, coordenadas convertidas y textos en español. <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" rel="noopener">Licencia</a>.</p>
+      <p class="disclaimer" id="footStatus"></p>
+    </div>
+    <div>
+      <h3>Fuentes principales</h3>
+      <ul id="sources"></ul>
+    </div>
+  </div>
+</footer>
+
+<div class="search" id="search" hidden role="dialog" aria-modal="true" aria-label="Buscar en la guía">
+  <div class="search-box">
+    <label class="sr-only" for="searchIn">Buscar</label>
+    <input id="searchIn" type="search" placeholder="Busca personajes, trucos, regiones, noticias…" autocomplete="off">
+    <ul class="results" id="results"></ul>
+    <div class="search-foot"><span>↑ ↓ para moverte · Intro para abrir</span><span>Esc para cerrar</span></div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script type="application/json" id="datos-base">__BASE__</script>
+<script type="application/json" id="datos-fallback">__DYN__</script>
+<script>
+(function () {
+  "use strict";
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
+  var norm = function (s) { return String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, ""); };
+  var store = {
+    get: function (k, d) { try { var v = localStorage.getItem("gl:" + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+    set: function (k, v) { try { localStorage.setItem("gl:" + k, JSON.stringify(v)); } catch (e) {} }
+  };
+  var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  var BASE = JSON.parse($("#datos-base").textContent);
+  var DYN;
+  try { DYN = JSON.parse($("#datos-fallback").textContent); } catch (e) { DYN = { meta: {}, noticias: [] }; }
+  var source = "copia integrada";
+
+  function parseLocal(s) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})(?:T(\d{2}):(\d{2})(?::(\d{2}))?)?$/.exec(String(s || ""));
+    if (!m) return new Date(s);
+    return new Date(+m[1], +m[2] - 1, +m[3], +(m[4] || 0), +(m[5] || 0), +(m[6] || 0));
+  }
+  function startOfToday() { var d = new Date(); d.setHours(0, 0, 0, 0); return d; }
+  var fmtDay = new Intl.DateTimeFormat("es-ES", { day: "numeric" });
+  var fmtMon = new Intl.DateTimeFormat("es-ES", { month: "short" });
+  var fmtFull = new Intl.DateTimeFormat("es-ES", { day: "numeric", month: "short", year: "numeric" });
+  function mon(d) { return fmtMon.format(d).replace(".", ""); }
+  function arr(x) { return Array.isArray(x) ? x : []; }
+
+  function toast(msg) {
+    var t = $("#toast"); t.textContent = msg; t.classList.add("show");
+    clearTimeout(toast._t); toast._t = setTimeout(function () { t.classList.remove("show"); }, 2200);
+  }
+  function copyText(txt) {
+    try {
+      navigator.clipboard.writeText(txt).then(function () { toast("Copiado: " + txt); }, function () { toast("Selecciona y copia: " + txt); });
+    } catch (e) { toast("Selecciona y copia: " + txt); }
+  }
+
+  /* ---------------- Cielo de Vice City ---------------- */
+  var sky = $("#sky"), ctx = sky.getContext("2d"), staticLayer = null, skyGeom = null, skyRAF = 0, skyVisible = true;
+  function seeded(n) { var x = Math.sin(n * 9301 + 49297) * 233280; return x - Math.floor(x); }
+  function drawPalm(g, x, base, h, lean, scale) {
+    g.save(); g.fillStyle = "#0b0512"; g.strokeStyle = "#0b0512";
+    var topX = x + lean, topY = base - h;
+    g.lineWidth = 9 * scale; g.lineCap = "round";
+    g.beginPath(); g.moveTo(x, base); g.quadraticCurveTo(x + lean * 0.2, base - h * 0.55, topX, topY); g.stroke();
+    var fronds = [[-1.0, 0.9], [-0.55, 0.5], [-0.15, 0.25], [0.25, 0.3], [0.65, 0.55], [1.05, 0.95], [-1.25, 1.25], [1.3, 1.3]];
+    fronds.forEach(function (f, i) {
+      var len = (110 + seeded(i + x) * 40) * scale, ang = f[0], droop = f[1];
+      var ex = topX + Math.sin(ang) * len, ey = topY + droop * len * 0.55 - len * 0.05;
+      var cx = topX + Math.sin(ang) * len * 0.5, cy = topY - len * 0.32;
+      g.beginPath(); g.moveTo(topX, topY); g.quadraticCurveTo(cx, cy, ex, ey);
+      g.quadraticCurveTo(cx + 6 * scale, cy + 18 * scale, topX, topY + 6 * scale); g.fill();
+    });
+    g.restore();
+  }
+  function renderStatic() {
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var w = sky.clientWidth, h = sky.clientHeight;
+    if (!w || !h) return;
+    sky.width = Math.round(w * dpr); sky.height = Math.round(h * dpr);
+    var c = document.createElement("canvas"); c.width = sky.width; c.height = sky.height;
+    var g = c.getContext("2d"); g.scale(dpr, dpr);
+    var hz = h * 0.66;
+    var sg = g.createLinearGradient(0, 0, 0, hz);
+    sg.addColorStop(0, "#160a29"); sg.addColorStop(0.35, "#3d1260"); sg.addColorStop(0.62, "#a42a7e"); sg.addColorStop(0.84, "#ff6b4f"); sg.addColorStop(1, "#ffb56d");
+    g.fillStyle = sg; g.fillRect(0, 0, w, hz);
+    for (var i = 0; i < 70; i++) { g.fillStyle = "rgba(255,240,250," + (0.15 + seeded(i) * 0.5) + ")"; g.fillRect(seeded(i + 3) * w, seeded(i + 7) * hz * 0.45, 1.2, 1.2); }
+    var mobile = w < 700, sx = mobile ? w * 0.62 : w * 0.7, r = Math.min(w, h) * (mobile ? 0.2 : 0.24), sy = hz - r * 0.32;
+    var sun = document.createElement("canvas"); sun.width = c.width; sun.height = c.height;
+    var sgx = sun.getContext("2d"); sgx.scale(dpr, dpr);
+    var sunG = sgx.createLinearGradient(0, sy - r, 0, sy + r);
+    sunG.addColorStop(0, "#fff0b8"); sunG.addColorStop(0.5, "#ffb15a"); sunG.addColorStop(1, "#ff3f8e");
+    sgx.fillStyle = sunG; sgx.beginPath(); sgx.arc(sx, sy, r, 0, Math.PI * 2); sgx.fill();
+    sgx.globalCompositeOperation = "destination-out";
+    for (var k = 0; k < 7; k++) { var yy = sy + r * 0.05 + k * r * 0.14, th = 2 + k * 1.7; sgx.fillRect(sx - r, yy, r * 2, th); }
+    g.save(); g.shadowColor = "rgba(255,120,120,0.55)"; g.shadowBlur = 60; g.drawImage(sun, 0, 0, w, h); g.restore();
+    var haze = g.createLinearGradient(0, hz - 60, 0, hz + 10);
+    haze.addColorStop(0, "rgba(255,150,170,0)"); haze.addColorStop(1, "rgba(255,170,150,0.45)");
+    g.fillStyle = haze; g.fillRect(0, hz - 60, w, 70);
+    g.fillStyle = "#2a0c3a";
+    var x0 = w * (mobile ? 0.25 : 0.42), x1 = w * 0.98, xx = x0, n = 0;
+    while (xx < x1) {
+      var bw = 14 + seeded(n) * 26, bh = 20 + seeded(n + 50) * (mobile ? 70 : 110);
+      if (seeded(n + 9) > 0.86) bh *= 1.6;
+      g.fillRect(xx, hz - bh, bw, bh);
+      if (seeded(n + 13) > 0.6) { g.fillRect(xx + bw * 0.3, hz - bh - 10, bw * 0.4, 10); g.fillRect(xx + bw * 0.45, hz - bh - 22, bw * 0.1, 12); }
+      xx += bw + 2; n++;
+    }
+    var seaG = g.createLinearGradient(0, hz, 0, h);
+    seaG.addColorStop(0, "#3a1352"); seaG.addColorStop(0.5, "#1d0c33"); seaG.addColorStop(1, "#120a1c");
+    g.fillStyle = seaG; g.fillRect(0, hz, w, h - hz);
+    drawPalm(g, w * 0.035, h + 10, h * 0.78, w * 0.06, Math.max(0.7, Math.min(1.25, w / 1100)));
+    drawPalm(g, w * 0.965, h + 10, h * 0.62, -w * 0.05, Math.max(0.55, Math.min(1, w / 1300)));
+    staticLayer = c; skyGeom = { w: w, h: h, hz: hz, sx: sx, r: r, dpr: dpr };
+  }
+  function drawSky(t) {
+    if (!staticLayer) return;
+    var G = skyGeom;
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.drawImage(staticLayer, 0, 0);
+    ctx.setTransform(G.dpr, 0, 0, G.dpr, 0, 0);
+    var rows = Math.floor((G.h - G.hz) / 7);
+    for (var i = 0; i < rows; i++) {
+      var y = G.hz + 4 + i * 7, fall = 1 - i / rows;
+      var wob = Math.sin(t / 900 + i * 0.9) * 10 * (1 - fall * 0.5);
+      var half = G.r * (0.95 * fall + 0.15) * (0.75 + 0.25 * Math.sin(t / 700 + i * 1.7));
+      ctx.fillStyle = "rgba(255," + Math.round(150 + 60 * fall) + "," + Math.round(120 + 30 * fall) + "," + (0.55 * fall + 0.05) + ")";
+      ctx.fillRect(G.sx - half + wob, y, half * 2, 2);
+    }
+  }
+  function loopSky(t) { drawSky(t); if (skyVisible && !reduced) skyRAF = requestAnimationFrame(loopSky); }
+  function startSky() { cancelAnimationFrame(skyRAF); renderStatic(); if (reduced) drawSky(0); else skyRAF = requestAnimationFrame(loopSky); }
+  var rt; window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(startSky, 150); });
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(function (es) {
+      skyVisible = es[0].isIntersecting;
+      $("#miniCount").classList.toggle("show", !skyVisible);
+      if (skyVisible && !reduced) { cancelAnimationFrame(skyRAF); skyRAF = requestAnimationFrame(loopSky); }
+    }).observe($(".hero"));
+  }
+
+  /* ---------------- Cuenta atrás ---------------- */
+  var LAUNCH = parseLocal((DYN.meta && DYN.meta.lanzamiento) || "2026-11-19T00:00:00");
+  var pad = function (n) { return n < 10 ? "0" + n : String(n); };
+  var lastLaunched = null;
+  function tick() {
+    var rc = document.getElementById("recClock");
+    if (rc) { var dn = new Date(); rc.textContent = [dn.getHours(), dn.getMinutes(), dn.getSeconds()].map(function (x) { return ("0" + x).slice(-2); }).join(":"); }
+    LAUNCH = parseLocal((DYN.meta && DYN.meta.lanzamiento) || "2026-11-19T00:00:00");
+    var now = Date.now(), diff = LAUNCH.getTime() - now, launched = diff <= 0;
+    if (launched !== lastLaunched) {
+      lastLaunched = launched;
+      if (launched) {
+        $("#countTitle").textContent = "Ya disponible";
+        $("#count").classList.add("launched");
+        $("#count").innerHTML = '<div class="unit"><b id="cd-day"></b><span>en Leonida</span></div>';
+        $("#countDate").textContent = "Salió el jueves 19 de noviembre de 2026 · PS5 y Xbox Series X|S";
+      }
+    }
+    if (launched) {
+      var days = Math.floor((now - LAUNCH.getTime()) / 86400000) + 1;
+      $("#cd-day").textContent = "Día " + days;
+      $("#miniCount").textContent = "Día " + days + " en Leonida";
+    } else {
+      var s = Math.floor(diff / 1000), d = Math.floor(s / 86400), h = Math.floor(s % 86400 / 3600), m = Math.floor(s % 3600 / 60), sec = s % 60;
+      $("#cd-d").textContent = d; $("#cd-h").textContent = pad(h); $("#cd-m").textContent = pad(m); $("#cd-s").textContent = pad(sec);
+      $("#miniCount").textContent = "Faltan " + d + "d " + pad(h) + "h " + pad(m) + "m";
+    }
+  }
+
+  var STAR = '<path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.5 1.3 6.6L12 17.2 6.1 20.5l1.3-6.6L2.5 9.4l6.6-.8z" stroke-width="1.3" stroke-linejoin="round"/>';
+  function renderStars() {
+    var hitos = arr(DYN.hitos), today = startOfToday(), lit = 0, next = null;
+    var html = hitos.map(function (h) {
+      var done = parseLocal(h.fecha) <= today;
+      if (done) lit++; else if (!next) next = h;
+      var cls = done ? "lit" : (next === h ? "off next" : "off");
+      return '<svg viewBox="0 0 24 24" class="' + cls + '"><title>' + esc(h.titulo) + "</title>" + STAR + "</svg>";
+    }).join("");
+    $("#wanted").innerHTML = html;
+    var cap = "Nivel de búsqueda: " + lit + " de " + hitos.length + " hitos";
+    if (next) { var nd = parseLocal(next.fecha); cap += " · Próximo: " + next.titulo + " (" + fmtDay.format(nd) + " " + mon(nd) + ")"; }
+    $("#wantedCap").textContent = cap;
+  }
+
+  /* ---------------- Noticias ---------------- */
+  var newsState = { cat: "Todas", est: "todas", q: "", limit: 8 };
+  var EST_LABEL = { oficial: "Oficial", prensa: "Prensa", rumor: "Rumor" };
+  function isNew(f) { var d = parseLocal(f); var y = startOfToday(); y.setDate(y.getDate() - 1); return d >= y; }
+  function sortedNews() { return arr(DYN.noticias).slice().sort(function (a, b) { return a.fecha < b.fecha ? 1 : a.fecha > b.fecha ? -1 : 0; }); }
+  function srcLinks(f) { return arr(f).map(function (s) { return '<a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.nombre) + "</a>"; }).join(" · "); }
+  function renderNewsFilters() {
+    var cats = ["Todas"]; sortedNews().forEach(function (n) { if (cats.indexOf(n.categoria) < 0) cats.push(n.categoria); });
+    if (cats.indexOf(newsState.cat) < 0) newsState.cat = "Todas";
+    $("#newsCats").innerHTML = cats.map(function (c) { return '<button class="chip" type="button" data-c="' + esc(c) + '" aria-pressed="' + (c === newsState.cat) + '">' + esc(c) + "</button>"; }).join("");
+    var ests = [["todas", "Todo"], ["oficial", "Solo oficial"], ["prensa", "Prensa"], ["rumor", "Rumores"]];
+    $("#newsStates").innerHTML = ests.map(function (e) { return '<button class="chip" type="button" data-e="' + e[0] + '" aria-pressed="' + (e[0] === newsState.est) + '">' + e[1] + "</button>"; }).join("");
+  }
+  function renderNews() {
+    var q = norm(newsState.q);
+    var list = sortedNews().filter(function (n) {
+      if (newsState.cat !== "Todas" && n.categoria !== newsState.cat) return false;
+      if (newsState.est !== "todas" && n.estado !== newsState.est) return false;
+      if (q && norm(n.titulo + " " + n.resumen + " " + n.categoria).indexOf(q) < 0) return false;
+      return true;
+    });
+    var shown = list.slice(0, newsState.limit);
+    $("#newsList").innerHTML = shown.length ? shown.map(function (n) {
+      var d = parseLocal(n.fecha);
+      return '<li class="news-item' + (n.destacada ? " destacada" : "") + '" id="n-' + esc(n.id) + '"><div class="news-date"><b>' + fmtDay.format(d) + "</b>" + esc(mon(d)) + " " + d.getFullYear() + '</div><div><div class="meta-row">' +
+        (isNew(n.fecha) ? '<span class="badge nuevo">Nuevo</span>' : "") +
+        '<span class="badge ' + esc(n.estado) + '">' + esc(EST_LABEL[n.estado] || n.estado) + '</span><span class="badge">' + esc(n.categoria) + "</span></div>" +
+        "<h3>" + esc(n.titulo) + "</h3><p>" + esc(n.resumen) + '</p><div class="src">Fuente: ' + srcLinks(n.fuentes) + "</div></div></li>";
+    }).join("") : '<li class="note" style="padding:18px 0">No hay noticias con esos filtros.</li>';
+    $("#newsMore").hidden = list.length <= newsState.limit;
+    var top = sortedNews().slice(0, 3);
+    $("#ticker").innerHTML = top.map(function (n) { var d = parseLocal(n.fecha); return '<li><time>' + fmtDay.format(d) + " " + esc(mon(d)) + '</time><a href="#n-' + esc(n.id) + '" data-news="' + esc(n.id) + '">' + esc(n.titulo) + "</a></li>"; }).join("");
+  }
+  $("#newsCats").addEventListener("click", function (e) { var b = e.target.closest("button"); if (!b) return; newsState.cat = b.dataset.c; newsState.limit = 8; renderNewsFilters(); renderNews(); });
+  $("#newsStates").addEventListener("click", function (e) { var b = e.target.closest("button"); if (!b) return; newsState.est = b.dataset.e; newsState.limit = 8; renderNewsFilters(); renderNews(); });
+  $("#newsQ").addEventListener("input", function (e) { newsState.q = e.target.value; newsState.limit = 30; renderNews(); });
+  $("#newsMore").addEventListener("click", function () { newsState.limit += 10; renderNews(); });
+  $("#ticker").addEventListener("click", function (e) {
+    var a = e.target.closest("a[data-news]"); if (!a) return;
+    e.preventDefault(); revealNews(a.dataset.news);
+  });
+  function revealNews(id) {
+    newsState.cat = "Todas"; newsState.est = "todas"; newsState.q = ""; $("#newsQ").value = "";
+    var idx = sortedNews().findIndex(function (n) { return n.id === id; });
+    newsState.limit = Math.max(8, idx + 1); renderNewsFilters(); renderNews(); focusEl($("#n-" + id));
+  }
+
+  function renderEvents() {
+    var today = startOfToday();
+    var evs = arr(DYN.eventos).slice().sort(function (a, b) { return a.fecha < b.fecha ? -1 : 1; });
+    var upcoming = evs.filter(function (e) { return parseLocal(e.fin || e.fecha) >= today; });
+    var show = upcoming.length ? upcoming : evs.slice(-4);
+    $("#events").innerHTML = show.map(function (e) {
+      var d = parseLocal(e.fecha), end = parseLocal(e.fin || e.fecha);
+      var cls = end < today ? "past" : (d <= today && end >= today ? "today" : "");
+      var days = Math.round((d - today) / 86400000);
+      var rel = d <= today && end >= today ? "Hoy" : days === 1 ? "Mañana" : days > 1 ? "En " + days + " días" : "";
+      return '<li class="' + cls + '"><div class="ev-date"><b>' + fmtDay.format(d) + "</b>" + esc(mon(d)) + '</div><div><div class="ev-title">' + esc(e.titulo) + '</div><div class="ev-sub">' + esc(e.lugar || "") + (rel ? " · " + rel : "") + (e.estado === "rumor" ? ' · <span class="badge rumor">Rumor</span>' : "") + "</div></div></li>";
+    }).join("");
+  }
+
+  var fmtUpd = new Intl.DateTimeFormat("es-ES", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit", timeZone: "Europe/Madrid" });
+  function nextSlot() {
+    var slots = arr(DYN.meta && DYN.meta.horario_actualizaciones);
+    if (!slots.length) return "";
+    var p = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Madrid", hour: "2-digit", minute: "2-digit", hour12: false }).format(new Date());
+    var nx = slots.filter(function (s) { return s > p; })[0];
+    return nx ? nx : slots[0] + " (mañana)";
+  }
+  function renderStatus() {
+    var meta = DYN.meta || {}, upd = meta.actualizado ? new Date(meta.actualizado) : null;
+    var stale = upd ? (Date.now() - upd.getTime()) > 14 * 3600000 : true;
+    $("#statusDot").classList.toggle("warn", stale);
+    var txt = upd ? "Actualizada el " + fmtUpd.format(upd) + " (hora peninsular)" : "Sin fecha de actualización";
+    var nx = nextSlot();
+    $("#statusText").textContent = txt + (nx ? " · Próxima revisión: " + nx : "") + (stale ? " · Revisión pendiente" : "");
+    $("#footStatus").textContent = txt + ". Revisiones automáticas a las " + arr(meta.horario_actualizaciones).join(", ") + " (hora peninsular). Datos: " + source + ".";
+  }
+
+  /* ---------------- Lanzamiento ---------------- */
+  function renderLaunch() {
+    var L = BASE.lanzamiento;
+    $("#facts").innerHTML = L.datos.map(function (f) { return "<div><dt>" + esc(f.k) + "</dt><dd>" + esc(f.v) + "</dd></div>"; }).join("");
+    $("#preload").innerHTML = L.precarga.map(function (p) { return "<div><b>" + esc(p.plataforma) + "</b><span>" + esc(p.cuando) + "</span><small>" + esc(p.nota) + "</small></div>"; }).join("");
+    var E = L.ediciones;
+    var head = "<thead><tr><th><span class=\"sr-only\">Contenido</span></th>" + E.columnas.map(function (c, i) { return "<th scope=\"col\">" + esc(c) + "<small>" + esc(E.precios[i]) + "</small></th>"; }).join("") + "</tr></thead>";
+    var body = "<tbody>" + E.filas.map(function (r) {
+      return "<tr><th scope=\"row\">" + esc(r.k) + "</th>" + r.v.map(function (v) {
+        if (v === true) return '<td class="y">Sí</td>'; if (v === false) return '<td class="n">No</td>'; return "<td>" + esc(v) + "</td>";
+      }).join("") + "</tr>";
+    }).join("") + "</tbody>";
+    $("#edTable").innerHTML = head + body;
+    $("#edNote").textContent = E.nota;
+    $("#packList").innerHTML = L.pack_reserva.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("");
+    $("#ultList").innerHTML = L.ultimate.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("");
+  }
+
+  /* ---------------- Historia ---------------- */
+  function renderStory() {
+    var H = BASE.historia;
+    $("#premise").textContent = H.premisa;
+    $("#tone").textContent = H.tono;
+    $("#storyBlocks").innerHTML = H.bloques.map(function (b, i) { return '<article id="h-b' + i + '"><h3>' + esc(b.titulo) + "</h3><p>" + esc(b.texto) + "</p></article>"; }).join("");
+  }
+
+  /* ---------------- Personajes ---------------- */
+  var peopleFilter = "todos";
+  var PGROUPS = [["todos", "Todos"], ["protagonista", "Protagonistas"], ["musica", "Música y clubes"], ["crimen", "Crimen"], ["secundario", "Amigos"]];
+  function initials(n) { return n.replace(/['’]/g, "").split(/\s+/).map(function (w) { return w[0]; }).join("").slice(0, 2).toUpperCase(); }
+  function renderPeople() {
+    $("#peopleTabs").innerHTML = PGROUPS.map(function (g) { return '<button class="chip" type="button" data-g="' + g[0] + '" aria-pressed="' + (g[0] === peopleFilter) + '">' + g[1] + "</button>"; }).join("");
+    $("#people").innerHTML = BASE.personajes.filter(function (p) { return peopleFilter === "todos" || p.grupo === peopleFilter; }).map(function (p) {
+      return '<article class="dossier" id="p-' + esc(p.id) + '"><div class="strip c-' + esc(p.color) + '"><span>Ficha · Leonida PD</span><span>' + esc(p.grupo === "protagonista" ? "Jugable" : "Secundario") + '</span></div><div class="body"><div class="who" data-n="Nº ' + ("00" + (BASE.personajes.indexOf(p) + 1)).slice(-3) + '"><div class="mono-badge c-' + esc(p.color) + '" aria-hidden="true">' + esc(initials(p.nombre)) + "</div><div><h3>" + esc(p.nombre) + '</h3><div class="role">' + esc(p.rol) + "</div></div></div><p>" + esc(p.bio) + '</p><div class="links">' + p.vinculos.map(function (v) { return "<span>" + esc(v) + "</span>"; }).join("") + '</div><div class="seen">Visto en: ' + esc(p.visto) + "</div></div></article>";
+    }).join("");
+  }
+  $("#peopleTabs").addEventListener("click", function (e) { var b = e.target.closest("button"); if (!b) return; peopleFilter = b.dataset.g; renderPeople(); });
+
+
+
+  /* ---------------- La Dex ---------------- */
+  var dexCat = "todo", DEX_N = { todo: "Todo", vehiculos: "Vehículos", armas: "Armas", fauna: "Fauna", marcas: "Marcas y negocios" };
+  function allDex() { return arr(BASE.dex).concat(arr(DYN.dex_nuevos)); }
+  function renderDex() {
+    var A = allDex(), q = norm(($("#dexQ").value || "").trim());
+    $("#dexTabs").innerHTML = Object.keys(DEX_N).map(function (k) { var c = k === "todo" ? A.length : A.filter(function (x) { return x.cat === k; }).length; return '<button class="chip" type="button" data-c="' + k + '" aria-pressed="' + (k === dexCat) + '">' + DEX_N[k] + " · " + c + "</button>"; }).join("");
+    var L = A.filter(function (x) { return (dexCat === "todo" || x.cat === dexCat) && (!q || norm(x.nombre + " " + x.tipo + " " + x.nota).indexOf(q) > -1); });
+    $("#dexGrid").innerHTML = L.length ? L.map(function (x) {
+      var i = A.indexOf(x) + 1;
+      return '<article class="dex-card"><span class="n ' + esc(x.cat) + '">' + ("00" + i).slice(-3) + '</span><span class="badge ' + (x.estado === "oficial" ? "oficial" : "prensa") + '">' + (x.estado === "oficial" ? "Oficial" : "Visto en tráiler") + "</span><b>" + esc(x.nombre) + '</b><span class="t">' + esc(x.tipo) + "</span><p>" + esc(x.nota) + "</p>" + (x.fuente && x.fuente.url ? '<span class="src"><a href="' + esc(x.fuente.url) + '" target="_blank" rel="noopener">' + esc(x.fuente.nombre) + "</a></span>" : "") + "</article>";
+    }).join("") : '<p class="note">Nada por aquí todavía.</p>';
+  }
+  $("#dexTabs").addEventListener("click", function (e) { var b = e.target.closest("button"); if (!b) return; dexCat = b.dataset.c; renderDex(); });
+  $("#dexQ").addEventListener("input", renderDex);
+
+  /* ---------------- Reportajes ---------------- */
+  var artCat = "Todos";
+  function allArts() { return arr(DYN.articulos_nuevos).concat(arr(BASE.articulos)); }
+  function renderArts() {
+    var A = allArts(), cats = ["Todos"];
+    A.forEach(function (a) { if (cats.indexOf(a.categoria) < 0) cats.push(a.categoria); });
+    $("#artCats").innerHTML = cats.map(function (c) { return '<button class="chip" type="button" data-c="' + esc(c) + '" aria-pressed="' + (c === artCat) + '">' + esc(c) + "</button>"; }).join("");
+    $("#articles").innerHTML = A.filter(function (a) { return artCat === "Todos" || a.categoria === artCat; }).map(function (a, i) {
+      var words = arr(a.cuerpo).map(function (x) { return x.p || x.h || arr(x.ul).join(" "); }).join(" ");
+      return '<button class="art" type="button" id="a-' + esc(a.id) + '" data-id="' + esc(a.id) + '"><div class="cover cv-' + (i % 6) + '"><span class="badge">' + esc(a.categoria) + "</span><b>" + "Nº " + ("0" + (i + 1)).slice(-2) + "</b></div><h3>" + esc(a.titulo) + "</h3><p>" + esc(a.entradilla) + '</p><span class="meta">' + (a.lectura || Math.max(2, Math.round(words.split(" ").length / 200))) + " min de lectura · " + arr(a.fuentes).length + " fuentes</span></button>";
+    }).join("");
+  }
+  $("#artCats").addEventListener("click", function (e) { var b = e.target.closest("button"); if (!b) return; artCat = b.dataset.c; renderArts(); });
+  var lastFocus = null;
+  function openArt(id) {
+    var a = allArts().find(function (x) { return x.id === id; }); if (!a) return;
+    lastFocus = document.activeElement;
+    $("#readerBody").innerHTML = '<span class="badge">' + esc(a.categoria) + '</span><h2 id="readerTitle">' + esc(a.titulo) + '</h2><p class="ent">' + esc(a.entradilla) + "</p>" +
+      arr(a.cuerpo).map(function (x) { return x.h ? "<h4>" + esc(x.h) + "</h4>" : x.ul ? "<ul>" + x.ul.map(function (l) { return "<li>" + esc(l) + "</li>"; }).join("") + "</ul>" : "<p>" + esc(x.p) + "</p>"; }).join("") +
+      '<p class="fuentes">Fuentes: ' + arr(a.fuentes).map(function (f) { return '<a href="' + esc(f.url) + '" target="_blank" rel="noopener">' + esc(f.nombre) + "</a>"; }).join(" · ") + "</p>";
+    $("#reader").hidden = false; document.body.style.overflow = "hidden"; $("#readerClose").focus(); $("#reader").scrollTop = 0;
+  }
+  function closeArt() { $("#reader").hidden = true; document.body.style.overflow = ""; if (lastFocus) lastFocus.focus(); }
+  $("#articles").addEventListener("click", function (e) { var b = e.target.closest(".art"); if (b) openArt(b.dataset.id); });
+  $("#readerClose").addEventListener("click", closeArt);
+  $("#reader").addEventListener("click", function (e) { if (e.target === $("#reader")) closeArt(); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !$("#reader").hidden) closeArt(); });
+
+  /* ---------------- Fotos y vídeos ---------------- */
+  function renderMedia() {
+    var V = arr(BASE.videos).concat(arr(DYN.videos_nuevos));
+    $("#videos").innerHTML = V.map(function (v, i) {
+      return '<a class="vid" href="' + esc(v.url) + '" target="_blank" rel="noopener"><div class="scr cv-' + (i % 6) + '"><span>' + esc(v.corto || "") + '</span><i class="play" aria-hidden="true"></i>' + (v.duracion ? '<em class="dur">' + esc(v.duracion) + "</em>" : "") + '</div><div class="inf"><b>' + esc(v.titulo) + "</b><small>" + esc(v.fecha_txt || "") + " · " + esc(v.texto || "") + "</small></div></a>";
+    }).join("");
+    $("#shots").innerHTML = arr(BASE.capturas).map(function (c) {
+      return '<a class="shot" href="' + esc(c.url) + '" target="_blank" rel="noopener"><i aria-hidden="true">' + esc(c.icono || "📷") + "</i><span><b>" + esc(c.titulo) + "</b><small>" + esc(c.texto) + "</small></span></a>";
+    }).join("");
+    $("#postcards").innerHTML = BASE.regiones.map(function (r, i) {
+      return '<figure class="postcard" tabindex="0" role="button" data-r="' + r.id + '" style="--r:' + [-2, 1.5, -1, 2, -1.8, 1][i % 6] + 'deg" aria-label="Ver ' + esc(r.nombre) + ' en el mapa">' + postcardSVG(r.id) + "<figcaption>Saludos desde " + esc(r.nombre.replace(" National Park", "")) + "<small>" + esc(r.inspiracion) + "</small></figcaption></figure>";
+    }).join("");
+  }
+  function goRegion(id) { $("#mapa").scrollIntoView({ behavior: reduced ? "auto" : "smooth" }); setTimeout(function () { pickRegion(id, true); }, reduced ? 0 : 450); }
+  $("#postcards").addEventListener("click", function (e) { var f = e.target.closest(".postcard"); if (f) goRegion(f.dataset.r); });
+  $("#postcards").addEventListener("keydown", function (e) { var f = e.target.closest(".postcard"); if (f && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); goRegion(f.dataset.r); } });
+  function postcardSVG(id) {
+    var sky = { vicecity: ["#2b1748", "#ff4fa3", "#ffb067"], keys: ["#1d4f8a", "#35e3d0", "#ffd49a"], grassrivers: ["#23304a", "#a3c74a", "#ffd49a"], gellhorn: ["#2a2140", "#8aa0ff", "#ffb067"], ambrosia: ["#3a1f2e", "#ff8f3f", "#ffe0a3"], kalaga: ["#14283a", "#3fae8e", "#ffd49a"] }[id] || ["#2b1748", "#ff4fa3", "#ffb067"];
+    var g = '<svg viewBox="0 0 320 200" aria-hidden="true"><defs><linearGradient id="pc' + id + '" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="' + sky[0] + '"/><stop offset="0.6" stop-color="' + sky[1] + '"/><stop offset="1" stop-color="' + sky[2] + '"/></linearGradient></defs><rect width="320" height="200" fill="url(#pc' + id + ')"/><circle cx="230" cy="120" r="38" fill="#ffe7b8" opacity="0.9"/>';
+    var dark = "#1a0f28";
+    function palm(x, y, s) { return '<g transform="translate(' + x + " " + y + ") scale(" + s + ')"><path d="M0 0 C 4 -30 6 -60 2 -90" stroke="' + dark + '" stroke-width="5" fill="none"/><path d="M2 -90 c -20 -6 -34 2 -42 14 M2 -90 c 18 -8 32 -2 42 10 M2 -90 c -10 -16 -26 -20 -36 -16 M2 -90 c 10 -16 26 -18 36 -12" stroke="' + dark + '" stroke-width="5" fill="none" stroke-linecap="round"/></g>'; }
+    if (id === "vicecity") { g += '<path d="M0 150 V118 h20 V96 h16 V122 h14 V84 h22 V130 h18 V104 h14 V70 h18 V128 h20 V110 h16 V92 h22 V140 h24 V116 h18 V150 Z" fill="' + dark + '"/><rect x="0" y="150" width="320" height="50" fill="#2a4a7a"/><path d="M0 162 H320 M0 176 H320" stroke="#ff8fc8" stroke-opacity="0.4"/>' + palm(286, 160, 0.9); }
+    else if (id === "keys") { g += '<rect x="0" y="140" width="320" height="60" fill="#1f6f8a"/><path d="M-10 150 Q 160 110 330 150" stroke="' + dark + '" stroke-width="5" fill="none"/><path d="M20 140 V156 M60 132 V150 M100 126 V146 M140 123 V144 M180 123 V144 M220 126 V146 M260 132 V150 M300 140 V156" stroke="' + dark + '" stroke-width="4"/><ellipse cx="60" cy="182" rx="46" ry="8" fill="#f1d38a"/>' + palm(60, 182, 0.7); }
+    else if (id === "grassrivers") { g += '<rect x="0" y="140" width="320" height="60" fill="#2f4a3a"/><path d="M0 150 q20 -30 40 0 q20 -26 40 0 q20 -32 40 0 q20 -24 40 0 q20 -30 40 0 q20 -26 40 0 q20 -30 40 0 q20 -24 40 0 V200 H0Z" fill="' + dark + '"/><path d="M180 170 h70 l-10 10 h-56 Z" fill="' + dark + '"/><rect x="232" y="150" width="14" height="20" fill="' + dark + '"/><circle cx="239" cy="148" r="11" fill="none" stroke="' + dark + '" stroke-width="4"/>'; }
+    else if (id === "gellhorn") { g += '<rect x="0" y="150" width="320" height="50" fill="#26405f"/><path d="M30 150 V80 h6 V150 M33 84 H110 M70 84 V120" stroke="' + dark + '" stroke-width="5" fill="none"/><rect x="60" y="120" width="22" height="12" fill="' + dark + '"/><rect x="150" y="126" width="120" height="26" fill="' + dark + '"/><rect x="160" y="112" width="30" height="16" fill="' + dark + '"/><rect x="196" y="112" width="30" height="16" fill="' + dark + '"/><rect x="232" y="112" width="30" height="16" fill="' + dark + '"/>'; }
+    else if (id === "ambrosia") { g += '<path d="M0 150 h320 V200 H0Z" fill="#3b2a1e"/><path d="M0 160 L320 150 M0 172 L320 160 M0 186 L320 172" stroke="#ffb067" stroke-opacity="0.35"/><path d="M40 150 V100 h30 V150 M52 100 V70 h8 V100 M120 150 V112 h60 V150 M140 112 V86 h6 V112 M200 150 V118 h40 V150" fill="' + dark + '" stroke="' + dark + '" stroke-width="2"/><path d="M56 70 q10 -16 0 -30 q-10 -14 6 -26" stroke="#d8c7c7" stroke-opacity="0.6" stroke-width="5" fill="none"/>'; }
+    else { g += '<path d="M0 150 L60 90 L100 120 L160 60 L220 118 L260 90 L320 140 V200 H0Z" fill="#20384a"/><path d="M0 170 L30 130 L50 150 L80 110 L110 150 L140 120 L170 160 L200 126 L230 160 L260 130 L290 160 L320 140 V200 H0Z" fill="' + dark + '"/>'; }
+    return g + '<rect x="4" y="4" width="312" height="192" fill="none" stroke="#fff8ec" stroke-width="2" stroke-dasharray="6 5" opacity="0.6"/></svg>';
+  }
+
+  /* ---------------- Mapa (base: GTADB, CC BY 4.0) ---------------- */
+  var region = "vicecity", pinSel = null, gSel = null, zoomBucket = null;
+  var CROP = { x: 150, y: 150, w: 475, h: 650 };
+  var MANI = __MANI__;
+  var REG_BOX = { vicecity: [432, 410, 150, 195], keys: [268, 655, 205, 135], grassrivers: [330, 560, 150, 150], gellhorn: [232, 330, 170, 210], ambrosia: [375, 330, 160, 150], kalaga: [290, 200, 235, 140] };
+  var REG_C = { vicecity: [495, 500], keys: [420, 705], grassrivers: [400, 640], gellhorn: [310, 420], ambrosia: [430, 390], kalaga: [400, 280] };
+  var REG_ORDER = ["vicecity", "keys", "grassrivers", "gellhorn", "ambrosia", "kalaga"];
+  var CATS = [
+    { id: "zona", n: "Barrios y zonas", c: "#ff4fa3", g: "◆" },
+    { id: "ocio", n: "Ocio y noche", c: "#ffe14d", g: "★" },
+    { id: "tiendas", n: "Tiendas y negocios", c: "#c9a0ff", g: "$" },
+    { id: "propiedades", n: "Propiedades", c: "#ffffff", g: "⌂" },
+    { id: "transporte", n: "Transporte e industria", c: "#6f8bff", g: "⚓" },
+    { id: "naturaleza", n: "Naturaleza", c: "#35e3d0", g: "♣" },
+    { id: "actividades", n: "Actividades", c: "#8fe05a", g: "▲" },
+    { id: "miami", n: "Guiños a Miami", c: "#ff8f3f", g: "✦" }];
+  var CAT = {}; CATS.forEach(function (c) { CAT[c.id] = c; });
+  var CAT_ALIAS = { barrio: "zona", industria: "transporte", lugar: "zona", tienda: "tiendas", propiedad: "propiedades", actividad: "actividades" };
+  var EST_N = { oficial: "Oficial", trailer: "Visto en tráiler", prensa: "Prensa y comunidad" };
+  var GT = { h: ["Hoteles", "#ff8fc7"], c: ["Comercios y restaurantes", "#ffd166"], r: ["Viviendas", "#b9a4ff"], o: ["Ocio y monumentos", "#ff6b6b"], t: ["Transporte", "#5ab0ff"], n: ["Naturaleza", "#3ddc97"], i: ["Industria", "#c2c2c2"], p: ["Servicios públicos", "#4dd0e1"], x: ["Sin clasificar", "#f5f5f5"] };
+  var GT_ORDER = ["h", "c", "r", "o", "t", "n", "i", "p", "x"];
+  function lsGet(k, d) { try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } }
+  function lsSet(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+  var found = lsGet("ldx-found", {});
+  var mp = Object.assign({ off: {}, gOff: {}, hideFound: false, oficial: false, cluster: true, labels: true, gta: true }, lsGet("ldx-mapa", {}));
+  if (!mp.off) mp.off = {}; if (!mp.gOff) mp.gOff = {};
+  function hashN(t) { var h = 0; for (var i = 0; i < t.length; i++) h = (h * 31 + t.charCodeAt(i)) | 0; return h; }
+  function allPins() {
+    var out = [], seen = {};
+    arr(BASE.mapa_lugares).concat(arr(DYN.mapa_lugares)).forEach(function (p) {
+      if (!p || !p.id || !p.nombre) return;
+      var q = Object.assign({}, p);
+      if (!REG_C[q.region]) q.region = "vicecity";
+      q.cat = CAT_ALIAS[q.cat] || q.cat; if (!CAT[q.cat]) q.cat = "zona";
+      if (typeof q.x !== "number" || typeof q.y !== "number" || q.x < CROP.x || q.x > CROP.x + CROP.w || q.y < CROP.y || q.y > CROP.y + CROP.h) {
+        var c = REG_C[q.region], h = hashN(q.id);
+        q.x = c[0] + ((h & 255) / 255 - 0.5) * 14; q.y = c[1] + (((h >> 8) & 255) / 255 - 0.5) * 14; q.auto = true; q.exacta = false;
+      }
+      if (seen[q.id]) out[seen[q.id] - 1] = q; else { out.push(q); seen[q.id] = out.length; }
+    });
+    return out;
+  }
+  var PINS = [], DYNIDS = {};
+  function pinVisible(p) { return !mp.off[p.cat] && (!mp.oficial || p.estado === "oficial") && !(mp.hideFound && found[p.id] && p.id !== pinSel); }
+  function pinSVG(p) {
+    var c = CAT[p.cat];
+    return '<g class="mpin cat-' + esc(p.cat) + (found[p.id] ? " found" : "") + (DYNIDS[p.id] ? " nuevo" : "") + (p.id === pinSel ? " sel" : "") + '" data-id="' + esc(p.id) + '" data-x="' + p.x + '" data-y="' + p.y + '" tabindex="0" role="button" aria-label="' + esc(p.nombre + ", " + c.n) + '">' +
+      '<circle class="halo" cy="-22" r="16"/><path class="pb" style="fill:' + c.c + '" d="M0 0 C-4 -9 -14 -14 -14 -24 A14 14 0 1 1 14 -24 C14 -14 4 -9 0 0 Z"/><text class="pg" y="-19" text-anchor="middle">' + (found[p.id] ? "✓" : c.g) + "</text>" +
+      '<text class="pl" y="-46" text-anchor="middle">' + esc(p.nombre) + "</text></g>";
+  }
+  var svgM = $("#mapSvg"), stage = $("#mapStage"), pinsG = $("#mapPins"), dotsG = $("#gtaDots"), NS = "http://www.w3.org/2000/svg";
+  var ASP = CROP.h / CROP.w, FITW = CROP.w, ZMIN = 8, VB0 = { x: CROP.x, y: CROP.y, w: CROP.w, h: CROP.h }, vb = { x: CROP.x, y: CROP.y, w: CROP.w, h: CROP.h };
+  function stageW() { return stage.clientWidth || 600; }
+  function unitPx() { return vb.w / stageW(); }
+  function renderPins() {
+    PINS = allPins();
+    DYNIDS = {}; arr(DYN.mapa_lugares).forEach(function (p) { if (p && p.id) DYNIDS[p.id] = 1; });
+    var vis = PINS.filter(pinVisible), html = "";
+    if (mp.cluster) {
+      var rad = 34 * unitPx(), r2 = rad * rad, CL = [];
+      vis.forEach(function (p) {
+        if (p.id === pinSel) { html += pinSVG(p); return; }
+        for (var n = 0; n < CL.length; n++) { var c = CL[n]; if (Math.pow(c.x - p.x, 2) + Math.pow(c.y - p.y, 2) < r2) { c.m.push(p); c.x = (c.x * (c.m.length - 1) + p.x) / c.m.length; c.y = (c.y * (c.m.length - 1) + p.y) / c.m.length; return; } }
+        CL.push({ x: p.x, y: p.y, m: [p] });
+      });
+      CL.forEach(function (c) {
+        var g = c.m;
+        if (g.length === 1) { html += pinSVG(g[0]); return; }
+        var mx = 0, my = 0; g.forEach(function (p) { mx += p.x; my += p.y; }); mx /= g.length; my /= g.length;
+        var r = 15 + Math.min(g.length, 20) * 0.7;
+        html = '<g class="mclu" tabindex="0" role="button" data-ids="' + g.map(function (p) { return esc(p.id); }).join(",") + '" data-x="' + mx.toFixed(2) + '" data-y="' + my.toFixed(2) + '" aria-label="' + g.length + ' lugares; pulsa para acercar"><circle class="c2" r="' + (r + 5) + '"/><circle class="c1" r="' + r + '"/><text y="5" text-anchor="middle">' + g.length + "</text></g>" + html;
+      });
+    } else vis.forEach(function (p) { html += pinSVG(p); });
+    pinsG.innerHTML = html;
+    var sel = pinsG.querySelector(".mpin.sel"); if (sel) pinsG.appendChild(sel);
+    scalePins();
+  }
+  function scalePins() {
+    var k = unitPx() * 0.9;
+    $$(".mpin, .mclu", pinsG).forEach(function (g) { g.setAttribute("transform", "translate(" + g.dataset.x + " " + g.dataset.y + ") scale(" + k.toFixed(5) + ")"); });
+  }
+  function zoomCluster(g) {
+    var ids = g.dataset.ids.split(","), P2 = PINS.filter(function (p) { return ids.indexOf(p.id) > -1; });
+    var x0 = Math.min.apply(null, P2.map(function (p) { return p.x; })), x1 = Math.max.apply(null, P2.map(function (p) { return p.x; }));
+    var y0 = Math.min.apply(null, P2.map(function (p) { return p.y; })), y1 = Math.max.apply(null, P2.map(function (p) { return p.y; }));
+    var w = Math.max(x1 - x0, (y1 - y0) / ASP, ZMIN * 1.2) * 1.7, cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
+    animateTo({ x: cx - w / 2, y: cy - (w * ASP) / 2, w: Math.min(w, vb.w * 0.6) });
+  }
+  function sizeMap() {
+    var W = stageW(), H = stage.clientHeight || W * 1.3;
+    ASP = H / W; FITW = Math.max(CROP.w, CROP.h / ASP) * 1.02;
+    VB0 = { x: CROP.x + CROP.w / 2 - FITW / 2, y: CROP.y + CROP.h / 2 - (FITW * ASP) / 2, w: FITW, h: FITW * ASP };
+    ZMIN = Math.max(2.5, W / 64);
+  }
+  var GTA_W = 150;
+  function applyVB() {
+    vb.h = vb.w * ASP;
+    svgM.setAttribute("viewBox", vb.x.toFixed(3) + " " + vb.y.toFixed(3) + " " + vb.w.toFixed(3) + " " + vb.h.toFixed(3));
+    svgM.classList.toggle("zin", vb.w <= 34);
+    stage.classList.toggle("zoomed", vb.w < FITW * 0.98);
+    var zf = (FITW / vb.w).toFixed(1).replace(".0", "");
+    $("#zoomBadge").textContent = "x" + zf + (mp.gta && vb.w > GTA_W ? " · acerca para ver los puntos de la comunidad" : "");
+    var bk = Math.round(Math.log(vb.w) / Math.log(1.18));
+    if (bk !== zoomBucket) { zoomBucket = bk; renderPins(); } else scalePins();
+    schedule();
+  }
+  var rafT = 0;
+  function schedule() { if (rafT) return; rafT = requestAnimationFrame(function () { rafT = 0; updTiles(); updDots(); }); }
+  function clampVB(v) {
+    v.w = Math.max(ZMIN, Math.min(FITW, v.w)); v.h = v.w * ASP;
+    if (v.w >= FITW * 0.999) return { x: VB0.x, y: VB0.y, w: VB0.w, h: VB0.h };
+    var mx = Math.min(50, v.w * 0.3), my = Math.min(50, v.h * 0.3);
+    var x0 = CROP.x - mx, x1 = CROP.x + CROP.w + mx - v.w, y0 = CROP.y - my, y1 = CROP.y + CROP.h + my - v.h;
+    v.x = x1 < x0 ? (x0 + x1) / 2 : Math.max(x0, Math.min(x1, v.x));
+    v.y = y1 < y0 ? (y0 + y1) / 2 : Math.max(y0, Math.min(y1, v.y));
+    return v;
+  }
+  var anim = 0;
+  function animateTo(t) {
+    t = clampVB({ x: t.x, y: t.y, w: t.w, h: t.w * ASP });
+    cancelAnimationFrame(anim);
+    if (reduced) { vb = t; applyVB(); return; }
+    var f = { x: vb.x, y: vb.y, w: vb.w }, t0 = performance.now(), d = Math.abs(Math.log(t.w / f.w)) > 2 ? 650 : 440;
+    (function step(now) {
+      var k = Math.min(1, (now - t0) / d), e = 1 - Math.pow(1 - k, 3);
+      var lw = Math.exp(Math.log(f.w) + (Math.log(t.w) - Math.log(f.w)) * e), cx0 = f.x + f.w / 2, cy0 = f.y + (f.w * ASP) / 2, cx1 = t.x + t.w / 2, cy1 = t.y + t.h / 2;
+      var cx = cx0 + (cx1 - cx0) * e, cy = cy0 + (cy1 - cy0) * e;
+      vb = { x: cx - lw / 2, y: cy - (lw * ASP) / 2, w: lw, h: lw * ASP };
+      applyVB(); if (k < 1) anim = requestAnimationFrame(step);
+    })(t0);
+  }
+  function fitBox(b) {
+    var w = Math.max(b[2], b[3] / ASP) * 1.1, cx = b[0] + b[2] / 2, cy = b[1] + b[3] / 2;
+    animateTo({ x: cx - w / 2, y: cy - (w * ASP) / 2, w: w });
+  }
+  function centerOn(x, y, w) { w = Math.min(vb.w, w); animateTo({ x: x - w / 2, y: y - (w * ASP) / 2, w: w }); }
+  function toSvg(cx, cy) { var p = svgM.createSVGPoint(); p.x = cx; p.y = cy; return p.matrixTransform(svgM.getScreenCTM().inverse()); }
+  function zoomAt(cx, cy, f) {
+    cancelAnimationFrame(anim);
+    var p = cx == null ? { x: vb.x + vb.w / 2, y: vb.y + vb.h / 2 } : toSvg(cx, cy);
+    var nw = Math.max(ZMIN, Math.min(FITW, vb.w * f)), k = nw / vb.w;
+    vb = clampVB({ x: p.x - (p.x - vb.x) * k, y: p.y - (p.y - vb.y) * k, w: nw }); applyVB();
+  }
+  function panPx(dx, dy) { var a = svgM.getScreenCTM().a || 1; vb = clampVB({ x: vb.x - dx / a, y: vb.y - dy / a, w: vb.w }); applyVB(); }
+
+  /* Teselas: recorte de «GTA VI Map Tiles» (Yanis v17) en bloques de 2048 px por nivel */
+  var TSET = {}, tileG = {}, tileHave = {};
+  Object.keys(MANI.z).forEach(function (z) { var s = {}; MANI.z[z].t.forEach(function (t) { s[t[0] + "_" + t[1]] = 1; }); TSET[z] = s; });
+  $$("#mapTiles g").forEach(function (g) { tileG[g.dataset.z] = g; });
+  function addTile(z, i, j) {
+    var key = z + "/" + i + "_" + j; if (tileHave[key]) return; tileHave[key] = 1;
+    var s = Math.pow(2, z), u = MANI.M / s, e = 1 / s, im = document.createElementNS(NS, "image");
+    im.setAttribute("x", CROP.x + i * u); im.setAttribute("y", CROP.y + j * u);
+    im.setAttribute("width", Math.min(u, CROP.w - i * u) + e); im.setAttribute("height", Math.min(u, CROP.h - j * u) + e);
+    im.setAttribute("preserveAspectRatio", "none");
+    im.addEventListener("load", function () { im.classList.add("ok"); if (+z === 2) stage.classList.add("tiles-ok"); });
+    im.addEventListener("error", function () { if (+z === 2) stage.classList.add("no-tiles"); });
+    im.setAttribute("href", "mapa/" + z + "/" + i + "_" + j + "." + MANI.fmt);
+    tileG[z].appendChild(im);
+  }
+  MANI.z[2].t.forEach(function (t) { addTile(2, t[0], t[1]); });
+  function tileLevel() { var ppu = stageW() / vb.w * (window.devicePixelRatio || 1); return Math.max(2, Math.min(5, Math.ceil(Math.log(ppu) / Math.LN2 - 0.3))); }
+  function updTiles() {
+    var z = tileLevel();
+    for (var lz = 3; lz <= 5; lz++) tileG[lz].style.display = lz <= z ? "" : "none";
+    if (z < 3) return;
+    var lv = MANI.z[z], u = MANI.M / Math.pow(2, z), pad = vb.w * 0.12;
+    var i0 = Math.max(0, Math.floor((vb.x - pad - CROP.x) / u)), i1 = Math.min(lv.nx - 1, Math.floor((vb.x + vb.w + pad - CROP.x) / u));
+    var j0 = Math.max(0, Math.floor((vb.y - pad - CROP.y) / u)), j1 = Math.min(lv.ny - 1, Math.floor((vb.y + vb.h + pad - CROP.y) / u));
+    for (var j = j0; j <= j1; j++) for (var i = i0; i <= i1; i++) if (TSET[z][i + "_" + j]) addTile(z, i, j);
+  }
+
+  /* Puntos de la comunidad: «GTA VI Landmarks Data» (GTADB) */
+  var GTA = null, gtaState = 0, gtaWait = [];
+  function loadGta(cb) {
+    if (GTA) { if (cb) cb(); return; }
+    if (cb) gtaWait.push(cb);
+    if (gtaState === 1) return;
+    gtaState = 1; renderGtaBox();
+    fetch("datos/gtadb-6.json").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) {
+      GTA = d; gtaState = 2; renderGtaBox(); gtaWait.splice(0).forEach(function (f) { f(); }); schedule();
+    }).catch(function () { gtaState = 3; gtaWait = []; renderGtaBox(); });
+  }
+  function gtaById(id) { if (!GTA) return null; for (var n = 0; n < GTA.l.length; n++) if (GTA.l[n][0] === id) return GTA.l[n]; return null; }
+  function gtaLink(x, y, id) { return "https://map.gtadb.org/#VI," + (x * 32 - 16384).toFixed(1) + "," + (16384 - y * 32).toFixed(1) + ",3" + (id ? "," + id : ""); }
+  function updDots() {
+    if (!mp.gta || vb.w > GTA_W) { if (dotsG.firstChild) dotsG.innerHTML = ""; return; }
+    if (!GTA) { loadGta(); return; }
+    var u = unitPx(), pad = 10 * u, L = GTA.l, out = [];
+    var x0 = vb.x - pad, x1 = vb.x + vb.w + pad, y0 = vb.y - pad, y1 = vb.y + vb.h + pad;
+    for (var n = 0; n < L.length; n++) { var r = L[n]; if (r[3] < x0 || r[3] > x1 || r[4] < y0 || r[4] > y1 || mp.gOff[r[6]]) continue; out.push(r); }
+    if (out.length > 900) out = out.filter(function (r) { return r[1] || r[0] === gSel; });
+    var html = "", sel = "";
+    out.forEach(function (r) {
+      var c = '<circle class="gd' + (r[1] ? " nm" : "") + '" cx="' + r[3] + '" cy="' + r[4] + '" r="' + ((r[1] ? 5.2 : 3.8) * u).toFixed(4) + '" fill="' + GT[r[6]][1] + '"/>';
+      if (r[0] === gSel) sel = '<circle class="gd-sel" cx="' + r[3] + '" cy="' + r[4] + '" r="' + (11 * u).toFixed(4) + '"/>' + c; else html += c;
+    });
+    dotsG.innerHTML = html + sel;
+  }
+  function nearestDot(cx, cy) {
+    if (!GTA || !mp.gta || vb.w > GTA_W) return null;
+    var p = toSvg(cx, cy), u = unitPx(), best = null, bd = Math.pow(13 * u, 2);
+    GTA.l.forEach(function (r) { if (mp.gOff[r[6]]) return; var d = Math.pow(r[3] - p.x, 2) + Math.pow(r[4] - p.y, 2); if (d < bd) { bd = d; best = r; } });
+    return best;
+  }
+  function renderGtaBox() {
+    var n = GTA ? GTA.l.length : 0;
+    $("#gtaCount").textContent = GTA ? n.toLocaleString("es-ES") + " puntos" : gtaState === 1 ? "cargando…" : gtaState === 3 ? "no disponibles" : "";
+    var cnt = {}; if (GTA) GTA.l.forEach(function (r) { cnt[r[6]] = (cnt[r[6]] || 0) + 1; });
+    $("#gtaTypes").innerHTML = GT_ORDER.map(function (t) {
+      return '<button type="button" class="gt-chip" data-gt="' + t + '" aria-pressed="' + !mp.gOff[t] + '"><i style="background:' + GT[t][1] + '" aria-hidden="true"></i>' + GT[t][0] + (GTA ? " <small>" + (cnt[t] || 0) + "</small>" : "") + "</button>";
+    }).join("");
+  }
+  $("#gtaTypes").addEventListener("click", function (e) { var b = e.target.closest(".gt-chip"); if (!b) return; var t = b.dataset.gt; if (mp.gOff[t]) delete mp.gOff[t]; else mp.gOff[t] = 1; saveMp(); renderGtaBox(); schedule(); });
+
+  var ptrs = {}, moved = 0, lastPinch = 0, lastMid = null, mapActive = false;
+  svgM.addEventListener("pointerdown", function (e) {
+    if (e.pointerType === "mouse" && e.button !== 0) return;
+    ptrs[e.pointerId] = { x: e.clientX, y: e.clientY }; moved = 0; mapActive = true;
+    if (e.pointerType !== "touch" || stage.classList.contains("zoomed") || Object.keys(ptrs).length > 1) { try { svgM.setPointerCapture(e.pointerId); } catch (er) {} }
+    var ids = Object.keys(ptrs); if (ids.length === 2) { lastPinch = dist2(); lastMid = mid2(); }
+  });
+  function dist2() { var a = ptrs[Object.keys(ptrs)[0]], b = ptrs[Object.keys(ptrs)[1]]; return Math.hypot(a.x - b.x, a.y - b.y); }
+  function mid2() { var a = ptrs[Object.keys(ptrs)[0]], b = ptrs[Object.keys(ptrs)[1]]; return { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 }; }
+  svgM.addEventListener("pointermove", function (e) {
+    var p = ptrs[e.pointerId]; if (!p) return;
+    var dx = e.clientX - p.x, dy = e.clientY - p.y, n = Object.keys(ptrs).length;
+    if (n === 1) {
+      if (e.pointerType === "touch" && !stage.classList.contains("zoomed")) return;
+      moved += Math.abs(dx) + Math.abs(dy);
+      if (moved > 4) { svgM.classList.add("dragging"); panPx(dx, dy); }
+      p.x = e.clientX; p.y = e.clientY;
+    } else if (n === 2) {
+      p.x = e.clientX; p.y = e.clientY; moved += 10;
+      var d = dist2(), m = mid2();
+      if (lastPinch) zoomAt(m.x, m.y, lastPinch / d);
+      if (lastMid) panPx(m.x - lastMid.x, m.y - lastMid.y);
+      lastPinch = d; lastMid = m; e.preventDefault();
+    }
+  });
+  function endPtr(e) { delete ptrs[e.pointerId]; if (Object.keys(ptrs).length < 2) { lastPinch = 0; lastMid = null; } if (!Object.keys(ptrs).length) svgM.classList.remove("dragging"); }
+  svgM.addEventListener("pointerup", endPtr); svgM.addEventListener("pointercancel", endPtr);
+  svgM.addEventListener("wheel", function (e) {
+    if (!(mapActive || e.ctrlKey || e.metaKey || document.fullscreenElement)) return;
+    e.preventDefault(); zoomAt(e.clientX, e.clientY, Math.pow(1.0018, e.deltaY * (e.deltaMode === 1 ? 30 : 1)));
+  }, { passive: false });
+  $("#mapBox").addEventListener("pointerleave", function () { mapActive = false; });
+  svgM.addEventListener("dblclick", function (e) { e.preventDefault(); var p = toSvg(e.clientX, e.clientY), w = Math.max(ZMIN, vb.w * 0.5); animateTo({ x: p.x - w / 2, y: p.y - (w * ASP) / 2, w: w }); });
+  svgM.addEventListener("click", function (e) {
+    if (moved > 6) { moved = 0; return; }
+    var clu = e.target.closest(".mclu"); if (clu) { zoomCluster(clu); return; }
+    var pin = e.target.closest(".mpin"); if (pin) { selectPin(pin.dataset.id, false); return; }
+    var r = nearestDot(e.clientX, e.clientY); if (r) { selectGta(r[0], false); return; }
+  });
+  svgM.addEventListener("keydown", function (e) {
+    var pin = e.target.closest(".mpin"), clu = e.target.closest(".mclu");
+    if ((e.key === "Enter" || e.key === " ") && (pin || clu)) { e.preventDefault(); if (clu) zoomCluster(clu); else selectPin(pin.dataset.id, false); return; }
+    var step = 60;
+    if (e.key === "+" || e.key === "=") { zoomAt(null, null, 0.7); e.preventDefault(); }
+    else if (e.key === "-") { zoomAt(null, null, 1.4); e.preventDefault(); }
+    else if (e.key === "ArrowLeft") { panPx(step, 0); e.preventDefault(); } else if (e.key === "ArrowRight") { panPx(-step, 0); e.preventDefault(); }
+    else if (e.key === "ArrowUp") { panPx(0, step); e.preventDefault(); } else if (e.key === "ArrowDown") { panPx(0, -step); e.preventDefault(); }
+  });
+  $("#zIn").addEventListener("click", function () { var w = vb.w * 0.55; animateTo({ x: vb.x + (vb.w - w) / 2, y: vb.y + (vb.h - w * ASP) / 2, w: w }); });
+  $("#zOut").addEventListener("click", function () { var w = Math.min(FITW, vb.w / 0.55); animateTo({ x: vb.x + (vb.w - w) / 2, y: vb.y + (vb.h - w * ASP) / 2, w: w }); });
+  $("#zReset").addEventListener("click", function () { animateTo(VB0); });
+  var box = $("#mapBox");
+  if (!box.requestFullscreen) $("#zFull").hidden = true;
+  $("#zFull").addEventListener("click", function () { if (document.fullscreenElement) document.exitFullscreen(); else box.requestFullscreen().catch(function () { toast("Tu navegador no permite pantalla completa aquí"); }); });
+
+  function applyLayers() {
+    svgM.classList.toggle("no-pl", !mp.labels);
+    $("#tgHideFound").checked = mp.hideFound; $("#tgOficial").checked = mp.oficial; $("#tgCluster").checked = mp.cluster;
+    $("#tgLabels").checked = mp.labels; $("#tgGta").checked = mp.gta;
+    $("#gtaBox").classList.toggle("off", !mp.gta);
+  }
+  function saveMp() { lsSet("ldx-mapa", mp); }
+  function renderSide() {
+    var tot = PINS.length, fnd = PINS.filter(function (p) { return found[p.id]; }).length;
+    $("#foundTxt").textContent = fnd + " / " + tot; $("#foundBar").style.width = (tot ? fnd / tot * 100 : 0) + "%";
+    $("#catList").innerHTML = CATS.map(function (c) {
+      var L = PINS.filter(function (p) { return p.cat === c.id; }), f = L.filter(function (p) { return found[p.id]; }).length;
+      return '<li class="' + (mp.off[c.id] ? "off" : "") + '"><label><input type="checkbox" data-c="' + c.id + '"' + (mp.off[c.id] ? "" : " checked") + '><span class="dotg" style="background:' + c.c + '" aria-hidden="true">' + c.g + '</span><span class="cn">' + c.n + '</span><span class="cc">' + f + "/" + L.length + '</span><span class="cp" aria-hidden="true"><i style="width:' + (L.length ? f / L.length * 100 : 0) + '%"></i></span></label></li>';
+    }).join("");
+    $("#placeList").innerHTML = REG_ORDER.map(function (rid) {
+      var L = PINS.filter(function (p) { return p.region === rid; }).sort(function (a, b) { return a.nombre.localeCompare(b.nombre, "es"); });
+      if (!L.length) return "";
+      var f = L.filter(function (p) { return found[p.id]; }).length;
+      return '<div class="pl-group"><h4>' + esc(regName(rid).replace(" National Park", "")) + "<span>" + f + "/" + L.length + "</span></h4>" + L.map(function (p) {
+        var c = CAT[p.cat];
+        return '<div class="pl-row' + (found[p.id] ? " done" : "") + '"><input type="checkbox" data-f="' + esc(p.id) + '" aria-label="Descubierto: ' + esc(p.nombre) + '"' + (found[p.id] ? " checked" : "") + '><span class="dotg" style="background:' + c.c + '" aria-hidden="true">' + c.g + '</span><button type="button" data-id="' + esc(p.id) + '">' + esc(p.nombre) + (p.estado !== "oficial" ? " <small>· " + esc(EST_N[p.estado] || "") + "</small>" : "") + "</button></div>";
+      }).join("") + "</div>";
+    }).join("") + '<div class="pl-group"><h4>Nombrados, aún sin ubicar<span>' + arr(BASE.mapa_sin_ubicar).length + "</span></h4>" + arr(BASE.mapa_sin_ubicar).map(function (u) {
+      return '<p class="pl-unplaced"><b>' + esc(u.nombre) + "</b>. " + esc(u.texto) + (u.fuente ? ' <a href="' + esc(u.fuente.url) + '" target="_blank" rel="noopener">Fuente</a>' : "") + "</p>";
+    }).join("") + "</div>";
+  }
+  function setFound(id, v) { if (v) found[id] = 1; else delete found[id]; lsSet("ldx-found", found); renderPins(); renderSide(); if (pinSel === id) renderCard(); }
+  $("#catList").addEventListener("change", function (e) { var c = e.target.dataset.c; if (!c) return; if (e.target.checked) delete mp.off[c]; else mp.off[c] = 1; saveMp(); renderPins(); renderSide(); });
+  $("#catAll").addEventListener("click", function () { mp.off = {}; saveMp(); renderPins(); renderSide(); });
+  $("#catNone").addEventListener("click", function () { CATS.forEach(function (c) { mp.off[c.id] = 1; }); saveMp(); renderPins(); renderSide(); });
+  [["tgHideFound", "hideFound"], ["tgOficial", "oficial"], ["tgCluster", "cluster"], ["tgLabels", "labels"], ["tgGta", "gta"]].forEach(function (t) {
+    $("#" + t[0]).addEventListener("change", function (e) { mp[t[1]] = e.target.checked; saveMp(); applyLayers(); renderPins(); applyVB(); });
+  });
+  $("#resetFound").addEventListener("click", function () { if (!Object.keys(found).length) { toast("Aún no has marcado ningún lugar"); return; } found = {}; lsSet("ldx-found", found); renderPins(); renderSide(); if (pinSel) renderCard(); toast("Progreso borrado"); });
+  $("#placeList").addEventListener("change", function (e) { var id = e.target.dataset.f; if (id) setFound(id, e.target.checked); });
+  $("#placeList").addEventListener("click", function (e) { var b = e.target.closest("button[data-id]"); if (b) selectPin(b.dataset.id, true); });
+  $$(".ms-tabs button").forEach(function (b) { b.addEventListener("click", function () { showTab(b.dataset.t); }); });
+  function showTab(t) { $$(".ms-tabs button").forEach(function (b) { b.setAttribute("aria-selected", String(b.dataset.t === t)); }); ["Filtros", "Lista", "Region"].forEach(function (k) { $("#pane" + k).hidden = k !== t; }); }
+  function mapSearch() {
+    var q = norm($("#mapQ").value.trim()), res = $("#mapQRes");
+    if (!q) { res.hidden = true; return; }
+    var hits = PINS.filter(function (p) { return norm(p.nombre + " " + (p.texto || "") + " " + (p.inspiracion || "") + " " + regName(p.region) + " " + CAT[p.cat].n).indexOf(q) > -1; }).slice(0, 10);
+    var html = hits.map(function (p) { var c = CAT[p.cat]; return '<button type="button" data-id="' + esc(p.id) + '"><span class="dotg" style="background:' + c.c + ';display:inline-grid;margin-right:6px;vertical-align:-4px" aria-hidden="true">' + c.g + "</span>" + esc(p.nombre) + "<small>" + esc(regName(p.region)) + " · " + esc(c.n) + "</small></button>"; }).join("");
+    if (GTA && q.length > 2) {
+      var g = GTA.l.filter(function (r) { return norm(r[1] + " " + r[5] + " " + GTA.areas[r[2]]).indexOf(q) > -1; }).sort(function (a, b) { return (b[1] ? 1 : 0) - (a[1] ? 1 : 0); }).slice(0, 12);
+      if (g.length) html += '<p class="mq-h">Puntos de la comunidad (GTADB)</p>' + g.map(function (r) { return '<button type="button" data-g="' + r[0] + '"><i class="gt-dot" style="background:' + GT[r[6]][1] + '" aria-hidden="true"></i>' + esc(r[1] || "Sin nombre") + "<small>" + esc(GTA.areas[r[2]] || "") + (r[5] ? " · real: " + esc(r[5]) : "") + "</small></button>"; }).join("");
+    }
+    res.hidden = false;
+    res.innerHTML = html || '<p class="note" style="margin:6px 10px">Sin resultados.</p>';
+  }
+  $("#mapQ").addEventListener("focus", function () { loadGta(mapSearch); });
+  $("#mapQ").addEventListener("input", mapSearch);
+  $("#mapQ").addEventListener("keydown", function (e) { if (e.key === "Enter") { var b = $("#mapQRes button"); if (b) { e.preventDefault(); b.click(); } } if (e.key === "Escape") { e.target.value = ""; $("#mapQRes").hidden = true; } });
+  $("#mapQRes").addEventListener("click", function (e) { var b = e.target.closest("button"); if (!b) return; if (b.dataset.g) selectGta(+b.dataset.g, true); else selectPin(b.dataset.id, true); $("#mapQRes").hidden = true; $("#mapQ").value = ""; });
+  function regName(id) { var r = BASE.regiones.find(function (x) { return x.id === id; }); return r ? r.nombre : ""; }
+  function renderCard() {
+    if (gSel != null) { renderGtaCard(); return; }
+    var p = PINS.find(function (x) { return x.id === pinSel; }); if (!p) { $("#mapCard").hidden = true; return; }
+    var c = CAT[p.cat], pos;
+    if (p.gtadb && p.exacta) pos = 'ubicación de la comunidad (<a href="' + gtaLink(p.x, p.y, p.gtadb) + '" target="_blank" rel="noopener">GTADB ' + esc(p.gtadb) + "</a>)";
+    else if (p.gtadb) pos = 'ubicación orientativa, junto a <a href="' + gtaLink(p.x, p.y, p.gtadb) + '" target="_blank" rel="noopener">GTADB ' + esc(p.gtadb) + "</a>";
+    else pos = p.exacta ? "posición confirmada" : "posición aproximada";
+    $("#mapCard").hidden = false;
+    $("#mapCard").innerHTML = '<div class="mc-top"><span class="mc-cat"><span class="dotg" style="background:' + c.c + '" aria-hidden="true">' + c.g + "</span>" + esc(c.n) + '</span><span class="badge ' + (p.estado === "oficial" ? "oficial" : "prensa") + '">' + esc(EST_N[p.estado] || "Oficial") + '</span><button type="button" class="mc-x" id="mcClose" aria-label="Cerrar ficha">×</button></div>' +
+      "<h3>" + esc(p.nombre) + "</h3><p>" + esc(p.texto || "") + "</p>" + (p.inspiracion ? '<p class="mc-insp">Inspirado en: ' + esc(p.inspiracion) + "</p>" : "") +
+      '<p class="mc-meta">' + esc(regName(p.region)) + " · " + pos + "</p>" +
+      '<div class="mc-act"><button type="button" id="mcFound" class="' + (found[p.id] ? "done" : "") + '">' + (found[p.id] ? "✓ Descubierto" : "Marcar como descubierto") + '</button><button type="button" id="mcShare">Compartir</button>' +
+      (p.fuente && p.fuente.url ? '<span class="src"><a href="' + esc(p.fuente.url) + '" target="_blank" rel="noopener">' + esc(p.fuente.nombre || "Fuente") + "</a></span>" : "") + "</div>";
+  }
+  function renderGtaCard() {
+    var r = gtaById(gSel); if (!r) { $("#mapCard").hidden = true; return; }
+    var t = GT[r[6]], area = GTA.areas[r[2]] || "", notes = [];
+    if (r[7] & 1) notes.push("con interior visitable");
+    if (r[7] & 4) notes.push("el negocio real ha cerrado");
+    if (r[7] & 8) notes.push("el edificio real ya no existe");
+    $("#mapCard").hidden = false;
+    $("#mapCard").innerHTML = '<div class="mc-top"><span class="mc-cat"><i class="gt-dot" style="background:' + t[1] + '" aria-hidden="true"></i>' + esc(t[0]) + '</span><span class="badge prensa">Comunidad</span><button type="button" class="mc-x" id="mcClose" aria-label="Cerrar ficha">×</button></div>' +
+      "<h3>" + esc(r[1] || "Sin nombre conocido") + "</h3>" + (area ? "<p>" + esc(area) + "</p>" : "") +
+      (r[5] ? '<p class="mc-insp">' + (r[7] & 2 ? "Posible equivalente real (sin confirmar): " : "Equivalente real: ") + esc(r[5]) + "</p>" : '<p class="mc-meta">Aún sin equivalente real identificado.</p>') +
+      (notes.length ? '<p class="mc-meta">' + esc(notes.join(" · ")) + "</p>" : "") +
+      '<p class="mc-meta">Punto L' + r[0] + ' de GTA VI Landmarks Data · CC BY 4.0</p>' +
+      '<div class="mc-act"><button type="button" id="mcShare">Compartir</button><span class="src"><a href="' + gtaLink(r[3], r[4], "L" + r[0]) + '" target="_blank" rel="noopener">Ver en GTADB</a></span></div>';
+  }
+  $("#mapCard").addEventListener("click", function (e) {
+    if (e.target.closest("#mcClose")) { pinSel = null; gSel = null; $("#mapCard").hidden = true; renderPins(); schedule(); return; }
+    if (e.target.closest("#mcFound")) { setFound(pinSel, !found[pinSel]); return; }
+    if (e.target.closest("#mcShare")) { var u = location.href.split("#")[0] + (gSel != null ? "#g=" + gSel : "#l=" + pinSel); copyText(u); }
+  });
+  function selectPin(id, zoom) {
+    var p = PINS.find(function (x) { return x.id === id; }); if (!p) return;
+    pinSel = id; gSel = null; region = p.region;
+    if (mp.off[p.cat]) { delete mp.off[p.cat]; saveMp(); renderSide(); }
+    if (zoom || vb.w > 120) centerOn(p.x, p.y, p.exacta ? 16 : 40);
+    renderPins(); renderCard(); renderRegion(); schedule();
+  }
+  function selectGta(id, zoom) {
+    loadGta(function () {
+      var r = gtaById(id); if (!r) return;
+      gSel = id; pinSel = null;
+      if (mp.gOff[r[6]]) { delete mp.gOff[r[6]]; saveMp(); renderGtaBox(); }
+      if (!mp.gta) { mp.gta = true; saveMp(); applyLayers(); }
+      if (zoom || vb.w > GTA_W) centerOn(r[3], r[4], 18);
+      renderPins(); renderCard(); schedule();
+    });
+  }
+  function renderRegion() {
+    var r = BASE.regiones.find(function (x) { return x.id === region; }) || BASE.regiones[0];
+    $("#regionTabs").innerHTML = BASE.regiones.map(function (x) { return '<button class="chip" type="button" data-r="' + x.id + '" aria-pressed="' + (x.id === r.id) + '">' + esc(x.nombre.replace(" National Park", "")) + "</button>"; }).join("");
+    var mine = PINS.filter(function (p) { return p.region === r.id; });
+    $("#regionPanel").innerHTML = '<div id="r-' + r.id + '"><span class="insp">Inspirada en: ' + esc(r.inspiracion) + "</span><h3>" + esc(r.nombre) + '</h3><p class="lema">' + esc(r.lema) + "</p><p>" + esc(r.texto) + "</p><h4>Lugares en el mapa (" + mine.length + ")</h4><ul>" + mine.slice(0, 40).map(function (p) { return '<li><button class="plink" type="button" data-id="' + esc(p.id) + '">' + esc(p.nombre) + "</button></li>"; }).join("") + "</ul><h4>Qué hacer</h4><ul>" + r.actividades.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul></div>";
+  }
+  function pickRegion(id, zoom) {
+    var cur = PINS.find(function (x) { return x.id === pinSel; });
+    if ((cur && cur.region !== id) || gSel != null) { pinSel = null; gSel = null; $("#mapCard").hidden = true; renderPins(); schedule(); }
+    region = id; renderRegion(); if (zoom && REG_BOX[id]) fitBox(REG_BOX[id]);
+  }
+  $("#regionTabs").addEventListener("click", function (e) { var b = e.target.closest("button"); if (b) pickRegion(b.dataset.r, true); });
+  $("#regionPanel").addEventListener("click", function (e) { var b = e.target.closest(".plink"); if (b) selectPin(b.dataset.id, true); });
+  function deepLink(h) {
+    var m = /#l=([\w-]+)/.exec(h), g = /#g=(\d+)/.exec(h);
+    if (!m && !g) return;
+    setTimeout(function () { stage.scrollIntoView({ block: "center" }); if (m) selectPin(m[1], true); else selectGta(+g[1], true); }, 300);
+  }
+  function mapInit() {
+    applyLayers(); renderPins(); renderSide(); renderRegion(); renderGtaBox();
+    var h = location.hash || "";
+    deepLink(h);
+    window.addEventListener("hashchange", function () { deepLink(location.hash || ""); });
+    if ("IntersectionObserver" in window && mp.gta) { var io = new IntersectionObserver(function (en) { if (en[0].isIntersecting) { io.disconnect(); setTimeout(function () { loadGta(); }, 1200); } }); io.observe(stage); }
+  }
+  sizeMap(); vb = Object.assign({}, VB0); applyVB();
+  if (window.ResizeObserver) new ResizeObserver(function () {
+    var fit = vb.w >= FITW * 0.98, cx = vb.x + vb.w / 2, cy = vb.y + vb.h / 2;
+    sizeMap();
+    if (fit) vb = Object.assign({}, VB0); else { vb.h = vb.w * ASP; vb = clampVB({ x: cx - vb.w / 2, y: cy - vb.h / 2, w: vb.w }); }
+    zoomBucket = null; applyVB();
+  }).observe(stage);
+  function renderScale() {
+    var max = Math.max.apply(null, BASE.escala.map(function (s) { return s.valor; }));
+    $("#bars").innerHTML = BASE.escala.map(function (s) {
+      var pct = (s.valor / max) * 100;
+      return '<div class="bar-row" title="' + esc(s.nombre + ": " + s.valor + "× · " + s.nota) + '"><span class="lbl">' + esc(s.nombre) + '</span><div class="bar-track"><div class="bar' + (s.destacado ? " hi" : "") + '" style="width:' + pct.toFixed(1) + '%"><span>' + String(s.valor).replace(".", ",") + "×</span></div></div><span class=\"why\">" + esc(s.nota) + "</span></div>";
+    }).join("");
+  }
+
+  /* ---------------- Sistemas ---------------- */
+  var sysSel = BASE.sistemas[0].id;
+  function renderSys() {
+    $("#sysTabs").innerHTML = BASE.sistemas.map(function (s) { return '<button class="sys-tab" role="tab" type="button" id="s-' + s.id + '" data-s="' + s.id + '" aria-selected="' + (s.id === sysSel) + '" aria-controls="sysPanel" tabindex="' + (s.id === sysSel ? 0 : -1) + '"><span class="ic" aria-hidden="true">' + esc(s.icono) + "</span>" + esc(s.titulo) + "</button>"; }).join("");
+    var s = BASE.sistemas.find(function (x) { return x.id === sysSel; });
+    $("#sysPanel").setAttribute("aria-labelledby", "s-" + s.id);
+    $("#sysPanel").innerHTML = "<h3>" + esc(s.titulo) + '</h3><p class="intro">' + esc(s.intro) + "</p><ol>" + s.puntos.map(function (p) { return "<li><span>" + esc(p) + "</span></li>"; }).join("") + '</ol><p class="src-note">Fuentes: Extended Look y previews de Edge, IGN, The New York Times, Game Informer y Kinda Funny. Ver «Fuentes principales» al pie.</p>';
+  }
+  $("#sysTabs").addEventListener("click", function (e) { var b = e.target.closest("button"); if (!b) return; sysSel = b.dataset.s; renderSys(); $("#s-" + sysSel).focus(); });
+  $("#sysTabs").addEventListener("keydown", function (e) {
+    if (["ArrowDown", "ArrowRight", "ArrowUp", "ArrowLeft"].indexOf(e.key) < 0) return;
+    e.preventDefault();
+    var ids = BASE.sistemas.map(function (s) { return s.id; }), i = ids.indexOf(sysSel);
+    i = (e.key === "ArrowDown" || e.key === "ArrowRight") ? (i + 1) % ids.length : (i - 1 + ids.length) % ids.length;
+    sysSel = ids[i]; renderSys(); $("#s-" + sysSel).focus();
+  });
+
+  /* ---------------- Guías ---------------- */
+  var guideCat = "Todas";
+  function allGuides() { return arr(DYN.guias_nuevas).concat(BASE.guias); }
+  function checklistHTML(id, items) {
+    var saved = store.get("chk:" + id, {}), done = items.filter(function (_, i) { return saved[i]; }).length;
+    return '<div class="progress" aria-hidden="true"><i style="width:' + (items.length ? (done / items.length * 100) : 0) + '%"></i></div><p class="note">' + done + " de " + items.length + ' hechos</p><ul class="checklist" data-chk="' + esc(id) + '">' + items.map(function (it, i) {
+      return '<li><label><input type="checkbox" data-i="' + i + '"' + (saved[i] ? " checked" : "") + "><span>" + esc(it) + "</span></label></li>";
+    }).join("") + "</ul>";
+  }
+  function renderGuides() {
+    var gs = allGuides(), cats = ["Todas"];
+    gs.forEach(function (g) { if (cats.indexOf(g.categoria) < 0) cats.push(g.categoria); });
+    $("#guideCats").innerHTML = cats.map(function (c) { return '<button class="chip" type="button" data-c="' + esc(c) + '" aria-pressed="' + (c === guideCat) + '">' + esc(c) + "</button>"; }).join("");
+    var openIds = $$("details.guide[open]").map(function (d) { return d.id; });
+    $("#guides").innerHTML = gs.filter(function (g) { return guideCat === "Todas" || g.categoria === guideCat; }).map(function (g) {
+      var pend = g.estado === "pendiente";
+      var body = "";
+      if (arr(g.pasos).length) body += "<ol>" + g.pasos.map(function (p) { return "<li>" + esc(p) + "</li>"; }).join("") + "</ol>";
+      if (arr(g.checklist).length) body += checklistHTML(g.id, g.checklist);
+      if (arr(g.consejos).length) body += '<ul class="tips">' + g.consejos.map(function (p) { return "<li>" + esc(p) + "</li>"; }).join("") + "</ul>";
+      if (arr(g.fuentes).length) body += '<p class="src" style="margin-top:10px">Fuente: ' + srcLinks(g.fuentes) + "</p>";
+      if (pend) body = '<p class="note">Esta guía se completará cuando salga el juego, el 19 de noviembre. Las actualizaciones automáticas la irán rellenando.</p>';
+      var id = "g-" + g.id;
+      return '<details class="guide' + (pend ? " pendiente" : "") + '" id="' + esc(id) + '"' + (openIds.indexOf(id) >= 0 ? " open" : "") + '><summary><div class="g-meta"><span class="badge ' + (pend ? "pendiente" : "disponible") + '">' + (pend ? "Desde el 19 nov" : "Disponible") + '</span><span class="badge">' + esc(g.categoria) + '</span><span class="tm">' + esc(g.nivel || "") + (g.tiempo && g.tiempo !== "—" ? " · " + esc(g.tiempo) : "") + "</span></div><h3>" + esc(g.titulo) + "</h3><p>" + esc(g.resumen) + '</p></summary><div class="g-body">' + body + "</div></details>";
+    }).join("");
+  }
+  $("#guideCats").addEventListener("click", function (e) { var b = e.target.closest("button"); if (!b) return; guideCat = b.dataset.c; renderGuides(); });
+  document.addEventListener("change", function (e) {
+    var cb = e.target; if (!cb.matches || !cb.matches('input[type="checkbox"][data-i]')) return;
+    var list = cb.closest("[data-chk]"); if (!list) return;
+    var id = list.dataset.chk, saved = store.get("chk:" + id, {}); saved[cb.dataset.i] = cb.checked; store.set("chk:" + id, saved);
+    var boxes = $$("input[data-i]", list), done = boxes.filter(function (b) { return b.checked; }).length;
+    var wrap = list.parentNode, bar = $(".progress i", wrap), note = $(".progress + .note", wrap);
+    if (bar) bar.style.width = (done / boxes.length * 100) + "%";
+    if (note) note.textContent = done + " de " + boxes.length + " hechos";
+  });
+
+  /* ---------------- Misiones ---------------- */
+  function renderMissions() {
+    var ms = arr(DYN.misiones);
+    if (!ms.length) {
+      $("#missions").innerHTML = '<div class="missions-empty"><div class="locked"><div class="big">Se desbloquea el 19 nov</div><p>En cuanto salga el juego, las revisiones automáticas irán añadiendo cada misión con objetivos, recompensas y consejos, ordenadas por capítulos.</p><p class="note">Recuerda: entre misiones habrá momentos en los que tendrás que reunir dinero para avanzar.</p></div><div><h3>Lo que ya hemos visto</h3><ul class="known">' + BASE.misiones_conocidas.map(function (m, i) { return '<li id="mk-' + i + '"><b>' + esc(m.titulo) + "</b><span>" + esc(m.texto) + "</span></li>"; }).join("") + "</ul></div></div>";
+      return;
+    }
+    $("#misLede").textContent = "Marca las misiones que completes; se guardan en este navegador. Cada misión enlaza a su fuente.";
+    var saved = store.get("chk:misiones", {}), groups = {}, order = [];
+    ms.slice().sort(function (a, b) { return (a.capitulo || 0) - (b.capitulo || 0) || (a.numero || 0) - (b.numero || 0); }).forEach(function (m) {
+      var k = m.capitulo != null ? "Capítulo " + m.capitulo + (m.capitulo_nombre ? ": " + m.capitulo_nombre : "") : "Sin capítulo";
+      if (!groups[k]) { groups[k] = []; order.push(k); } groups[k].push(m);
+    });
+    var total = ms.length, done = ms.filter(function (m) { return saved[m.id]; }).length;
+    $("#missions").innerHTML = '<div class="progress"><i style="width:' + (done / total * 100) + '%"></i></div><p class="note" id="misCount">' + done + " de " + total + " misiones completadas</p>" + order.map(function (k) {
+      return '<div class="chapter"><h3>' + esc(k) + "</h3>" + groups[k].map(function (m) {
+        return '<div class="mission" id="mi-' + esc(m.id) + '"><input type="checkbox" aria-label="Completada: ' + esc(m.titulo) + '" data-m="' + esc(m.id) + '"' + (saved[m.id] ? " checked" : "") + "><div><h4>" + esc((m.numero ? m.numero + ". " : "") + m.titulo) + "</h4>" + (m.personaje ? '<span class="badge">' + esc(m.personaje) + "</span> " : "") + (m.recompensa ? '<span class="badge prensa">' + esc(m.recompensa) + "</span>" : "") + "<p>" + esc(m.resumen || "") + "</p>" + (arr(m.objetivos).length ? "<ul>" + m.objetivos.map(function (o) { return "<li>" + esc(o) + "</li>"; }).join("") + "</ul>" : "") + (arr(m.consejos).length ? '<ul class="tips">' + m.consejos.map(function (o) { return "<li>" + esc(o) + "</li>"; }).join("") + "</ul>" : "") + (m.fuente ? '<p class="src">Fuente: ' + srcLinks([m.fuente]) + "</p>" : "") + "</div></div>";
+      }).join("") + "</div>";
+    }).join("");
+  }
+  $("#missions").addEventListener("change", function (e) {
+    var cb = e.target; if (!cb.dataset || !cb.dataset.m) return;
+    var saved = store.get("chk:misiones", {}); saved[cb.dataset.m] = cb.checked; store.set("chk:misiones", saved);
+    var ms = arr(DYN.misiones), done = ms.filter(function (m) { return saved[m.id]; }).length;
+    $(".progress i", $("#missions")).style.width = (done / ms.length * 100) + "%";
+    $("#misCount").textContent = done + " de " + ms.length + " misiones completadas";
+  });
+
+  /* ---------------- Trucos ---------------- */
+  var KEYS = { a: 2, b: 2, c: 2, d: 3, e: 3, f: 3, g: 4, h: 4, i: 4, j: 5, k: 5, l: 5, m: 6, n: 6, o: 6, p: 7, q: 7, r: 7, s: 7, t: 8, u: 8, v: 8, w: 9, x: 9, y: 9, z: 9 };
+  function phone(word) { return "1-999-" + String(word).toLowerCase().split("").map(function (c) { return KEYS[c] != null ? KEYS[c] : /\d/.test(c) ? c : ""; }).join(""); }
+  function renderCheats() {
+    var t6 = arr(DYN.trucos_gta6);
+    if (!t6.length) {
+      $("#cheatVI").innerHTML = '<div class="zero"><div class="n">0</div><div><h3>Trucos confirmados de GTA VI</h3><p>Rockstar no ha anunciado trucos y nadie puede tenerlos antes de que salga el juego. Todos los GTA principales desde GTA III han incluido trucos en el modo historia, así que es muy probable que vuelvan. Los añadiremos aquí, con su fuente, en cuanto se verifiquen.</p><p class="note">En GTA V los trucos no funcionaban online y desactivaban trofeos y logros durante esa partida.</p></div></div><div class="warn-box"><strong>Cuidado con las estafas.</strong> Cualquier web, vídeo o app que hoy prometa trucos, dinero, llaves o acceso anticipado a GTA VI se lo está inventando. Nunca des tu cuenta ni instales nada para «desbloquear» trucos.</div>';
+    } else {
+      $("#cheatVI").innerHTML = '<div class="cheat-scroll"><table class="c-table"><thead><tr><th>Efecto</th><th>PS5</th><th>Xbox</th><th>Otro</th></tr></thead><tbody>' + t6.map(function (c) {
+        return '<tr id="t6-' + esc(c.id) + '"><td><strong>' + esc(c.efecto) + "</strong>" + (c.notas ? '<br><span class="note">' + esc(c.notas) + "</span>" : "") + (c.fuente ? '<br><span class="src">Fuente: ' + srcLinks([c.fuente]) + "</span>" : "") + "</td><td><code>" + esc(c.ps5 || "—") + "</code></td><td><code>" + esc(c.xbox || "—") + "</code></td><td><code>" + esc(c.telefono || c.otro || "—") + "</code></td></tr>";
+      }).join("") + "</tbody></table></div>";
+    }
+    renderCV("");
+    $("#vcBody").innerHTML = BASE.trucos_vc.map(function (c) { return '<tr id="tvc-' + c.c + '"><td>' + esc(c.e) + "</td><td><code>" + esc(c.c) + "</code></td><td>" + esc(c.t) + '</td><td><button class="copy" type="button" data-copy="' + esc(c.c) + '">Copiar</button></td></tr>'; }).join("");
+  }
+  function renderCV(q) {
+    q = norm(q);
+    $("#cvBody").innerHTML = BASE.trucos_v.filter(function (c) { return !q || norm(c.e + " " + c.c + " " + c.t).indexOf(q) >= 0; }).map(function (c) {
+      var num = phone(c.c);
+      return '<tr id="tv-' + c.c + '"><td>' + esc(c.e) + '<br><span class="note">' + esc(c.t) + "</span></td><td><code>" + esc(c.c) + "</code></td><td><code>" + esc(num) + '</code></td><td><button class="copy" type="button" data-copy="' + esc(num) + '">Copiar</button></td></tr>';
+    }).join("");
+  }
+  $("#cvQ").addEventListener("input", function (e) { renderCV(e.target.value); });
+  document.addEventListener("click", function (e) { var b = e.target.closest("[data-copy]"); if (b) copyText(b.dataset.copy); });
+  function showCheatTab(t) {
+    $$("#cheatTabs [role=tab]").forEach(function (b) { b.setAttribute("aria-selected", String(b.dataset.t === t)); });
+    $$(".cheat-panel").forEach(function (p) { p.hidden = p.dataset.p !== t; });
+  }
+  $("#cheatTabs").addEventListener("click", function (e) { var b = e.target.closest("[role=tab]"); if (b) showCheatTab(b.dataset.t); });
+  $("#telIn").addEventListener("input", function (e) {
+    var w = e.target.value.replace(/[^a-zA-Z0-9]/g, "");
+    $("#telOut").textContent = phone(w);
+    var hit = BASE.trucos_v.find(function (c) { return c.c.toLowerCase() === w.toLowerCase(); });
+    $("#telInfo").textContent = !w ? "El número aparecerá aquí." : hit ? "Truco de GTA V: " + hit.e + "." : "No es un truco conocido de GTA V.";
+  });
+
+  /* ---------------- Misterios ---------------- */
+  var mystFilter = "todos";
+  var MLABEL = { confirmado: "Confirmado", teoria: "Teoría", pendiente: "Por descubrir" };
+  function allMyst() { return arr(DYN.misterios_nuevos).concat(BASE.misterios); }
+  function renderMyst() {
+    var tabs = [["todos", "Todos"], ["confirmado", "Confirmados"], ["teoria", "Teorías"], ["pendiente", "Por descubrir"]];
+    $("#mystTabs").innerHTML = tabs.map(function (t) { return '<button class="chip" type="button" data-f="' + t[0] + '" aria-pressed="' + (t[0] === mystFilter) + '">' + t[1] + "</button>"; }).join("");
+    $("#mysteries").innerHTML = allMyst().filter(function (m) { return mystFilter === "todos" || m.estado === mystFilter; }).map(function (m) {
+      return '<article class="mystery" id="m-' + esc(m.id) + '"><span class="badge stamp ' + esc(m.estado) + '">' + esc(MLABEL[m.estado] || m.estado) + "</span><h3>" + esc(m.titulo) + "</h3><p>" + esc(m.texto) + "</p>" + (m.fuente ? '<p class="src" style="margin-top:8px">Fuente: ' + srcLinks([m.fuente]) + "</p>" : "") + "</article>";
+    }).join("");
+    $("#tradition").innerHTML = BASE.tradicion.map(function (t, i) { return '<li id="tr-' + i + '"><span class="g">' + esc(t.juego) + "</span><b>" + esc(t.titulo) + "</b>" + esc(t.texto) + "</li>"; }).join("");
+  }
+  $("#mystTabs").addEventListener("click", function (e) { var b = e.target.closest("button"); if (!b) return; mystFilter = b.dataset.f; renderMyst(); });
+
+  /* ---------------- Música ---------------- */
+  function renderMusic() {
+    $("#stations").innerHTML = BASE.radio.map(function (r, i) {
+      return '<article class="station" id="radio-' + i + '"><div class="lcd"><span>' + esc(r.nombre) + "</span><small>" + pad(i + 1) + '/06</small></div><p class="genre">' + esc(r.genero) + '</p><p class="hosts">' + esc(r.hosts) + "</p><ol>" + r.temas.map(function (t) { return "<li>" + esc(t) + "</li>"; }).join("") + "</ol></article>";
+    }).join("");
+    $("#musicExtra").innerHTML = BASE.musica_extra.map(function (m, i) { return '<article id="mx-' + i + '"><h3>' + esc(m.titulo) + "</h3><p>" + esc(m.texto) + "</p></article>"; }).join("");
+  }
+
+  /* ---------------- Cronología ---------------- */
+  function renderTimeline() {
+    var items = BASE.cronologia.concat(arr(DYN.cronologia_nueva)).slice().sort(function (a, b) { return a.fecha < b.fecha ? -1 : a.fecha > b.fecha ? 1 : 0; });
+    var today = startOfToday(), year = "", out = "";
+    items.forEach(function (it, i) {
+      var d = parseLocal(it.fecha), y = String(d.getFullYear());
+      if (y !== year) { year = y; out += '<li class="yr" aria-hidden="true">' + y + "</li>"; }
+      out += '<li id="c-' + i + '" class="' + (d > today ? "future" : "") + '"><time datetime="' + esc(it.fecha) + '">' + fmtDay.format(d) + " " + esc(mon(d)) + '</time><i class="pin" aria-hidden="true"></i><span>' + esc(it.titulo) + "</span></li>";
+    });
+    $("#timeline").innerHTML = out;
+  }
+
+  /* ---------------- FAQ y fuentes ---------------- */
+  function renderFaq() {
+    $("#faqList").innerHTML = BASE.faq.map(function (f, i) { return '<details id="f-' + i + '"><summary>' + esc(f.q) + "</summary><p>" + esc(f.a) + "</p></details>"; }).join("");
+    $("#sources").innerHTML = BASE.fuentes.map(function (s) { return '<li><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.nombre) + "</a></li>"; }).join("");
+  }
+
+  /* ---------------- Buscador global ---------------- */
+  function focusEl(el) {
+    if (!el) return;
+    var det = el.closest("details"); if (det) det.open = true;
+    if (el.tagName === "DETAILS") el.open = true;
+    el.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "center" });
+    el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash");
+  }
+  function buildIndex() {
+    var I = [];
+    sortedNews().forEach(function (n) { I.push({ s: "Noticias", t: n.titulo, d: n.resumen, go: function () { revealNews(n.id); } }); });
+    allGuides().forEach(function (g) { I.push({ s: "Guías", t: g.titulo, d: g.resumen + " " + arr(g.pasos).join(" ") + " " + arr(g.checklist).join(" "), go: function () { guideCat = "Todas"; renderGuides(); focusEl($("#g-" + g.id)); } }); });
+    allDex().forEach(function (x) { I.push({ s: "Dex", t: x.nombre, d: x.tipo + ". " + x.nota, go: function () { dexCat = "todo"; $("#dexQ").value = x.nombre; renderDex(); $("#dex").scrollIntoView({ behavior: reduced ? "auto" : "smooth" }); } }); });
+    allArts().forEach(function (a) { I.push({ s: "Reportajes", t: a.titulo, d: a.entradilla + " " + arr(a.cuerpo).map(function (x) { return x.p || x.h || arr(x.ul).join(" "); }).join(" "), go: function () { openArt(a.id); } }); });
+    PINS.forEach(function (p) { I.push({ s: "Mapa", t: p.nombre, d: regName(p.region) + ". " + (p.texto || ""), go: function () { $("#mapa").scrollIntoView({ behavior: reduced ? "auto" : "smooth" }); selectPin(p.id, true); } }); });
+    BASE.personajes.forEach(function (p) { I.push({ s: "Personajes", t: p.nombre, d: p.rol + ". " + p.bio, go: function () { peopleFilter = "todos"; renderPeople(); focusEl($("#p-" + p.id)); } }); });
+    BASE.regiones.forEach(function (r) { I.push({ s: "Mapa", t: r.nombre, d: r.inspiracion + ". " + r.texto + " " + r.lugares.join(" ") + " " + r.actividades.join(" "), go: function () { pickRegion(r.id); focusEl($("#regionPanel")); } }); });
+    BASE.sistemas.forEach(function (s) { I.push({ s: "Jugabilidad", t: s.titulo, d: s.intro + " " + s.puntos.join(" "), go: function () { sysSel = s.id; renderSys(); focusEl($("#sysPanel")); } }); });
+    allMyst().forEach(function (m) { I.push({ s: "Misterios", t: m.titulo, d: m.texto, go: function () { mystFilter = "todos"; renderMyst(); focusEl($("#m-" + m.id)); } }); });
+    BASE.tradicion.forEach(function (t, i) { I.push({ s: "Misterios", t: t.titulo, d: t.juego + ". " + t.texto, go: function () { focusEl($("#tr-" + i)); } }); });
+    BASE.trucos_v.forEach(function (c) { I.push({ s: "Trucos GTA V", t: c.e + " · " + c.c, d: phone(c.c), go: function () { showCheatTab("v"); $("#cvQ").value = ""; renderCV(""); focusEl($("#tv-" + c.c)); } }); });
+    BASE.trucos_vc.forEach(function (c) { I.push({ s: "Trucos Vice City", t: c.e + " · " + c.c, d: c.t, go: function () { showCheatTab("vc"); focusEl($("#tvc-" + c.c)); } }); });
+    arr(DYN.trucos_gta6).forEach(function (c) { I.push({ s: "Trucos GTA VI", t: c.efecto, d: [c.ps5, c.xbox, c.telefono].join(" "), go: function () { showCheatTab("vi"); focusEl($("#t6-" + c.id)); } }); });
+    arr(DYN.misiones).forEach(function (m) { I.push({ s: "Misiones", t: m.titulo, d: m.resumen || "", go: function () { focusEl($("#mi-" + m.id)); } }); });
+    BASE.misiones_conocidas.forEach(function (m, i) { I.push({ s: "Misiones", t: m.titulo, d: m.texto, go: function () { focusEl($("#mk-" + i)); } }); });
+    BASE.radio.forEach(function (r, i) { I.push({ s: "Radio", t: r.nombre, d: r.genero + ". " + r.hosts + ". " + r.temas.join(" "), go: function () { focusEl($("#radio-" + i)); } }); });
+    BASE.faq.forEach(function (f, i) { I.push({ s: "FAQ", t: f.q, d: f.a, go: function () { focusEl($("#f-" + i)); } }); });
+    BASE.historia.bloques.forEach(function (b, i) { I.push({ s: "Historia", t: b.titulo, d: b.texto, go: function () { focusEl($("#h-b" + i)); } }); });
+    arr(DYN.eventos).forEach(function (e) { I.push({ s: "Fechas", t: e.titulo, d: e.lugar + " " + e.fecha, go: function () { focusEl($(".aside-card")); } }); });
+    I.forEach(function (x) { x.nt = norm(x.t); x.nd = norm(x.d); });
+    return I;
+  }
+  var INDEX = [], act = 0, hits = [];
+  function openSearch() { $("#search").hidden = false; $("#searchIn").value = ""; runSearch(""); $("#searchIn").focus(); document.body.style.overflow = "hidden"; }
+  function closeSearch() { $("#search").hidden = true; document.body.style.overflow = ""; $("#searchBtn").focus(); }
+  function runSearch(q) {
+    var terms = norm(q).split(/\s+/).filter(Boolean);
+    if (!terms.length) { hits = []; $("#results").innerHTML = '<li class="empty">Prueba con «Lucia», «policía», «precarga», «TURTLE» o «Vice City».</li>'; return; }
+    hits = INDEX.map(function (x) {
+      var sc = 0;
+      for (var i = 0; i < terms.length; i++) { var t = terms[i]; if (x.nt.indexOf(t) >= 0) sc += 3; else if (x.nd.indexOf(t) >= 0) sc += 1; else return null; }
+      return { x: x, sc: sc };
+    }).filter(Boolean).sort(function (a, b) { return b.sc - a.sc; }).slice(0, 30).map(function (h) { return h.x; });
+    act = 0;
+    $("#results").innerHTML = hits.length ? hits.map(function (h, i) { return '<li><a href="#" data-i="' + i + '"' + (i === 0 ? ' class="act"' : "") + '><span class="sec">' + esc(h.s) + '</span><span class="t">' + esc(h.t) + '</span><span class="d">' + esc(h.d) + "</span></a></li>"; }).join("") : '<li class="empty">Nada por aquí todavía. Si es algo nuevo, aparecerá tras la próxima actualización.</li>';
+  }
+  function go(i) { var h = hits[i]; if (!h) return; closeSearch(); setTimeout(h.go, 30); }
+  $("#searchBtn").addEventListener("click", openSearch);
+  $("#searchIn").addEventListener("input", function (e) { runSearch(e.target.value); });
+  $("#results").addEventListener("click", function (e) { var a = e.target.closest("a[data-i]"); if (!a) return; e.preventDefault(); go(+a.dataset.i); });
+  $("#search").addEventListener("click", function (e) { if (e.target.id === "search") closeSearch(); });
+  document.addEventListener("keydown", function (e) {
+    var open = !$("#search").hidden;
+    if (open) {
+      if (e.key === "Escape") { e.preventDefault(); closeSearch(); }
+      else if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+        e.preventDefault(); if (!hits.length) return;
+        act = (act + (e.key === "ArrowDown" ? 1 : -1) + hits.length) % hits.length;
+        $$("#results a").forEach(function (a, i) { a.classList.toggle("act", i === act); if (i === act) a.scrollIntoView({ block: "nearest" }); });
+      } else if (e.key === "Enter") { e.preventDefault(); go(act); }
+      else if (e.key === "Tab") { e.preventDefault(); $("#searchIn").focus(); }
+      return;
+    }
+    var typing = /input|textarea|select/i.test((document.activeElement || {}).tagName || "");
+    if ((e.key === "/" && !typing) || ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k")) { e.preventDefault(); openSearch(); }
+  });
+
+  /* ---------------- Navegación ---------------- */
+  function closeNav() { $$(".nav-grp").forEach(function (g) { g.classList.remove("open"); g.querySelector("button").setAttribute("aria-expanded", "false"); }); }
+  $$(".nav-grp").forEach(function (g) {
+    var btn = g.querySelector("button"), t = 0;
+    btn.addEventListener("click", function (e) { e.stopPropagation(); var open = !g.classList.contains("open"); closeNav(); if (open) { g.classList.add("open"); btn.setAttribute("aria-expanded", "true"); } });
+    if (window.matchMedia && window.matchMedia("(hover: hover)").matches) {
+      g.addEventListener("mouseenter", function () { clearTimeout(t); closeNav(); g.classList.add("open"); btn.setAttribute("aria-expanded", "true"); });
+      g.addEventListener("mouseleave", function () { t = setTimeout(function () { g.classList.remove("open"); btn.setAttribute("aria-expanded", "false"); }, 180); });
+    }
+    g.addEventListener("keydown", function (e) { if (e.key === "Escape") { closeNav(); btn.focus(); } });
+  });
+  document.addEventListener("click", function (e) { if (!e.target.closest(".nav-grp")) closeNav(); if (e.target.closest(".nav-pop a")) closeNav(); });
+  (function () {
+    var html = '<h4>Lo más visto</h4><div class="mm-grid"><a class="big" href="#noticias"><b>Noticias</b><span>Lo último, con fuente</span></a><a class="big" href="#mapa"><b>Mapa</b><span>100 lugares y 3.300 puntos</span></a></div>';
+    $$(".nav-grp").forEach(function (g) { html += "<h4>" + esc(g.querySelector("button").textContent.replace("▾", "").trim()) + '</h4><div class="mm-grid">' + $$(".nav-pop a", g).map(function (a) { return '<a href="' + a.getAttribute("href") + '">' + a.innerHTML + "</a>"; }).join("") + "</div>"; });
+    $("#mmenuBody").innerHTML = html;
+  })();
+  function openMenu() { $("#mobileMenu").hidden = false; $("#menuBtn").setAttribute("aria-expanded", "true"); document.body.style.overflow = "hidden"; $("#menuClose").focus(); }
+  function closeMenu() { $("#mobileMenu").hidden = true; $("#menuBtn").setAttribute("aria-expanded", "false"); document.body.style.overflow = ""; }
+  $("#menuBtn").addEventListener("click", openMenu);
+  $("#menuClose").addEventListener("click", function () { closeMenu(); $("#menuBtn").focus(); });
+  $("#mobileMenu").addEventListener("click", function (e) { if (e.target.closest("a") || e.target === $("#mobileMenu")) closeMenu(); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !$("#mobileMenu").hidden) closeMenu(); });
+  if ("IntersectionObserver" in window) {
+    var links = {}; $$(".nav a").forEach(function (a) { links[a.getAttribute("href").slice(1)] = a; });
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        $$(".nav a, .nav-grp").forEach(function (a) { a.classList.remove("on"); });
+        var a = links[en.target.id]; if (!a) return;
+        a.classList.add("on"); var g = a.closest(".nav-grp"); if (g) g.classList.add("on");
+      });
+    }, { rootMargin: "-45% 0px -50% 0px" });
+    $$("section.block").forEach(function (s) { io.observe(s); });
+  }
+
+  /* ---------------- Datos dinámicos ---------------- */
+  function renderDynamic() {
+    renderStars(); renderNewsFilters(); renderNews(); renderEvents(); renderStatus();
+    renderGuides(); renderMissions(); renderCheats(); renderMyst(); renderTimeline(); renderPins(); renderSide(); renderArts(); renderMedia(); renderDex();
+    INDEX = buildIndex();
+  }
+  function valid(d) { return d && d.meta && Array.isArray(d.noticias); }
+  function loadLive(first) {
+    if (!window.fetch) return;
+    fetch("datos/actualizaciones.json?t=" + Date.now(), { cache: "no-store" }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) {
+      if (!valid(d)) throw new Error("datos");
+      var changed = !DYN.meta || d.meta.actualizado !== DYN.meta.actualizado;
+      DYN = d; source = "en vivo";
+      if (changed) { renderDynamic(); if (!first) toast("Guía actualizada con novedades"); } else renderStatus();
+    }).catch(function () { source = "copia integrada"; renderStatus(); });
+  }
+
+  renderLaunch(); renderStory(); renderPeople(); mapInit(); renderScale(); renderArts(); renderMedia(); renderDex(); renderSys(); renderMusic(); renderFaq();
+  renderDynamic();
+  tick(); setInterval(tick, 1000);
+  startSky();
+  loadLive(true);
+  setInterval(function () { loadLive(false); renderStatus(); }, 10 * 60 * 1000);
+  document.addEventListener("visibilitychange", function () { if (!document.hidden) loadLive(false); });
+})();
+</script>
+</body>
+</html>

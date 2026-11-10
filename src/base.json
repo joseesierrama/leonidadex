@@ -1,0 +1,3974 @@
+{
+ "lanzamiento": {
+  "datos": [
+   {
+    "k": "Fecha",
+    "v": "Jueves 19 de noviembre de 2026"
+   },
+   {
+    "k": "Hora",
+    "v": "00:00 de tu hora local (PS5 y Xbox)"
+   },
+   {
+    "k": "Plataformas",
+    "v": "PS5, PS5 Pro y Xbox Series X|S"
+   },
+   {
+    "k": "PC",
+    "v": "Sin fecha anunciada"
+   },
+   {
+    "k": "Tamaño",
+    "v": "Hasta 212 GB según la consola"
+   },
+   {
+    "k": "Precarga",
+    "v": "Abierta desde el 10 de noviembre"
+   },
+   {
+    "k": "Edición física",
+    "v": "Código en la caja, sin disco (desde el 12 nov)"
+   },
+   {
+    "k": "Edad",
+    "v": "PEGI 18 · ESRB Mature 17+"
+   },
+   {
+    "k": "Modo",
+    "v": "Un jugador; el nuevo online no está anunciado"
+   }
+  ],
+  "precarga": [
+   {
+    "plataforma": "PS5",
+    "cuando": "10 nov, 00:00 hora local",
+    "nota": "Cada región a su medianoche."
+   },
+   {
+    "plataforma": "Xbox Series X|S",
+    "cuando": "10 nov, 00:00 GMT",
+    "nota": "01:00 en la España peninsular."
+   },
+   {
+    "plataforma": "Caja con código",
+    "cuando": "Desde el 12 nov",
+    "nota": "Canjea el código y descarga."
+   }
+  ],
+  "ediciones": {
+   "columnas": [
+    "Estándar",
+    "Ultimate"
+   ],
+   "precios": [
+    "79,99 €",
+    "99,99 €"
+   ],
+   "filas": [
+    {
+     "k": "Juego base",
+     "v": [
+      true,
+      true
+     ]
+    },
+    {
+     "k": "Pack Vintage Vice City (reserva)",
+     "v": [
+      true,
+      true
+     ]
+    },
+    {
+     "k": "Un mes de GTA+ (reserva digital)",
+     "v": [
+      true,
+      true
+     ]
+    },
+    {
+     "k": "Formato",
+     "v": [
+      "Física (código) y digital",
+      "Digital"
+     ]
+    },
+    {
+     "k": "Contenido Ultimate (vehículos, armas, ropa, garajes, tiendas)",
+     "v": [
+      false,
+      true
+     ]
+    },
+    {
+     "k": "Mejora a Ultimate por separado",
+     "v": [
+      "Disponible",
+      "—"
+     ]
+    }
+   ],
+   "nota": "El pack Vintage Vice City se incluye con las compras digitales hechas hasta el 20 de noviembre y con las reservas físicas mientras haya existencias. El contenido Ultimate se va desbloqueando capítulo a capítulo durante la historia."
+  },
+  "pack_reserva": [
+   "Sedán '55 Vapid Stanier y garaje Shore Court en Ocean Beach, con taquilla de armas y punto para vender mercancía robada",
+   "Traje de lino pastel y peinado retro para Jason",
+   "Minivestido rojo de lentejuelas y rizos retro para Lucia",
+   "Patrón tropical de palmeras para la mayoría de armas",
+   "Un mes gratis de GTA+ en reservas digitales"
+  ],
+  "ultimate": [
+   "'95 Grotti Cheetah con decoración minimalista",
+   "Revólveres Hawk & Little Morgan, versión de él y de ella",
+   "Pistolas grabadas: Girardi ES9 para Jason y Klose K17 para Lucia",
+   "Vice City Style: ropa y tatuajes exclusivos",
+   "Vehículos del piso franco de Jason: moto Dinka Enduro y kayak Crest",
+   "Vapid Ganado Retro Build, una pickup modificada",
+   "Moto de agua Shitzu Squalo en Washington Beach con una caja de armas explosivas",
+   "'67 Vapid Dominator Buggy y garaje Paradise en Watson Bay",
+   "Goodtime Gear: cápsula de ropa y accesorios",
+   "PTT Youngin$ Compound: un lugar que asaltar con objetos especiales y contrabando",
+   "Classic Car Collection: un encargo de Wyman para restaurar clásicos abandonados",
+   "Tiendas exclusivas: Rideout Customs, Sara's Unisex Salon, Stock 305, Electric Fang Tattoo y One-Eyed Willie's"
+  ]
+ },
+ "historia": {
+  "premisa": "Leonida, «the Goodtime State», es la versión de Florida de Rockstar, y Vice City su Miami de hoy. Jason Duval y Lucia Caminos son pareja dentro y fuera del crimen: aceptan trabajos de distintos clientes mientras intentan salir adelante en el lugar más soleado y turbio de Estados Unidos. Un golpe fácil sale mal y los arrastra a una conspiración criminal que se extiende por todo el estado.",
+  "bloques": [
+   {
+    "titulo": "Una historia por capítulos",
+    "texto": "La campaña está organizada en capítulos. Entre misiones hay tiempo libre en el que a veces tendrás que reunir dinero antes de avanzar. El contenido de la edición Ultimate también se desbloquea por capítulos."
+   },
+   {
+    "titulo": "Unas 80 horas",
+    "texto": "La última partida completa de Rob Nelson, codirector de Rockstar North, duró unas 80 horas, contando objetivos opcionales que cambian la historia. Como referencia, la de GTA V ronda las 30 y la de RDR2, unas 60."
+   },
+   {
+    "titulo": "La relación importa",
+    "texto": "Lo que sienten Jason y Lucia el uno por el otro puede cambiar según tus decisiones, en una escala de cuatro niveles. Pasar tiempo juntos (playa, bici, coche, gimnasio) los acerca."
+   },
+   {
+    "titulo": "Iban a ser cuatro",
+    "texto": "Rob Nelson contó a IGN que en un principio el juego iba a tener cuatro protagonistas, uno más que GTA V. Al final se quedó en una pareja."
+   }
+  ],
+  "tono": "Sátira de la Florida actual: redes sociales donde los NPC graban contenido, cultura influencer, clubes de lujo, pantanos, moteles y todo lo que pasa «solo en Leonida»."
+ },
+ "personajes": [
+  {
+   "id": "jason",
+   "nombre": "Jason Duval",
+   "grupo": "protagonista",
+   "rol": "Protagonista",
+   "color": "aqua",
+   "bio": "Creció rodeado de estafadores y delincuentes. Pasó por el ejército para dejar atrás una adolescencia complicada y acabó en los Cayos haciendo lo que mejor sabe: trabajar para traficantes locales. Vive gratis en una propiedad de Brian Heder a cambio de echarle una mano con extorsiones.",
+   "vinculos": [
+    "Lucia Caminos",
+    "Brian Heder",
+    "Cal Hampton"
+   ],
+   "visto": "Tráilers 1 y 2, Extended Look"
+  },
+  {
+   "id": "lucia",
+   "nombre": "Lucia Caminos",
+   "grupo": "protagonista",
+   "rol": "Protagonista",
+   "color": "flamingo",
+   "bio": "Primera protagonista de un GTA principal. Su padre le enseñó a pelear casi antes de andar. Defender a su familia la llevó a la Penitenciaría de Leonida y salió de allí por pura suerte. Quiere la buena vida que su madre soñaba desde sus días en Liberty City, y ahora solo hará jugadas inteligentes.",
+   "vinculos": [
+    "Jason Duval",
+    "Liberty City"
+   ],
+   "visto": "Tráilers 1 y 2, Extended Look"
+  },
+  {
+   "id": "cal",
+   "nombre": "Cal Hampton",
+   "grupo": "secundario",
+   "rol": "Amigo de Jason",
+   "color": "peach",
+   "bio": "Amigo de Jason y socio de Brian. Se pasa el día en casa escuchando la radio de la Guardia Costera, con cerveza y teorías de la conspiración. Paranoico, pero leal.",
+   "vinculos": [
+    "Jason Duval",
+    "Brian Heder"
+   ],
+   "visto": "Tráiler 2"
+  },
+  {
+   "id": "boobie",
+   "nombre": "Boobie Ike",
+   "grupo": "musica",
+   "rol": "Empresario de Vice City",
+   "color": "sunset",
+   "bio": "Leyenda local de Vice City y le gusta que se note. Ha levantado un imperio legal con inmobiliaria, un club de striptease (el Jack of Hearts) y un estudio de grabación. Su apuesta personal es Only Raw Records junto a Dre'Quan; ahora solo les falta un éxito.",
+   "vinculos": [
+    "Dre'Quan Priest",
+    "Real Dimez",
+    "Jack of Hearts"
+   ],
+   "visto": "Tráiler 2"
+  },
+  {
+   "id": "drequan",
+   "nombre": "Dre'Quan Priest",
+   "grupo": "musica",
+   "rol": "Aspirante a magnate musical",
+   "color": "sunset",
+   "bio": "Trapicheó en la calle para sobrevivir, pero la música siempre fue su meta. Contrata artistas para el club de Boobie y quiere convertir Only Raw Records en un sello serio. Su gran fichaje: Real Dimez.",
+   "vinculos": [
+    "Boobie Ike",
+    "Real Dimez"
+   ],
+   "visto": "Tráiler 2"
+  },
+  {
+   "id": "realdimez",
+   "nombre": "Real Dimez",
+   "grupo": "musica",
+   "rol": "Dúo de rap: Bae-Luxe y Roxy",
+   "color": "flamingo",
+   "bio": "Amigas desde el instituto. Hace cinco años lograron un éxito junto al rapero DWNPLY y desde entonces viven de las redes sociales. Ahora buscan repetir con Only Raw Records.",
+   "vinculos": [
+    "Dre'Quan Priest",
+    "Boobie Ike",
+    "DWNPLY"
+   ],
+   "visto": "Tráiler 2"
+  },
+  {
+   "id": "raul",
+   "nombre": "Raul Bautista",
+   "grupo": "crimen",
+   "rol": "Atracador veterano",
+   "color": "amber",
+   "bio": "La experiencia cuenta. Ladrón de bancos curtido que asume grandes riesgos por grandes premios, aunque eso ponga en peligro a su banda. Tarde o temprano, sus socios tendrán que doblar la apuesta o retirarse.",
+   "vinculos": [
+    "Jason Duval",
+    "Lucia Caminos"
+   ],
+   "visto": "Tráiler 2"
+  },
+  {
+   "id": "brian",
+   "nombre": "Brian Heder",
+   "grupo": "crimen",
+   "rol": "Casero y contrabandista",
+   "color": "aqua",
+   "bio": "Contrabandista de la vieja escuela que sigue moviendo cargamentos por su varadero con Lori, su tercera esposa. Deja a Jason vivir gratis en una de sus propiedades a cambio de ayuda con extorsiones locales y alguna visita para tomar la sangría de Lori.",
+   "vinculos": [
+    "Jason Duval",
+    "Cal Hampton",
+    "Lori Heder"
+   ],
+   "visto": "Tráiler 2"
+  }
+ ],
+ "regiones": [
+  {
+   "id": "vicecity",
+   "nombre": "Vice City",
+   "inspiracion": "Miami",
+   "lema": "El glamour, el ajetreo y la codicia de Estados Unidos en una sola ciudad.",
+   "texto": "La gran metrópolis costera de Leonida y el centro del juego. Según Rockstar, Vice City es aproximadamente el doble de grande que Los Santos de GTA V, y es solo una parte del mapa.",
+   "lugares": [
+    "Ocean Beach",
+    "Little Cuba",
+    "Mercadillo Tisha-Wocka",
+    "Puerto de Vice City",
+    "Clubes NINE1NINE, The Vault y Jack of Hearts"
+   ],
+   "actividades": [
+    "Clubes y vida nocturna",
+    "Playas",
+    "Atracos a tiendas y joyerías",
+    "Carreras callejeras"
+   ]
+  },
+  {
+   "id": "keys",
+   "nombre": "Leonida Keys",
+   "inspiracion": "Cayos de Florida",
+   "lema": "Islas tropicales, puentes interminables y territorio de contrabandistas.",
+   "texto": "La cadena de islas del sur del estado. Es el punto de partida de Jason, que trabaja allí para traficantes locales.",
+   "lugares": [
+    "Cadena de islas y puentes",
+    "Muelles y marinas"
+   ],
+   "actividades": [
+    "Barcos y motos de agua",
+    "Buceo",
+    "Pesca"
+   ]
+  },
+  {
+   "id": "grassrivers",
+   "nombre": "Grassrivers",
+   "inspiracion": "Everglades",
+   "lema": "Pantanos, manglares y caimanes.",
+   "texto": "Un enorme humedal de manglares y canales escondidos entre la ciudad y el interior. Terreno de hidrodeslizadores, fauna salvaje y gente más dura que los caimanes.",
+   "lugares": [
+    "Canales y manglares",
+    "Embarcaderos"
+   ],
+   "actividades": [
+    "Hidrodeslizadores (fanboats)",
+    "Canoas",
+    "Observar y cazar fauna"
+   ]
+  },
+  {
+   "id": "gellhorn",
+   "nombre": "Port Gellhorn",
+   "inspiracion": "Costa del golfo de Florida",
+   "lema": "La costa olvidada de Leonida.",
+   "texto": "Un pueblo portuario venido a menos, lejos del neón de Vice City: moteles baratos, atracciones cerradas y centros comerciales vacíos alrededor de un puerto que sigue en activo.",
+   "lugares": [
+    "Puerto en activo",
+    "Moteles y atracciones cerradas"
+   ],
+   "actividades": [
+    "Trabajos de contrabando",
+    "Exploración"
+   ]
+  },
+  {
+   "id": "ambrosia",
+   "nombre": "Ambrosia",
+   "inspiracion": "Zona azucarera del interior de Florida",
+   "lema": "Donde empieza la lucha por la salud y la riqueza.",
+   "texto": "Un pueblo industrial junto al lago Leonida, dominado por la refinería de azúcar Allied Crystal y con presencia de bandas de moteros.",
+   "lugares": [
+    "Lago Leonida",
+    "Refinería Allied Crystal"
+   ],
+   "actividades": [
+    "Moteros",
+    "Rutas por carretera"
+   ]
+  },
+  {
+   "id": "kalaga",
+   "nombre": "Mount Kalaga National Park",
+   "inspiracion": "Interior norte de Florida",
+   "lema": "Bosques, montaña y senderos en la frontera norte.",
+   "texto": "El parque nacional del norte del estado: bosques, rutas de senderismo y pistas para todoterreno. Es el gran espacio salvaje de Leonida.",
+   "lugares": [
+    "Senderos",
+    "Bosques",
+    "Pistas de tierra"
+   ],
+   "actividades": [
+    "Caza",
+    "Pesca",
+    "Todoterreno"
+   ]
+  }
+ ],
+ "escala": [
+  {
+   "nombre": "Leonida (GTA VI)",
+   "valor": 2.0,
+   "nota": "Rockstar: «aproximadamente el doble que GTA V»",
+   "destacado": true
+  },
+  {
+   "nombre": "GTA V (Los Santos y Blaine)",
+   "valor": 1.0,
+   "nota": "Referencia"
+  },
+  {
+   "nombre": "Red Dead Redemption 2",
+   "valor": 0.67,
+   "nota": "Deducido: Rockstar dice que Leonida triplica el mapa de RDR2"
+  }
+ ],
+ "sistemas": [
+  {
+   "id": "policia",
+   "titulo": "Policía y búsqueda",
+   "icono": "★",
+   "intro": "Vuelven las seis estrellas, pero escapar ya no es esconderse hasta que se apaguen.",
+   "puntos": [
+    "El nivel de búsqueda tiene seis estrellas, una más que en GTA V.",
+    "Los coches patrulla ya no aparecen en el minimapa: tienes que vigilar el entorno.",
+    "La policía construye tu descripción con tu ropa, tu arma, tu acompañante y las cámaras de seguridad.",
+    "Cambiarte de ropa, soltar un arma reconocible o separarte de tu pareja borra partes de esa descripción.",
+    "Un delito sin testigos ni cámaras puede no llegar a generar búsqueda. Puedes entrar a la trastienda y borrar las grabaciones.",
+    "Para escapar hay que romper la descripción y salir de la zona de búsqueda hasta que se enfríe.",
+    "Unidades caninas (K-9) que te rastrean a pie y bandas de pinchos que revientan neumáticos.",
+    "Si abandonas un vehículo registrado a tu nombre tras un delito, puede acabar en el depósito.",
+    "Puedes robar la escopeta de un coche patrulla vacío."
+   ]
+  },
+  {
+   "id": "perfil",
+   "titulo": "Perfil criminal",
+   "icono": "☯",
+   "intro": "El «honor» de GTA VI no juzga si eres bueno o malo, sino qué clase de criminal eres.",
+   "puntos": [
+    "Va de «Profesional» a «Irredimible», con iconos de ángel y diablo.",
+    "Amenazar o dejar fuera de combate es una alternativa a matar, y el juego lo distingue.",
+    "La violencia innecesaria repetida construye un perfil distinto al de un atraco limpio.",
+    "Influye en la historia y en lo fácil que es escapar: un criminal profesional deja menos pistas.",
+    "Llevar un arma a la vista no siempre dispara la búsqueda, pero los peatones reaccionan."
+   ]
+  },
+  {
+   "id": "coches",
+   "titulo": "Robo de coches",
+   "icono": "⚿",
+   "intro": "Robar un coche ahora tiene capas: seguridad, rastreadores, peristas y gasolina.",
+   "puntos": [
+    "La app WAINK escanea coches y muestra cierre, alarma, rastreador, valor de reventa y coste de registro.",
+    "Un sedán antiguo se abre a la vieja usanza; un coche moderno con llave digital exige clonar la señal.",
+    "Los coches nuevos y caros pueden llevar un rastreador que avisa de tu posición a la policía.",
+    "Los peristas te compran coches y su punto de entrega suele tener un inhibidor de señal.",
+    "El estado del coche afecta a lo que te pagan: llegar con chatarra sale caro.",
+    "Hay conductores que huyen, otros que se resisten y otros que van armados y disparan.",
+    "Cada vehículo tiene depósito de gasolina y salud del motor. Repostar es rápido.",
+    "La app Scooter Bros te trae tu coche en segundos, previo pago; RideMe es un servicio tipo Uber.",
+    "Las armas grandes se guardan en el maletero."
+   ]
+  },
+  {
+   "id": "combate",
+   "titulo": "Combate",
+   "icono": "✛",
+   "intro": "El tiroteo clásico de GTA, más pulido.",
+   "puntos": [
+    "Modo focus: ralentiza la acción y marca puntos débiles rojos y amarillos en los enemigos.",
+    "Puedes recoger el arma de un enemigo caído en plena pelea.",
+    "Cada protagonista tiene su propia rueda de armas, más limpia y rápida.",
+    "Peleas cuerpo a cuerpo con pulsaciones rápidas de botones.",
+    "Vuelve el icono del arma equipada arriba a la derecha, como en GTA IV.",
+    "Disparar a las ruedas de un coche patrulla puede hacerlo volcar."
+   ]
+  },
+  {
+   "id": "pareja",
+   "titulo": "Jason y Lucia",
+   "icono": "♥",
+   "intro": "Dos protagonistas, un botón para cambiar entre ellos.",
+   "puntos": [
+    "Un solo botón cambia de personaje, con un barrido de cámara de un par de segundos sobre la ciudad.",
+    "En una huida a dos, puedes alternar entre conductor y pasajero; la IA controla al otro.",
+    "La relación tiene cuatro niveles y cambia con tus decisiones, sin un sistema que te dé la lata.",
+    "Puedes encontrarte con el otro protagonista mientras exploras y elegir pasar tiempo juntos.",
+    "Disfraces e identidades falsas para ciertos trabajos; Lucia tiene muchos peinados."
+   ]
+  },
+  {
+   "id": "vida",
+   "titulo": "Vida diaria",
+   "icono": "☕",
+   "intro": "Sistemas tipo RDR2, ajustados para no frenar el ritmo.",
+   "puntos": [
+    "El gimnasio exige técnica y progresión; da ventajas y cambia el físico, sin exagerar como en San Andreas.",
+    "Dormir es opcional, pero salen ojeras, y pasar días sin dormir reduce la regeneración de salud y aguante.",
+    "El café da aguante y el batido de proteínas, salud.",
+    "Si mueres o te arrestan, pierdes el dinero que llevas encima: ingrésalo en un cajero.",
+    "Algunas tiendas cierran de noche y la ropa disponible depende de la zona.",
+    "Al morir reapareces cerca, no a la puerta del hospital.",
+    "En la tele hay una sitcom animada para adultos hecha para el juego.",
+    "Según las previews, el modo historia no tiene micropagos con dinero real."
+   ]
+  },
+  {
+   "id": "mundo",
+   "titulo": "Mundo vivo",
+   "icono": "☀",
+   "intro": "Más grande, más denso y más reactivo que cualquier mapa anterior de Rockstar.",
+   "puntos": [
+    "Más de 600.000 animaciones: diez veces las de GTA V.",
+    "El ciclo de día y noche es bastante más largo que en GTA V y las carreteras, más estrechas.",
+    "Muchos más interiores accesibles, con aspecto de casas habitadas.",
+    "El clima se forma por el mapa: verás tormentas a lo lejos, y el viento, la humedad, la niebla y la estación cuentan. Las calles mojadas se secan a distinto ritmo.",
+    "Más de 170 especies animales en tierra, mar y aire.",
+    "Autobuses y trenes funcionan: puedes usarlos como viaje rápido.",
+    "Eventos emergentes: un rival puede robar la tienda que ibas a atracar, o un cliente puede intervenir en un atraco.",
+    "Más variedad de cuerpos entre los peatones que en cualquier juego anterior."
+   ]
+  },
+  {
+   "id": "actividades",
+   "titulo": "Actividades",
+   "icono": "⚑",
+   "intro": "Lo que ya hemos visto que se puede hacer en Leonida.",
+   "puntos": [
+    "Atracos a gasolineras, joyerías, tiendas y bancos.",
+    "Trabajos para clientes: protección, entregas y encargos.",
+    "Carreras en circuito y carreras callejeras a las que te retan otros conductores.",
+    "Hidrodeslizadores, motos de agua, canoas y kayaks.",
+    "Natación, buceo y salto base con paracaídas desde rascacielos.",
+    "Caza y pesca en las zonas salvajes.",
+    "Clubes, playa, bici, gimnasio y, por supuesto, acariciar perros."
+   ]
+  }
+ ],
+ "guias": [
+  {
+   "id": "precarga-ps5",
+   "titulo": "Cómo precargar GTA VI en PS5",
+   "categoria": "Lanzamiento",
+   "nivel": "Básico",
+   "tiempo": "5 min",
+   "estado": "disponible",
+   "resumen": "Deja la consola lista para jugar el 19 a las 00:00 sin esperas.",
+   "pasos": [
+    "Compra o reserva el juego en PlayStation Store. Si tienes la caja, canjea el código desde PlayStation Store con el menú «…» › Canjear código (las cajas llegan el 12 de noviembre).",
+    "Libera espacio: hasta 212 GB. En una PS5 de 825 GB es casi un tercio del disco. Revisa Ajustes › Almacenamiento.",
+    "Activa las descargas en reposo: Ajustes › Sistema › Ahorro de energía › Funciones disponibles en modo de reposo › Mantener conexión a Internet.",
+    "Activa Ajustes › Datos guardados y ajustes de juegos/aplicaciones › Actualizaciones automáticas › Descarga automática e Instalación automática en modo de reposo.",
+    "Comprueba en la Biblioteca que GTA VI aparece descargándose. Si no, ábrelo y pulsa Descargar.",
+    "El 19 de noviembre a las 00:00 (hora local) se desbloquea. Puede pedir un pequeño parche de lanzamiento: deja la consola en reposo esa noche."
+   ],
+   "consejos": [
+    "Los nombres de los menús pueden variar un poco según la versión del sistema.",
+    "Actualiza el firmware antes del día 19 para no perder tiempo."
+   ]
+  },
+  {
+   "id": "precarga-xbox",
+   "titulo": "Cómo precargar GTA VI en Xbox Series X|S",
+   "categoria": "Lanzamiento",
+   "nivel": "Básico",
+   "tiempo": "5 min",
+   "estado": "disponible",
+   "resumen": "En Xbox la precarga se abrió a las 00:00 GMT del 10 de noviembre (01:00 en la península).",
+   "pasos": [
+    "Compra o reserva en Microsoft Store, o canjea el código de la caja desde la Tienda › Canjear.",
+    "Libera hasta 212 GB. En una Series S de 512 GB eso es más de la mitad del espacio útil.",
+    "En Ajustes › General › Opciones de energía, elige el modo que mantiene la consola en reposo para que siga descargando.",
+    "En Ajustes › Sistema › Actualizaciones y descargas, activa mantener juegos y aplicaciones actualizados.",
+    "Ve a Mis juegos y aplicaciones › Biblioteca completa › Juegos en propiedad › GTA VI › Instalar.",
+    "Se desbloquea el 19 de noviembre a las 00:00, hora local."
+   ],
+   "consejos": [
+    "La ruta exacta de los menús puede cambiar con las actualizaciones del sistema."
+   ]
+  },
+  {
+   "id": "edicion",
+   "titulo": "¿Estándar o Ultimate?",
+   "categoria": "Compra",
+   "nivel": "Básico",
+   "tiempo": "3 min",
+   "estado": "disponible",
+   "resumen": "Qué te llevas por 20 € más, sin humo.",
+   "pasos": [
+    "Las dos ediciones tienen el mismo juego completo. La diferencia es contenido extra de un jugador.",
+    "La Ultimate (99,99 €) suma un Grotti Cheetah del 95, armas personalizadas, ropa y tatuajes, varios vehículos, dos garajes, un lugar que asaltar, un encargo de coches clásicos y cinco tiendas exclusivas.",
+    "Ese contenido se desbloquea a medida que avanzas por los capítulos de la historia.",
+    "Si compras la Estándar (79,99 €), podrás comprar la mejora a Ultimate más adelante.",
+    "Si quieres caja física, solo existe la Estándar con código dentro."
+   ],
+   "consejos": [
+    "El pack Vintage Vice City va con cualquiera de las dos si compras en digital hasta el 20 de noviembre."
+   ]
+  },
+  {
+   "id": "policia-guia",
+   "titulo": "Cómo escapar de la policía en GTA VI",
+   "categoria": "Supervivencia",
+   "nivel": "Intermedio",
+   "tiempo": "6 min",
+   "estado": "disponible",
+   "resumen": "La táctica de GTA V ya no basta. Así funciona según lo mostrado por Rockstar.",
+   "pasos": [
+    "Antes del golpe: busca cámaras y testigos. Sin ellos, puede que nadie llegue a buscarte.",
+    "Después de un atraco en tienda, entra en la trastienda y borra las grabaciones de seguridad.",
+    "Si te buscan, rompe tu descripción: cámbiate de ropa, deshazte del arma reconocible y separa a Jason y Lucia.",
+    "Sal de la zona de búsqueda y espera a que se enfríe. Vigila la calle: los patrulleros no salen en el minimapa.",
+    "No uses coches con rastreador para huir; escanéalos antes con WAINK.",
+    "Ojo con las bandas de pinchos si vas en moto y con las unidades K-9 si vas a pie.",
+    "No abandones un coche registrado a tu nombre en plena huida: podría acabar en el depósito."
+   ],
+   "consejos": [
+    "Pintar el coche no se presenta como forma fiable de despistar.",
+    "Guía basada en previews; la revisaremos con el juego final."
+   ]
+  },
+  {
+   "id": "coches-guia",
+   "titulo": "Robar coches como un profesional",
+   "categoria": "Dinero",
+   "nivel": "Intermedio",
+   "tiempo": "5 min",
+   "estado": "disponible",
+   "resumen": "WAINK, rastreadores, peristas y gasolina: el nuevo oficio de robar coches.",
+   "pasos": [
+    "Escanea con WAINK: cierre, alarma, rastreador, valor de reventa y coste de registro.",
+    "Empieza por coches antiguos: se abren sin herramientas especiales. Los modernos piden clonar la llave digital.",
+    "Si el coche lleva rastreador, aléjate rápido o llévalo a un sitio con inhibidor de señal.",
+    "Consulta en WAINK qué modelos piden los peristas y entrégalos en buen estado: los golpes restan dinero.",
+    "Mira la gasolina: un coche robado puede tener el depósito casi vacío.",
+    "Si te gusta, regístralo a tu nombre (pagando) y podrás pedirlo después con Scooter Bros."
+   ],
+   "consejos": [
+    "No todas las herramientas estarán disponibles desde el principio: el sistema tiene progresión."
+   ]
+  },
+  {
+   "id": "dinero-guia",
+   "titulo": "Dinero en las primeras horas",
+   "categoria": "Dinero",
+   "nivel": "Básico",
+   "tiempo": "4 min",
+   "estado": "disponible",
+   "resumen": "En GTA VI el dinero importa durante toda la partida. Fuentes confirmadas hasta ahora.",
+   "pasos": [
+    "Algunas fases de la historia te piden reunir dinero antes de seguir, así que no lo malgastes.",
+    "Fuentes confirmadas: atracos a gasolineras y joyerías, robo de coches para peristas y trabajos para clientes.",
+    "Rockstar ha equilibrado los pagos para que ninguna fuente deje inútiles a las demás: alterna.",
+    "Ingresa el efectivo en un cajero: si mueres o te arrestan, pierdes lo que llevas encima."
+   ],
+   "consejos": [
+    "Cuando salga el juego añadiremos las mejores rutas de dinero reales."
+   ]
+  },
+  {
+   "id": "forma-guia",
+   "titulo": "Jason y Lucia en plena forma",
+   "categoria": "Supervivencia",
+   "nivel": "Básico",
+   "tiempo": "3 min",
+   "estado": "disponible",
+   "resumen": "Gimnasio, sueño, comida y pareja: los sistemas que te hacen más fuerte.",
+   "pasos": [
+    "Entrena en el gimnasio: mejora tus capacidades y cambia el físico. Requiere técnica.",
+    "Duerme de vez en cuando: varios días sin dormir reducen la regeneración.",
+    "Café para el aguante, batido de proteínas para la salud.",
+    "Pasa tiempo con tu pareja para subir la relación (playa, bici, coche, gimnasio)."
+   ],
+   "consejos": []
+  },
+  {
+   "id": "checklist-lanzamiento",
+   "titulo": "Checklist del día de lanzamiento",
+   "categoria": "Lanzamiento",
+   "nivel": "Básico",
+   "tiempo": "2 min",
+   "estado": "disponible",
+   "resumen": "Marca lo que ya tienes hecho. Se guarda en este navegador.",
+   "checklist": [
+    "Juego comprado o reservado",
+    "212 GB libres en la consola",
+    "Descargas en modo reposo activadas",
+    "Precarga terminada",
+    "Código de la caja canjeado (si es edición física)",
+    "Firmware de la consola actualizado",
+    "Análisis leídos (18 nov, sin confirmar)",
+    "Póster-mapa gratuito descargado",
+    "Noche del 18 al 19 libre para jugar a las 00:00"
+   ]
+  },
+  {
+   "id": "misiones-pendiente",
+   "titulo": "Todas las misiones, paso a paso",
+   "categoria": "Historia",
+   "nivel": "Completo",
+   "tiempo": "—",
+   "estado": "pendiente",
+   "resumen": "Se irá rellenando desde el 19 de noviembre, capítulo a capítulo.",
+   "pasos": [],
+   "consejos": []
+  },
+  {
+   "id": "coleccionables-pendiente",
+   "titulo": "Coleccionables, secretos y 100 %",
+   "categoria": "Secretos",
+   "nivel": "Completo",
+   "tiempo": "—",
+   "estado": "pendiente",
+   "resumen": "Ubicaciones y recompensas en cuanto la comunidad empiece a descubrirlas.",
+   "pasos": [],
+   "consejos": []
+  },
+  {
+   "id": "vehiculos-pendiente",
+   "titulo": "Vehículos y dónde encontrarlos",
+   "categoria": "Vehículos",
+   "nivel": "Completo",
+   "tiempo": "—",
+   "estado": "pendiente",
+   "resumen": "Catálogo de coches, motos, barcos y aviones con su ubicación.",
+   "pasos": [],
+   "consejos": []
+  }
+ ],
+ "misiones_conocidas": [
+  {
+   "titulo": "El edificio de apartamentos",
+   "texto": "Una de las primeras misiones: Jason y Lucia entran en un edificio y Jason es jugable. Aparece en el Extended Look."
+  },
+  {
+   "titulo": "Huida tras un atraco en el supermercado",
+   "texto": "Mostrada en la demo de Edge: escapada en coche después de un robo."
+  },
+  {
+   "titulo": "Persecución en moto",
+   "texto": "Jason conduce con Lucia detrás armada; la policía despliega una banda de pinchos."
+  },
+  {
+   "titulo": "Golpe en un rascacielos",
+   "texto": "Tiroteo con coberturas en una torre, del Extended Look."
+  }
+ ],
+ "misterios": [
+  {
+   "id": "liberty",
+   "titulo": "¿Conexión con Liberty City?",
+   "estado": "teoria",
+   "texto": "La ficha oficial de Lucia dice que su madre sueña con la buena vida desde sus días en Liberty City. ¿Habrá guiños, visitas o personajes de la ciudad de GTA IV?"
+  },
+  {
+   "id": "cal-guardacostas",
+   "titulo": "Cal y la radio de la Guardia Costera",
+   "estado": "teoria",
+   "texto": "Cal escucha la frecuencia de los guardacostas y cree en conspiraciones. Encaja con el tipo de personaje que en otros GTA abre misiones extrañas o secretas."
+  },
+  {
+   "id": "kalaga-chiliad",
+   "titulo": "¿Es Mount Kalaga el nuevo Chiliad?",
+   "estado": "pendiente",
+   "texto": "El monte Chiliad de GTA V escondía un mural con un ovni y años de teorías. Kalaga es la gran montaña de Leonida. Estaremos atentos desde el día 1."
+  },
+  {
+   "id": "cuatro",
+   "titulo": "Iban a ser cuatro protagonistas",
+   "estado": "confirmado",
+   "texto": "Rob Nelson reveló a IGN que el plan inicial era tener cuatro protagonistas. Al final se quedaron Jason y Lucia."
+  },
+  {
+   "id": "clubes",
+   "titulo": "Clubes reales disfrazados",
+   "estado": "confirmado",
+   "texto": "NINE1NINE es la parodia de E11EVEN y Club Space inspiró a The Vault. Ambos clubes de Miami se han «convertido» en sus versiones del juego."
+  },
+  {
+   "id": "huracanes",
+   "titulo": "¿Habrá huracanes?",
+   "estado": "teoria",
+   "texto": "Game Informer describe un clima que imita el lado menos soleado de Florida, con tormentas que se ven llegar, pero no nombra huracanes."
+  },
+  {
+   "id": "sitcom",
+   "titulo": "La sitcom animada de la tele",
+   "estado": "pendiente",
+   "texto": "Rockstar produjo episodios de una comedia animada para adultos con un estudio externo. De qué va, aún no se sabe."
+  },
+  {
+   "id": "sin-ficha",
+   "titulo": "Lori, DWNPLY y los que no tienen ficha",
+   "estado": "pendiente",
+   "texto": "Los textos oficiales nombran a personajes sin perfil propio, como Lori Heder o el rapero DWNPLY. ¿Qué papel tendrán?"
+  },
+  {
+   "id": "online-caja",
+   "titulo": "El icono online de la caja",
+   "estado": "teoria",
+   "texto": "La trasera de la edición física muestra funciones online aunque el juego sale como experiencia de un jugador. Todo apunta al futuro modo en línea."
+  }
+ ],
+ "tradicion": [
+  {
+   "juego": "GTA III",
+   "titulo": "«You weren't supposed to be able to get here you know»",
+   "texto": "Un cartel escondido en una zona inaccesible de Liberty City que solo se podía alcanzar saltándose los límites del mapa."
+  },
+  {
+   "juego": "GTA San Andreas",
+   "titulo": "El mito de Bigfoot",
+   "texto": "Durante años la comunidad buscó a Bigfoot en los bosques de Back o' Beyond. Rockstar nunca lo confirmó."
+  },
+  {
+   "juego": "GTA V",
+   "titulo": "El mural del Monte Chiliad",
+   "texto": "Un mural con un ovni, un huevo y un jetpack desató una de las cacerías de secretos más largas de la saga."
+  },
+  {
+   "juego": "GTA V",
+   "titulo": "El asesino del Infinity 8",
+   "texto": "Un misterio de asesinatos en serie escondido en el mapa que la comunidad tardó años en resolver."
+  },
+  {
+   "juego": "Red Dead Redemption 2",
+   "titulo": "El vampiro de Saint Denis",
+   "texto": "De noche, en un callejón de Saint Denis, podías encontrar a un vampiro. Ejemplo de los secretos que Rockstar esconde a la vista."
+  }
+ ],
+ "trucos_v": [
+  {
+   "c": "PAINKILLER",
+   "e": "Invencibilidad (5 minutos)",
+   "t": "Jugador"
+  },
+  {
+   "c": "TURTLE",
+   "e": "Salud y blindaje al máximo",
+   "t": "Jugador"
+  },
+  {
+   "c": "POWERUP",
+   "e": "Recargar habilidad especial",
+   "t": "Jugador"
+  },
+  {
+   "c": "CATCHME",
+   "e": "Correr más rápido",
+   "t": "Jugador"
+  },
+  {
+   "c": "GOTGILLS",
+   "e": "Nadar más rápido",
+   "t": "Jugador"
+  },
+  {
+   "c": "HOPTOIT",
+   "e": "Supersalto",
+   "t": "Jugador"
+  },
+  {
+   "c": "SKYFALL",
+   "e": "Caída libre desde el cielo",
+   "t": "Jugador"
+  },
+  {
+   "c": "LIQUOR",
+   "e": "Modo borracho",
+   "t": "Jugador"
+  },
+  {
+   "c": "TOOLUP",
+   "e": "Armas y munición",
+   "t": "Armas"
+  },
+  {
+   "c": "HOTHANDS",
+   "e": "Golpes explosivos",
+   "t": "Armas"
+  },
+  {
+   "c": "HIGHEX",
+   "e": "Munición explosiva",
+   "t": "Armas"
+  },
+  {
+   "c": "INCENDIARY",
+   "e": "Balas incendiarias",
+   "t": "Armas"
+  },
+  {
+   "c": "DEADEYE",
+   "e": "Apuntado a cámara lenta",
+   "t": "Armas"
+  },
+  {
+   "c": "SKYDIVE",
+   "e": "Paracaídas",
+   "t": "Armas"
+  },
+  {
+   "c": "LAWYERUP",
+   "e": "Bajar nivel de búsqueda",
+   "t": "Policía"
+  },
+  {
+   "c": "FUGITIVE",
+   "e": "Subir nivel de búsqueda",
+   "t": "Policía"
+  },
+  {
+   "c": "MAKEITRAIN",
+   "e": "Cambiar el clima",
+   "t": "Mundo"
+  },
+  {
+   "c": "FLOATER",
+   "e": "Gravedad lunar",
+   "t": "Mundo"
+  },
+  {
+   "c": "SNOWDAY",
+   "e": "Coches resbaladizos",
+   "t": "Mundo"
+  },
+  {
+   "c": "SLOWMO",
+   "e": "Cámara lenta",
+   "t": "Mundo"
+  },
+  {
+   "c": "BUZZOFF",
+   "e": "Helicóptero Buzzard",
+   "t": "Vehículos"
+  },
+  {
+   "c": "COMET",
+   "e": "Deportivo Comet",
+   "t": "Vehículos"
+  },
+  {
+   "c": "RAPIDGT",
+   "e": "Deportivo Rapid GT",
+   "t": "Vehículos"
+  },
+  {
+   "c": "VINEWOOD",
+   "e": "Limusina",
+   "t": "Vehículos"
+  },
+  {
+   "c": "TRASHED",
+   "e": "Camión de basura",
+   "t": "Vehículos"
+  },
+  {
+   "c": "OFFROAD",
+   "e": "Moto Sanchez",
+   "t": "Vehículos"
+  },
+  {
+   "c": "ROCKET",
+   "e": "Moto PCJ-600",
+   "t": "Vehículos"
+  },
+  {
+   "c": "BANDIT",
+   "e": "Bici BMX",
+   "t": "Vehículos"
+  },
+  {
+   "c": "HOLEIN1",
+   "e": "Carrito de golf",
+   "t": "Vehículos"
+  },
+  {
+   "c": "BARNSTORM",
+   "e": "Avioneta acrobática",
+   "t": "Vehículos"
+  },
+  {
+   "c": "FLYSPRAY",
+   "e": "Avioneta Duster",
+   "t": "Vehículos"
+  },
+  {
+   "c": "EXTINCT",
+   "e": "Avioneta Dodo (versiones nuevas)",
+   "t": "Vehículos"
+  },
+  {
+   "c": "BUBBLES",
+   "e": "Submarino Kraken (versiones nuevas)",
+   "t": "Vehículos"
+  },
+  {
+   "c": "DEATHCAR",
+   "e": "Duke O'Death (versiones nuevas)",
+   "t": "Vehículos"
+  }
+ ],
+ "trucos_vc": [
+  {
+   "c": "THUGSTOOLS",
+   "e": "Armas, nivel 1",
+   "t": "Armas"
+  },
+  {
+   "c": "PROFESSIONALTOOLS",
+   "e": "Armas, nivel 2",
+   "t": "Armas"
+  },
+  {
+   "c": "NUTTERTOOLS",
+   "e": "Armas, nivel 3",
+   "t": "Armas"
+  },
+  {
+   "c": "ASPIRINE",
+   "e": "Salud al máximo",
+   "t": "Jugador"
+  },
+  {
+   "c": "PRECIOUSPROTECTION",
+   "e": "Blindaje al máximo",
+   "t": "Jugador"
+  },
+  {
+   "c": "LEAVEMEALONE",
+   "e": "Quitar nivel de búsqueda",
+   "t": "Policía"
+  },
+  {
+   "c": "YOUWONTTAKEMEALIVE",
+   "e": "Subir nivel de búsqueda",
+   "t": "Policía"
+  },
+  {
+   "c": "PANZER",
+   "e": "Tanque Rhino",
+   "t": "Vehículos"
+  },
+  {
+   "c": "TRAVELINSTYLE",
+   "e": "Bloodring Banger",
+   "t": "Vehículos"
+  },
+  {
+   "c": "GETTHEREQUICKLY",
+   "e": "Bloodring Banger 2",
+   "t": "Vehículos"
+  },
+  {
+   "c": "BETTERTHANWALKING",
+   "e": "Carrito de golf",
+   "t": "Vehículos"
+  },
+  {
+   "c": "ROCKANDROLLCAR",
+   "e": "Limusina de Love Fist",
+   "t": "Vehículos"
+  },
+  {
+   "c": "RUBBISHCAR",
+   "e": "Camión de basura",
+   "t": "Vehículos"
+  },
+  {
+   "c": "BIGBANG",
+   "e": "Explotan los coches cercanos",
+   "t": "Mundo"
+  },
+  {
+   "c": "SEAWAYS",
+   "e": "Coches sobre el agua",
+   "t": "Mundo"
+  },
+  {
+   "c": "COMEFLYWITHME",
+   "e": "Coches voladores",
+   "t": "Mundo"
+  },
+  {
+   "c": "GRIPISEVERYTHING",
+   "e": "Mejor manejo",
+   "t": "Mundo"
+  },
+  {
+   "c": "WHEELSAREALLINEED",
+   "e": "Coches invisibles (solo ruedas)",
+   "t": "Mundo"
+  },
+  {
+   "c": "GREENLIGHT",
+   "e": "Todos los semáforos en verde",
+   "t": "Mundo"
+  },
+  {
+   "c": "ALOVELYDAY",
+   "e": "Día soleado",
+   "t": "Mundo"
+  },
+  {
+   "c": "CATSANDDOGS",
+   "e": "Lluvia",
+   "t": "Mundo"
+  },
+  {
+   "c": "ABITDRIEG",
+   "e": "Muy nublado",
+   "t": "Mundo"
+  },
+  {
+   "c": "ONSPEED",
+   "e": "Juego más rápido",
+   "t": "Mundo"
+  },
+  {
+   "c": "LIFEISPASSINGMEBY",
+   "e": "El reloj avanza más rápido",
+   "t": "Mundo"
+  },
+  {
+   "c": "FIGHTFIGHTFIGHT",
+   "e": "Disturbios en la calle",
+   "t": "Mundo"
+  },
+  {
+   "c": "CHICKSWITHGUNS",
+   "e": "Peatonas armadas",
+   "t": "Mundo"
+  },
+  {
+   "c": "DEEPFRIEDMARSBARS",
+   "e": "Tommy gordo",
+   "t": "Jugador"
+  },
+  {
+   "c": "PROGRAMMER",
+   "e": "Tommy delgado",
+   "t": "Jugador"
+  }
+ ],
+ "radio": [
+  {
+   "nombre": "Cocoteo FM",
+   "genero": "Lo mejor de la música latina actual",
+   "hosts": "El Martillo (Bad Bunny) y La Gata (RaiNao)",
+   "temas": [
+    "Bad Bunny – «EoO»",
+    "Axel Rulay ft. Farruko y El Alfa – «Si Es Trucho Es Trucho (Remix)»",
+    "Romeo Santos y El Chaval de la Bachata – «Canalla»"
+   ]
+  },
+  {
+   "nombre": "Back Country Radio",
+   "genero": "Country rebelde",
+   "hosts": "MW (Morgan Wallen), Delta Dawne (Lana Del Rey) y el reportero Mud Dog Mike (Jeremy Dufrene)",
+   "temas": [
+    "David Allan Coe – «Need a Little Time Off for Bad Behavior»",
+    "Loretta Lynn – «Don't Come Home A-Drinkin'»",
+    "Hank Williams Jr. y Waylon Jennings – «The Conversation»"
+   ]
+  },
+  {
+   "nombre": "AfroBank FM",
+   "genero": "Lo mejor de la música africana",
+   "hosts": "Burna (Burna Boy) y Palmsy (Palms Trax)",
+   "temas": [
+    "Asake – «Joha»",
+    "Pat Thomas ft. Ebo Taylor – «Gye Wani»",
+    "DJ Lag y Robot Boii ft. Kamo Mphela – «Shay'sana»"
+   ]
+  },
+  {
+   "nombre": "The Chamber 106.6",
+   "genero": "Himnos de metal",
+   "hosts": "DJ Kerry (Kerry King) y DJ Tom (Tom Araya)",
+   "temas": [
+    "Black Sabbath – «I»",
+    "Pantera – «I'm Broken»",
+    "Slayer – «Raining Blood»"
+   ]
+  },
+  {
+   "nombre": "Flash FM",
+   "genero": "Lo mejor del pop",
+   "hosts": "Robyn y Alex (Alex Consani)",
+   "temas": [
+    "Charli XCX – «Good Ones»",
+    "MGMT – «Electric Feel»",
+    "Zara Larsson y PinkPantheress – «Midnight Sun»"
+   ]
+  },
+  {
+   "nombre": "Dirty South Classics",
+   "genero": "Clásicos del rap del sur",
+   "hosts": "Trick (Trick Daddy) y Trina",
+   "temas": [
+    "David Banner ft. Lil' Flip – «Like a Pimp»",
+    "JT Money ft. Solé – «Who Dat»",
+    "DJ Khaled ft. Trick Daddy, Rick Ross y Pitbull – «Born N Raised»"
+   ]
+  }
+ ],
+ "musica_extra": [
+  {
+   "titulo": "GTA VI: The Album",
+   "texto": "Álbum de canciones originales hecho con Atlantic Records: 34 temas, con seis sencillos ya publicados y el resto el día del lanzamiento. Tiene ediciones en vinilo y CD."
+  },
+  {
+   "titulo": "Radio a pie y podcasts",
+   "texto": "Por primera vez puedes escuchar la radio sin coche, con auriculares conectados al móvil de Jason o Lucia, y hay podcasts bajo demanda."
+  },
+  {
+   "titulo": "Canciones de los tráilers",
+   "texto": "Tráiler 1: «Love Is a Long Road», de Tom Petty. Tráiler 2: «Hot Together», de The Pointer Sisters."
+  }
+ ],
+ "cronologia": [
+  {
+   "fecha": "2022-02-04",
+   "titulo": "Rockstar confirma que el nuevo GTA está en desarrollo"
+  },
+  {
+   "fecha": "2022-09-18",
+   "titulo": "Se filtran vídeos de una versión temprana; Rockstar lo confirma"
+  },
+  {
+   "fecha": "2023-11-08",
+   "titulo": "Anuncio del primer tráiler para diciembre, en el 25 aniversario de Rockstar"
+  },
+  {
+   "fecha": "2023-12-04",
+   "titulo": "Tráiler 1, adelantado un día por una filtración"
+  },
+  {
+   "fecha": "2023-12-05",
+   "titulo": "Récord Guinness: 90,4 millones de visitas del tráiler 1 en 24 horas"
+  },
+  {
+   "fecha": "2023-12-21",
+   "titulo": "Internado el autor de la filtración de 2022"
+  },
+  {
+   "fecha": "2024-05-16",
+   "titulo": "Take-Two fija la ventana de otoño de 2025"
+  },
+  {
+   "fecha": "2025-05-02",
+   "titulo": "Primer retraso: 26 de mayo de 2026"
+  },
+  {
+   "fecha": "2025-05-06",
+   "titulo": "Tráiler 2 y fichas de personajes y regiones"
+  },
+  {
+   "fecha": "2025-05-08",
+   "titulo": "El tráiler 2 suma 475 millones de visualizaciones en un día"
+  },
+  {
+   "fecha": "2025-10-30",
+   "titulo": "Despidos en Rockstar y polémica sindical"
+  },
+  {
+   "fecha": "2025-11-06",
+   "titulo": "Segundo retraso: 19 de noviembre de 2026"
+  },
+  {
+   "fecha": "2026-02-03",
+   "titulo": "Take-Two reafirma el 19 de noviembre"
+  },
+  {
+   "fecha": "2026-05-21",
+   "titulo": "Take-Two reafirma la fecha y anuncia la campaña de verano"
+  },
+  {
+   "fecha": "2026-06-18",
+   "titulo": "Portada oficial"
+  },
+  {
+   "fecha": "2026-06-24",
+   "titulo": "Precios, ediciones y bonus de reserva"
+  },
+  {
+   "fecha": "2026-06-25",
+   "titulo": "Se abren las reservas"
+  },
+  {
+   "fecha": "2026-08-18",
+   "titulo": "Empieza la filtración de CyberLeek"
+  },
+  {
+   "fecha": "2026-08-26",
+   "titulo": "Rockstar: el juego está «casi terminado»"
+  },
+  {
+   "fecha": "2026-08-27",
+   "titulo": "An Extended Look, 26 minutos de gameplay (Netflix y YouTube)"
+  },
+  {
+   "fecha": "2026-08-28",
+   "titulo": "Primeras previews: The New York Times, IGN y otros"
+  },
+  {
+   "fecha": "2026-09-29",
+   "titulo": "Portada de Game Informer"
+  },
+  {
+   "fecha": "2026-10-01",
+   "titulo": "Calificaciones PEGI 18 y ESRB Mature"
+  },
+  {
+   "fecha": "2026-10-08",
+   "titulo": "Seis emisoras de radio y sus presentadores"
+  },
+  {
+   "fecha": "2026-10-15",
+   "titulo": "Tráiler de lanzamiento"
+  },
+  {
+   "fecha": "2026-10-29",
+   "titulo": "Portada de Edge #430"
+  },
+  {
+   "fecha": "2026-11-10",
+   "titulo": "Empieza la precarga"
+  },
+  {
+   "fecha": "2026-11-19",
+   "titulo": "Lanzamiento en PS5 y Xbox Series X|S"
+  }
+ ],
+ "faq": [
+  {
+   "q": "¿Cuándo sale GTA VI en España y a qué hora?",
+   "a": "El jueves 19 de noviembre de 2026 a las 00:00 de tu hora local, en PS5 y Xbox Series X|S."
+  },
+  {
+   "q": "Si precargo, ¿puedo jugar antes?",
+   "a": "No. La precarga solo descarga los archivos; el juego se desbloquea a medianoche del día 19."
+  },
+  {
+   "q": "¿Sale en PC?",
+   "a": "No tiene fecha. Rockstar suele lanzar en PC más tarde: GTA V tardó un año y medio y Red Dead Redemption 2, uno."
+  },
+  {
+   "q": "¿Y en PS4, Xbox One o Switch 2?",
+   "a": "No. Solo PS5 (también PS5 Pro) y Xbox Series X|S."
+  },
+  {
+   "q": "¿Tiene modo online?",
+   "a": "Sale como juego de un jugador. El nuevo GTA Online no está anunciado; hay quien apunta a 2027. El GTA Online actual seguirá con soporte."
+  },
+  {
+   "q": "¿Cuánto ocupa?",
+   "a": "Hasta 212 GB, según la consola."
+  },
+  {
+   "q": "¿La edición física trae disco?",
+   "a": "No. La caja lleva un código de descarga y un póster. Llega a las tiendas el 12 de noviembre."
+  },
+  {
+   "q": "¿Cuánto cuesta?",
+   "a": "79,99 € la Estándar y 99,99 € la Ultimate. La mejora a Ultimate se puede comprar después."
+  },
+  {
+   "q": "¿Hasta cuándo tengo el pack Vintage Vice City?",
+   "a": "Con compras digitales hasta el 20 de noviembre y con reservas físicas mientras haya existencias."
+  },
+  {
+   "q": "¿Cuánto dura?",
+   "a": "La partida de Rob Nelson (Rockstar North) duró unas 80 horas, incluyendo objetivos opcionales con peso en la historia."
+  },
+  {
+   "q": "¿Cómo de grande es el mapa?",
+   "a": "Según Rockstar, el doble que el de GTA V y el triple que el de RDR2. Vice City sola es el doble que Los Santos. No hay cifra oficial en km²."
+  },
+  {
+   "q": "¿A cuántos fps va?",
+   "a": "En las previews, la demo iba a 30 fps en una PS5 normal y no se ha confirmado un modo a 60. Una filtración apunta a PSSR y trazado de rayos avanzado en PS5 Pro."
+  },
+  {
+   "q": "¿Tiene micropagos?",
+   "a": "Según las previews, el modo historia no tiene compras con dinero real. La calificación indica compras dentro del juego, como la mejora a Ultimate."
+  },
+  {
+   "q": "¿Para qué edad es?",
+   "a": "PEGI 18 en Europa y Mature 17+ en Estados Unidos."
+  },
+  {
+   "q": "¿Habrá trucos?",
+   "a": "No hay ninguno confirmado. Todos los GTA principales desde GTA III han tenido, así que es muy probable. En cuanto salgan, los verás en la sección Trucos."
+  },
+  {
+   "q": "¿Cuándo salen los análisis?",
+   "a": "Según varios insiders, el 18 de noviembre. Rockstar no lo ha confirmado."
+  }
+ ],
+ "fuentes": [
+  {
+   "nombre": "Rockstar Newswire (vía VGC): precarga y tamaño",
+   "url": "https://videogameschronicle.com/news/rockstar-details-grand-theft-auto-6-pre-load-date-and-time-and-file-size"
+  },
+  {
+   "nombre": "Take-Two: resultados del 2.º trimestre fiscal 2027",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000946581/000162828026072175/ttwo2q27earningsrelease.htm"
+  },
+  {
+   "nombre": "PC Gamer: segundo retraso al 19 de noviembre",
+   "url": "https://www.pcgamer.com/games/action/grand-theft-auto-6-is-delayed-to-november-these-extra-months-will-allow-us-to-finish-the-game-with-the-level-of-polish-you-have-come-to-expect-and-deserve"
+  },
+  {
+   "nombre": "TechRadar: 16 detalles del Extended Look",
+   "url": "https://techradar.com/gaming/ps5/16-new-gta-6-details-we-learned-from-the-big-extended-look-gameplay-video-captured-in-game-on-a-ps5"
+  },
+  {
+   "nombre": "GTA Boom: la preview de Edge",
+   "url": "https://gtaboom.com/gta-6-edge-preview-new-gameplay-details-5848"
+  },
+  {
+   "nombre": "iGrandTheftAuto: la preview de Kinda Funny",
+   "url": "https://www.igrandtheftauto.com/gta6/news/kinda-funnys-gta-6-preview-reveals-dozens-of-new-gameplay-details"
+  },
+  {
+   "nombre": "iGrandTheftAuto: la preview de The New York Times",
+   "url": "https://www.igrandtheftauto.com/gta6/news/new-york-times-reveals-new-gta-6-details-600000-animations-huge-map-80-hour-playthrough-and-more"
+  },
+  {
+   "nombre": "GTABase: ediciones y contenido",
+   "url": "https://www.gtabase.com/articles/gta-6/gta-6-editions-guide-pre-order-bonus-special-editions-content?page=2"
+  },
+  {
+   "nombre": "Vandal: precios en España",
+   "url": "https://vandal.elespanol.com/noticia/1350791132/gta-6-ya-se-puede-reservar-en-espana-para-ps5-y-xbox-series-poniendo-fin-a-una-larga-espera/"
+  },
+  {
+   "nombre": "PC Guide: emisoras de radio",
+   "url": "https://pcguide.com/news/rockstar-reveals-six-gta-6-radio-stations-and-confirmed-songs-so-far-with-a-stacked-lineup-of-real-world-hosts"
+  },
+  {
+   "nombre": "Insider Gaming: personajes confirmados",
+   "url": "https://insider-gaming.com/all-confirmed-characters-in-gta-6/"
+  },
+  {
+   "nombre": "ConsolePulse: regiones de Leonida",
+   "url": "https://consolepulse.com/multiplatform/gta/guides/gta-6-vice-city-leonida-locations-guide"
+  },
+  {
+   "nombre": "Insider Gaming: embargo de análisis",
+   "url": "https://insider-gaming.com/grand-theft-auto-6-review-embargo/"
+  }
+ ],
+ "mapa_lugares": [
+  {
+   "id": "ocean-beach",
+   "nombre": "Ocean Beach",
+   "region": "vicecity",
+   "cat": "zona",
+   "x": 566,
+   "y": 489,
+   "estado": "oficial",
+   "texto": "Barrio de playa con hoteles art déco en tonos pastel y arena blanca. El nombre ya existía en GTA Vice City (2002).",
+   "fuente": {
+    "nombre": "Rockstar Games: GTA VI",
+    "url": "https://www.rockstargames.com/VI"
+   },
+   "inspiracion": "South Beach, Miami Beach",
+   "exacta": false
+  },
+  {
+   "id": "vice-beach",
+   "nombre": "Vice Beach",
+   "region": "vicecity",
+   "cat": "zona",
+   "x": 556,
+   "y": 466,
+   "estado": "oficial",
+   "texto": "Zona playera de Vice City citada en el material promocional.",
+   "fuente": {
+    "nombre": "Insider Gaming",
+    "url": "https://insider-gaming.com/all-gta-6-locations-revealed-so-far/"
+   },
+   "exacta": false
+  },
+  {
+   "id": "little-cuba",
+   "nombre": "Little Cuba",
+   "region": "vicecity",
+   "cat": "zona",
+   "x": 475,
+   "y": 510,
+   "estado": "oficial",
+   "texto": "Barrio de identidad cubana, famoso por sus panaderías.",
+   "fuente": {
+    "nombre": "Rockstar Games: GTA VI",
+    "url": "https://www.rockstargames.com/VI"
+   },
+   "inspiracion": "Little Havana",
+   "exacta": false
+  },
+  {
+   "id": "downtown",
+   "nombre": "Downtown Vice City",
+   "region": "vicecity",
+   "cat": "zona",
+   "x": 492,
+   "y": 517,
+   "estado": "oficial",
+   "texto": "El centro de rascacielos junto a la bahía.",
+   "fuente": {
+    "nombre": "Insider Gaming",
+    "url": "https://insider-gaming.com/all-gta-6-locations-revealed-so-far/"
+   },
+   "inspiracion": "Downtown y Brickell",
+   "exacta": false
+  },
+  {
+   "id": "southside",
+   "nombre": "Southside Vice City",
+   "region": "vicecity",
+   "cat": "zona",
+   "x": 456,
+   "y": 576,
+   "estado": "oficial",
+   "texto": "Zona sur de la ciudad; allí está el complejo de una banda que se asalta en un encargo de la edición Ultimate.",
+   "fuente": {
+    "nombre": "GTABoss (contenido de ediciones)",
+    "url": "https://www.gtaboss.gg/gta-6/guides/gta-6-map"
+   },
+   "exacta": false
+  },
+  {
+   "id": "stockyard",
+   "nombre": "Stockyard",
+   "region": "vicecity",
+   "cat": "zona",
+   "x": 501,
+   "y": 456,
+   "estado": "oficial",
+   "texto": "Barrio de murales y naves reconvertidas al norte del centro, con tiendas como Stock 305 y Electric Fang Tattoo. Los grafitis del primer tráiler salen de aquí.",
+   "fuente": {
+    "nombre": "GTABoss (contenido de ediciones)",
+    "url": "https://www.gtaboss.gg/gta-6/guides/gta-6-map"
+   },
+   "exacta": false,
+   "inspiracion": "Wynwood"
+  },
+  {
+   "id": "sw-9th-ave",
+   "nombre": "SW 9th Ave",
+   "region": "vicecity",
+   "cat": "zona",
+   "x": 469.3,
+   "y": 580.4,
+   "estado": "oficial",
+   "texto": "Calle de Vice City nombrada en el material oficial.",
+   "fuente": {
+    "nombre": "Insider Gaming",
+    "url": "https://insider-gaming.com/all-gta-6-locations-revealed-so-far/"
+   },
+   "exacta": true,
+   "gtadb": "L253"
+  },
+  {
+   "id": "waning-sands",
+   "nombre": "Waning Sands",
+   "region": "vicecity",
+   "cat": "zona",
+   "x": 513,
+   "y": 388,
+   "estado": "prensa",
+   "texto": "Zona residencial al norte de Vice City según los mapas de la comunidad.",
+   "fuente": {
+    "nombre": "GTABase",
+    "url": "https://gtabase.com/gta-6/map/"
+   },
+   "inspiracion": "Aventura y Pembroke Pines",
+   "exacta": false
+  },
+  {
+   "id": "shore-drive",
+   "nombre": "Shore Drive",
+   "region": "vicecity",
+   "cat": "zona",
+   "x": 575.6,
+   "y": 485,
+   "estado": "oficial",
+   "texto": "Vía costera nombrada por Rockstar; ubicación exacta sin confirmar.",
+   "fuente": {
+    "nombre": "GTABoss (contenido de ediciones)",
+    "url": "https://www.gtaboss.gg/gta-6/guides/gta-6-map"
+   },
+   "exacta": false
+  },
+  {
+   "id": "washington-beach",
+   "nombre": "Washington Beach",
+   "region": "vicecity",
+   "cat": "zona",
+   "x": 567,
+   "y": 444,
+   "estado": "oficial",
+   "texto": "Playa donde espera la moto de agua Shitzu Squalo de la edición Ultimate.",
+   "fuente": {
+    "nombre": "GTABoss (contenido de ediciones)",
+    "url": "https://www.gtaboss.gg/gta-6/guides/gta-6-map"
+   },
+   "exacta": false
+  },
+  {
+   "id": "watson-bay",
+   "nombre": "Watson Bay",
+   "region": "grassrivers",
+   "cat": "zona",
+   "x": 356,
+   "y": 617,
+   "estado": "oficial",
+   "texto": "Pueblo de pescadores en la costa suroeste, inspirado en Cedar Key. Allí está el Paradise Garage.",
+   "fuente": {
+    "nombre": "GTABoss (contenido de ediciones)",
+    "url": "https://www.gtaboss.gg/gta-6/guides/gta-6-map"
+   },
+   "exacta": false,
+   "inspiracion": "Cedar Key"
+  },
+  {
+   "id": "nine1nine",
+   "nombre": "NINE1NINE",
+   "region": "vicecity",
+   "cat": "ocio",
+   "x": 491.0,
+   "y": 497.4,
+   "estado": "oficial",
+   "texto": "El gran club de Vice City, inspirado en E11EVEN.",
+   "fuente": {
+    "nombre": "Rockstar Games: GTA VI",
+    "url": "https://www.rockstargames.com/VI"
+   },
+   "inspiracion": "E11EVEN Miami",
+   "exacta": true,
+   "gtadb": "L190"
+  },
+  {
+   "id": "the-vault",
+   "nombre": "The Vault",
+   "region": "vicecity",
+   "cat": "ocio",
+   "x": 488.4,
+   "y": 497.6,
+   "estado": "oficial",
+   "texto": "Club de música electrónica, versión de Club Space.",
+   "fuente": {
+    "nombre": "Rockstar Games: GTA VI",
+    "url": "https://www.rockstargames.com/VI"
+   },
+   "inspiracion": "Club Space",
+   "exacta": true,
+   "gtadb": "L556"
+  },
+  {
+   "id": "jack-of-hearts",
+   "nombre": "Jack of Hearts",
+   "region": "vicecity",
+   "cat": "ocio",
+   "x": 490.6,
+   "y": 474.7,
+   "estado": "oficial",
+   "texto": "El club de striptease de Boobie Ike.",
+   "fuente": {
+    "nombre": "Rockstar Games: GTA VI",
+    "url": "https://www.rockstargames.com/VI"
+   },
+   "exacta": true,
+   "gtadb": "L172"
+  },
+  {
+   "id": "sahara-arena",
+   "nombre": "Sahara Arena",
+   "region": "vicecity",
+   "cat": "ocio",
+   "x": 502.5,
+   "y": 498.6,
+   "estado": "prensa",
+   "texto": "Pabellón de los Vice City Narcos, visto en el primer tráiler.",
+   "fuente": {
+    "nombre": "GTA Intel",
+    "url": "https://gtaintel.com/news/gta-6-vice-city-vs-real-miami"
+   },
+   "inspiracion": "Kaseya Center",
+   "exacta": true,
+   "gtadb": "L187"
+  },
+  {
+   "id": "hotel-dixon",
+   "nombre": "Hotel Dixon",
+   "region": "vicecity",
+   "cat": "ocio",
+   "x": 573.7,
+   "y": 489.0,
+   "estado": "trailer",
+   "texto": "Hotel con fachada de neón en primera línea de playa.",
+   "fuente": {
+    "nombre": "GTA Boom",
+    "url": "https://www.gtaboom.com/vice-beach-f14b/coverage"
+   },
+   "exacta": true,
+   "gtadb": "L32"
+  },
+  {
+   "id": "hotel-boardwalk",
+   "nombre": "Hotel Boardwalk",
+   "region": "vicecity",
+   "cat": "ocio",
+   "x": 572.6,
+   "y": 494.4,
+   "estado": "trailer",
+   "texto": "Hotel art déco frente al mar visto en el tráiler 1.",
+   "fuente": {
+    "nombre": "GTA Boom",
+    "url": "https://www.gtaboom.com/Hotel_Boardwalk"
+   },
+   "inspiracion": "Hotel Breakwater",
+   "exacta": true,
+   "gtadb": "L40"
+  },
+  {
+   "id": "hotel-neptune",
+   "nombre": "Hotel Neptune",
+   "region": "vicecity",
+   "cat": "ocio",
+   "x": 572.5,
+   "y": 495.1,
+   "estado": "trailer",
+   "texto": "Aparece en una persecución del Extended Look.",
+   "fuente": {
+    "nombre": "GTA Boom",
+    "url": "https://www.gtaboom.com/vice-beach-f14b/coverage"
+   },
+   "exacta": true,
+   "gtadb": "L41"
+  },
+  {
+   "id": "atlantis-hotel",
+   "nombre": "Atlantis Hotel",
+   "region": "vicecity",
+   "cat": "ocio",
+   "x": 572.1,
+   "y": 499.9,
+   "estado": "trailer",
+   "texto": "Hito art déco con letrero de neón sobre la playa.",
+   "fuente": {
+    "nombre": "GTA Boom",
+    "url": "https://www.gtaboom.com/vice-beach-f14b/coverage"
+   },
+   "exacta": true,
+   "gtadb": "L49"
+  },
+  {
+   "id": "ocean-view-hotel",
+   "nombre": "Ocean View Hotel",
+   "region": "vicecity",
+   "cat": "ocio",
+   "x": 573.2,
+   "y": 492.0,
+   "estado": "trailer",
+   "texto": "Un letrero que guiña al hotel de GTA Vice City. El edificio está inspirado en el Clevelander de Ocean Drive.",
+   "fuente": {
+    "nombre": "Domus",
+    "url": "https://domusweb.it/en/news/gallery/2024/06/16/while-we-have-to-wait-until-2025-for-gta-vi-we-can-visit-the-places-that-inspired-it.amp.html"
+   },
+   "exacta": true,
+   "gtadb": "L36",
+   "inspiracion": "The Clevelander"
+  },
+  {
+   "id": "rusty-anchor",
+   "nombre": "Rusty Anchor",
+   "region": "keys",
+   "cat": "ocio",
+   "x": 441.0,
+   "y": 676.3,
+   "estado": "oficial",
+   "texto": "Bar de los Cayos que aparece en las capturas oficiales.",
+   "fuente": {
+    "nombre": "Beebom",
+    "url": "https://beebom.com/gta-6-map"
+   },
+   "exacta": true,
+   "gtadb": "L325"
+  },
+  {
+   "id": "tisha-wocka",
+   "nombre": "Mercadillo Tisha-Wocka",
+   "region": "vicecity",
+   "cat": "tiendas",
+   "x": 424.9,
+   "y": 489.6,
+   "estado": "oficial",
+   "texto": "Mercadillo de productos de imitación.",
+   "fuente": {
+    "nombre": "Rockstar Games: GTA VI",
+    "url": "https://www.rockstargames.com/VI"
+   },
+   "exacta": true,
+   "gtadb": "L1006"
+  },
+  {
+   "id": "stock-305",
+   "nombre": "Stock 305",
+   "region": "vicecity",
+   "cat": "tiendas",
+   "x": 501.7,
+   "y": 456.8,
+   "estado": "oficial",
+   "texto": "Tienda de ropa urbana en Stockyard (Ultimate).",
+   "fuente": {
+    "nombre": "GTABoss (contenido de ediciones)",
+    "url": "https://www.gtaboss.gg/gta-6/guides/gta-6-map"
+   },
+   "exacta": true,
+   "gtadb": "L1488"
+  },
+  {
+   "id": "electric-fang",
+   "nombre": "Electric Fang Tattoo",
+   "region": "vicecity",
+   "cat": "tiendas",
+   "x": 500.2,
+   "y": 454.5,
+   "estado": "oficial",
+   "texto": "Estudio de tatuajes en Stockyard (Ultimate).",
+   "fuente": {
+    "nombre": "GTABoss (contenido de ediciones)",
+    "url": "https://www.gtaboss.gg/gta-6/guides/gta-6-map"
+   },
+   "exacta": true,
+   "gtadb": "L1482"
+  },
+  {
+   "id": "ptt-youngins",
+   "nombre": "PTT Youngin$",
+   "region": "vicecity",
+   "cat": "tiendas",
+   "x": 458.4,
+   "y": 569.1,
+   "estado": "oficial",
+   "texto": "Tienda de artículos ilegales ligada al complejo de Southside (Ultimate).",
+   "fuente": {
+    "nombre": "GTABoss (contenido de ediciones)",
+    "url": "https://www.gtaboss.gg/gta-6/guides/gta-6-map"
+   },
+   "exacta": true,
+   "gtadb": "L1491"
+  },
+  {
+   "id": "uncle-jacks",
+   "nombre": "Uncle Jack's Liquor",
+   "region": "gellhorn",
+   "cat": "tiendas",
+   "x": 313.4,
+   "y": 391.2,
+   "estado": "trailer",
+   "texto": "La licorería que asaltan Jason y Lucia en el primer tráiler. La comunidad la sitúa en Port Gellhorn, inspirada en una tienda de Panama City.",
+   "fuente": {
+    "nombre": "GTA Boom",
+    "url": "https://www.gtaboom.com/GTA_6_Brands"
+   },
+   "exacta": true,
+   "gtadb": "L313",
+   "inspiracion": "Licorería de Panama City"
+  },
+  {
+   "id": "one-eyed-willies",
+   "nombre": "One-Eyed Willie's",
+   "region": "ambrosia",
+   "cat": "tiendas",
+   "x": 430,
+   "y": 381,
+   "estado": "oficial",
+   "texto": "Taller de todoterrenos junto al lago Leonida (Ultimate).",
+   "fuente": {
+    "nombre": "GTABoss (contenido de ediciones)",
+    "url": "https://www.gtaboss.gg/gta-6/guides/gta-6-map"
+   },
+   "exacta": false
+  },
+  {
+   "id": "lavadero-ambrosia",
+   "nombre": "Lavadero de Ambrosia",
+   "region": "ambrosia",
+   "cat": "tiendas",
+   "x": 422,
+   "y": 384,
+   "estado": "oficial",
+   "texto": "Lavadero de coches visto en las capturas oficiales de Ambrosia.",
+   "fuente": {
+    "nombre": "Beebom",
+    "url": "https://beebom.com/gta-6-map"
+   },
+   "exacta": false
+  },
+  {
+   "id": "shore-court",
+   "nombre": "Garaje Shore Court",
+   "region": "vicecity",
+   "cat": "propiedades",
+   "x": 570.5,
+   "y": 506,
+   "estado": "oficial",
+   "texto": "Garaje del pack de reserva, con taquilla de armas y punto de venta de mercancía robada.",
+   "fuente": {
+    "nombre": "GTABoss (contenido de ediciones)",
+    "url": "https://www.gtaboss.gg/gta-6/guides/gta-6-map"
+   },
+   "exacta": false
+  },
+  {
+   "id": "paradise-garage",
+   "nombre": "Paradise Garage",
+   "region": "grassrivers",
+   "cat": "propiedades",
+   "x": 384.25,
+   "y": 587.75,
+   "estado": "oficial",
+   "texto": "Garaje de la edición Ultimate en Watson Bay, con el Dominator Buggy del 67.",
+   "fuente": {
+    "nombre": "GTABoss (contenido de ediciones)",
+    "url": "https://www.gtaboss.gg/gta-6/guides/gta-6-map"
+   },
+   "exacta": true,
+   "gtadb": "L1495"
+  },
+  {
+   "id": "piso-cayos",
+   "nombre": "Piso de Jason y Lucia",
+   "region": "keys",
+   "cat": "propiedades",
+   "x": 438.5,
+   "y": 684.9,
+   "estado": "trailer",
+   "texto": "El apartamento de los Cayos donde empiezan, visto en el tráiler 2.",
+   "fuente": {
+    "nombre": "GTABase",
+    "url": "https://gtabase.com/gta-6/map/"
+   },
+   "exacta": true,
+   "gtadb": "L266"
+  },
+  {
+   "id": "compound-southside",
+   "nombre": "Complejo de la banda",
+   "region": "vicecity",
+   "cat": "propiedades",
+   "x": 452,
+   "y": 581,
+   "estado": "oficial",
+   "texto": "Objetivo de un encargo especial de la edición Ultimate.",
+   "fuente": {
+    "nombre": "GTABoss (contenido de ediciones)",
+    "url": "https://www.gtaboss.gg/gta-6/guides/gta-6-map"
+   },
+   "exacta": false
+  },
+  {
+   "id": "puerto-vc",
+   "nombre": "Puerto de Vice City",
+   "region": "vicecity",
+   "cat": "transporte",
+   "x": 540,
+   "y": 527,
+   "estado": "oficial",
+   "texto": "Puerto de cruceros y mercancías en la bahía.",
+   "fuente": {
+    "nombre": "Rockstar Games: GTA VI",
+    "url": "https://www.rockstargames.com/VI"
+   },
+   "inspiracion": "PortMiami",
+   "exacta": false
+  },
+  {
+   "id": "vci-airport",
+   "nombre": "Aeropuerto VCI",
+   "region": "vicecity",
+   "cat": "transporte",
+   "x": 445,
+   "y": 535,
+   "estado": "oficial",
+   "texto": "Aeropuerto internacional; aparece en un cartel de la autopista del primer tráiler.",
+   "fuente": {
+    "nombre": "Insider Gaming",
+    "url": "https://insider-gaming.com/all-gta-6-locations-revealed-so-far/"
+   },
+   "exacta": false
+  },
+  {
+   "id": "causeway",
+   "nombre": "Puente a la playa",
+   "region": "vicecity",
+   "cat": "transporte",
+   "x": 528,
+   "y": 503,
+   "estado": "trailer",
+   "texto": "Autovía elevada entre el centro y la playa vista en el tráiler 1.",
+   "fuente": {
+    "nombre": "AOL / Miami Herald",
+    "url": "https://www.aol.com/trailer-latest-grand-theft-auto-181735905.html"
+   },
+   "inspiracion": "MacArthur Causeway e I-395",
+   "exacta": false
+  },
+  {
+   "id": "allied-crystal",
+   "nombre": "Refinería Allied Crystal",
+   "region": "ambrosia",
+   "cat": "transporte",
+   "x": 421,
+   "y": 398,
+   "estado": "oficial",
+   "texto": "Refinería de azúcar que domina el horizonte de Ambrosia; ligada a una banda de moteros.",
+   "fuente": {
+    "nombre": "Rockstar Games: GTA VI",
+    "url": "https://www.rockstargames.com/VI"
+   },
+   "exacta": false
+  },
+  {
+   "id": "puerto-gellhorn",
+   "nombre": "Puerto de Port Gellhorn",
+   "region": "gellhorn",
+   "cat": "transporte",
+   "x": 283,
+   "y": 360,
+   "estado": "oficial",
+   "texto": "Puerto en activo de la costa olvidada, ligado al contrabando.",
+   "fuente": {
+    "nombre": "Rockstar Games: GTA VI",
+    "url": "https://www.rockstargames.com/VI"
+   },
+   "exacta": false
+  },
+  {
+   "id": "marinas",
+   "nombre": "Muelles y marinas",
+   "region": "keys",
+   "cat": "transporte",
+   "x": 432.2,
+   "y": 695.1,
+   "estado": "oficial",
+   "texto": "Muelles de los Cayos: barcos, motos de agua y pesca.",
+   "fuente": {
+    "nombre": "Rockstar Games: GTA VI",
+    "url": "https://www.rockstargames.com/VI"
+   },
+   "exacta": true,
+   "gtadb": "L326"
+  },
+  {
+   "id": "embarcaderos",
+   "nombre": "Embarcaderos",
+   "region": "grassrivers",
+   "cat": "transporte",
+   "x": 428.5,
+   "y": 660.6,
+   "estado": "oficial",
+   "texto": "Punto de partida para recorrer el pantano en barca.",
+   "fuente": {
+    "nombre": "Rockstar Games: GTA VI",
+    "url": "https://www.rockstargames.com/VI"
+   },
+   "exacta": true,
+   "gtadb": "L625"
+  },
+  {
+   "id": "lago-leonida",
+   "nombre": "Lago Leonida",
+   "region": "ambrosia",
+   "cat": "naturaleza",
+   "x": 450.3,
+   "y": 364.1,
+   "estado": "oficial",
+   "texto": "El gran lago del interior, en la región de Ambrosia.",
+   "fuente": {
+    "nombre": "Rockstar Games: GTA VI",
+    "url": "https://www.rockstargames.com/VI"
+   },
+   "inspiracion": "Lago Okeechobee",
+   "exacta": true,
+   "gtadb": "L1000"
+  },
+  {
+   "id": "cayos",
+   "nombre": "Cadena de islas y puentes",
+   "region": "keys",
+   "cat": "naturaleza",
+   "x": 372,
+   "y": 748,
+   "estado": "oficial",
+   "texto": "Islas unidas por puentes al sur de Vice City.",
+   "fuente": {
+    "nombre": "Rockstar Games: GTA VI",
+    "url": "https://www.rockstargames.com/VI"
+   },
+   "inspiracion": "Cayos de Florida",
+   "exacta": false
+  },
+  {
+   "id": "key-lento",
+   "nombre": "Key Lento",
+   "region": "keys",
+   "cat": "naturaleza",
+   "x": 434,
+   "y": 696,
+   "estado": "prensa",
+   "texto": "La primera isla de los Cayos según los mapas de la comunidad.",
+   "fuente": {
+    "nombre": "GTABase",
+    "url": "https://gtabase.com/gta-6/map/"
+   },
+   "inspiracion": "Key Largo",
+   "exacta": false
+  },
+  {
+   "id": "canales",
+   "nombre": "Canales y manglares",
+   "region": "grassrivers",
+   "cat": "naturaleza",
+   "x": 392,
+   "y": 640,
+   "estado": "oficial",
+   "texto": "Pantanos con caimanes y manglares.",
+   "fuente": {
+    "nombre": "Rockstar Games: GTA VI",
+    "url": "https://www.rockstargames.com/VI"
+   },
+   "inspiracion": "Everglades",
+   "exacta": false
+  },
+  {
+   "id": "senderos",
+   "nombre": "Senderos de Kalaga",
+   "region": "kalaga",
+   "cat": "naturaleza",
+   "x": 372,
+   "y": 262,
+   "estado": "oficial",
+   "texto": "Rutas a pie por el parque nacional.",
+   "fuente": {
+    "nombre": "Rockstar Games: GTA VI",
+    "url": "https://www.rockstargames.com/VI"
+   },
+   "exacta": false
+  },
+  {
+   "id": "bosques",
+   "nombre": "Bosques de Kalaga",
+   "region": "kalaga",
+   "cat": "naturaleza",
+   "x": 340,
+   "y": 300,
+   "estado": "oficial",
+   "texto": "Bosque frondoso, zona de caza.",
+   "fuente": {
+    "nombre": "Rockstar Games: GTA VI",
+    "url": "https://www.rockstargames.com/VI"
+   },
+   "exacta": false
+  },
+  {
+   "id": "pistas",
+   "nombre": "Pistas de tierra",
+   "region": "kalaga",
+   "cat": "naturaleza",
+   "x": 440,
+   "y": 318,
+   "estado": "oficial",
+   "texto": "Caminos para todoterrenos y quads.",
+   "fuente": {
+    "nombre": "Rockstar Games: GTA VI",
+    "url": "https://www.rockstargames.com/VI"
+   },
+   "exacta": false
+  },
+  {
+   "id": "cima-kalaga",
+   "nombre": "Mount Kalaga",
+   "region": "kalaga",
+   "cat": "naturaleza",
+   "x": 404.8,
+   "y": 313.0,
+   "estado": "oficial",
+   "texto": "El monte que da nombre al parque nacional.",
+   "fuente": {
+    "nombre": "Rockstar Games: GTA VI",
+    "url": "https://www.rockstargames.com/VI"
+   },
+   "exacta": true,
+   "gtadb": "L530"
+  },
+  {
+   "id": "moteles",
+   "nombre": "Moteles y atracciones cerradas",
+   "region": "gellhorn",
+   "cat": "zona",
+   "x": 321.2,
+   "y": 375.4,
+   "estado": "oficial",
+   "texto": "Moteles baratos y antiguas atracciones turísticas cerradas.",
+   "fuente": {
+    "nombre": "Rockstar Games: GTA VI",
+    "url": "https://www.rockstargames.com/VI"
+   },
+   "exacta": true,
+   "gtadb": "L309"
+  },
+  {
+   "id": "centros-comerciales",
+   "nombre": "Centros comerciales vacíos",
+   "region": "gellhorn",
+   "cat": "zona",
+   "x": 314.0,
+   "y": 389.2,
+   "estado": "oficial",
+   "texto": "Galerías comerciales abandonadas de la costa olvidada.",
+   "fuente": {
+    "nombre": "Rockstar Games: GTA VI",
+    "url": "https://www.rockstargames.com/VI"
+   },
+   "exacta": true,
+   "gtadb": "L615"
+  },
+  {
+   "id": "ambrosia-pueblo",
+   "nombre": "Ambrosia",
+   "region": "ambrosia",
+   "cat": "zona",
+   "x": 427,
+   "y": 377,
+   "estado": "oficial",
+   "texto": "Pueblo industrial donde empieza la lucha por la salud y la riqueza, según Rockstar.",
+   "fuente": {
+    "nombre": "Rockstar Games: GTA VI",
+    "url": "https://www.rockstargames.com/VI"
+   },
+   "exacta": false
+  },
+  {
+   "id": "moteros-ambrosia",
+   "nombre": "Territorio motero",
+   "region": "ambrosia",
+   "cat": "ocio",
+   "x": 434,
+   "y": 370,
+   "estado": "oficial",
+   "texto": "Una banda de moteros ronda la refinería.",
+   "fuente": {
+    "nombre": "GTABoss (contenido de ediciones)",
+    "url": "https://www.gtaboss.gg/gta-6/guides/gta-6-map"
+   },
+   "exacta": false
+  },
+  {
+   "id": "caimanes",
+   "nombre": "Cazadores de caimanes",
+   "region": "grassrivers",
+   "cat": "naturaleza",
+   "x": 403.4,
+   "y": 652.5,
+   "estado": "oficial",
+   "texto": "Grupo de cazadores visto en las capturas de Grassrivers.",
+   "fuente": {
+    "nombre": "Beebom",
+    "url": "https://beebom.com/gta-6-map"
+   },
+   "exacta": false,
+   "gtadb": "L265"
+  },
+  {
+   "id": "act-minigolf",
+   "nombre": "Minigolf",
+   "region": "vicecity",
+   "cat": "actividades",
+   "x": 502.3,
+   "y": 395.0,
+   "estado": "oficial",
+   "texto": "Hay minigolf. Lo situamos de forma orientativa en un minigolf que la comunidad ha localizado al norte.",
+   "fuente": {
+    "nombre": "Insider Gaming (Game Informer)",
+    "url": "https://insider-gaming.com/new-gta-6-activities-confirmed/"
+   },
+   "exacta": false,
+   "gtadb": "L823"
+  },
+  {
+   "id": "act-gimnasio",
+   "nombre": "Gimnasio",
+   "region": "vicecity",
+   "cat": "actividades",
+   "x": 556.4,
+   "y": 456.8,
+   "estado": "oficial",
+   "texto": "Entrenar cambia el físico y la fuerza. Actividad confirmada; la ubicación del mapa es orientativa.",
+   "fuente": {
+    "nombre": "Insider Gaming (Game Informer)",
+    "url": "https://insider-gaming.com/new-gta-6-activities-confirmed/"
+   },
+   "exacta": true,
+   "gtadb": "L1869"
+  },
+  {
+   "id": "act-billar",
+   "nombre": "Billar",
+   "region": "vicecity",
+   "cat": "actividades",
+   "x": 482,
+   "y": 468,
+   "estado": "oficial",
+   "texto": "Vuelve el billar de GTA IV. Actividad confirmada; la ubicación del mapa es orientativa.",
+   "fuente": {
+    "nombre": "Insider Gaming (Game Informer)",
+    "url": "https://insider-gaming.com/new-gta-6-activities-confirmed/"
+   },
+   "exacta": false
+  },
+  {
+   "id": "act-baloncesto",
+   "nombre": "Baloncesto",
+   "region": "vicecity",
+   "cat": "actividades",
+   "x": 461,
+   "y": 584,
+   "estado": "oficial",
+   "texto": "Canchas de calle. Actividad confirmada; la ubicación del mapa es orientativa.",
+   "fuente": {
+    "nombre": "Gfinity",
+    "url": "https://www.gfinityesports.com/article/gta-6-activities-guide-all-confirmed-mini-games-and-sports"
+   },
+   "exacta": false
+  },
+  {
+   "id": "act-campo-tiro",
+   "nombre": "Campo de tiro",
+   "region": "vicecity",
+   "cat": "actividades",
+   "x": 455.4,
+   "y": 589.0,
+   "estado": "oficial",
+   "texto": "Actividad confirmada; la ubicación del mapa es orientativa.",
+   "fuente": {
+    "nombre": "Gfinity",
+    "url": "https://www.gfinityesports.com/article/gta-6-activities-guide-all-confirmed-mini-games-and-sports"
+   },
+   "exacta": false,
+   "gtadb": "L1074"
+  },
+  {
+   "id": "act-tenis",
+   "nombre": "Tenis",
+   "region": "vicecity",
+   "cat": "actividades",
+   "x": 502.3,
+   "y": 570.3,
+   "estado": "oficial",
+   "texto": "Actividad confirmada; la ubicación del mapa es orientativa.",
+   "fuente": {
+    "nombre": "Gfinity",
+    "url": "https://www.gfinityesports.com/article/gta-6-activities-guide-all-confirmed-mini-games-and-sports"
+   },
+   "exacta": true,
+   "gtadb": "L127"
+  },
+  {
+   "id": "act-base",
+   "nombre": "Salto BASE",
+   "region": "vicecity",
+   "cat": "actividades",
+   "x": 487,
+   "y": 541,
+   "estado": "oficial",
+   "texto": "En el Extended Look, Lucia salta desde un rascacielos con paracaídas. Actividad confirmada; la ubicación del mapa es orientativa.",
+   "fuente": {
+    "nombre": "Insider Gaming (Game Informer)",
+    "url": "https://insider-gaming.com/new-gta-6-activities-confirmed/"
+   },
+   "exacta": false
+  },
+  {
+   "id": "act-carreras",
+   "nombre": "Carreras callejeras",
+   "region": "vicecity",
+   "cat": "actividades",
+   "x": 466,
+   "y": 545,
+   "estado": "oficial",
+   "texto": "Carreras y quedadas de coches. Actividad confirmada; la ubicación del mapa es orientativa.",
+   "fuente": {
+    "nombre": "Insider Gaming (Game Informer)",
+    "url": "https://insider-gaming.com/new-gta-6-activities-confirmed/"
+   },
+   "exacta": false
+  },
+  {
+   "id": "act-zoo",
+   "nombre": "Zoo",
+   "region": "vicecity",
+   "cat": "actividades",
+   "x": 519.5,
+   "y": 497.1,
+   "estado": "oficial",
+   "texto": "Se puede visitar un zoo. Actividad confirmada; lo situamos de forma orientativa en el equivalente de Jungle Island.",
+   "fuente": {
+    "nombre": "Insider Gaming (Game Informer)",
+    "url": "https://insider-gaming.com/new-gta-6-activities-confirmed/"
+   },
+   "exacta": false,
+   "gtadb": "L628"
+  },
+  {
+   "id": "act-surf",
+   "nombre": "Playa y surf",
+   "region": "vicecity",
+   "cat": "actividades",
+   "x": 579,
+   "y": 470,
+   "estado": "trailer",
+   "texto": "Actividad confirmada; la ubicación del mapa es orientativa.",
+   "fuente": {
+    "nombre": "esports.gg",
+    "url": "https://esports.gg/guides/grand-theft-auto-6/all-mini-games-and-activities-in-gta-6-confirmed-in-the-netflix-showcase/"
+   },
+   "exacta": false
+  },
+  {
+   "id": "act-buceo",
+   "nombre": "Buceo",
+   "region": "keys",
+   "cat": "actividades",
+   "x": 269.0,
+   "y": 724.2,
+   "estado": "oficial",
+   "texto": "Submarinismo en aguas de los Cayos. Actividad confirmada; la ubicación del mapa es orientativa.",
+   "fuente": {
+    "nombre": "Insider Gaming (Game Informer)",
+    "url": "https://insider-gaming.com/new-gta-6-activities-confirmed/"
+   },
+   "exacta": false,
+   "gtadb": "L1623"
+  },
+  {
+   "id": "act-motos-agua",
+   "nombre": "Motos de agua",
+   "region": "keys",
+   "cat": "actividades",
+   "x": 452,
+   "y": 712,
+   "estado": "oficial",
+   "texto": "Actividad confirmada; la ubicación del mapa es orientativa.",
+   "fuente": {
+    "nombre": "Insider Gaming (Game Informer)",
+    "url": "https://insider-gaming.com/new-gta-6-activities-confirmed/"
+   },
+   "exacta": false
+  },
+  {
+   "id": "act-pesca",
+   "nombre": "Pesca",
+   "region": "keys",
+   "cat": "actividades",
+   "x": 358.7,
+   "y": 736.5,
+   "estado": "oficial",
+   "texto": "Se pesca desde la costa y desde barco. Actividad confirmada; la ubicación del mapa es orientativa.",
+   "fuente": {
+    "nombre": "Gfinity",
+    "url": "https://www.gfinityesports.com/article/gta-6-activities-guide-all-confirmed-mini-games-and-sports"
+   },
+   "exacta": false,
+   "gtadb": "L1427"
+  },
+  {
+   "id": "act-hidro",
+   "nombre": "Hidrodeslizadores",
+   "region": "grassrivers",
+   "cat": "actividades",
+   "x": 380.9,
+   "y": 483.2,
+   "estado": "oficial",
+   "texto": "Recorre el pantano en fanboat. Actividad confirmada; la ubicación del mapa es orientativa.",
+   "fuente": {
+    "nombre": "Insider Gaming (Game Informer)",
+    "url": "https://insider-gaming.com/new-gta-6-activities-confirmed/"
+   },
+   "exacta": false,
+   "gtadb": "L1782"
+  },
+  {
+   "id": "act-kayak",
+   "nombre": "Kayak",
+   "region": "grassrivers",
+   "cat": "actividades",
+   "x": 366,
+   "y": 664,
+   "estado": "oficial",
+   "texto": "Otra novedad en la saga. Actividad confirmada; la ubicación del mapa es orientativa.",
+   "fuente": {
+    "nombre": "Insider Gaming (Game Informer)",
+    "url": "https://insider-gaming.com/new-gta-6-activities-confirmed/"
+   },
+   "exacta": false
+  },
+  {
+   "id": "act-caza",
+   "nombre": "Caza",
+   "region": "kalaga",
+   "cat": "actividades",
+   "x": 332,
+   "y": 276,
+   "estado": "oficial",
+   "texto": "Rastreo de animales al estilo de Red Dead Redemption 2. Actividad confirmada; la ubicación del mapa es orientativa.",
+   "fuente": {
+    "nombre": "Gfinity",
+    "url": "https://www.gfinityesports.com/article/gta-6-activities-guide-all-confirmed-mini-games-and-sports"
+   },
+   "exacta": false
+  },
+  {
+   "id": "act-offroad",
+   "nombre": "Carreras todoterreno",
+   "region": "kalaga",
+   "cat": "actividades",
+   "x": 386.8,
+   "y": 363.4,
+   "estado": "oficial",
+   "texto": "Actividad confirmada; la ubicación del mapa es orientativa.",
+   "fuente": {
+    "nombre": "Insider Gaming (Game Informer)",
+    "url": "https://insider-gaming.com/new-gta-6-activities-confirmed/"
+   },
+   "exacta": false,
+   "gtadb": "L512"
+  },
+  {
+   "id": "act-moto-cross",
+   "nombre": "Motocross",
+   "region": "ambrosia",
+   "cat": "actividades",
+   "x": 418.9,
+   "y": 366.9,
+   "estado": "oficial",
+   "texto": "Se ha visto pilotar motos de campo por Kalaga. Actividad confirmada; la ubicación del mapa es orientativa.",
+   "fuente": {
+    "nombre": "Beebom",
+    "url": "https://beebom.com/gta-6-map"
+   },
+   "exacta": false,
+   "gtadb": "L590"
+  },
+  {
+   "id": "act-pesca-lago",
+   "nombre": "Pesca en el lago",
+   "region": "ambrosia",
+   "cat": "actividades",
+   "x": 432.2,
+   "y": 353.6,
+   "estado": "oficial",
+   "texto": "Pesca en el lago Leonida. Actividad confirmada; la ubicación del mapa es orientativa.",
+   "fuente": {
+    "nombre": "Gfinity",
+    "url": "https://www.gfinityesports.com/article/gta-6-activities-guide-all-confirmed-mini-games-and-sports"
+   },
+   "exacta": false,
+   "gtadb": "L1328"
+  },
+  {
+   "id": "act-pesca-pantano",
+   "nombre": "Pesca en el pantano",
+   "region": "grassrivers",
+   "cat": "actividades",
+   "x": 386,
+   "y": 668,
+   "estado": "oficial",
+   "texto": "Actividad confirmada; la ubicación del mapa es orientativa.",
+   "fuente": {
+    "nombre": "Gfinity",
+    "url": "https://www.gfinityesports.com/article/gta-6-activities-guide-all-confirmed-mini-games-and-sports"
+   },
+   "exacta": false
+  },
+  {
+   "id": "act-barca-kalaga",
+   "nombre": "Barca en Kalaga",
+   "region": "kalaga",
+   "cat": "actividades",
+   "x": 356,
+   "y": 312,
+   "estado": "oficial",
+   "texto": "Paseos en barca por los ríos del parque, vistos en las capturas oficiales. Actividad confirmada; la ubicación del mapa es orientativa.",
+   "fuente": {
+    "nombre": "Beebom",
+    "url": "https://beebom.com/gta-6-map"
+   },
+   "exacta": false
+  },
+  {
+   "id": "act-rutas-moto",
+   "nombre": "Rutas por carretera",
+   "region": "ambrosia",
+   "cat": "actividades",
+   "x": 446,
+   "y": 412,
+   "estado": "oficial",
+   "texto": "Carreteras secundarias para recorrer en moto. Actividad confirmada; la ubicación del mapa es orientativa.",
+   "fuente": {
+    "nombre": "Rockstar Games: GTA VI",
+    "url": "https://www.rockstargames.com/VI"
+   },
+   "exacta": false
+  },
+  {
+   "id": "act-fauna",
+   "nombre": "Observar fauna",
+   "region": "grassrivers",
+   "cat": "actividades",
+   "x": 372,
+   "y": 640,
+   "estado": "oficial",
+   "texto": "Se pueden estudiar animales; algunos son raros o legendarios. Actividad confirmada; la ubicación del mapa es orientativa.",
+   "fuente": {
+    "nombre": "TweakTown",
+    "url": "https://www.tweaktown.com/news/113817/rockstar-confirm-10-new-details-about-grand-theft-auto-6-gameplay/index.html"
+   },
+   "exacta": false
+  },
+  {
+   "id": "act-fiestas-barco",
+   "nombre": "Fiestas en barco",
+   "region": "keys",
+   "cat": "actividades",
+   "x": 457,
+   "y": 704,
+   "estado": "oficial",
+   "texto": "Las fiestas en barco son parte del ambiente de los Cayos. Actividad confirmada; la ubicación del mapa es orientativa.",
+   "fuente": {
+    "nombre": "Gfinity",
+    "url": "https://www.gfinityesports.com/article/gta-6-all-confirmed-locations"
+   },
+   "exacta": false
+  },
+  {
+   "id": "act-contrabando",
+   "nombre": "Trabajos de contrabando",
+   "region": "gellhorn",
+   "cat": "actividades",
+   "x": 276,
+   "y": 402,
+   "estado": "oficial",
+   "texto": "Encargos ligados al puerto. Actividad confirmada; la ubicación del mapa es orientativa.",
+   "fuente": {
+    "nombre": "Rockstar Games: GTA VI",
+    "url": "https://www.rockstargames.com/VI"
+   },
+   "exacta": false
+  },
+  {
+   "id": "mia-loews",
+   "nombre": "Hotel tipo Loews",
+   "region": "vicecity",
+   "cat": "miami",
+   "x": 572.9,
+   "y": 476.3,
+   "estado": "trailer",
+   "texto": "Edificio real reconocible en los tráileres. Abre el primer tráiler junto a otros hoteles art déco.",
+   "fuente": {
+    "nombre": "Axios Miami",
+    "url": "https://www.axios.com/local/miami/2023/12/05/gta-6-trailer-vice-city-landmarks"
+   },
+   "inspiracion": "Loews Miami Beach y Royal Palm",
+   "exacta": true,
+   "gtadb": "L20"
+  },
+  {
+   "id": "mia-1500",
+   "nombre": "Edificio 1500 Ocean Drive",
+   "region": "vicecity",
+   "cat": "miami",
+   "x": 575.7,
+   "y": 481.7,
+   "estado": "trailer",
+   "texto": "Edificio real reconocible en los tráileres.",
+   "fuente": {
+    "nombre": "Miami New Times",
+    "url": "https://www.miaminewtimes.com/arts/interactive-map-20-miami-landmarks-in-gta-6-and-where-to-find-them-22206001"
+   },
+   "inspiracion": "1500 Ocean Drive",
+   "exacta": true,
+   "gtadb": "L24"
+  },
+  {
+   "id": "mia-bentley",
+   "nombre": "Hotel de South of Fifth",
+   "region": "vicecity",
+   "cat": "miami",
+   "x": 574.1,
+   "y": 512.6,
+   "estado": "trailer",
+   "texto": "Edificio real reconocible en los tráileres, en el extremo sur de la playa.",
+   "fuente": {
+    "nombre": "Miami New Times",
+    "url": "https://www.miaminewtimes.com/?p=40479081"
+   },
+   "inspiracion": "Hilton Bentley",
+   "exacta": false,
+   "gtadb": "L59"
+  },
+  {
+   "id": "mia-brickell-river",
+   "nombre": "Torre junto al río",
+   "region": "vicecity",
+   "cat": "miami",
+   "x": 489.5,
+   "y": 536.6,
+   "estado": "trailer",
+   "texto": "Edificio real reconocible en los tráileres.",
+   "fuente": {
+    "nombre": "Miami New Times",
+    "url": "https://www.miaminewtimes.com/arts/interactive-map-20-miami-landmarks-in-gta-6-and-where-to-find-them-22206001"
+   },
+   "inspiracion": "Brickell on the River",
+   "exacta": true,
+   "gtadb": "L227"
+  },
+  {
+   "id": "mia-ten-museum",
+   "nombre": "Torres del museo",
+   "region": "vicecity",
+   "cat": "miami",
+   "x": 496.7,
+   "y": 497.2,
+   "estado": "trailer",
+   "texto": "Edificio real reconocible en los tráileres.",
+   "fuente": {
+    "nombre": "Miami New Times",
+    "url": "https://www.miaminewtimes.com/?p=40479081"
+   },
+   "inspiracion": "Ten Museum Park y Grayson Hotel",
+   "exacta": true,
+   "gtadb": "L191"
+  },
+  {
+   "id": "mia-flamingo",
+   "nombre": "Flamingo Point",
+   "region": "vicecity",
+   "cat": "miami",
+   "x": 554.0,
+   "y": 483.2,
+   "estado": "trailer",
+   "texto": "Edificio real reconocible en los tráileres.",
+   "fuente": {
+    "nombre": "Miami New Times",
+    "url": "https://www.miaminewtimes.com/arts/interactive-map-20-miami-landmarks-in-gta-6-and-where-to-find-them-22206001"
+   },
+   "inspiracion": "Flamingo Point",
+   "exacta": true,
+   "gtadb": "L112"
+  },
+  {
+   "id": "mia-espanola",
+   "nombre": "Calle de estilo español",
+   "region": "vicecity",
+   "cat": "miami",
+   "x": 562.8,
+   "y": 483.7,
+   "estado": "trailer",
+   "texto": "Edificio real reconocible en los tráileres.",
+   "fuente": {
+    "nombre": "iGrandTheftAuto",
+    "url": "https://www.igrandtheftauto.com/gta6/landmarks"
+   },
+   "inspiracion": "Española Way",
+   "exacta": true,
+   "gtadb": "L755"
+  },
+  {
+   "id": "mia-lincoln",
+   "nombre": "Paseo comercial",
+   "region": "vicecity",
+   "cat": "miami",
+   "x": 564.6,
+   "y": 471.5,
+   "estado": "trailer",
+   "texto": "Edificio real reconocible en los tráileres.",
+   "fuente": {
+    "nombre": "iGrandTheftAuto",
+    "url": "https://www.igrandtheftauto.com/gta6/landmarks"
+   },
+   "inspiracion": "Lincoln Road",
+   "exacta": true,
+   "gtadb": "L1144"
+  },
+  {
+   "id": "mia-new-world",
+   "nombre": "Auditorio de cristal",
+   "region": "vicecity",
+   "cat": "miami",
+   "x": 562.6,
+   "y": 466.7,
+   "estado": "trailer",
+   "texto": "Edificio real reconocible en los tráileres.",
+   "fuente": {
+    "nombre": "iGrandTheftAuto",
+    "url": "https://www.igrandtheftauto.com/gta6/landmarks"
+   },
+   "inspiracion": "New World Center",
+   "exacta": true,
+   "gtadb": "L103"
+  },
+  {
+   "id": "mia-w",
+   "nombre": "Hotel de lujo en la playa",
+   "region": "vicecity",
+   "cat": "miami",
+   "x": 573.2,
+   "y": 462.3,
+   "estado": "trailer",
+   "texto": "Hotel de lujo frente al mar. La comunidad lo identifica en el juego como «Y Vice City».",
+   "fuente": {
+    "nombre": "iGrandTheftAuto",
+    "url": "https://www.igrandtheftauto.com/gta6/landmarks"
+   },
+   "inspiracion": "W South Beach",
+   "exacta": true,
+   "gtadb": "L16"
+  },
+  {
+   "id": "mia-south-pointe",
+   "nombre": "Punta sur de la playa",
+   "region": "vicecity",
+   "cat": "miami",
+   "x": 573.9,
+   "y": 522.6,
+   "estado": "trailer",
+   "texto": "Edificio real reconocible en los tráileres.",
+   "fuente": {
+    "nombre": "GameGPU",
+    "url": "https://en.gamegpu.com/news/igry/sravnenie-igrovogo-vajs-siti-iz-grand-theft-auto-v-i-realnogo-majami"
+   },
+   "inspiracion": "South Pointe",
+   "exacta": true,
+   "gtadb": "L61"
+  },
+  {
+   "id": "mia-infinity",
+   "nombre": "Rascacielos de Brickell",
+   "region": "vicecity",
+   "cat": "miami",
+   "x": 474.6,
+   "y": 557.0,
+   "estado": "trailer",
+   "texto": "Edificio real reconocible en los tráileres.",
+   "fuente": {
+    "nombre": "GameGPU",
+    "url": "https://en.gamegpu.com/news/igry/sravnenie-igrovogo-vajs-siti-iz-grand-theft-auto-v-i-realnogo-majami"
+   },
+   "inspiracion": "Infinity at Brickell",
+   "exacta": true,
+   "gtadb": "L242"
+  },
+  {
+   "id": "mia-quantum",
+   "nombre": "Torres de la bahía",
+   "region": "vicecity",
+   "cat": "miami",
+   "x": 497.4,
+   "y": 476.3,
+   "estado": "trailer",
+   "texto": "Edificio real reconocible en los tráileres.",
+   "fuente": {
+    "nombre": "GameGPU",
+    "url": "https://en.gamegpu.com/news/igry/sravnenie-igrovogo-vajs-siti-iz-grand-theft-auto-v-i-realnogo-majami"
+   },
+   "inspiracion": "Quantum on the Bay",
+   "exacta": true,
+   "gtadb": "L179"
+  },
+  {
+   "id": "vercetti-estate",
+   "nombre": "Vercetti Estate",
+   "region": "vicecity",
+   "cat": "propiedades",
+   "x": 540.3,
+   "y": 491.3,
+   "gtadb": "L2731",
+   "exacta": true,
+   "estado": "oficial",
+   "texto": "Mansión en Starfish Island nombrada en la descripción de un arma: un guiño directo a Tommy Vercetti.",
+   "inspiracion": "Star Island, Miami Beach",
+   "fuente": {
+    "nombre": "GTABoss (contenido de ediciones)",
+    "url": "https://www.gtaboss.gg/gta-6/guides/gta-6-map"
+   }
+  },
+  {
+   "id": "hamlet",
+   "nombre": "Hamlet",
+   "region": "grassrivers",
+   "cat": "zona",
+   "x": 428,
+   "y": 613,
+   "estado": "trailer",
+   "texto": "Pueblo agrícola a las puertas de Grassrivers que asoma en una publicación de redes del primer tráiler.",
+   "inspiracion": "Homestead",
+   "fuente": {
+    "nombre": "GTABoss (contenido de ediciones)",
+    "url": "https://www.gtaboss.gg/gta-6/guides/gta-6-map"
+   },
+   "exacta": false
+  },
+  {
+   "id": "saras-salon",
+   "nombre": "Sara's Unisex Salon",
+   "region": "grassrivers",
+   "cat": "tiendas",
+   "x": 432.2,
+   "y": 618.7,
+   "gtadb": "L360",
+   "exacta": true,
+   "estado": "oficial",
+   "texto": "Peluquería de la edición Ultimate, en el centro de Hamlet.",
+   "fuente": {
+    "nombre": "GTABoss (contenido de ediciones)",
+    "url": "https://www.gtaboss.gg/gta-6/guides/gta-6-map"
+   }
+  },
+  {
+   "id": "rideout-customs",
+   "nombre": "Rideout Customs",
+   "region": "vicecity",
+   "cat": "tiendas",
+   "x": 485.0,
+   "y": 481.5,
+   "gtadb": "L2375",
+   "exacta": true,
+   "estado": "oficial",
+   "texto": "Taller de tuneo de la edición Ultimate, en Crosstown.",
+   "fuente": {
+    "nombre": "GTABoss (contenido de ediciones)",
+    "url": "https://www.gtaboss.gg/gta-6/guides/gta-6-map"
+   }
+  },
+  {
+   "id": "kelly-county",
+   "nombre": "Kelly County",
+   "region": "gellhorn",
+   "cat": "zona",
+   "x": 360,
+   "y": 398,
+   "estado": "trailer",
+   "texto": "Condado rural del interior que aparece en un cartel de autopista; aquí están el Starlet Motel y el Thrillbilly Mud Club.",
+   "fuente": {
+    "nombre": "GTABoss (contenido de ediciones)",
+    "url": "https://www.gtaboss.gg/gta-6/guides/gta-6-map"
+   },
+   "exacta": false
+  },
+  {
+   "id": "gellhorn-raceway",
+   "nombre": "Gellhorn International Raceway",
+   "region": "gellhorn",
+   "cat": "actividades",
+   "x": 301.6,
+   "y": 439.3,
+   "gtadb": "L281",
+   "exacta": true,
+   "estado": "prensa",
+   "texto": "Circuito enorme al sur de Port Gellhorn. Sus curvas imitan algunas de las más famosas del mundo, de Eau Rouge al Sacacorchos.",
+   "inspiracion": "Sebring International Raceway",
+   "fuente": {
+    "nombre": "GTADB (comunidad)",
+    "url": "https://map.gtadb.org/#VI,-6732.8,2326.4,3,L281"
+   }
+  },
+  {
+   "id": "oceanario",
+   "nombre": "Vice City Oceanarium",
+   "region": "vicecity",
+   "cat": "ocio",
+   "x": 514.6,
+   "y": 566.7,
+   "gtadb": "L2027",
+   "exacta": true,
+   "estado": "prensa",
+   "texto": "Acuario con cúpula dorada en Catalan Key.",
+   "inspiracion": "Miami Seaquarium",
+   "fuente": {
+    "nombre": "GTADB (comunidad)",
+    "url": "https://map.gtadb.org/#VI,83.2,-1750.4,3,L2027"
+   }
+  },
+  {
+   "id": "piso-lucia",
+   "nombre": "Apartamento de Lucia",
+   "region": "vicecity",
+   "cat": "propiedades",
+   "x": 497.2,
+   "y": 473.9,
+   "gtadb": "L475",
+   "exacta": true,
+   "estado": "prensa",
+   "texto": "Refugio que la comunidad ha localizado en Crosstown.",
+   "fuente": {
+    "nombre": "GTADB (comunidad)",
+    "url": "https://map.gtadb.org/#VI,-473.6,1219.2,3,L475"
+   }
+  },
+  {
+   "id": "brians-boat-works",
+   "nombre": "Brian's Boat Works & Marina",
+   "region": "keys",
+   "cat": "transporte",
+   "x": 432.2,
+   "y": 695.1,
+   "gtadb": "L326",
+   "exacta": true,
+   "estado": "prensa",
+   "texto": "Marina de Brian en Key Lento, con interior visitable.",
+   "fuente": {
+    "nombre": "GTADB (comunidad)",
+    "url": "https://map.gtadb.org/#VI,-2553.6,-5859.2,3,L326"
+   }
+  },
+  {
+   "id": "evergreen-mall",
+   "nombre": "Evergreen Mall",
+   "region": "vicecity",
+   "cat": "tiendas",
+   "x": 501.6,
+   "y": 385.4,
+   "gtadb": "L163",
+   "exacta": true,
+   "estado": "prensa",
+   "texto": "Centro comercial de outlets en Waning Sands.",
+   "fuente": {
+    "nombre": "GTADB (comunidad)",
+    "url": "https://map.gtadb.org/#VI,-332.8,4051.2,3,L163"
+   }
+  },
+  {
+   "id": "starlet-motel",
+   "nombre": "Starlet Motel",
+   "region": "gellhorn",
+   "cat": "propiedades",
+   "x": 344.7,
+   "y": 403.8,
+   "gtadb": "L304",
+   "exacta": true,
+   "estado": "prensa",
+   "texto": "Motel de carretera en Kelly County que la comunidad marca como refugio.",
+   "fuente": {
+    "nombre": "GTADB (comunidad)",
+    "url": "https://map.gtadb.org/#VI,-5353.6,3462.4,3,L304"
+   }
+  },
+  {
+   "id": "thrillbilly",
+   "nombre": "Thrillbilly Mud Club",
+   "region": "gellhorn",
+   "cat": "actividades",
+   "x": 386.8,
+   "y": 363.4,
+   "gtadb": "L512",
+   "exacta": true,
+   "estado": "prensa",
+   "texto": "Parque de barro para todoterrenos en la Ruta 32.",
+   "inspiracion": "Redneck Mud Park",
+   "fuente": {
+    "nombre": "GTADB (comunidad)",
+    "url": "https://map.gtadb.org/#VI,-4006.4,4755.2,3,L512"
+   }
+  }
+ ],
+ "articulos": [
+  {
+   "id": "cronologia-completa",
+   "categoria": "Historia",
+   "lectura": 6,
+   "fecha": "2026-11-10",
+   "titulo": "De 2022 a 2026: así llegó GTA VI hasta tu consola",
+   "entradilla": "Una confirmación escueta, la mayor filtración de la historia del sector, dos tráileres que rompieron récords, dos retrasos y un estreno en Netflix. El camino completo, ordenado.",
+   "cuerpo": [
+    {
+     "h": "2022: «bien encaminado»"
+    },
+    {
+     "p": "El 4 de febrero de 2022, al final de una actualización sobre GTA Online, Rockstar escribió la frase que llevaba años esperando la comunidad: el desarrollo de la siguiente entrega estaba bien encaminado. No había nombre, ni fecha, ni plataformas."
+    },
+    {
+     "p": "Siete meses después llegó el golpe: unos 90 vídeos de una versión muy temprana aparecieron en un foro. Rockstar confirmó que eran reales y el autor, Arion Kurtaj, del grupo Lapsus$, acabó internado por orden judicial en diciembre de 2023."
+    },
+    {
+     "h": "2023: el tráiler que no pudo esperar"
+    },
+    {
+     "p": "Sam Houser anunció en noviembre de 2023 que el primer tráiler llegaría en diciembre. Iba a estrenarse el día 5, pero se filtró la tarde del 4 y Rockstar lo publicó horas antes. Presentó a Lucia, Vice City y el año 2025, y en 24 horas acumuló 90,4 millones de visitas en YouTube, un récord Guinness."
+    },
+    {
+     "h": "2025: fecha, retraso y otro récord"
+    },
+    {
+     "p": "Take-Two había acotado la salida al otoño de 2025, pero el 2 de mayo de ese año Rockstar fijó el 26 de mayo de 2026. Cuatro días después publicó por sorpresa el tráiler 2, con Jason como coprotagonista y la web oficial con personajes y regiones; superó los 475 millones de visualizaciones en un día entre todas las plataformas."
+    },
+    {
+     "p": "El 6 de noviembre de 2025 llegó el segundo retraso, al 19 de noviembre de 2026, una semana después de una polémica tanda de despidos en los estudios británicos."
+    },
+    {
+     "h": "2026: la recta final"
+    },
+    {
+     "p": "Take-Two mantuvo la fecha en febrero y mayo, las reservas abrieron el 25 de junio y en agosto una filtración de vídeos de juego precedió al gran estreno: el Extended Look, 26 minutos de juego real emitidos primero en Netflix. Después vinieron la portada de Game Informer, la calificación PEGI 18, las radios, el tráiler de lanzamiento del 15 de octubre y la precarga."
+    }
+   ],
+   "fuentes": [
+    {
+     "nombre": "PC Gamer",
+     "url": "https://www.pcgamer.com/its-finally-official-grand-theft-auto-6-is-coming"
+    },
+    {
+     "nombre": "Push Square",
+     "url": "https://www.pushsquare.com/news/2023/12/gta-6-trailer-pulls-90-million-views-in-24-hours-sets-new-world-records"
+    },
+    {
+     "nombre": "GamesRadar+",
+     "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-delayed-6-more-months-as-rockstar-commits-to-november-2026-and-says-sorry"
+    },
+    {
+     "nombre": "Red Bull",
+     "url": "https://www.redbull.com/za-en/gta-6-extended-look-everything-revealed"
+    }
+   ]
+  },
+  {
+   "id": "retrasos",
+   "categoria": "Análisis",
+   "lectura": 4,
+   "fecha": "2026-11-10",
+   "titulo": "Dos retrasos y una promesa: por qué GTA VI llega en noviembre",
+   "entradilla": "Del «otoño de 2025» al 19 de noviembre de 2026. Qué dijo cada parte y por qué esta vez la fecha parece firme.",
+   "cuerpo": [
+    {
+     "p": "El primer tráiler prometía 2025 y Take-Two llegó a hablar de otoño. El 2 de mayo de 2025 Rockstar pidió disculpas y fijó el 26 de mayo de 2026, explicando que necesitaba más tiempo para el acabado que se espera de sus juegos."
+    },
+    {
+     "p": "El segundo aplazamiento se anunció el 6 de noviembre de 2025, junto a los resultados de Take-Two. Strauss Zelnick aseguró sentirse muy seguro con la nueva fecha y defendió que lanzar algo antes de estar listo sale caro."
+    },
+    {
+     "h": "Las dudas de enero"
+    },
+    {
+     "p": "A comienzos de 2026, Jason Schreier (Bloomberg) contó que el juego aún no tenía todo su contenido cerrado, aunque veía el 19 de noviembre más real que las fechas anteriores. En febrero, Take-Two reafirmó el día y anunció que el marketing empezaría en verano, como así fue."
+    },
+    {
+     "h": "«Casi terminado»"
+    },
+    {
+     "p": "El 26 de agosto de 2026, en plena ola de filtraciones, Rockstar describió el juego como casi listo y confirmó que la fecha no se movería. Con las reservas abiertas, la precarga en marcha y las copias de prensa repartidas a finales de octubre, todo apunta a que esta vez sí."
+    }
+   ],
+   "fuentes": [
+    {
+     "nombre": "MP1st",
+     "url": "https://mp1st.com/news/gta-6-a-release-date-may-2026"
+    },
+    {
+     "nombre": "GamesRadar+",
+     "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-delayed-6-more-months-as-rockstar-commits-to-november-2026-and-says-sorry"
+    },
+    {
+     "nombre": "VideoGamer",
+     "url": "https://www.videogamer.com/?p=1370926"
+    },
+    {
+     "nombre": "Engadget",
+     "url": "https://engadget.com/2244659/rockstar-calls-gta-6-leaks-heartbreaking-says-game-is-nearly-finished/"
+    }
+   ]
+  },
+  {
+   "id": "guia-compra",
+   "categoria": "Guía",
+   "lectura": 4,
+   "fecha": "2026-11-10",
+   "titulo": "Guía de compra: ediciones, precarga y a qué hora se juega",
+   "entradilla": "Todo lo práctico para el día 19, sin letra pequeña.",
+   "cuerpo": [
+    {
+     "h": "Qué edición elegir"
+    },
+    {
+     "ul": [
+      "Estándar (79,99 €): el juego completo. Existe en digital y en caja física, que trae un código de descarga en lugar de disco.",
+      "Ultimate (99,99 €, solo digital): añade vehículos, armas, ropa, garajes y negocios que se desbloquean capítulo a capítulo.",
+      "Las reservas digitales incluyen el pack Vintage Vice City y un mes de GTA+."
+     ]
+    },
+    {
+     "h": "Precarga y espacio"
+    },
+    {
+     "p": "La precarga digital ya está abierta. Reserva hasta 212 GB según la consola y asegúrate de tener la última versión del sistema. Quien compre la caja física puede canjear el código y descargar desde que llega a tiendas."
+    },
+    {
+     "h": "A qué hora empieza"
+    },
+    {
+     "p": "Las fichas de la PlayStation Store muestran un desbloqueo a medianoche local de cada país. En la España peninsular serán las 00:00 del jueves 19 de noviembre; Nueva Zelanda es el primer territorio y Centroamérica el último, unas 19 horas después. Rockstar no ha detallado los horarios de Xbox."
+    },
+    {
+     "h": "Antes de pulsar «comprar»"
+    },
+    {
+     "ul": [
+      "Los análisis llegarían el 18 de noviembre, según varios medios; Rockstar no lo ha confirmado.",
+      "En consolas funciona a 30 fps; no hay modo de 60 anunciado, tampoco en PS5 Pro.",
+      "No hay versión de PC con fecha.",
+      "Desconfía de webs que vendan acceso anticipado, dinero o trucos: es una estafa."
+     ]
+    }
+   ],
+   "fuentes": [
+    {
+     "nombre": "God is a Geek",
+     "url": "https://godisageek.com/2026/09/gta-6-release-times-by-region/"
+    },
+    {
+     "nombre": "TechRadar",
+     "url": "https://techradar.com/gaming/gta-6-will-launch-at-30fps-on-ps5-and-xbox-for-now-confirms-rockstar-but-while-60fps-is-reportedly-possible-its-a-40fps-mode-we-really-want-to-see"
+    },
+    {
+     "nombre": "tbreak",
+     "url": "https://tbreak.com/gta-6-review-codes-embargo-november-18/"
+    }
+   ]
+  },
+  {
+   "id": "jugabilidad-confirmada",
+   "categoria": "Jugabilidad",
+   "lectura": 5,
+   "fecha": "2026-11-10",
+   "titulo": "Lo que ya sabemos de cómo se juega",
+   "entradilla": "Del Extended Look y los primeros avances de prensa salen las piezas del sistema de juego. Separamos lo confirmado de lo que solo se ha visto.",
+   "cuerpo": [
+    {
+     "h": "Dos protagonistas, una pareja"
+    },
+    {
+     "p": "Jason y Lucia se controlan por separado y se puede cambiar entre ellos, como se vio en una persecución del Extended Look en la que uno dispara y el otro conduce. Rockstar habla de mecánicas de relación profundas entre ambos, aunque aún no ha explicado cómo funcionan."
+    },
+    {
+     "h": "Un cuerpo que cambia"
+    },
+    {
+     "p": "La comida afecta al peso, el gimnasio marca músculo y dormir poco se nota en la cara y en el rendimiento. Es la idea de San Andreas, ampliada, que Rockstar North confirmó en el reportaje de Dazed."
+    },
+    {
+     "h": "Calle, policía y reputación"
+    },
+    {
+     "p": "El Extended Look mostró robos a tiendas, encargos para distintos clientes, tiroteos con coberturas, paracaídas desde rascacielos y gestos de buena conducta, como acariciar a un perro, que suman reputación. La persecución policial sigue siendo central y, según avances, la policía se fija en tu ropa y tu coche."
+    },
+    {
+     "h": "Un mundo más vivo"
+    },
+    {
+     "p": "Game Informer contó un sistema meteorológico avanzado y más de 170 especies animales; Edge habló de un mapa del doble que el de GTA V. El móvil incluye redes sociales funcionales. En consolas, el juego corre a 30 imágenes por segundo."
+    }
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechRadar",
+     "url": "https://techradar.com/gaming/ps5/16-new-gta-6-details-we-learned-from-the-big-extended-look-gameplay-video-captured-in-game-on-a-ps5"
+    },
+    {
+     "nombre": "GamingBolt",
+     "url": "https://gamingbolt.com/gta-6-brings-back-san-andreass-weight-and-exercise-systems-along-with-encouraging-you-to-sleep"
+    },
+    {
+     "nombre": "Power Up Gaming",
+     "url": "https://powerupgaming.co.uk/2026/08/27/every-major-gameplay-detail-revealed-in-netflixs-gta-6-extended-look/"
+    }
+   ]
+  },
+  {
+   "id": "filtraciones",
+   "categoria": "Polémica",
+   "lectura": 4,
+   "fecha": "2026-11-10",
+   "titulo": "Las dos grandes filtraciones de GTA VI",
+   "entradilla": "2022 y 2026: qué se filtró, cómo reaccionó Rockstar y por qué conviene no difundir ese material.",
+   "cuerpo": [
+    {
+     "h": "Septiembre de 2022: Lapsus$"
+    },
+    {
+     "p": "Un joven del grupo Lapsus$ se coló en los sistemas de Rockstar y publicó unos 90 vídeos de una versión de desarrollo. El estudio estimó el coste en unos 5 millones de dólares y miles de horas de trabajo. El autor fue sometido en diciembre de 2023 a un internamiento hospitalario indefinido."
+    },
+    {
+     "h": "Agosto de 2026: CyberLeek"
+    },
+    {
+     "p": "Desde el 18 de agosto, alguien con acceso a una versión jugable fue publicando clips, capturas del mapa y parte del prólogo de Lucia, con marcas de agua de una criptomoneda. Take-Two pidió a un tribunal de Nueva York datos de Microsoft y Discord para identificarle y retiró el material de las redes."
+    },
+    {
+     "p": "Rockstar calificó lo ocurrido de desgarrador para su equipo, pero confirmó que la fecha no cambiaba y siguió adelante con el Extended Look del 27 de agosto."
+    },
+    {
+     "h": "Por qué no lo enlazamos"
+    },
+    {
+     "p": "Ese material destripa la historia y circula en webs que suelen esconder estafas o malware. En LeonidaDex solo usamos información oficial o de prensa con fuente."
+    }
+   ],
+   "fuentes": [
+    {
+     "nombre": "VGC",
+     "url": "https://www.videogameschronicle.com/news/gta-6-hacker-sentenced-to-an-indefinite-hospital-order/"
+    },
+    {
+     "nombre": "Windows Central",
+     "url": "https://www.windowscentral.com/gaming/microsoft-has-been-served-a-court-subpoena-by-take-two-over-grand-theft-auto-6"
+    },
+    {
+     "nombre": "Push Square",
+     "url": "https://www.pushsquare.com/news/2026/08/rockstar-issues-statement-on-gta-6-leaks-apologises-for-how-long-gameplay-reveal-has-taken"
+    }
+   ]
+  },
+  {
+   "id": "sindicato",
+   "categoria": "Industria",
+   "lectura": 4,
+   "fecha": "2026-11-10",
+   "titulo": "Rockstar y su plantilla: despidos, juicio y votación sindical",
+   "entradilla": "La otra historia del lanzamiento se juega en los tribunales y en las urnas de los estudios británicos.",
+   "cuerpo": [
+    {
+     "p": "El 30 de octubre de 2025, Rockstar despidió a más de 30 trabajadores de Reino Unido y Canadá que formaban parte de un chat sindical privado. El sindicato IWGB habló de represalia; Take-Two lo negó y alegó falta grave por difundir información confidencial. Hubo protestas ante la sede de Edimburgo y el caso llegó al Parlamento británico."
+    },
+    {
+     "p": "En junio de 2026, la plantilla británica pidió el reconocimiento voluntario del sindicato, con el lanzamiento como fecha límite. Sus demandas: transparencia salarial, menos «crunch» y más flexibilidad."
+    },
+    {
+     "h": "Noviembre decisivo"
+    },
+    {
+     "ul": [
+      "Del 12 al 26 de noviembre: votación sobre el reconocimiento del sindicato en los estudios británicos.",
+      "17 y 18 de noviembre: alegatos finales del juicio por los despidos, en Glasgow.",
+      "19 de noviembre: lanzamiento del juego."
+     ]
+    },
+    {
+     "p": "Ningún medio ha relacionado el proceso con un cambio de fecha. Lo que sí puede afectar es al soporte de los primeros días si hubiera conflicto."
+    }
+   ],
+   "fuentes": [
+    {
+     "nombre": "PC Gamer",
+     "url": "https://www.pcgamer.com/gaming-industry/rockstar-accused-of-the-most-ruthless-act-of-union-busting-in-the-history-of-the-uk-games-industry-after-firing-dozens-of-employees-who-were-allegedly-attempting-to-form-a-union"
+    },
+    {
+     "nombre": "Game Developer",
+     "url": "https://www.gamedeveloper.com/business/rockstar-workers-to-vote-on-unionization-ahead-of-grand-theft-auto-vi-release"
+    },
+    {
+     "nombre": "God is a Geek",
+     "url": "https://godisageek.com/?p=313702"
+    }
+   ]
+  },
+  {
+   "id": "records",
+   "categoria": "Cifras",
+   "lectura": 3,
+   "fecha": "2026-11-10",
+   "titulo": "Récords antes de salir: las cifras de GTA VI",
+   "entradilla": "Visitas, reservas y estimaciones: lo que ya ha batido un juego que aún no está a la venta.",
+   "cuerpo": [
+    {
+     "ul": [
+      "90.421.491 visitas en 24 horas del tráiler 1 en YouTube: récord Guinness para la presentación de un videojuego (diciembre de 2023).",
+      "Más de 475 millones de visualizaciones del tráiler 2 en un día sumando todas las plataformas, según Rockstar (mayo de 2025).",
+      "Unos 260 millones de dólares en reservas digitales la primera semana, la mayor apertura que ha medido Newzoo (julio de 2026).",
+      "Reservas un 570 % por encima de la media diaria el día del Extended Look, según Sensor Tower (agosto de 2026).",
+      "Unas 6,08 millones de reservas digitales a 13 de octubre, con un 74 % en PS5, según Sensor Tower."
+     ]
+    },
+    {
+     "p": "Ojo: salvo las cifras de visitas que comunicó Rockstar, el resto son estimaciones de consultoras, no datos oficiales de Take-Two. Xbox, por su parte, asegura que el juego bate récords de reservas en su plataforma."
+    }
+   ],
+   "fuentes": [
+    {
+     "nombre": "Push Square",
+     "url": "https://www.pushsquare.com/news/2023/12/gta-6-trailer-pulls-90-million-views-in-24-hours-sets-new-world-records"
+    },
+    {
+     "nombre": "TechRadar",
+     "url": "https://www.techradar.com/gaming/the-latest-grand-theft-auto-6-trailer-has-set-a-major-record-by-racking-up-475-million-views-in-just-24-hours"
+    },
+    {
+     "nombre": "Game World Observer",
+     "url": "https://gameworldobserver.com/2026/07/16/pre-orders-for-gta-vi-brought-take-two-a-record-260-million-in-one-week-newzoo"
+    },
+    {
+     "nombre": "Instant Gaming News",
+     "url": "https://news.instant-gaming.com/en/articles/22561-gta-vi-may-have-already-surpassed-6-million-in-pre-orders-alone"
+    }
+   ]
+  },
+  {
+   "id": "vice-city-historia",
+   "categoria": "Saga",
+   "lectura": 4,
+   "fecha": "2026-11-10",
+   "titulo": "Vice City vuelve: tres décadas de la Miami de Rockstar",
+   "entradilla": "La ciudad de neón ya había salido en tres juegos de la saga. Así ha cambiado hasta llegar a Leonida.",
+   "cuerpo": [
+    {
+     "h": "1997: un mapa visto desde arriba"
+    },
+    {
+     "p": "El primer Grand Theft Auto, con cámara cenital, ya incluía Vice City como una de sus tres ciudades, junto a Liberty City y San Andreas."
+    },
+    {
+     "h": "2002: la Miami de los ochenta"
+    },
+    {
+     "p": "GTA: Vice City llevó la ciudad a las 3D en 1986, con Tommy Vercetti, trajes pastel, radios de época y una clara inspiración en el cine y las series de crimen de aquella Miami. Ocean Beach, con sus hoteles y su paseo, se convirtió en icono."
+    },
+    {
+     "h": "2006: Vice City Stories"
+    },
+    {
+     "p": "La precuela para PSP y PS2 volvió a la misma ciudad a mediados de los ochenta, con Victor Vance como protagonista."
+    },
+    {
+     "h": "2026: Vice City dentro de Leonida"
+    },
+    {
+     "p": "GTA VI recupera la ciudad en la actualidad y la convierte en el corazón de un estado entero inspirado en Florida, con pantanos, cayos, puertos y bosques. Rockstar la define como el glamour, el ajetreo y la codicia de Estados Unidos en una sola ciudad."
+    }
+   ],
+   "fuentes": [
+    {
+     "nombre": "Rockstar Games: GTA VI",
+     "url": "https://www.rockstargames.com/VI"
+    }
+   ]
+  }
+ ],
+ "videos": [
+  {
+   "titulo": "Tráiler 1",
+   "corto": "Tráiler 1",
+   "fecha_txt": "4 dic 2023",
+   "duracion": "1:31",
+   "texto": "Lucia y Vice City; récord Guinness",
+   "url": "https://www.youtube.com/watch?v=QdBZY2fkU-0"
+  },
+  {
+   "titulo": "Tráiler 2",
+   "corto": "Tráiler 2",
+   "fecha_txt": "6 may 2025",
+   "duracion": "2:47",
+   "texto": "Jason y Lucia; grabado en PS5",
+   "url": "https://www.rockstargames.com/VI"
+  },
+  {
+   "titulo": "An Extended Look",
+   "corto": "Extended",
+   "fecha_txt": "27 ago 2026",
+   "duracion": "26:48",
+   "texto": "Primer vídeo de juego real (Netflix y YouTube)",
+   "url": "https://www.rockstargames.com/VI"
+  },
+  {
+   "titulo": "Tráiler de lanzamiento",
+   "corto": "Lanzamiento",
+   "fecha_txt": "15 oct 2026",
+   "duracion": "1:30",
+   "texto": "Grabado en el juego en PS5",
+   "url": "https://www.youtube.com/watch?v=rz1B4B2yBZY"
+  }
+ ],
+ "capturas": [
+  {
+   "icono": "🌴",
+   "titulo": "Web oficial de GTA VI",
+   "texto": "Galerías de personajes y lugares de Rockstar",
+   "url": "https://www.rockstargames.com/VI"
+  },
+  {
+   "icono": "📰",
+   "titulo": "Rockstar Newswire",
+   "texto": "Anuncios y capturas nuevas al momento",
+   "url": "https://www.rockstargames.com/newswire"
+  },
+  {
+   "icono": "🖼️",
+   "titulo": "Capturas del tráiler 2",
+   "texto": "Galería de mayo de 2025 (Gematsu)",
+   "url": "https://www.gematsu.com/2025/05/grand-theft-auto-vi-second-trailer-characters-and-places-detailed"
+  },
+  {
+   "icono": "📖",
+   "titulo": "12 capturas de Game Informer",
+   "texto": "Portada y reportaje de septiembre de 2026",
+   "url": "https://www.pushsquare.com/news/2026/09/gta-6-fronts-next-game-informer-cover-with-new-info-and-screenshots"
+  },
+  {
+   "icono": "🎬",
+   "titulo": "Arte del tráiler de lanzamiento",
+   "texto": "Nueva captura y arte, 15 de octubre de 2026",
+   "url": "https://rockstarintel.com/?p=43765"
+  },
+  {
+   "icono": "📸",
+   "titulo": "Reportaje de Dazed",
+   "texto": "Sesión de fotos y primer avance oficial",
+   "url": "https://www.igrandtheftauto.com/gta6/news/dazed-brings-us-the-first-official-gta-6-preview"
+  }
+ ],
+ "dex": [
+  {
+   "cat": "vehiculos",
+   "nombre": "Vapid Stanier '55",
+   "tipo": "Sedán clásico",
+   "estado": "oficial",
+   "nota": "Viene con el pack de reserva Vintage Vice City, junto a un garaje en Ocean Beach.",
+   "fuente": {
+    "nombre": "Rockstar (contenido de ediciones)",
+    "url": "https://www.rockstargames.com/VI"
+   }
+  },
+  {
+   "cat": "vehiculos",
+   "nombre": "Grotti Cheetah '95",
+   "tipo": "Superdeportivo",
+   "estado": "oficial",
+   "nota": "Contenido de la edición Ultimate, con decoración minimalista.",
+   "fuente": {
+    "nombre": "Rockstar (contenido de ediciones)",
+    "url": "https://www.rockstargames.com/VI"
+   }
+  },
+  {
+   "cat": "vehiculos",
+   "nombre": "Vapid Dominator Buggy '67",
+   "tipo": "Buggy",
+   "estado": "oficial",
+   "nota": "Edición Ultimate, con garaje en Watson Bay.",
+   "fuente": {
+    "nombre": "Rockstar (contenido de ediciones)",
+    "url": "https://www.rockstargames.com/VI"
+   }
+  },
+  {
+   "cat": "vehiculos",
+   "nombre": "Vapid Ganado Retro Build",
+   "tipo": "Pickup modificada",
+   "estado": "oficial",
+   "nota": "Edición Ultimate.",
+   "fuente": {
+    "nombre": "Rockstar (contenido de ediciones)",
+    "url": "https://www.rockstargames.com/VI"
+   }
+  },
+  {
+   "cat": "vehiculos",
+   "nombre": "Dinka Enduro",
+   "tipo": "Moto de campo",
+   "estado": "oficial",
+   "nota": "Vehículo del piso franco de Jason en la edición Ultimate.",
+   "fuente": {
+    "nombre": "Rockstar (contenido de ediciones)",
+    "url": "https://www.rockstargames.com/VI"
+   }
+  },
+  {
+   "cat": "vehiculos",
+   "nombre": "Shitzu Squalo",
+   "tipo": "Moto de agua",
+   "estado": "oficial",
+   "nota": "Edición Ultimate; aparece en Washington Beach con una caja de explosivos.",
+   "fuente": {
+    "nombre": "Rockstar (contenido de ediciones)",
+    "url": "https://www.rockstargames.com/VI"
+   }
+  },
+  {
+   "cat": "vehiculos",
+   "nombre": "Crest (kayak)",
+   "tipo": "Embarcación",
+   "estado": "oficial",
+   "nota": "Kayak del piso franco de Jason, edición Ultimate.",
+   "fuente": {
+    "nombre": "Rockstar (contenido de ediciones)",
+    "url": "https://www.rockstargames.com/VI"
+   }
+  },
+  {
+   "cat": "vehiculos",
+   "nombre": "Bravado Banshee",
+   "tipo": "Deportivo descapotable",
+   "estado": "trailer",
+   "nota": "Clásico de la saga visto en el material promocional.",
+   "fuente": {
+    "nombre": "Push Square",
+    "url": "https://www.pushsquare.com/guides/gta-6-all-cars-and-vehicles-confirmed-so-far"
+   }
+  },
+  {
+   "cat": "vehiculos",
+   "nombre": "Albany Buccaneer",
+   "tipo": "Muscle car",
+   "estado": "trailer",
+   "nota": "Coupé de dos puertas visto en los tráileres.",
+   "fuente": {
+    "nombre": "Push Square",
+    "url": "https://www.pushsquare.com/guides/gta-6-all-cars-and-vehicles-confirmed-so-far"
+   }
+  },
+  {
+   "cat": "vehiculos",
+   "nombre": "Karin Intruder",
+   "tipo": "Berlina",
+   "estado": "trailer",
+   "nota": "Sedán de cuatro puertas identificado en los tráileres.",
+   "fuente": {
+    "nombre": "Push Square",
+    "url": "https://www.pushsquare.com/guides/gta-6-all-cars-and-vehicles-confirmed-so-far"
+   }
+  },
+  {
+   "cat": "vehiculos",
+   "nombre": "Declasse Burrito",
+   "tipo": "Furgoneta",
+   "estado": "trailer",
+   "nota": "Furgoneta de reparto habitual en GTA.",
+   "fuente": {
+    "nombre": "Push Square",
+    "url": "https://www.pushsquare.com/guides/gta-6-all-cars-and-vehicles-confirmed-so-far"
+   }
+  },
+  {
+   "cat": "vehiculos",
+   "nombre": "Declasse Tulip",
+   "tipo": "Berlina",
+   "estado": "trailer",
+   "nota": "Visto en los dos tráileres.",
+   "fuente": {
+    "nombre": "Gameblog",
+    "url": "https://www.gameblog.fr/jeu-video/ed/astuces/gta-6-liste-voitures-confirmees-718670"
+   }
+  },
+  {
+   "cat": "vehiculos",
+   "nombre": "Mammoth Dodo",
+   "tipo": "Hidroavión",
+   "estado": "trailer",
+   "nota": "Ideal para los Cayos y la costa.",
+   "fuente": {
+    "nombre": "Push Square",
+    "url": "https://www.pushsquare.com/guides/gta-6-all-cars-and-vehicles-confirmed-so-far"
+   }
+  },
+  {
+   "cat": "vehiculos",
+   "nombre": "Buckingham Shamal",
+   "tipo": "Avión privado",
+   "estado": "trailer",
+   "nota": "Jet ejecutivo visto en el material oficial.",
+   "fuente": {
+    "nombre": "Push Square",
+    "url": "https://www.pushsquare.com/guides/gta-6-all-cars-and-vehicles-confirmed-so-far"
+   }
+  },
+  {
+   "cat": "vehiculos",
+   "nombre": "Hidrodeslizador",
+   "tipo": "Embarcación de pantano",
+   "estado": "trailer",
+   "nota": "Los fanboats de Grassrivers, vistos en los tráileres.",
+   "fuente": {
+    "nombre": "GTABase",
+    "url": "https://www.gtabase.com/gta-6/vehicles/"
+   }
+  },
+  {
+   "cat": "armas",
+   "nombre": "Hawk & Little Morgan",
+   "tipo": "Revólveres",
+   "estado": "oficial",
+   "nota": "Versión de él y de ella, en la edición Ultimate.",
+   "fuente": {
+    "nombre": "Rockstar (contenido de ediciones)",
+    "url": "https://www.rockstargames.com/VI"
+   }
+  },
+  {
+   "cat": "armas",
+   "nombre": "Girardi ES9",
+   "tipo": "Pistola grabada",
+   "estado": "oficial",
+   "nota": "La pistola personalizada de Jason (Ultimate).",
+   "fuente": {
+    "nombre": "Rockstar (contenido de ediciones)",
+    "url": "https://www.rockstargames.com/VI"
+   }
+  },
+  {
+   "cat": "armas",
+   "nombre": "Klose K17",
+   "tipo": "Pistola grabada",
+   "estado": "oficial",
+   "nota": "La pistola personalizada de Lucia (Ultimate).",
+   "fuente": {
+    "nombre": "Rockstar (contenido de ediciones)",
+    "url": "https://www.rockstargames.com/VI"
+   }
+  },
+  {
+   "cat": "armas",
+   "nombre": "Patrón de palmeras",
+   "tipo": "Acabado de armas",
+   "estado": "oficial",
+   "nota": "Diseño tropical para la mayoría de armas, del pack de reserva.",
+   "fuente": {
+    "nombre": "Rockstar (contenido de ediciones)",
+    "url": "https://www.rockstargames.com/VI"
+   }
+  },
+  {
+   "cat": "fauna",
+   "nombre": "Caimán",
+   "tipo": "Reptil",
+   "estado": "oficial",
+   "nota": "Rey de Grassrivers; confirmado por Rockstar en Game Informer.",
+   "fuente": {
+    "nombre": "eXputer (Game Informer)",
+    "url": "https://exputer.com/?p=444896"
+   }
+  },
+  {
+   "cat": "fauna",
+   "nombre": "Flamenco",
+   "tipo": "Ave",
+   "estado": "oficial",
+   "nota": "Se ve en bandadas desde el primer tráiler.",
+   "fuente": {
+    "nombre": "eXputer (Game Informer)",
+    "url": "https://exputer.com/?p=444896"
+   }
+  },
+  {
+   "cat": "fauna",
+   "nombre": "Pelícano",
+   "tipo": "Ave",
+   "estado": "oficial",
+   "nota": "Habitual en muelles y costa.",
+   "fuente": {
+    "nombre": "eXputer (Game Informer)",
+    "url": "https://exputer.com/?p=444896"
+   }
+  },
+  {
+   "cat": "fauna",
+   "nombre": "Manatí",
+   "tipo": "Mamífero marino",
+   "estado": "oficial",
+   "nota": "Uno de los animales que estrena Rockstar en GTA VI.",
+   "fuente": {
+    "nombre": "eXputer (Game Informer)",
+    "url": "https://exputer.com/?p=444896"
+   }
+  },
+  {
+   "cat": "fauna",
+   "nombre": "Iguana verde",
+   "tipo": "Reptil invasor",
+   "estado": "oficial",
+   "nota": "Especie invasora, como en la Florida real.",
+   "fuente": {
+    "nombre": "TweakTown",
+    "url": "https://www.tweaktown.com/news/113817/rockstar-confirm-10-new-details-about-grand-theft-auto-6-gameplay/index.html"
+   }
+  },
+  {
+   "cat": "fauna",
+   "nombre": "Sapo de caña",
+   "tipo": "Anfibio invasor",
+   "estado": "oficial",
+   "nota": "Otra especie invasora confirmada.",
+   "fuente": {
+    "nombre": "TweakTown",
+    "url": "https://www.tweaktown.com/news/113817/rockstar-confirm-10-new-details-about-grand-theft-auto-6-gameplay/index.html"
+   }
+  },
+  {
+   "cat": "fauna",
+   "nombre": "Macaco rhesus",
+   "tipo": "Mamífero invasor",
+   "estado": "oficial",
+   "nota": "Monos introducidos, como los de algunos parques de Florida.",
+   "fuente": {
+    "nombre": "TweakTown",
+    "url": "https://www.tweaktown.com/news/113817/rockstar-confirm-10-new-details-about-grand-theft-auto-6-gameplay/index.html"
+   }
+  },
+  {
+   "cat": "fauna",
+   "nombre": "Armadillo",
+   "tipo": "Mamífero",
+   "estado": "oficial",
+   "nota": "Citado por Rockstar en el reportaje de Game Informer.",
+   "fuente": {
+    "nombre": "eXputer (Game Informer)",
+    "url": "https://exputer.com/?p=444896"
+   }
+  },
+  {
+   "cat": "fauna",
+   "nombre": "Gato asilvestrado",
+   "tipo": "Mamífero",
+   "estado": "oficial",
+   "nota": "Citado por Rockstar en el reportaje de Game Informer.",
+   "fuente": {
+    "nombre": "eXputer (Game Informer)",
+    "url": "https://exputer.com/?p=444896"
+   }
+  },
+  {
+   "cat": "fauna",
+   "nombre": "Tiburones",
+   "tipo": "Vida marina",
+   "estado": "oficial",
+   "nota": "Varias especies, aún sin nombre.",
+   "fuente": {
+    "nombre": "eXputer (Game Informer)",
+    "url": "https://exputer.com/?p=444896"
+   }
+  },
+  {
+   "cat": "fauna",
+   "nombre": "Ballenas, rayas, tortugas y medusas",
+   "tipo": "Vida marina",
+   "estado": "oficial",
+   "nota": "Cada una con su propio comportamiento en el agua.",
+   "fuente": {
+    "nombre": "eXputer (Game Informer)",
+    "url": "https://exputer.com/?p=444896"
+   }
+  },
+  {
+   "cat": "fauna",
+   "nombre": "Más de 170 especies",
+   "tipo": "Resumen",
+   "estado": "oficial",
+   "nota": "Unas 60 aves, más de 30 mamíferos terrestres, peces y reptiles. Algunos animales se podrán rastrear y se clasifican como raros, descubribles o legendarios.",
+   "fuente": {
+    "nombre": "TweakTown",
+    "url": "https://www.tweaktown.com/news/113817/rockstar-confirm-10-new-details-about-grand-theft-auto-6-gameplay/index.html"
+   }
+  },
+  {
+   "cat": "marcas",
+   "nombre": "Rideout Customs",
+   "tipo": "Taller",
+   "estado": "oficial",
+   "nota": "Negocio citado en la ficha oficial del juego.",
+   "fuente": {
+    "nombre": "iTechGuides",
+    "url": "https://www.itechguides.com/gta-6s-fake-brands-are-the-real-star-of-leonida/"
+   }
+  },
+  {
+   "cat": "marcas",
+   "nombre": "Sara's Unisex Salon",
+   "tipo": "Peluquería",
+   "estado": "oficial",
+   "nota": "Citado en la ficha oficial.",
+   "fuente": {
+    "nombre": "iTechGuides",
+    "url": "https://www.itechguides.com/gta-6s-fake-brands-are-the-real-star-of-leonida/"
+   }
+  },
+  {
+   "cat": "marcas",
+   "nombre": "Stock 305",
+   "tipo": "Tienda de ropa",
+   "estado": "oficial",
+   "nota": "Citada en la ficha oficial; 305 es el prefijo telefónico de Miami.",
+   "fuente": {
+    "nombre": "iTechGuides",
+    "url": "https://www.itechguides.com/gta-6s-fake-brands-are-the-real-star-of-leonida/"
+   }
+  },
+  {
+   "cat": "marcas",
+   "nombre": "Uncle Jack's Liquor",
+   "tipo": "Licorería",
+   "estado": "trailer",
+   "nota": "La tienda que asaltan Jason y Lucia en el primer tráiler.",
+   "fuente": {
+    "nombre": "GTA Boom",
+    "url": "https://www.gtaboom.com/GTA_6_Brands"
+   }
+  },
+  {
+   "cat": "marcas",
+   "nombre": "eCola y Sprunk",
+   "tipo": "Refrescos",
+   "estado": "trailer",
+   "nota": "La eterna rivalidad de refrescos de la saga.",
+   "fuente": {
+    "nombre": "GTA Boom",
+    "url": "https://www.gtaboom.com/GTA_6_Brands"
+   }
+  },
+  {
+   "cat": "marcas",
+   "nombre": "Pißwasser y Logger",
+   "tipo": "Cerveza",
+   "estado": "trailer",
+   "nota": "Botellas en las estanterías del tráiler 1.",
+   "fuente": {
+    "nombre": "GTA Boom",
+    "url": "https://www.gtaboom.com/GTA_6_Brands"
+   }
+  },
+  {
+   "cat": "marcas",
+   "nombre": "Weazel News y Mega Noticias",
+   "tipo": "Televisión",
+   "estado": "trailer",
+   "nota": "Informativos en inglés y en español dentro del juego.",
+   "fuente": {
+    "nombre": "GTA Boom",
+    "url": "https://www.gtaboom.com/GTA_6_Brands"
+   }
+  },
+  {
+   "cat": "marcas",
+   "nombre": "Sessanta Nove",
+   "tipo": "Moda de lujo",
+   "estado": "trailer",
+   "nota": "Firma de moda que vuelve de GTA V.",
+   "fuente": {
+    "nombre": "GTA Boom",
+    "url": "https://www.gtaboom.com/GTA_6_Brands"
+   }
+  },
+  {
+   "cat": "marcas",
+   "nombre": "iFruit",
+   "tipo": "Tecnología",
+   "estado": "trailer",
+   "nota": "El móvil de la saga, con iFruit Pay.",
+   "fuente": {
+    "nombre": "GTA Boom",
+    "url": "https://www.gtaboom.com/GTA_6_Brands"
+   }
+  },
+  {
+   "cat": "marcas",
+   "nombre": "Vapid, Bravado y Benefactor",
+   "tipo": "Fabricantes",
+   "estado": "trailer",
+   "nota": "Marcas de coches de siempre en GTA.",
+   "fuente": {
+    "nombre": "GTA Boom",
+    "url": "https://www.gtaboom.com/GTA_6_Brands"
+   }
+  }
+ ],
+ "mapa_sin_ubicar": [
+  {
+   "nombre": "Leonida Penitentiary",
+   "texto": "La prisión donde cumplía condena Lucia. La comunidad ha localizado dos cárceles, en Kelly County y en Hamlet, pero ninguna está confirmada como esta.",
+   "fuente": {
+    "nombre": "Insider Gaming",
+    "url": "https://insider-gaming.com/all-gta-6-locations-revealed-so-far/"
+   }
+  },
+  {
+   "nombre": "Gambit Bay",
+   "texto": "Zona de pesca nombrada por Rockstar.",
+   "fuente": {
+    "nombre": "GTABoss (contenido de ediciones)",
+    "url": "https://www.gtaboss.gg/gta-6/guides/gta-6-map"
+   }
+  }
+ ]
+}
