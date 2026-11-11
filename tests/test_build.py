@@ -97,6 +97,9 @@ class BuildTests(unittest.TestCase):
         self.assertNotIn("aviso-legal", info_pages(config))
         with self.assertRaisesRegex(ValueError, "NIF y domicilio"):
             self.config(responsable="Titular", correo_contacto="prueba@example.org", nif="ID-PRUEBA")
+        with self.assertRaisesRegex(ValueError, "ocultación"):
+            self.config(responsable="Titular", correo_contacto="prueba@example.org",
+                        nif="ID-PRUEBA", domicilio="Dirección, <redacted>")
         config = self.config(responsable="Titular", correo_contacto="prueba@example.org",
                              nif="ID <prueba>", domicilio="Dirección <prueba>")
         legal = info_pages(config)["aviso-legal"][2]
