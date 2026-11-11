@@ -2,6 +2,8 @@
 import html
 import json
 import re
+from hashlib import sha256
+from pathlib import Path
 
 E = html.escape
 MENU = [("", "Inicio"), ("noticias/", "Noticias"), ("reportajes/", "Reportajes"),
@@ -71,6 +73,7 @@ def footer(up, config):
 
 def head(up, public_base):
     image = E(public_base + "assets/leonidadex-social.jpg")
+    css_version = sha256((Path(__file__).parent / "src/assets/sitio.css").read_bytes()).hexdigest()[:12]
     return (f'<link rel="icon" href="{E(up)}assets/caiman-32.png" type="image/png" sizes="32x32">\n'
             f'<link rel="icon" href="{E(up)}assets/caiman-192.png" type="image/png" sizes="192x192">\n'
             f'<link rel="apple-touch-icon" href="{E(up)}assets/caiman-180.png" sizes="180x180">\n'
@@ -80,7 +83,7 @@ def head(up, public_base):
             '<meta property="og:image:alt" content="LeonidaDex: el caimán de Leonida y la guía de GTA VI en español">\n'
             '<meta name="twitter:card" content="summary_large_image">\n'
             f'<meta name="twitter:image" content="{image}">\n'
-            f'<link rel="stylesheet" href="{E(up)}assets/sitio.css">\n')
+            f'<link rel="stylesheet" href="{E(up)}assets/sitio.css?v={css_version}">\n')
 
 
 def analytics(up, config):
