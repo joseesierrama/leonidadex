@@ -15,7 +15,7 @@ import os
 import pathlib
 import re
 import shutil
-from site_support import analytics, footer as site_footer, head as site_head, info_pages, load_config, menu, privacy_ready
+from site_support import analytics, footer as site_footer, head as site_head, info_pages, load_config, menu, privacy_ready, tiktok_link
 from content_validation import validate_content
 
 ROOT = pathlib.Path(__file__).parent
@@ -128,6 +128,10 @@ def main():
     head_extra = f'<link rel="canonical" href="{E(url)}">\n<meta property="og:url" content="{E(url)}">\n'
     head_extra += site_head("", url)
     idx = idx.replace("<meta name=\"theme-color\"", head_extra + "<meta name=\"theme-color\"", 1)
+    search_button = '<button class="search-btn" id="searchBtn"'
+    if idx.count(search_button) != 1:
+        raise ValueError("No se encuentra el control de búsqueda único de la cabecera")
+    idx = idx.replace(search_button, tiktok_link(header=True) + '\n      ' + search_button, 1)
     links = ('<nav class="wrap" aria-label="Más en LeonidaDex" style="padding:0 0 24px;display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.88rem">'
              '<a href="noticias/">Todas las noticias</a><a href="reportajes/">Reportajes</a><a href="personajes/">Personajes</a>'
              '<a href="leonida/">Regiones de Leonida</a><a href="preguntas-frecuentes/">Preguntas frecuentes</a></nav>\n</footer>')
