@@ -7,7 +7,7 @@
 - Privacidad y almacenamiento publicados con datos autorizados. El aviso legal se genera al completar NIF y domicilio, también autorizados para su publicación.
 - AdSense creado el 11 de noviembre de 2026. Perfil de pagos completado por el titular, dominio verificado mediante ads.txt y revisión solicitada. Estado de Google: Preparando. Esto no equivale a aprobación.
 - Identificador real de editor configurado en `src/sitio.json`; ads.txt publicado y autorizado por Google. No hay código de anuncios ni estimaciones de ingresos reales.
-- Mensaje europeo preparado en borrador en AdSense: español predeterminado, inglés adicional, caimán y enlace a privacidad, opciones de consentir/no consentir/gestionar. No está publicado ni integrado en la web; completar su revisión antes de activar anuncios.
+- Mensaje europeo publicado en AdSense: español predeterminado, inglés adicional, caimán y enlace a privacidad, opciones de consentir/no consentir/gestionar. La etiqueta publicitaria aún no está instalada en la web; completar las políticas y comprobar la integración antes de activar anuncios tras la aprobación del sitio.
 
 ## Activación
 
