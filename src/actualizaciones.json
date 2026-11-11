@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-11-10T17:14:25+01:00",
+    "actualizado": "2026-11-11T11:35:52+01:00",
     "lanzamiento": "2026-11-19T00:00:00",
     "nota_lanzamiento": "Medianoche hora local · PS5 y Xbox Series X|S",
     "fase": "prelanzamiento",
@@ -34,6 +34,18 @@
     }
   ],
   "eventos": [
+    {
+      "fecha": "2026-11-11",
+      "titulo": "The Festival: venta para seleccionados con código, 12:00 ET / 18:00 España peninsular",
+      "lugar": "DICE · Lista de espera disponible",
+      "estado": "oficial",
+      "fuentes": [
+        {
+          "nombre": "Rockstar: entradas de The Festival",
+          "url": "https://www.rockstargames.com/VI/gtavi-thefestival"
+        }
+      ]
+    },
     {
       "fecha": "2026-11-12",
       "titulo": "Inicio previsto de envíos y recogida de cajas con código",
@@ -124,6 +136,20 @@
   ],
   "noticias": [
     {
+      "id": "festival-venta-11nov",
+      "fecha": "2026-11-11",
+      "categoria": "Evento",
+      "estado": "oficial",
+      "titulo": "11 de noviembre: venta por código y lista de espera para The Festival",
+      "resumen": "Rockstar fija para el 11 de noviembre a las 12:00 ET (18:00 en la España peninsular) la venta en DICE para los seleccionados con código. El sorteo cerró el día 10; la web oficial ofrece una lista de espera. Máximo dos entradas por comprador y edad mínima de 17 años.",
+      "fuentes": [
+        {
+          "nombre": "Rockstar: condiciones y calendario de entradas",
+          "url": "https://www.rockstargames.com/VI/gtavi-thefestival"
+        }
+      ]
+    },
+    {
       "id": "rendimiento-y-nube-oficial",
       "fecha": "2026-11-10",
       "categoria": "Técnica",
@@ -176,7 +202,7 @@
       "categoria": "Evento",
       "estado": "oficial",
       "titulo": "Rockstar anuncia «Grand Theft Auto VI: The Festival» en Miami",
-      "resumen": "La cita será el 21 de noviembre en Mana Wynwood, Miami, para mayores de 17 años. Rockstar y PlayStation presentan el evento producido por III Points. El registro en Laylo da acceso a un sorteo para comprar entradas mediante DICE; no garantiza entrada ni acceso gratuito.",
+      "resumen": "La cita será el 21 de noviembre en Mana Wynwood, Miami, para mayores de 17 años. Rockstar y PlayStation presentan el evento producido por III Points. Actualización del 11 de noviembre: el registro de Laylo cerró el día 10; hay venta por código para seleccionados y lista de espera.",
       "fuentes": [
         {
           "nombre": "Rockstar: The Festival, cartel y entradas",
@@ -1092,11 +1118,11 @@
       "nivel": "Básico",
       "tiempo": "2 min",
       "estado": "disponible",
-      "resumen": "21 de noviembre, Mana Wynwood (Miami), 17+.",
+      "resumen": "21 de noviembre, Mana Wynwood (Miami), 17+. Entradas revisadas el 11 de noviembre.",
       "pasos": [
         "Consulta el cartel y las condiciones en la página oficial de Rockstar.",
-        "El registro en Laylo participa en la selección para obtener un código de compra.",
-        "La compra se realiza en DICE con el código correspondiente. Registrarse no garantiza conseguir una entrada."
+        "El sorteo cerró el 10 de noviembre. Para los seleccionados, la venta en DICE está fijada el día 11 a las 12:00 ET (18:00 en la España peninsular).",
+        "Si no participaste, consulta la lista de espera enlazada por Rockstar. El máximo es de dos entradas por comprador."
       ],
       "consejos": [
         "Comprueba edad mínima y condiciones antes de organizar el viaje."
