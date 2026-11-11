@@ -23,6 +23,9 @@ def load_config(src):
         raise ValueError("Completa responsable y correo_contacto antes de habilitar medición o ads.txt")
     if bool(config["nif"]) != bool(config["domicilio"]):
         raise ValueError("Completa NIF y domicilio antes de publicar el aviso legal")
+    for key in ("responsable", "nif", "domicilio"):
+        if any(marker in config[key].casefold() for marker in ("<redacted>", "[redacted]", "[dato oculto]")):
+            raise ValueError("No se pueden publicar marcadores de ocultación en " + key)
     return config
 
 
