@@ -7,7 +7,7 @@
    },
    {
     "k": "Hora",
-    "v": "00:00 de tu hora local (PS5 y Xbox)"
+    "v": "00:00 local (versiones nativas de PS5 y Xbox Series X|S)"
    },
    {
     "k": "Plataformas",
@@ -1514,7 +1514,13 @@
  "faq": [
   {
    "q": "¿Cuándo sale GTA VI en España y a qué hora?",
-   "a": "El jueves 19 de noviembre de 2026 a las 00:00 de tu hora local, en PS5 y Xbox Series X|S."
+   "a": "El jueves 19 de noviembre de 2026 a las 00:00 de tu hora local en las versiones nativas de PS5 y Xbox Series X|S.",
+   "fuentes": [
+    {
+     "nombre": "Rockstar: horarios regionales",
+     "url": "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s"
+    }
+   ]
   },
   {
    "q": "Si precargo, ¿puedo jugar antes?",
@@ -1537,6 +1543,16 @@
     {
      "nombre": "Rockstar: plataformas y nube",
      "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now"
+    }
+   ]
+  },
+  {
+   "q": "¿GTA VI está incluido en Game Pass para jugar en la nube?",
+   "a": "Xbox exige comprar el juego aparte. El streaming empieza el 19 a las 07:00 peninsulares; el acceso depende del mercado y del tiempo de nube disponible.",
+   "fuentes": [
+    {
+     "nombre": "Xbox Wire: acceso por streaming",
+     "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/"
     }
    ]
   },
@@ -3486,7 +3502,7 @@
    "id": "guia-compra",
    "categoria": "Guía",
    "lectura": 4,
-   "fecha": "2026-11-10",
+   "fecha": "2026-11-12",
    "titulo": "Guía de compra: ediciones, precarga y a qué hora se juega",
    "entradilla": "Todo lo práctico para el día 19, sin letra pequeña.",
    "cuerpo": [
@@ -3524,7 +3540,7 @@
      ]
     },
     {
-     "p": "Distingue la versión instalada de la nube. El acceso anunciado para Xbox One es por streaming y depende de la conexión; no equivale a una edición nativa para esa consola."
+     "p": "Para streaming, Xbox fija las 07:00 peninsulares del 19. El juego se adquiere aparte; puedes contratar horas de nube sin Game Pass en mercados compatibles. No es una versión nativa para Xbox One."
     },
     {
      "p": "El pack digital se ofrece con compras anteriores al 20 de noviembre. Comprueba siempre el importe y las condiciones en la tienda de tu región antes de pagar."
@@ -3546,6 +3562,10 @@
     {
      "nombre": "Rockstar: rendimiento",
      "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now"
+    },
+    {
+     "nombre": "Xbox Wire: horario y condiciones de streaming",
+     "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/"
     }
    ]
   },

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-11-11T11:35:52+01:00",
+    "actualizado": "2026-11-12T12:54:47+01:00",
     "lanzamiento": "2026-11-19T00:00:00",
     "nota_lanzamiento": "Medianoche hora local · PS5 y Xbox Series X|S",
     "fase": "prelanzamiento",
@@ -91,6 +91,18 @@
       "estado": "oficial"
     },
     {
+      "fecha": "2026-11-19",
+      "titulo": "GTA VI en Xbox Cloud Gaming · 07:00 en la España peninsular",
+      "lugar": "Streaming · Compra del juego y acceso a nube aparte",
+      "estado": "oficial",
+      "fuentes": [
+        {
+          "nombre": "Xbox Wire",
+          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/"
+        }
+      ]
+    },
+    {
       "fecha": "2026-11-20",
       "titulo": "Fiesta de lanzamiento en NINE1NINE",
       "lugar": "E11EVEN, Miami",
@@ -136,12 +148,77 @@
   ],
   "noticias": [
     {
+      "id": "vice-city-clip-only-in-dade",
+      "fecha": "2026-11-12",
+      "categoria": "Multimedia",
+      "estado": "prensa",
+      "destacada": true,
+      "titulo": "El nuevo clip de Vice City que parece una grabación de Miami",
+      "resumen": "Vandal e Insider Gaming recogen un vídeo difundido el 11 de noviembre por Only in Dade y compartido por Rockstar en Instagram. Muestra coches y peatones desde un vehículo y desde la acera, recreando una promoción real de Miami. Lo recogemos como información de prensa: la secuencia no permite confirmar cómo funcionaría una cámara jugable ni identificar por nuestra cuenta a los personajes.",
+      "fuentes": [
+        {
+          "nombre": "Vandal: clip y contexto",
+          "url": "https://vandal.elespanol.com/noticia/2026316006/rockstar-comparte-nuevo-gameplay-de-gta-6-en-primera-persona-y-es-facil-confundir-sus-graficos-con-la-vida-real/"
+        },
+        {
+          "nombre": "Insider Gaming: publicación del 11 de noviembre",
+          "url": "https://insider-gaming.com/rockstar-games-unreal-gta-6-clip-social-media-first-person/"
+        }
+      ]
+    },
+    {
+      "id": "golden-joystick-2026-ausencia",
+      "fecha": "2026-11-12",
+      "categoria": "Curiosidad",
+      "estado": "prensa",
+      "titulo": "Por qué GTA VI no compitió en los Golden Joystick 2026",
+      "resumen": "Tras la gala del 11 de noviembre, GamesRadar explica que el estreno de GTA VI queda fuera del calendario de los premios principales de esta edición. Tampoco fue nominado a Most Wanted, categoría que ganó en 2024 y 2025. La ausencia no es una valoración del juego ni significa que haya perdido un premio al que no se presentó.",
+      "fuentes": [
+        {
+          "nombre": "GamesRadar: explicación de la ausencia",
+          "url": "https://www.gamesradar.com/games/grand-theft-auto/why-wasnt-gta-6-at-the-golden-joystick-awards/"
+        }
+      ]
+    },
+    {
+      "id": "cajas-codigo-12nov",
+      "fecha": "2026-11-12",
+      "categoria": "Lanzamiento",
+      "estado": "oficial",
+      "titulo": "12 de noviembre: fecha prevista para recibir las cajas con código de GTA VI",
+      "resumen": "El soporte de Rockstar señala el 12 de noviembre como inicio previsto de envíos y recogida en tiendas. La caja incluye un código de descarga, no un disco. Comprueba el estado concreto de tu pedido con el comercio: la fecha prevista no garantiza existencias ni entrega hoy en todas las tiendas. Recibir el código no adelanta el desbloqueo del juego.",
+      "fuentes": [
+        {
+          "nombre": "Rockstar: formatos, envíos y canje",
+          "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
+        },
+        {
+          "nombre": "Rockstar: horarios de desbloqueo",
+          "url": "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s"
+        }
+      ]
+    },
+    {
+      "id": "xbox-nube-horario-y-compra",
+      "fecha": "2026-11-11",
+      "categoria": "Técnica",
+      "estado": "oficial",
+      "titulo": "Xbox: tiempo de nube sin Game Pass y GTA VI comprado aparte",
+      "resumen": "El anuncio de Xbox del 10 de noviembre fija el streaming de GTA VI para el 19 a la 01:00 ET, las 07:00 en la España peninsular. El juego se compra aparte. Desde el día 11 se ofrece tiempo de nube sin Game Pass en mercados compatibles; no equivale a una versión nativa para Xbox One.",
+      "fuentes": [
+        {
+          "nombre": "Xbox Wire: horario y condiciones de la nube",
+          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/"
+        }
+      ]
+    },
+    {
       "id": "festival-venta-11nov",
       "fecha": "2026-11-11",
       "categoria": "Evento",
       "estado": "oficial",
       "titulo": "11 de noviembre: venta por código y lista de espera para The Festival",
-      "resumen": "Rockstar fija para el 11 de noviembre a las 12:00 ET (18:00 en la España peninsular) la venta en DICE para los seleccionados con código. El sorteo cerró el día 10; la web oficial ofrece una lista de espera. Máximo dos entradas por comprador y edad mínima de 17 años.",
+      "resumen": "El calendario de Rockstar fijó la venta por código para seleccionados el 11 de noviembre a las 12:00 ET. Revisión del 12 de noviembre: el sorteo está cerrado y la web oficial mantiene el enlace a la lista de espera. Máximo dos entradas por comprador y edad mínima de 17 años; consulta la disponibilidad en el canal oficial.",
       "fuentes": [
         {
           "nombre": "Rockstar: condiciones y calendario de entradas",
@@ -168,7 +245,7 @@
       "fecha": "2026-11-10",
       "categoria": "Lanzamiento",
       "estado": "oficial",
-      "destacada": true,
+      "destacada": false,
       "titulo": "Ya puedes precargar GTA VI",
       "resumen": "La precarga digital se abrió a medianoche (hora local) del 10 de noviembre en PS5 y a las 00:00 GMT en Xbox Series X|S, que en la España peninsular fue la 01:00. Necesitas hasta 212 GB libres, según la consola. Precargar no adelanta nada: el juego se desbloquea el 19 de noviembre a medianoche, hora local. Los jugadores de Nueva Zelanda fueron los primeros en empezar la descarga por la diferencia horaria.",
       "fuentes": [
@@ -1090,24 +1167,34 @@
   "guias_nuevas": [
     {
       "id": "codigos-y-region",
-      "titulo": "Antes de comprar un código: plataforma y región",
+      "titulo": "Tu código de GTA VI: cuenta, región y descarga",
       "categoria": "Compra",
       "nivel": "Básico",
-      "tiempo": "2 min",
+      "tiempo": "3 min",
       "estado": "disponible",
-      "resumen": "Comprueba la cuenta que lo recibirá antes de pagar.",
+      "resumen": "Antes de canjear la caja sin disco, revisa la cuenta y la plataforma.",
       "pasos": [
-        "Verifica si el código corresponde a PlayStation o Xbox.",
-        "En PlayStation, comprueba que la región del código admite el país de tu cuenta; consulta la lista oficial.",
-        "Conserva el justificante de compra y canjea únicamente en la plataforma oficial. No compartas el código en público."
+        "Comprueba que el código corresponde a tu consola y revisa el pedido con la tienda.",
+        "En PlayStation, la región del código debe admitir el país de tu cuenta. Consulta la lista oficial de Rockstar.",
+        "En PS5, abre PlayStation Store, elige Más y Canjear código. Revisa la cuenta, confirma el canje y selecciona Descargar.",
+        "En Xbox, usa la opción Canjear de Microsoft Store con la cuenta que conservará el juego.",
+        "Canjear y descargar no permite jugar antes del desbloqueo. Guarda el justificante y no publiques el código."
       ],
       "consejos": [
-        "Si hay dudas sobre la región, consulta al vendedor antes de comprar."
+        "Si el código falla, consulta al vendedor y al soporte de tu plataforma; no lo compartas en redes."
       ],
       "fuentes": [
         {
-          "nombre": "Rockstar: restricciones de códigos",
+          "nombre": "Rockstar: códigos y regiones",
           "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
+        },
+        {
+          "nombre": "PlayStation: canjear y descargar",
+          "url": "https://www.playstation.com/es-es/support/store/redeem-ps-store-voucher-code/"
+        },
+        {
+          "nombre": "Xbox: canjear códigos",
+          "url": "https://support.xbox.com/es-ES/help/subscriptions-billing/redeem-codes-gifting/redeem-prepaid-codes"
         }
       ]
     },
@@ -1118,11 +1205,11 @@
       "nivel": "Básico",
       "tiempo": "2 min",
       "estado": "disponible",
-      "resumen": "21 de noviembre, Mana Wynwood (Miami), 17+. Entradas revisadas el 11 de noviembre.",
+      "resumen": "21 de noviembre, Mana Wynwood (Miami), 17+. Sorteo cerrado; consulta la lista de espera oficial.",
       "pasos": [
         "Consulta el cartel y las condiciones en la página oficial de Rockstar.",
-        "El sorteo cerró el 10 de noviembre. Para los seleccionados, la venta en DICE está fijada el día 11 a las 12:00 ET (18:00 en la España peninsular).",
-        "Si no participaste, consulta la lista de espera enlazada por Rockstar. El máximo es de dos entradas por comprador."
+        "El sorteo cerró el 10 de noviembre y la venta por código para seleccionados estaba fijada para el día 11. No es un registro abierto de nuevo.",
+        "Para disponibilidad actual, abre la lista de espera enlazada por Rockstar. El máximo anunciado es de dos entradas por comprador."
       ],
       "consejos": [
         "Comprueba edad mínima y condiciones antes de organizar el viaje."
