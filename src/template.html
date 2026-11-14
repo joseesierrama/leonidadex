@@ -124,7 +124,7 @@ h3 { font: 800 1.45rem/1.05 var(--font-display); text-transform: uppercase; lett
 .badge { display: inline-block; font: 500 0.66rem/1 var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 6px; border-radius: 4px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
 .badge.oficial, .badge.confirmado, .badge.disponible { color: var(--aqua); border-color: rgba(53, 227, 208, 0.45); }
 .badge.prensa { color: var(--peach); border-color: rgba(255, 212, 154, 0.45); }
-.badge.rumor, .badge.teoria { color: var(--amber); border-color: rgba(255, 194, 74, 0.55); border-style: dashed; }
+.badge.rumor, .badge.teoria, .badge.filtracion { color: var(--amber); border-color: rgba(255, 194, 74, 0.55); border-style: dashed; }
 .badge.pendiente { color: var(--muted); border-style: dotted; }
 .badge.nuevo { background: var(--flamingo); border-color: var(--flamingo); color: #23081a; }
 
@@ -926,7 +926,8 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     <div class="sec-head">
       <p class="eyebrow">06 · Mapa</p>
       <h2 id="h-mapa">El estado de <em>Leonida</em></h2>
-      <p class="lede">Más de 100 lugares con su fuente sobre el mapa de la comunidad <a href="https://map.gtadb.org" target="_blank" rel="noopener">GTADB</a>, con calles, barrios y más de 3.300 edificios identificados con su equivalente real en Florida. Filtra, marca lo que vayas descubriendo y comparte cualquier punto. Rockstar aún no ha publicado el mapa oficial: la base es un trabajo de fans y se irá afinando.</p>
+      <p class="lede">Más de 100 lugares con su fuente sobre el mapa de la comunidad <a href="https://map.gtadb.org" target="_blank" rel="noopener">GTADB</a>, con calles, barrios y más de 3.300 puntos de interés comparados con lugares reales de Florida. Filtra, marca lo que vayas descubriendo y comparte cualquier punto. La base es un trabajo de fans: un nombre confirmado no convierte sus coordenadas en oficiales.</p>
+      <p class="note" id="mapRevision">Mapa comunitario: consulta la fuente y la precisión de cada ubicación.</p>
     </div>
     <div class="map-grid">
       <div class="map-box" id="mapBox">
@@ -1340,11 +1341,12 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
 
   /* ---------------- Noticias ---------------- */
   var newsState = { cat: "Todas", est: "todas", q: "", limit: 8 };
-  var EST_LABEL = { oficial: "Oficial", prensa: "Prensa", rumor: "Rumor" };
+  var EST_LABEL = { oficial: "Oficial", prensa: "Prensa", rumor: "Rumor", filtracion: "Filtración" };
   function isNew(f) { var d = parseLocal(f); var y = startOfToday(); y.setDate(y.getDate() - 1); return d >= y; }
   function sortedNews() { return arr(DYN.noticias).slice().sort(function (a, b) { return a.fecha < b.fecha ? 1 : a.fecha > b.fecha ? -1 : 0; }); }
   function srcLinks(f) { return arr(f).map(function (s) { return '<a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.nombre) + "</a>"; }).join(" · "); }
   function renderSectionSources() {
+    if (BASE.mapa_revision && BASE.mapa_revision.texto) $("#mapRevision").textContent = BASE.mapa_revision.texto;
     Object.keys(BASE.fuentes_secciones || {}).forEach(function (id) {
       var head = document.querySelector('#' + id + ' .sec-head');
       if (!head) return;
@@ -1358,7 +1360,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     var cats = ["Todas"]; sortedNews().forEach(function (n) { if (cats.indexOf(n.categoria) < 0) cats.push(n.categoria); });
     if (cats.indexOf(newsState.cat) < 0) newsState.cat = "Todas";
     $("#newsCats").innerHTML = cats.map(function (c) { return '<button class="chip" type="button" data-c="' + esc(c) + '" aria-pressed="' + (c === newsState.cat) + '">' + esc(c) + "</button>"; }).join("");
-    var ests = [["todas", "Todo"], ["oficial", "Solo oficial"], ["prensa", "Prensa"], ["rumor", "Rumores"]];
+    var ests = [["todas", "Todo"], ["oficial", "Solo oficial"], ["prensa", "Prensa"], ["rumor", "Rumores"], ["filtracion", "Filtraciones"]];
     $("#newsStates").innerHTML = ests.map(function (e) { return '<button class="chip" type="button" data-e="' + e[0] + '" aria-pressed="' + (e[0] === newsState.est) + '">' + e[1] + "</button>"; }).join("");
   }
   function renderNews() {
@@ -1404,7 +1406,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
       var d = parseLocal(e.fecha), end = parseLocal(e.fin || e.fecha);
       var cls = end < today ? "past" : (d <= today && end >= today ? "today" : "");
       var days = Math.round((d - today) / 86400000);
-      var rel = d <= today && end >= today ? "Hoy" : days === 1 ? "Mañana" : days > 1 ? "En " + days + " días" : "";
+      var rel = d < today && end >= today ? "En curso · Hasta " + fmtDay.format(end) + " " + mon(end) : d <= today && end >= today ? "Hoy" : days === 1 ? "Mañana" : days > 1 ? "En " + days + " días" : "";
       return '<li class="' + cls + '"><div class="ev-date"><b>' + fmtDay.format(d) + "</b>" + esc(mon(d)) + '</div><div><div class="ev-title">' + esc(e.titulo) + '</div><div class="ev-sub">' + esc(e.lugar || "") + (rel ? " · " + rel : "") + (e.estado === "rumor" ? ' · <span class="badge rumor">Rumor</span>' : "") + "</div></div></li>";
     }).join("");
   }

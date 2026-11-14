@@ -174,7 +174,7 @@
    "visto": "Tráilers 1 y 2, Extended Look",
    "fuentes": [
     {
-     "nombre": "Rockstar: personajes de Leonida",
+     "nombre": "Rockstar: perfil oficial",
      "url": "https://www.rockstargames.com/VI/only-in-leonida"
     }
    ]
@@ -193,7 +193,7 @@
    "visto": "Tráilers 1 y 2, Extended Look",
    "fuentes": [
     {
-     "nombre": "Rockstar: personajes de Leonida",
+     "nombre": "Rockstar: perfil oficial",
      "url": "https://www.rockstargames.com/VI/only-in-leonida"
     }
    ]
@@ -212,7 +212,7 @@
    "visto": "Tráiler 2",
    "fuentes": [
     {
-     "nombre": "Rockstar: personajes de Leonida",
+     "nombre": "Rockstar: perfil oficial",
      "url": "https://www.rockstargames.com/VI/only-in-leonida"
     }
    ]
@@ -232,7 +232,7 @@
    "visto": "Tráiler 2",
    "fuentes": [
     {
-     "nombre": "Rockstar: personajes de Leonida",
+     "nombre": "Rockstar: perfil oficial",
      "url": "https://www.rockstargames.com/VI/only-in-leonida"
     }
    ]
@@ -251,7 +251,7 @@
    "visto": "Tráiler 2",
    "fuentes": [
     {
-     "nombre": "Rockstar: personajes de Leonida",
+     "nombre": "Rockstar: perfil oficial",
      "url": "https://www.rockstargames.com/VI/only-in-leonida"
     }
    ]
@@ -271,7 +271,7 @@
    "visto": "Tráiler 2",
    "fuentes": [
     {
-     "nombre": "Rockstar: personajes de Leonida",
+     "nombre": "Rockstar: perfil oficial",
      "url": "https://www.rockstargames.com/VI/only-in-leonida"
     }
    ]
@@ -290,7 +290,7 @@
    "visto": "Tráiler 2",
    "fuentes": [
     {
-     "nombre": "Rockstar: personajes de Leonida",
+     "nombre": "Rockstar: perfil oficial",
      "url": "https://www.rockstargames.com/VI/only-in-leonida"
     }
    ]
@@ -310,7 +310,7 @@
    "visto": "Tráiler 2",
    "fuentes": [
     {
-     "nombre": "Rockstar: personajes de Leonida",
+     "nombre": "Rockstar: perfil oficial",
      "url": "https://www.rockstargames.com/VI/only-in-leonida"
     }
    ]
@@ -571,11 +571,21 @@
     "Más de 600.000 animaciones: diez veces las de GTA V.",
     "El ciclo de día y noche es bastante más largo que en GTA V y las carreteras, más estrechas.",
     "Muchos más interiores accesibles, con aspecto de casas habitadas.",
-    "El clima se forma por el mapa: verás tormentas a lo lejos, y el viento, la humedad, la niebla y la estación cuentan. Las calles mojadas se secan a distinto ritmo.",
+    "Game Informer describe tormentas localizadas, superficies que conservan la humedad, arcoíris y huracanes estacionales. No concreta aquí su frecuencia ni efectos sobre la historia.",
     "Más de 170 especies animales en tierra, mar y aire.",
     "Autobuses y trenes funcionan: puedes usarlos como viaje rápido.",
     "Eventos emergentes: un rival puede robar la tienda que ibas a atracar, o un cliente puede intervenir en un atraco.",
     "Más variedad de cuerpos entre los peatones que en cualquier juego anterior."
+   ],
+   "fuentes": [
+    {
+     "nombre": "Game Informer: tormentas y huracanes",
+     "url": "https://gameinformer.com/exclusive/2026/09/29/exclusive-grand-theft-auto-vi-features-tropical-storms-and-hurricanes"
+    },
+    {
+     "nombre": "Game Informer: entrevista sobre la fauna",
+     "url": "https://gameinformer.com/exclusive/2026/09/29/exclusive-grand-theft-auto-vi-includes-over-170-animal-species"
+    }
    ]
   },
   {
@@ -623,7 +633,7 @@
    "nivel": "Básico",
    "tiempo": "5 min",
    "estado": "disponible",
-   "resumen": "Deja la consola lista para jugar el 19 a las 00:00 sin esperas.",
+   "resumen": "Precarga abierta: descarga el juego, comprueba el espacio y revisa las actualizaciones antes del desbloqueo.",
    "pasos": [
     "Abre el juego reservado en tu Biblioteca de PlayStation y comprueba la opción de descarga. Si compraste una caja con código, canjéalo cuando lo recibas; el envío y la recogida están previstos desde el 12 de noviembre.",
     "Libera espacio: hasta 212 GB. En una PS5 de 825 GB es casi un tercio del disco. Revisa Ajustes › Almacenamiento.",
@@ -634,7 +644,8 @@
    ],
    "consejos": [
     "Los nombres de los menús pueden variar un poco según la versión del sistema.",
-    "Actualiza el firmware antes del día 19 para no perder tiempo."
+    "Actualiza el firmware antes del día 19 para no perder tiempo.",
+    "Revisión del 14 de noviembre: la prensa recoge una actualización previa al estreno, sin notas oficiales verificadas aquí. Revisa la sección de actualizaciones de tu consola."
    ],
    "fuentes": [
     {
@@ -654,7 +665,7 @@
    "nivel": "Básico",
    "tiempo": "5 min",
    "estado": "disponible",
-   "resumen": "En Xbox la precarga se abrió a las 00:00 GMT del 10 de noviembre (01:00 en la península).",
+   "resumen": "Precarga abierta: descarga el juego, comprueba el espacio y revisa las actualizaciones antes del desbloqueo.",
    "pasos": [
     "Compra o reserva en Microsoft Store, o canjea el código de la caja desde la Tienda › Canjear.",
     "Libera hasta 212 GB. En una Series S de 512 GB eso es más de la mitad del espacio útil.",
@@ -664,7 +675,8 @@
     "Se desbloquea el 19 de noviembre a las 00:00, hora local."
    ],
    "consejos": [
-    "La ruta exacta de los menús puede cambiar con las actualizaciones del sistema."
+    "La ruta exacta de los menús puede cambiar con las actualizaciones del sistema.",
+    "Revisión del 14 de noviembre: la prensa recoge una actualización previa al estreno, sin notas oficiales verificadas aquí. Revisa la sección de actualizaciones de tu consola."
    ],
    "fuentes": [
     {
@@ -941,9 +953,13 @@
   },
   {
    "id": "huracanes",
-   "titulo": "¿Habrá huracanes?",
-   "estado": "teoria",
-   "texto": "Game Informer describe un clima que imita el lado menos soleado de Florida, con tormentas que se ven llegar, pero no nombra huracanes."
+   "titulo": "Huracanes en Leonida: lo confirmado y lo pendiente",
+   "estado": "confirmado",
+   "texto": "Corrección del 14 de noviembre: el artículo de Game Informer del 29 de septiembre sí menciona huracanes estacionales. No concreta con qué frecuencia ocurren ni cómo afectan a las misiones o a la historia.",
+   "fuente": {
+    "nombre": "Game Informer: tormentas y huracanes",
+    "url": "https://gameinformer.com/exclusive/2026/09/29/exclusive-grand-theft-auto-vi-features-tropical-storms-and-hurricanes"
+   }
   },
   {
    "id": "sitcom",
@@ -1370,11 +1386,15 @@
  "musica_extra": [
   {
    "titulo": "GTA VI: The Album",
-   "texto": "Álbum de canciones originales hecho con Atlantic Records: 34 temas, con seis sencillos ya publicados y el resto el día del lanzamiento. Tiene ediciones en vinilo y CD.",
+   "texto": "Álbum de 34 canciones originales con Atlantic Records, anunciado para el 19 de noviembre, con sencillos ya disponibles y ediciones en vinilo y CD. Hay sesiones de escucha en tiendas el día 18; consulta horarios y condiciones en el directorio oficial.",
    "fuentes": [
     {
      "nombre": "Rockstar: música",
      "url": "https://www.rockstargames.com/VI/music"
+    },
+    {
+     "nombre": "Atlantic Records: eventos y tiendas participantes",
+     "url": "https://listeningevents.gtavi-thealbum.com/"
     }
    ]
   },
@@ -1568,7 +1588,7 @@
   },
   {
    "q": "¿Cuánto ocupa?",
-   "a": "Rockstar indica hasta 212 GB, según el dispositivo. Comprueba el espacio disponible y el tamaño que indique tu consola.",
+   "a": "Rockstar indica hasta 212 GB según el dispositivo. Deja margen para las actualizaciones que indique tu consola; el tamaño de la precarga no fija el de los parches posteriores.",
    "fuentes": [
     {
      "nombre": "Rockstar: instalación",
@@ -1642,11 +1662,15 @@
   },
   {
    "q": "¿Cuándo estará el mapa oficial para imprimir?",
-   "a": "Rockstar lo anuncia para el 19 de noviembre. Nuestro mapa interactivo utiliza datos comunitarios y no es ese mapa oficial.",
+   "a": "Rockstar lo anuncia para el 19 de noviembre. Las imágenes atribuidas a un póster no sustituyen esa descarga. LeonidaDex utiliza cartografía comunitaria con posiciones orientativas.",
    "fuentes": [
     {
-     "nombre": "Rockstar: anuncio del mapa",
+     "nombre": "Rockstar: anuncio del mapa imprimible",
      "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10"
+    },
+    {
+     "nombre": "GamesRadar: procedencia y límites del póster",
+     "url": "https://www.gamesradar.com/games/grand-theft-auto/physical-gta-6-map-leaks-and-i-need-to-know-if-its-teasing-another-ufo-easter-egg/"
     }
    ]
   },
@@ -1661,6 +1685,26 @@
     {
      "nombre": "Rockstar: Justice",
      "url": "https://www.rockstargames.com/newswire/article/39ak8a12395591/grand-theft-auto-vi-original-score-by-justice"
+    }
+   ]
+  },
+  {
+   "q": "¿Qué cambia el parche 1.002.000 de GTA VI?",
+   "a": "La prensa informa de su descarga, pero no hemos verificado notas oficiales que detallen sus cambios. No confirma 60 fps, acceso anticipado ni nuevas funciones. Consulta la versión disponible en tu consola.",
+   "fuentes": [
+    {
+     "nombre": "ComicBook: actualización comunicada el 13 de noviembre",
+     "url": "https://comicbook.com/gaming/news/gta-6-update-patch-notes-1002000/"
+    }
+   ]
+  },
+  {
+   "q": "¿Dónde puedo escuchar The Album antes de su publicación?",
+   "a": "Atlantic Records anuncia eventos en tiendas el 18 de noviembre. El directorio incluye España; comprueba la ciudad, la hora y las condiciones con la tienda participante.",
+   "fuentes": [
+    {
+     "nombre": "Atlantic Records: eventos y tiendas participantes",
+     "url": "https://listeningevents.gtavi-thealbum.com/"
     }
    ]
   }
@@ -3502,7 +3546,7 @@
    "id": "guia-compra",
    "categoria": "Guía",
    "lectura": 4,
-   "fecha": "2026-11-12",
+   "fecha": "2026-11-14",
    "titulo": "Guía de compra: ediciones, precarga y a qué hora se juega",
    "entradilla": "Todo lo práctico para el día 19, sin letra pequeña.",
    "cuerpo": [
@@ -3544,6 +3588,9 @@
     },
     {
      "p": "El pack digital se ofrece con compras anteriores al 20 de noviembre. Comprueba siempre el importe y las condiciones en la tienda de tu región antes de pagar."
+    },
+    {
+     "p": "Después de la precarga, revisa las actualizaciones de la consola. La prensa informa de la versión 1.002.000, pero no hemos verificado notas oficiales: no atribuimos cambios concretos al parche."
     }
    ],
    "fuentes": [
@@ -3566,6 +3613,10 @@
     {
      "nombre": "Xbox Wire: horario y condiciones de streaming",
      "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/"
+    },
+    {
+     "nombre": "ComicBook: actualización comunicada el 13 de noviembre",
+     "url": "https://comicbook.com/gaming/news/gta-6-update-patch-notes-1002000/"
     }
    ]
   },
@@ -3799,6 +3850,65 @@
     {
      "nombre": "Rockstar Games: GTA VI",
      "url": "https://www.rockstargames.com/VI"
+    }
+   ]
+  },
+  {
+   "id": "mapa-oficial-y-comunidad",
+   "categoria": "Mapa",
+   "lectura": 3,
+   "fecha": "2026-11-14",
+   "titulo": "Mapa de Leonida: qué es oficial, qué es comunitario y qué falta por verificar",
+   "entradilla": "Cómo interpretar los marcadores de LeonidaDex sin confundir una reconstrucción, un póster y el mapa final.",
+   "cuerpo": [
+    {
+     "h": "Tres materiales con funciones distintas"
+    },
+    {
+     "p": "Rockstar ha anunciado una descarga imprimible para el 19 de noviembre. Hasta comprobar su publicación, no ofrecemos un enlace que prometa descargarla. El mapa interactivo de LeonidaDex utiliza la reconstrucción de GTADB: es una ayuda para explorar lo conocido y comparar referencias, con atribución y licencia."
+    },
+    {
+     "h": "Qué hemos comprobado el 14 de noviembre"
+    },
+    {
+     "p": "La capa de puntos contiene 3.307 registros y 128 áreas. Comparada con la copia anterior, no hay nuevos registros ni cambios en las coordenadas. No se ha sustituido la base cartográfica por fotografías de un póster."
+    },
+    {
+     "h": "Cómo leer un marcador"
+    },
+    {
+     "ul": [
+      "Que Rockstar nombre un lugar no convierte las coordenadas propuestas por la comunidad en una posición oficial.",
+      "Abre la ficha para consultar la fuente, el tipo de lugar y la indicación sobre su posición.",
+      "Una ubicación todavía sin coordenadas se conserva en la lista de lugares sin ubicar, en lugar de asignarle una posición inventada.",
+      "Usa el buscador y los filtros para explorar; las marcas de descubierto son tu seguimiento personal, no una validación del mapa final."
+     ]
+    },
+    {
+     "h": "Qué no demuestra una ilustración"
+    },
+    {
+     "p": "Un dibujo de un objeto extraño no prueba una misión, un coleccionable ni un secreto jugable. Los reportes sobre el posible póster se mantienen como filtración, separados de las fuentes oficiales y de las coordenadas comunitarias."
+    },
+    {
+     "h": "Qué cambiaremos cuando haya una fuente nueva"
+    },
+    {
+     "p": "Se podrán contrastar nombres y posiciones con material oficial publicado y comprobar la escala antes de adaptar los datos. Mantendremos la procedencia de cada capa. No borramos la distinción entre observaciones, interpretaciones y confirmaciones."
+    }
+   ],
+   "fuentes": [
+    {
+     "nombre": "Rockstar: anuncio del mapa imprimible",
+     "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10"
+    },
+    {
+     "nombre": "GTADB: mapa y colaboradores",
+     "url": "https://map.gtadb.org"
+    },
+    {
+     "nombre": "GamesRadar: procedencia y límites del póster",
+     "url": "https://www.gamesradar.com/games/grand-theft-auto/physical-gta-6-map-leaks-and-i-need-to-know-if-its-teasing-another-ufo-easter-egg/"
     }
    ]
   }
@@ -4112,8 +4222,8 @@
    "estado": "oficial",
    "nota": "Rey de Grassrivers; confirmado por Rockstar en Game Informer.",
    "fuente": {
-    "nombre": "eXputer (Game Informer)",
-    "url": "https://exputer.com/?p=444896"
+    "nombre": "Game Informer: entrevista sobre la fauna",
+    "url": "https://gameinformer.com/exclusive/2026/09/29/exclusive-grand-theft-auto-vi-includes-over-170-animal-species"
    }
   },
   {
@@ -4123,8 +4233,8 @@
    "estado": "oficial",
    "nota": "Se ve en bandadas desde el primer tráiler.",
    "fuente": {
-    "nombre": "eXputer (Game Informer)",
-    "url": "https://exputer.com/?p=444896"
+    "nombre": "Game Informer: entrevista sobre la fauna",
+    "url": "https://gameinformer.com/exclusive/2026/09/29/exclusive-grand-theft-auto-vi-includes-over-170-animal-species"
    }
   },
   {
@@ -4134,8 +4244,8 @@
    "estado": "oficial",
    "nota": "Habitual en muelles y costa.",
    "fuente": {
-    "nombre": "eXputer (Game Informer)",
-    "url": "https://exputer.com/?p=444896"
+    "nombre": "Game Informer: entrevista sobre la fauna",
+    "url": "https://gameinformer.com/exclusive/2026/09/29/exclusive-grand-theft-auto-vi-includes-over-170-animal-species"
    }
   },
   {
@@ -4145,8 +4255,8 @@
    "estado": "oficial",
    "nota": "Uno de los animales que estrena Rockstar en GTA VI.",
    "fuente": {
-    "nombre": "eXputer (Game Informer)",
-    "url": "https://exputer.com/?p=444896"
+    "nombre": "Game Informer: entrevista sobre la fauna",
+    "url": "https://gameinformer.com/exclusive/2026/09/29/exclusive-grand-theft-auto-vi-includes-over-170-animal-species"
    }
   },
   {
@@ -4156,8 +4266,8 @@
    "estado": "oficial",
    "nota": "Especie invasora, como en la Florida real.",
    "fuente": {
-    "nombre": "TweakTown",
-    "url": "https://www.tweaktown.com/news/113817/rockstar-confirm-10-new-details-about-grand-theft-auto-6-gameplay/index.html"
+    "nombre": "Game Informer: entrevista sobre la fauna",
+    "url": "https://gameinformer.com/exclusive/2026/09/29/exclusive-grand-theft-auto-vi-includes-over-170-animal-species"
    }
   },
   {
@@ -4167,8 +4277,8 @@
    "estado": "oficial",
    "nota": "Otra especie invasora confirmada.",
    "fuente": {
-    "nombre": "TweakTown",
-    "url": "https://www.tweaktown.com/news/113817/rockstar-confirm-10-new-details-about-grand-theft-auto-6-gameplay/index.html"
+    "nombre": "Game Informer: entrevista sobre la fauna",
+    "url": "https://gameinformer.com/exclusive/2026/09/29/exclusive-grand-theft-auto-vi-includes-over-170-animal-species"
    }
   },
   {
@@ -4178,8 +4288,8 @@
    "estado": "oficial",
    "nota": "Monos introducidos, como los de algunos parques de Florida.",
    "fuente": {
-    "nombre": "TweakTown",
-    "url": "https://www.tweaktown.com/news/113817/rockstar-confirm-10-new-details-about-grand-theft-auto-6-gameplay/index.html"
+    "nombre": "Game Informer: entrevista sobre la fauna",
+    "url": "https://gameinformer.com/exclusive/2026/09/29/exclusive-grand-theft-auto-vi-includes-over-170-animal-species"
    }
   },
   {
@@ -4200,8 +4310,8 @@
    "estado": "oficial",
    "nota": "Citado por Rockstar en el reportaje de Game Informer.",
    "fuente": {
-    "nombre": "eXputer (Game Informer)",
-    "url": "https://exputer.com/?p=444896"
+    "nombre": "Game Informer: entrevista sobre la fauna",
+    "url": "https://gameinformer.com/exclusive/2026/09/29/exclusive-grand-theft-auto-vi-includes-over-170-animal-species"
    }
   },
   {
@@ -4231,10 +4341,10 @@
    "nombre": "Más de 170 especies",
    "tipo": "Resumen",
    "estado": "oficial",
-   "nota": "Unas 60 aves, más de 30 mamíferos terrestres, peces y reptiles. Algunos animales se podrán rastrear y se clasifican como raros, descubribles o legendarios.",
+   "nota": "Game Informer recoge más de 170 especies terrestres, aéreas y marinas. Algunas se podrán rastrear como raras, descubribles o legendarias; no publica sus identidades ni sus posiciones.",
    "fuente": {
-    "nombre": "TweakTown",
-    "url": "https://www.tweaktown.com/news/113817/rockstar-confirm-10-new-details-about-grand-theft-auto-6-gameplay/index.html"
+    "nombre": "Game Informer: entrevista sobre la fauna",
+    "url": "https://gameinformer.com/exclusive/2026/09/29/exclusive-grand-theft-auto-vi-includes-over-170-animal-species"
    }
   },
   {
@@ -4425,5 +4535,9 @@
     "url": "https://www.rockstargames.com/VI/launch-gallery"
    }
   ]
+ },
+ "mapa_revision": {
+  "fecha": "2026-11-14",
+  "texto": "Revisión del 14 de noviembre: la capa GTADB conserva 3.307 puntos y 128 áreas; no se han detectado altas ni cambios de coordenadas. El supuesto póster difundido en redes no se ha utilizado para mover marcadores. La posición de un punto comunitario no es una confirmación de Rockstar."
  }
 }

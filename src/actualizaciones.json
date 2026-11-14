@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-11-12T12:54:47+01:00",
+    "actualizado": "2026-11-14T12:30:44+01:00",
     "lanzamiento": "2026-11-19T00:00:00",
     "nota_lanzamiento": "Medianoche hora local · PS5 y Xbox Series X|S",
     "fase": "prelanzamiento",
@@ -85,6 +85,18 @@
       "estado": "oficial"
     },
     {
+      "fecha": "2026-11-18",
+      "titulo": "Escuchas anticipadas de GTA VI: The Album",
+      "lugar": "Tiendas participantes · Consulta horario y acceso",
+      "estado": "oficial",
+      "fuentes": [
+        {
+          "nombre": "Atlantic Records: eventos y tiendas participantes",
+          "url": "https://listeningevents.gtavi-thealbum.com/"
+        }
+      ]
+    },
+    {
       "fecha": "2026-11-19",
       "titulo": "Lanzamiento mundial de GTA VI a las 00:00 de tu hora local",
       "lugar": "PS5 y Xbox Series X|S",
@@ -148,11 +160,63 @@
   ],
   "noticias": [
     {
+      "id": "actualizacion-1002-antes-estreno",
+      "fecha": "2026-11-13",
+      "categoria": "Técnica",
+      "estado": "prensa",
+      "destacada": true,
+      "titulo": "La prensa informa de una actualización de GTA VI antes del estreno",
+      "resumen": "ComicBook recoge la versión 1.002.000 y una descarga aproximada de 1 GB en PS5. No aporta notas oficiales del parche. No damos por confirmados sus cambios, un tamaño universal ni nuevos modos de juego. Revisa las actualizaciones que ofrezca tu consola: precargar o instalar un parche no adelanta el desbloqueo.",
+      "fuentes": [
+        {
+          "nombre": "ComicBook: actualización comunicada el 13 de noviembre",
+          "url": "https://comicbook.com/gaming/news/gta-6-update-patch-notes-1002000/"
+        },
+        {
+          "nombre": "Rockstar: horarios de desbloqueo",
+          "url": "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s"
+        }
+      ]
+    },
+    {
+      "id": "poster-mapa-filtrado-noviembre",
+      "fecha": "2026-11-12",
+      "categoria": "Mapa",
+      "estado": "filtracion",
+      "destacada": true,
+      "titulo": "El supuesto póster de Leonida no equivale al mapa jugable definitivo",
+      "resumen": "GamesRadar recoge imágenes de un póster atribuido a un expositor de Selfridges y advierte de otra imagen de autenticidad dudosa. La ilustración no detalla toda la red de carreteras. No copiamos sus posiciones al mapa interactivo ni interpretamos sus dibujos como secretos confirmados. El mapa imprimible anunciado por Rockstar para el día 19 sigue siendo una publicación distinta pendiente de comprobar.",
+      "fuentes": [
+        {
+          "nombre": "GamesRadar: procedencia y límites del póster",
+          "url": "https://www.gamesradar.com/games/grand-theft-auto/physical-gta-6-map-leaks-and-i-need-to-know-if-its-teasing-another-ufo-easter-egg/"
+        },
+        {
+          "nombre": "Rockstar: anuncio del mapa imprimible",
+          "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10"
+        }
+      ]
+    },
+    {
+      "id": "the-album-escuchas-18nov",
+      "fecha": "2026-11-12",
+      "categoria": "Música",
+      "estado": "oficial",
+      "destacada": true,
+      "titulo": "The Album tendrá escuchas anticipadas el 18 de noviembre, también en España",
+      "resumen": "Atlantic Records anuncia sesiones de escucha de GTA VI: The Album el miércoles 18 de noviembre. Su directorio incluye España entre los países participantes. Consulta allí la tienda, horario y condiciones de cada evento; no presupongas entrada libre ni disponibilidad. Escuchar el disco no da acceso anticipado al videojuego.",
+      "fuentes": [
+        {
+          "nombre": "Atlantic Records: eventos y tiendas participantes",
+          "url": "https://listeningevents.gtavi-thealbum.com/"
+        }
+      ]
+    },
+    {
       "id": "vice-city-clip-only-in-dade",
       "fecha": "2026-11-12",
       "categoria": "Multimedia",
       "estado": "prensa",
-      "destacada": true,
       "titulo": "El nuevo clip de Vice City que parece una grabación de Miami",
       "resumen": "Vandal e Insider Gaming recogen un vídeo difundido el 11 de noviembre por Only in Dade y compartido por Rockstar en Instagram. Muestra coches y peatones desde un vehículo y desde la acera, recreando una promoción real de Miami. Lo recogemos como información de prensa: la secuencia no permite confirmar cómo funcionaría una cámara jugable ni identificar por nuestra cuenta a los personajes.",
       "fuentes": [
@@ -245,7 +309,6 @@
       "fecha": "2026-11-10",
       "categoria": "Lanzamiento",
       "estado": "oficial",
-      "destacada": false,
       "titulo": "Ya puedes precargar GTA VI",
       "resumen": "La precarga digital se abrió a medianoche (hora local) del 10 de noviembre en PS5 y a las 00:00 GMT en Xbox Series X|S, que en la España peninsular fue la 01:00. Necesitas hasta 212 GB libres, según la consola. Precargar no adelanta nada: el juego se desbloquea el 19 de noviembre a medianoche, hora local. Los jugadores de Nueva Zelanda fueron los primeros en empezar la descarga por la diferencia horaria.",
       "fuentes": [
@@ -460,7 +523,6 @@
       "fecha": "2026-10-27",
       "categoria": "Negocio",
       "estado": "prensa",
-      "destacada": false,
       "titulo": "Votación sindical en Rockstar del 12 al 26 de noviembre",
       "resumen": "La plantilla británica de Rockstar votará entre el 12 y el 26 de noviembre si reconoce al sindicato IWGB, un plazo que abarca el lanzamiento. Aparte, un tribunal de Glasgow revisa los despidos de 2025; los alegatos finales están previstos el 17 y 18 de noviembre.",
       "fuentes": [
@@ -515,7 +577,6 @@
       "fecha": "2026-10-13",
       "categoria": "Negocio",
       "estado": "prensa",
-      "destacada": false,
       "titulo": "Más de seis millones de reservas digitales",
       "resumen": "Sensor Tower calcula unas 6,08 millones de reservas digitales a 13 de octubre, con alrededor de 594 millones de dólares de ingresos: 74 % en PS5 y 26 % en Xbox. No incluye copias físicas ni son datos oficiales de Take-Two.",
       "fuentes": [
@@ -616,7 +677,6 @@
       "fecha": "2026-09-24",
       "categoria": "Negocio",
       "estado": "oficial",
-      "destacada": false,
       "titulo": "Xbox presume de récord de reservas",
       "resumen": "Ante informes que hablaban de una enorme ventaja de PS5, Matthew Ball, de Xbox, afirmó que GTA VI ya bate récords de reservas en su plataforma y que su cuota coincide con la del mercado de consolas. Sensor Tower estimaba un reparto del 77 % para PlayStation y el 23 % para Xbox.",
       "fuentes": [
@@ -671,7 +731,6 @@
       "fecha": "2026-09-07",
       "categoria": "Lanzamiento",
       "estado": "prensa",
-      "destacada": false,
       "titulo": "Se desbloquea a medianoche de cada país",
       "resumen": "Las fichas de la PlayStation Store muestran un lanzamiento escalonado a las 00:00 locales del 19 de noviembre: Nueva Zelanda abre primero y Centroamérica cierra la ronda unas 19 horas después. En la España peninsular, a las 00:00 del jueves 19. Rockstar no ha detallado horarios de Xbox.",
       "fuentes": [
@@ -726,7 +785,6 @@
       "fecha": "2026-08-28",
       "categoria": "Técnica",
       "estado": "prensa",
-      "destacada": false,
       "titulo": "30 fps en consolas, también en PS5 Pro (de momento)",
       "resumen": "Rob Nelson, de Rockstar North, explicó en un avance que el juego funciona a 30 imágenes por segundo en consolas durante el desarrollo y que aún deben decidir si habrá un modo de 60. El Extended Look se grabó en una PS5 estándar a esa tasa.",
       "fuentes": [
@@ -745,7 +803,6 @@
       "fecha": "2026-08-28",
       "categoria": "Negocio",
       "estado": "prensa",
-      "destacada": false,
       "titulo": "Las reservas se disparan tras el Extended Look",
       "resumen": "Según Sensor Tower, las reservas del 27 de agosto superaron en más de un 570 % la media diaria reciente, con un salto mucho mayor en PlayStation que en Xbox. El vídeo llegó a ser lo más visto en la lista de películas de Netflix.",
       "fuentes": [
@@ -778,7 +835,6 @@
       "fecha": "2026-08-26",
       "categoria": "Oficial",
       "estado": "oficial",
-      "destacada": false,
       "titulo": "Rockstar rompe el silencio: «casi terminado»",
       "resumen": "Rockstar calificó las filtraciones de desgarradoras para su equipo, pidió perdón por lo larga que ha sido la espera y aseguró que el juego está casi listo. Confirmó que la fecha del 19 de noviembre no cambia y pidió a los fans que lo descubran jugando.",
       "fuentes": [
@@ -797,7 +853,6 @@
       "fecha": "2026-08-26",
       "categoria": "Jugabilidad",
       "estado": "oficial",
-      "destacada": false,
       "titulo": "Comer, entrenar y dormir cambiarán a Jason y Lucia",
       "resumen": "En el primer reportaje oficial, publicado por la revista Dazed, Rockstar North confirmó que la comida afecta al peso, el ejercicio marca músculo y la falta de sueño se nota en la cara. Vuelve así una idea de San Andreas, ampliada. También habrá redes sociales funcionales en el móvil.",
       "fuentes": [
@@ -816,7 +871,6 @@
       "fecha": "2026-08-18",
       "categoria": "Técnica",
       "estado": "prensa",
-      "destacada": false,
       "titulo": "Filtración masiva: «CyberLeek» publica vídeos de juego",
       "resumen": "Desde el 18 de agosto, un usuario o grupo llamado CyberLeek fue difundiendo clips de juego, capturas del mapa y parte del prólogo de Lucia, con marcas de agua de una criptomoneda. Take-Two pidió ante un tribunal de Nueva York datos a Microsoft y Discord para identificarle. Aquí no enlazamos ese material.",
       "fuentes": [
@@ -835,7 +889,6 @@
       "fecha": "2026-07-16",
       "categoria": "Negocio",
       "estado": "prensa",
-      "destacada": false,
       "titulo": "Newzoo: 260 millones en reservas digitales la primera semana",
       "resumen": "La consultora Newzoo estimó que las reservas digitales de GTA VI generaron unos 260 millones de dólares en su primera semana, la mayor apertura que ha observado. Calcula que la primera semana a la venta podría mover entre 3.250 y 5.200 millones.",
       "fuentes": [
@@ -854,7 +907,6 @@
       "fecha": "2026-06-30",
       "categoria": "Negocio",
       "estado": "prensa",
-      "destacada": false,
       "titulo": "La plantilla británica pide reconocer su sindicato antes del estreno",
       "resumen": "Trabajadores de los estudios de Rockstar en Reino Unido solicitaron el reconocimiento voluntario del sindicato IWGB, con el lanzamiento del 19 de noviembre como plazo. Piden más transparencia salarial, menos «crunch» y horarios más flexibles; se habló incluso de posibles huelgas.",
       "fuentes": [
@@ -891,7 +943,6 @@
       "fecha": "2026-06-24",
       "categoria": "Oficial",
       "estado": "oficial",
-      "destacada": false,
       "titulo": "«Se juega mejor en PS5», dicen Sony y Rockstar",
       "resumen": "Una entrada del PlayStation Blog firmada por Sony y Rockstar aseguró que GTA VI se jugará mejor en PS5, justo cuando se anunciaban las reservas. Es la señal más clara de la alianza comercial entre ambas compañías.",
       "fuentes": [
@@ -934,7 +985,6 @@
       "fecha": "2026-05-05",
       "categoria": "Negocio",
       "estado": "prensa",
-      "destacada": false,
       "titulo": "Take-Two deja entrever un acuerdo de marketing con PlayStation",
       "resumen": "El consejero delegado de Take-Two, Strauss Zelnick, se refirió a un acuerdo de marketing con Sony al hablar de GTA VI, y aclaró que no tiene que ver con que no haya versión de PC de salida. Ni Sony ni Rockstar lo han anunciado formalmente.",
       "fuentes": [
@@ -953,7 +1003,6 @@
       "fecha": "2026-02-03",
       "categoria": "Negocio",
       "estado": "oficial",
-      "destacada": false,
       "titulo": "Take-Two mantiene el 19 de noviembre y promete marketing en verano",
       "resumen": "En sus resultados trimestrales, Take-Two reafirmó la fecha y anunció que la campaña de lanzamiento empezaría en verano. Llegaba tras unas declaraciones de Jason Schreier (Bloomberg) en enero, según las cuales el juego aún no tenía todo su contenido terminado.",
       "fuentes": [
@@ -986,7 +1035,6 @@
       "fecha": "2025-10-31",
       "categoria": "Negocio",
       "estado": "prensa",
-      "destacada": false,
       "titulo": "Rockstar despide a más de 30 empleados y estalla la polémica sindical",
       "resumen": "Según Bloomberg, Rockstar despidió el 30 de octubre a entre 30 y 40 trabajadores de Reino Unido y Canadá que participaban en un chat sindical privado. El sindicato IWGB lo calificó de represalia; Take-Two lo negó y alegó falta grave por difundir información confidencial.",
       "fuentes": [
@@ -1005,7 +1053,6 @@
       "fecha": "2025-05-08",
       "categoria": "Curiosidad",
       "estado": "oficial",
-      "destacada": false,
       "titulo": "475 millones de visualizaciones en un día",
       "resumen": "Rockstar contó a The Hollywood Reporter que el segundo tráiler sumó más de 475 millones de visualizaciones entre todas las plataformas en 24 horas, por encima del tráiler de Deadpool y Lobezno. La canción del vídeo, «Hot Together» de The Pointer Sisters, disparó sus escuchas en Spotify.",
       "fuentes": [
@@ -1024,7 +1071,6 @@
       "fecha": "2025-05-06",
       "categoria": "Oficial",
       "estado": "oficial",
-      "destacada": false,
       "titulo": "Tráiler 2 por sorpresa, grabado en una PS5",
       "resumen": "Cuatro días después del retraso, Rockstar publicó sin aviso el segundo tráiler, centrado en Jason y Lucia. Según el estudio, mezcla a partes iguales juego y escenas cinemáticas, todo capturado en una PS5 estándar. La web oficial estrenó a la vez fichas de personajes y regiones.",
       "fuentes": [
@@ -1043,7 +1089,6 @@
       "fecha": "2025-05-02",
       "categoria": "Lanzamiento",
       "estado": "oficial",
-      "destacada": false,
       "titulo": "Primer retraso: 26 de mayo de 2026",
       "resumen": "Rockstar anunció que GTA VI no llegaría en 2025 y le puso por primera vez fecha concreta: 26 de mayo de 2026. El estudio pidió disculpas por la espera y explicó que necesitaba más tiempo para alcanzar el nivel de acabado que se espera de sus juegos.",
       "fuentes": [
@@ -1062,7 +1107,6 @@
       "fecha": "2024-05-16",
       "categoria": "Negocio",
       "estado": "oficial",
-      "destacada": false,
       "titulo": "Take-Two concreta: otoño de 2025",
       "resumen": "En su presentación de resultados, Take-Two acotó la salida de GTA VI al otoño de 2025, dentro del año que ya anunciaba el primer tráiler. Sería el primer plazo que acabaría cambiando.",
       "fuentes": [
@@ -1077,7 +1121,6 @@
       "fecha": "2023-12-21",
       "categoria": "Curiosidad",
       "estado": "prensa",
-      "destacada": false,
       "titulo": "El autor de la filtración de 2022, internado por orden judicial",
       "resumen": "Arion Kurtaj, miembro del grupo Lapsus$ que en septiembre de 2022 robó y publicó unos 90 vídeos de una versión temprana del juego, fue sometido por un tribunal británico a un internamiento hospitalario indefinido. Rockstar cifró el daño del ataque en unos 5 millones de dólares.",
       "fuentes": [
@@ -1096,7 +1139,6 @@
       "fecha": "2023-12-05",
       "categoria": "Curiosidad",
       "estado": "oficial",
-      "destacada": false,
       "titulo": "Récord Guinness: 90,4 millones de visitas en 24 horas",
       "resumen": "Guinness World Records reconoció al primer tráiler como la presentación de un videojuego más vista en YouTube en sus primeras 24 horas, con 90.421.491 reproducciones. También superó el récord de vídeo no musical que tenía MrBeast.",
       "fuentes": [
@@ -1115,7 +1157,6 @@
       "fecha": "2023-12-04",
       "categoria": "Oficial",
       "estado": "oficial",
-      "destacada": false,
       "titulo": "Tráiler 1: se filtra y Rockstar lo publica antes de tiempo",
       "resumen": "Una copia de baja calidad del tráiler apareció en redes la tarde del 4 de diciembre y Rockstar respondió subiendo el vídeo oficial unas 12-15 horas antes de lo previsto. El tráiler presentó a Lucia, Vice City y el año 2025 como fecha prevista, en PS5 y Xbox Series X|S, sin versión de PC.",
       "fuentes": [
@@ -1134,7 +1175,6 @@
       "fecha": "2023-11-08",
       "categoria": "Oficial",
       "estado": "oficial",
-      "destacada": false,
       "titulo": "Sam Houser anuncia el primer tráiler para diciembre",
       "resumen": "Con motivo de los 25 años de Rockstar, su presidente Sam Houser avanzó que el primer tráiler del próximo GTA llegaría a principios de diciembre. Días después, el estudio fijó el estreno para el 5 de diciembre.",
       "fuentes": [
@@ -1149,7 +1189,6 @@
       "fecha": "2022-02-04",
       "categoria": "Oficial",
       "estado": "oficial",
-      "destacada": false,
       "titulo": "Rockstar confirma que el nuevo GTA está en marcha",
       "resumen": "En una actualización de la comunidad de GTA Online, Rockstar confirmó por primera vez que el desarrollo de la siguiente entrega de la saga estaba «bien encaminado». No dio nombre ni plataformas: solo pidió seguir el Newswire para futuras novedades.",
       "fuentes": [
@@ -1218,6 +1257,39 @@
         {
           "nombre": "Rockstar: The Festival",
           "url": "https://www.rockstargames.com/VI/gtavi-thefestival"
+        }
+      ]
+    },
+    {
+      "id": "precarga-y-actualizaciones",
+      "titulo": "Precarga terminada: comprueba las actualizaciones",
+      "categoria": "Lanzamiento",
+      "nivel": "Básico",
+      "tiempo": "3 min",
+      "estado": "disponible",
+      "resumen": "Descargar los archivos y mantenerlos al día son pasos diferentes. Ninguno da acceso anticipado.",
+      "pasos": [
+        "Comprueba que la precarga ha terminado y que tienes espacio libre adicional para las actualizaciones que indique tu consola.",
+        "En PS5, selecciona GTA VI en la pantalla de inicio, pulsa Opciones y elige Buscar actualización.",
+        "En Xbox, abre Mis juegos y aplicaciones, Administrar y Actualizaciones. Instala solo lo que ofrezca la consola.",
+        "Si ves una versión distinta a la publicada en redes, no deduzcas contenido nuevo: los tamaños y el despliegue pueden variar. Aquí no hay notas oficiales verificadas de la 1.002.000.",
+        "Mantén la consola conectada si deseas descargas automáticas y comprueba el estado antes de jugar. El desbloqueo nativo sigue anunciado para el 19 a medianoche local."
+      ],
+      "consejos": [
+        "No compartas códigos de descarga ni instales supuestos parches externos. Los nombres de menú pueden variar con el sistema."
+      ],
+      "fuentes": [
+        {
+          "nombre": "PlayStation: actualizar juegos y aplicaciones",
+          "url": "https://www.playstation.com/es-es/support/hardware/playstation-system-software-application-version/"
+        },
+        {
+          "nombre": "Xbox: actualizar juegos y aplicaciones",
+          "url": "https://news.xbox.com/es-latam/2024/09/25/actualizacion-de-septiembre-de-xbox-modo-compacto-en-barra-de-juegos-actualizaciones-para-la-aplicacion-xbox-en-dispositivos-moviles-y-mas/"
+        },
+        {
+          "nombre": "ComicBook: actualización comunicada el 13 de noviembre",
+          "url": "https://comicbook.com/gaming/news/gta-6-update-patch-notes-1002000/"
         }
       ]
     }
