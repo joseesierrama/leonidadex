@@ -828,7 +828,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     <div class="sec-head">
       <p class="eyebrow">01 · Noticias</p>
       <h2 id="h-noticias">Lo último de <em>Vice City</em></h2>
-      <p class="lede">Cada noticia indica si viene de Rockstar o Take-Two (oficial), de la prensa que ha visto el juego o de rumores e insiders. Siempre con enlace a la fuente.</p>
+      <p class="lede">Cada noticia indica si viene de Rockstar o Take-Two (oficial), de la prensa, de la comunidad o de rumores e insiders. Siempre con enlace a la fuente.</p>
     </div>
     <div class="news-grid">
       <div>
@@ -1341,7 +1341,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
 
   /* ---------------- Noticias ---------------- */
   var newsState = { cat: "Todas", est: "todas", q: "", limit: 8 };
-  var EST_LABEL = { oficial: "Oficial", prensa: "Prensa", rumor: "Rumor", filtracion: "Filtración" };
+  var EST_LABEL = { oficial: "Oficial", prensa: "Prensa", rumor: "Rumor", filtracion: "Filtración", comunidad: "Comunidad" };
   function isNew(f) { var d = parseLocal(f); var y = startOfToday(); y.setDate(y.getDate() - 1); return d >= y; }
   function sortedNews() { return arr(DYN.noticias).slice().sort(function (a, b) { return a.fecha < b.fecha ? 1 : a.fecha > b.fecha ? -1 : 0; }); }
   function srcLinks(f) { return arr(f).map(function (s) { return '<a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.nombre) + "</a>"; }).join(" · "); }
@@ -1360,7 +1360,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     var cats = ["Todas"]; sortedNews().forEach(function (n) { if (cats.indexOf(n.categoria) < 0) cats.push(n.categoria); });
     if (cats.indexOf(newsState.cat) < 0) newsState.cat = "Todas";
     $("#newsCats").innerHTML = cats.map(function (c) { return '<button class="chip" type="button" data-c="' + esc(c) + '" aria-pressed="' + (c === newsState.cat) + '">' + esc(c) + "</button>"; }).join("");
-    var ests = [["todas", "Todo"], ["oficial", "Solo oficial"], ["prensa", "Prensa"], ["rumor", "Rumores"], ["filtracion", "Filtraciones"]];
+    var ests = [["todas", "Todo"], ["oficial", "Solo oficial"], ["prensa", "Prensa"], ["rumor", "Rumores"], ["filtracion", "Filtraciones"], ["comunidad", "Comunidad"]];
     $("#newsStates").innerHTML = ests.map(function (e) { return '<button class="chip" type="button" data-e="' + e[0] + '" aria-pressed="' + (e[0] === newsState.est) + '">' + e[1] + "</button>"; }).join("");
   }
   function renderNews() {

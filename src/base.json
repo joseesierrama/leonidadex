@@ -149,7 +149,7 @@
    },
    {
     "titulo": "La relación importa",
-    "texto": "Lo que sienten Jason y Lucia el uno por el otro puede cambiar según tus decisiones, en una escala de cuatro niveles. Pasar tiempo juntos (playa, bici, coche, gimnasio) los acerca."
+    "texto": "Lo que sienten Jason y Lucia el uno por el otro puede cambiar según tus decisiones, en una escala de cuatro niveles. Pasar tiempo juntos (playa, bici, coche, gimnasio) los acerca. Revisión del 16 de noviembre: según las declaraciones de Nelson recogidas por GamesRadar, la empatía está ligada a la historia y conserva la libertad del jugador. No deducimos finales concretos."
    },
    {
     "titulo": "Iban a ser cuatro",
@@ -543,7 +543,14 @@
     "En una huida a dos, puedes alternar entre conductor y pasajero; la IA controla al otro.",
     "La relación tiene cuatro niveles y cambia con tus decisiones, sin un sistema que te dé la lata.",
     "Puedes encontrarte con el otro protagonista mientras exploras y elegir pasar tiempo juntos.",
-    "Disfraces e identidades falsas para ciertos trabajos; Lucia tiene muchos peinados."
+    "Disfraces e identidades falsas para ciertos trabajos; Lucia tiene muchos peinados.",
+    "Nelson describe mecanismos que favorecen la empatía para quienes quieran implicarse, sin eliminar la libertad de jugar. Declaraciones recogidas por GamesRadar en noviembre; no anuncian un número de finales."
+   ],
+   "fuentes": [
+    {
+     "nombre": "GamesRadar: declaraciones de Rob Nelson a The Guardian",
+     "url": "https://www.gamesradar.com/games/grand-theft-auto/rockstar-knows-people-want-to-play-gta-6-for-the-chaos-but-the-studio-will-also-provide-mechanisms-that-encourage-empathy-for-the-first-time-in-a-gta/"
+    }
    ]
   },
   {
@@ -1386,7 +1393,7 @@
  "musica_extra": [
   {
    "titulo": "GTA VI: The Album",
-   "texto": "Álbum de 34 canciones originales con Atlantic Records, anunciado para el 19 de noviembre, con sencillos ya disponibles y ediciones en vinilo y CD. Hay sesiones de escucha en tiendas el día 18; consulta horarios y condiciones en el directorio oficial.",
+   "texto": "Álbum de 34 canciones originales con Atlantic Records, anunciado para el 19 de noviembre, con sencillos ya disponibles y ediciones en vinilo y CD. Hay sesiones de escucha en tiendas el día 18; consulta horarios y condiciones en el directorio oficial. Revisión del 16 de noviembre: circula una supuesta lista completa, todavía separada de los sencillos que se pueden verificar en la web de Rockstar.",
    "fuentes": [
     {
      "nombre": "Rockstar: música",
@@ -1395,6 +1402,10 @@
     {
      "nombre": "Atlantic Records: eventos y tiendas participantes",
      "url": "https://listeningevents.gtavi-thealbum.com/"
+    },
+    {
+     "nombre": "GamesRadar: supuesta lista de The Album",
+     "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-the-album-seemingly-leaks-with-dua-lipa-and-lana-del-rey-as-part-of-the-full-34-song-tracklist/"
     }
    ]
   },
@@ -1705,6 +1716,20 @@
     {
      "nombre": "Atlantic Records: eventos y tiendas participantes",
      "url": "https://listeningevents.gtavi-thealbum.com/"
+    }
+   ]
+  },
+  {
+   "q": "¿Está confirmada la lista completa filtrada de The Album?",
+   "a": "La recogemos como filtración. Comprueba los temas anunciados en la página oficial; una fotografía del vinilo no convierte toda su lista en confirmación. The Album, el score y las emisoras son distintos.",
+   "fuentes": [
+    {
+     "nombre": "GamesRadar: supuesta lista de The Album",
+     "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-the-album-seemingly-leaks-with-dua-lipa-and-lana-del-rey-as-part-of-the-full-34-song-tracklist/"
+    },
+    {
+     "nombre": "Rockstar: música y emisoras",
+     "url": "https://www.rockstargames.com/VI/music"
     }
    ]
   }
@@ -3857,7 +3882,7 @@
    "id": "mapa-oficial-y-comunidad",
    "categoria": "Mapa",
    "lectura": 3,
-   "fecha": "2026-11-14",
+   "fecha": "2026-11-16",
    "titulo": "Mapa de Leonida: qué es oficial, qué es comunitario y qué falta por verificar",
    "entradilla": "Cómo interpretar los marcadores de LeonidaDex sin confundir una reconstrucción, un póster y el mapa final.",
    "cuerpo": [
@@ -3868,10 +3893,10 @@
      "p": "Rockstar ha anunciado una descarga imprimible para el 19 de noviembre. Hasta comprobar su publicación, no ofrecemos un enlace que prometa descargarla. El mapa interactivo de LeonidaDex utiliza la reconstrucción de GTADB: es una ayuda para explorar lo conocido y comparar referencias, con atribución y licencia."
     },
     {
-     "h": "Qué hemos comprobado el 14 de noviembre"
+     "h": "Qué hemos comprobado el 16 de noviembre"
     },
     {
-     "p": "La capa de puntos contiene 3.307 registros y 128 áreas. Comparada con la copia anterior, no hay nuevos registros ni cambios en las coordenadas. No se ha sustituido la base cartográfica por fotografías de un póster."
+     "p": "La capa actual contiene 3.334 puntos y 136 áreas. Al compararla con la copia del 14 de noviembre hay 27 altas, ninguna baja y 68 registros revisados, de los que 14 cambian de coordenadas. La comparación resuelve el nombre de cada área antes de cotejar los registros: una reordenación de índices no se cuenta como cambio. No se ha sustituido la base cartográfica por fotografías de un póster."
     },
     {
      "h": "Cómo leer un marcador"
@@ -3909,6 +3934,69 @@
     {
      "nombre": "GamesRadar: procedencia y límites del póster",
      "url": "https://www.gamesradar.com/games/grand-theft-auto/physical-gta-6-map-leaks-and-i-need-to-know-if-its-teasing-another-ufo-easter-egg/"
+    },
+    {
+     "nombre": "GTADB: datos comunitarios de Leonida",
+     "url": "https://github.com/rolux/gtadb.org/blob/main/map/data/6/landmarks.json"
+    }
+   ]
+  },
+  {
+   "id": "evitar-spoilers",
+   "categoria": "Comunidad",
+   "lectura": 3,
+   "fecha": "2026-11-16",
+   "titulo": "Cómo explorar GTA VI sin que las redes te destripen la historia",
+   "entradilla": "Un plan sencillo para reducir revelaciones en recomendaciones, comentarios y chats. Ningún filtro bloquea todos los spoilers.",
+   "cuerpo": [
+    {
+     "h": "Acordad qué se puede contar"
+    },
+    {
+     "p": "Antes de compartir una captura o un audio, pregunta hasta dónde ha llegado la otra persona. No pongas giros, nombres de misiones tardías ni finales en la primera línea. Una advertencia no sirve si el propio título ya revela la sorpresa."
+    },
+    {
+     "h": "TikTok: filtra también lo que te recomiendan"
+    },
+    {
+     "p": "TikTok permite filtrar palabras clave y hashtags en distintos feeds. Revisa sus opciones de preferencias de contenido y prueba con GTA VI, GTA 6, spoiler y final. Marca No me interesa cuando una recomendación no encaje. Los filtros dependen del texto y de las opciones disponibles: una imagen o una palabra distinta puede escapar."
+    },
+    {
+     "h": "YouTube: corta las recomendaciones que no quieres"
+    },
+    {
+     "p": "En los menús de las recomendaciones puedes usar No me interesa o No recomendarme este canal. Entra a las páginas que ya hayas elegido en lugar de buscar giros o finales. Estas opciones ayudan a orientar recomendaciones; no garantizan ocultar todas las miniaturas ni los resultados."
+    },
+    {
+     "h": "Los comentarios y los chats también cuentan"
+    },
+    {
+     "ul": [
+      "Silencia temporalmente grupos donde no se respeten tus límites.",
+      "No abras una respuesta solo para comprobar si contiene un spoiler.",
+      "Pide que los amigos pregunten antes de contarte una misión.",
+      "Al compartir un enlace, comprueba también el título y la vista previa."
+     ]
+    },
+    {
+     "h": "Qué puedes consultar en LeonidaDex"
+    },
+    {
+     "p": "El mapa indica qué datos son comunitarios y las fichas de personajes enlazan su presentación oficial. Las noticias distinguen prensa, rumores y filtraciones. Eso no equivale a prometer que toda la web está libre de revelaciones: elige el apartado que necesitas y evita las piezas de historia o misterios si quieres descubrirlo todo jugando."
+    }
+   ],
+   "fuentes": [
+    {
+     "nombre": "TikTok: recomendaciones y filtros de palabras clave",
+     "url": "https://support.tiktok.com/es/using-tiktok/exploring-videos/how-tiktok-recommends-content"
+    },
+    {
+     "nombre": "YouTube: gestionar recomendaciones",
+     "url": "https://support.google.com/youtube/answer/6342839?hl=es"
+    },
+    {
+     "nombre": "Rockstar: presentación oficial",
+     "url": "https://www.rockstargames.com/VI"
     }
    ]
   }
@@ -4495,6 +4583,10 @@
    {
     "nombre": "Sinopsis oficial",
     "url": "https://www.rockstargames.com/VI"
+   },
+   {
+    "nombre": "GamesRadar: declaraciones de Rob Nelson a The Guardian",
+    "url": "https://www.gamesradar.com/games/grand-theft-auto/rockstar-knows-people-want-to-play-gta-6-for-the-chaos-but-the-studio-will-also-provide-mechanisms-that-encourage-empathy-for-the-first-time-in-a-gta/"
    }
   ],
   "personajes": [
@@ -4537,7 +4629,7 @@
   ]
  },
  "mapa_revision": {
-  "fecha": "2026-11-14",
-  "texto": "Revisión del 14 de noviembre: la capa GTADB conserva 3.307 puntos y 128 áreas; no se han detectado altas ni cambios de coordenadas. El supuesto póster difundido en redes no se ha utilizado para mover marcadores. La posición de un punto comunitario no es una confirmación de Rockstar."
+  "fecha": "2026-11-16",
+  "texto": "Revisión del 16 de noviembre: 3.334 puntos y 136 áreas de GTADB. Comparación con la copia del día 14: 27 altas, 68 registros revisados (14 con coordenadas distintas) y ninguna baja. Son datos comunitarios; no equivalen al mapa oficial ni confirman misiones o secretos."
  }
 }

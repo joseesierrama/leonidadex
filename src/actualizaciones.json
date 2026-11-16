@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-11-14T12:30:44+01:00",
+    "actualizado": "2026-11-16T09:49:50+01:00",
     "lanzamiento": "2026-11-19T00:00:00",
     "nota_lanzamiento": "Medianoche hora local · PS5 y Xbox Series X|S",
     "fase": "prelanzamiento",
@@ -160,11 +160,82 @@
   ],
   "noticias": [
     {
+      "id": "mapa-gtadb-revision-16nov",
+      "fecha": "2026-11-16",
+      "categoria": "Mapa",
+      "estado": "comunidad",
+      "destacada": true,
+      "titulo": "El mapa incorpora 27 puntos comunitarios y revisa 68 registros",
+      "resumen": "Nuestra comparación con GTADB suma 3.334 puntos y 136 áreas: 27 altas, ninguna baja y 68 registros modificados, de los que 14 cambian de coordenadas. Hay nuevas referencias en Port Vice City, La Perle y Ocean Beach. Son identificaciones comunitarias, no un nuevo mapa oficial de Rockstar. La base cartográfica mantiene su procedencia; no añadimos misiones ni secretos a partir de estos marcadores.",
+      "fuentes": [
+        {
+          "nombre": "GTADB: datos comunitarios de Leonida",
+          "url": "https://github.com/rolux/gtadb.org/blob/main/map/data/6/landmarks.json"
+        },
+        {
+          "nombre": "GTADB: mapa y licencia",
+          "url": "https://map.gtadb.org"
+        }
+      ]
+    },
+    {
+      "id": "the-album-lista-filtrada-16nov",
+      "fecha": "2026-11-16",
+      "categoria": "Música",
+      "estado": "filtracion",
+      "destacada": true,
+      "titulo": "Circula una supuesta lista de The Album: seguimos separándola de lo oficial",
+      "resumen": "GamesRadar recoge un vídeo de un vinilo que atribuye canciones a Dua Lipa, Lana Del Rey, Jennie y Zara Larsson. Lo tratamos como filtración: no incorporamos esa lista como confirmada al catálogo. La página de Rockstar permite comprobar los sencillos oficiales. The Album, el score de Justice y las emisoras del juego son contenidos distintos.",
+      "fuentes": [
+        {
+          "nombre": "GamesRadar: supuesta lista de The Album",
+          "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-the-album-seemingly-leaks-with-dua-lipa-and-lana-del-rey-as-part-of-the-full-34-song-tracklist/"
+        },
+        {
+          "nombre": "Rockstar: música y emisoras",
+          "url": "https://www.rockstargames.com/VI/music"
+        }
+      ]
+    },
+    {
+      "id": "cajas-codigo-comprobacion-16nov",
+      "fecha": "2026-11-16",
+      "categoria": "Compra",
+      "estado": "prensa",
+      "destacada": true,
+      "titulo": "Cajas con código: una prueba de GamesRadar matiza la alarma de las redes",
+      "resumen": "Dos redactores de GamesRadar probaron sus cajas de PS5 de Estados Unidos y Reino Unido y no pudieron leer el código desde fuera por su protección. El medio advierte de diferencias entre embalajes: dos pruebas no garantizan la seguridad de todas las cajas. Conserva el recibo, evita publicar fotos del código y consulta al vendedor si hay un problema de canje.",
+      "fuentes": [
+        {
+          "nombre": "GamesRadar: comprobación de dos cajas de PS5",
+          "url": "https://www.gamesradar.com/games/grand-theft-auto/we-tried-stealing-our-own-gta-6-physical-edition-codes-and-you-probably-shouldnt-worry-about-someone-getting-to-yours-first/"
+        },
+        {
+          "nombre": "Rockstar: ediciones y canje",
+          "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
+        }
+      ]
+    },
+    {
+      "id": "nelson-empatia-relacion-noviembre",
+      "fecha": "2026-11-15",
+      "categoria": "Jugabilidad",
+      "estado": "prensa",
+      "destacada": true,
+      "titulo": "Rob Nelson explica el papel de la empatía en la historia de Jason y Lucia",
+      "resumen": "GamesRadar recoge la entrevista de The Guardian: Nelson habla de mecanismos que favorecen la empatía para quien quiera implicarse y de acciones que afectan a la experiencia. También defiende conservar la libertad de jugar. Estas declaraciones no bastan para deducir un medidor de honor idéntico al de Red Dead Redemption 2 ni un número de finales.",
+      "fuentes": [
+        {
+          "nombre": "GamesRadar: declaraciones de Rob Nelson a The Guardian",
+          "url": "https://www.gamesradar.com/games/grand-theft-auto/rockstar-knows-people-want-to-play-gta-6-for-the-chaos-but-the-studio-will-also-provide-mechanisms-that-encourage-empathy-for-the-first-time-in-a-gta/"
+        }
+      ]
+    },
+    {
       "id": "actualizacion-1002-antes-estreno",
       "fecha": "2026-11-13",
       "categoria": "Técnica",
       "estado": "prensa",
-      "destacada": true,
       "titulo": "La prensa informa de una actualización de GTA VI antes del estreno",
       "resumen": "ComicBook recoge la versión 1.002.000 y una descarga aproximada de 1 GB en PS5. No aporta notas oficiales del parche. No damos por confirmados sus cambios, un tamaño universal ni nuevos modos de juego. Revisa las actualizaciones que ofrezca tu consola: precargar o instalar un parche no adelanta el desbloqueo.",
       "fuentes": [
@@ -183,7 +254,6 @@
       "fecha": "2026-11-12",
       "categoria": "Mapa",
       "estado": "filtracion",
-      "destacada": true,
       "titulo": "El supuesto póster de Leonida no equivale al mapa jugable definitivo",
       "resumen": "GamesRadar recoge imágenes de un póster atribuido a un expositor de Selfridges y advierte de otra imagen de autenticidad dudosa. La ilustración no detalla toda la red de carreteras. No copiamos sus posiciones al mapa interactivo ni interpretamos sus dibujos como secretos confirmados. El mapa imprimible anunciado por Rockstar para el día 19 sigue siendo una publicación distinta pendiente de comprobar.",
       "fuentes": [
@@ -202,7 +272,6 @@
       "fecha": "2026-11-12",
       "categoria": "Música",
       "estado": "oficial",
-      "destacada": true,
       "titulo": "The Album tendrá escuchas anticipadas el 18 de noviembre, también en España",
       "resumen": "Atlantic Records anuncia sesiones de escucha de GTA VI: The Album el miércoles 18 de noviembre. Su directorio incluye España entre los países participantes. Consulta allí la tienda, horario y condiciones de cada evento; no presupongas entrada libre ni disponibilidad. Escuchar el disco no da acceso anticipado al videojuego.",
       "fuentes": [
@@ -370,11 +439,15 @@
       "categoria": "Lanzamiento",
       "estado": "prensa",
       "titulo": "Llegan las cajas: código de descarga y póster de regalo",
-      "resumen": "La edición física no trae disco: incluye un código de descarga y estará a la venta desde el 12 de noviembre para que puedas precargar. Cada caja con código incluye un póster de doble cara. La trasera muestra un icono de funciones online, que apunta al futuro modo en línea.",
+      "resumen": "La noticia original recogía las primeras cajas con código y un póster. Revisión del 16 de noviembre: un icono impreso no confirma el lanzamiento ni las funciones de un nuevo modo online. La caja no contiene un disco; consulta el formato y el canje en el soporte oficial.",
       "fuentes": [
         {
           "nombre": "RockstarINTEL",
           "url": "https://rockstarintel.com/gta-6-box-copies-begin-arriving-reveals-online-feature-new-screenshots-and-more/"
+        },
+        {
+          "nombre": "Rockstar: formatos oficiales",
+          "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
         }
       ]
     },
@@ -1220,7 +1293,8 @@
         "Canjear y descargar no permite jugar antes del desbloqueo. Guarda el justificante y no publiques el código."
       ],
       "consejos": [
-        "Si el código falla, consulta al vendedor y al soporte de tu plataforma; no lo compartas en redes."
+        "Si el código falla, consulta al vendedor y al soporte de tu plataforma; no lo compartas en redes.",
+        "Revisión del 16 de noviembre: GamesRadar no pudo leer desde fuera el código de dos cajas con protección; no garantiza todos los embalajes. No publiques fotografías del código y conserva el justificante."
       ],
       "fuentes": [
         {
@@ -1234,6 +1308,10 @@
         {
           "nombre": "Xbox: canjear códigos",
           "url": "https://support.xbox.com/es-ES/help/subscriptions-billing/redeem-codes-gifting/redeem-prepaid-codes"
+        },
+        {
+          "nombre": "GamesRadar: comprobación de dos cajas de PS5",
+          "url": "https://www.gamesradar.com/games/grand-theft-auto/we-tried-stealing-our-own-gta-6-physical-edition-codes-and-you-probably-shouldnt-worry-about-someone-getting-to-yours-first/"
         }
       ]
     },
