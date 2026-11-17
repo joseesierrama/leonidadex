@@ -14,6 +14,7 @@ function setup({ choice = null, id = 'G-TEST123456', storageBlocked = false, dia
   const context = {
     document: {
       currentScript: { dataset: { ga4: id } }, cookie: '',
+      addEventListener(type, fn) { events['document:' + type] = fn; },
       head: { appendChild(tag) { tags.push(tag); } },
       createElement() { return {}; },
       querySelectorAll() { return [button]; },
@@ -75,4 +76,26 @@ test('empty ID disables measurement entirely', () => {
   const app = setup({ id: '' });
   assert.equal(app.tags.length, 0);
   assert.equal(app.dialog.open, false);
+});
+
+test('interactions are discarded before consent, after rejection and after withdrawal', () => {
+  const app = setup();
+  const track = () => app.context.leonidaTrack('ld_quiz_complete', { content_id: 'regiones', score: 3 });
+  const count = () => app.context.dataLayer.filter(x => x[0] === 'event').length;
+  track(); assert.equal(count(), 0);
+  app.events.privacyReject(); track(); assert.equal(count(), 0);
+  app.events.privacyAccept(); track(); assert.equal(count(), 1);
+  app.events.privacyReject(); track(); assert.equal(count(), 1);
+});
+
+test('only known events and bounded quiz values are sent; no free text is collected', () => {
+  const app = setup({ choice: { analytics: true, at: Date.now() } });
+  app.context.leonidaTrack('unknown', { email: 'private@example.invalid' });
+  app.context.leonidaTrack('ld_quiz_complete', { content_id: 'regiones', score: 100, search: 'private text' });
+  const events = app.context.dataLayer.filter(x => x[0] === 'event');
+  assert.equal(events.length, 1);
+  assert.equal(events[0][2].content_id, 'regiones');
+  assert.equal(events[0][2].total, 3);
+  assert.equal(events[0][2].score, undefined);
+  assert.equal(events[0][2].search, undefined);
 });

@@ -17,6 +17,7 @@ import re
 import shutil
 from site_support import analytics, footer as site_footer, head as site_head, info_pages, load_config, menu, privacy_ready, tiktok_link
 from content_validation import validate_content
+from promotion_pages import pages as promotion_pages
 
 ROOT = pathlib.Path(__file__).parent
 SRC = ROOT / "src"
@@ -145,6 +146,7 @@ def main():
     (OUT / "mapa" / "manifest.json").unlink()
     shutil.copy(SRC / "tiles" / "datos" / "gtadb-6.json", OUT / "datos" / "gtadb-6.json")
     urls.append((url, upd))
+    urls.extend(promotion_pages(shell, write, url, upd))
 
     # --- noticias ---
     news = sorted(dyn.get("noticias", []), key=lambda n: n.get("fecha", ""), reverse=True)

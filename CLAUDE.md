@@ -28,3 +28,9 @@ GitHub es la fuente de la versión vigente. Consulta la rama `main` actual antes
 4. Publica los cambios comprobados en GitHub. Un cambio en `main` ejecuta comprobaciones y la publicación en Pages. Comprueba que ambos trabajos terminen correctamente y verifica la web pública.
 
 La programación diaria debe estar configurada en la tarea de Claude. El flujo de este repositorio publica cambios y actualiza el mapa semanalmente; no ejecuta Claude ni genera noticias por sí solo. Este documento orienta a Claude cuando lo lea, pero no configura su tarea externa ni garantiza que esté activa.
+
+## Redes y retos
+
+- Conserva `promotion_pages.py`, los retos de `/retos/` y las entradas `/tiktok/` y `/youtube/`. Estas dos entradas añaden etiquetas UTM solo al llegar desde redes; no añadas UTM a enlaces internos.
+- Los eventos `ld_map_open`, `ld_character_open`, `ld_quiz_start` y `ld_quiz_complete` se envían únicamente con consentimiento de medición. No añadas textos de búsquedas, nombres o correos a sus parámetros.
+- El reto debe funcionar también cuando se rechaza la medición. Revisa las preguntas contra fuentes oficiales si cambian las fichas.
