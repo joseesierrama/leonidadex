@@ -4,7 +4,7 @@
   var script = document.currentScript;
   var id = script && script.dataset.ga4;
   if (!/^G-[A-Z0-9]{6,}$/.test(id || "")) return;
-  var key = "ld:consent:v1", lifetime = 180 * 86400000, loaded = false, opener;
+  var key = "ld:consent:v1", lifetime = 180 * 86400000, loaded = false, permitted = false, opener;
   var dialog = document.getElementById("privacyDialog");
   if (!dialog || typeof dialog.showModal !== "function") return;
   function read() {
@@ -18,6 +18,7 @@
   function gtag() { window.dataLayer.push(arguments); }
   gtag("consent", "default", { analytics_storage: "denied", ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied" });
   function start() {
+    permitted = true;
     if (loaded) return;
     loaded = true;
     gtag("consent", "update", { analytics_storage: "granted" });
@@ -28,6 +29,20 @@
     tag.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(id);
     document.head.appendChild(tag);
   }
+  // Fixed event names and bounded values: never send search text or personal fields.
+  window.leonidaTrack = function (name, values) {
+    if (!loaded || !permitted || ["ld_map_open", "ld_quiz_start", "ld_quiz_complete", "ld_character_open"].indexOf(name) < 0) return;
+    values = values || {};
+    var safe = {};
+    if (["regiones", "personajes", "mapa", "fichas"].indexOf(values.content_id) >= 0) safe.content_id = values.content_id;
+    if (Number.isInteger(values.score) && values.score >= 0 && values.score <= 3) safe.score = values.score;
+    if (name === "ld_quiz_complete") safe.total = 3;
+    gtag("event", name, safe);
+  };
+  document.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[data-ld-action]");
+    if (link) window.leonidaTrack(link.dataset.ldAction, { content_id: link.dataset.ldContent });
+  });
   function clearAnalyticsCookies() {
     var hostname = location.hostname;
     document.cookie.split(";").forEach(function (cookie) {
@@ -42,6 +57,7 @@
     });
   }
   function choose(accepted) {
+    permitted = accepted;
     try { localStorage.setItem(key, JSON.stringify({ analytics: accepted, at: Date.now() })); } catch (e) {}
     gtag("consent", "update", { analytics_storage: accepted ? "granted" : "denied" });
     if (accepted) start();
