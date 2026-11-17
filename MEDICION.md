@@ -33,3 +33,9 @@ Anota para el mismo periodo las sesiones por red, retos completados, aperturas d
 Las comprobaciones propias pueden aparecer como tráfico. Excluye las campañas cuyo nombre empiece por `qa_` al evaluar campañas reales. Los informes normales pueden tardar en incorporar los datos nuevos; usa Tiempo real para una primera comprobación.
 
 La configuración de consentimiento debe conservarse al actualizar la web. No actives anuncios solo por ver un ID de editor o un archivo ads.txt: antes se necesita la aprobación de AdSense y comprobar la integración publicitaria del consentimiento.
+
+## Resultados compartidos por los visitantes
+
+Al terminar un reto se puede preparar un mensaje para WhatsApp, abrir el menú de compartir del dispositivo si está disponible, o copiar la nota y el enlace. Ninguna opción envía mensajes automáticamente. El enlace abre directamente el reto de regiones o personajes mediante `reto`; la nota no viaja como parámetro de la URL.
+
+Para distinguir esas entradas, los enlaces externos compartidos usan la campaña `reto_copiloto` y las fuentes `whatsapp / messaging`, `compartir / referral` o `resultado_copiado / referral`. La fuente indica qué botón generó el enlace, no garantiza qué aplicación se usó después ni que se enviara un mensaje. Se mantienen los límites del consentimiento de Analytics.
