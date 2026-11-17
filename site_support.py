@@ -6,7 +6,7 @@ from hashlib import sha256
 from pathlib import Path
 
 E = html.escape
-MENU = [("", "Inicio"), ("noticias/", "Noticias"), ("reportajes/", "Reportajes"),
+MENU = [("", "Inicio"), ("retos/", "Retos"), ("noticias/", "Noticias"), ("reportajes/", "Reportajes"),
         ("personajes/", "Personajes"), ("leonida/", "Leonida"),
         ("preguntas-frecuentes/", "Preguntas frecuentes"), ("#mapa", "Mapa interactivo")]
 
@@ -91,7 +91,7 @@ def analytics(up, config):
         return ""
     return f'''<dialog class="privacy-dialog" id="privacyDialog" aria-labelledby="privacyTitle" aria-describedby="privacyDescription">
 <h2 id="privacyTitle">Tu privacidad</h2>
-<p id="privacyDescription">¿Permites que usemos Google Analytics para saber qué páginas resultan útiles? Es opcional. Puedes seguir usando la web si lo rechazas y cambiar tu decisión en el pie de página.</p>
+<p id="privacyDescription">¿Permites que usemos Google Analytics para saber qué páginas resultan útiles y si se usan los retos y el mapa? Es opcional. Puedes seguir usando la web si lo rechazas y cambiar tu decisión en el pie de página.</p>
 <p><a href="{E(up)}privacidad/">Política de privacidad</a> · <a href="{E(up)}cookies/">Cookies y almacenamiento</a></p>
 <div class="privacy-actions"><button type="button" id="privacyReject">Rechazar medición</button><button type="button" id="privacyAccept">Aceptar medición</button></div>
 <button class="privacy-close" id="privacyClose" type="button">Continuar sin decidir</button>
@@ -119,7 +119,7 @@ def info_pages(config):
         return pages
     owner = E(config["responsable"])
     analytics_info = (
-        '<p>Si aceptas la medición, Google Analytics recibe información sobre las páginas que visitas, el dispositivo y el uso del sitio. Se utiliza para mejorar la web. La base de este tratamiento es tu consentimiento; puedes retirarlo en «Preferencias de privacidad» del pie de página.</p>'
+        '<p>Si aceptas la medición, Google Analytics recibe información sobre las páginas que visitas, el dispositivo, la procedencia de campañas y el uso del sitio (apertura del mapa o de fichas, inicio y resultado numérico de retos). No enviamos respuestas escritas, nombres ni correos en estos eventos. Se utiliza para mejorar la web. La base de este tratamiento es tu consentimiento; puedes retirarlo en «Preferencias de privacidad» del pie de página.</p>'
         '<p>No se carga Analytics antes de aceptar. Rechazarlo permite seguir navegando. Las señales de Google y la personalización publicitaria se mantienen desactivadas en esta integración. Google puede tratar datos fuera del Espacio Económico Europeo conforme a sus condiciones y garantías aplicables.</p>'
         if config["ga4_id"] else '<p>Esta versión de LeonidaDex no carga Google Analytics ni una herramienta de medición de visitas propia.</p>')
     pages["privacidad"] = ("Política de privacidad", "Información sobre el tratamiento de datos en LeonidaDex.",
