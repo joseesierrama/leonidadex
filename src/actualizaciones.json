@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-11-16T09:49:50+01:00",
+    "actualizado": "2026-11-17T16:34:02+01:00",
     "lanzamiento": "2026-11-19T00:00:00",
     "nota_lanzamiento": "Medianoche hora local · PS5 y Xbox Series X|S",
     "fase": "prelanzamiento",
@@ -156,9 +156,90 @@
           "url": "https://www.rockstargames.com/newswire/article/39ak8a12395591/grand-theft-auto-vi-original-score-by-justice"
         }
       ]
+    },
+    {
+      "fecha": "2026-11-19",
+      "titulo": "Previo del directo de YouTube · 05:00 Península / 04:00 Canarias",
+      "lugar": "Canal de YouTube · Puede contener spoilers",
+      "estado": "oficial",
+      "fuentes": [
+        {
+          "nombre": "YouTube: anuncio del 12 de noviembre",
+          "url": "https://blog.youtube/news-and-events/youtube-rockstar-games-gta-vi-launch/"
+        }
+      ]
+    },
+    {
+      "fecha": "2026-11-19",
+      "titulo": "Comienza el directo de 24 horas · 06:00 Península / 05:00 Canarias",
+      "lugar": "YouTube y Rockstar · Gameplay y creadores",
+      "estado": "oficial",
+      "fuentes": [
+        {
+          "nombre": "YouTube: anuncio del 12 de noviembre",
+          "url": "https://blog.youtube/news-and-events/youtube-rockstar-games-gta-vi-launch/"
+        }
+      ]
     }
   ],
   "noticias": [
+    {
+      "id": "miami-vice-city-ap-17nov",
+      "fecha": "2026-11-17",
+      "categoria": "Comunidad",
+      "estado": "prensa",
+      "destacada": true,
+      "titulo": "Miami se convierte en escaparate de Vice City antes del estreno",
+      "resumen": "Associated Press describe hoy la campaña de GTA VI en Miami: publicidad en el Kaseya Center, murales en Wynwood y acciones en transporte y playa. También recoge la transformación de E11EVEN en NINE1NINE y su fiesta del viernes 20. Es información sobre la promoción en la ciudad real, no una confirmación de nuevas actividades o ubicaciones jugables.",
+      "fuentes": [
+        {
+          "nombre": "Associated Press: reportaje del 17 de noviembre",
+          "url": "https://apnews.com/article/1441b5de7d3f458ad08626193d645a46"
+        }
+      ]
+    },
+    {
+      "id": "preparar-noche-lanzamiento-17nov",
+      "fecha": "2026-11-17",
+      "categoria": "Lanzamiento",
+      "estado": "comunidad",
+      "destacada": true,
+      "titulo": "Ya tienes nuestra guía para preparar la noche de lanzamiento",
+      "resumen": "Una guía práctica de LeonidaDex para llegar con la descarga revisada, espacio disponible y el horario correcto de tu versión. Separa consola, streaming y directos; incluye una checklist y pasos iniciales si el juego no se abre. No añadimos supuestos parches, misiones ni requisitos sin confirmar.",
+      "fuentes": [
+        {
+          "nombre": "Leer la guía de LeonidaDex",
+          "url": "https://leonidadex.net/reportajes/noche-de-lanzamiento/"
+        },
+        {
+          "nombre": "Rockstar: horarios regionales",
+          "url": "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s"
+        },
+        {
+          "nombre": "Xbox Wire: acceso por la nube",
+          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/"
+        }
+      ]
+    },
+    {
+      "id": "youtube-directo-lanzamiento-12nov",
+      "fecha": "2026-11-12",
+      "categoria": "Comunidad",
+      "estado": "oficial",
+      "destacada": false,
+      "titulo": "YouTube y Rockstar preparan un directo de 24 horas: estos son los horarios de España",
+      "resumen": "YouTube anunció el 12 de noviembre una emisión global con Rockstar, gameplay y creadores como Rivers. El 19 de noviembre, el previo será a las 05:00 en la Península y 04:00 en Canarias; el directo principal, a las 06:00 y 05:00, respectivamente. Puede contener spoilers. Incorporamos el anuncio a nuestra cobertura el 17 de noviembre, conservando su fecha original.",
+      "fuentes": [
+        {
+          "nombre": "YouTube: anuncio del 12 de noviembre",
+          "url": "https://blog.youtube/news-and-events/youtube-rockstar-games-gta-vi-launch/"
+        },
+        {
+          "nombre": "Canal oficial de YouTube",
+          "url": "https://www.youtube.com/youtube"
+        }
+      ]
+    },
     {
       "id": "mapa-gtadb-revision-16nov",
       "fecha": "2026-11-16",
