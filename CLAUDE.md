@@ -34,3 +34,4 @@ La programación diaria debe estar configurada en la tarea de Claude. El flujo d
 - Conserva `promotion_pages.py`, los retos de `/retos/` y las entradas `/tiktok/` y `/youtube/`. Estas dos entradas añaden etiquetas UTM solo al llegar desde redes; no añadas UTM a enlaces internos.
 - Los eventos `ld_map_open`, `ld_character_open`, `ld_quiz_start` y `ld_quiz_complete` se envían únicamente con consentimiento de medición. No añadas textos de búsquedas, nombres o correos a sus parámetros.
 - El reto debe funcionar también cuando se rechaza la medición. Revisa las preguntas contra fuentes oficiales si cambian las fichas.
+- Conserva la apertura del reto con `?reto=regiones` o `?reto=personajes`, los botones para compartir el resultado y `src/assets/retos-social.jpg`. Solo el visitante elige destinatario y confirma un envío; no añadas envíos automáticos. Las etiquetas UTM de compartir se usan en enlaces externos, no en la navegación interna.

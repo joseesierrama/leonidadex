@@ -1,5 +1,7 @@
 """Retos propios y entradas identificadas desde las redes. Sin seguimiento adicional."""
 import html
+from hashlib import sha256
+from pathlib import Path
 
 def pages(shell, write, url, updated):
     css = '''<style>
@@ -11,14 +13,20 @@ def pages(shell, write, url, updated):
 <div class="quiz-modes" role="group" aria-label="Elegir reto"><button type="button" data-quiz-mode="regiones" aria-pressed="true">Regiones</button><button type="button" data-quiz-mode="personajes" aria-pressed="false">Personajes</button></div>
 <div class="quiz-scene" aria-hidden="true"><span>POSTAL ILUSTRADA · LEONIDADEX</span></div>
 <p class="eyebrow" id="quizProgress">Activa JavaScript para jugar</p><h2 id="quizQuestion" tabindex="-1">Elige tu reto</h2><div id="quizAnswers"></div><p class="quiz-feedback" id="quizFeedback" role="status" aria-live="polite"></p>
-<button type="button" class="btn btn-primary" id="quizNext" hidden>Siguiente pregunta</button><div id="quizResult" hidden><button type="button" class="btn btn-primary" id="quizCopy">Copiar mi resultado</button></div>
+<button type="button" class="btn btn-primary" id="quizNext" hidden>Siguiente pregunta</button><div id="quizResult" hidden><h3>Reta a tu grupo</h3><p>Comparte tu nota y que tus colegas prueben el mismo reto. Tú eliges el destinatario y confirmas el envío.</p><div class="quiz-share-actions"><button type="button" class="btn btn-primary" id="quizShare" hidden>Compartir mi resultado</button><a class="btn btn-primary" id="quizWhatsApp" target="_blank" rel="noopener noreferrer">Compartir por WhatsApp</a><button type="button" class="btn btn-ghost" id="quizCopy">Copiar mi resultado</button></div></div>
 <noscript><p>Para jugar necesitas JavaScript. Puedes consultar las <a href="../leonida/">regiones</a> y los <a href="../personajes/">personajes</a> sin activarlo.</p></noscript></section>
 <aside class="challenge-side" aria-label="Sigue explorando"><section class="challenge-card"><p class="eyebrow">01 · Explora</p><h2>Tu próxima parada</h2><p>Abre el mapa, busca un lugar y consulta su procedencia. Sus identificaciones comunitarias no son coordenadas oficiales de Rockstar.</p><a class="btn btn-primary" href="../#mapa" data-ld-action="ld_map_open" data-ld-content="mapa">Abrir el mapa</a></section>
 <section class="challenge-card"><p class="eyebrow">02 · Conoce al grupo</p><h2>¿Con quién te subes?</h2><p>Jason, Lucia, Cal y el resto. Fichas de presentación con enlaces a sus fuentes.</p><a class="btn btn-ghost" href="../personajes/" data-ld-action="ld_character_open" data-ld-content="fichas">Ver personajes</a></section></aside></div>
 <p class="challenge-note">Preguntas basadas en la presentación pública de <a href="https://www.rockstargames.com/VI/only-in-leonida" target="_blank" rel="noopener">personajes y lugares de Rockstar</a>. Las postales son ilustraciones propias, no capturas del juego. No necesitas registro ni aceptar la medición para jugar. El resultado se mantiene solo mientras usas esta página.</p>
 <script src="../assets/retos.js" defer></script>'''
     page_url = url + 'retos/'
-    write('retos/index.html', shell(1, 'Retos de GTA VI: regiones y personajes | LeonidaDex', 'Pon a prueba lo que sabes de Leonida con nuestros retos de regiones y personajes. Gratis, sin registro y sin spoilers de la historia.', page_url, css+body))
+    css = css.replace('</style>', '.quiz-share-actions{display:flex;gap:12px;flex-wrap:wrap}.quiz-share-actions .btn{max-width:100%;white-space:normal}#quizShare[hidden]{display:none}#quizResult h3{margin:8px 0}#quizResult p{line-height:1.6}</style>')
+    version = sha256((Path(__file__).parent / 'src/assets/retos.js').read_bytes()).hexdigest()[:12]
+    body = body.replace('src="../assets/retos.js"', 'src="../assets/retos.js?v='+version+'"')
+    text = shell(1, 'Retos de GTA VI: regiones y personajes | LeonidaDex', 'Pon a prueba lo que sabes de Leonida con nuestros retos de regiones y personajes. Gratis, sin registro y sin spoilers de la historia.', page_url, css+body)
+    text = text.replace(url+'assets/leonidadex-social.jpg', url+'assets/retos-social.jpg')
+    text = text.replace('LeonidaDex: el caimán de Leonida y la guía de GTA VI en español', 'El reto del copiloto de LeonidaDex: tres preguntas de GTA VI, regiones y personajes')
+    write('retos/index.html', text)
     urls=[(page_url,updated)]
     for source in ('tiktok','youtube'):
         target='../retos/?utm_source='+source+'&utm_medium=social&utm_campaign=leonida_retos&utm_content=perfil'

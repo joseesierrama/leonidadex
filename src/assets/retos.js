@@ -14,9 +14,23 @@
       { q: "Real Dimez es…", a: ["Un club", "Una emisora", "El dúo Bae-Luxe y Roxy"], correct: 2, note: "Rockstar presenta a Bae-Luxe y Roxy juntas como Real Dimez.", scene: "city" }
     ]
   };
-  var mode = "regiones", index = 0, score = 0, answered = false, started = false;
+  var requestedMode = new URLSearchParams(window.location.search).get("reto");
+  var mode = Object.prototype.hasOwnProperty.call(sets, requestedMode) ? requestedMode : "regiones";
+  var index = 0, score = 0, answered = false, started = false;
   var question = document.getElementById("quizQuestion"), answers = document.getElementById("quizAnswers");
   var feedback = document.getElementById("quizFeedback"), next = document.getElementById("quizNext");
+  var shareButton = document.getElementById("quizShare"), whatsapp = document.getElementById("quizWhatsApp");
+  function shareUrl(source) {
+    var url = new URL("https://leonidadex.net/retos/");
+    url.searchParams.set("reto", mode);
+    url.searchParams.set("utm_source", source);
+    url.searchParams.set("utm_medium", source === "whatsapp" ? "messaging" : "referral");
+    url.searchParams.set("utm_campaign", "reto_copiloto");
+    return url.href;
+  }
+  function resultText() { return "He sacado " + score + "/3 en el reto de " + mode + " de LeonidaDex. ¿Te vienes de copiloto o te quedas en el garaje?"; }
+  function chooseMode(button) { button.setAttribute("aria-pressed", String(button.dataset.quizMode === mode)); }
+  document.querySelectorAll("[data-quiz-mode]").forEach(chooseMode);
   function track(name, values) { if (typeof window.leonidaTrack === "function") window.leonidaTrack(name, values); }
   function draw() {
     var item = sets[mode][index];
@@ -51,6 +65,8 @@
     answers.replaceChildren(); next.hidden = true;
     feedback.textContent = "Prueba el otro reto o abre el mapa. Tus respuestas no se guardan en un perfil.";
     track("ld_quiz_complete", { content_id: mode, score: score });
+    whatsapp.href = "https://wa.me/?text=" + encodeURIComponent(resultText() + " " + shareUrl("whatsapp"));
+    shareButton.hidden = typeof navigator.share !== "function";
     document.getElementById("quizResult").hidden = false;
     question.focus();
   });
@@ -62,9 +78,15 @@
     });
   });
   document.getElementById("quizCopy").addEventListener("click", function () {
-    var text = "He sacado " + score + "/3 en el reto de " + mode + " de LeonidaDex. ¿Me superas? https://leonidadex.net/retos/";
+    var text = resultText() + " " + shareUrl("resultado_copiado");
     if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { feedback.textContent = "Resultado copiado. Tú eliges dónde compartirlo."; }).catch(function () { feedback.textContent = text; });
     else feedback.textContent = text;
+  });
+  shareButton.addEventListener("click", function () {
+    if (typeof navigator.share !== "function") return;
+    navigator.share({ title: "El reto del copiloto · LeonidaDex", text: resultText(), url: shareUrl("compartir") }).catch(function (error) {
+      if (error.name !== "AbortError") feedback.textContent = "No se ha podido abrir el menú de compartir. Puedes copiar el resultado o usar WhatsApp.";
+    });
   });
   draw();
 })();
