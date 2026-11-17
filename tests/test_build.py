@@ -34,7 +34,7 @@ class BuildTests(unittest.TestCase):
                 pages = list(output.rglob("*.html"))
                 base = json.loads((build.SRC / "base.json").read_text("utf-8"))
                 dyn = json.loads((build.SRC / "actualizaciones.json").read_text("utf-8"))
-                expected = len(base["articulos"]) + len(dyn.get("articulos_nuevos", [])) + 9
+                expected = len(base["articulos"]) + len(dyn.get("articulos_nuevos", [])) + 12
                 expected += 2 if privacy_ready(build.CONFIG) else 0
                 expected += 1 if legal_ready(build.CONFIG) else 0
                 self.assertEqual(len(pages), expected)
