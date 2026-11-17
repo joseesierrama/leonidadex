@@ -748,7 +748,8 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     <a class="brand" href="#inicio" aria-label="LeonidaDex.net, inicio"><img class="brand-icon" src="assets/caiman-192.png" width="36" height="36" alt=""><span class="b-word">LEONIDA</span><span class="b-script">Dex</span><span class="b-tld">.net</span></a>
     <nav class="nav" aria-label="Secciones">
       <a class="nav-top" href="#noticias">Noticias</a>
-      <a class="nav-top" href="#mapa">Mapa</a>
+      <a class="nav-top" href="retos/">Retos</a>
+      <a class="nav-top" href="#mapa" data-ld-action="ld_map_open" data-ld-content="mapa">Mapa</a>
       <div class="nav-grp"><button class="nav-top" type="button" aria-expanded="false" aria-controls="ng1">Guías <i aria-hidden="true">▾</i></button>
         <div class="nav-pop" id="ng1">
           <a href="#guias"><b>Guías</b><span>Paso a paso, listas y progreso</span></a>
@@ -801,8 +802,9 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
       <div class="cta">
         <a class="btn btn-primary" href="reportajes/noche-de-lanzamiento/">Prepara tu primera noche</a>
         <a class="btn btn-ghost" href="#noticias">Últimas noticias</a>
-        <a class="btn btn-ghost" href="#mapa">Explorar el mapa</a>
+        <a class="btn btn-ghost" href="#mapa" data-ld-action="ld_map_open" data-ld-content="mapa">Explorar el mapa</a>
         <a class="btn btn-ghost" href="#guias">Guías</a>
+        <a class="btn btn-ghost" href="retos/">¿Te vienes de copiloto? Haz el reto</a>
       </div>
     </div>
     <div class="count-card" role="group" aria-labelledby="countTitle">
@@ -2188,7 +2190,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
   });
   document.addEventListener("click", function (e) { if (!e.target.closest(".nav-grp")) closeNav(); if (e.target.closest(".nav-pop a")) closeNav(); });
   (function () {
-    var html = '<h4>Lo más visto</h4><div class="mm-grid"><a class="big" href="#noticias"><b>Noticias</b><span>Lo último, con fuente</span></a><a class="big" href="#mapa"><b>Mapa</b><span>100 lugares y 3.300 puntos</span></a></div>';
+    var html = '<h4>Lo más visto</h4><div class="mm-grid"><a class="big" href="retos/"><b>Retos</b><span>Juega con regiones y personajes</span></a><a class="big" href="#noticias"><b>Noticias</b><span>Lo último, con fuente</span></a><a class="big" href="#mapa" data-ld-action="ld_map_open" data-ld-content="mapa"><b>Mapa</b><span>100 lugares y 3.300 puntos</span></a></div>';
     $$(".nav-grp").forEach(function (g) { html += "<h4>" + esc(g.querySelector("button").textContent.replace("▾", "").trim()) + '</h4><div class="mm-grid">' + $$(".nav-pop a", g).map(function (a) { return '<a href="' + a.getAttribute("href") + '">' + a.innerHTML + "</a>"; }).join("") + "</div>"; });
     $("#mmenuBody").innerHTML = html;
   })();
