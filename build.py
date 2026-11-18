@@ -184,8 +184,12 @@ def main():
                 blocks.append("<ul>" + "".join(f"<li>{E(i)}</li>" for i in x["ul"]) + "</ul>")
             else:
                 blocks.append(f"<p>{E(x.get('p', ''))}</p>")
+        content = "".join(blocks)
+        if a.get("spoiler"):
+            content = (f'<details class="spoiler-gate"><summary>{E(a["spoiler"])}</summary>'
+                       f'{content}</details>')
         body = (f'<p class="crumbs"><a href="../../">LeonidaDex</a> › <a href="../">Reportajes</a></p><article class="prose"><span class="badge">{E(a.get("categoria", ""))}</span>'
-                f'<h1>{E(a["titulo"])}</h1><p class="lede">{E(a.get("entradilla", ""))}</p>{"".join(blocks)}{fuentes(a.get("fuentes"))}</article>')
+                f'<h1>{E(a["titulo"])}</h1><p class="lede">{E(a.get("entradilla", ""))}</p>{content}{fuentes(a.get("fuentes"))}</article>')
         u = url + f"reportajes/{a['id']}/"
         write(f"reportajes/{a['id']}/index.html", shell(2, f"{a['titulo']} | LeonidaDex", a.get("entradilla", ""), u, body,
                                                         {"@context": "https://schema.org", "@type": "Article", "headline": a["titulo"], "description": a.get("entradilla", ""), "datePublished": a.get("fecha", upd), "dateModified": a.get("actualizado", a.get("fecha", upd)), "inLanguage": "es",
