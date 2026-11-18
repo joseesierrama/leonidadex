@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-11-18T14:18:39+01:00",
+    "actualizado": "2026-11-18T19:34:08+01:00",
     "lanzamiento": "2026-11-19T00:00:00",
     "nota_lanzamiento": "Medianoche hora local · PS5 y Xbox Series X|S",
     "fase": "prelanzamiento",
@@ -197,6 +197,24 @@
     }
   ],
   "noticias": [
+    {
+      "id": "idiomas-gta6-soporte-20261118",
+      "fecha": "2026-11-18",
+      "titulo": "¿Doblaje en español? PlayStation distingue voces en inglés y textos en español",
+      "resumen": "La tabla oficial de PS5 incluye español de España y México como texto, con voces en inglés. Hemos preparado una explicación sin spoilers para evitar confundir traducción y doblaje.",
+      "categoria": "Guías",
+      "estado": "oficial",
+      "fuentes": [
+        {
+          "nombre": "PlayStation España · soporte oficial de GTA VI: idiomas",
+          "url": "https://www.playstation.com/es-es/support/games/gta-vi-support/"
+        },
+        {
+          "nombre": "LeonidaDex · explicación de idiomas",
+          "url": "https://leonidadex.net/reportajes/idiomas-gta6/"
+        }
+      ]
+    },
     {
       "id": "guia-trucos-contraste-18nov",
       "fecha": "2026-11-18",
@@ -1817,6 +1835,45 @@
   ],
   "mapa_lugares": [],
   "articulos_nuevos": [
+    {
+      "id": "idiomas-gta6",
+      "titulo": "¿GTA VI tiene doblaje en español? Voces, textos y subtítulos",
+      "entradilla": "La ficha oficial de PlayStation distingue el audio de los textos. Esto es lo que indica para PS5, con fuente directa y sin spoilers.",
+      "categoria": "Guías",
+      "lectura": 2,
+      "fecha": "2026-11-18",
+      "actualizado": "2026-11-18T19:34:08+01:00",
+      "cuerpo": [
+        {
+          "h": "Voces y texto son dos cosas distintas"
+        },
+        {
+          "p": "El soporte oficial de PlayStation lista inglés en la columna de voces. En texto incluye español de España y español de México. Esa tabla no anuncia doblaje en español para PS5."
+        },
+        {
+          "h": "Qué significa al empezar"
+        },
+        {
+          "ul": [
+            "Si buscas escuchar los diálogos en castellano o español latino, no confundas la traducción de los textos con un doblaje.",
+            "La referencia consultada corresponde a PS5. Esta guía no inventa rutas de menú ni presenta ajustes sin comprobar como instrucciones del juego.",
+            "Puedes consultar las fichas de personajes y el mapa de LeonidaDex sin leer nuestras soluciones de historia. Los artículos con spoilers mantienen sus detalles cerrados hasta que decidas abrirlos."
+          ]
+        },
+        {
+          "h": "Fuente y alcance de esta guía"
+        },
+        {
+          "p": "Consulta del 18 de noviembre de 2026. Resumimos la tabla del soporte oficial; no es una prueba propia de todas las configuraciones o plataformas. Si Sony o Rockstar cambian esa información, revisaremos esta página."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "PlayStation España · soporte oficial de GTA VI: idiomas",
+          "url": "https://www.playstation.com/es-es/support/games/gta-vi-support/"
+        }
+      ]
+    },
     {
       "id": "trucos-gta6-codigos-desbloqueo",
       "titulo": "Trucos de GTA VI: tres códigos contrastados y cómo desbloquearlos",
