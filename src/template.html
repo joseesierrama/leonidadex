@@ -740,6 +740,8 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
 @media (prefers-reduced-motion: reduce) { .tape .band span { transform: none; } }
 
 .review-spotlight{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;padding:28px;margin:0 0 32px;border:1px solid rgba(75,232,200,.4);border-radius:18px;background:linear-gradient(130deg,rgba(34,115,113,.2),rgba(225,93,144,.12))}.review-spotlight h3{font-size:clamp(1.5rem,3vw,2.15rem);line-height:1.15;margin:8px 0}.review-spotlight p{margin:8px 0 16px}.review-scores{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:8px 0 12px}.review-scores div{padding:14px 10px;border-radius:12px;background:rgba(0,0,0,.25);text-align:center}.review-scores dt{font-size:.75rem;line-height:1.4}.review-scores dd{margin:8px 0 0;font-size:2.4rem;font-weight:800;line-height:1;color:#81f1ce}.review-scores dd span{font-size:.85rem;color:inherit}.review-spotlight .note{font-size:.76rem;line-height:1.5}@media(max-width:700px){.review-spotlight{grid-template-columns:1fr;padding:20px;gap:14px}.review-scores{gap:6px}.review-scores dd{font-size:2rem}}
+
+.field-guides{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0 0 28px}.field-guides>p{grid-column:1/-1}.field-guides>a,.spoiler-gate{padding:18px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.035)}.field-guides>a{font-weight:700;line-height:1.5}.spoiler-gate{margin:24px 0}.spoiler-gate summary{cursor:pointer;font-weight:700;color:var(--flamingo);line-height:1.6}.spoiler-gate[open] summary{padding-bottom:16px;border-bottom:1px solid var(--line)}@media(max-width:600px){.field-guides{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -1048,8 +1050,9 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     <div class="sec-head">
       <p class="eyebrow">10 · Guías</p>
       <h2 id="h-guias">Guías <em>prácticas</em></h2>
-      <p class="lede">Ya disponibles las de preparación y las basadas en lo que Rockstar ha enseñado. Las de misiones, coleccionables y vehículos se irán completando desde el día del lanzamiento.</p>
+      <p class="lede">Guías de preparación y primeras soluciones de prensa. Los detalles de historia se abren con aviso de spoilers; cada contenido indica su fuente.</p>
     </div>
+    <div class="field-guides"><p class="eyebrow">Para tu partida · guías nuevas</p><a href="reportajes/trucos-gta6-codigos-desbloqueo/">Trucos y códigos →</a><a href="reportajes/actividad-perdible-capitulo-1/">Actividad del capítulo 1 · spoilers ocultos →</a><a href="reportajes/historia-no-avanza-capitulo-2/">¿No avanza la historia? · spoilers ocultos →</a><a href="reportajes/viaje-rapido-gta6-taxi/">Viaje rápido y taxi →</a></div>
     <div class="chips" id="guideCats" role="group" aria-label="Filtrar guías"></div>
     <div class="guides" id="guides"></div>
   </div>
@@ -1062,6 +1065,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
       <h2 id="h-mis">Registro de <em>misiones</em></h2>
       <p class="lede" id="misLede">No tenemos una lista oficial de misiones. Los títulos de las escenas de abajo son descriptivos: no indican nombres, orden ni recompensas confirmados. Añadiremos guías cuando puedan comprobarse.</p>
     </div>
+    <p class="note">¿Te has atascado? <a href="reportajes/historia-no-avanza-capitulo-2/">Consulta una condición de progreso del capítulo 2</a> · solución oculta hasta que decidas verla.</p>
     <div id="missions"></div>
   </div>
 </section>
@@ -1071,7 +1075,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     <div class="sec-head">
       <p class="eyebrow">12 · Trucos</p>
       <h2 id="h-trucos">Trucos y <em>códigos</em></h2>
-      <p class="lede">Los de GTA VI aparecerán aquí en cuanto se confirmen. Mientras, el archivo de GTA V y Vice City y un marcador para entender cómo funcionaban los trucos por teléfono.</p>
+      <p class="lede">Primeros códigos publicados por prensa, con fuentes y requisitos. El archivo de GTA V y Vice City está separado: sus códigos pertenecen a esos juegos.</p>
     </div>
     <div class="cheat-tabs" role="tablist" aria-label="Juego" id="cheatTabs">
       <button class="chip" role="tab" aria-selected="true" data-t="vi" type="button">GTA VI</button>
@@ -1109,6 +1113,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
       <h2 id="h-mist">Misterios y <em>detalles</em></h2>
       <p class="lede">Cada tarjeta indica si es un dato confirmado, una teoría de la comunidad o algo por descubrir cuando salga el juego.</p>
     </div>
+    <p class="warn-box"><strong>Un detalle que puedes pasar por alto.</strong> <a href="reportajes/actividad-perdible-capitulo-1/">Consulta la actividad temprana descrita por PowerPyx</a>. Los detalles están ocultos y la guía conserva las dudas de la fuente sobre el trofeo.</p>
     <div class="chips" id="mystTabs" role="group" aria-label="Filtrar misterios"></div>
     <div class="mysteries" id="mysteries"></div>
     <div class="tradition">
@@ -1504,7 +1509,8 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     var a = allArts().find(function (x) { return x.id === id; }); if (!a) return;
     lastFocus = document.activeElement;
     $("#readerBody").innerHTML = '<span class="badge">' + esc(a.categoria) + '</span><h2 id="readerTitle">' + esc(a.titulo) + '</h2><p class="ent">' + esc(a.entradilla) + "</p>" +
-      arr(a.cuerpo).map(function (x) { return x.h ? "<h4>" + esc(x.h) + "</h4>" : x.ul ? "<ul>" + x.ul.map(function (l) { return "<li>" + esc(l) + "</li>"; }).join("") + "</ul>" : "<p>" + esc(x.p) + "</p>"; }).join("") +
+      (a.spoiler ? '<details class="spoiler-gate"><summary>' + esc(a.spoiler) + '</summary>' : '') +
+      arr(a.cuerpo).map(function (x) { return x.h ? "<h4>" + esc(x.h) + "</h4>" : x.ul ? "<ul>" + x.ul.map(function (l) { return "<li>" + esc(l) + "</li>"; }).join("") + "</ul>" : "<p>" + esc(x.p) + "</p>"; }).join("") + (a.spoiler ? '</details>' : '') +
       '<p class="fuentes">Fuentes: ' + arr(a.fuentes).map(function (f) { return '<a href="' + esc(f.url) + '" target="_blank" rel="noopener">' + esc(f.nombre) + "</a>"; }).join(" · ") + "</p>";
     $("#reader").hidden = false; document.body.style.overflow = "hidden"; $("#readerClose").focus(); $("#reader").scrollTop = 0;
   }
@@ -2049,8 +2055,8 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     if (!t6.length) {
       $("#cheatVI").innerHTML = '<div class="zero"><div class="n">0</div><div><h3>Trucos confirmados de GTA VI</h3><p>Todavía no hay códigos de GTA VI verificados en LeonidaDex. Los añadiremos con su fuente cuando puedan comprobarse. El archivo de GTA V y Vice City corresponde a esos juegos.</p><p class="note">En GTA V los trucos no funcionaban online y desactivaban trofeos y logros durante esa partida.</p></div></div><div class="warn-box"><strong>Cuidado con las estafas.</strong> Desconfía de promesas de dinero ilimitado, generadores de claves o acceso anticipado sin respaldo de los canales oficiales. Nunca des tu cuenta ni instales nada para «desbloquear» trucos.</div>';
     } else {
-      $("#cheatVI").innerHTML = '<div class="cheat-scroll"><table class="c-table"><thead><tr><th>Efecto</th><th>PS5</th><th>Xbox</th><th>Otro</th></tr></thead><tbody>' + t6.map(function (c) {
-        return '<tr id="t6-' + esc(c.id) + '"><td><strong>' + esc(c.efecto) + "</strong>" + (c.notas ? '<br><span class="note">' + esc(c.notas) + "</span>" : "") + (c.fuente ? '<br><span class="src">Fuente: ' + srcLinks([c.fuente]) + "</span>" : "") + "</td><td><code>" + esc(c.ps5 || "—") + "</code></td><td><code>" + esc(c.xbox || "—") + "</code></td><td><code>" + esc(c.telefono || c.otro || "—") + "</code></td></tr>";
+      $("#cheatVI").innerHTML = '<div class="warn-box"><strong>Antes de usar códigos.</strong> La prensa sitúa el desbloqueo después de la historia. PowerPyx advierte de que se desactivan el guardado y los trofeos. Guarda antes de probar. <a href="reportajes/trucos-gta6-codigos-desbloqueo/">Ver requisitos y controles</a>.</div><p class="note">Secuencias contrastadas entre dos guías de prensa; sin prueba propia en consola.</p><div class="cheat-scroll"><table class="c-table"><thead><tr><th>Efecto</th><th>PS5</th><th>Xbox</th><th>Otro</th></tr></thead><tbody>' + t6.map(function (c) {
+        return '<tr id="t6-' + esc(c.id) + '"><td><strong>' + esc(c.efecto) + "</strong>" + (c.notas ? '<br><span class="note">' + esc(c.notas) + "</span>" : "") + (arr(c.fuentes).length || c.fuente ? '<br><span class="src">Fuentes: ' + srcLinks(arr(c.fuentes).length ? c.fuentes : [c.fuente]) + "</span>" : "") + "</td><td><code>" + esc(c.ps5 || "—") + "</code></td><td><code>" + esc(c.xbox || "—") + "</code></td><td><code>" + esc(c.telefono || c.otro || "—") + "</code></td></tr>";
       }).join("") + "</tbody></table></div>";
     }
     renderCV("");
@@ -2130,7 +2136,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     sortedNews().forEach(function (n) { I.push({ s: "Noticias", t: n.titulo, d: n.resumen, go: function () { revealNews(n.id); } }); });
     allGuides().forEach(function (g) { I.push({ s: "Guías", t: g.titulo, d: g.resumen + " " + arr(g.pasos).join(" ") + " " + arr(g.checklist).join(" "), go: function () { guideCat = "Todas"; renderGuides(); focusEl($("#g-" + g.id)); } }); });
     allDex().forEach(function (x) { I.push({ s: "Dex", t: x.nombre, d: x.tipo + ". " + x.nota, go: function () { dexCat = "todo"; $("#dexQ").value = x.nombre; renderDex(); $("#dex").scrollIntoView({ behavior: reduced ? "auto" : "smooth" }); } }); });
-    allArts().forEach(function (a) { I.push({ s: "Reportajes", t: a.titulo, d: a.entradilla + " " + arr(a.cuerpo).map(function (x) { return x.p || x.h || arr(x.ul).join(" "); }).join(" "), go: function () { openArt(a.id); } }); });
+    allArts().forEach(function (a) { I.push({ s: "Reportajes", t: a.titulo, d: a.entradilla + (a.spoiler ? "" : " " + arr(a.cuerpo).map(function (x) { return x.p || x.h || arr(x.ul).join(" "); }).join(" ")), go: function () { openArt(a.id); } }); });
     PINS.forEach(function (p) { I.push({ s: "Mapa", t: p.nombre, d: regName(p.region) + ". " + (p.texto || ""), go: function () { $("#mapa").scrollIntoView({ behavior: reduced ? "auto" : "smooth" }); selectPin(p.id, true); } }); });
     BASE.personajes.forEach(function (p) { I.push({ s: "Personajes", t: p.nombre, d: p.rol + ". " + p.bio, go: function () { peopleFilter = "todos"; renderPeople(); focusEl($("#p-" + p.id)); } }); });
     BASE.regiones.forEach(function (r) { I.push({ s: "Mapa", t: r.nombre, d: r.inspiracion + ". " + r.texto + " " + r.lugares.join(" ") + " " + r.actividades.join(" "), go: function () { pickRegion(r.id); focusEl($("#regionPanel")); } }); });
