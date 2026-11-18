@@ -144,8 +144,8 @@
         "texto": "La campaña está organizada en capítulos. Entre misiones hay tiempo libre en el que a veces tendrás que reunir dinero antes de avanzar. El contenido de la edición Ultimate también se desbloquea por capítulos."
       },
       {
-        "titulo": "Unas 80 horas",
-        "texto": "La última partida completa de Rob Nelson, codirector de Rockstar North, duró unas 80 horas, contando objetivos opcionales que cambian la historia. Como referencia, la de GTA V ronda las 30 y la de RDR2, unas 60."
+        "titulo": "La duración cambia con tu ruta",
+        "texto": "Las partidas de lanzamiento de la prensa no tienen una duración única: consulta la respuesta revisada en Preguntas frecuentes. Explorar y hacer actividades opcionales cambia mucho el tiempo total; no damos un plazo fijo para el 100 %."
       },
       {
         "titulo": "La relación importa",
@@ -858,7 +858,7 @@
         "Sistema y juego actualizados",
         "Horario local de desbloqueo comprobado",
         "Buscar el mapa imprimible oficial a partir del 19 de noviembre",
-        "Elegir si quiero consultar análisis evitando spoilers (fecha del embargo sin confirmar)"
+        "Elegir si quiero consultar los análisis ya publicados evitando spoilers de la historia"
       ],
       "fuentes": [
         {
@@ -1637,7 +1637,17 @@
     },
     {
       "q": "¿Cuánto dura?",
-      "a": "La partida de Rob Nelson (Rockstar North) duró unas 80 horas, incluyendo objetivos opcionales con peso en la historia."
+      "a": "Depende de los desvíos: MeriStation relata unas 70 horas y Vandal unas 65. Son partidas concretas, no tiempos garantizados para el 100 %.",
+      "fuentes": [
+        {
+          "nombre": "MeriStation · duración de su partida",
+          "url": "https://as.com/meristation/noticias/cuanto-dura-gta-6-horas-necesarias-para-completar-la-historia-y-numero-de-misiones-principales-f202611-n/"
+        },
+        {
+          "nombre": "Vandal · análisis de Saúl González",
+          "url": "https://vandal.elespanol.com/analisis/ps5/grand-theft-auto-vi/104222"
+        }
+      ]
     },
     {
       "q": "¿Cómo de grande es el mapa?",
@@ -1645,11 +1655,11 @@
     },
     {
       "q": "¿A cuántos fps va?",
-      "a": "Rockstar fija un objetivo de 30 fps. PS5 Pro añade PSSR y sombras con trazado de rayos; no se ha anunciado un modo a 60 fps.",
+      "a": "MeriStation informa de 30 fps en consolas, sin modos gráficos alternativos en su cobertura de lanzamiento. LeonidaDex no ha realizado mediciones propias.",
       "fuentes": [
         {
-          "nombre": "Rockstar: rendimiento",
-          "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now"
+          "nombre": "MeriStation · rendimiento en consolas",
+          "url": "https://as.com/meristation/noticias/funciona-gta-6-a-60-fps-en-ps5-y-xbox-cual-es-la-mejor-version-rendimiento-y-diferencias-entre-plataformas-f202611-n/"
         }
       ]
     },
@@ -1673,7 +1683,29 @@
     },
     {
       "q": "¿Cuándo salen los análisis?",
-      "a": "Según varios insiders, el 18 de noviembre. Rockstar no lo ha confirmado."
+      "a": "Ya hay análisis publicados el 18 de noviembre. Vandal, MeriStation, Game Informer y PSU puntúan con 10/10. Consulta el especial para ver más notas y sus matices.",
+      "fuentes": [
+        {
+          "nombre": "LeonidaDex · críticas y notas",
+          "url": "https://leonidadex.net/reportajes/criticas-y-notas-gta6/"
+        },
+        {
+          "nombre": "Vandal · análisis de Saúl González",
+          "url": "https://vandal.elespanol.com/analisis/ps5/grand-theft-auto-vi/104222"
+        },
+        {
+          "nombre": "MeriStation · análisis de David Arroyo",
+          "url": "https://as.com/meristation/analisis/analisis-de-gta-6-rockstar-compensa-13-anos-de-espera-con-un-juego-para-la-historia-f202611-n/"
+        },
+        {
+          "nombre": "Game Informer · análisis de Matt Miller",
+          "url": "https://gameinformer.com/review/grand-theft-auto-vi/outrageous-fortune"
+        },
+        {
+          "nombre": "PlayStation Universe · análisis de Miles Penrith",
+          "url": "https://www.psu.com/reviews/grand-theft-auto-vi-review-ps5/"
+        }
+      ]
     },
     {
       "q": "¿Cuándo estará el mapa oficial para imprimir?",
@@ -1734,6 +1766,16 @@
         {
           "nombre": "Rockstar: música y emisoras",
           "url": "https://www.rockstargames.com/VI/music"
+        }
+      ]
+    },
+    {
+      "q": "¿Se puede jugar toda la campaña en primera persona?",
+      "a": "Según MeriStation, las vistas de observación, móvil y mirillas tienen límites y no equivalen a un modo completo de campaña en primera persona.",
+      "fuentes": [
+        {
+          "nombre": "MeriStation · opciones de cámara",
+          "url": "https://as.com/meristation/noticias/se-puede-jugar-a-gta-6-en-primera-persona-como-cambiar-la-camara-en-ps5-y-xbox-series-xs-f202611-n/"
         }
       ]
     }
@@ -3458,7 +3500,7 @@
       "lectura": 4,
       "fecha": "2026-11-17",
       "titulo": "Noche de lanzamiento de GTA VI: horarios y checklist para llegar preparado",
-      "entradilla": "Qué revisar antes de empezar: descarga, espacio, horario de tu versión y un plan si el juego no se abre. Comprobado el 17 de noviembre, sin spoilers de la historia.",
+      "entradilla": "Qué revisar antes de empezar: descarga, espacio, horario de tu versión y un plan si el juego no se abre. Revisado el 18 de noviembre, sin spoilers de la historia.",
       "cuerpo": [
         {
           "h": "Consola: la noche del miércoles 18 al jueves 19"
@@ -3541,7 +3583,8 @@
           "nombre": "LeonidaDex: guía para evitar spoilers",
           "url": "https://leonidadex.net/reportajes/evitar-spoilers/"
         }
-      ]
+      ],
+      "actualizado": "2026-11-18T14:00:52+01:00"
     },
     {
       "id": "cronologia-completa",
@@ -3697,7 +3740,7 @@
         },
         {
           "ul": [
-            "Los análisis llegarían el 18 de noviembre, según varios medios; Rockstar no lo ha confirmado.",
+            "Actualización del 18 de noviembre: los primeros análisis ya están publicados; consulta nuestro especial Críticas y notas.",
             "El objetivo anunciado es 30 fps; no hay modo de 60 anunciado.",
             "No hay versión de PC con fecha.",
             "Desconfía de webs que vendan acceso anticipado, dinero o trucos: es una estafa."
@@ -3746,7 +3789,7 @@
       "lectura": 5,
       "fecha": "2026-11-10",
       "titulo": "Lo que ya sabemos de cómo se juega",
-      "entradilla": "Del Extended Look y los primeros avances de prensa salen las piezas del sistema de juego. Separamos lo confirmado de lo que solo se ha visto.",
+      "entradilla": "Lo mostrado por Rockstar y los avances de prensa, con una revisión del 18 de noviembre que incorpora los primeros análisis. Sin spoilers de misiones.",
       "cuerpo": [
         {
           "h": "Dos protagonistas, una pareja"
@@ -3773,10 +3816,10 @@
           "p": "Game Informer contó un sistema meteorológico avanzado y más de 170 especies animales; Edge habló de un mapa del doble que el de GTA V. El móvil incluye redes sociales funcionales. En consolas, el juego corre a 30 imágenes por segundo."
         },
         {
-          "h": "Qué queda por comprobar"
+          "h": "Revisión del 18 de noviembre: ya hay análisis"
         },
         {
-          "p": "Este reportaje reúne lo mostrado y lo descrito por prensa antes del estreno. No es una prueba del juego final: equilibrio, controles y progresión deben revisarse al publicarse. La confirmación técnica del 10 de noviembre fija un objetivo de 30 fps."
+          "p": "Los primeros análisis ya permiten contrastar algunos puntos del material previo. Vandal y PSU describen sus partidas en PS5 Pro; no las extrapolamos a todas las consolas. En el especial Críticas y notas reunimos sus valoraciones y matices; Primeras horas explica los límites de cámara y rendimiento descritos por la prensa."
         }
       ],
       "fuentes": [
@@ -3795,8 +3838,21 @@
         {
           "nombre": "Rockstar: anuncio técnico",
           "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now"
+        },
+        {
+          "nombre": "Vandal · análisis de Saúl González",
+          "url": "https://vandal.elespanol.com/analisis/ps5/grand-theft-auto-vi/104222"
+        },
+        {
+          "nombre": "PlayStation Universe · análisis de Miles Penrith",
+          "url": "https://www.psu.com/reviews/grand-theft-auto-vi-review-ps5/"
+        },
+        {
+          "nombre": "LeonidaDex · primeras críticas",
+          "url": "https://leonidadex.net/reportajes/criticas-y-notas-gta6/"
         }
-      ]
+      ],
+      "actualizado": "2026-11-18T14:00:52+01:00"
     },
     {
       "id": "filtraciones",
@@ -4724,7 +4780,7 @@
     ]
   },
   "mapa_revision": {
-    "fecha": "2026-11-16",
-    "texto": "Revisión del 16 de noviembre: 3.334 puntos y 136 áreas de GTADB. Comparación con la copia del día 14: 27 altas, 68 registros revisados (14 con coordenadas distintas) y ninguna baja. Son datos comunitarios; no equivalen al mapa oficial ni confirman misiones o secretos."
+    "fecha": "2026-11-18",
+    "texto": "Revisión del 18 de noviembre: 3.340 puntos y 136 áreas de GTADB. Frente a la copia del 16 de noviembre: 6 altas, 5 registros revisados (2 con coordenadas distintas) y 0 bajas. Son aportaciones comunitarias, no un mapa oficial ni una confirmación de misiones o secretos."
   }
 }

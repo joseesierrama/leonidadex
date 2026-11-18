@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-11-17T16:34:02+01:00",
+    "actualizado": "2026-11-18T14:00:52+01:00",
     "lanzamiento": "2026-11-19T00:00:00",
     "nota_lanzamiento": "Medianoche hora local · PS5 y Xbox Series X|S",
     "fase": "prelanzamiento",
@@ -74,9 +74,23 @@
     },
     {
       "fecha": "2026-11-18",
-      "titulo": "Posible publicación de análisis: fecha no confirmada",
-      "lugar": "Prensa",
-      "estado": "rumor"
+      "titulo": "Análisis publicados por la prensa",
+      "lugar": "Vandal, MeriStation, Game Informer y otros medios",
+      "estado": "prensa",
+      "fuentes": [
+        {
+          "nombre": "Vandal · análisis de Saúl González",
+          "url": "https://vandal.elespanol.com/analisis/ps5/grand-theft-auto-vi/104222"
+        },
+        {
+          "nombre": "MeriStation · análisis de David Arroyo",
+          "url": "https://as.com/meristation/analisis/analisis-de-gta-6-rockstar-compensa-13-anos-de-espera-con-un-juego-para-la-historia-f202611-n/"
+        },
+        {
+          "nombre": "Game Informer · análisis de Matt Miller",
+          "url": "https://gameinformer.com/review/grand-theft-auto-vi/outrageous-fortune"
+        }
+      ]
     },
     {
       "fecha": "2026-11-18",
@@ -183,6 +197,185 @@
     }
   ],
   "noticias": [
+    {
+      "id": "criticas-publicadas-18-noviembre",
+      "fecha": "2026-11-18",
+      "categoria": "Análisis",
+      "estado": "prensa",
+      "destacada": true,
+      "titulo": "GTA VI ya tiene análisis: notas, elogios y reparos de la prensa",
+      "resumen": "Vandal, MeriStation, Game Informer y PlayStation Universe publican un 10/10. Nuestro especial reúne notas con su escala original, versión cuando consta y enlaces a las críticas, sin revelar la historia. Son valoraciones de los medios; LeonidaDex no ha realizado un análisis propio.",
+      "fuentes": [
+        {
+          "nombre": "LeonidaDex · especial de críticas",
+          "url": "https://leonidadex.net/reportajes/criticas-y-notas-gta6/"
+        },
+        {
+          "nombre": "Vandal · análisis de Saúl González",
+          "url": "https://vandal.elespanol.com/analisis/ps5/grand-theft-auto-vi/104222"
+        },
+        {
+          "nombre": "MeriStation · análisis de David Arroyo",
+          "url": "https://as.com/meristation/analisis/analisis-de-gta-6-rockstar-compensa-13-anos-de-espera-con-un-juego-para-la-historia-f202611-n/"
+        },
+        {
+          "nombre": "Game Informer · análisis de Matt Miller",
+          "url": "https://gameinformer.com/review/grand-theft-auto-vi/outrageous-fortune"
+        },
+        {
+          "nombre": "PlayStation Universe · análisis de Miles Penrith",
+          "url": "https://www.psu.com/reviews/grand-theft-auto-vi-review-ps5/"
+        }
+      ]
+    },
+    {
+      "id": "medias-critica-18-noviembre",
+      "fecha": "2026-11-18",
+      "categoria": "Análisis",
+      "estado": "prensa",
+      "destacada": true,
+      "titulo": "Metacritic muestra 99 y OpenCritic 98: consulta fechada",
+      "resumen": "Consulta del 18 de noviembre de 2026, 14:00 CET: la ficha PS5 de Metacritic muestra 99/100; OpenCritic, 98/100 y 100 % de recomendación. Las medias pueden cambiar. Recomendación no equivale a nota perfecta y estas cifras no son valoraciones de usuarios.",
+      "fuentes": [
+        {
+          "nombre": "Metacritic · ficha de GTA VI",
+          "url": "https://www.metacritic.com/game/grand-theft-auto-vi/"
+        },
+        {
+          "nombre": "OpenCritic · notas y enlaces a los análisis",
+          "url": "https://opencritic.com/game/15398/grand-theft-auto-vi"
+        }
+      ]
+    },
+    {
+      "id": "horario-espana-noche-18-19",
+      "fecha": "2026-11-18",
+      "categoria": "Lanzamiento",
+      "estado": "oficial",
+      "destacada": true,
+      "titulo": "En España se desbloquea esta noche: del 18 al 19 a medianoche local",
+      "resumen": "Rockstar fija las 00:00 locales del 19 para PS5 y Xbox Series X|S. Que otra región ya haya llegado al jueves no adelanta el desbloqueo español. Canarias también usa su medianoche local; el acceso por la nube tiene un horario distinto.",
+      "fuentes": [
+        {
+          "nombre": "Rockstar · horarios regionales de consola",
+          "url": "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s"
+        },
+        {
+          "nombre": "LeonidaDex · checklist y horario de la nube",
+          "url": "https://leonidadex.net/reportajes/noche-de-lanzamiento/"
+        }
+      ]
+    },
+    {
+      "id": "rendimiento-analisis-lanzamiento",
+      "fecha": "2026-11-18",
+      "categoria": "Jugabilidad",
+      "estado": "prensa",
+      "destacada": false,
+      "titulo": "Los análisis describen los 30 fps y matices en PS5 Pro",
+      "resumen": "MeriStation informa de 30 fps sin modos gráficos alternativos. Vandal señala incidencias puntuales en PS5 Pro; PSU describe una partida estable en esa consola. No son mediciones de LeonidaDex ni prueban un rendimiento idéntico en todas las máquinas.",
+      "fuentes": [
+        {
+          "nombre": "MeriStation · rendimiento en consolas",
+          "url": "https://as.com/meristation/noticias/funciona-gta-6-a-60-fps-en-ps5-y-xbox-cual-es-la-mejor-version-rendimiento-y-diferencias-entre-plataformas-f202611-n/"
+        },
+        {
+          "nombre": "Vandal · análisis de Saúl González",
+          "url": "https://vandal.elespanol.com/analisis/ps5/grand-theft-auto-vi/104222"
+        },
+        {
+          "nombre": "PlayStation Universe · análisis de Miles Penrith",
+          "url": "https://www.psu.com/reviews/grand-theft-auto-vi-review-ps5/"
+        }
+      ]
+    },
+    {
+      "id": "duracion-partidas-criticos",
+      "fecha": "2026-11-18",
+      "categoria": "Guías",
+      "estado": "prensa",
+      "destacada": false,
+      "titulo": "¿Cuánto dura? Las partidas de los críticos ofrecen referencias distintas",
+      "resumen": "MeriStation relata 70 horas con actividades opcionales; Vandal, unas 65 con desvíos. Son partidas concretas, no un tiempo fijo para el 100 %. Puedes consultar nuestra guía de primeras horas.",
+      "fuentes": [
+        {
+          "nombre": "MeriStation · duración de su partida",
+          "url": "https://as.com/meristation/noticias/cuanto-dura-gta-6-horas-necesarias-para-completar-la-historia-y-numero-de-misiones-principales-f202611-n/"
+        },
+        {
+          "nombre": "Vandal · análisis de Saúl González",
+          "url": "https://vandal.elespanol.com/analisis/ps5/grand-theft-auto-vi/104222"
+        },
+        {
+          "nombre": "LeonidaDex · primeras horas",
+          "url": "https://leonidadex.net/reportajes/primeras-horas-gta6/"
+        }
+      ]
+    },
+    {
+      "id": "camara-primera-persona-limites",
+      "fecha": "2026-11-18",
+      "categoria": "Jugabilidad",
+      "estado": "prensa",
+      "destacada": false,
+      "titulo": "La primera persona tiene límites, según la guía de MeriStation",
+      "resumen": "MeriStation describe vistas limitadas de observación, móvil y mirillas. No equivalen a un modo completo de campaña en primera persona ni anuncian una futura actualización.",
+      "fuentes": [
+        {
+          "nombre": "MeriStation · opciones de cámara",
+          "url": "https://as.com/meristation/noticias/se-puede-jugar-a-gta-6-en-primera-persona-como-cambiar-la-camara-en-ps5-y-xbox-series-xs-f202611-n/"
+        }
+      ]
+    },
+    {
+      "id": "sam-houser-mensaje-lanzamiento",
+      "fecha": "2026-11-18",
+      "categoria": "Comunidad",
+      "estado": "prensa",
+      "destacada": false,
+      "titulo": "Sam Houser presenta el regreso a Leonida en un mensaje a los jugadores",
+      "resumen": "En una declaración facilitada a GamesRadar+, el cofundador de Rockstar agradece el apoyo y sitúa la historia y la libertad del jugador en el centro de la experiencia. Su mensaje no anuncia fechas ni funciones de un nuevo modo online.",
+      "fuentes": [
+        {
+          "nombre": "GamesRadar+ · declaración de Sam Houser",
+          "url": "https://www.gamesradar.com/games/grand-theft-auto/as-gta-6-finally-releases-rockstar-boss-sam-houser-issues-rare-statement-we-are-incredibly-grateful-and-look-forward-to-many-more-years-of-sharing-these-experiences-with-you/"
+        }
+      ]
+    },
+    {
+      "id": "pc-gamer-impresiones-consola",
+      "fecha": "2026-11-18",
+      "categoria": "Análisis",
+      "estado": "prensa",
+      "destacada": false,
+      "titulo": "PC Gamer publica impresiones de consola: no es una versión para PC",
+      "resumen": "Christopher Livingston firma un texto tras unas cien horas en PS5 y aclara que no es un análisis. Su publicación no confirma una fecha de PC ni equivale a haber probado un port para ordenador.",
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · impresiones en PS5, no análisis de PC",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/100-hours-with-gta-6-a-sprawling-adventure-that-will-be-so-much-better-on-pc/"
+        }
+      ]
+    },
+    {
+      "id": "mapa-gtadb-18-noviembre",
+      "fecha": "2026-11-18",
+      "categoria": "Mapa",
+      "estado": "comunidad",
+      "destacada": false,
+      "titulo": "Revisado el mapa comunitario de Leonida",
+      "resumen": "Revisión del 18 de noviembre: 3.340 puntos y 136 áreas de GTADB. Frente a la copia del 16 de noviembre: 6 altas, 5 registros revisados (2 con coordenadas distintas) y 0 bajas. Son aportaciones comunitarias, no un mapa oficial ni una confirmación de misiones o secretos.",
+      "fuentes": [
+        {
+          "nombre": "GTADB · datos comunitarios, revisión consultada el 18 de noviembre",
+          "url": "https://github.com/rolux/gtadb.org/blob/main/map/data/6/landmarks.json"
+        },
+        {
+          "nombre": "GTADB · atribución y mapa original",
+          "url": "https://map.gtadb.org"
+        }
+      ]
+    },
     {
       "id": "miami-vice-city-ap-17nov",
       "fecha": "2026-11-17",
@@ -1479,7 +1672,198 @@
     }
   ],
   "mapa_lugares": [],
-  "articulos_nuevos": [],
+  "articulos_nuevos": [
+    {
+      "id": "criticas-y-notas-gta6",
+      "categoria": "Análisis",
+      "lectura": 4,
+      "fecha": "2026-11-18",
+      "actualizado": "2026-11-18T14:00:52+01:00",
+      "titulo": "Críticas y notas de GTA VI: qué dice la prensa, sin spoilers",
+      "entradilla": "Los primeros análisis ya están publicados. Notas por medio, medias de Metacritic y OpenCritic y los matices que no cuenta un diez. Consulta del 18 de noviembre de 2026, 14:00 CET.",
+      "cuerpo": [
+        {
+          "h": "Las notas, de un vistazo"
+        },
+        {
+          "p": "Vandal, MeriStation, Game Informer y PlayStation Universe puntúan GTA VI con un 10/10. La selección no es un censo de toda la prensa: también recogemos valoraciones inferiores y enlazamos cada fuente. Son opiniones de sus autores, no una nota propia de LeonidaDex."
+        },
+        {
+          "ul": [
+            "Vandal — 10/10. Saúl González; análisis en PS5 Pro, publicado el 18 de noviembre. Valora el mundo y la interacción de sus sistemas; señala limitaciones en el sigilo y algunos problemas visuales y de rendimiento.",
+            "MeriStation — 10/10. David Arroyo; 18 de noviembre. Celebra la escala del conjunto y plantea reparos al ritmo de algunos tramos.",
+            "Game Informer — 10/10. Matt Miller; 18 de noviembre. Versión analizada: PlayStation 5. Destaca la inmersión y la cohesión del mundo; el diseño de algunas misiones sigue siendo dirigido.",
+            "PlayStation Universe — 10/10. Miles Penrith; 18 de noviembre. Su partida fue en PS5 Pro. Destaca la interacción del entorno y critica la repetición de ciertos robos para reunir dinero.",
+            "TheSixthAxis — 9/10. Aran Suddi. Nota y autor contrastados en OpenCritic; el agregador enlaza el análisis original.",
+            "VGC — 5/5. Jordan Middler. Nota y autor contrastados en OpenCritic; conserva su escala original de cinco puntos.",
+            "The Guardian — 5/5. Keza MacDonald. Valoración contrastada en OpenCritic, con enlace al texto original."
+          ]
+        },
+        {
+          "h": "Metacritic y OpenCritic: una foto de este momento"
+        },
+        {
+          "p": "Consulta del 18 de noviembre de 2026, 14:00 CET: Metacritic muestra 99/100 en la ficha de PlayStation 5. OpenCritic muestra una media Top Critic Average de 98/100 y un 100 % de recomendación. Cada agregador selecciona y calcula de forma distinta; las cifras pueden variar cuando entren más análisis."
+        },
+        {
+          "p": "Recomendación y puntuación son medidas diferentes: un 100 % de recomendación no significa que todos los medios le hayan puesto diez. No mezclamos la media de crítica con la de usuarios: Metacritic aún muestra TBD para usuarios y OpenCritic no tiene suficientes valoraciones para mostrar la suya en esta consulta."
+        },
+        {
+          "h": "Qué celebran y dónde aparecen los reparos"
+        },
+        {
+          "p": "En los análisis consultados se repite el interés por explorar Leonida y por la relación de sus protagonistas. La discusión está en cómo encaja esa libertad con las misiones y su progresión. Un mundo muy detallado puede convivir con tramos más dirigidos: conviene leer el argumento del crítico, además de mirar su cifra."
+        },
+        {
+          "p": "Las pruebas técnicas tampoco son intercambiables. Una partida en PS5 Pro no demuestra por sí sola el rendimiento de PS5 base o Xbox Series S. Vandal describe incidencias puntuales en Pro, mientras PSU relata una experiencia estable en su partida. Son observaciones de esas sesiones, no mediciones hechas por LeonidaDex."
+        },
+        {
+          "h": "Cómo consultar los análisis sin destriparte el juego"
+        },
+        {
+          "ul": [
+            "Empieza por la conclusión y los apartados técnicos si quieres reservarte las misiones y los encuentros.",
+            "La nota de un medio conserva su escala original. No calculamos una media propia con esta selección.",
+            "Distingue análisis, avance e impresiones: el texto de PC Gamer se presenta expresamente como impresiones de una partida en consola, no como un análisis de una versión para PC.",
+            "Las cifras están fechadas. Para saber la media del momento, abre las fichas de los agregadores enlazadas al final."
+          ]
+        },
+        {
+          "h": "Sigue explorando LeonidaDex"
+        },
+        {
+          "p": "En la portada tienes las noticias y las preguntas frecuentes revisadas con los análisis del día. Para preparar tu partida, consulta Primeras horas de GTA VI y Noche de lanzamiento en Reportajes. El mapa permite explorar aportaciones comunitarias: sus marcadores no constituyen una guía oficial de misiones ni una verificación de secretos."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Vandal · análisis de Saúl González",
+          "url": "https://vandal.elespanol.com/analisis/ps5/grand-theft-auto-vi/104222"
+        },
+        {
+          "nombre": "MeriStation · análisis de David Arroyo",
+          "url": "https://as.com/meristation/analisis/analisis-de-gta-6-rockstar-compensa-13-anos-de-espera-con-un-juego-para-la-historia-f202611-n/"
+        },
+        {
+          "nombre": "Game Informer · análisis de Matt Miller",
+          "url": "https://gameinformer.com/review/grand-theft-auto-vi/outrageous-fortune"
+        },
+        {
+          "nombre": "PlayStation Universe · análisis de Miles Penrith",
+          "url": "https://www.psu.com/reviews/grand-theft-auto-vi-review-ps5/"
+        },
+        {
+          "nombre": "Metacritic · ficha de GTA VI",
+          "url": "https://www.metacritic.com/game/grand-theft-auto-vi/"
+        },
+        {
+          "nombre": "OpenCritic · notas y enlaces a los análisis",
+          "url": "https://opencritic.com/game/15398/grand-theft-auto-vi"
+        },
+        {
+          "nombre": "TheSixthAxis · original enlazado desde OpenCritic",
+          "url": "https://www.thesixthaxis.com/2026/11/18/grand-theft-auto-6-review/"
+        },
+        {
+          "nombre": "VGC · original enlazado desde OpenCritic",
+          "url": "https://www.videogameschronicle.com/review/grand-theft-auto-6/"
+        },
+        {
+          "nombre": "The Guardian · original enlazado desde OpenCritic",
+          "url": "https://www.theguardian.com/games/2026/nov/18/grand-theft-auto-vi-gta-6-review-playstation-rockstar"
+        },
+        {
+          "nombre": "PC Gamer · impresiones en PS5, no análisis de PC",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/100-hours-with-gta-6-a-sprawling-adventure-that-will-be-so-much-better-on-pc/"
+        }
+      ]
+    },
+    {
+      "id": "primeras-horas-gta6",
+      "categoria": "Guías",
+      "lectura": 3,
+      "fecha": "2026-11-18",
+      "actualizado": "2026-11-18T14:00:52+01:00",
+      "titulo": "Primeras horas de GTA VI: rendimiento, duración y qué comprobar",
+      "entradilla": "Una guía sin spoilers con lo que cuentan los análisis del 18 de noviembre y una checklist para tu propia partida.",
+      "cuerpo": [
+        {
+          "h": "Ajusta tus expectativas de rendimiento"
+        },
+        {
+          "p": "MeriStation informa de 30 fps en las versiones de consola y de ausencia de modos gráficos alternativos en su cobertura de lanzamiento. Es información de prensa; no hemos realizado una comparativa técnica propia."
+        },
+        {
+          "ul": [
+            "Actualiza la consola y comprueba la instalación antes de abrir el juego.",
+            "Prueba brillo, subtítulos y volumen con tu pantalla y auriculares. Evita copiar ajustes de otro televisor sin revisarlos.",
+            "Si notas un problema, anota plataforma, versión, zona y circunstancias. Un fallo en un clip aislado no demuestra que ocurra siempre."
+          ]
+        },
+        {
+          "h": "La duración depende de cómo juegues"
+        },
+        {
+          "p": "MeriStation relata unas 70 horas con actividades opcionales; Vandal, alrededor de 65 con desvíos. Son partidas concretas, no un plazo garantizado para terminar ni para alcanzar el 100 %."
+        },
+        {
+          "p": "Si te gusta explorar, no conviertas una estimación en una carrera. Puedes leer las fichas de presentación y las regiones de LeonidaDex sin consultar soluciones de misiones. Guarda las guías de objetivos para cuando las necesites."
+        },
+        {
+          "h": "Primera persona: cuidado con lo que promete un titular"
+        },
+        {
+          "p": "La guía de MeriStation describe vistas limitadas mediante observación, móvil y mirillas; no equivalen a recorrer toda la campaña con un modo completo en primera persona. No deducimos una futura actualización a partir de esas opciones."
+        },
+        {
+          "h": "Tres comprobaciones útiles al empezar"
+        },
+        {
+          "ul": [
+            "Lee las opciones que muestre tu versión: una captura de una preview puede haber cambiado.",
+            "Si necesitas resolver un error, busca su código exacto en el soporte de Rockstar o de tu consola.",
+            "Usa el mapa comunitario como orientación. Antes de dar por encontrada una actividad, compruébala en tu partida: los marcadores pueden representar hipótesis anteriores al estreno."
+          ]
+        },
+        {
+          "h": "Si todavía no se abre"
+        },
+        {
+          "p": "El desbloqueo nativo es a medianoche local del 19 de noviembre en PS5 y Xbox Series X|S. En España corresponde a la noche del miércoles 18 al jueves 19. La nube tiene su propio horario; revisa nuestra guía Noche de lanzamiento. Una reseña publicada el día 18 no adelanta el acceso de tu región."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "MeriStation · rendimiento en consolas",
+          "url": "https://as.com/meristation/noticias/funciona-gta-6-a-60-fps-en-ps5-y-xbox-cual-es-la-mejor-version-rendimiento-y-diferencias-entre-plataformas-f202611-n/"
+        },
+        {
+          "nombre": "MeriStation · duración de su partida",
+          "url": "https://as.com/meristation/noticias/cuanto-dura-gta-6-horas-necesarias-para-completar-la-historia-y-numero-de-misiones-principales-f202611-n/"
+        },
+        {
+          "nombre": "Vandal · análisis de Saúl González",
+          "url": "https://vandal.elespanol.com/analisis/ps5/grand-theft-auto-vi/104222"
+        },
+        {
+          "nombre": "MeriStation · opciones de cámara",
+          "url": "https://as.com/meristation/noticias/se-puede-jugar-a-gta-6-en-primera-persona-como-cambiar-la-camara-en-ps5-y-xbox-series-xs-f202611-n/"
+        },
+        {
+          "nombre": "Rockstar · horarios regionales de consola",
+          "url": "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s"
+        },
+        {
+          "nombre": "Rockstar · soporte",
+          "url": "https://support.rockstargames.com/"
+        },
+        {
+          "nombre": "LeonidaDex · horarios de consola y nube",
+          "url": "https://leonidadex.net/reportajes/noche-de-lanzamiento/"
+        }
+      ]
+    }
+  ],
   "videos_nuevos": [],
   "dex_nuevos": []
 }
