@@ -35,3 +35,11 @@ La programación diaria debe estar configurada en la tarea de Claude. El flujo d
 - Los eventos `ld_map_open`, `ld_character_open`, `ld_quiz_start` y `ld_quiz_complete` se envían únicamente con consentimiento de medición. No añadas textos de búsquedas, nombres o correos a sus parámetros.
 - El reto debe funcionar también cuando se rechaza la medición. Revisa las preguntas contra fuentes oficiales si cambian las fichas.
 - Conserva la apertura del reto con `?reto=regiones` o `?reto=personajes`, los botones para compartir el resultado y `src/assets/retos-social.jpg`. Solo el visitante elige destinatario y confirma un envío; no añadas envíos automáticos. Las etiquetas UTM de compartir se usan en enlaces externos, no en la navegación interna.
+
+
+## Especial de críticas publicado el 18 de noviembre
+
+- Los reportajes `criticas-y-notas-gta6` y `primeras-horas-gta6` están en `src/actualizaciones.json`. Mantén fuentes, escalas originales y separación entre notas de crítica y usuarios. Las partidas de un crítico no son mediciones propias ni garantizan duración o rendimiento universal.
+- El bloque `.review-spotlight` de `src/template.html` y su fecha deben actualizarse junto con las medias del reportaje y la noticia correspondiente, solo tras volver a consultar Metacritic y OpenCritic. No presentes las cifras del 18 de noviembre a las 14:00 CET como una consulta posterior.
+- Conserva `fecha` como fecha original de los reportajes revisados y añade `actualizado` con fecha y zona horaria reales. El constructor utiliza este campo en dateModified y en el sitemap.
+- La revisión del mapa del 18 de noviembre compara 3.340 puntos y 136 áreas con la copia del 16: seis altas, cinco registros modificados (dos con nuevas coordenadas) y ninguna baja. No equivale a un mapa oficial verificado dentro del juego.
