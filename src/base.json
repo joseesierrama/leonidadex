@@ -1672,12 +1672,20 @@
       "a": "PEGI 18 en Europa y Mature 17+ en Estados Unidos."
     },
     {
-      "q": "¿Habrá trucos?",
-      "a": "Todavía no hay códigos de GTA VI verificados en LeonidaDex. El archivo de GTA V y Vice City pertenece a esos juegos, no a GTA VI.",
+      "q": "¿Ya hay trucos de GTA VI publicados?",
+      "a": "PC Gamer y PowerPyx publican códigos coincidentes. Nuestra guía recoge tres y sus límites; no los hemos probado personalmente.",
       "fuentes": [
         {
-          "nombre": "Rockstar: información de GTA VI",
-          "url": "https://www.rockstargames.com/VI"
+          "nombre": "LeonidaDex · códigos contrastados",
+          "url": "https://leonidadex.net/reportajes/trucos-gta6-codigos-desbloqueo/"
+        },
+        {
+          "nombre": "PC Gamer · códigos y desbloqueo, 18 de noviembre",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/"
+        },
+        {
+          "nombre": "PowerPyx · trucos, requisitos y advertencias",
+          "url": "https://www.powerpyx.com/gta-6-all-cheats/"
         }
       ]
     },

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-11-18T14:00:52+01:00",
+    "actualizado": "2026-11-18T14:18:39+01:00",
     "lanzamiento": "2026-11-19T00:00:00",
     "nota_lanzamiento": "Medianoche hora local · PS5 y Xbox Series X|S",
     "fase": "prelanzamiento",
@@ -197,6 +197,86 @@
     }
   ],
   "noticias": [
+    {
+      "id": "guia-trucos-contraste-18nov",
+      "fecha": "2026-11-18",
+      "categoria": "Trucos",
+      "estado": "prensa",
+      "destacada": false,
+      "titulo": "Tres códigos de GTA VI coinciden en las primeras guías de prensa",
+      "resumen": "Ya puedes consultar nuestra selección contrastada, con requisitos, controles y advertencias sobre guardado. Las fuentes son PC Gamer y PowerPyx; no es una prueba propia de LeonidaDex.",
+      "fuentes": [
+        {
+          "nombre": "LeonidaDex · guía de trucos",
+          "url": "https://leonidadex.net/reportajes/trucos-gta6-codigos-desbloqueo/"
+        },
+        {
+          "nombre": "PC Gamer · códigos y desbloqueo, 18 de noviembre",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/"
+        },
+        {
+          "nombre": "PowerPyx · trucos, requisitos y advertencias",
+          "url": "https://www.powerpyx.com/gta-6-all-cheats/"
+        }
+      ]
+    },
+    {
+      "id": "actividad-opcional-capitulo1-18nov",
+      "fecha": "2026-11-18",
+      "categoria": "Secretos",
+      "estado": "prensa",
+      "destacada": false,
+      "titulo": "Una actividad temprana que merece revisar antes de avanzar",
+      "resumen": "PowerPyx documenta una interacción opcional que puede pasar desapercibida. Hemos preparado una guía con detalles ocultos y las dudas sobre su relación con un trofeo, sin presentar esa relación como segura.",
+      "fuentes": [
+        {
+          "nombre": "LeonidaDex · actividad del capítulo 1",
+          "url": "https://leonidadex.net/reportajes/actividad-perdible-capitulo-1/"
+        },
+        {
+          "nombre": "PowerPyx · actividad opcional y límites de la comprobación",
+          "url": "https://www.powerpyx.com/gta-6-all-meditation-spot-locations/"
+        }
+      ]
+    },
+    {
+      "id": "guia-objetivo-progreso-18nov",
+      "fecha": "2026-11-18",
+      "categoria": "Guías",
+      "estado": "prensa",
+      "destacada": false,
+      "titulo": "¿La historia parece bloqueada? Revisa el objetivo antes de reiniciar",
+      "resumen": "Nueva guía de una condición de progreso descrita por PowerPyx. La solución permanece oculta hasta abrirla y avisa del capítulo al que afecta.",
+      "fuentes": [
+        {
+          "nombre": "LeonidaDex · solución con aviso de spoilers",
+          "url": "https://leonidadex.net/reportajes/historia-no-avanza-capitulo-2/"
+        },
+        {
+          "nombre": "PowerPyx · solución del objetivo de progreso",
+          "url": "https://www.powerpyx.com/gta-6-prepare-for-vice-city-walkthrough/"
+        }
+      ]
+    },
+    {
+      "id": "viaje-rapido-taxi-18nov",
+      "fecha": "2026-11-18",
+      "categoria": "Guías",
+      "estado": "prensa",
+      "destacada": false,
+      "titulo": "Cómo saltar un trayecto y distinguir su suplemento del precio del viaje",
+      "resumen": "La guía de taxi ya está disponible con controles de PS5 y Xbox, el coste adicional descrito por PowerPyx y la distinción entre tarifa y suplemento.",
+      "fuentes": [
+        {
+          "nombre": "LeonidaDex · viaje rápido",
+          "url": "https://leonidadex.net/reportajes/viaje-rapido-gta6-taxi/"
+        },
+        {
+          "nombre": "PowerPyx · funcionamiento del viaje rápido",
+          "url": "https://www.powerpyx.com/gta-6-how-to-fast-travel/"
+        }
+      ]
+    },
     {
       "id": "criticas-publicadas-18-noviembre",
       "fecha": "2026-11-18",
@@ -1647,7 +1727,71 @@
     }
   ],
   "misiones": [],
-  "trucos_gta6": [],
+  "trucos_gta6": [
+    {
+      "id": "dinero-250000",
+      "efecto": "250.000 dólares del juego",
+      "ps5": "↑ → ↓ ← ↑ ← ↓ →",
+      "xbox": "↑ → ↓ ← ↑ ← ↓ →",
+      "notas": "Prensa · secuencia coincidente en PC Gamer y PowerPyx. Requisito indicado por PowerPyx: terminar la historia.",
+      "fuente": {
+        "nombre": "PC Gamer · códigos y desbloqueo, 18 de noviembre",
+        "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/"
+      },
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · códigos y desbloqueo, 18 de noviembre",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/"
+        },
+        {
+          "nombre": "PowerPyx · trucos, requisitos y advertencias",
+          "url": "https://www.powerpyx.com/gta-6-all-cheats/"
+        }
+      ]
+    },
+    {
+      "id": "focus-ilimitado",
+      "efecto": "Focus ilimitado",
+      "ps5": "↓ ↑ ↑ ↓ ↑ ↓ ↑ ↓ ↑ →",
+      "xbox": "↓ ↑ ↑ ↓ ↑ ↓ ↑ ↓ ↑ →",
+      "notas": "Prensa · secuencia coincidente en PC Gamer y PowerPyx. Requisito indicado por PowerPyx: terminar la historia.",
+      "fuente": {
+        "nombre": "PC Gamer · códigos y desbloqueo, 18 de noviembre",
+        "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/"
+      },
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · códigos y desbloqueo, 18 de noviembre",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/"
+        },
+        {
+          "nombre": "PowerPyx · trucos, requisitos y advertencias",
+          "url": "https://www.powerpyx.com/gta-6-all-cheats/"
+        }
+      ]
+    },
+    {
+      "id": "attack-force",
+      "efecto": "Attack Force: impactos que impulsan objetivos",
+      "ps5": "↓ ↑ ← ← → ↓ ↓ ↑ ↓",
+      "xbox": "↓ ↑ ← ← → ↓ ↓ ↑ ↓",
+      "notas": "Prensa · secuencia coincidente en PC Gamer y PowerPyx. Requisito indicado por PowerPyx: terminar la historia.",
+      "fuente": {
+        "nombre": "PC Gamer · códigos y desbloqueo, 18 de noviembre",
+        "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/"
+      },
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · códigos y desbloqueo, 18 de noviembre",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/"
+        },
+        {
+          "nombre": "PowerPyx · trucos, requisitos y advertencias",
+          "url": "https://www.powerpyx.com/gta-6-all-cheats/"
+        }
+      ]
+    }
+  ],
   "misterios_nuevos": [],
   "cronologia_nueva": [
     {
@@ -1673,6 +1817,194 @@
   ],
   "mapa_lugares": [],
   "articulos_nuevos": [
+    {
+      "id": "trucos-gta6-codigos-desbloqueo",
+      "titulo": "Trucos de GTA VI: tres códigos contrastados y cómo desbloquearlos",
+      "entradilla": "Dinero, Focus y físicas: primeras combinaciones coincidentes en PC Gamer y PowerPyx. Incluye requisitos y una advertencia importante sobre el guardado.",
+      "cuerpo": [
+        {
+          "h": "Primero, el desbloqueo"
+        },
+        {
+          "p": "PC Gamer y PowerPyx coinciden: los trucos se habilitan después de completar la historia. No los hemos probado en una consola propia. PowerPyx advierte de que desactivan trofeos y guardado; PC Gamer confirma la limitación de guardar. Haz un guardado manual antes de experimentar."
+        },
+        {
+          "h": "Tres secuencias coincidentes"
+        },
+        {
+          "ul": [
+            "250.000 dólares del juego: ↑ → ↓ ← ↑ ← ↓ →.",
+            "Focus ilimitado: ↓ ↑ ↑ ↓ ↑ ↓ ↑ ↓ ↑ →.",
+            "Attack Force, que impulsa los objetivos al impactar: ↓ ↑ ← ← → ↓ ↓ ↑ ↓."
+          ]
+        },
+        {
+          "p": "PowerPyx señala terminar la historia como requisito de estos tres. PC Gamer publica las mismas secuencias, pero deja algunos requisitos sin completar. Coincidencia de códigos no significa que todos los campos de ambas listas estén verificados por los dos medios."
+        },
+        {
+          "h": "Cómo introducirlos"
+        },
+        {
+          "p": "Según PowerPyx: abre el teléfono con ↑, mantén L1 en PS5 o LB en Xbox y pulsa R1 o RB. Después introduce la secuencia. Comprueba primero que el truco está disponible en tu menú de progreso."
+        },
+        {
+          "h": "Si no funciona"
+        },
+        {
+          "ul": [
+            "Revisa el desbloqueo antes de repetir botones. No presupongas que un código se puede usar al empezar.",
+            "Anota plataforma y versión si quieres comparar el resultado con una guía.",
+            "El archivo de GTA V y Vice City pertenece a esos juegos. No uses sus números de teléfono como si fueran códigos de GTA VI."
+          ]
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · códigos y desbloqueo, 18 de noviembre",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/"
+        },
+        {
+          "nombre": "PowerPyx · trucos, requisitos y advertencias",
+          "url": "https://www.powerpyx.com/gta-6-all-cheats/"
+        }
+      ],
+      "categoria": "Trucos",
+      "lectura": 2,
+      "fecha": "2026-11-18",
+      "actualizado": "2026-11-18T14:18:39+01:00"
+    },
+    {
+      "id": "actividad-perdible-capitulo-1",
+      "titulo": "La actividad del capítulo 1 que puedes pasar por alto en GTA VI",
+      "entradilla": "Una interacción opcional señalada por PowerPyx merece atención antes de seguir avanzando. La guía oculta los detalles hasta que decidas abrirla.",
+      "cuerpo": [
+        {
+          "h": "Qué buscar y cuándo"
+        },
+        {
+          "p": "Según la guía de meditación de PowerPyx, en el capítulo 1 Lucia puede proponer meditar en la casa de Jason. El autor lo encontró por la mañana después de Down to Earth, aunque advierte de que el momento puede variar."
+        },
+        {
+          "ul": [
+            "Cuando Lucia lo mencione en la cocina, síguela al balcón.",
+            "Mírala con L2 en PS5 o LT en Xbox y elige Accept / Aceptar.",
+            "La fuente señala que esa interacción deja de estar disponible tras el capítulo 1."
+          ]
+        },
+        {
+          "h": "Lo que todavía no está aclarado"
+        },
+        {
+          "p": "PowerPyx mantiene pendiente si esa interacción concreta es obligatoria para el trofeo Positive Mental Attitude. No la presentamos como un requisito seguro para el platino. Tampoco equivale a perder automáticamente el 100 % si la omites."
+        },
+        {
+          "h": "Una forma sencilla de conservar opciones"
+        },
+        {
+          "p": "Si te interesa descubrir interacciones pequeñas, conserva un guardado anterior cuando avances de capítulo y evita sobrescribir todos los huecos con la misma partida. Es una precaución práctica, no una afirmación de que el juego exija repetirlo entero."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "PowerPyx · actividad opcional y límites de la comprobación",
+          "url": "https://www.powerpyx.com/gta-6-all-meditation-spot-locations/"
+        },
+        {
+          "nombre": "PowerPyx · trofeos y contenido potencialmente perdible",
+          "url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/"
+        }
+      ],
+      "categoria": "Secretos",
+      "lectura": 2,
+      "fecha": "2026-11-18",
+      "actualizado": "2026-11-18T14:18:39+01:00",
+      "spoiler": "Mostrar actividad y ubicación · spoilers leves del capítulo 1"
+    },
+    {
+      "id": "historia-no-avanza-capitulo-2",
+      "titulo": "¿No avanza la historia de GTA VI? El objetivo que conviene revisar",
+      "entradilla": "Una condición de progreso puede parecer un bloqueo. Consulta la solución solo si ya estás atascado: el contenido revela un objetivo del capítulo 2.",
+      "cuerpo": [
+        {
+          "h": "El objetivo Prepare for Vice City"
+        },
+        {
+          "p": "La guía de PowerPyx describe un objetivo de reunir al menos 15.000 dólares hacia el final del capítulo 2. Además hay que completar las otras misiones principales pendientes en Map / Mapa > Story / Historia."
+        },
+        {
+          "h": "Qué comprobar antes de pensar en un error"
+        },
+        {
+          "ul": [
+            "Confirma que ese es el objetivo que aparece en tu partida; no apliques esta solución a cualquier bloqueo.",
+            "Revisa el dinero requerido y las misiones principales pendientes.",
+            "Una vez cumplidas ambas condiciones, la fuente indica que el cuarto del Starlet Motel se marca como siguiente objetivo al cabo de un tiempo."
+          ]
+        },
+        {
+          "p": "No damos un número de minutos porque la guía no fija una espera exacta. Si tu objetivo es otro, no gastes tiempo intentando forzar esta solución."
+        },
+        {
+          "h": "Si el problema continúa"
+        },
+        {
+          "p": "Conserva un guardado, anota el objetivo mostrado y el mensaje de error si existe. Compara esos datos con la guía enlazada o el soporte de tu plataforma. Evita borrar tu progreso para resolver una condición que quizá aún no se haya cumplido."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "PowerPyx · solución del objetivo de progreso",
+          "url": "https://www.powerpyx.com/gta-6-prepare-for-vice-city-walkthrough/"
+        }
+      ],
+      "categoria": "Guías",
+      "lectura": 2,
+      "fecha": "2026-11-18",
+      "actualizado": "2026-11-18T14:18:39+01:00",
+      "spoiler": "Mostrar solución · spoilers de progreso del capítulo 2"
+    },
+    {
+      "id": "viaje-rapido-gta6-taxi",
+      "titulo": "Viaje rápido en GTA VI: cómo usar el taxi y cuánto cuesta saltar el trayecto",
+      "entradilla": "El viaje rápido no consiste en pulsar un punto del mapa. Así describe PowerPyx la opción de taxi y el coste adicional de saltar el recorrido.",
+      "cuerpo": [
+        {
+          "h": "Pedir el vehículo"
+        },
+        {
+          "p": "Según PowerPyx, tras la primera misión puedes usar el teléfono: Contactos > All Contacts > Paradise Taxi. Espera al vehículo y marca tu destino en el mapa. La guía sitúa la app RydeMe a partir del capítulo 2; si no hay conductor disponible, propone la compañía de taxis como alternativa."
+        },
+        {
+          "h": "Saltar el recorrido"
+        },
+        {
+          "ul": [
+            "Entra como pasajero y mantén L2 en PS5 o LT en Xbox para hablar con el conductor.",
+            "Pulsa triángulo en PS5 o Y en Xbox para la opción de salto que describe la guía.",
+            "PowerPyx indica un suplemento de 100 dólares por saltar el trayecto, además de la tarifa ordinaria del viaje."
+          ]
+        },
+        {
+          "h": "No confundas suplemento y precio total"
+        },
+        {
+          "p": "Los 100 dólares no son el precio total de cualquier viaje: la fuente distingue el coste del desplazamiento del extra por omitirlo. Revisa siempre el importe que muestre tu partida antes de confirmar."
+        },
+        {
+          "p": "Si solo quieres explorar, viajar sin saltar el recorrido también te permite observar el entorno. Para orientarte, tienes las regiones y el mapa comunitario de LeonidaDex; las posiciones de los fans no sustituyen las indicaciones de la partida."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "PowerPyx · funcionamiento del viaje rápido",
+          "url": "https://www.powerpyx.com/gta-6-how-to-fast-travel/"
+        }
+      ],
+      "categoria": "Guías",
+      "lectura": 2,
+      "fecha": "2026-11-18",
+      "actualizado": "2026-11-18T14:18:39+01:00"
+    },
     {
       "id": "criticas-y-notas-gta6",
       "categoria": "Análisis",

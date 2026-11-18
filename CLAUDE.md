@@ -43,3 +43,12 @@ La programación diaria debe estar configurada en la tarea de Claude. El flujo d
 - El bloque `.review-spotlight` de `src/template.html` y su fecha deben actualizarse junto con las medias del reportaje y la noticia correspondiente, solo tras volver a consultar Metacritic y OpenCritic. No presentes las cifras del 18 de noviembre a las 14:00 CET como una consulta posterior.
 - Conserva `fecha` como fecha original de los reportajes revisados y añade `actualizado` con fecha y zona horaria reales. El constructor utiliza este campo en dateModified y en el sitemap.
 - La revisión del mapa del 18 de noviembre compara 3.340 puntos y 136 áreas con la copia del 16: seis altas, cinco registros modificados (dos con nuevas coordenadas) y ninguna baja. No equivale a un mapa oficial verificado dentro del juego.
+
+
+## Guías de secretos, historia y trucos del 18 de noviembre
+
+- Los reportajes con campo `spoiler` ocultan su cuerpo bajo un desplegable nativo cerrado, tanto en la URL individual como en el lector de la portada. Mantén títulos, entradillas y noticias sin soluciones de historia. Nunca abras esos desplegables por defecto.
+- Los tres trucos actuales coinciden en PC Gamer y PowerPyx; son códigos publicados por prensa, no probados por LeonidaDex. Conserva requisitos y aviso sobre guardado/trofeos. No rellenes combinaciones que la fuente marque como desconocidas.
+- La actividad temprana procede de la guía de meditación de PowerPyx. Su posible requisito para Positive Mental Attitude sigue pendiente de confirmación; no lo conviertas en un trofeo perdible seguro.
+- Las guías de dinero para progreso y taxi se atribuyen a PowerPyx. No extrapoles el objetivo de un capítulo a cualquier bloqueo ni presentes el suplemento de viaje rápido como precio total.
+- No hay hallazgos paranormales comprobados en esta revisión. Solo añade secretos con evidencia del juego y su procedencia; las hipótesis siguen siendo teorías.

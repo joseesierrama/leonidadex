@@ -48,6 +48,13 @@ class BuildTests(unittest.TestCase):
                 for answer in base["faq"]:
                     for source in answer.get("fuentes", []):
                         self.assertIn(source["url"], faq_links.hrefs)
+                # Story solutions must remain in a closed, native disclosure.
+                for article in base["articulos"] + dyn.get("articulos_nuevos", []):
+                    if article.get("spoiler"):
+                        text = (output / "reportajes" / article["id"] / "index.html").read_text("utf-8")
+                        self.assertIn('<details class="spoiler-gate"><summary>', text)
+                        self.assertNotIn('<details class="spoiler-gate" open', text)
+                        self.assertIn(build.E(article["spoiler"]), text)
                 for page in pages:
                     text = page.read_text("utf-8")
                     self.assertEqual('data-ga4=' in text, bool(build.CONFIG["ga4_id"]))
