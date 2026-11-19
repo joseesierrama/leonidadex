@@ -3,7 +3,7 @@
     "datos": [
       {
         "k": "Fecha",
-        "v": "Jueves 19 de noviembre de 2026"
+        "v": "Disponible desde el 19 de noviembre de 2026"
       },
       {
         "k": "Hora",
@@ -27,7 +27,7 @@
       },
       {
         "k": "Edición física",
-        "v": "Caja con código, sin disco; envíos previstos desde el 12 nov"
+        "v": "Caja con código de descarga, sin disco"
       },
       {
         "k": "Edad",
@@ -635,23 +635,23 @@
   "guias": [
     {
       "id": "precarga-ps5",
-      "titulo": "Cómo precargar GTA VI en PS5",
+      "titulo": "Cómo instalar y abrir GTA VI en PS5",
       "categoria": "Lanzamiento",
       "nivel": "Básico",
       "tiempo": "5 min",
       "estado": "disponible",
-      "resumen": "Precarga abierta: descarga el juego, comprueba el espacio y revisa las actualizaciones antes del desbloqueo.",
+      "resumen": "Juego disponible: comprueba instalación, espacio y actualizaciones antes de empezar.",
       "pasos": [
-        "Abre el juego reservado en tu Biblioteca de PlayStation y comprueba la opción de descarga. Si compraste una caja con código, canjéalo cuando lo recibas; el envío y la recogida están previstos desde el 12 de noviembre.",
+        "Abre el juego reservado en tu Biblioteca de PlayStation y comprueba la opción de descarga. Si compraste una caja con código, canjéalo cuando lo recibas; consulta la entrega con tu vendedor.",
         "Libera espacio: hasta 212 GB. En una PS5 de 825 GB es casi un tercio del disco. Revisa Ajustes › Almacenamiento.",
         "Activa las descargas en reposo: Ajustes › Sistema › Ahorro de energía › Funciones disponibles en modo de reposo › Mantener conexión a Internet.",
         "Activa Ajustes › Datos guardados y ajustes de juegos/aplicaciones › Actualizaciones automáticas › Descarga automática e Instalación automática en modo de reposo.",
         "Comprueba en la Biblioteca que GTA VI aparece descargándose. Si no, ábrelo y pulsa Descargar.",
-        "El desbloqueo está previsto para el 19 de noviembre a medianoche local. Comprueba antes de jugar si la consola solicita actualizaciones; no hay un tamaño de parche de lanzamiento confirmado aquí."
+        "El lanzamiento nativo se produjo el 19 de noviembre a medianoche local. Comprueba antes de jugar si la consola solicita actualizaciones; no hay un tamaño de parche de lanzamiento confirmado aquí."
       ],
       "consejos": [
         "Los nombres de los menús pueden variar un poco según la versión del sistema.",
-        "Actualiza el firmware antes del día 19 para no perder tiempo.",
+        "Comprueba que el sistema está actualizado antes de abrir el juego.",
         "Revisión del 14 de noviembre: la prensa recoge una actualización previa al estreno, sin notas oficiales verificadas aquí. Revisa la sección de actualizaciones de tu consola."
       ],
       "fuentes": [
@@ -667,19 +667,19 @@
     },
     {
       "id": "precarga-xbox",
-      "titulo": "Cómo precargar GTA VI en Xbox Series X|S",
+      "titulo": "Cómo instalar y abrir GTA VI en Xbox Series X|S",
       "categoria": "Lanzamiento",
       "nivel": "Básico",
       "tiempo": "5 min",
       "estado": "disponible",
-      "resumen": "Precarga abierta: descarga el juego, comprueba el espacio y revisa las actualizaciones antes del desbloqueo.",
+      "resumen": "Juego disponible: comprueba instalación, espacio y actualizaciones antes de empezar.",
       "pasos": [
         "Compra o reserva en Microsoft Store, o canjea el código de la caja desde la Tienda › Canjear.",
         "Libera hasta 212 GB. En una Series S de 512 GB eso es más de la mitad del espacio útil.",
         "En Ajustes › General › Opciones de energía, elige el modo que mantiene la consola en reposo para que siga descargando.",
         "En Ajustes › Sistema › Actualizaciones y descargas, activa mantener juegos y aplicaciones actualizados.",
         "Ve a Mis juegos y aplicaciones › Biblioteca completa › Juegos en propiedad › GTA VI › Instalar.",
-        "Se desbloquea el 19 de noviembre a las 00:00, hora local."
+        "El juego nativo ya se ha desbloqueado tras la medianoche local del 19 de noviembre."
       ],
       "consejos": [
         "La ruta exacta de los menús puede cambiar con las actualizaciones del sistema.",
@@ -948,7 +948,7 @@
       "id": "kalaga-chiliad",
       "titulo": "¿Es Mount Kalaga el nuevo Chiliad?",
       "estado": "pendiente",
-      "texto": "El monte Chiliad de GTA V escondía un mural con un ovni y años de teorías. Kalaga es la gran montaña de Leonida. Estaremos atentos desde el día 1."
+      "texto": "La comparación con el misterio de Chiliad sigue siendo una teoría. No hemos verificado un mural, un ovni o una solución equivalente en Kalaga."
     },
     {
       "id": "cuatro",
@@ -976,7 +976,7 @@
       "id": "sitcom",
       "titulo": "La sitcom animada de la tele",
       "estado": "pendiente",
-      "texto": "Rockstar produjo episodios de una comedia animada para adultos con un estudio externo. De qué va, aún no se sabe."
+      "texto": "Los avances mencionaban una comedia animada para adultos. Su contenido permanece aquí pendiente de contraste episodio por episodio con el juego publicado."
     },
     {
       "id": "sin-ficha",
@@ -1397,7 +1397,7 @@
   "musica_extra": [
     {
       "titulo": "GTA VI: The Album",
-      "texto": "Álbum de 34 canciones originales con Atlantic Records, anunciado para el 19 de noviembre, con sencillos ya disponibles y ediciones en vinilo y CD. Hay sesiones de escucha en tiendas el día 18; consulta horarios y condiciones en el directorio oficial. Revisión del 16 de noviembre: circula una supuesta lista completa, todavía separada de los sencillos que se pueden verificar en la web de Rockstar.",
+      "texto": "La página oficial mantiene el 19 de noviembre como fecha anunciada de The Album, con 34 temas y enlaces a sencillos. En la consulta del día 19 aún mostraba Pre-Save Digital Album; no afirmamos haber verificado la disponibilidad del álbum completo en todas las plataformas. Las escuchas en tiendas del 18 ya son un evento pasado.",
       "fuentes": [
         {
           "nombre": "Rockstar: música",
@@ -1548,12 +1548,16 @@
   ],
   "faq": [
     {
-      "q": "¿Cuándo sale GTA VI en España y a qué hora?",
-      "a": "El jueves 19 de noviembre de 2026 a las 00:00 de tu hora local en las versiones nativas de PS5 y Xbox Series X|S.",
+      "q": "¿Ya se puede jugar a GTA VI en España?",
+      "a": "Sí: las versiones nativas de PS5 y Xbox Series X|S se lanzaron el 19 de noviembre de 2026 a medianoche local. El streaming tiene requisitos y disponibilidad propios.",
       "fuentes": [
         {
-          "nombre": "Rockstar: horarios regionales",
-          "url": "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s"
+          "nombre": "PlayStation · soporte oficial de GTA VI",
+          "url": "https://www.playstation.com/es-es/support/games/gta-vi-support/"
+        },
+        {
+          "nombre": "Xbox Wire · compra del juego, streaming y dispositivos compatibles",
+          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/"
         }
       ]
     },
@@ -1573,17 +1577,21 @@
     },
     {
       "q": "¿Y en PS4, Xbox One o Switch 2?",
-      "a": "No hay versión nativa anunciada para esas consolas. Xbox One sí tendrá acceso mediante Xbox Cloud Gaming.",
+      "a": "No hay versión nativa anunciada para esas consolas. Xbox One dispone del acceso por Xbox Cloud Gaming anunciado para el 19 de noviembre, sujeto a mercado, compra del juego y acceso al servicio.",
       "fuentes": [
         {
-          "nombre": "Rockstar: plataformas y nube",
-          "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now"
+          "nombre": "Xbox Wire · compra del juego, streaming y dispositivos compatibles",
+          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/"
+        },
+        {
+          "nombre": "Rockstar · fecha y plataformas",
+          "url": "https://www.rockstargames.com/VI"
         }
       ]
     },
     {
       "q": "¿GTA VI está incluido en Game Pass para jugar en la nube?",
-      "a": "Xbox exige comprar el juego aparte. El streaming empieza el 19 a las 07:00 peninsulares; el acceso depende del mercado y del tiempo de nube disponible.",
+      "a": "El juego se compra aparte. Xbox anunció el streaming desde el 19 de noviembre a la 01:00 ET (07:00 CET), con acceso condicionado al mercado y al tiempo de nube disponible.",
       "fuentes": [
         {
           "nombre": "Xbox Wire: acceso por streaming",
@@ -1613,11 +1621,11 @@
     },
     {
       "q": "¿La edición física trae disco?",
-      "a": "No incluye disco: se canjea un código. Los envíos y la recogida están previstos a partir del 12 de noviembre.",
+      "a": "No incluye disco: se canjea el código de descarga de la caja. Si falta o no se puede leer, consulta a tu vendedor.",
       "fuentes": [
         {
-          "nombre": "Rockstar: formatos",
-          "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
+          "nombre": "PlayStation · soporte oficial de GTA VI",
+          "url": "https://www.playstation.com/es-es/support/games/gta-vi-support/"
         }
       ]
     },
@@ -1673,7 +1681,7 @@
     },
     {
       "q": "¿Ya hay trucos de GTA VI publicados?",
-      "a": "PC Gamer y PowerPyx publican códigos coincidentes. Nuestra guía recoge tres y sus límites; no los hemos probado personalmente.",
+      "a": "La guía de LeonidaDex recoge seis secuencias coincidentes en PC Gamer y PowerPyx, con requisitos y advertencias. No las hemos probado personalmente.",
       "fuentes": [
         {
           "nombre": "LeonidaDex · códigos contrastados",
@@ -1690,28 +1698,20 @@
       ]
     },
     {
-      "q": "¿Cuándo salen los análisis?",
-      "a": "Ya hay análisis publicados el 18 de noviembre. Vandal, MeriStation, Game Informer y PSU puntúan con 10/10. Consulta el especial para ver más notas y sus matices.",
+      "q": "¿Qué notas tiene GTA VI en la crítica?",
+      "a": "En la consulta del 19 de noviembre, Metacritic muestra 99/100 para PS5 y OpenCritic 99/100 de media de críticos. Son puntuaciones de prensa, no de usuarios; consulta el especial para los matices.",
       "fuentes": [
         {
-          "nombre": "LeonidaDex · críticas y notas",
+          "nombre": "Metacritic · crítica de GTA VI",
+          "url": "https://www.metacritic.com/game/grand-theft-auto-vi/"
+        },
+        {
+          "nombre": "OpenCritic · crítica de GTA VI",
+          "url": "https://opencritic.com/game/15398/grand-theft-auto-vi"
+        },
+        {
+          "nombre": "LeonidaDex · notas y críticas",
           "url": "https://leonidadex.net/reportajes/criticas-y-notas-gta6/"
-        },
-        {
-          "nombre": "Vandal · análisis de Saúl González",
-          "url": "https://vandal.elespanol.com/analisis/ps5/grand-theft-auto-vi/104222"
-        },
-        {
-          "nombre": "MeriStation · análisis de David Arroyo",
-          "url": "https://as.com/meristation/analisis/analisis-de-gta-6-rockstar-compensa-13-anos-de-espera-con-un-juego-para-la-historia-f202611-n/"
-        },
-        {
-          "nombre": "Game Informer · análisis de Matt Miller",
-          "url": "https://gameinformer.com/review/grand-theft-auto-vi/outrageous-fortune"
-        },
-        {
-          "nombre": "PlayStation Universe · análisis de Miles Penrith",
-          "url": "https://www.psu.com/reviews/grand-theft-auto-vi-review-ps5/"
         }
       ]
     },
@@ -1754,8 +1754,8 @@
       ]
     },
     {
-      "q": "¿Dónde puedo escuchar The Album antes de su publicación?",
-      "a": "Atlantic Records anuncia eventos en tiendas el 18 de noviembre. El directorio incluye España; comprueba la ciudad, la hora y las condiciones con la tienda participante.",
+      "q": "¿Dónde se anunciaron las escuchas anticipadas de The Album?",
+      "a": "Atlantic Records organizó escuchas en tiendas el 18 de noviembre. Es un evento anterior al lanzamiento; el directorio sirve como referencia de aquellas sesiones. Para música disponible, consulta los enlaces oficiales de Rockstar.",
       "fuentes": [
         {
           "nombre": "Atlantic Records: eventos y tiendas participantes",
@@ -1765,7 +1765,7 @@
     },
     {
       "q": "¿Está confirmada la lista completa filtrada de The Album?",
-      "a": "La recogemos como filtración. Comprueba los temas anunciados en la página oficial; una fotografía del vinilo no convierte toda su lista en confirmación. The Album, el score y las emisoras son distintos.",
+      "a": "La fotografía del supuesto listado sigue identificada como filtración. La página oficial consultada el 19 de noviembre mantiene enlaces a sencillos y la fecha anunciada de The Album; no usamos esa fotografía para confirmar toda la lista.",
       "fuentes": [
         {
           "nombre": "GamesRadar: supuesta lista de The Album",
@@ -3507,92 +3507,56 @@
       "categoria": "Lanzamiento",
       "lectura": 4,
       "fecha": "2026-11-17",
-      "titulo": "Noche de lanzamiento de GTA VI: horarios y checklist para llegar preparado",
-      "entradilla": "Qué revisar antes de empezar: descarga, espacio, horario de tu versión y un plan si el juego no se abre. Revisado el 18 de noviembre, sin spoilers de la historia.",
+      "titulo": "GTA VI ya está disponible: instalación y primer día sin spoilers",
+      "entradilla": "El lanzamiento nativo del 19 de noviembre ya ha llegado. Aquí tienes por dónde empezar, cómo orientarte y dónde resolver las primeras dudas.",
       "cuerpo": [
         {
-          "h": "Consola: la noche del miércoles 18 al jueves 19"
+          "h": "Disponible desde el 19 de noviembre"
         },
         {
-          "p": "Rockstar fija la salida nativa en PS5 y Xbox Series X|S a las 00:00 locales del 19 de noviembre. En la Península son las 00:00 CET; en Canarias, las 00:00 WET. Son medianoches locales distintas: Canarias llega una hora después en tiempo absoluto. Consulta el horario de tu región si estás fuera de España."
+          "p": "GTA VI se ha lanzado para PS5 y Xbox Series X|S. La hora anunciada para las versiones nativas era medianoche local. La edición por streaming tiene sus propias condiciones de acceso."
         },
         {
-          "h": "La nube tiene otro horario"
-        },
-        {
-          "p": "Xbox Cloud Gaming empieza el 19 a la 01:00 ET: 07:00 en la Península y 06:00 en Canarias. Xbox One accede por streaming; no recibe una versión nativa. Se necesita comprar el juego y disponer de acceso a la nube; la elegibilidad depende del mercado y dispositivo. No confundas ese servicio con jugar instalado en Xbox Series."
-        },
-        {
-          "h": "Antes de acostarte: comprueba lo que sí puedes dejar listo"
+          "h": "Tu primera sesión"
         },
         {
           "ul": [
-            "Comprueba que has comprado la edición para tu consola y que aparece en la biblioteca de la cuenta correcta.",
-            "Revisa el espacio libre: Rockstar indica hasta 212 GB según el dispositivo. Comprueba el tamaño que muestre tu consola; no lo tomes como una cifra universal para cada descarga o parche.",
-            "Mira la cola de descargas y confirma que la precarga ha terminado. Una reserva en la biblioteca no significa que ya esté instalada.",
-            "Revisa las actualizaciones del sistema y del juego desde la consola. No damos por hecho el tamaño de un parche que Rockstar no haya detallado.",
-            "Carga el mando, prueba los auriculares y decide qué notificaciones o chats quieres silenciar."
+            "Comprueba que instalación y actualizaciones han terminado.",
+            "Conserva puntos de guardado manual para poder volver a un capítulo anterior.",
+            "Consulta el mapa comunitario y las fichas de personajes para orientarte. Las coordenadas de GTADB siguen siendo aportaciones comunitarias.",
+            "Si buscas soluciones, abre solo las guías que necesites: los detalles de historia se mantienen bajo desplegables cerrados."
           ]
         },
         {
-          "h": "Si a tu hora no se abre"
+          "h": "Guías para resolver dudas concretas"
         },
         {
-          "ul": [
-            "Comprueba primero tu región y si intentas jugar instalado o por la nube: sus horarios son diferentes.",
-            "Lee el mensaje exacto de la consola y anota el código de error antes de cambiar nada.",
-            "Revisa la descarga, las actualizaciones y la cuenta propietaria. No borres una instalación completa como primer paso.",
-            "Consulta el soporte de tu plataforma y Rockstar si persiste. Un indicador general de servicios no garantiza por sí solo que GTA VI funcione en tu consola."
-          ]
-        },
-        {
-          "h": "¿Quieres acompañar la salida con un directo?"
-        },
-        {
-          "p": "YouTube anunció el 12 de noviembre una retransmisión de 24 horas con Rockstar. El previo empieza el 19 a las 05:00 peninsulares / 04:00 canarias; el programa principal, a las 06:00 / 05:00. Tendrá gameplay: puede revelar contenido si prefieres descubrirlo jugando. Son horarios de emisión, no de desbloqueo."
-        },
-        {
-          "h": "Tu primera ruta la eliges tú"
-        },
-        {
-          "p": "En la portada de LeonidaDex tienes la checklist interactiva en Guías, el mapa y las fichas de presentación. El mapa identifica sus aportaciones comunitarias: no convierte cada marcador en una localización verificada dentro del juego. Si quieres proteger las sorpresas de la historia, consulta también nuestra guía para evitar spoilers."
+          "p": "En la portada tienes accesos a guardado, cajas fuertes, taxi, códigos y la búsqueda de Kirk. También mantenemos una guía de acceso por la nube y otra para problemas al abrir el juego en PS5."
         }
       ],
       "fuentes": [
         {
-          "nombre": "Rockstar: horarios regionales",
-          "url": "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s"
+          "nombre": "Rockstar · fecha y plataformas",
+          "url": "https://www.rockstargames.com/VI"
         },
         {
-          "nombre": "Rockstar: requisitos de instalación",
-          "url": "https://support.rockstargames.com/articles/M6h7B5fJZMwG1dnzQkt4Z/grand-theft-auto-vi-installation-requirements"
+          "nombre": "PlayStation · soporte oficial de GTA VI",
+          "url": "https://www.playstation.com/es-es/support/games/gta-vi-support/"
         },
         {
-          "nombre": "Xbox Wire: acceso por la nube",
+          "nombre": "Xbox Wire · compra del juego, streaming y dispositivos compatibles",
           "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/"
         },
         {
-          "nombre": "YouTube: anuncio del 12 de noviembre",
-          "url": "https://blog.youtube/news-and-events/youtube-rockstar-games-gta-vi-launch/"
+          "nombre": "LeonidaDex · guardado",
+          "url": "https://leonidadex.net/reportajes/guardar-partida-gta6/"
         },
         {
-          "nombre": "Ver el canal oficial de YouTube",
-          "url": "https://www.youtube.com/youtube"
-        },
-        {
-          "nombre": "Rockstar: estado de servicios (consulta en directo)",
-          "url": "https://support.rockstargames.com/servicestatus?lang=en"
-        },
-        {
-          "nombre": "LeonidaDex: checklist interactiva",
-          "url": "https://leonidadex.net/#g-checklist-lanzamiento"
-        },
-        {
-          "nombre": "LeonidaDex: guía para evitar spoilers",
-          "url": "https://leonidadex.net/reportajes/evitar-spoilers/"
+          "nombre": "LeonidaDex · comprobaciones de PS5",
+          "url": "https://leonidadex.net/reportajes/gta6-no-abre-ps5/"
         }
       ],
-      "actualizado": "2026-11-18T14:00:52+01:00"
+      "actualizado": "2026-11-19T11:19:05+01:00"
     },
     {
       "id": "cronologia-completa",
@@ -4046,6 +4010,9 @@
       "entradilla": "Cómo interpretar los marcadores de LeonidaDex sin confundir una reconstrucción, un póster y el mapa final.",
       "cuerpo": [
         {
+          "p": "Revisión del 19 de noviembre: 3.651 puntos y 137 áreas de GTADB. Frente a la copia del 18: 311 altas, 45 registros revisados (32 con coordenadas distintas) y 0 bajas. Cartografía y datos comunitarios: no equivalen a un mapa oficial ni a coordenadas verificadas por LeonidaDex en una consola."
+        },
+        {
           "h": "Tres materiales con funciones distintas"
         },
         {
@@ -4098,7 +4065,8 @@
           "nombre": "GTADB: datos comunitarios de Leonida",
           "url": "https://github.com/rolux/gtadb.org/blob/main/map/data/6/landmarks.json"
         }
-      ]
+      ],
+      "actualizado": "2026-11-19T11:19:05+01:00"
     },
     {
       "id": "evitar-spoilers",
@@ -4788,7 +4756,7 @@
     ]
   },
   "mapa_revision": {
-    "fecha": "2026-11-18",
-    "texto": "Revisión del 18 de noviembre: 3.340 puntos y 136 áreas de GTADB. Frente a la copia del 16 de noviembre: 6 altas, 5 registros revisados (2 con coordenadas distintas) y 0 bajas. Son aportaciones comunitarias, no un mapa oficial ni una confirmación de misiones o secretos."
+    "fecha": "2026-11-19",
+    "texto": "Revisión del 19 de noviembre: 3.651 puntos y 137 áreas de GTADB. Frente a la copia del 18: 311 altas, 45 registros revisados (32 con coordenadas distintas) y 0 bajas. Cartografía y datos comunitarios: no equivalen a un mapa oficial ni a coordenadas verificadas por LeonidaDex en una consola."
   }
 }
