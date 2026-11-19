@@ -1054,11 +1054,11 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     <div class="sec-head">
       <p class="eyebrow">09 · La Dex</p>
       <h2 id="h-dex">La <em>Dex</em></h2>
-      <p class="lede">El fichero de LeonidaDex: vehículos, armas, fauna y marcas confirmados por Rockstar o vistos en el material oficial. Tras el lanzamiento iremos completándolo con todo lo que aparezca en el juego.</p>
+      <p class="lede">El fichero de LeonidaDex: vehículos, armas, fauna y marcas con fuentes de Rockstar, material oficial y guías de prensa. Ampliamos el catálogo con el juego publicado; cada ficha indica la procedencia del dato.</p>
     </div>
     <div class="toolbar"><div class="chips" id="dexTabs" role="group" aria-label="Categoría"></div><input class="field" id="dexQ" type="search" placeholder="Buscar en la Dex…" aria-label="Buscar en la Dex"></div>
     <div class="dex-grid" id="dexGrid"></div>
-    <p class="note">«Oficial»: confirmado por Rockstar (fichas, ediciones o entrevistas). «Visto en tráiler»: identificado en material oficial por medios y comunidad.</p>
+    <p class="note">«Oficial»: confirmado por Rockstar (fichas, ediciones o entrevistas). «Visto en tráiler»: identificado en material oficial por medios y comunidad. «Prensa»: documentado por la fuente enlazada, sin comprobación propia en consola.</p>
   </div>
 </section>
 
@@ -1502,7 +1502,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     var L = A.filter(function (x) { return (dexCat === "todo" || x.cat === dexCat) && (!q || norm(x.nombre + " " + x.tipo + " " + x.nota).indexOf(q) > -1); });
     $("#dexGrid").innerHTML = L.length ? L.map(function (x) {
       var i = A.indexOf(x) + 1;
-      return '<article class="dex-card"><span class="n ' + esc(x.cat) + '">' + ("00" + i).slice(-3) + '</span><span class="badge ' + (x.estado === "oficial" ? "oficial" : "prensa") + '">' + (x.estado === "oficial" ? "Oficial" : "Visto en tráiler") + "</span><b>" + esc(x.nombre) + '</b><span class="t">' + esc(x.tipo) + "</span><p>" + esc(x.nota) + "</p>" + (x.fuente && x.fuente.url ? '<span class="src"><a href="' + esc(x.fuente.url) + '" target="_blank" rel="noopener">' + esc(x.fuente.nombre) + "</a></span>" : "") + "</article>";
+      return '<article class="dex-card"><span class="n ' + esc(x.cat) + '">' + ("00" + i).slice(-3) + '</span><span class="badge ' + (x.estado === "oficial" ? "oficial" : "prensa") + '">' + (x.estado === "oficial" ? "Oficial" : x.estado === "prensa" ? "Prensa" : "Visto en tráiler") + "</span><b>" + esc(x.nombre) + '</b><span class="t">' + esc(x.tipo) + "</span><p>" + esc(x.nota) + "</p>" + (x.fuente && x.fuente.url ? '<span class="src"><a href="' + esc(x.fuente.url) + '" target="_blank" rel="noopener">' + esc(x.fuente.nombre) + "</a></span>" : "") + "</article>";
     }).join("") : '<p class="note">Nada por aquí todavía.</p>';
   }
   $("#dexTabs").addEventListener("click", function (e) { var b = e.target.closest("button"); if (!b) return; dexCat = b.dataset.c; renderDex(); });
