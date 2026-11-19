@@ -1,9 +1,9 @@
 {
   "meta": {
-    "actualizado": "2026-11-18T19:34:08+01:00",
+    "actualizado": "2026-11-19T11:19:05+01:00",
     "lanzamiento": "2026-11-19T00:00:00",
-    "nota_lanzamiento": "Medianoche hora local · PS5 y Xbox Series X|S",
-    "fase": "prelanzamiento",
+    "nota_lanzamiento": "Disponible desde el 19 de noviembre · PS5 y Xbox Series X|S",
+    "fase": "lanzado",
     "aviso": ""
   },
   "hitos": [
@@ -197,6 +197,202 @@
     }
   ],
   "noticias": [
+    {
+      "id": "lanzamiento-gta6-20261119",
+      "fecha": "2026-11-19",
+      "titulo": "GTA VI ya está disponible: por dónde empezar sin spoilers",
+      "resumen": "El lanzamiento nativo de PS5 y Xbox Series X|S ha llegado. La portada reúne instalación, guardado, mapa y guías para la primera partida.",
+      "categoria": "Lanzamiento",
+      "estado": "oficial",
+      "fuentes": [
+        {
+          "nombre": "Rockstar · fecha y plataformas",
+          "url": "https://www.rockstargames.com/VI"
+        },
+        {
+          "nombre": "PlayStation · soporte oficial de GTA VI",
+          "url": "https://www.playstation.com/es-es/support/games/gta-vi-support/"
+        },
+        {
+          "nombre": "LeonidaDex · primer día",
+          "url": "https://leonidadex.net/reportajes/noche-de-lanzamiento/"
+        }
+      ]
+    },
+    {
+      "id": "mapa-3651-20261119",
+      "fecha": "2026-11-19",
+      "titulo": "Mapa actualizado: 311 puntos nuevos y 45 registros revisados",
+      "resumen": "La comparación con la copia del 18 deja 3.651 puntos y 137 áreas, con 32 cambios de coordenadas y ninguna baja. Datos de GTADB con licencia CC BY 4.0; siguen siendo comunitarios.",
+      "categoria": "Mapa",
+      "estado": "comunidad",
+      "fuentes": [
+        {
+          "nombre": "GTADB · Landmarks Data, CC BY 4.0",
+          "url": "https://github.com/rolux/gtadb.org/blob/main/map/data/6/landmarks.json"
+        },
+        {
+          "nombre": "LeonidaDex · alcance del mapa",
+          "url": "https://leonidadex.net/reportajes/mapa-oficial-y-comunidad/"
+        }
+      ]
+    },
+    {
+      "id": "criticas-99-20261119",
+      "fecha": "2026-11-19",
+      "titulo": "GTA VI: 99/100 en Metacritic y OpenCritic en la consulta del día 19",
+      "resumen": "Revisamos las medias en las páginas actuales de ambos agregadores. OpenCritic pasa del 98 de nuestra consulta del 18 al 99; las notas de crítica se mantienen separadas de las de usuarios.",
+      "categoria": "Análisis",
+      "estado": "prensa",
+      "fuentes": [
+        {
+          "nombre": "Metacritic · crítica de GTA VI",
+          "url": "https://www.metacritic.com/game/grand-theft-auto-vi/"
+        },
+        {
+          "nombre": "OpenCritic · crítica de GTA VI",
+          "url": "https://opencritic.com/game/15398/grand-theft-auto-vi"
+        },
+        {
+          "nombre": "LeonidaDex · críticas y notas",
+          "url": "https://leonidadex.net/reportajes/criticas-y-notas-gta6/"
+        }
+      ]
+    },
+    {
+      "id": "cajas-fuertes-20261119",
+      "fecha": "2026-11-19",
+      "titulo": "Cajas fuertes: por qué no sirve una clave universal para los robos",
+      "resumen": "PC Gamer distingue las claves de historia de las combinaciones aleatorias de robos. Nuestra guía explica cómo buscar las pistas de tu partida.",
+      "categoria": "Guías",
+      "estado": "prensa",
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · claves de cajas fuertes y cómo encontrarlas",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-safe-codes-combinations/"
+        },
+        {
+          "nombre": "LeonidaDex · claves de cajas fuertes",
+          "url": "https://leonidadex.net/reportajes/cajas-fuertes-gta6-claves/"
+        }
+      ]
+    },
+    {
+      "id": "guardar-partida-20261119",
+      "fecha": "2026-11-19",
+      "titulo": "Guardado manual: la ruta y los huecos que describe PC Gamer",
+      "resumen": "Publicamos una guía breve de guardado y conservación de puntos de regreso, con la advertencia sobre activar trucos.",
+      "categoria": "Guías",
+      "estado": "prensa",
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · guardado manual y ranuras",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-save-game/"
+        },
+        {
+          "nombre": "LeonidaDex · guardar partida",
+          "url": "https://leonidadex.net/reportajes/guardar-partida-gta6/"
+        }
+      ]
+    },
+    {
+      "id": "kirk-pantano-20261119",
+      "fecha": "2026-11-19",
+      "titulo": "Un misterio del pantano ya tiene guía y vídeo de PowerPyx",
+      "resumen": "Recogemos cómo iniciar una cadena secundaria, con pistas ocultas y sin contar su desenlace. No se presenta como una comprobación propia de LeonidaDex.",
+      "categoria": "Secretos",
+      "estado": "prensa",
+      "fuentes": [
+        {
+          "nombre": "LeonidaDex · guía con detalles ocultos",
+          "url": "https://leonidadex.net/reportajes/misterio-pantano-kirk/"
+        },
+        {
+          "nombre": "PowerPyx · inicio de la misión de Kirk, con spoilers",
+          "url": "https://www.powerpyx.com/gta-6-search-for-the-skunk-ape-walkthrough/"
+        }
+      ]
+    },
+    {
+      "id": "seis-codigos-20261119",
+      "fecha": "2026-11-19",
+      "titulo": "La guía de trucos crece a seis secuencias coincidentes",
+      "resumen": "Añadimos clima, HVY Bulldozer y Dollhouse. Los códigos coinciden en PC Gamer y PowerPyx; varios requisitos se atribuyen a esta última fuente. Se mantienen las limitaciones de guardado y trofeos.",
+      "categoria": "Trucos",
+      "estado": "prensa",
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · códigos de GTA VI",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/"
+        },
+        {
+          "nombre": "PowerPyx · trucos y requisitos de desbloqueo",
+          "url": "https://www.powerpyx.com/gta-6-all-cheats/"
+        },
+        {
+          "nombre": "LeonidaDex · seis códigos",
+          "url": "https://leonidadex.net/reportajes/trucos-gta6-codigos-desbloqueo/"
+        }
+      ]
+    },
+    {
+      "id": "dinero-actividades-20261119",
+      "fecha": "2026-11-19",
+      "titulo": "Dinero en GTA VI: tres actividades y sus condiciones de progreso",
+      "resumen": "Una selección atribuida a PC Gamer, con contactos y detalles de progresión ocultos. Sin cifras garantizadas por minuto ni generadores externos.",
+      "categoria": "Guías",
+      "estado": "prensa",
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · actividades para conseguir dinero",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-how-to-make-money/"
+        },
+        {
+          "nombre": "LeonidaDex · actividades y límites",
+          "url": "https://leonidadex.net/reportajes/dinero-gta6-actividades/"
+        }
+      ]
+    },
+    {
+      "id": "xbox-nube-20261119",
+      "fecha": "2026-11-19",
+      "titulo": "Xbox One por streaming: compra y acceso a nube van separados",
+      "resumen": "Reunimos las condiciones anunciadas por Xbox para GTA VI desde el día 19. Streaming y versión nativa son formas distintas de acceso.",
+      "categoria": "Plataformas",
+      "estado": "oficial",
+      "fuentes": [
+        {
+          "nombre": "Xbox Wire · compra del juego, streaming y dispositivos compatibles",
+          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/"
+        },
+        {
+          "nombre": "LeonidaDex · guía de nube",
+          "url": "https://leonidadex.net/reportajes/gta6-xbox-one-nube/"
+        }
+      ]
+    },
+    {
+      "id": "psn-estado-20261119",
+      "fecha": "2026-11-19",
+      "titulo": "¿GTA VI no abre? Comprobaciones y estado oficial de PlayStation",
+      "resumen": "El panel consultado el 19 de noviembre mostraba todos los servicios activos. La guía reúne cuenta, instalación y soporte; el estado puede cambiar y no es un monitor en directo.",
+      "categoria": "Soporte",
+      "estado": "oficial",
+      "fuentes": [
+        {
+          "nombre": "PlayStation · estado de los servicios, consulta puntual del 19 de noviembre",
+          "url": "https://status.playstation.com/es-es/"
+        },
+        {
+          "nombre": "PlayStation · soporte oficial de GTA VI",
+          "url": "https://www.playstation.com/es-es/support/games/gta-vi-support/"
+        },
+        {
+          "nombre": "LeonidaDex · ayuda para PS5",
+          "url": "https://leonidadex.net/reportajes/gta6-no-abre-ps5/"
+        }
+      ]
+    },
     {
       "id": "idiomas-gta6-soporte-20261118",
       "fecha": "2026-11-18",
@@ -1650,6 +1846,52 @@
   ],
   "guias_nuevas": [
     {
+      "id": "guardar-partida-lanzamiento",
+      "titulo": "Guardar y conservar puntos de regreso",
+      "categoria": "Primeros pasos",
+      "nivel": "Básico",
+      "tiempo": "2 min",
+      "estado": "disponible",
+      "resumen": "Guardado manual y ranuras, según PC Gamer.",
+      "pasos": [
+        "Consulta la guía de guardado para la ruta de menú, sus límites y una forma sencilla de organizar varios huecos."
+      ],
+      "consejos": [],
+      "fuentes": [
+        {
+          "nombre": "LeonidaDex · guía completa de guardado",
+          "url": "https://leonidadex.net/reportajes/guardar-partida-gta6/"
+        },
+        {
+          "nombre": "PC Gamer · guardado manual y ranuras",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-save-game/"
+        }
+      ]
+    },
+    {
+      "id": "cajas-fuertes-lanzamiento",
+      "titulo": "Encontrar claves de cajas fuertes",
+      "categoria": "Primeros pasos",
+      "nivel": "Básico",
+      "tiempo": "2 min",
+      "estado": "disponible",
+      "resumen": "Cómo localizar la combinación de tu partida sin probar listas al azar.",
+      "pasos": [
+        "La guía distingue cajas de historia y de robos y atribuye sus instrucciones a PC Gamer."
+      ],
+      "consejos": [],
+      "fuentes": [
+        {
+          "nombre": "LeonidaDex · guía de cajas fuertes",
+          "url": "https://leonidadex.net/reportajes/cajas-fuertes-gta6-claves/"
+        },
+        {
+          "nombre": "PC Gamer · claves de cajas fuertes y cómo encontrarlas",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-safe-codes-combinations/"
+        }
+      ]
+    },
+    {
       "id": "codigos-y-region",
       "titulo": "Tu código de GTA VI: cuenta, región y descarga",
       "categoria": "Compra",
@@ -1712,18 +1954,18 @@
     },
     {
       "id": "precarga-y-actualizaciones",
-      "titulo": "Precarga terminada: comprueba las actualizaciones",
+      "titulo": "GTA VI instalado: comprueba las actualizaciones",
       "categoria": "Lanzamiento",
       "nivel": "Básico",
       "tiempo": "3 min",
       "estado": "disponible",
-      "resumen": "Descargar los archivos y mantenerlos al día son pasos diferentes. Ninguno da acceso anticipado.",
+      "resumen": "El juego ya está disponible; revisa las descargas pendientes que indique tu consola.",
       "pasos": [
         "Comprueba que la precarga ha terminado y que tienes espacio libre adicional para las actualizaciones que indique tu consola.",
         "En PS5, selecciona GTA VI en la pantalla de inicio, pulsa Opciones y elige Buscar actualización.",
         "En Xbox, abre Mis juegos y aplicaciones, Administrar y Actualizaciones. Instala solo lo que ofrezca la consola.",
         "Si ves una versión distinta a la publicada en redes, no deduzcas contenido nuevo: los tamaños y el despliegue pueden variar. Aquí no hay notas oficiales verificadas de la 1.002.000.",
-        "Mantén la consola conectada si deseas descargas automáticas y comprueba el estado antes de jugar. El desbloqueo nativo sigue anunciado para el 19 a medianoche local."
+        "Mantén la consola conectada si deseas descargas automáticas y comprueba el estado antes de jugar. El lanzamiento nativo fue el 19 de noviembre, a medianoche local."
       ],
       "consejos": [
         "No compartas códigos de descarga ni instales supuestos parches externos. Los nombres de menú pueden variar con el sistema."
@@ -1744,7 +1986,18 @@
       ]
     }
   ],
-  "misiones": [],
+  "misiones": [
+    {
+      "titulo": "Una búsqueda secundaria en el pantano",
+      "texto": "PowerPyx documenta cómo iniciar la cadena de Kirk. La guía enlazada mantiene las pistas y la ubicación ocultas hasta que decidas abrirlas; no cuenta el desenlace.",
+      "fuentes": [
+        {
+          "nombre": "LeonidaDex · pistas con spoilers ocultos",
+          "url": "https://leonidadex.net/reportajes/misterio-pantano-kirk/"
+        }
+      ]
+    }
+  ],
   "trucos_gta6": [
     {
       "id": "dinero-250000",
@@ -1808,9 +2061,83 @@
           "url": "https://www.powerpyx.com/gta-6-all-cheats/"
         }
       ]
+    },
+    {
+      "id": "clima-ciclico",
+      "efecto": "Cambiar el clima",
+      "ps5": "↓ → ↑ ↓ → ↑ →",
+      "xbox": "↓ → ↑ ↓ → ↑ →",
+      "notas": "Prensa · secuencia coincidente en PC Gamer y PowerPyx. Requisito atribuido a PowerPyx: Terminar la historia.",
+      "fuente": {
+        "nombre": "PC Gamer · códigos de GTA VI",
+        "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/"
+      },
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · códigos de GTA VI",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/"
+        },
+        {
+          "nombre": "PowerPyx · trucos y requisitos de desbloqueo",
+          "url": "https://www.powerpyx.com/gta-6-all-cheats/"
+        }
+      ]
+    },
+    {
+      "id": "hvy-bulldozer",
+      "efecto": "Generar HVY Bulldozer",
+      "ps5": "← ↑ → ↓ ← → → ↓",
+      "xbox": "← ↑ → ↓ ← → → ↓",
+      "notas": "Prensa · secuencia coincidente en PC Gamer y PowerPyx. Requisito atribuido a PowerPyx: Terminar la historia y descubrir HVY Bulldozer en el menú de progreso.",
+      "fuente": {
+        "nombre": "PC Gamer · códigos de GTA VI",
+        "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/"
+      },
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · códigos de GTA VI",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/"
+        },
+        {
+          "nombre": "PowerPyx · trucos y requisitos de desbloqueo",
+          "url": "https://www.powerpyx.com/gta-6-all-cheats/"
+        }
+      ]
+    },
+    {
+      "id": "filtro-dollhouse",
+      "efecto": "Filtro Dollhouse",
+      "ps5": "↓ ↓ ↑ → → ↑ ← ← ↓ →",
+      "xbox": "↓ ↓ ↑ → → ↑ ← ← ↓ →",
+      "notas": "Prensa · secuencia coincidente en PC Gamer y PowerPyx. Requisito atribuido a PowerPyx: Terminar la historia y pasar 8 horas con tu pareja, según PowerPyx.",
+      "fuente": {
+        "nombre": "PC Gamer · códigos de GTA VI",
+        "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/"
+      },
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · códigos de GTA VI",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/"
+        },
+        {
+          "nombre": "PowerPyx · trucos y requisitos de desbloqueo",
+          "url": "https://www.powerpyx.com/gta-6-all-cheats/"
+        }
+      ]
     }
   ],
-  "misterios_nuevos": [],
+  "misterios_nuevos": [
+    {
+      "id": "kirk-pantano-documentado",
+      "titulo": "Una búsqueda documentada en los pantanos",
+      "estado": "confirmado",
+      "texto": "Una guía de PowerPyx y su vídeo documentan un encuentro y una cadena secundaria. LeonidaDex recoge el inicio con atribución y sin revelar el final; no es una prueba propia ni una confirmación de otras teorías.",
+      "fuente": {
+        "nombre": "Ver guía · detalles ocultos",
+        "url": "https://leonidadex.net/reportajes/misterio-pantano-kirk/"
+      }
+    }
+  ],
   "cronologia_nueva": [
     {
       "fecha": "2026-10-29",
@@ -1831,10 +2158,267 @@
     {
       "fecha": "2026-12-11",
       "titulo": "Original Score de Justice (fecha anunciada)"
+    },
+    {
+      "fecha": "2026-11-19",
+      "titulo": "Lanzamiento nativo de GTA VI en PS5 y Xbox Series X|S"
     }
   ],
   "mapa_lugares": [],
   "articulos_nuevos": [
+    {
+      "id": "cajas-fuertes-gta6-claves",
+      "titulo": "Cajas fuertes en GTA VI: cómo encontrar su clave sin probar números al azar",
+      "entradilla": "No existe una combinación universal para todos los robos. Una explicación breve, atribuida a PC Gamer y sin destripar misiones.",
+      "cuerpo": [
+        {
+          "h": "Historia y robos funcionan distinto"
+        },
+        {
+          "p": "Según PC Gamer, la historia te facilita sus códigos; los de robos son aleatorios. No hay cuatro cifras universales."
+        },
+        {
+          "h": "Cómo localizar la clave"
+        },
+        {
+          "ul": [
+            "Busca notas o documentos en el establecimiento. La guía recomienda Focus (L3 y R3) para detectar pistas.",
+            "También describe obtener la combinación de un empleado mediante la interacción que aparezca durante el robo."
+          ]
+        },
+        {
+          "h": "Qué introducir"
+        },
+        {
+          "p": "La clave obtenida aparece abajo a la derecha al interactuar con la caja. Usa esa combinación. Es una guía atribuida a PC Gamer, no una prueba propia de LeonidaDex."
+        },
+        {
+          "p": "Los códigos que alteran el juego se explican aparte en nuestra guía de trucos."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · claves de cajas fuertes y cómo encontrarlas",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-safe-codes-combinations/"
+        }
+      ],
+      "categoria": "Guías",
+      "lectura": 2,
+      "fecha": "2026-11-19",
+      "actualizado": "2026-11-19T11:19:05+01:00"
+    },
+    {
+      "id": "misterio-pantano-kirk",
+      "titulo": "El misterio del pantano de GTA VI: cómo empezar la búsqueda de Kirk",
+      "entradilla": "PowerPyx documenta una cadena secundaria y un encuentro del pantano. Las pistas y la ubicación quedan ocultas hasta que decidas leerlas; no revelamos el desenlace.",
+      "cuerpo": [
+        {
+          "h": "Cómo iniciar la primera misión"
+        },
+        {
+          "p": "La guía de PowerPyx sitúa el inicio en los carteles de Kirk sobre el Skunk Ape. Da como ejemplo uno en Skeeter’s bar, en Hamlet. Al leerlo se añade el contacto: llama a Kirk desde el teléfono para recibir el marcador de la misión."
+        },
+        {
+          "h": "El horario importa"
+        },
+        {
+          "p": "PowerPyx identifica la misión como contenido del capítulo 1, disponible para Jason o Lucia por la noche. El marcador conduce a los pantanos de Mariana County. La guía recomienda la linterna para seguir la búsqueda a oscuras."
+        },
+        {
+          "h": "Qué está documentado y qué dejamos fuera"
+        },
+        {
+          "p": "El mismo autor publica un vídeo del encuentro en el mundo abierto, al sur de Hamlet, además de la cadena de misiones. Son dos vías descritas por la fuente, no coordenadas nuevas verificadas por LeonidaDex."
+        },
+        {
+          "p": "Esta página se centra en iniciar la búsqueda. No cuenta decisiones finales, recompensas de la última misión ni qué ocurre con sus personajes. Las fuentes externas sí contienen esos spoilers."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "PowerPyx · inicio de la misión de Kirk, con spoilers",
+          "url": "https://www.powerpyx.com/gta-6-search-for-the-skunk-ape-walkthrough/"
+        },
+        {
+          "nombre": "PowerPyx · encuentro del pantano, con vídeo y spoilers",
+          "url": "https://www.powerpyx.com/gta-6-bigfoot-sasquatch-easter-egg-location/"
+        }
+      ],
+      "categoria": "Secretos",
+      "lectura": 2,
+      "fecha": "2026-11-19",
+      "actualizado": "2026-11-19T11:19:05+01:00",
+      "spoiler": "Mostrar pistas y ubicación · spoilers leves de una misión secundaria"
+    },
+    {
+      "id": "guardar-partida-gta6",
+      "titulo": "Cómo guardar partida en GTA VI y conservar varios puntos de regreso",
+      "entradilla": "Dónde describe PC Gamer el guardado manual, cuántas ranuras recoge y cómo evitar sobrescribir todos tus puntos de regreso.",
+      "cuerpo": [
+        {
+          "h": "Guardado manual"
+        },
+        {
+          "p": "PC Gamer indica esta ruta: menú principal > Game / Juego > Save Game / Guardar partida. La misma sección permite cargar una partida. Su guía recoge 15 ranuras de guardado manual."
+        },
+        {
+          "h": "Una organización sencilla"
+        },
+        {
+          "ul": [
+            "Reserva un hueco para avanzar normalmente y conserva otros al cambiar de capítulo.",
+            "Antes de sobrescribir, comprueba la fecha, el progreso y el hueco seleccionado.",
+            "Si vas a experimentar con trucos, guarda antes de activarlos. La guía advierte de que usarlos impide guardar durante esa sesión."
+          ]
+        },
+        {
+          "h": "Si la opción no está disponible"
+        },
+        {
+          "p": "No borres partidas para intentar habilitarla. Revisa el estado de tu sesión y la advertencia de los trucos, y consulta la fuente. Los nombres visibles pueden variar con el idioma; esta guía no cambia ajustes de tu consola."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · guardado manual y ranuras",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-save-game/"
+        },
+        {
+          "nombre": "LeonidaDex · requisitos y advertencias de los trucos",
+          "url": "https://leonidadex.net/reportajes/trucos-gta6-codigos-desbloqueo/"
+        }
+      ],
+      "categoria": "Guías",
+      "lectura": 2,
+      "fecha": "2026-11-19",
+      "actualizado": "2026-11-19T11:19:05+01:00"
+    },
+    {
+      "id": "dinero-gta6-actividades",
+      "titulo": "Dinero en GTA VI: tres actividades y sus condiciones, sin generadores ni promesas",
+      "entradilla": "Una selección de la guía de PC Gamer. Los contactos y actividades de progresión están ocultos para que puedas descubrirlos a tu ritmo.",
+      "cuerpo": [
+        {
+          "h": "Opciones que describe la guía"
+        },
+        {
+          "ul": [
+            "Intervenir en robos de otras bandas: PC Gamer describe botines variables; la persecución puede pasar a tu personaje cuando recoges las bolsas.",
+            "Vender vehículos: la guía sitúa a Moses en el capítulo 2 y señala una espera entre ventas. No equivale a vender cualquier coche ilimitadamente.",
+            "Carreras de demolición en Ambrosia Raceway: la fuente recoge premios variables por victoria y un coste de alquiler si no utilizas vehículo propio."
+          ]
+        },
+        {
+          "h": "Compara el resultado neto"
+        },
+        {
+          "p": "No damos una cifra garantizada por minuto. El resultado depende de actividad, progreso, vehículo, gastos y de terminar el encargo. Antes de repetir una ruta, comprueba qué te ofrece tu partida y cuánto tiempo te lleva."
+        },
+        {
+          "p": "Estas son actividades descritas por PC Gamer, no un método medido por LeonidaDex. El dinero de la partida no exige introducir tus credenciales en un generador externo. Para dudas sobre una caja, tienes una guía independiente de combinaciones."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · actividades para conseguir dinero",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-how-to-make-money/"
+        },
+        {
+          "nombre": "LeonidaDex · claves de cajas fuertes",
+          "url": "https://leonidadex.net/reportajes/cajas-fuertes-gta6-claves/"
+        }
+      ],
+      "categoria": "Guías",
+      "lectura": 2,
+      "fecha": "2026-11-19",
+      "actualizado": "2026-11-19T11:19:05+01:00",
+      "spoiler": "Mostrar actividades y contactos · spoilers leves de progresión"
+    },
+    {
+      "id": "gta6-xbox-one-nube",
+      "titulo": "GTA VI en Xbox One por la nube: qué necesitas y qué estás comprando",
+      "entradilla": "Xbox distingue el juego nativo del streaming. La compra de GTA VI y el acceso a la nube son conceptos separados.",
+      "cuerpo": [
+        {
+          "h": "Streaming y juego nativo"
+        },
+        {
+          "p": "Xbox Wire anuncia GTA VI en la nube para Xbox One y Series X|S desde el 19 de noviembre a la 01:00 ET (07:00 CET). Xbox One lo transmite; no lo instala como juego nativo."
+        },
+        {
+          "h": "Compra y acceso separados"
+        },
+        {
+          "ul": [
+            "Hay que comprar GTA VI aparte: el anuncio no lo incluye en Game Pass.",
+            "Xbox ofrece tiempo de nube sin Game Pass en mercados compatibles. Revisa tu cuenta y región antes de pagar.",
+            "La nota no garantiza el acceso desde cualquier PC, móvil o televisión."
+          ]
+        },
+        {
+          "h": "Imagen y conexión"
+        },
+        {
+          "p": "Xbox indica ajustes gráficos de Series S para este streaming. Dispositivos, funciones y disponibilidad pueden variar; la conexión también influye en la experiencia."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Xbox Wire · compra del juego, streaming y dispositivos compatibles",
+          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/"
+        }
+      ],
+      "categoria": "Guías",
+      "lectura": 2,
+      "fecha": "2026-11-19",
+      "actualizado": "2026-11-19T11:19:05+01:00"
+    },
+    {
+      "id": "gta6-no-abre-ps5",
+      "titulo": "GTA VI no abre en PS5: qué comprobar antes de reinstalar",
+      "entradilla": "Cuenta, instalación, actualizaciones y estado del servicio: comprobaciones de soporte para el primer día, sin borrar tu progreso.",
+      "cuerpo": [
+        {
+          "h": "Empieza por las comprobaciones sencillas"
+        },
+        {
+          "ul": [
+            "Confirma que estás en la cuenta que compró o canjeó el juego.",
+            "Comprueba que la instalación ha terminado, hay espacio y el sistema está actualizado.",
+            "Consulta el panel oficial de estado de PlayStation. Un problema local no demuestra una caída general."
+          ]
+        },
+        {
+          "h": "Anota el error"
+        },
+        {
+          "p": "Si sigue sin abrir, anota el código o texto exacto y consulta el soporte de tu plataforma. Si falta el código de una caja, el soporte de PlayStation remite al vendedor. Evita publicar fotografías con códigos de compra o información de la cuenta."
+        },
+        {
+          "h": "Estado consultado"
+        },
+        {
+          "p": "En la comprobación puntual del 19 de noviembre, el panel de PlayStation mostraba todos los servicios activos. Es una consulta fechada, no un monitor en directo; abre el panel para conocer su estado actual."
+        },
+        {
+          "p": "Una incidencia no justifica borrar tus partidas ni instalar un supuesto parche descargado de una cuenta de redes sociales."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "PlayStation · soporte oficial de GTA VI",
+          "url": "https://www.playstation.com/es-es/support/games/gta-vi-support/"
+        },
+        {
+          "nombre": "PlayStation · estado de los servicios, consulta puntual del 19 de noviembre",
+          "url": "https://status.playstation.com/es-es/"
+        }
+      ],
+      "categoria": "Guías",
+      "lectura": 2,
+      "fecha": "2026-11-19",
+      "actualizado": "2026-11-19T11:19:05+01:00"
+    },
     {
       "id": "idiomas-gta6",
       "titulo": "¿GTA VI tiene doblaje en español? Voces, textos y subtítulos",
@@ -1856,7 +2440,7 @@
         {
           "ul": [
             "Si buscas escuchar los diálogos en castellano o español latino, no confundas la traducción de los textos con un doblaje.",
-            "La referencia consultada corresponde a PS5. Esta guía no inventa rutas de menú ni presenta ajustes sin comprobar como instrucciones del juego.",
+            "Consulta la ficha de tu plataforma al comparar ediciones. La tabla resumida aquí corresponde a PS5.",
             "Puedes consultar las fichas de personajes y el mapa de LeonidaDex sin leer nuestras soluciones de historia. Los artículos con spoilers mantienen sus detalles cerrados hasta que decidas abrirlos."
           ]
         },
@@ -1876,8 +2460,8 @@
     },
     {
       "id": "trucos-gta6-codigos-desbloqueo",
-      "titulo": "Trucos de GTA VI: tres códigos contrastados y cómo desbloquearlos",
-      "entradilla": "Dinero, Focus y físicas: primeras combinaciones coincidentes en PC Gamer y PowerPyx. Incluye requisitos y una advertencia importante sobre el guardado.",
+      "titulo": "Trucos de GTA VI: seis códigos contrastados y cómo desbloquearlos",
+      "entradilla": "Dinero, Focus, físicas, clima, vehículo y filtro: seis secuencias coincidentes en dos guías de prensa, con sus requisitos y advertencias.",
       "cuerpo": [
         {
           "h": "Primero, el desbloqueo"
@@ -1913,6 +2497,19 @@
             "Anota plataforma y versión si quieres comparar el resultado con una guía.",
             "El archivo de GTA V y Vice City pertenece a esos juegos. No uses sus números de teléfono como si fueran códigos de GTA VI."
           ]
+        },
+        {
+          "h": "Ampliación del 19 de noviembre: tres códigos más"
+        },
+        {
+          "ul": [
+            "Cambiar el clima: ↓ → ↑ ↓ → ↑ →. Requisito: Terminar la historia.",
+            "Generar HVY Bulldozer: ← ↑ → ↓ ← → → ↓. Requisito: Terminar la historia y descubrir HVY Bulldozer en el menú de progreso.",
+            "Filtro Dollhouse: ↓ ↓ ↑ → → ↑ ← ← ↓ →. Requisito: Terminar la historia y pasar 8 horas con tu pareja, según PowerPyx."
+          ]
+        },
+        {
+          "p": "Las secuencias coinciden en PC Gamer y PowerPyx. PC Gamer todavía deja sin concretar varios desbloqueos; los requisitos de esta ampliación se atribuyen a PowerPyx. Se mantienen las advertencias sobre guardado y trofeos y no se simula una prueba propia en consola."
         }
       ],
       "fuentes": [
@@ -1928,7 +2525,7 @@
       "categoria": "Trucos",
       "lectura": 2,
       "fecha": "2026-11-18",
-      "actualizado": "2026-11-18T14:18:39+01:00"
+      "actualizado": "2026-11-19T11:19:05+01:00"
     },
     {
       "id": "actividad-perdible-capitulo-1",
@@ -2067,10 +2664,13 @@
       "categoria": "Análisis",
       "lectura": 4,
       "fecha": "2026-11-18",
-      "actualizado": "2026-11-18T14:00:52+01:00",
+      "actualizado": "2026-11-19T11:19:05+01:00",
       "titulo": "Críticas y notas de GTA VI: qué dice la prensa, sin spoilers",
-      "entradilla": "Los primeros análisis ya están publicados. Notas por medio, medias de Metacritic y OpenCritic y los matices que no cuenta un diez. Consulta del 18 de noviembre de 2026, 14:00 CET.",
+      "entradilla": "Notas por medio, medias de Metacritic y OpenCritic y los matices que no cuenta un diez. Revisión de las medias del 19 de noviembre de 2026; puntuaciones de crítica separadas de las de usuarios.",
       "cuerpo": [
+        {
+          "p": "Actualización del 19 de noviembre: Metacritic marca 99/100 en PS5 y OpenCritic 99/100 en su media de críticos. Las notas individuales que se citan a continuación corresponden a sus análisis publicados; no son mediciones ni puntuaciones de LeonidaDex."
+        },
         {
           "h": "Las notas, de un vistazo"
         },
@@ -2092,7 +2692,7 @@
           "h": "Metacritic y OpenCritic: una foto de este momento"
         },
         {
-          "p": "Consulta del 18 de noviembre de 2026, 14:00 CET: Metacritic muestra 99/100 en la ficha de PlayStation 5. OpenCritic muestra una media Top Critic Average de 98/100 y un 100 % de recomendación. Cada agregador selecciona y calcula de forma distinta; las cifras pueden variar cuando entren más análisis."
+          "p": "Consulta del 19 de noviembre de 2026: Metacritic muestra 99/100 para PS5 y OpenCritic 99/100 de Top Critic Average. Son medias de crítica, pueden cambiar y no son notas de usuarios."
         },
         {
           "p": "Recomendación y puntuación son medidas diferentes: un 100 % de recomendación no significa que todos los medios le hayan puesto diez. No mezclamos la media de crítica con la de usuarios: Metacritic aún muestra TBD para usuarios y OpenCritic no tiene suficientes valoraciones para mostrar la suya en esta consulta."
@@ -2254,5 +2854,17 @@
     }
   ],
   "videos_nuevos": [],
-  "dex_nuevos": []
+  "dex_nuevos": [
+    {
+      "cat": "vehiculos",
+      "nombre": "HVY Bulldozer",
+      "tipo": "Vehículo industrial",
+      "estado": "prensa",
+      "nota": "Figura en las listas de trucos de PC Gamer y PowerPyx. La secuencia y el requisito atribuido están en la guía de códigos; no se presenta como un vehículo ya desbloqueado al empezar.",
+      "fuente": {
+        "nombre": "PowerPyx · trucos y requisitos de desbloqueo",
+        "url": "https://www.powerpyx.com/gta-6-all-cheats/"
+      }
+    }
+  ]
 }
