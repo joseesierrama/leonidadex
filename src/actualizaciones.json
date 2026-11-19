@@ -1989,13 +1989,13 @@
   "misiones": [
     {
       "titulo": "Una búsqueda secundaria en el pantano",
-      "texto": "PowerPyx documenta cómo iniciar la cadena de Kirk. La guía enlazada mantiene las pistas y la ubicación ocultas hasta que decidas abrirlas; no cuenta el desenlace.",
-      "fuentes": [
-        {
-          "nombre": "LeonidaDex · pistas con spoilers ocultos",
-          "url": "https://leonidadex.net/reportajes/misterio-pantano-kirk/"
-        }
-      ]
+      "id": "kirk-pantano",
+      "capitulo": 1,
+      "resumen": "PowerPyx documenta cómo iniciar la cadena de Kirk. La guía enlazada mantiene las pistas y la ubicación ocultas hasta que decidas abrirlas; no cuenta el desenlace.",
+      "fuente": {
+        "nombre": "LeonidaDex · pistas con spoilers ocultos",
+        "url": "https://leonidadex.net/reportajes/misterio-pantano-kirk/"
+      }
     }
   ],
   "trucos_gta6": [
@@ -2158,10 +2158,6 @@
     {
       "fecha": "2026-12-11",
       "titulo": "Original Score de Justice (fecha anunciada)"
-    },
-    {
-      "fecha": "2026-11-19",
-      "titulo": "Lanzamiento nativo de GTA VI en PS5 y Xbox Series X|S"
     }
   ],
   "mapa_lugares": [],
