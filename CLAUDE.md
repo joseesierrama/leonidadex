@@ -52,3 +52,14 @@ La programación diaria debe estar configurada en la tarea de Claude. El flujo d
 - La actividad temprana procede de la guía de meditación de PowerPyx. Su posible requisito para Positive Mental Attitude sigue pendiente de confirmación; no lo conviertas en un trofeo perdible seguro.
 - Las guías de dinero para progreso y taxi se atribuyen a PowerPyx. No extrapoles el objetivo de un capítulo a cualquier bloqueo ni presentes el suplemento de viaje rápido como precio total.
 - No hay hallazgos paranormales comprobados en esta revisión. Solo añade secretos con evidencia del juego y su procedencia; las hipótesis siguen siendo teorías.
+
+
+## Lanzamiento del 19 de noviembre
+
+- La portada y `meta.fase` indican que el juego nativo ya está disponible. Conserva las fechas históricas de noticias y reportajes; `actualizado` registra revisiones reales.
+- El mapa del día 19 contiene 3.651 puntos y 137 áreas de GTADB. La comparación con el día 18 da 311 altas, 45 registros revisados, 32 cambios de coordenadas y ninguna baja. Mantén la licencia y el alcance comunitario: no son comprobaciones propias ni cartografía oficial.
+- El especial y la portada recogen 99/100 en Metacritic (PS5) y 99/100 en OpenCritic, consultados el 19. Actualiza ambos juntos tras volver a leer las fuentes; no confundas medias de crítica con notas de usuarios.
+- Los seis códigos coinciden en dos guías. Los requisitos que PC Gamer deja en blanco se atribuyen a PowerPyx. Guarda las advertencias sobre guardado y trofeos.
+- Las nuevas guías de Kirk y dinero conservan `spoiler`; no muestres sus cuerpos en búsquedas ni abras los desplegables por defecto. La guía de Kirk explica el inicio y no el desenlace.
+- El estado de PSN es una observación puntual fechada. No lo muestres como una monitorización en directo ni atribuyas cualquier error local a una caída.
+- La página de música aún mostraba Pre-Save en esta consulta; no convertir una fecha anunciada en una confirmación de disponibilidad de todos los temas.
