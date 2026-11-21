@@ -757,7 +757,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
       <a class="nav-top" href="#mapa" data-ld-action="ld_map_open" data-ld-content="mapa">Mapa</a>
       <div class="nav-grp"><button class="nav-top" type="button" aria-expanded="false" aria-controls="ng1">Guías <i aria-hidden="true">▾</i></button>
         <div class="nav-pop" id="ng1">
-          <a href="#guias"><b>Guías</b><span>Paso a paso, listas y progreso</span></a>
+          <a href="guias/"><b>Guías</b><span>Paso a paso, listas y progreso</span></a>
           <a href="#misiones"><b>Misiones</b><span>Registro por capítulos</span></a>
           <a href="#trucos"><b>Trucos</b><span>Códigos y marcador de teléfono</span></a>
           <a href="#misterios"><b>Misterios</b><span>Secretos y teorías</span></a>
@@ -809,7 +809,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
         <a class="btn btn-ghost" href="reportajes/criticas-y-notas-gta6/">Críticas y notas</a>
         <a class="btn btn-ghost" href="#noticias">Últimas noticias</a>
         <a class="btn btn-ghost" href="#mapa" data-ld-action="ld_map_open" data-ld-content="mapa">Explorar el mapa</a>
-        <a class="btn btn-ghost" href="#guias">Guías</a>
+        <a class="btn btn-ghost" href="guias/">Guías</a>
         <a class="btn btn-ghost" href="retos/">¿Te vienes de copiloto? Haz el reto</a>
       </div>
     </div>
@@ -1066,15 +1066,8 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
 </section>
 
 <section class="block" id="guias" aria-labelledby="h-guias">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">10 · Guías</p>
-      <h2 id="h-guias">Guías <em>prácticas</em></h2>
-      <p class="lede">Guías de preparación y primeras soluciones de prensa. Los detalles de historia se abren con aviso de spoilers; cada contenido indica su fuente.</p>
-    </div>
-    <div class="field-guides"><p class="eyebrow">Para tu partida · guías y descubrimientos</p><a href="reportajes/secretos-gta6-mapa-dinero-armas/">Secretos: dinero, armas y easter eggs →</a><a href="#mapa">Pistas en el mapa interactivo →</a><a href="reportajes/guardar-partida-gta6/">Guardar partida →</a><a href="reportajes/cajas-fuertes-gta6-claves/">Cajas fuertes →</a><a href="reportajes/trucos-gta6-codigos-desbloqueo/">Seis códigos y requisitos →</a><a href="reportajes/misterio-pantano-kirk/">Misterio del pantano · detalles ocultos →</a><a href="reportajes/dinero-gta6-actividades/">Dinero y actividades · detalles ocultos →</a><a href="reportajes/viaje-rapido-gta6-taxi/">Viaje rápido y taxi →</a></div>
-    <div class="chips" id="guideCats" role="group" aria-label="Filtrar guías"></div>
-    <div class="guides" id="guides"></div>
+  <div class="wrap"><div class="sec-head"><p class="eyebrow">10 · Guías</p><h2 id="h-guias">Tu próxima <em>partida</em></h2></div>
+    __GUIDES_HOME__
   </div>
 </section>
 
@@ -1529,6 +1522,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     var a = allArts().find(function (x) { return x.id === id; }); if (!a) return;
     lastFocus = document.activeElement;
     $("#readerBody").innerHTML = '<span class="badge">' + esc(a.categoria) + '</span><h2 id="readerTitle">' + esc(a.titulo) + '</h2><p class="ent">' + esc(a.entradilla) + "</p>" +
+      (a.guia ? '<p><a class="btn btn-primary" href="guias/' + esc(a.guia) + '/">Ver guía paso a paso y clips →</a></p>' : "") +
       (a.spoiler ? '<details class="spoiler-gate"><summary>' + esc(a.spoiler) + '</summary>' : '') +
       arr(a.cuerpo).map(function (x) { return x.h ? "<h4>" + esc(x.h) + "</h4>" : x.ul ? "<ul>" + x.ul.map(function (l) { return "<li>" + esc(l) + "</li>"; }).join("") + "</ul>" : "<p>" + esc(x.p) + "</p>"; }).join("") + (a.spoiler ? '</details>' : '') +
       '<p class="fuentes">Fuentes: ' + arr(a.fuentes).map(function (f) { return '<a href="' + esc(f.url) + '" target="_blank" rel="noopener">' + esc(f.nombre) + "</a>"; }).join(" · ") + "</p>";
@@ -1915,7 +1909,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
       "<h3>" + esc(p.nombre) + "</h3><p>" + esc(p.texto || "") + "</p>" + (p.inspiracion ? '<p class="mc-insp">Inspirado en: ' + esc(p.inspiracion) + "</p>" : "") +
       '<p class="mc-meta">' + esc(regName(p.region)) + " · " + pos + "</p>" +
       '<div class="mc-act"><button type="button" id="mcFound" class="' + (found[p.id] ? "done" : "") + '">' + (found[p.id] ? "✓ Descubierto" : "Marcar como descubierto") + '</button><button type="button" id="mcShare">Compartir</button>' +
-      (p.guia ? '<a class="btn btn-ghost" href="reportajes/' + esc(p.guia) + '/">Ruta y fuentes →</a>' : "") +
+      (p.guia ? '<a class="btn btn-ghost" href="' + (p.guia_tipo === "guias" ? "guias/" : "reportajes/") + esc(p.guia) + '/">Ruta y fuentes →</a>' : "") +
       (p.fuente && p.fuente.url ? '<span class="src"><a href="' + esc(p.fuente.url) + '" target="_blank" rel="noopener">' + esc(p.fuente.nombre || "Fuente") + "</a></span>" : "") + "</div>";
   }
   function renderGtaCard() {
@@ -2012,42 +2006,8 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     sysSel = ids[i]; renderSys(); $("#s-" + sysSel).focus();
   });
 
-  /* ---------------- Guías ---------------- */
-  var guideCat = "Todas";
-  function allGuides() { return arr(DYN.guias_nuevas).concat(BASE.guias); }
-  function checklistHTML(id, items) {
-    var saved = store.get("chk:" + id, {}), done = items.filter(function (_, i) { return saved[i]; }).length;
-    return '<div class="progress" aria-hidden="true"><i style="width:' + (items.length ? (done / items.length * 100) : 0) + '%"></i></div><p class="note">' + done + " de " + items.length + ' hechos</p><ul class="checklist" data-chk="' + esc(id) + '">' + items.map(function (it, i) {
-      return '<li><label><input type="checkbox" data-i="' + i + '"' + (saved[i] ? " checked" : "") + "><span>" + esc(it) + "</span></label></li>";
-    }).join("") + "</ul>";
-  }
-  function renderGuides() {
-    var gs = allGuides(), cats = ["Todas"];
-    gs.forEach(function (g) { if (cats.indexOf(g.categoria) < 0) cats.push(g.categoria); });
-    $("#guideCats").innerHTML = cats.map(function (c) { return '<button class="chip" type="button" data-c="' + esc(c) + '" aria-pressed="' + (c === guideCat) + '">' + esc(c) + "</button>"; }).join("");
-    var openIds = $$("details.guide[open]").map(function (d) { return d.id; });
-    $("#guides").innerHTML = gs.filter(function (g) { return guideCat === "Todas" || g.categoria === guideCat; }).map(function (g) {
-      var pend = g.estado === "pendiente";
-      var body = "";
-      if (arr(g.pasos).length) body += "<ol>" + g.pasos.map(function (p) { return "<li>" + esc(p) + "</li>"; }).join("") + "</ol>";
-      if (arr(g.checklist).length) body += checklistHTML(g.id, g.checklist);
-      if (arr(g.consejos).length) body += '<ul class="tips">' + g.consejos.map(function (p) { return "<li>" + esc(p) + "</li>"; }).join("") + "</ul>";
-      if (arr(g.fuentes).length) body += '<p class="src" style="margin-top:10px">Fuente: ' + srcLinks(g.fuentes) + "</p>";
-      if (pend) body = '<p class="note">Esta guía se completará cuando haya información contrastada después del lanzamiento del juego.</p>';
-      var id = "g-" + g.id;
-      return '<details class="guide' + (pend ? " pendiente" : "") + '" id="' + esc(id) + '"' + (openIds.indexOf(id) >= 0 ? " open" : "") + '><summary><div class="g-meta"><span class="badge ' + (pend ? "pendiente" : "disponible") + '">' + (pend ? "En preparación" : "Disponible") + '</span><span class="badge">' + esc(g.categoria) + '</span><span class="tm">' + esc(g.nivel || "") + (g.tiempo && g.tiempo !== "—" ? " · " + esc(g.tiempo) : "") + "</span></div><h3>" + esc(g.titulo) + "</h3><p>" + esc(g.resumen) + '</p></summary><div class="g-body">' + body + "</div></details>";
-    }).join("");
-  }
-  $("#guideCats").addEventListener("click", function (e) { var b = e.target.closest("button"); if (!b) return; guideCat = b.dataset.c; renderGuides(); });
-  document.addEventListener("change", function (e) {
-    var cb = e.target; if (!cb.matches || !cb.matches('input[type="checkbox"][data-i]')) return;
-    var list = cb.closest("[data-chk]"); if (!list) return;
-    var id = list.dataset.chk, saved = store.get("chk:" + id, {}); saved[cb.dataset.i] = cb.checked; store.set("chk:" + id, saved);
-    var boxes = $$("input[data-i]", list), done = boxes.filter(function (b) { return b.checked; }).length;
-    var wrap = list.parentNode, bar = $(".progress i", wrap), note = $(".progress + .note", wrap);
-    if (bar) bar.style.width = (done / boxes.length * 100) + "%";
-    if (note) note.textContent = done + " de " + boxes.length + " hechos";
-  });
+  /* ---------------- Guías publicadas ---------------- */
+  function allGuides() { return __GUIDES__; }
 
   /* ---------------- Misiones ---------------- */
   function renderMissions() {
@@ -2164,7 +2124,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
   function buildIndex() {
     var I = [];
     sortedNews().forEach(function (n) { I.push({ s: "Noticias", t: n.titulo, d: n.resumen, go: function () { revealNews(n.id); } }); });
-    allGuides().forEach(function (g) { I.push({ s: "Guías", t: g.titulo, d: g.resumen + " " + arr(g.pasos).join(" ") + " " + arr(g.checklist).join(" "), go: function () { guideCat = "Todas"; renderGuides(); focusEl($("#g-" + g.id)); } }); });
+    allGuides().forEach(function (g) { I.push({ s: "Guías", t: g.titulo, d: g.resumen + " " + g.categoria + " " + g.zona, go: function () { location.href = "guias/" + g.id + "/"; } }); });
     allDex().forEach(function (x) { I.push({ s: "Dex", t: x.nombre, d: x.tipo + ". " + x.nota, go: function () { dexCat = "todo"; $("#dexQ").value = x.nombre; renderDex(); $("#dex").scrollIntoView({ behavior: reduced ? "auto" : "smooth" }); } }); });
     allArts().forEach(function (a) { I.push({ s: "Reportajes", t: a.titulo, d: a.entradilla + (a.spoiler ? "" : " " + arr(a.cuerpo).map(function (x) { return x.p || x.h || arr(x.ul).join(" "); }).join(" ")), go: function () { openArt(a.id); } }); });
     PINS.filter(function (p) { return !p.secreto; }).forEach(function (p) { I.push({ s: "Mapa", t: p.nombre, d: regName(p.region) + ". " + (p.texto || ""), go: function () { $("#mapa").scrollIntoView({ behavior: reduced ? "auto" : "smooth" }); selectPin(p.id, true); } }); });
@@ -2259,7 +2219,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
   /* ---------------- Datos dinámicos ---------------- */
   function renderDynamic() {
     renderStars(); renderNewsFilters(); renderNews(); renderEvents(); renderStatus();
-    renderGuides(); renderMissions(); renderCheats(); renderMyst(); renderTimeline(); renderPins(); renderSide(); renderArts(); renderMedia(); renderDex();
+    renderMissions(); renderCheats(); renderMyst(); renderTimeline(); renderPins(); renderSide(); renderArts(); renderMedia(); renderDex();
     INDEX = buildIndex();
   }
   function valid(d) { return d && d.meta && Array.isArray(d.noticias); }

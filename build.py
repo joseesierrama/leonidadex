@@ -18,6 +18,7 @@ import shutil
 from site_support import analytics, footer as site_footer, head as site_head, info_pages, load_config, menu, privacy_ready, tiktok_link
 from content_validation import validate_content
 from promotion_pages import pages as promotion_pages
+from guide_pages import load_guides, home_preview, pages as guide_pages
 
 ROOT = pathlib.Path(__file__).parent
 SRC = ROOT / "src"
@@ -108,6 +109,7 @@ def main():
     base = json.loads((SRC / "base.json").read_text("utf-8"))
     dyn = json.loads((SRC / "actualizaciones.json").read_text("utf-8"))
     validate_content(base, dyn)
+    guides = load_guides(SRC)
     url, dominio = base_url()
     if OUT.exists():
         shutil.rmtree(OUT)
@@ -126,6 +128,8 @@ def main():
         "icons": [{"src": f"assets/caiman-{size}.png", "sizes": f"{size}x{size}", "type": "image/png"} for size in (192, 512)]}, ensure_ascii=False))
     mani = json.loads((SRC / "tiles" / "mapa" / "manifest.json").read_text("utf-8"))
     idx = tpl.replace("__BASE__", embed(base)).replace("__DYN__", embed(dyn)).replace("__MANI__", embed(mani))
+    idx = idx.replace("__GUIDES_HOME__", home_preview(guides)).replace("__GUIDES__", embed(guides['guias']))
+    idx = idx.replace('</head>', '<link rel="stylesheet" href="assets/guias.css"></head>', 1)
     head_extra = f'<link rel="canonical" href="{E(url)}">\n<meta property="og:url" content="{E(url)}">\n'
     head_extra += site_head("", url)
     idx = idx.replace("<meta name=\"theme-color\"", head_extra + "<meta name=\"theme-color\"", 1)
@@ -134,7 +138,7 @@ def main():
         raise ValueError("No se encuentra el control de búsqueda único de la cabecera")
     idx = idx.replace(search_button, tiktok_link(header=True) + '\n      ' + search_button, 1)
     links = ('<nav class="wrap" aria-label="Más en LeonidaDex" style="padding:0 0 24px;display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.88rem">'
-             '<a href="noticias/">Todas las noticias</a><a href="reportajes/">Reportajes</a><a href="personajes/">Personajes</a>'
+             '<a href="noticias/">Todas las noticias</a><a href=\"guias/\">Guías paso a paso</a><a href="reportajes/">Reportajes</a><a href="personajes/">Personajes</a>'
              '<a href="leonida/">Regiones de Leonida</a><a href="preguntas-frecuentes/">Preguntas frecuentes</a></nav>\n</footer>')
     idx = idx.replace("</footer>", links, 1)
     idx = idx.replace("</footer>", site_footer("", CONFIG) + "</footer>", 1)
@@ -147,6 +151,7 @@ def main():
     shutil.copy(SRC / "tiles" / "datos" / "gtadb-6.json", OUT / "datos" / "gtadb-6.json")
     urls.append((url, upd))
     urls.extend(promotion_pages(shell, write, url, upd))
+    urls.extend(guide_pages(shell, write, url, SRC))
 
     # --- noticias ---
     news = sorted(dyn.get("noticias", []), key=lambda n: n.get("fecha", ""), reverse=True)
@@ -188,8 +193,9 @@ def main():
         if a.get("spoiler"):
             content = (f'<details class="spoiler-gate"><summary>{E(a["spoiler"])}</summary>'
                        f'{content}</details>')
+        guide_cta = ('<p><a class="btn btn-primary" href="../../guias/' + E(a["guia"]) + '/">Ver guía paso a paso y clips →</a></p>') if a.get("guia") else ""
         body = (f'<p class="crumbs"><a href="../../">LeonidaDex</a> › <a href="../">Reportajes</a></p><article class="prose"><span class="badge">{E(a.get("categoria", ""))}</span>'
-                f'<h1>{E(a["titulo"])}</h1><p class="lede">{E(a.get("entradilla", ""))}</p>{content}{fuentes(a.get("fuentes"))}</article>')
+                f'<h1>{E(a["titulo"])}</h1><p class="lede">{E(a.get("entradilla", ""))}</p>{guide_cta}{content}{fuentes(a.get("fuentes"))}</article>')
         u = url + f"reportajes/{a['id']}/"
         write(f"reportajes/{a['id']}/index.html", shell(2, f"{a['titulo']} | LeonidaDex", a.get("entradilla", ""), u, body,
                                                         {"@context": "https://schema.org", "@type": "Article", "headline": a["titulo"], "description": a.get("entradilla", ""), "datePublished": a.get("fecha", upd), "dateModified": a.get("actualizado", a.get("fecha", upd)), "inLanguage": "es",

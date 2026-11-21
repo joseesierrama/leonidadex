@@ -1,0 +1,1060 @@
+{
+  "actualizado": "2026-11-21T12:43:47+01:00",
+  "guias": [
+    {
+      "id": "primeros-pasos",
+      "titulo": "Por dónde empezar sin perderte",
+      "categoria": "Primeros pasos",
+      "resumen": "Una ruta para organizar tu primera partida: guardar, conservar efectivo y elegir una excursión.",
+      "requisitos": [
+        "Haber comenzado el modo historia.",
+        "No necesitas completar todos estos objetivos para seguir la historia."
+      ],
+      "zona": "Tu primera sesión en Leonida",
+      "recompensa": "Una partida organizada y una ruta elegida por ti.",
+      "pasos": [
+        {
+          "titulo": "Crea tu punto de regreso",
+          "texto": "Antes de una salida larga, usa la guía de guardado. Separa la partida que quieres conservar de la que vas a seguir utilizando."
+        },
+        {
+          "titulo": "Elige qué te falta",
+          "texto": "¿Necesitas equipo? Abre la pistola Nipper o la escopeta Gorse. ¿Buscas dinero? Revisa Three Sheets. ¿Solo quieres explorar? Empieza por el taxi y el mapa."
+        },
+        {
+          "titulo": "Lee los requisitos de esa ruta",
+          "texto": "Comprueba capítulo, zona y riesgo antes de desplazarte. Un requisito de historia no se soluciona repitiendo la misma interacción."
+        },
+        {
+          "titulo": "Haz una cosa y guarda de nuevo",
+          "texto": "Completa la ruta que hayas elegido y crea otro guardado. Puedes volver al catálogo desde el botón «Todas las guías»."
+        }
+      ],
+      "problemas": [
+        "Esta es una propuesta de organización de LeonidaDex, no un orden obligatorio de misiones."
+      ],
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · guardado manual",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-save-game/"
+        }
+      ],
+      "actualizado": "2026-11-21T12:43:47+01:00",
+      "spoiler": "",
+      "relacionadas": [
+        "guardar-partida",
+        "guardar-dinero",
+        "pistola-silenciador"
+      ]
+    },
+    {
+      "id": "guardar-partida",
+      "titulo": "Cómo guardar y conservar varias partidas",
+      "categoria": "Primeros pasos",
+      "resumen": "La ruta del menú y una forma sencilla de no sobrescribir tu punto de regreso.",
+      "requisitos": [
+        "Estar en una situación en la que el juego permita guardar."
+      ],
+      "zona": "Menú de pausa",
+      "recompensa": "Un guardado manual que puedes recuperar.",
+      "pasos": [
+        {
+          "titulo": "Abre el menú de guardado",
+          "texto": "Entra en Pausa > Juego (Game) > Guardar partida (Save Game)."
+        },
+        {
+          "titulo": "Elige una ranura",
+          "texto": "Selecciona el hueco que quieras usar y confirma. PC Gamer documenta 15 ranuras manuales."
+        },
+        {
+          "titulo": "Conserva una copia anterior",
+          "texto": "Nuestra recomendación: reserva un hueco al empezar un capítulo y utiliza otros para tus salidas. No sobrescribas la copia que quieras conservar."
+        },
+        {
+          "titulo": "Comprueba cómo volver",
+          "texto": "Desde el mismo apartado Juego puedes cargar una partida. Lee la fecha y el hueco elegido antes de confirmar."
+        }
+      ],
+      "problemas": [
+        "Si el guardado está desactivado, revisa tu situación actual y si has usado trucos. No cierres el juego dando por hecho que el progreso se ha guardado."
+      ],
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · cómo guardar y cargar",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-save-game/"
+        }
+      ],
+      "actualizado": "2026-11-21T12:43:47+01:00",
+      "spoiler": "",
+      "relacionadas": [
+        "primeros-pasos",
+        "meditar-con-lucia"
+      ]
+    },
+    {
+      "id": "alijo-loro",
+      "titulo": "El loro de Three Sheets: encontrar el alijo",
+      "categoria": "Dinero",
+      "resumen": "Dónde empezar, qué pista escuchar y qué revisar para localizar el dinero.",
+      "requisitos": [
+        "Acceso a la exploración de Key Lento.",
+        "Equipo y una salida prevista: el patio tiene guardias."
+      ],
+      "zona": "Three Sheets Liquor · Key Lento",
+      "recompensa": "El alijo del patio; la cantidad puede variar.",
+      "pasos": [
+        {
+          "titulo": "Localiza la licorería",
+          "texto": "Busca Three Sheets Liquor, al norte del Pay N’ Spray de Key Lento. Usa el mapa del vídeo para identificar el local; nuestro icono es solo una referencia de zona."
+        },
+        {
+          "titulo": "Accede al patio de atrás",
+          "texto": "GamesRadar+ describe una zona de aves tras la tienda. Presta atención a los guardias y evita entrar sin una salida prevista."
+        },
+        {
+          "titulo": "Habla con el loro",
+          "texto": "Usa las opciones de diálogo sobre el dinero. La pista que da es el generador."
+        },
+        {
+          "titulo": "Revisa junto al generador",
+          "texto": "Busca la rejilla blanca de la pared y ábrela. Comprueba lo recogido antes de irte; no prometemos una cantidad fija ni un alijo infinito."
+        }
+      ],
+      "problemas": [
+        "¿No ves la rejilla? Compara el generador y la pared con el final del clip.",
+        "¿Estás en otra tienda? Revisa el nombre Three Sheets Liquor, no solo el icono de licorería."
+      ],
+      "fuentes": [
+        {
+          "nombre": "GamesRadar+ · guía y capturas de Vic Hood",
+          "url": "https://www.gamesradar.com/games/grand-theft-auto/exotic-animals-front-illegal-operation-gta-6/"
+        },
+        {
+          "nombre": "BennyCentral · 63 consejos con recorridos de juego",
+          "url": "https://www.youtube.com/watch?v=od4yuK67yhk"
+        }
+      ],
+      "actualizado": "2026-11-21T12:43:47+01:00",
+      "spoiler": "Ubicación y solución del alijo",
+      "relacionadas": [
+        "guardar-dinero",
+        "cajas-fuertes"
+      ],
+      "video": {
+        "id": "od4yuK67yhk",
+        "inicio": 404,
+        "fin": 443,
+        "titulo": "Local y pista del loro",
+        "autor": "BennyCentral"
+      },
+      "paso_video": 2,
+      "mapa": "secreto-three-sheets"
+    },
+    {
+      "id": "guardar-dinero",
+      "titulo": "Cómo guardar el efectivo antes de tener banco",
+      "categoria": "Dinero",
+      "resumen": "Usa el escondite de casa y lleva solo el efectivo que quieras arriesgar.",
+      "requisitos": [
+        "Acceso a la casa de Jason en Key Lento."
+      ],
+      "zona": "Casa de Jason · Key Lento",
+      "recompensa": "Dinero separado del que llevas encima.",
+      "pasos": [
+        {
+          "titulo": "Vuelve a la casa",
+          "texto": "En las primeras fases todavía no tienes cuenta bancaria. PC Gamer señala un escondite bajo el suelo del dormitorio de la casa de Jason."
+        },
+        {
+          "titulo": "Usa el escondite",
+          "texto": "Interactúa con el punto de almacenamiento y elige cuánto guardar. Revisa el saldo que queda contigo y el que dejas en casa."
+        },
+        {
+          "titulo": "Reserva efectivo para la calle",
+          "texto": "Guarda una parte, pero conserva algo para gastos y encuentros que requieran efectivo. La cantidad adecuada depende de lo que vayas a hacer."
+        },
+        {
+          "titulo": "Separa dinero y objetos robados",
+          "texto": "No confundas guardar efectivo con meter objetos en un maletero. Evita dejar pertenencias valiosas en un coche que no controles."
+        }
+      ],
+      "problemas": [
+        "Morir o ser detenido implica penalizaciones, pero no afirmamos que siempre pierdas todo lo que llevas.",
+        "El clip también muestra banca posterior: el escondite es la opción inicial de esta guía."
+      ],
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · efectivo, escondite y banca",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-bank-cash/"
+        },
+        {
+          "nombre": "BennyCentral · 63 consejos con recorridos de juego",
+          "url": "https://www.youtube.com/watch?v=od4yuK67yhk"
+        }
+      ],
+      "actualizado": "2026-11-21T12:43:47+01:00",
+      "spoiler": "",
+      "relacionadas": [
+        "alijo-loro",
+        "primeros-pasos"
+      ],
+      "video": {
+        "id": "od4yuK67yhk",
+        "inicio": 491,
+        "fin": 524,
+        "titulo": "Escondite y gestión del dinero",
+        "autor": "BennyCentral"
+      },
+      "paso_video": 2
+    },
+    {
+      "id": "manatee-motel",
+      "titulo": "Manatee Motel: botín y rifle Laird 350",
+      "categoria": "Dinero",
+      "resumen": "Una incursión temprana con un peligro que conviene conocer antes de abrir habitaciones.",
+      "requisitos": [
+        "Exploración libre tras Gone Fishing.",
+        "Equipo para una zona con animales peligrosos y enemigos."
+      ],
+      "zona": "Sur de Hamlet · nordeste de Cottonmouth Lake",
+      "recompensa": "Botín y Kingfishers Laird 350; no es el W-22.",
+      "pasos": [
+        {
+          "titulo": "Ubica el motel",
+          "texto": "GTA BOOM lo sitúa al sur de Hamlet, al nordeste de Cottonmouth Lake. El marcador de LeonidaDex apunta al lago: no es la puerta del motel."
+        },
+        {
+          "titulo": "Comprueba el interior antes de entrar",
+          "texto": "La guía documenta un tigre, guardias y posible intervención policial. Observa las entradas y prepara una retirada."
+        },
+        {
+          "titulo": "Revisa habitaciones y caja fuerte",
+          "texto": "Busca dinero y el contenedor del rifle. Si falta una clave, usa la guía de cajas fuertes en lugar de introducir números al azar."
+        },
+        {
+          "titulo": "Recoge el Laird 350 físicamente",
+          "texto": "Toma el rifle de su caja y confirma la recogida. El botín adicional y lo que obtengas al venderlo no son una recompensa fija."
+        }
+      ],
+      "problemas": [
+        "¿Buscas el W-22? Ese rifle está en Fishing Shacks; son dos rutas diferentes.",
+        "¿La zona te supera? Conserva tu guardado y vuelve mejor equipado."
+      ],
+      "fuentes": [
+        {
+          "nombre": "GTA BOOM · recorrido de Murtaza Mustafa",
+          "url": "https://www.gtaboom.com/gta-6-early-money-motel-tiger-attack-614c"
+        },
+        {
+          "nombre": "BennyCentral · 63 consejos con recorridos de juego",
+          "url": "https://www.youtube.com/watch?v=od4yuK67yhk"
+        }
+      ],
+      "actualizado": "2026-11-21T12:43:47+01:00",
+      "spoiler": "Ubicación, peligros y botín del motel",
+      "relacionadas": [
+        "rifle-w22",
+        "cajas-fuertes"
+      ],
+      "video": {
+        "id": "od4yuK67yhk",
+        "inicio": 524,
+        "fin": 551,
+        "titulo": "Recogida del Laird 350 en el motel",
+        "autor": "BennyCentral"
+      },
+      "paso_video": 4,
+      "mapa": "secreto-manatee-motel"
+    },
+    {
+      "id": "pistola-silenciador",
+      "titulo": "Pistola con silenciador: Assassin Nipper .38",
+      "categoria": "Armas",
+      "resumen": "La barca correcta y el compartimento que tienes que abrir.",
+      "requisitos": [
+        "Exploración del capítulo 1.",
+        "Un medio para llegar a las islas."
+      ],
+      "zona": "Permit Keys · pecio al oeste de Maroon Key",
+      "recompensa": "Assassin Nipper .38 con silenciador.",
+      "pasos": [
+        {
+          "titulo": "Llega a la isla del pecio",
+          "texto": "Consulta el mapa del recorrido y busca la embarcación varada. No confundas esta isla con la parada de la escopeta Gorse."
+        },
+        {
+          "titulo": "Sube al barco",
+          "texto": "Revisa la cubierta y busca la escotilla del suelo. La guía de esports.gg indica que Focus ayuda a distinguirla.",
+          "controles": {
+            "PS5": "L3 + R3 para Focus",
+            "Xbox": "L3 + R3 para Focus"
+          }
+        },
+        {
+          "titulo": "Abre y recoge",
+          "texto": "Abre el compartimento y toma la pistola. Comprueba el nombre Assassin Nipper .38 en la recogida o el equipo."
+        },
+        {
+          "titulo": "Guarda el hallazgo",
+          "texto": "Cuando puedas guardar, crea un punto de regreso. Si después no aparece en tu equipo activo, consulta la guía de recuperación de variantes."
+        }
+      ],
+      "problemas": [
+        "No está flotando junto a la escopeta: aquí se abre una escotilla dentro del pecio.",
+        "El icono de nuestra web es de área; el clip muestra el último tramo."
+      ],
+      "fuentes": [
+        {
+          "nombre": "esports.gg · recorrido con capturas",
+          "url": "https://esports.gg/guides/grand-theft-auto-6/assassin-nipper-where/"
+        },
+        {
+          "nombre": "BennyCentral · 63 consejos con recorridos de juego",
+          "url": "https://www.youtube.com/watch?v=od4yuK67yhk"
+        }
+      ],
+      "actualizado": "2026-11-21T12:43:47+01:00",
+      "spoiler": "Ubicación de un arma oculta",
+      "relacionadas": [
+        "escopeta-gorse",
+        "recuperar-armas"
+      ],
+      "video": {
+        "id": "od4yuK67yhk",
+        "inicio": 351,
+        "fin": 382,
+        "titulo": "Barca, compartimento y recogida",
+        "autor": "BennyCentral"
+      },
+      "paso_video": 2,
+      "mapa": "secreto-nipper-permit"
+    },
+    {
+      "id": "escopeta-gorse",
+      "titulo": "Escopeta Smuggler Gorse 425: dónde recogerla",
+      "categoria": "Armas",
+      "resumen": "La segunda parada de Permit Keys está junto al barco, no dentro de una escotilla.",
+      "requisitos": [
+        "Exploración del capítulo 1.",
+        "Acceso a las islas de Permit Keys."
+      ],
+      "zona": "Costa de la isla septentrional de Permit Keys",
+      "recompensa": "Smuggler Gorse 425.",
+      "pasos": [
+        {
+          "titulo": "Busca la otra embarcación",
+          "texto": "Ve a la parte norte de Permit Keys y compara la costa con el clip. Es una parada distinta a la de la Nipper."
+        },
+        {
+          "titulo": "Revisa el borde de la vegetación",
+          "texto": "esports.gg sitúa el pecio donde la arena empieza a dar paso a la vegetación. Rodea la embarcación y examina el suelo."
+        },
+        {
+          "titulo": "Recoge la escopeta",
+          "texto": "La Gorse está en el suelo junto al barco. Usa Focus si necesitas distinguir los objetos. Confirma el nombre al recogerla."
+        },
+        {
+          "titulo": "Comprueba el equipo",
+          "texto": "Antes de irte, revisa que has tomado el arma y no solo otro objeto del lugar. Guarda cuando sea posible."
+        }
+      ],
+      "problemas": [
+        "Buscar otra escotilla es el error más fácil: esta recogida está al lado del pecio.",
+        "El marcador compartido con Permit Keys no identifica la recogida exacta."
+      ],
+      "fuentes": [
+        {
+          "nombre": "esports.gg · ubicación de la Gorse",
+          "url": "https://esports.gg/guides/grand-theft-auto-6/smuggler-gorse-where/"
+        },
+        {
+          "nombre": "BennyCentral · 63 consejos con recorridos de juego",
+          "url": "https://www.youtube.com/watch?v=od4yuK67yhk"
+        }
+      ],
+      "actualizado": "2026-11-21T12:43:47+01:00",
+      "spoiler": "Ubicación de un arma oculta",
+      "relacionadas": [
+        "pistola-silenciador",
+        "recuperar-armas"
+      ],
+      "video": {
+        "id": "od4yuK67yhk",
+        "inicio": 382,
+        "fin": 401,
+        "titulo": "Costa y recogida de la escopeta",
+        "autor": "BennyCentral"
+      },
+      "paso_video": 2,
+      "mapa": "secreto-gorse-permit"
+    },
+    {
+      "id": "rifle-w22",
+      "titulo": "Kingfishers W-22: entrar en Fishing Shacks",
+      "categoria": "Armas",
+      "resumen": "Cómo distinguir el refugio del rifle de otras zonas con armas.",
+      "requisitos": [
+        "Acceso a Wetman Bay.",
+        "Munición y equipo para una zona vigilada."
+      ],
+      "zona": "Fishing Shacks · Wetman Bay",
+      "recompensa": "Kingfishers W-22.",
+      "pasos": [
+        {
+          "titulo": "Identifica Fishing Shacks",
+          "texto": "Consulta el mapa del vídeo para llegar al campamento. La referencia de nuestra web es Wetman Bay, no la cabaña exacta."
+        },
+        {
+          "titulo": "Prepara la entrada",
+          "texto": "Hay enemigos en muelles y edificios. Observa la zona desde una posición con cobertura antes de cruzarla."
+        },
+        {
+          "titulo": "Busca la cabaña del muelle",
+          "texto": "AlcastHQ sitúa el arma en un estuche abierto, sobre un escritorio de la casa del muelle del lado oeste. Revisa el clip antes del último tramo."
+        },
+        {
+          "titulo": "Recoge el rifle y sal",
+          "texto": "Confirma que el nombre es Kingfishers W-22. No necesitas confundir el resto del botín del campamento con la recogida del arma."
+        }
+      ],
+      "problemas": [
+        "El Laird 350 del motel es otra arma: consulta esa guía si buscas el fusil del Manatee.",
+        "No presentamos la entrada como segura ni garantizamos el mismo botín en todas las partidas."
+      ],
+      "fuentes": [
+        {
+          "nombre": "AlcastHQ · localización y estuche del W-22",
+          "url": "https://alcasthq.com/gta-6-kingfishers-w-22/"
+        },
+        {
+          "nombre": "BennyCentral · 63 consejos con recorridos de juego",
+          "url": "https://www.youtube.com/watch?v=od4yuK67yhk"
+        }
+      ],
+      "actualizado": "2026-11-21T12:43:47+01:00",
+      "spoiler": "Ubicación y entrada a un campamento",
+      "relacionadas": [
+        "manatee-motel",
+        "recuperar-armas"
+      ],
+      "video": {
+        "id": "od4yuK67yhk",
+        "inicio": 551,
+        "fin": 579,
+        "titulo": "Acceso y estuche del W-22",
+        "autor": "BennyCentral"
+      },
+      "paso_video": 3,
+      "mapa": "secreto-w22-wetman"
+    },
+    {
+      "id": "recuperar-armas",
+      "titulo": "No veo mi arma especial: revisar las variantes",
+      "categoria": "Armas",
+      "resumen": "Antes de repetir todo el viaje, comprueba qué arma llevas equipada.",
+      "requisitos": [
+        "Haber recogido antes la variante que buscas."
+      ],
+      "zona": "Armario de armas y gestión del equipo",
+      "recompensa": "Volver a seleccionar una variante ya descubierta.",
+      "pasos": [
+        {
+          "titulo": "Comprueba qué recogiste",
+          "texto": "Distingue el arma base de su variante con nombre. Haber visto el icono o abierto una caja no sustituye a recoger el arma."
+        },
+        {
+          "titulo": "Abre la gestión de armas",
+          "texto": "El clip de BennyCentral muestra el armario y la selección de variantes. Compara ese menú con el equipo que llevas."
+        },
+        {
+          "titulo": "Busca la variante por su nombre",
+          "texto": "Revisa la categoría correspondiente y selecciona la variante que ya hayas descubierto. Confirma el equipo antes de salir."
+        },
+        {
+          "titulo": "Si no aparece, revisa tu guardado",
+          "texto": "Comprueba que estás usando una partida posterior a la recogida. Esta guía no promete recuperar un arma que nunca se llegó a recoger o guardar."
+        }
+      ],
+      "problemas": [
+        "Arma descubierta y arma equipada no significan lo mismo.",
+        "Si el menú no coincide, vuelve al recorrido original enlazado y compara la versión de tu partida."
+      ],
+      "fuentes": [
+        {
+          "nombre": "BennyCentral · 63 consejos con recorridos de juego",
+          "url": "https://www.youtube.com/watch?v=od4yuK67yhk"
+        }
+      ],
+      "actualizado": "2026-11-21T12:43:47+01:00",
+      "spoiler": "",
+      "relacionadas": [
+        "pistola-silenciador",
+        "rifle-w22"
+      ],
+      "video": {
+        "id": "od4yuK67yhk",
+        "inicio": 579,
+        "fin": 590,
+        "titulo": "Armario y variantes descubiertas",
+        "autor": "BennyCentral"
+      },
+      "paso_video": 2
+    },
+    {
+      "id": "desguace-lowrider",
+      "titulo": "Nova Auto Junkyard: lowrider y KZ59",
+      "categoria": "Coches",
+      "resumen": "Cómo orientarte en el desguace y comprobar lo que has encontrado.",
+      "requisitos": [
+        "Acceso a Hamlet.",
+        "Equipo para un lugar con enemigos."
+      ],
+      "zona": "Nova Auto Junkyard · Hamlet",
+      "recompensa": "Lowrider y variante Marabunta Grande KZ-59 documentados en el vídeo.",
+      "pasos": [
+        {
+          "titulo": "Localiza el desguace",
+          "texto": "El vídeo muestra Nova Auto Junkyard en el mapa de Hamlet. Compara su entrada con la del recorrido: nuestra referencia solo apunta a Hamlet."
+        },
+        {
+          "titulo": "Comprueba los enemigos",
+          "texto": "Observa el patio y prepara cobertura. La presencia del coche no convierte la visita en una entrega de llaves sin riesgo."
+        },
+        {
+          "titulo": "Revisa el coche y el arma",
+          "texto": "Sigue el clip para distinguir el lowrider y la recogida de la KZ59. Comprueba cada hallazgo por separado antes de salir."
+        },
+        {
+          "titulo": "Decide si vas a conservar el coche",
+          "texto": "Llevártelo no equivale a registrarlo como vehículo propio. Lee los requisitos de registro antes de confiar en que podrás pedirlo después."
+        }
+      ],
+      "problemas": [
+        "¿No tienes la opción de registro? Puede faltarte progreso de historia; no es el mismo paso que conducir el coche.",
+        "No atribuimos un punto exacto a una referencia general de Hamlet."
+      ],
+      "fuentes": [
+        {
+          "nombre": "BennyCentral · 63 consejos con recorridos de juego",
+          "url": "https://www.youtube.com/watch?v=od4yuK67yhk"
+        }
+      ],
+      "actualizado": "2026-11-21T12:43:47+01:00",
+      "spoiler": "Ubicación y botín del desguace",
+      "relacionadas": [
+        "registrar-coche",
+        "recuperar-armas"
+      ],
+      "video": {
+        "id": "od4yuK67yhk",
+        "inicio": 1225,
+        "fin": 1272,
+        "titulo": "Mapa del desguace, coche y arma",
+        "autor": "BennyCentral"
+      },
+      "paso_video": 1,
+      "mapa": "secreto-nova-auto"
+    },
+    {
+      "id": "penumbra-ff",
+      "titulo": "Penumbra FF verde: acceder al garaje",
+      "categoria": "Coches",
+      "resumen": "La casa de Vespucci, la alarma y la diferencia entre robar y conservar el coche.",
+      "requisitos": [
+        "Acceso a Vespucci Island.",
+        "Comprueba por separado si ya has desbloqueado el registro de vehículos."
+      ],
+      "zona": "Vespucci Island · Rialto Islands",
+      "recompensa": "Acceso al Maibatsu ’97 Penumbra FF verde.",
+      "pasos": [
+        {
+          "titulo": "Localiza la casa",
+          "texto": "GAMES.GG sitúa el coche en un garaje cerca del centro de Vespucci Island. Su guía incluye un mapa; nuestro icono solo orienta hacia las Rialto Islands."
+        },
+        {
+          "titulo": "Entra por la puerta lateral",
+          "texto": "El recorrido accede por la puerta pequeña del garaje. Al entrar, busca el panel de alarma de la pared."
+        },
+        {
+          "titulo": "Abre el garaje desde dentro",
+          "texto": "Desactiva la alarma y usa el interruptor de la puerta. El coche sigue cerrado: fuerza el acceso o usa la herramienta disponible en tu partida."
+        },
+        {
+          "titulo": "Comprueba si puedes registrarlo",
+          "texto": "El registro requiere progreso y puede tener coste. Sigue la guía de registro; robarlo temprano no garantiza tener ya todos sus servicios desbloqueados."
+        }
+      ],
+      "problemas": [
+        "No damos por confirmado un homenaje oficial: el parecido con Fast & Furious es una comparación visual.",
+        "Si buscas solo el coche, no hace falta abrir el maletero para seguir esta ruta."
+      ],
+      "fuentes": [
+        {
+          "nombre": "GAMES.GG · mapa y recorrido del garaje",
+          "url": "https://games.gg/grand-theft-auto-vi/guides/grand-theft-auto-6-paul-walker-car-location-how-to-get/"
+        },
+        {
+          "nombre": "AlcastHQ · requisitos del registro",
+          "url": "https://alcasthq.com/gta-6-register-cars/"
+        }
+      ],
+      "actualizado": "2026-11-21T12:43:47+01:00",
+      "spoiler": "Ubicación y acceso a un vehículo oculto",
+      "relacionadas": [
+        "registrar-coche",
+        "slim-jim"
+      ],
+      "mapa": "secreto-penumbra-vespucci"
+    },
+    {
+      "id": "registrar-coche",
+      "titulo": "Cómo registrar un coche robado y conservarlo",
+      "categoria": "Coches",
+      "resumen": "Comprueba primero capítulo, rastreador, pintura y plaza libre.",
+      "requisitos": [
+        "Registro desbloqueado con Moses en el capítulo 2, según AlcastHQ.",
+        "Una plaza de garaje libre."
+      ],
+      "zona": "Moses · Port Gellhorn; más opciones con el progreso",
+      "recompensa": "Vehículo registrado como propio.",
+      "pasos": [
+        {
+          "titulo": "Revisa el progreso y el coche",
+          "texto": "No busques este servicio como si estuviera disponible desde el principio. Tras desbloquearlo, escanea el coche con WAiNK y comprueba rastreador y coste."
+        },
+        {
+          "titulo": "Empieza por uno sin rastreador",
+          "texto": "La ruta inicial descrita por AlcastHQ utiliza un coche sin rastreador y lo lleva a Moses, en Port Gellhorn."
+        },
+        {
+          "titulo": "Repinta antes de registrar",
+          "texto": "Habla con Moses y cambia la pintura. Después elige Register / Registrar, no Sell / Vender. Revisa el importe que aparezca."
+        },
+        {
+          "titulo": "Comprueba el garaje",
+          "texto": "Confirma que queda una plaza libre y que el vehículo aparece registrado. La primera operación de registro en Moses se describe como gratuita; las siguientes tienen coste."
+        }
+      ],
+      "problemas": [
+        "Si falta la opción: revisa desbloqueo, rastreador, repintado y plaza libre.",
+        "Aparcar un coche y registrarlo son acciones diferentes. No prometemos que cualquier coche robado quede guardado para siempre."
+      ],
+      "fuentes": [
+        {
+          "nombre": "AlcastHQ · registro, requisitos y garajes",
+          "url": "https://alcasthq.com/gta-6-register-cars/"
+        }
+      ],
+      "actualizado": "2026-11-21T12:43:47+01:00",
+      "spoiler": "Desbloqueo de un servicio del capítulo 2",
+      "relacionadas": [
+        "penumbra-ff",
+        "slim-jim"
+      ]
+    },
+    {
+      "id": "slim-jim",
+      "titulo": "Slim jim: desbloquearlo y abrir coches",
+      "categoria": "Herramientas",
+      "resumen": "La herramienta evita romper la ventanilla, pero no resuelve todos los tipos de arranque.",
+      "requisitos": [
+        "Llegar a la misión Moses del capítulo 2."
+      ],
+      "zona": "Progreso con Moses",
+      "recompensa": "Slim jim y acceso al minijuego de apertura.",
+      "pasos": [
+        {
+          "titulo": "Desbloquea la herramienta",
+          "texto": "PC Gamer sitúa la entrega del slim jim en la misión Moses del capítulo 2. No hace falta buscar una compra temprana que esa guía no describe."
+        },
+        {
+          "titulo": "Acércate a un coche cerrado",
+          "texto": "Elige la opción de slim jim que aparezca junto al vehículo para iniciar la secuencia."
+        },
+        {
+          "titulo": "Busca el punto de apertura",
+          "texto": "Mueve el stick hasta encontrar el punto adecuado y mantenlo el tiempo que indique la secuencia."
+        },
+        {
+          "titulo": "Comprueba cómo arranca ese coche",
+          "texto": "Abrir la puerta no arranca todos los vehículos. Los que usan encendido sin llave pueden exigir otra herramienta."
+        }
+      ],
+      "problemas": [
+        "Si no aparece la opción, comprueba primero si has recibido el slim jim.",
+        "No confundas el slim jim con el snap gun: son herramientas y usos distintos."
+      ],
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · desbloqueo y uso del slim jim",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-slim-jim/"
+        }
+      ],
+      "actualizado": "2026-11-21T12:43:47+01:00",
+      "spoiler": "Desbloqueo de una herramienta del capítulo 2",
+      "relacionadas": [
+        "registrar-coche",
+        "snap-gun"
+      ]
+    },
+    {
+      "id": "snap-gun",
+      "titulo": "Snap gun: abrir cerraduras sin patear la puerta",
+      "categoria": "Herramientas",
+      "resumen": "Cuándo se consigue y cómo completar el minijuego sin confundirlo con desactivar una alarma.",
+      "requisitos": [
+        "Entrega de Yasmani tras Dubious Provenance, capítulo 3, según PC Gamer."
+      ],
+      "zona": "Puertas compatibles con la herramienta",
+      "recompensa": "Acceso mediante ganzuado con snap gun.",
+      "pasos": [
+        {
+          "titulo": "Comprueba el desbloqueo",
+          "texto": "La herramienta depende del progreso de la historia. La guía de PC Gamer sitúa su entrega después del golpe de joyería de Dubious Provenance."
+        },
+        {
+          "titulo": "Usa la opción de la puerta",
+          "texto": "Con la herramienta disponible, acércate a la cerradura y elige Use snap gun cuando aparezca."
+        },
+        {
+          "titulo": "Completa el minijuego",
+          "texto": "Encuentra el punto adecuado con el stick izquierdo y usa el gatillo derecho hasta llenar el indicador, siguiendo lo que muestra tu partida."
+        },
+        {
+          "titulo": "Revisa la alarma por separado",
+          "texto": "Abrir así evita ese tipo de entrada ruidosa, pero no apaga toda la alarma del local. Otras acciones pueden seguir activándola."
+        }
+      ],
+      "problemas": [
+        "Si no tienes la herramienta, esta ruta no la desbloquea por repetir el minijuego.",
+        "Abrir la puerta y desactivar el sistema de alarma son pasos distintos."
+      ],
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · snap gun y sus límites",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-snap-gun/"
+        }
+      ],
+      "actualizado": "2026-11-21T12:43:47+01:00",
+      "spoiler": "Desbloqueo de una herramienta del capítulo 3",
+      "relacionadas": [
+        "cajas-fuertes",
+        "slim-jim"
+      ]
+    },
+    {
+      "id": "cajas-fuertes",
+      "titulo": "Cómo encontrar la clave de una caja fuerte",
+      "categoria": "Herramientas",
+      "resumen": "Pistas del lugar, Focus y diálogo: una lista de números no abre todas las cajas.",
+      "requisitos": [
+        "Acceso a una caja fuerte o a un robo."
+      ],
+      "zona": "Establecimientos y misiones",
+      "recompensa": "La combinación correspondiente a esa caja.",
+      "pasos": [
+        {
+          "titulo": "Identifica qué caja estás intentando abrir",
+          "texto": "PC Gamer distingue códigos de misiones y cajas de robos. Hay combinaciones fijas y otras que parecen variables: no existe una clave universal."
+        },
+        {
+          "titulo": "Busca pistas en el local",
+          "texto": "Revisa notas, paredes, despachos y objetos del entorno. Usa Focus para ayudarte a detectar información.",
+          "controles": {
+            "PS5": "L3 + R3 para activar Focus",
+            "Xbox": "L3 + R3 para activar Focus"
+          }
+        },
+        {
+          "titulo": "Comprueba las opciones de diálogo",
+          "texto": "En determinados robos, un empleado puede dar la combinación mediante la interacción correspondiente. Usa las opciones que aparezcan en tu partida."
+        },
+        {
+          "titulo": "Introduce la clave que has obtenido",
+          "texto": "Vuelve a la caja y utiliza la combinación de ese lugar. Si falla, revisa la pista y la caja concreta antes de probar códigos de otras guías."
+        }
+      ],
+      "problemas": [
+        "Corrección del 21 de noviembre: no todos los códigos de robos se describen como aleatorios; la guía actual de PC Gamer distingue fijos y variables.",
+        "El clip muestra la búsqueda con Focus, no una combinación universal."
+      ],
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · claves y búsqueda de pistas",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-safe-codes-combinations/"
+        },
+        {
+          "nombre": "BennyCentral · 63 consejos con recorridos de juego",
+          "url": "https://www.youtube.com/watch?v=od4yuK67yhk"
+        }
+      ],
+      "actualizado": "2026-11-21T12:43:47+01:00",
+      "spoiler": "",
+      "relacionadas": [
+        "alijo-loro",
+        "snap-gun"
+      ],
+      "video": {
+        "id": "od4yuK67yhk",
+        "inicio": 1020,
+        "fin": 1042,
+        "titulo": "Cómo buscar puertas y pistas con Focus",
+        "autor": "BennyCentral"
+      },
+      "paso_video": 2
+    },
+    {
+      "id": "taxi-viaje-rapido",
+      "titulo": "Taxi y viaje rápido: pedirlo y saltar el trayecto",
+      "categoria": "Exploración",
+      "resumen": "La ruta del teléfono y el suplemento para omitir el viaje.",
+      "requisitos": [
+        "Haber terminado la primera misión.",
+        "Efectivo para la tarifa y, si lo eliges, el suplemento."
+      ],
+      "zona": "Teléfono · Paradise Taxi / RydeMe",
+      "recompensa": "Llegar al destino y poder omitir el recorrido.",
+      "pasos": [
+        {
+          "titulo": "Pide el taxi",
+          "texto": "Abre Teléfono > Contactos > All Contacts > Paradise Taxi. En el capítulo 2 también se desbloquea RydeMe; si no hay conductor, prueba la compañía de taxis."
+        },
+        {
+          "titulo": "Marca el destino y espera",
+          "texto": "Pon un destino en el mapa y busca el vehículo indicado. Entra como pasajero."
+        },
+        {
+          "titulo": "Habla con el conductor",
+          "texto": "Mantén el botón para hablar y elige la opción de salto de viaje.",
+          "controles": {
+            "PS5": "Mantener L2 y pulsar triángulo para el salto descrito",
+            "Xbox": "Mantener LT y pulsar Y para el salto descrito"
+          }
+        },
+        {
+          "titulo": "Lee el precio antes de confirmar",
+          "texto": "PowerPyx separa la tarifa ordinaria de un suplemento de 100 dólares para saltar el trayecto. Ese suplemento no es el precio total de cualquier viaje."
+        }
+      ],
+      "problemas": [
+        "Pulsar un punto del mapa por sí solo no es este sistema de viaje rápido.",
+        "Si no ves RydeMe, revisa el capítulo: la alternativa inicial es Paradise Taxi."
+      ],
+      "fuentes": [
+        {
+          "nombre": "PowerPyx · taxi y viaje rápido",
+          "url": "https://www.powerpyx.com/gta-6-how-to-fast-travel/"
+        }
+      ],
+      "actualizado": "2026-11-21T12:43:47+01:00",
+      "spoiler": "",
+      "relacionadas": [
+        "avion-explorar",
+        "guardar-dinero"
+      ]
+    },
+    {
+      "id": "avion-explorar",
+      "titulo": "Explorar la niebla del mapa con un avión",
+      "categoria": "Exploración",
+      "resumen": "Una ruta de vuelo por zonas y cómo preparar el cambio de avión.",
+      "requisitos": [
+        "Exploración del capítulo 1.",
+        "Poder llegar a una pista de aterrizaje."
+      ],
+      "zona": "Pistas de Key Lento, Mariana y Kelly County",
+      "recompensa": "Más segmentos del mapa descubiertos en tu partida.",
+      "pasos": [
+        {
+          "titulo": "Busca una avioneta de fumigación",
+          "texto": "PowerPyx propone las avionetas de dos alas de las pistas, con ejemplos cerca de Key Lento y en Mariana County. Su vídeo muestra las localizaciones."
+        },
+        {
+          "titulo": "Si no aparece, prueba la siguiente pista",
+          "texto": "La guía ofrece varias opciones. No damos por garantizada la aparición del avión en el primer sitio."
+        },
+        {
+          "titulo": "Explora una zona cada vez",
+          "texto": "Planea recorridos por regiones y comprueba qué segmentos de niebla has despejado. Abrir nuestro mapa web no revela automáticamente el mapa de la consola."
+        },
+        {
+          "titulo": "Vigila combustible y guardado",
+          "texto": "Aterriza antes de agotar el depósito y prepara otra avioneta si hace falta. Guarda periódicamente cuando el juego lo permita."
+        }
+      ],
+      "problemas": [
+        "El vídeo también enseña puntos posteriores; puedes detenerlo tras ver la pista que necesitas.",
+        "Si se agota el combustible en el aire, no hay garantía de completar el vuelo."
+      ],
+      "fuentes": [
+        {
+          "nombre": "PowerPyx · pistas y exploración en avión",
+          "url": "https://www.powerpyx.com/gta-6-how-to-unfog-the-map-fast-best-plane/"
+        }
+      ],
+      "actualizado": "2026-11-21T12:43:47+01:00",
+      "spoiler": "Ubicaciones de pistas y exploración",
+      "relacionadas": [
+        "taxi-viaje-rapido",
+        "guardar-partida"
+      ],
+      "video": {
+        "id": "1xVV8gtutkk",
+        "inicio": 0,
+        "fin": 0,
+        "titulo": "Recorrido de las pistas de aterrizaje",
+        "autor": "Vídeo enlazado por PowerPyx"
+      },
+      "paso_video": 1
+    },
+    {
+      "id": "meditar-con-lucia",
+      "titulo": "La meditación con Lucia del capítulo 1",
+      "categoria": "Exploración",
+      "resumen": "Cómo reconocer la invitación sin convertir una condición pendiente en un trofeo perdido seguro.",
+      "requisitos": [
+        "Estar todavía en el capítulo 1."
+      ],
+      "zona": "Casa de Jason · cocina y balcón",
+      "recompensa": "Completar esa interacción opcional.",
+      "pasos": [
+        {
+          "titulo": "Escucha la invitación",
+          "texto": "PowerPyx encontró la conversación por la mañana después de Down to Earth, pero advierte de que el momento puede variar."
+        },
+        {
+          "titulo": "Sigue a Lucia al balcón",
+          "texto": "Cuando anuncie que va a meditar, ve al balcón donde está el equipo de entrenamiento."
+        },
+        {
+          "titulo": "Acepta la actividad",
+          "texto": "Mira a Lucia y selecciona Accept / Aceptar cuando aparezca.",
+          "controles": {
+            "PS5": "Mantener L2 para la interacción",
+            "Xbox": "Mantener LT para la interacción"
+          }
+        },
+        {
+          "titulo": "Conserva tu guardado de capítulo",
+          "texto": "La interacción deja de estar disponible tras el capítulo 1. Su requisito concreto para el trofeo seguía pendiente de confirmación en la fuente: no lo damos por seguro."
+        }
+      ],
+      "problemas": [
+        "Si no ocurre a la hora descrita, no concluyas automáticamente que tu partida está bloqueada.",
+        "No afirmamos que omitirla haga perder por sí sola el 100 %."
+      ],
+      "fuentes": [
+        {
+          "nombre": "PowerPyx · meditación y comprobaciones pendientes",
+          "url": "https://www.powerpyx.com/gta-6-all-meditation-spot-locations/"
+        }
+      ],
+      "actualizado": "2026-11-21T12:43:47+01:00",
+      "spoiler": "Interacción opcional del capítulo 1",
+      "relacionadas": [
+        "guardar-partida",
+        "primeros-pasos"
+      ]
+    },
+    {
+      "id": "kirk-skunk-ape",
+      "titulo": "Cómo empezar la búsqueda de Kirk",
+      "categoria": "Secretos",
+      "resumen": "El cartel, la llamada y el requisito de horario; sin revelar el desenlace de la cadena.",
+      "requisitos": [
+        "Capítulo 1.",
+        "Iniciar la misión por la noche."
+      ],
+      "zona": "Carteles de Kirk · Hamlet y pantanos de Mariana",
+      "recompensa": "Iniciar Search for the Skunk Ape.",
+      "pasos": [
+        {
+          "titulo": "Lee uno de los carteles",
+          "texto": "PowerPyx señala un cartel del Skunk Ape en Skeeter’s bar, en Hamlet. Leerlo añade a Kirk a los contactos."
+        },
+        {
+          "titulo": "Llama a Kirk",
+          "texto": "Abre el teléfono y usa el nuevo contacto. La llamada marca la misión en los pantanos de Mariana County."
+        },
+        {
+          "titulo": "Comprueba que sea de noche",
+          "texto": "La fuente especifica inicio nocturno con Jason o Lucia. Si hace falta avanzar la hora, usa una opción de descanso de tu partida."
+        },
+        {
+          "titulo": "Ve al marcador de la misión",
+          "texto": "Sigue el punto que aparece en tu mapa del juego. Nuestra referencia del encuentro al sur de Hamlet es distinta: no sustituye al marcador de esta misión."
+        }
+      ],
+      "problemas": [
+        "Encuentro libre y cadena de Kirk no son el mismo inicio.",
+        "Esta guía termina al empezar la misión; no cuenta decisiones ni recompensas finales."
+      ],
+      "fuentes": [
+        {
+          "nombre": "PowerPyx · inicio de Search for the Skunk Ape",
+          "url": "https://www.powerpyx.com/gta-6-search-for-the-skunk-ape-walkthrough/"
+        }
+      ],
+      "actualizado": "2026-11-21T12:43:47+01:00",
+      "spoiler": "Inicio de una misión secundaria",
+      "relacionadas": [
+        "huevo-torre",
+        "meditar-con-lucia"
+      ]
+    },
+    {
+      "id": "huevo-torre",
+      "titulo": "El huevo de la torre: qué activa la escena",
+      "categoria": "Secretos",
+      "resumen": "Qué hace el jugador en el vídeo original y qué falta por situar en nuestro mapa.",
+      "requisitos": [
+        "Haber localizado y alcanzado la torre del recorrido.",
+        "La torre aún no tiene coordenadas verificadas en LeonidaDex."
+      ],
+      "zona": "Torre mostrada en el vídeo de xGarbett",
+      "recompensa": "Activar la secuencia del huevo.",
+      "pasos": [
+        {
+          "titulo": "Compara la torre con el vídeo",
+          "texto": "El original muestra el nido en una plataforma elevada. Todavía no publicamos un icono exacto para esa torre: no uses al azar otra antena del mapa."
+        },
+        {
+          "titulo": "Busca el nido de huevos pintados",
+          "texto": "Revisa la plataforma y acércate al nido que muestra el clip."
+        },
+        {
+          "titulo": "Recoge uno y lánzalo",
+          "texto": "El vídeo documenta la recogida y el lanzamiento. Si prefieres no ver el remate, detén la reproducción antes de la escena."
+        },
+        {
+          "titulo": "Distingue la escena de una recompensa",
+          "texto": "La evidencia muestra ese easter egg; no la convertimos en una promesa de dinero, arma secreta o desbloqueo adicional."
+        }
+      ],
+      "problemas": [
+        "Esta guía explica la interacción, pero la ruta exacta hasta la torre sigue pendiente de georreferenciar.",
+        "El recorrido es de xGarbett; no es una recreación de LeonidaDex."
+      ],
+      "fuentes": [
+        {
+          "nombre": "xGarbett · vídeo original",
+          "url": "https://www.youtube.com/watch?v=aYDe7nsjVmY"
+        }
+      ],
+      "actualizado": "2026-11-21T12:43:47+01:00",
+      "spoiler": "Solución y remate del easter egg",
+      "relacionadas": [
+        "kirk-skunk-ape",
+        "avion-explorar"
+      ],
+      "video": {
+        "id": "aYDe7nsjVmY",
+        "inicio": 14,
+        "fin": 48,
+        "titulo": "Nido, lanzamiento y escena",
+        "autor": "xGarbett"
+      },
+      "paso_video": 2
+    }
+  ]
+}

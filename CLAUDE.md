@@ -22,7 +22,7 @@ GitHub es la fuente de la versión vigente. Consulta la rama `main` actual antes
 
 ## Antes de publicar
 
-1. Ejecuta `python -m unittest discover -s tests`, `node --test tests/consent.test.cjs` y `python build.py`.
+1. Ejecuta `python -m unittest discover -s tests`, `node --test tests/consent.test.cjs tests/guides.test.cjs` y `python build.py`.
 2. Revisa el cambio y que las fuentes realmente respalden las afirmaciones. Las pruebas automáticas solo validan estructura y funcionamiento, no veracidad.
 3. No edites `site/` directamente: es el resultado generado.
 4. Publica los cambios comprobados en GitHub. Un cambio en `main` ejecuta comprobaciones y la publicación en Pages. Comprueba que ambos trabajos terminen correctamente y verifica la web pública.
@@ -70,3 +70,14 @@ La programación diaria debe estar configurada en la tarea de Claude. El flujo d
 - La capa «Pistas y secretos» empieza oculta. Sus ocho marcadores son referencias de área: `exacta:false`, ancla GTADB y campo `precision` explican dónde buscar y qué falta por situar. No los conviertas en coordenadas exactas de recogida. No asignes posiciones aleatorias a secretos sin coordenadas.
 - Conserva las fuentes y el aviso de spoilers de los cuatro reportajes nuevos. No prometas dinero infinito, cantidades constantes, apariciones garantizadas ni una confirmación oficial del supuesto homenaje del Penumbra FF.
 - El W-22 de Fishing Shacks y el Laird 350 del Manatee Motel son armas distintas. El huevo pintado está documentado por xGarbett, pero su torre aún no está georreferenciada en este mapa: no añadas un icono al azar.
+
+## Catálogo de guías y vídeos
+
+- `src/guias.json` es la fuente del catálogo `/guias/`, sus páginas individuales y las tarjetas de la portada. `base.guias` y `actualizaciones.guias_nuevas` quedan como contenido histórico y ya no alimentan el catálogo. Publica las nuevas guías en el archivo nuevo.
+- Cada guía necesita requisitos, zona, resultado, pasos con título y explicación, problemas frecuentes y fuentes. `guide_pages.py` genera las páginas; no edites `site/`. Los enlaces de portada, menú, búsqueda global, reportajes y fichas del mapa llevan a estas páginas.
+- Los clips son reproductores originales de sus autores, con marcas de inicio y fin en segundos absolutos del vídeo. No uses un vídeo de otro lugar como demostración de una recogida. Un fin igual a cero conserva el recorrido completo. Verifica el autor y lo mostrado antes de añadir un clip.
+- `src/assets/guias.js` solo crea el iframe de youtube-nocookie.com tras pulsar Reproducir. No cargues miniaturas, reproductores ni solicitudes de YouTube antes de esa elección. Mantén el crédito, el enlace al original y el botón para cerrar el reproductor.
+- Los pasos de guías con `spoiler` empiezan en un desplegable cerrado. El visitante los abre desde Ver los pasos, Ver el vídeo, el índice o el desplegable. No abras las soluciones sin esa acción ni añadas sus cuerpos al buscador global.
+- Los pasos marcados se guardan bajo `ldx-guia:…`, solo en ese navegador; no envíes ese progreso ni búsquedas escritas a Analytics.
+- Corrección del 21 de noviembre: la guía actual de PC Gamer distingue cajas con códigos fijos y otras que parecen variables. El reportaje anterior y el nuevo paso a paso deben mantener esa distinción.
+- Robar un vehículo y registrarlo son pasos distintos. La guía de registro conserva el requisito de progreso con Moses y no promete registro disponible desde el capítulo 1.

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-11-21T11:51:29+01:00",
+    "actualizado": "2026-11-21T12:43:47+01:00",
     "lanzamiento": "2026-11-19T00:00:00",
     "nota_lanzamiento": "Disponible desde el 19 de noviembre · PS5 y Xbox Series X|S",
     "fase": "lanzado",
@@ -2257,9 +2257,10 @@
       "exacta": false,
       "secreto": true,
       "gtadb": "L3439",
-      "guia": "gta6-armas-gratis-capitulo-1",
+      "guia": "pistola-silenciador",
       "precision": "Referencia general: Permit Keys. El icono no señala la embarcación exacta.",
-      "actualizado": "2026-11-21"
+      "actualizado": "2026-11-21",
+      "guia_tipo": "guias"
     },
     {
       "id": "secreto-gorse-permit",
@@ -2277,9 +2278,10 @@
       "exacta": false,
       "secreto": true,
       "gtadb": "L3439",
-      "guia": "gta6-armas-gratis-capitulo-1",
+      "guia": "escopeta-gorse",
       "precision": "Referencia general: Permit Keys. Pendiente situar la recogida exacta.",
-      "actualizado": "2026-11-21"
+      "actualizado": "2026-11-21",
+      "guia_tipo": "guias"
     },
     {
       "id": "secreto-w22-wetman",
@@ -2297,9 +2299,10 @@
       "exacta": false,
       "secreto": true,
       "gtadb": "L3446",
-      "guia": "gta6-armas-gratis-capitulo-1",
+      "guia": "rifle-w22",
       "precision": "Referencia general: Wetman Bay. No representa la cabaña exacta.",
-      "actualizado": "2026-11-21"
+      "actualizado": "2026-11-21",
+      "guia_tipo": "guias"
     },
     {
       "id": "secreto-manatee-motel",
@@ -2317,9 +2320,10 @@
       "exacta": false,
       "secreto": true,
       "gtadb": "L3748",
-      "guia": "secretos-gta6-mapa-dinero-armas",
+      "guia": "manatee-motel",
       "precision": "Referencia: Cottonmouth Lake. El motel está al nordeste; el icono marca el lago, no la puerta.",
-      "actualizado": "2026-11-21"
+      "actualizado": "2026-11-21",
+      "guia_tipo": "guias"
     },
     {
       "id": "secreto-three-sheets",
@@ -2337,9 +2341,10 @@
       "exacta": false,
       "secreto": true,
       "gtadb": "L266",
-      "guia": "gta6-loro-dinero-three-sheets",
+      "guia": "alijo-loro",
       "precision": "Referencia: la zona de la casa de Jason en Key Lento. La licorería no está georreferenciada aquí.",
-      "actualizado": "2026-11-21"
+      "actualizado": "2026-11-21",
+      "guia_tipo": "guias"
     },
     {
       "id": "secreto-penumbra-vespucci",
@@ -2357,9 +2362,10 @@
       "exacta": false,
       "secreto": true,
       "gtadb": "L141",
-      "guia": "gta6-penumbra-ff-vespucci",
+      "guia": "penumbra-ff",
       "precision": "Referencia general: Rialto Islands. El icono no identifica todavía la isla ni el garaje exactos.",
-      "actualizado": "2026-11-21"
+      "actualizado": "2026-11-21",
+      "guia_tipo": "guias"
     },
     {
       "id": "secreto-skunk-ape-hamlet",
@@ -2377,9 +2383,10 @@
       "exacta": false,
       "secreto": true,
       "gtadb": "L260",
-      "guia": "misterio-pantano-kirk",
+      "guia": "kirk-skunk-ape",
       "precision": "Referencia: salida de Hamlet. Zona orientativa, no punto fijo de aparición.",
-      "actualizado": "2026-11-21"
+      "actualizado": "2026-11-21",
+      "guia_tipo": "guias"
     },
     {
       "id": "secreto-nova-auto",
@@ -2397,9 +2404,10 @@
       "exacta": false,
       "secreto": true,
       "gtadb": "L260",
-      "guia": "secretos-gta6-mapa-dinero-armas",
+      "guia": "desguace-lowrider",
       "precision": "Referencia: Hamlet. Pendiente trasladar la entrada exacta del desguace a nuestra cartografía.",
-      "actualizado": "2026-11-21"
+      "actualizado": "2026-11-21",
+      "guia_tipo": "guias"
     }
   ],
   "articulos_nuevos": [
@@ -2448,7 +2456,8 @@
       "lectura": 3,
       "fecha": "2026-11-21",
       "actualizado": "2026-11-21T11:51:29+01:00",
-      "spoiler": "Ver pistas de exploración y soluciones · sin desenlaces de la historia"
+      "spoiler": "Ver pistas de exploración y soluciones · sin desenlaces de la historia",
+      "guia": "alijo-loro"
     },
     {
       "id": "gta6-armas-gratis-capitulo-1",
@@ -2492,7 +2501,8 @@
       "lectura": 3,
       "fecha": "2026-11-21",
       "actualizado": "2026-11-21T11:51:29+01:00",
-      "spoiler": "Ver pistas de exploración y soluciones · sin desenlaces de la historia"
+      "spoiler": "Ver pistas de exploración y soluciones · sin desenlaces de la historia",
+      "guia": "pistola-silenciador"
     },
     {
       "id": "gta6-penumbra-ff-vespucci",
@@ -2539,7 +2549,8 @@
       "lectura": 3,
       "fecha": "2026-11-21",
       "actualizado": "2026-11-21T11:51:29+01:00",
-      "spoiler": "Ver pistas de exploración y soluciones · sin desenlaces de la historia"
+      "spoiler": "Ver pistas de exploración y soluciones · sin desenlaces de la historia",
+      "guia": "penumbra-ff"
     },
     {
       "id": "secretos-gta6-mapa-dinero-armas",
@@ -2651,7 +2662,8 @@
       "lectura": 5,
       "fecha": "2026-11-21",
       "actualizado": "2026-11-21T11:51:29+01:00",
-      "spoiler": "Ver pistas de exploración y soluciones · sin desenlaces de la historia"
+      "spoiler": "Ver pistas de exploración y soluciones · sin desenlaces de la historia",
+      "guia": "primeros-pasos"
     },
     {
       "id": "cajas-fuertes-gta6-claves",
@@ -2662,7 +2674,7 @@
           "h": "Historia y robos funcionan distinto"
         },
         {
-          "p": "Según PC Gamer, la historia te facilita sus códigos; los de robos son aleatorios. No hay cuatro cifras universales."
+          "p": "La revisión actual de PC Gamer distingue combinaciones fijas y otras que parecen variables en robos. La historia facilita las claves de sus misiones. No existe una combinación universal."
         },
         {
           "h": "Cómo localizar la clave"
@@ -2681,6 +2693,9 @@
         },
         {
           "p": "Los códigos que alteran el juego se explican aparte en nuestra guía de trucos."
+        },
+        {
+          "p": "Corrección del 21 de noviembre: la fuente ahora distingue códigos fijos y variables. La redacción anterior generalizaba que los de robos eran aleatorios."
         }
       ],
       "fuentes": [
@@ -2692,7 +2707,8 @@
       "categoria": "Guías",
       "lectura": 2,
       "fecha": "2026-11-19",
-      "actualizado": "2026-11-19T11:19:05+01:00"
+      "actualizado": "2026-11-21T12:43:47+01:00",
+      "guia": "cajas-fuertes"
     },
     {
       "id": "misterio-pantano-kirk",
@@ -2735,7 +2751,8 @@
       "lectura": 2,
       "fecha": "2026-11-19",
       "actualizado": "2026-11-19T11:19:05+01:00",
-      "spoiler": "Mostrar pistas y ubicación · spoilers leves de una misión secundaria"
+      "spoiler": "Mostrar pistas y ubicación · spoilers leves de una misión secundaria",
+      "guia": "kirk-skunk-ape"
     },
     {
       "id": "guardar-partida-gta6",
@@ -2778,7 +2795,8 @@
       "categoria": "Guías",
       "lectura": 2,
       "fecha": "2026-11-19",
-      "actualizado": "2026-11-19T11:19:05+01:00"
+      "actualizado": "2026-11-19T11:19:05+01:00",
+      "guia": "guardar-partida"
     },
     {
       "id": "dinero-gta6-actividades",
@@ -3059,7 +3077,8 @@
       "lectura": 2,
       "fecha": "2026-11-18",
       "actualizado": "2026-11-18T14:18:39+01:00",
-      "spoiler": "Mostrar actividad y ubicación · spoilers leves del capítulo 1"
+      "spoiler": "Mostrar actividad y ubicación · spoilers leves del capítulo 1",
+      "guia": "meditar-con-lucia"
     },
     {
       "id": "historia-no-avanza-capitulo-2",
@@ -3144,7 +3163,8 @@
       "categoria": "Guías",
       "lectura": 2,
       "fecha": "2026-11-18",
-      "actualizado": "2026-11-18T14:18:39+01:00"
+      "actualizado": "2026-11-18T14:18:39+01:00",
+      "guia": "taxi-viaje-rapido"
     },
     {
       "id": "criticas-y-notas-gta6",

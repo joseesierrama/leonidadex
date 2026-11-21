@@ -6,7 +6,7 @@ from hashlib import sha256
 from pathlib import Path
 
 E = html.escape
-MENU = [("", "Inicio"), ("retos/", "Retos"), ("noticias/", "Noticias"), ("reportajes/", "Reportajes"),
+MENU = [("", "Inicio"), ("guias/", "Guías"), ("retos/", "Retos"), ("noticias/", "Noticias"), ("reportajes/", "Reportajes"),
         ("personajes/", "Personajes"), ("leonida/", "Leonida"),
         ("preguntas-frecuentes/", "Preguntas frecuentes"), ("#mapa", "Mapa interactivo")]
 
@@ -152,4 +152,14 @@ def info_pages(config):
             f'<p>Para comunicar una atribución incorrecta, un error o una consulta sobre derechos de contenido, escribe a {contact} e identifica la página y el material correspondiente.</p>'
             '<h2>Privacidad y publicidad</h2><p>La información sobre datos personales se encuentra en la <a href="../privacidad/">política de privacidad</a> y la del almacenamiento del navegador en <a href="../cookies/">cookies y almacenamiento</a>.</p>'
             '<p>La activación de anuncios dependerá de la aprobación y configuración del servicio publicitario y del consentimiento aplicable. Las políticas se actualizarán para reflejar los servicios realmente utilizados.</p>')
+    videos = ('<h2>Vídeos de las guías · incorporación del 21 de noviembre de 2026</h2>'
+              '<p>Los reproductores de YouTube no se cargan hasta que eliges «Reproducir clip». Al hacerlo, tu navegador conecta con YouTube y transmite los datos necesarios para solicitar el vídeo, como tu dirección IP. Utilizamos el modo de privacidad mejorada de youtube-nocookie.com; eso no significa que desaparezca toda comunicación con Google. Puedes cerrar el reproductor y seguir leyendo los pasos.</p>'
+              '<p>Esta elección es independiente de aceptar o rechazar Google Analytics. Consulta la <a href="https://support.google.com/youtube/answer/171780?hl=es" target="_blank" rel="noopener noreferrer">información del reproductor y su modo de privacidad mejorada</a> y la <a href="https://policies.google.com/privacy?hl=es" target="_blank" rel="noopener noreferrer">política de Google</a>.</p>')
+    for key in ('privacidad', 'cookies'):
+        if key in pages:
+            title, desc, body = pages[key]
+            pages[key] = (title, desc, body + videos)
+    if 'cookies' in pages:
+        title, desc, body = pages['cookies']
+        pages['cookies'] = (title, desc, body + '<h2>Lista de pasos de las guías</h2><p>Las claves ldx-guia:… del almacenamiento local recuerdan únicamente los pasos que marcas en cada guía. Se conservan en ese navegador hasta que los desmarques o borres el almacenamiento. No se sincronizan entre dispositivos ni se envían como eventos de medición.</p>')
     return pages
