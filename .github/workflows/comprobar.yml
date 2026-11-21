@@ -17,5 +17,5 @@ jobs:
         with:
           node-version: "22"
       - run: python -m unittest discover -s tests
-      - run: node --test tests/consent.test.cjs
+      - run: node --test tests/consent.test.cjs tests/guides.test.cjs
       - run: python build.py
