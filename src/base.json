@@ -4756,7 +4756,7 @@
     ]
   },
   "mapa_revision": {
-    "fecha": "2026-11-19",
-    "texto": "Revisión del 19 de noviembre: 3.651 puntos y 137 áreas de GTADB. Frente a la copia del 18: 311 altas, 45 registros revisados (32 con coordenadas distintas) y 0 bajas. Cartografía y datos comunitarios: no equivalen a un mapa oficial ni a coordenadas verificadas por LeonidaDex en una consola."
+    "fecha": "2026-11-21",
+    "texto": "Revisión del 21 de noviembre: 3.663 puntos y 139 áreas de GTADB. Frente al día 19: 12 altas, 23 registros revisados (9 con coordenadas distintas) y 0 bajas. Añadidas 8 referencias de área para secretos, ocultas hasta activar su capa. No son coordenadas exactas del botín ni cartografía oficial."
   }
 }
