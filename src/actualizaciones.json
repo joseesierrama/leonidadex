@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-11-19T11:19:05+01:00",
+    "actualizado": "2026-11-21T11:51:29+01:00",
     "lanzamiento": "2026-11-19T00:00:00",
     "nota_lanzamiento": "Disponible desde el 19 de noviembre · PS5 y Xbox Series X|S",
     "fase": "lanzado",
@@ -197,6 +197,60 @@
     }
   ],
   "noticias": [
+    {
+      "id": "alijo-loro-20261121",
+      "fecha": "2026-11-21",
+      "titulo": "GTA 6: una licorería de Key Lento esconde una pista muy habladora",
+      "resumen": "GamesRadar+ documenta el alijo de Three Sheets Liquor. Nuestra guía explica dónde empezar y cómo leer la pista sin prometer dinero infinito.",
+      "categoria": "Descubrimientos",
+      "estado": "prensa",
+      "fuentes": [
+        {
+          "nombre": "GamesRadar+ · guía con capturas de Vic Hood",
+          "url": "https://www.gamesradar.com/games/grand-theft-auto/exotic-animals-front-illegal-operation-gta-6/"
+        },
+        {
+          "nombre": "Leer guía en LeonidaDex",
+          "url": "https://leonidadex.net/reportajes/gta6-loro-dinero-three-sheets/"
+        }
+      ]
+    },
+    {
+      "id": "armas-capitulo1-20261121",
+      "fecha": "2026-11-21",
+      "titulo": "Tres armas legendarias de GTA 6 localizadas durante el capítulo 1",
+      "resumen": "GTA BOOM publica recorridos con capturas de una pistola, una escopeta y un rifle. Separamos sus rutas y sus riesgos.",
+      "categoria": "Descubrimientos",
+      "estado": "prensa",
+      "fuentes": [
+        {
+          "nombre": "GTA BOOM · tres armas, partidas de Murtaza Mustafa",
+          "url": "https://www.gtaboom.com/gta-6-chapter-1-legendary-weapon-locations-2ea1"
+        },
+        {
+          "nombre": "Leer guía en LeonidaDex",
+          "url": "https://leonidadex.net/reportajes/gta6-armas-gratis-capitulo-1/"
+        }
+      ]
+    },
+    {
+      "id": "penumbra-vespucci-20261121",
+      "fecha": "2026-11-21",
+      "titulo": "El Penumbra FF verde de GTA 6 ya tiene una ruta de búsqueda",
+      "resumen": "GAMES.GG sitúa el deportivo en Vespucci Island. Explicamos cómo consultarlo y por qué conservarlo puede costar dinero.",
+      "categoria": "Descubrimientos",
+      "estado": "prensa",
+      "fuentes": [
+        {
+          "nombre": "GAMES.GG · guía y mapa de Abdalla",
+          "url": "https://games.gg/grand-theft-auto-vi/guides/grand-theft-auto-6-paul-walker-car-location-how-to-get/"
+        },
+        {
+          "nombre": "Leer guía en LeonidaDex",
+          "url": "https://leonidadex.net/reportajes/gta6-penumbra-ff-vespucci/"
+        }
+      ]
+    },
     {
       "id": "lanzamiento-gta6-20261119",
       "fecha": "2026-11-19",
@@ -1846,6 +1900,32 @@
   ],
   "guias_nuevas": [
     {
+      "id": "secretos-exploracion-20261121",
+      "titulo": "Secretos: dinero, armas, easter eggs y trucos",
+      "categoria": "Exploración",
+      "nivel": "Básico",
+      "tiempo": "5 min",
+      "estado": "disponible",
+      "resumen": "Rutas documentadas y marcadores de área. Las soluciones se abren con aviso.",
+      "pasos": [
+        "Abre la guía completa y elige qué apartado quieres descubrir.",
+        "Activa «Pistas y secretos» en el mapa y lee la precisión de cada referencia."
+      ],
+      "consejos": [
+        "Los marcadores nuevos orientan por zonas; todavía no son coordenadas exactas del botín."
+      ],
+      "fuentes": [
+        {
+          "nombre": "Guía completa de secretos",
+          "url": "https://leonidadex.net/reportajes/secretos-gta6-mapa-dinero-armas/"
+        },
+        {
+          "nombre": "Abrir mapa interactivo y activar «Pistas y secretos»",
+          "url": "https://leonidadex.net/#mapa"
+        }
+      ]
+    },
+    {
       "id": "guardar-partida-lanzamiento",
       "titulo": "Guardar y conservar puntos de regreso",
       "categoria": "Primeros pasos",
@@ -2160,8 +2240,419 @@
       "titulo": "Original Score de Justice (fecha anunciada)"
     }
   ],
-  "mapa_lugares": [],
+  "mapa_lugares": [
+    {
+      "id": "secreto-nipper-permit",
+      "nombre": "Assassin Nipper .38 · zona de búsqueda",
+      "region": "keys",
+      "cat": "armas",
+      "x": 331.576,
+      "y": 710.746,
+      "estado": "prensa",
+      "texto": "Busca la barca varada al oeste de Maroon Key y revisa su compartimento. Consulta las capturas de la ruta antes del último tramo.",
+      "fuente": {
+        "nombre": "BennyCentral · armas tempranas en vídeo",
+        "url": "https://www.youtube.com/watch?v=od4yuK67yhk&t=350s"
+      },
+      "exacta": false,
+      "secreto": true,
+      "gtadb": "L3439",
+      "guia": "gta6-armas-gratis-capitulo-1",
+      "precision": "Referencia general: Permit Keys. El icono no señala la embarcación exacta.",
+      "actualizado": "2026-11-21"
+    },
+    {
+      "id": "secreto-gorse-permit",
+      "nombre": "Smuggler Gorse 425 · zona de búsqueda",
+      "region": "keys",
+      "cat": "armas",
+      "x": 331.576,
+      "y": 710.746,
+      "estado": "prensa",
+      "texto": "La ruta documentada se dirige a la costa de la isla más septentrional de Permit Keys, junto a una embarcación.",
+      "fuente": {
+        "nombre": "BennyCentral · armas tempranas en vídeo",
+        "url": "https://www.youtube.com/watch?v=od4yuK67yhk&t=350s"
+      },
+      "exacta": false,
+      "secreto": true,
+      "gtadb": "L3439",
+      "guia": "gta6-armas-gratis-capitulo-1",
+      "precision": "Referencia general: Permit Keys. Pendiente situar la recogida exacta.",
+      "actualizado": "2026-11-21"
+    },
+    {
+      "id": "secreto-w22-wetman",
+      "nombre": "Kingfishers W-22 · Fishing Shacks",
+      "region": "grassrivers",
+      "cat": "armas",
+      "x": 375.086,
+      "y": 661.076,
+      "estado": "prensa",
+      "texto": "Zona vigilada en Wetman Bay. La guía enlazada muestra el acceso al rifle; no es el Laird 350 del motel.",
+      "fuente": {
+        "nombre": "GTA BOOM · tres armas, partidas de Murtaza Mustafa",
+        "url": "https://www.gtaboom.com/gta-6-chapter-1-legendary-weapon-locations-2ea1"
+      },
+      "exacta": false,
+      "secreto": true,
+      "gtadb": "L3446",
+      "guia": "gta6-armas-gratis-capitulo-1",
+      "precision": "Referencia general: Wetman Bay. No representa la cabaña exacta.",
+      "actualizado": "2026-11-21"
+    },
+    {
+      "id": "secreto-manatee-motel",
+      "nombre": "Manatee Motel · dinero y Laird 350",
+      "region": "grassrivers",
+      "cat": "dinero",
+      "x": 403.243,
+      "y": 661.625,
+      "estado": "prensa",
+      "texto": "Busca al nordeste de Cottonmouth Lake, al sur de Hamlet. La prensa documenta botín y un rifle; hay guardias y un tigre.",
+      "fuente": {
+        "nombre": "GTA BOOM · recorrido del Manatee Motel",
+        "url": "https://www.gtaboom.com/gta-6-early-money-motel-tiger-attack-614c"
+      },
+      "exacta": false,
+      "secreto": true,
+      "gtadb": "L3748",
+      "guia": "secretos-gta6-mapa-dinero-armas",
+      "precision": "Referencia: Cottonmouth Lake. El motel está al nordeste; el icono marca el lago, no la puerta.",
+      "actualizado": "2026-11-21"
+    },
+    {
+      "id": "secreto-three-sheets",
+      "nombre": "Three Sheets · pista del loro",
+      "region": "keys",
+      "cat": "dinero",
+      "x": 438.452,
+      "y": 684.883,
+      "estado": "prensa",
+      "texto": "Empieza en Key Lento. La guía de GTA BOOM explica el patio de la licorería y su alijo.",
+      "fuente": {
+        "nombre": "GTA BOOM · alijo de Three Sheets Liquor",
+        "url": "https://www.gtaboom.com/gta-6-early-money-the-three-sheets-liquor-parrot-stash-555d"
+      },
+      "exacta": false,
+      "secreto": true,
+      "gtadb": "L266",
+      "guia": "gta6-loro-dinero-three-sheets",
+      "precision": "Referencia: la zona de la casa de Jason en Key Lento. La licorería no está georreferenciada aquí.",
+      "actualizado": "2026-11-21"
+    },
+    {
+      "id": "secreto-penumbra-vespucci",
+      "nombre": "Penumbra FF · ruta por Vespucci",
+      "region": "vicecity",
+      "cat": "raros",
+      "x": 521.541,
+      "y": 472.487,
+      "estado": "prensa",
+      "texto": "GAMES.GG muestra el coche en un garaje de Vespucci Island. Recogerlo y registrarlo para conservarlo son pasos distintos.",
+      "fuente": {
+        "nombre": "GAMES.GG · guía y mapa de Abdalla",
+        "url": "https://games.gg/grand-theft-auto-vi/guides/grand-theft-auto-6-paul-walker-car-location-how-to-get/"
+      },
+      "exacta": false,
+      "secreto": true,
+      "gtadb": "L141",
+      "guia": "gta6-penumbra-ff-vespucci",
+      "precision": "Referencia general: Rialto Islands. El icono no identifica todavía la isla ni el garaje exactos.",
+      "actualizado": "2026-11-21"
+    },
+    {
+      "id": "secreto-skunk-ape-hamlet",
+      "nombre": "Skunk Ape · encuentro al sur de Hamlet",
+      "region": "grassrivers",
+      "cat": "encuentros",
+      "x": 431.744,
+      "y": 625.027,
+      "estado": "prensa",
+      "texto": "PowerPyx documenta un encuentro en la carretera al sur de Hamlet, separado de la cadena de Kirk. No se garantiza una aparición en cualquier momento.",
+      "fuente": {
+        "nombre": "PowerPyx · encuentro del Skunk Ape",
+        "url": "https://www.powerpyx.com/gta-6-bigfoot-sasquatch-easter-egg-location/"
+      },
+      "exacta": false,
+      "secreto": true,
+      "gtadb": "L260",
+      "guia": "misterio-pantano-kirk",
+      "precision": "Referencia: salida de Hamlet. Zona orientativa, no punto fijo de aparición.",
+      "actualizado": "2026-11-21"
+    },
+    {
+      "id": "secreto-nova-auto",
+      "nombre": "Nova Auto Junkyard · lowrider y KZ59",
+      "region": "grassrivers",
+      "cat": "raros",
+      "x": 431.744,
+      "y": 625.027,
+      "estado": "prensa",
+      "texto": "BennyCentral muestra un lowrider y una KZ59 de los Marabunta en el desguace de Hamlet. La zona tiene enemigos: no es una entrega de coche sin riesgo.",
+      "fuente": {
+        "nombre": "BennyCentral · recorrido de Nova Auto Junkyard",
+        "url": "https://www.youtube.com/watch?v=od4yuK67yhk&t=1223s"
+      },
+      "exacta": false,
+      "secreto": true,
+      "gtadb": "L260",
+      "guia": "secretos-gta6-mapa-dinero-armas",
+      "precision": "Referencia: Hamlet. Pendiente trasladar la entrada exacta del desguace a nuestra cartografía.",
+      "actualizado": "2026-11-21"
+    }
+  ],
   "articulos_nuevos": [
+    {
+      "id": "gta6-loro-dinero-three-sheets",
+      "titulo": "GTA 6: el loro de Three Sheets Liquor y su alijo de dinero",
+      "entradilla": "Una pista de Key Lento convierte una visita a la licorería en una búsqueda. Resumimos el hallazgo de la prensa y sus riesgos.",
+      "cuerpo": [
+        {
+          "h": "Dónde buscar"
+        },
+        {
+          "p": "GamesRadar+ sitúa la operación de aves tras Three Sheets Liquor, al norte del Pay N’ Spray de Key Lento. Su guía muestra el lugar con capturas propias."
+        },
+        {
+          "h": "La pista que merece escuchar"
+        },
+        {
+          "p": "El loro señala un generador; al lado hay una rejilla blanca con un alijo. La zona tiene guardias y puede atraer a la policía. LeonidaDex no promete una cantidad fija ni un método de dinero infinito."
+        },
+        {
+          "h": "Cómo usar nuestro mapa"
+        },
+        {
+          "p": "Activa «Pistas y secretos» y busca «Three Sheets». El marcador orienta hacia Key Lento: todavía no representa el patio exacto. Abre la fuente para contrastar su mapa con el de tu partida."
+        },
+        {
+          "p": "Guarda antes de arriesgarte y comprueba que tu inventario y tu equipo permiten salir del lugar. Es una ruta de exploración, no una misión que debas completar para usar la web."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "GamesRadar+ · guía con capturas de Vic Hood",
+          "url": "https://www.gamesradar.com/games/grand-theft-auto/exotic-animals-front-illegal-operation-gta-6/"
+        },
+        {
+          "nombre": "Abrir mapa interactivo y activar «Pistas y secretos»",
+          "url": "https://leonidadex.net/#mapa"
+        },
+        {
+          "nombre": "Más rutas de dinero y armas",
+          "url": "https://leonidadex.net/reportajes/secretos-gta6-mapa-dinero-armas/"
+        }
+      ],
+      "categoria": "Guías",
+      "lectura": 3,
+      "fecha": "2026-11-21",
+      "actualizado": "2026-11-21T11:51:29+01:00",
+      "spoiler": "Ver pistas de exploración y soluciones · sin desenlaces de la historia"
+    },
+    {
+      "id": "gta6-armas-gratis-capitulo-1",
+      "titulo": "GTA 6: tres armas legendarias para buscar en el capítulo 1",
+      "entradilla": "Una pistola, una escopeta y un rifle documentados por GTA BOOM. No todos están en el mismo lugar ni tienen el mismo riesgo.",
+      "cuerpo": [
+        {
+          "h": "Dos paradas en Permit Keys"
+        },
+        {
+          "p": "GTA BOOM documenta la Assassin Nipper .38 en el compartimento de una barca varada al oeste de Maroon Key. La Smuggler Gorse 425 está junto a otra embarcación, en la costa de la isla más septentrional de Permit Keys."
+        },
+        {
+          "h": "La tercera exige prepararse"
+        },
+        {
+          "p": "El Kingfishers W-22 aparece en una caja dentro de Fishing Shacks, en Wetman Bay, al oeste de Pelican Valley. Es una zona vigilada. No lo confundas con el Laird 350 del Manatee Motel."
+        },
+        {
+          "h": "Localización y alcance"
+        },
+        {
+          "p": "Nuestros marcadores son referencias de área, no coordenadas de recogida verificadas en consola. La fuente enlazada incluye imágenes del recorrido. Úsala para completar la aproximación desde el mapa interactivo."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "GTA BOOM · tres armas, partidas de Murtaza Mustafa",
+          "url": "https://www.gtaboom.com/gta-6-chapter-1-legendary-weapon-locations-2ea1"
+        },
+        {
+          "nombre": "GTA BOOM · recorrido del Manatee Motel",
+          "url": "https://www.gtaboom.com/gta-6-early-money-motel-tiger-attack-614c"
+        },
+        {
+          "nombre": "Abrir mapa interactivo y activar «Pistas y secretos»",
+          "url": "https://leonidadex.net/#mapa"
+        }
+      ],
+      "categoria": "Guías",
+      "lectura": 3,
+      "fecha": "2026-11-21",
+      "actualizado": "2026-11-21T11:51:29+01:00",
+      "spoiler": "Ver pistas de exploración y soluciones · sin desenlaces de la historia"
+    },
+    {
+      "id": "gta6-penumbra-ff-vespucci",
+      "titulo": "GTA 6: dónde buscar el Penumbra FF verde de Vespucci Island",
+      "entradilla": "El deportivo que está llamando la atención por su parecido con Fast & Furious tiene una ruta de robo y un coste para conservarlo.",
+      "cuerpo": [
+        {
+          "h": "Un garaje en las Rialto Islands"
+        },
+        {
+          "p": "La guía de Abdalla en GAMES.GG localiza un Maibatsu ’97 Penumbra FF verde con gráficos azules en el garaje de una casa de Vespucci Island, cerca de su centro."
+        },
+        {
+          "h": "Llevártelo y conservarlo son pasos distintos"
+        },
+        {
+          "p": "El recorrido entra por la puerta lateral, desactiva la alarma y abre el garaje desde dentro. El coche sigue cerrado: necesitas forzarlo o usar una herramienta. Registrarlo en un Pay N’ Spray tiene un coste; no es un regalo permanente gratis."
+        },
+        {
+          "h": "Qué está confirmado y qué es interpretación"
+        },
+        {
+          "p": "El vehículo y la ruta están documentados por el medio. La lectura como homenaje a la película es una comparación visual, no una declaración oficial de Rockstar."
+        },
+        {
+          "p": "El marcador de LeonidaDex indica las Rialto Islands como referencia general. Hasta georreferenciar la casa, consulta el mapa de la fuente para el último tramo."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "GAMES.GG · guía y mapa de Abdalla",
+          "url": "https://games.gg/grand-theft-auto-vi/guides/grand-theft-auto-6-paul-walker-car-location-how-to-get/"
+        },
+        {
+          "nombre": "Abrir mapa interactivo y activar «Pistas y secretos»",
+          "url": "https://leonidadex.net/#mapa"
+        },
+        {
+          "nombre": "Guía de secretos y exploración",
+          "url": "https://leonidadex.net/reportajes/secretos-gta6-mapa-dinero-armas/"
+        }
+      ],
+      "categoria": "Guías",
+      "lectura": 3,
+      "fecha": "2026-11-21",
+      "actualizado": "2026-11-21T11:51:29+01:00",
+      "spoiler": "Ver pistas de exploración y soluciones · sin desenlaces de la historia"
+    },
+    {
+      "id": "secretos-gta6-mapa-dinero-armas",
+      "titulo": "Secretos de GTA 6: dinero, armas ocultas, easter eggs y trucos",
+      "entradilla": "Rutas de exploración con fuentes, límites y avisos de spoilers. Elige qué descubrir antes de abrir las soluciones.",
+      "cuerpo": [
+        {
+          "h": "Antes de salir: cómo leer las pistas del mapa"
+        },
+        {
+          "p": "El mapa sigue siendo interactivo: puedes acercarte, filtrar, compartir una ficha y marcarla como descubierta. La capa «Pistas y secretos» empieza oculta. Los nuevos marcadores son referencias de área, no posiciones exactas del botín; cada ficha lo indica y enlaza su evidencia. No equivalen a un mapa oficial definitivo."
+        },
+        {
+          "h": "1. Dinero rápido: rutas y riesgos"
+        },
+        {
+          "ul": [
+            "Three Sheets Liquor: el alijo del loro en Key Lento está explicado en nuestra guía específica. La cantidad puede variar; no prometemos repetirlo sin límite.",
+            "Manatee Motel: GTA BOOM describe dinero, contrabando y un Laird 350 al sur de Hamlet, al nordeste de Cottonmouth Lake. Hay guardias y un tigre: prepara una salida y no confundas botín con beneficio garantizado.",
+            "Para progresar sin depender de un alijo concreto, consulta también nuestra guía de dinero y actividades. Mantén un guardado anterior a cualquier incursión."
+          ]
+        },
+        {
+          "h": "2. Armas secretas: elige una ruta"
+        },
+        {
+          "p": "La guía específica reúne las dos paradas costeras de Permit Keys y el W-22 de Fishing Shacks. Empieza por leer su riesgo y la precisión de cada marcador; no presupongas que todos los iconos son recogidas seguras. El Laird 350 del motel es otra arma."
+        },
+        {
+          "h": "3. Easter eggs y encuentros"
+        },
+        {
+          "ul": [
+            "xGarbett muestra un nido de huevos pintados en lo alto de una torre y la escena que provoca lanzar uno. Conservamos el vídeo original como evidencia; todavía no añadimos un punto exacto porque no hemos situado esa torre en nuestra cartografía.",
+            "PowerPyx documenta un encuentro del Skunk Ape en la carretera al sur de Hamlet. El marcador es una zona de búsqueda, no una promesa de aparición en cualquier momento. La guía de Kirk separa ese encuentro de su cadena de misiones y mantiene ocultos sus detalles.",
+            "El Penumbra FF verde es una búsqueda de vehículo aparte. Su semejanza con un coche de cine se presenta como interpretación visual."
+          ]
+        },
+        {
+          "h": "4. Trucos y ayudas ocultas"
+        },
+        {
+          "p": "La guía de códigos conserva seis combinaciones contrastadas entre medios, con requisitos y advertencias de guardado y trofeos. No añadimos códigos ni glitches sin evidencia. Para cajas fuertes, consulta la guía de pistas: no existe una combinación universal para todos los robos."
+        },
+        {
+          "h": "Vehículos: una parada en Hamlet"
+        },
+        {
+          "p": "BennyCentral muestra un lowrider y una KZ59 en Nova Auto Junkyard, en Hamlet. Su vídeo permite comprobar el acceso y la presencia de enemigos. Nuestro icono orienta hacia Hamlet y enlaza el recorrido; no señala todavía la puerta exacta del desguace."
+        },
+        {
+          "h": "Qué queda por comprobar"
+        },
+        {
+          "p": "LeonidaDex recopila recorridos de prensa y creadores; no presenta estas rutas como pruebas propias en consola. Seguimos pendientes de trasladar las posiciones exactas al mapa. Si cambia una condición o una actualización altera un recorrido, la ficha conservará su fuente y fecha de revisión."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "BennyCentral · recorrido de Nova Auto Junkyard",
+          "url": "https://www.youtube.com/watch?v=od4yuK67yhk&t=1223s"
+        },
+        {
+          "nombre": "Three Sheets: pista del loro",
+          "url": "https://leonidadex.net/reportajes/gta6-loro-dinero-three-sheets/"
+        },
+        {
+          "nombre": "Tres armas del capítulo 1",
+          "url": "https://leonidadex.net/reportajes/gta6-armas-gratis-capitulo-1/"
+        },
+        {
+          "nombre": "Penumbra FF de Vespucci",
+          "url": "https://leonidadex.net/reportajes/gta6-penumbra-ff-vespucci/"
+        },
+        {
+          "nombre": "GTA BOOM · recorrido del Manatee Motel",
+          "url": "https://www.gtaboom.com/gta-6-early-money-motel-tiger-attack-614c"
+        },
+        {
+          "nombre": "xGarbett · secuencia original del huevo",
+          "url": "https://www.youtube.com/watch?v=aYDe7nsjVmY"
+        },
+        {
+          "nombre": "PowerPyx · encuentro del Skunk Ape",
+          "url": "https://www.powerpyx.com/gta-6-bigfoot-sasquatch-easter-egg-location/"
+        },
+        {
+          "nombre": "Dinero y actividades",
+          "url": "https://leonidadex.net/reportajes/dinero-gta6-actividades/"
+        },
+        {
+          "nombre": "Kirk y el pantano",
+          "url": "https://leonidadex.net/reportajes/misterio-pantano-kirk/"
+        },
+        {
+          "nombre": "Seis códigos y requisitos",
+          "url": "https://leonidadex.net/reportajes/trucos-gta6-codigos-desbloqueo/"
+        },
+        {
+          "nombre": "Pistas para cajas fuertes",
+          "url": "https://leonidadex.net/reportajes/cajas-fuertes-gta6-claves/"
+        },
+        {
+          "nombre": "Abrir mapa interactivo y activar «Pistas y secretos»",
+          "url": "https://leonidadex.net/#mapa"
+        }
+      ],
+      "categoria": "Guías",
+      "lectura": 5,
+      "fecha": "2026-11-21",
+      "actualizado": "2026-11-21T11:51:29+01:00",
+      "spoiler": "Ver pistas de exploración y soluciones · sin desenlaces de la historia"
+    },
     {
       "id": "cajas-fuertes-gta6-claves",
       "titulo": "Cajas fuertes en GTA VI: cómo encontrar su clave sin probar números al azar",
