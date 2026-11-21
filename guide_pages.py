@@ -1,5 +1,6 @@
 """Catálogo de guías, páginas paso a paso y clips externos a petición."""
 import html
+import hashlib
 import json
 import math
 import re
@@ -8,6 +9,11 @@ from urllib.parse import urlsplit
 
 E=html.escape
 ICONS={'Primeros pasos':'01','Dinero':'$','Armas':'✚','Coches':'↗','Herramientas':'⌁','Exploración':'⌖','Secretos':'?'}
+
+def asset_name(src,name):
+    stem,extension=name.rsplit('.',1)
+    version=hashlib.sha256((src/'assets'/name).read_bytes()).hexdigest()[:12]
+    return f'{stem}.{version}.{extension}'
 
 def community_links():
     return ('<section class="gv-social" aria-label="La comunidad de LeonidaDex">'
@@ -144,7 +150,8 @@ def pages(shell,write,url,src):
           f'<p class="gh-result-count" role="status" data-guide-count>{len(guides)} guías disponibles</p><div class="gh-grid" data-guide-grid>'+''.join(card(g) for g in guides)+'</div>'
           '<div class="gh-empty" data-guide-empty hidden><h2>No hay guías con esos filtros</h2><p>Prueba con una palabra más corta o vuelve a mostrar todas.</p><button type="button" class="btn btn-ghost" data-clear-filters>Quitar filtros</button></div></section>'
           '<section class="gh-support"><h2>¿El problema está antes de jugar?</h2><p>Estas páginas te ayudan con instalación, idioma y acceso al juego.</p><div><a href="../reportajes/noche-de-lanzamiento/">Instalación y primera partida →</a><a href="../reportajes/gta6-no-abre-ps5/">El juego no abre en PS5 →</a><a href="../reportajes/idiomas-gta6/">Voces y subtítulos →</a><a href="../reportajes/trucos-gta6-codigos-desbloqueo/">Códigos y requisitos →</a></div></section>'+community_links())
-    assets='<link rel="stylesheet" href="../assets/guias.css"><script src="../assets/guias.js" defer></script>'
+    css_name=asset_name(src,'guias.css');js_name=asset_name(src,'guias.js')
+    assets=f'<link rel="stylesheet" href="../assets/{css_name}"><script src="../assets/{js_name}" defer></script>'
     text=shell(1,'Guías de GTA 6: dinero, armas, coches y secretos | LeonidaDex','Guías de GTA 6 con pasos claros, requisitos y vídeos: dinero, armas ocultas, coches, herramientas y exploración de Leonida.',url+'guias/',body,
                {'@context':'https://schema.org','@type':'CollectionPage','name':'Guías de GTA VI','url':url+'guias/','inLanguage':'es','hasPart':[{'@type':'WebPage','name':g['titulo'],'url':url+'guias/'+g['id']+'/'} for g in guides]})
     write('guias/index.html',text.replace('</head>',assets+'</head>'))
@@ -153,7 +160,7 @@ def pages(shell,write,url,src):
         u=url+'guias/'+g['id']+'/'
         text=shell(2,g['titulo']+' | Guías de GTA 6 | LeonidaDex',g['resumen'],u,page_body(g,data),
                    {'@context':'https://schema.org','@type':'Article','headline':g['titulo'],'description':g['resumen'],'datePublished':g['actualizado'],'dateModified':g['actualizado'],'inLanguage':'es','author':{'@type':'Organization','name':'LeonidaDex'},'mainEntityOfPage':u})
-        assets='<link rel="stylesheet" href="../../assets/guias.css"><script src="../../assets/guias.js" defer></script>'
+        assets=f'<link rel="stylesheet" href="../../assets/{css_name}"><script src="../../assets/{js_name}" defer></script>'
         write('guias/'+g['id']+'/index.html',text.replace('</head>',assets+'</head>'))
         result.append((u,g['actualizado']))
     return result
