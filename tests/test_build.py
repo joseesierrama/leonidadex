@@ -9,6 +9,7 @@ from urllib.parse import unquote, urlsplit
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 import build
+from guide_pages import load_guides
 from site_support import info_pages, load_config, privacy_ready, legal_ready
 
 
@@ -37,6 +38,7 @@ class BuildTests(unittest.TestCase):
                 expected = len(base["articulos"]) + len(dyn.get("articulos_nuevos", [])) + 12
                 expected += 2 if privacy_ready(build.CONFIG) else 0
                 expected += 1 if legal_ready(build.CONFIG) else 0
+                expected += 1 + len(load_guides(build.SRC)['guias'])
                 self.assertEqual(len(pages), expected)
                 self.assertEqual((output / "ads.txt").exists(), bool(build.CONFIG["adsense_publisher_id"]))
                 self.assertEqual((output / "privacidad").exists(), privacy_ready(build.CONFIG))
