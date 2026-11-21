@@ -63,3 +63,10 @@ La programación diaria debe estar configurada en la tarea de Claude. El flujo d
 - Las nuevas guías de Kirk y dinero conservan `spoiler`; no muestres sus cuerpos en búsquedas ni abras los desplegables por defecto. La guía de Kirk explica el inicio y no el desenlace.
 - El estado de PSN es una observación puntual fechada. No lo muestres como una monitorización en directo ni atribuyas cualquier error local a una caída.
 - La página de música aún mostraba Pre-Save en esta consulta; no convertir una fecha anunciada en una confirmación de disponibilidad de todos los temas.
+
+## Descubrimientos del 21 de noviembre
+
+- Se conserva el mapa interactivo y sus teselas comunitarias. Los 3.663 puntos y 139 áreas de GTADB no equivalen a cartografía oficial ni a comprobaciones propias en consola. La comparación normaliza nombres de área antes de comparar índices: 12 altas, 23 registros revisados, 9 cambios de coordenadas y ninguna baja frente al día 19.
+- La capa «Pistas y secretos» empieza oculta. Sus ocho marcadores son referencias de área: `exacta:false`, ancla GTADB y campo `precision` explican dónde buscar y qué falta por situar. No los conviertas en coordenadas exactas de recogida. No asignes posiciones aleatorias a secretos sin coordenadas.
+- Conserva las fuentes y el aviso de spoilers de los cuatro reportajes nuevos. No prometas dinero infinito, cantidades constantes, apariciones garantizadas ni una confirmación oficial del supuesto homenaje del Penumbra FF.
+- El W-22 de Fishing Shacks y el Laird 350 del Manatee Motel son armas distintas. El huevo pintado está documentado por xGarbett, pero su torre aún no está georreferenciada en este mapa: no añadas un icono al azar.
