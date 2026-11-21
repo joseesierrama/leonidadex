@@ -9,6 +9,15 @@ from urllib.parse import urlsplit
 E=html.escape
 ICONS={'Primeros pasos':'01','Dinero':'$','Armas':'✚','Coches':'↗','Herramientas':'⌁','Exploración':'⌖','Secretos':'?'}
 
+def community_links():
+    return ('<section class="gv-social" aria-label="La comunidad de LeonidaDex">'
+            '<p class="eyebrow">Sigue explorando con nosotros</p><h2>El siguiente hallazgo, en vídeo</h2>'
+            '<p>¿Te ha servido esta guía? Síguenos para encontrar más rutas, secretos y retos de GTA VI, '
+            'y vuelve al mapa cuando quieras hacerlos en tu partida.</p><div class="gv-social-links">'
+            '<a class="btn btn-primary" href="https://www.tiktok.com/@leonidadex.net" target="_blank" rel="noopener noreferrer">Síguenos en TikTok ↗</a>'
+            '<a class="btn btn-ghost" href="https://www.youtube.com/channel/UCLL3PsFZZ8sPMsRsQgTPJhg" target="_blank" rel="noopener noreferrer">Ver nuestros Shorts ↗</a>'
+            '</div><small>Perfiles oficiales de LeonidaDex. Los vídeos de otros autores incluidos en las guías mantienen su crédito.</small></section>')
+
 def load_guides(src):
     data=json.loads((src/'guias.json').read_text('utf-8'))
     if datetime.fromisoformat(data['actualizado']).tzinfo is None:
@@ -118,7 +127,7 @@ def page_body(g,data):
     by_id={x['id']:x for x in data['guias']}
     related=g.get('relacionadas',[])[:3]
     recommendations='<section class="gv-related"><p class="eyebrow">Tu siguiente parada</p><h2>Sigue con estas guías</h2><div class="gh-grid">'+''.join(card(by_id[x],'../') for x in related)+'</div></section>' if related else ''
-    return top+brief+'<div class="gv-layout"><div class="gv-main">'+content+sources+'</div>'+toc+'</div>'+recommendations+'<a class="gv-back" href="../">← Volver a todas las guías</a></article>'
+    return top+brief+'<div class="gv-layout"><div class="gv-main">'+content+sources+'</div>'+toc+'</div>'+community_links()+recommendations+'<a class="gv-back" href="../">← Volver a todas las guías</a></article>'
 
 def pages(shell,write,url,src):
     data=load_guides(src);guides=data['guias'];nvideo=sum('video' in g for g in guides)
@@ -134,7 +143,7 @@ def pages(shell,write,url,src):
           +'</div><label class="gh-video-only"><input type="checkbox" id="guide-video-only">Solo con vídeo</label></div></form>'
           f'<p class="gh-result-count" role="status" data-guide-count>{len(guides)} guías disponibles</p><div class="gh-grid" data-guide-grid>'+''.join(card(g) for g in guides)+'</div>'
           '<div class="gh-empty" data-guide-empty hidden><h2>No hay guías con esos filtros</h2><p>Prueba con una palabra más corta o vuelve a mostrar todas.</p><button type="button" class="btn btn-ghost" data-clear-filters>Quitar filtros</button></div></section>'
-          '<section class="gh-support"><h2>¿El problema está antes de jugar?</h2><p>Estas páginas te ayudan con instalación, idioma y acceso al juego.</p><div><a href="../reportajes/noche-de-lanzamiento/">Instalación y primera partida →</a><a href="../reportajes/gta6-no-abre-ps5/">El juego no abre en PS5 →</a><a href="../reportajes/idiomas-gta6/">Voces y subtítulos →</a><a href="../reportajes/trucos-gta6-codigos-desbloqueo/">Códigos y requisitos →</a></div></section>')
+          '<section class="gh-support"><h2>¿El problema está antes de jugar?</h2><p>Estas páginas te ayudan con instalación, idioma y acceso al juego.</p><div><a href="../reportajes/noche-de-lanzamiento/">Instalación y primera partida →</a><a href="../reportajes/gta6-no-abre-ps5/">El juego no abre en PS5 →</a><a href="../reportajes/idiomas-gta6/">Voces y subtítulos →</a><a href="../reportajes/trucos-gta6-codigos-desbloqueo/">Códigos y requisitos →</a></div></section>'+community_links())
     assets='<link rel="stylesheet" href="../assets/guias.css"><script src="../assets/guias.js" defer></script>'
     text=shell(1,'Guías de GTA 6: dinero, armas, coches y secretos | LeonidaDex','Guías de GTA 6 con pasos claros, requisitos y vídeos: dinero, armas ocultas, coches, herramientas y exploración de Leonida.',url+'guias/',body,
                {'@context':'https://schema.org','@type':'CollectionPage','name':'Guías de GTA VI','url':url+'guias/','inLanguage':'es','hasPart':[{'@type':'WebPage','name':g['titulo'],'url':url+'guias/'+g['id']+'/'} for g in guides]})
