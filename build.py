@@ -18,7 +18,7 @@ import shutil
 from site_support import analytics, footer as site_footer, head as site_head, info_pages, load_config, menu, privacy_ready, tiktok_link
 from content_validation import validate_content
 from promotion_pages import pages as promotion_pages
-from guide_pages import load_guides, home_preview, pages as guide_pages
+from guide_pages import load_guides, home_preview, asset_name as guide_asset_name, pages as guide_pages
 
 ROOT = pathlib.Path(__file__).parent
 SRC = ROOT / "src"
@@ -122,6 +122,8 @@ def main():
     css = re.search(r"<style>(.*?)</style>", tpl, re.S).group(1)
     write("assets/estilo.css", css)
     shutil.copytree(SRC / "assets", OUT / "assets", dirs_exist_ok=True)
+    for name in ('guias.css','guias.js'):
+        write('assets/'+guide_asset_name(SRC,name),(SRC/'assets'/name).read_text('utf-8'))
     shutil.copy(SRC / "assets" / "favicon.ico", OUT / "favicon.ico")
     write("site.webmanifest", json.dumps({"name": "LeonidaDex", "short_name": "LeonidaDex", "lang": "es",
         "start_url": "./", "scope": "./", "display": "standalone", "background_color": "#120a1c", "theme_color": "#120a1c",
@@ -129,7 +131,7 @@ def main():
     mani = json.loads((SRC / "tiles" / "mapa" / "manifest.json").read_text("utf-8"))
     idx = tpl.replace("__BASE__", embed(base)).replace("__DYN__", embed(dyn)).replace("__MANI__", embed(mani))
     idx = idx.replace("__GUIDES_HOME__", home_preview(guides)).replace("__GUIDES__", embed(guides['guias']))
-    idx = idx.replace('</head>', '<link rel="stylesheet" href="assets/guias.css"></head>', 1)
+    idx = idx.replace('</head>', f'<link rel="stylesheet" href="assets/{guide_asset_name(SRC,"guias.css")}"></head>', 1)
     head_extra = f'<link rel="canonical" href="{E(url)}">\n<meta property="og:url" content="{E(url)}">\n'
     head_extra += site_head("", url)
     idx = idx.replace("<meta name=\"theme-color\"", head_extra + "<meta name=\"theme-color\"", 1)
