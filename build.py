@@ -74,7 +74,7 @@ def shell(depth, title, desc, url, body, jsonld=None, up_override=None):
 <link rel="stylesheet" href="{up}assets/estilo.css">
 <style>.static main{{padding:56px 0 80px}}.static .list{{list-style:none;margin:0;padding:0;display:grid;gap:0}}.static .list li{{padding:18px 0;border-top:1px solid var(--line)}}.static .list h2,.static .list h3{{font-size:1.4rem;margin:4px 0 6px;transform:none;text-shadow:none}}.static .prose{{max-width:72ch}}.static .prose p,.static .prose li{{line-height:1.75;color:#f0dde8}}.static .prose h2{{font-size:1.6rem;margin:30px 0 8px;transform:none;text-shadow:none;color:var(--flamingo)}}.static h1{{font:900 clamp(2.4rem,6vw,4.2rem)/.95 var(--font-display);text-transform:uppercase;margin:0 0 10px;text-wrap:balance}}.crumbs{{font:500 .75rem/1 var(--font-mono);color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px}}.crumbs a{{color:var(--muted)}}</style>
 {ld}
-{site_head(up, base_url()[0])}
+{site_head(up, base_url()[0], CONFIG)}
 </head>
 <body class="static">
 <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -133,7 +133,7 @@ def main():
     idx = idx.replace("__GUIDES_HOME__", home_preview(guides)).replace("__GUIDES__", embed(guides['guias']))
     idx = idx.replace('</head>', f'<link rel="stylesheet" href="assets/{guide_asset_name(SRC,"guias.css")}"></head>', 1)
     head_extra = f'<link rel="canonical" href="{E(url)}">\n<meta property="og:url" content="{E(url)}">\n'
-    head_extra += site_head("", url)
+    head_extra += site_head("", url, CONFIG)
     idx = idx.replace("<meta name=\"theme-color\"", head_extra + "<meta name=\"theme-color\"", 1)
     search_button = '<button class="search-btn" id="searchBtn"'
     if idx.count(search_button) != 1:
@@ -177,6 +177,11 @@ def main():
 
     # --- reportajes ---
     arts = list(dyn.get("articulos_nuevos", [])) + list(base.get("articulos", []))
+    guide_by_id = {g["id"]: g for g in guides["guias"]}
+    for article in arts:
+        references = article.get("guias_relacionadas", []) + ([article["guia"]] if article.get("guia") else [])
+        if any(identifier not in guide_by_id for identifier in references):
+            raise ValueError("El reportaje enlaza una guía inexistente: " + article["id"])
     lis = "".join(f'<li><span class="news-date">{E(a.get("categoria", ""))} · {a.get("lectura", 3)} min</span><h2><a href="{E(a["id"])}/">{E(a["titulo"])}</a></h2><p>{E(a.get("entradilla", ""))}</p></li>' for a in arts)
     u = url + "reportajes/"
     write("reportajes/index.html", shell(1, "Reportajes sobre GTA VI | LeonidaDex", "Reportajes en español sobre GTA VI: la historia del desarrollo, los retrasos, qué edición comprar, cómo se juega, las filtraciones y los récords.", u,
@@ -196,8 +201,20 @@ def main():
             content = (f'<details class="spoiler-gate"><summary>{E(a["spoiler"])}</summary>'
                        f'{content}</details>')
         guide_cta = ('<p><a class="btn btn-primary" href="../../guias/' + E(a["guia"]) + '/">Ver guía paso a paso y clips →</a></p>') if a.get("guia") else ""
+        related_guides = [guide_by_id[identifier] for identifier in a.get("guias_relacionadas", []) if identifier != a.get("guia")]
+        guide_routes = ('<aside class="article-guides" aria-label="Recorridos relacionados"><h2>Elige tu siguiente recorrido</h2><ul>'
+                        + ''.join(f'<li><a href="../../guias/{E(g["id"])}/">{E(g["titulo"])}</a><p>{E(g["resumen"])}</p></li>' for g in related_guides)
+                        + '</ul></aside>') if related_guides else ""
+        published = a.get("fecha", upd)
+        modified = a.get("actualizado", published)
+        editorial_meta = '<p class="editorial-meta">Por <a href="../../sobre-leonidadex/">Redacción LeonidaDex</a>'
+        if published:
+            editorial_meta += f' · Publicado el <time datetime="{E(published)}">{E(fecha_larga(published))}</time>'
+        if modified and modified[:10] != published[:10]:
+            editorial_meta += f' · Actualizado el <time datetime="{E(modified)}">{E(fecha_larga(modified))}</time>'
+        editorial_meta += ' · <a href="../../criterios-editoriales/">Fuentes y correcciones</a></p>'
         body = (f'<p class="crumbs"><a href="../../">LeonidaDex</a> › <a href="../">Reportajes</a></p><article class="prose"><span class="badge">{E(a.get("categoria", ""))}</span>'
-                f'<h1>{E(a["titulo"])}</h1><p class="lede">{E(a.get("entradilla", ""))}</p>{guide_cta}{content}{fuentes(a.get("fuentes"))}</article>')
+                f'<h1>{E(a["titulo"])}</h1>{editorial_meta}<p class="lede">{E(a.get("entradilla", ""))}</p>{guide_cta}{content}{fuentes(a.get("fuentes"))}{guide_routes}</article>')
         u = url + f"reportajes/{a['id']}/"
         write(f"reportajes/{a['id']}/index.html", shell(2, f"{a['titulo']} | LeonidaDex", a.get("entradilla", ""), u, body,
                                                         {"@context": "https://schema.org", "@type": "Article", "headline": a["titulo"], "description": a.get("entradilla", ""), "datePublished": a.get("fecha", upd), "dateModified": a.get("actualizado", a.get("fecha", upd)), "inLanguage": "es",

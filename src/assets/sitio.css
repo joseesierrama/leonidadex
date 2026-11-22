@@ -8,6 +8,11 @@
 .site-links { display: flex; flex-wrap: wrap; gap: 10px 20px; padding-block: 12px 24px; font-size: .9rem; }
 .site-links a, .site-links button { color: var(--aqua); }
 .site-links button { border: 0; background: none; padding: 0; text-decoration: underline; text-underline-offset: 3px; font: inherit; }
+.editorial-meta { color: var(--muted); font-size: .85rem; line-height: 1.7; overflow-wrap: anywhere; }
+.editorial-meta a { color: var(--aqua); }
+.article-guides { margin-top: 32px; padding-top: 8px; border-top: 1px solid var(--line); }
+.article-guides li { margin-block: 18px; }
+.article-guides li p { margin-block: 5px; }
 body .guides { grid-template-columns: repeat(auto-fill, minmax(min(330px, 100%), 1fr)); }
 .social-tiktok { display: inline-flex; align-items: center; justify-content: center; gap: 12px; flex-shrink: 0; min-height: 48px; padding: 11px 18px; border: 1px solid #ff4fa380; border-radius: 14px; background: linear-gradient(135deg, #21132e, #120a1c); color: #fff; text-decoration: none; box-shadow: -3px 0 0 #35e3d04d, 3px 0 0 #ff2e884d; transition: border-color .18s, background .18s, transform .18s; }
 .social-tiktok svg { display: block; flex-shrink: 0; fill: currentColor; filter: drop-shadow(-1px -1px 0 #35e3d0) drop-shadow(1px 1px 0 #ff2e88); }

@@ -10,18 +10,28 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 import build
 from guide_pages import load_guides
-from site_support import info_pages, load_config, privacy_ready, legal_ready
+from site_support import info_pages, load_config, privacy_ready, legal_ready, head
 
 
 class Links(HTMLParser):
     def __init__(self):
         super().__init__()
         self.hrefs = []
+        self.references = []
+        self.ids = set()
+        self.metas = []
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
         if tag in ("a", "link") and "href" in attrs:
             self.hrefs.append(attrs["href"])
+        if attrs.get("id"):
+            self.ids.add(attrs["id"])
+        if tag == "meta":
+            self.metas.append(attrs)
+        for key in ("href", "src", "poster"):
+            if attrs.get(key):
+                self.references.append((key, attrs[key]))
 
 
 class BuildTests(unittest.TestCase):
@@ -35,9 +45,8 @@ class BuildTests(unittest.TestCase):
                 pages = list(output.rglob("*.html"))
                 base = json.loads((build.SRC / "base.json").read_text("utf-8"))
                 dyn = json.loads((build.SRC / "actualizaciones.json").read_text("utf-8"))
-                expected = len(base["articulos"]) + len(dyn.get("articulos_nuevos", [])) + 12
-                expected += 2 if privacy_ready(build.CONFIG) else 0
-                expected += 1 if legal_ready(build.CONFIG) else 0
+                expected = len(base["articulos"]) + len(dyn.get("articulos_nuevos", [])) + 10
+                expected += len(info_pages(build.CONFIG))
                 expected += 1 + len(load_guides(build.SRC)['guias'])
                 self.assertEqual(len(pages), expected)
                 self.assertEqual((output / "ads.txt").exists(), bool(build.CONFIG["adsense_publisher_id"]))
@@ -57,21 +66,35 @@ class BuildTests(unittest.TestCase):
                         self.assertIn('<details class="spoiler-gate"><summary>', text)
                         self.assertNotIn('<details class="spoiler-gate" open', text)
                         self.assertIn(build.E(article["spoiler"]), text)
+                parsed_pages = {}
+                for page in pages:
+                    parser = Links()
+                    parser.feed(page.read_text("utf-8"))
+                    parsed_pages[page.resolve()] = parser
                 for page in pages:
                     text = page.read_text("utf-8")
                     self.assertEqual('data-ga4=' in text, bool(build.CONFIG["ga4_id"]))
                     self.assertIn('rel="icon"', text)
                     if page.name == "index.html" and page.parent != output:
                         self.assertIn('<summary>Menú</summary>', text)
-                    parser = Links()
-                    parser.feed(text)
-                    for href in parser.hrefs:
+                    parser = parsed_pages[page.resolve()]
+                    verification = [m.get("content") for m in parser.metas if m.get("name") == "google-adsense-account"]
+                    self.assertEqual(verification, ["ca-" + build.CONFIG["adsense_publisher_id"]] if build.CONFIG["adsense_publisher_id"] else [])
+                    self.assertNotIn("pagead2.googlesyndication.com", text)
+                    for key, href in parser.references:
                         path = urlsplit(href)
-                        if path.scheme or path.netloc or not path.path:
+                        if path.scheme not in ("", "http", "https") or (path.netloc and path.netloc != urlsplit(build.base_url()[0]).netloc):
                             continue
-                        target = (page.parent / unquote(path.path)).resolve()
+                        target = (output / unquote(path.path).lstrip("/") if path.path.startswith("/") else page.parent / unquote(path.path) if path.path else page).resolve()
                         self.assertTrue(target.is_relative_to(output.resolve()), (page, href))
+                        if target.is_dir():
+                            target = target / "index.html"
                         self.assertTrue(target.exists(), (page, href))
+                        if key == "href" and path.fragment and target in parsed_pages:
+                            # These hashes select a point through the map's JS router.
+                            if target == output.resolve() / "index.html" and path.fragment.startswith(("l=", "g=")):
+                                continue
+                            self.assertIn(unquote(path.fragment), parsed_pages[target].ids, (page, href))
             finally:
                 build.OUT = original
 
@@ -90,6 +113,13 @@ class BuildTests(unittest.TestCase):
             self.config(ga4_id="not-a-property")
         with self.assertRaisesRegex(ValueError, "adsense_publisher_id"):
             self.config(adsense_publisher_id="pub-placeholder")
+
+    def test_verification_does_not_activate_advertising(self):
+        for config in ({}, {"adsense_publisher_id": "pub-placeholder"}):
+            self.assertNotIn("google-adsense-account", head("", "https://example.org/", config))
+        verified = head("", "https://example.org/", {"adsense_publisher_id": "pub-1234567890123456"})
+        self.assertIn('name="google-adsense-account" content="ca-pub-1234567890123456"', verified)
+        self.assertNotIn("<script", verified)
 
     def test_policy_matches_enabled_services_and_escapes_owner(self):
         config = self.config(responsable="Titular <ejemplo>", correo_contacto="prueba@example.org")

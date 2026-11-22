@@ -101,10 +101,10 @@ def page_body(g,data):
          f'<article class="gv-guide" data-guide-id="{E(gid)}"><header class="gv-header"><div class="gh-card-top">'
          f'<span class="gh-glyph" aria-hidden="true">{ICONS.get(g["categoria"],"◆")}</span><span class="gh-category">{E(g["categoria"])}</span>'
          +('<span class="gh-video-badge">▶ Vídeo dentro</span>' if v else '')+'</div>'
-         f'<h1>{E(g["titulo"])}</h1><p class="lede">{E(g["resumen"])}</p><p class="gv-date">Revisada el {date} · PS5 y Xbox Series X|S · {minutes(g)} min de lectura</p>'
+         f'<h1>{E(g["titulo"])}</h1><p class="lede">{E(g["resumen"])}</p><p class="gv-date">Revisada el {date} · {E(g.get("plataformas", "PS5 y Xbox Series X|S"))} · {minutes(g)} min de lectura</p>'
          '<div class="gv-actions"><a class="btn btn-primary" href="#pasos" data-reveal-guide>Ver los pasos ↓</a>'
          +(f'<a class="btn btn-ghost" href="#clip-{E(gid)}" data-reveal-guide>▶ Ver el vídeo</a>' if v else '')
-         +(f'<a class="btn btn-ghost" href="../../#l={E(g["mapa"])}">Zona en el mapa ↗</a>' if g.get('mapa') else '')+'</div></header>')
+         +(f'<a class="btn btn-ghost" href="../../#l={E(g["mapa"])}">Zona en el mapa ↗</a>' if g.get('mapa') else '<a class="btn btn-ghost" href="../../#mapa">Abrir mapa interactivo ↗</a>')+'</div></header>')
     brief=('<div class="gv-brief"><section><h2>Antes de empezar</h2><ul>'+''.join(f'<li>{E(x)}</li>' for x in g['requisitos'])+'</ul></section>'
            f'<section><h2>Qué consigues</h2><p>{E(g["recompensa"])}</p></section><section><h2>Dónde</h2><p>{E(g["zona"])}</p></section></div>')
     if g.get('mapa'):
@@ -129,7 +129,8 @@ def page_body(g,data):
          f'<p class="gv-progress" aria-live="polite" data-guide-progress>0 de {len(g["pasos"])} pasos marcados</p><button type="button" class="gv-reset-progress" data-reset-guide>Desmarcar pasos</button>'
          '<p class="note">Tu lista se guarda solo en este navegador.</p></aside>')
     sources='<section id="fuentes-guia" class="gv-sources"><h2>Fuentes y revisión</h2><ul>'+''.join(f'<li><a href="{E(f["url"])}" target="_blank" rel="noopener noreferrer">{E(f["nombre"])} ↗</a></li>' for f in g['fuentes'])+'</ul>'
-    sources+='<p>Recopilación editorial de recorridos documentados. LeonidaDex no presenta estas rutas como pruebas propias en consola. Cada vídeo conserva su autor original.</p></section>'
+    sources+='<p>'+E(g.get('nota_fuentes','Recopilación editorial de recorridos documentados. LeonidaDex no presenta estas rutas como pruebas propias en consola. Cada vídeo conserva su autor original.'))+'</p>'
+    sources+='<p>Por <a href="../../sobre-leonidadex/">Redacción LeonidaDex</a> · <a href="../../criterios-editoriales/">Cómo contrastamos la información</a> · <a href="../../contacto/">Comunicar una corrección</a></p></section>'
     by_id={x['id']:x for x in data['guias']}
     related=g.get('relacionadas',[])[:3]
     recommendations='<section class="gv-related"><p class="eyebrow">Tu siguiente parada</p><h2>Sigue con estas guías</h2><div class="gh-grid">'+''.join(card(by_id[x],'../') for x in related)+'</div></section>' if related else ''

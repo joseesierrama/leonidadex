@@ -81,3 +81,12 @@ La programación diaria debe estar configurada en la tarea de Claude. El flujo d
 - Los pasos marcados se guardan bajo `ldx-guia:…`, solo en ese navegador; no envíes ese progreso ni búsquedas escritas a Analytics.
 - Corrección del 21 de noviembre: la guía actual de PC Gamer distingue cajas con códigos fijos y otras que parecen variables. El reportaje anterior y el nuevo paso a paso deben mantener esa distinción.
 - Robar un vehículo y registrarlo son pasos distintos. La guía de registro conserva el requisito de progreso con Moses y no promete registro disponible desde el capítulo 1.
+
+## Revisión editorial y AdSense del 22 de noviembre
+
+- Conserva `/criterios-editoriales/`, su enlace del pie y la autoría visible de reportajes y guías. Una atribución a un medio no equivale a una prueba propia. Las fechas de revisión editorial tampoco acreditan una nueva comprobación de todos los hechos.
+- La guía `mapa-interactivo` documenta la web, no una partida en consola. Mantén su campo `plataformas`, su nota de fuentes propia y la diferencia entre nombre oficial y coordenada aproximada. El catálogo contiene ahora 21 guías.
+- `guias_relacionadas` permite a un reportaje enlazar recorridos concretos; todos los IDs deben existir en `src/guias.json`. No dupliques explicaciones solo para aumentar palabras.
+- La etiqueta `google-adsense-account` se deriva del ID real ya configurado. Solo verifica propiedad: no activa anuncios ni cambia el estado de revisión de Google. Mantén la ausencia de solicitudes publicitarias hasta comprobar aprobación, consentimiento e información correspondiente.
+- La revisión del 19 de noviembre fue rechazada por Google según el correo. El titular indica que volvió a verificar el sitio el 22; no se ha podido confirmar su estado actual ni el motivo exacto en el panel. No describas «ads.txt autorizado» como aprobación y no elimines ni vuelvas a añadir un sitio en preparación.
+- Las pruebas de navegación comprueban también archivos de scripts/imágenes, destinos y anclas internas. Consérvalas al modificar la estructura.

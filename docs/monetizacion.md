@@ -1,20 +1,22 @@
 # Preparar LeonidaDex para monetizar
 
-## Estado de esta entrega
+## Estado comprobado el 22 de noviembre de 2026
 
 - Menú móvil de las páginas interiores, enlaces de contacto/proyecto y favicon añadidos.
-- Medición preparada y desactivada hasta disponer de una propiedad real y los datos del responsable.
+- Analytics está configurado con el identificador real y solo se carga tras aceptar la medición. Rechazarla permite usar la web.
 - Privacidad y almacenamiento publicados con datos autorizados. El aviso legal se genera al completar NIF y domicilio, también autorizados para su publicación.
-- AdSense creado el 11 de noviembre de 2026. Perfil de pagos completado por el titular, dominio verificado mediante ads.txt y revisión solicitada. Estado de Google: Preparando. Esto no equivale a aprobación.
+- El registro anterior mostraba «Preparando». Un correo de Google del 19 de noviembre rechaza la preparación del sitio para mostrar anuncios. Ese correo no detalla el motivo: remite a Sitios. El titular indica que ha vuelto a verificar el sitio el 22; no se ha confirmado el estado actual ni si se envió otra solicitud de revisión. No presentar la cuenta como aprobada ni afirmar que basta con esperar.
 - Identificador real de editor configurado en `src/sitio.json`; ads.txt publicado y autorizado por Google. No hay código de anuncios ni estimaciones de ingresos reales.
-- Mensaje europeo publicado en AdSense: español predeterminado, inglés adicional, caimán y enlace a privacidad, opciones de consentir/no consentir/gestionar. La etiqueta publicitaria aún no está instalada en la web; completar las políticas y comprobar la integración antes de activar anuncios tras la aprobación del sitio.
+- En una sesión anterior se documentó un mensaje europeo configurado en AdSense, con español, inglés, caimán y opciones de consentimiento. Su configuración actual y su funcionamiento en la web aún necesitan comprobarse. El diálogo propio de Analytics no lo sustituye. No se añade código de anuncios en esta entrega.
+- La etiqueta meta de verificación se genera con el ID real en todas las páginas. No hace solicitudes a servicios publicitarios. `ads.txt` continúa publicado por separado.
+- Se añaden criterios editoriales, autoría visible, una guía original para usar el mapa y accesos a recorridos relacionados. Estas mejoras no identifican por sí mismas la causa del rechazo ni garantizan aprobación.
 
 ## Activación
 
 1. Completar los datos autorizados del titular en `src/sitio.json` y revisar las políticas y la información legal necesaria para la actividad. El código no certifica cumplimiento normativo.
 2. Crear una propiedad de Analytics para `https://leonidadex.net/`, configurar retención y opciones de privacidad, copiar su ID G-… y comprobar una visita consentida en Tiempo real. Las visitas que rechacen la medición no aparecerán en esta integración.
 3. En Search Console, comprobar la propiedad correcta, enviar `/sitemap.xml` y revisar la indexación de URLs concretas. La mera existencia del sitemap no acredita indexación.
-4. AdSense y la solicitud de revisión ya están creados. Esperar la decisión de Google y completar las verificaciones de identidad o el método de cobro que solicite en la cuenta; el alta del perfil no implica que haya cuenta bancaria verificada.
+4. En AdSense > Sitios > leonidadex.net, leer el motivo exacto y el estado. Corregir el problema indicado antes de solicitar revisión. Verificar propiedad y pulsar «Solicitar revisión» son pasos distintos. Si aparece «En preparación», no eliminar ni volver a añadir el sitio. Completar las verificaciones de identidad o cobro que Google solicite; un perfil de pagos completo no acredita un banco verificado.
 5. Configurar el consentimiento publicitario en AdSense > Privacidad y mensajes o una CMP certificada adecuada. La aceptación de medición de esta web no autoriza publicidad.
 6. Añadir el ID real de editor para generar `ads.txt`. Actualizar las políticas y añadir el código publicitario una vez revisada la integración con la CMP. No colocar anuncios en secciones vacías o pendientes, ni encima de los controles del mapa.
 7. Revisar el resultado en móvil y comprobar que consentimientos, anuncios y navegación funcionan antes de aumentar anuncios.

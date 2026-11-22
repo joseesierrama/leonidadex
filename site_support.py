@@ -57,7 +57,7 @@ def menu(up):
 
 
 def footer(up, config):
-    links = [("sobre-leonidadex/", "Sobre LeonidaDex"), ("contacto/", "Contacto")]
+    links = [("sobre-leonidadex/", "Sobre LeonidaDex"), ("criterios-editoriales/", "Fuentes y correcciones"), ("contacto/", "Contacto")]
     if legal_ready(config):
         links.append(("aviso-legal/", "Aviso legal"))
     if privacy_ready(config):
@@ -71,10 +71,14 @@ def footer(up, config):
     return social + '<nav class="wrap site-links" aria-label="Información del sitio">' + body + '</nav>'
 
 
-def head(up, public_base):
+def head(up, public_base, config=None):
     image = E(public_base + "assets/leonidadex-social.jpg")
     css_version = sha256((Path(__file__).parent / "src/assets/sitio.css").read_bytes()).hexdigest()[:12]
-    return (f'<link rel="icon" href="{E(up)}assets/caiman-32.png" type="image/png" sizes="32x32">\n'
+    publisher = (config or {}).get("adsense_publisher_id", "")
+    # Ownership verification only: this meta tag makes no advertising request.
+    verification = (f'<meta name="google-adsense-account" content="ca-{E(publisher)}">\n'
+                    if re.fullmatch(r"pub-\d{16}", publisher) else "")
+    return (verification + f'<link rel="icon" href="{E(up)}assets/caiman-32.png" type="image/png" sizes="32x32">\n'
             f'<link rel="icon" href="{E(up)}assets/caiman-192.png" type="image/png" sizes="192x192">\n'
             f'<link rel="apple-touch-icon" href="{E(up)}assets/caiman-180.png" sizes="180x180">\n'
             f'<link rel="manifest" href="{E(up)}site.webmanifest">\n'
@@ -108,8 +112,24 @@ def info_pages(config):
             '<h2>Una guía hecha por fans</h2><p>LeonidaDex reúne información en español sobre Grand Theft Auto VI. Es un proyecto independiente, sin afiliación con Rockstar Games ni Take-Two Interactive.</p>'
             '<h2>Fuentes y correcciones</h2><p>Las noticias distinguen información oficial, cobertura de prensa y rumores. Los enlaces permiten consultar las fuentes originales. Si una afirmación no está respaldada por la fuente indicada, puedes comunicarlo para su revisión.</p>'
             '<p>El mapa es una interpretación de la comunidad, no un mapa oficial. Se atribuyen los datos y la cartografía de GTADB y se indica su licencia.</p>'
-            '<h2>Contenido en preparación</h2><p>Las secciones pendientes se completarán cuando haya información contrastada. Una sección anunciada no implica que su contenido ya esté disponible.</p>'
+            '<h2>Elige por dónde empezar</h2><p>Si necesitas resolver algo en tu partida, abre el <a href="../guias/">catálogo de guías</a>: cada recorrido separa requisitos, resultado, pasos y problemas frecuentes. Los vídeos se reproducen solo cuando tú lo eliges y mantienen el crédito de su autor.</p>'
+            '<p>Para explorar una zona, utiliza el <a href="../#mapa">mapa interactivo</a>. La <a href="../guias/mapa-interactivo/">guía del mapa</a> explica los filtros, las pistas de secretos y cómo guardar lo que has descubierto. Si prefieres poner a prueba lo que sabes, tienes los <a href="../retos/">retos de regiones y personajes</a>.</p>'
+            '<h2>Lo que puedes comprobar</h2><p>No presentamos una guía recopilada como una partida propia, ni una posición aproximada como coordenadas exactas. Consulta <a href="../criterios-editoriales/">cómo distinguimos las fuentes y corregimos errores</a>. Una teoría o un dato pendiente conserva esa condición hasta que exista evidencia suficiente.</p>'
             '<p><a href="../contacto/">Contactar con el proyecto</a> · <a href="https://github.com/joseesierrama/leonidadex">Repositorio público</a></p>'),
+        "criterios-editoriales": ("Fuentes, verificación y correcciones", "Cómo leer las fuentes, las ubicaciones y las correcciones de LeonidaDex.",
+            '<p>LeonidaDex organiza información de GTA VI en español para ayudarte a elegir una ruta y encontrar su explicación. La redacción corresponde al proyecto LeonidaDex. Esta página explica qué respalda una afirmación y qué límites debes tener en cuenta antes de seguirla.</p>'
+            '<h2>Oficial, prensa, comunidad o teoría</h2><ul><li><strong>Oficial:</strong> información respaldada por una publicación de Rockstar Games o Take-Two. El enlace debe apoyar la afirmación concreta; enlazar una portada no convierte en oficial todo el contenido.</li>'
+            '<li><strong>Prensa:</strong> información atribuida al medio que la publica. Una guía de un medio conserva esa atribución y no significa que LeonidaDex haya reproducido el recorrido en consola.</li>'
+            '<li><strong>Comunidad:</strong> observaciones y recorridos de jugadores o colaboradores, con su procedencia. Pueden necesitar una comprobación posterior.</li>'
+            '<li><strong>Teoría o pendiente:</strong> una interpretación o un dato sin evidencia suficiente. No se presenta como una mecánica confirmada ni como un resultado garantizado.</li></ul>'
+            '<h2>Cómo usar una guía</h2><p>Empieza por los requisitos y la zona. Después sigue los pasos y consulta «Si no te sale» antes de repetir una acción. Los enlaces de fuentes permiten volver al recorrido documentado y contrastar nombres, controles y condiciones. Los datos que una fuente deja sin resolver no se completan con suposiciones.</p>'
+            '<p>Los vídeos de otros autores se ofrecen mediante su reproductor original y un enlace de salida. La explicación escrita está en español; el audio del vídeo puede estar en otro idioma. Si un autor desactiva la inserción o retira el vídeo, la guía conserva sus pasos y su referencia.</p>'
+            '<h2>Qué significa un punto del mapa</h2><p>El nombre de una localización y su posición tienen grados de certeza distintos. La base cartográfica y los puntos de GTADB son un trabajo comunitario, con licencia CC BY 4.0. Las fichas atribuyen las fuentes y las adaptaciones.</p>'
+            '<p>Las pistas de secretos indican su precisión. Una referencia de área te orienta hacia una zona, pero no certifica la coordenada de una recogida. El marcador «Descubierto» es tu propia lista: no comprueba automáticamente tu partida ni la conecta con Rockstar. <a href="../guias/mapa-interactivo/">Ver cómo usar el mapa</a>.</p>'
+            '<h2>Fechas, cambios y spoilers</h2><p>Las noticias conservan su fecha original. La fecha de revisión corresponde a un cambio editorial registrado, no a una comprobación continua en directo. Una actualización de diseño no implica que se hayan vuelto a verificar todos los hechos del archivo.</p>'
+            '<p>Cuando una corrección cambia una explicación, debe quedar identificada junto al contenido afectado. Las soluciones de historia y las ubicaciones sensibles se mantienen bajo un desplegable para que puedas decidir cuándo abrirlas.</p>'
+            '<h2>Comunicar un error</h2><p>Envía la URL de LeonidaDex, la frase o el paso afectado y una referencia que permita comprobarlo. Si describes una partida, indica plataforma y progreso relevante; no incluyas datos de acceso. Las peticiones de corrección y de revisión de material pueden enviarse desde <a href="../contacto/">Contacto</a>.</p>'
+            '<p>LeonidaDex es independiente de Rockstar Games y Take-Two Interactive. Una visita desde nuestras redes no cambia el origen ni el grado de certeza de la información.</p>'),
         "contacto": ("Contacto", "Comunica errores y consultas sobre LeonidaDex.",
             f'<p>Para comunicar un error, una corrección de fuentes o una consulta sobre el proyecto, utiliza {contact}.</p>'
             '<p>Indica la dirección de la página y qué información necesita revisión. No envíes contraseñas, datos bancarios ni información de tus cuentas de juego.</p>'

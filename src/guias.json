@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-21T12:43:47+01:00",
+  "actualizado": "2026-11-22T11:54:18+01:00",
   "guias": [
     {
       "id": "primeros-pasos",
@@ -45,6 +45,70 @@
         "guardar-partida",
         "guardar-dinero",
         "pistola-silenciador"
+      ]
+    },
+    {
+      "id": "mapa-interactivo",
+      "titulo": "Cómo usar el mapa: filtros, secretos y lugares descubiertos",
+      "categoria": "Herramientas",
+      "resumen": "Encuentra una zona, entiende la precisión de cada ficha y lleva tu propia lista de exploración en LeonidaDex.",
+      "plataformas": "Web móvil y ordenador",
+      "requisitos": [
+        "Un navegador con JavaScript para utilizar los controles del mapa.",
+        "No necesitas iniciar sesión, aceptar Analytics ni conectar tu cuenta de juego."
+      ],
+      "zona": "El mapa interactivo de LeonidaDex, en la página de inicio.",
+      "recompensa": "Una búsqueda organizada y tu lista local de lugares visitados. Esta herramienta no entrega recompensas dentro del juego.",
+      "pasos": [
+        {
+          "titulo": "Abre el mapa y encuentra una zona",
+          "texto": "Pulsa «Abrir mapa interactivo» en esta guía. En el mapa, arrastra para moverte y utiliza + o − para cambiar la escala. En un móvil puedes pellizcar; «Ver todo Leonida», el botón con la flecha circular, recupera la vista general sin borrar tu lista de descubrimientos. La pestaña Regiones sirve para centrar la exploración en una parte del estado."
+        },
+        {
+          "titulo": "Busca por nombre antes de recorrer todos los iconos",
+          "texto": "Escribe el nombre de un lugar en «Buscar un lugar…» y elige un resultado. Los resultados pueden corresponder a una ficha de LeonidaDex o a un punto de GTADB. Si buscas un secreto, activa primero «Pistas y secretos»: la búsqueda respeta esa elección para no revelar ubicaciones que has preferido ocultar. No encontrar un nombre no demuestra que ese lugar no exista en el juego."
+        },
+        {
+          "titulo": "Reduce el ruido con los filtros",
+          "texto": "En Filtros puedes mostrar u ocultar categorías y controlar por separado los puntos de la comunidad GTADB. «Solo lugares oficiales» selecciona las fichas con esa clasificación; su etiqueta no certifica sus coordenadas. Si estás siguiendo una ruta de prensa o de la comunidad y no aparece, desmarca ese filtro. «Mostrar todo» recupera las categorías; la casilla de secretos sigue siendo una elección aparte."
+        },
+        {
+          "titulo": "Lee la precisión antes de seguir una pista de secretos",
+          "texto": "Activa «Pistas y secretos» solo si quieres ver spoilers de exploración. Abre un icono y lee la descripción, las fuentes y la precisión. Las referencias de área orientan hacia una zona: no son el punto exacto donde recoger un arma, un coche o un alijo. Cuando la ficha ofrece una guía, úsala para completar la ruta con sus requisitos y pasos. Un nombre conocido y una posición aproximada son datos distintos."
+        },
+        {
+          "titulo": "Marca tus lugares y comparte una referencia",
+          "texto": "Al abrir una ficha de lugar, pulsa «Marcar como descubierto» si quieres añadirla a tu lista. Con «Ocultar lo descubierto» reduces los iconos ya anotados. Ese progreso es una marca manual del navegador: no lee tu partida y no se sincroniza entre el ordenador y el móvil. «Compartir» prepara un enlace al punto seleccionado para volver a abrir esa referencia; no envía un mensaje automáticamente."
+        }
+      ],
+      "problemas": [
+        "No aparece una pista: activa Pistas y secretos, desmarca Solo lugares oficiales y revisa que no hayas ocultado su categoría o marcado el lugar como descubierto.",
+        "Veo pocos puntos de GTADB: activa su casilla y acerca el mapa. Los puntos de la comunidad se muestran según el nivel de detalle.",
+        "El mapa se ha alejado de la zona que buscaba: pulsa Ver todo Leonida y elige de nuevo la región o el resultado de búsqueda.",
+        "Mi lista está vacía en otro dispositivo: las marcas se guardan en el navegador donde las hiciste. Borrar sus datos o usar otro perfil no recupera esas marcas.",
+        "El lugar no coincide con lo que veo en mi partida: comprueba la precisión y la fuente de la ficha y comunica la URL y la diferencia desde Contacto. No añadas coordenadas supuestas."
+      ],
+      "fuentes": [
+        {
+          "nombre": "LeonidaDex · mapa interactivo y sus controles",
+          "url": "https://leonidadex.net/#mapa"
+        },
+        {
+          "nombre": "GTADB · procedencia de la cartografía comunitaria",
+          "url": "https://map.gtadb.org/"
+        },
+        {
+          "nombre": "Creative Commons · atribución CC BY 4.0",
+          "url": "https://creativecommons.org/licenses/by/4.0/deed.es"
+        }
+      ],
+      "nota_fuentes": "Documentación original de las funciones de LeonidaDex, contrastada con los controles y el código de esta versión. Describe la herramienta web; no es una comprobación de ubicaciones dentro del juego. La cartografía mantiene su atribución comunitaria.",
+      "actualizado": "2026-11-22T11:54:18+01:00",
+      "spoiler": "",
+      "relacionadas": [
+        "primeros-pasos",
+        "pistola-silenciador",
+        "alijo-loro"
       ]
     },
     {
