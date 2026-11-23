@@ -333,7 +333,7 @@
         },
         {
           "titulo": "Lleva una copia al móvil o a otro navegador",
-          "texto": "Pulsa «Descargar progreso» para guardar una copia JSON. En el otro navegador, abre el mapa y pulsa «Cargar copia» para seleccionar ese archivo. La copia se combina con las marcas que ya hubiera allí. No hay sincronización automática ni se envían las marcas a un servidor. «Reiniciar progreso» pide confirmación; descarga antes una copia si quieres conservarlo."
+          "texto": "Abre «Guardado y copias de progreso» y pulsa «Descargar progreso» para guardar una copia JSON. En el otro navegador, abre el mismo apartado del mapa y pulsa «Cargar copia» para seleccionar ese archivo. La copia se combina con las marcas que ya hubiera allí. No hay sincronización automática ni se envían las marcas a un servidor. «Reiniciar progreso» pide confirmación; descarga antes una copia si quieres conservarlo."
         }
       ],
       "problemas": [

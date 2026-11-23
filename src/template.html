@@ -1011,7 +1011,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
             <span><b class="map-key-done" aria-hidden="true">✓</b>Completado</span>
             <span><i class="map-key-zone" aria-hidden="true"></i>Zona aproximada</span>
           </div>
-          <p class="map-progress-note">El icono y el color indican el tipo de lugar. Abre una ficha para marcarlo como completado.</p>
+          <p class="map-progress-note">Abre un marcador para completarlo.</p>
           <div class="ms-actions"><button type="button" id="catAll">Mostrar todo</button><button type="button" id="catNone">Ocultar todo</button></div>
           <ul class="cat-list" id="catList"></ul>
           <div class="toggles">
@@ -1034,10 +1034,12 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
           <div class="region-panel" id="regionPanel" aria-live="polite"></div>
         </div>
         <div class="map-storage">
+          <details id="mapStorageTools"><summary>Guardado y copias de progreso</summary>
           <p id="mapStorageNote">Guardado en este navegador. Tu progreso se conserva al actualizar la web; no se sincroniza automáticamente con otros dispositivos. Estas listas no son el porcentaje de partida del juego.</p>
           <div class="ms-actions"><button type="button" id="exportFound">Descargar progreso</button><button type="button" id="importFound">Cargar copia</button></div>
           <input type="file" id="progressFile" accept="application/json,.json" hidden>
           <button type="button" class="link-btn" id="resetFound">Reiniciar progreso</button>
+          </details>
         </div>
       </aside>
     </div>
@@ -1628,6 +1630,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
   function persistFound() {
     var saved = LDXMapProgress.write(progressStore, found);
     $("#mapStorageNote").textContent = saved ? "Guardado en este navegador. Descarga una copia para llevarlo a otro dispositivo. Estas listas no son el porcentaje de partida del juego." : "El navegador no permite guardar el progreso. Puedes seguir marcando lugares y descargar una copia antes de salir.";
+    if (!saved) $("#mapStorageTools").open = true;
   }
   var mp = Object.assign({ off: {}, gOff: {}, hideFound: false, oficial: false, secretos: false, cluster: true, labels: true, gta: true }, lsGet("ldx-mapa", {}));
   if (!mp.off) mp.off = {}; if (!mp.gOff) mp.gOff = {};

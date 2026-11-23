@@ -19,6 +19,8 @@
 .map-key-zone { width: 14px; height: 14px; border: 1px dashed var(--aqua); display: inline-block; border-radius: 50%; }
 .map-storage { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); }
 .map-storage p { font-size: .76rem; color: var(--muted); line-height: 1.5; margin: 0 0 8px; }
+.map-storage summary { cursor: pointer; color: var(--aqua); font-size: .8rem; padding: 6px 0; }
+.map-storage details[open] summary { margin-bottom: 8px; }
 .map-storage .ms-actions { flex-wrap: wrap; }
 .map-storage button { min-height: 36px; }
 .map-storage #resetFound { font-size: .72rem; }
@@ -32,7 +34,7 @@
 .map-page main#contenido > .wrap { width: min(1680px, calc(100% - 32px)); }
 .map-page #mapa { padding: 0; border: 0; }
 .map-page #mapa > .wrap { width: 100%; }
-.map-page #mapa .sec-head { margin-bottom: 14px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; align-items: center; }
+.map-page #mapa .sec-head { max-width: none; margin-bottom: 14px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; align-items: center; }
 .map-page #mapa .sec-head .eyebrow, .map-page #mapRevision { display: none; }
 .map-page #mapa .sec-head > p:last-child { grid-column: 2; grid-row: 1; margin: 0; }
 .map-page #mapa .sec-head > p:last-child .btn { padding: 9px 12px; font-size: .75rem; }
