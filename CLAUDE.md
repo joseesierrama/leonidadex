@@ -90,3 +90,12 @@ La programación diaria debe estar configurada en la tarea de Claude. El flujo d
 - La etiqueta `google-adsense-account` se deriva del ID real ya configurado. Solo verifica propiedad: no activa anuncios ni cambia el estado de revisión de Google. Mantén la ausencia de solicitudes publicitarias hasta comprobar aprobación, consentimiento e información correspondiente.
 - La revisión del 19 de noviembre fue rechazada por Google según el correo. El titular indica que volvió a verificar el sitio el 22; no se ha podido confirmar su estado actual ni el motivo exacto en el panel. No describas «ads.txt autorizado» como aprobación y no elimines ni vuelvas a añadir un sitio en preparación.
 - Las pruebas de navegación comprueban también archivos de scripts/imágenes, destinos y anclas internas. Consérvalas al modificar la estructura.
+
+## Novedades del 23 de noviembre
+
+- El catálogo contiene 25 guías. Las cuatro nuevas son `granero-rojo-apollo`, `bandito-moses`, `casa-belville` y `sombrero-arthur`; los recorridos originales de BennyCentral, Trophy Tom, xGarbett e IGN conservan su crédito e intervalos.
+- La descarga actual de GTADB y la copia anterior coinciden: 3.663 puntos, 139 áreas y cero cambios. No anuncies nuevos puntos comunitarios. Se añadieron tres referencias propias de área para las guías nuevas; las once pistas empiezan ocultas. La casa de Belville sigue sin georreferencia contrastada: se incluye en lugares sin ubicar y no se coloca un icono arbitrario.
+- El Bandito se mueve y requiere el encargo de Moses. El vídeo de Trophy Tom muestra una alternativa con enfrentamiento; no lo presentes como una demostración del diálogo descrito por PC Gamer y PowerPyx. La entrega y el registro para quedarse un coche son acciones distintas.
+- El Genuine Cowboy Hat tiene importes distintos documentados por PC Gamer y GamesRadar. No conviertas 5 o 35 dólares en un precio universal ni confirmes teorías sobre la vendedora.
+- El granero documenta recogida y venta. El respawn por guardado/carga se atribuye a Insider Gaming; no se certifica dinero infinito, cifras fijas ni funcionamiento en todas las versiones.
+- El conversor de GTADB usa UTF-8 explícito tanto al leer como al escribir para mantener el mismo resultado en Windows y Linux.

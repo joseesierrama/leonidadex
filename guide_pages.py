@@ -72,7 +72,7 @@ def card(g,up=''):
             f'<a class="gh-card-link" href="{up}{E(g["id"])}/" aria-label="Abrir guía: {E(g["titulo"])}">Abrir guía <span aria-hidden="true">↗</span></a></article>')
 
 def home_preview(data):
-    selected=['primeros-pasos','alijo-loro','pistola-silenciador','registrar-coche','cajas-fuertes','taxi-viaje-rapido']
+    selected=['primeros-pasos','granero-rojo-apollo','bandito-moses','sombrero-arthur','casa-belville','mapa-interactivo']
     by_id={g['id']:g for g in data['guias']}
     return ('<div class="gh-home-intro"><div><p class="eyebrow">Encuentra tu siguiente objetivo</p>'
             '<p>Dinero, armas, coches y herramientas. Abre una guía para ver requisitos, pasos, clips y qué revisar si te atascas.</p></div>'

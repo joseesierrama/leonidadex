@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-22T11:54:18+01:00",
+  "actualizado": "2026-11-23T14:02:02+01:00",
   "guias": [
     {
       "id": "primeros-pasos",
@@ -46,6 +46,257 @@
         "guardar-dinero",
         "pistola-silenciador"
       ]
+    },
+    {
+      "id": "granero-rojo-apollo",
+      "titulo": "Granero rojo de Apollo: recoger botín y convertirlo en dinero",
+      "categoria": "Dinero",
+      "resumen": "Una ruta de botín al noreste de Hamlet. Recogida, maletero y venta, con vídeo y límites del supuesto respawn.",
+      "requisitos": [
+        "Un vehículo con espacio para las bolsas.",
+        "Comprueba qué compradores tienes disponibles en tu progreso; guarda antes de arriesgar la partida."
+      ],
+      "zona": "Almacén rojo de Apollo Aggregates, al noreste de Hamlet. El mapa de LeonidaDex es una referencia de área.",
+      "recompensa": "Botín para vender. La cantidad depende de lo recogido y del comprador; no prometemos una cifra fija.",
+      "pasos": [
+        {
+          "titulo": "Prepara el regreso",
+          "texto": "Consulta el recorrido antes de salir y utiliza un vehículo con almacenamiento. Una bolsa de mercancía y efectivo disponible son cosas distintas: necesitas completar la entrega para cobrar."
+        },
+        {
+          "titulo": "Reconoce el almacén y la oficina",
+          "texto": "El vídeo de BennyCentral sitúa el almacén y muestra su interior. Revisa la oficina y los vehículos del recinto para localizar el botín. Sigue las interacciones que aparezcan en tu partida; no confíes en que el marcador de zona sea la puerta exacta."
+        },
+        {
+          "titulo": "Carga las bolsas y completa la venta",
+          "texto": "Lleva lo recogido al maletero y acude a un comprador disponible. El tramo final del vídeo enseña la entrega. Comprueba el resultado en tu partida en vez de trasladar automáticamente la cantidad del ejemplo."
+        },
+        {
+          "titulo": "Separa la recogida del glitch",
+          "texto": "Insider Gaming describe repetir botín mediante guardado y carga. Es un comportamiento reportado, no una recompensa oficial ni una garantía para cualquier versión. Si no vuelve a aparecer, conserva lo obtenido y continúa; no sobrescribas tu único guardado intentando reproducirlo."
+        }
+      ],
+      "problemas": [
+        "No aparece el icono: activa Pistas y secretos y desmarca Solo lugares oficiales.",
+        "El dinero no sube al recoger una bolsa: comprueba la venta y el estado de entrega.",
+        "El botín no reaparece: el supuesto respawn puede depender de versión y progreso. Esta guía no certifica dinero infinito."
+      ],
+      "fuentes": [
+        {
+          "nombre": "BennyCentral · recorrido del almacén y venta, desde 0:37",
+          "url": "https://www.youtube.com/watch?v=od4yuK67yhk&t=37s"
+        },
+        {
+          "nombre": "Insider Gaming · ubicación y método reportado",
+          "url": "https://insider-gaming.com/gta-6-infinite-money-glitch/"
+        }
+      ],
+      "actualizado": "2026-11-23T14:02:02+01:00",
+      "spoiler": "Pistas de exploración: muestra el lugar y cómo completar la ruta. No revela desenlaces de historia.",
+      "relacionadas": [
+        "guardar-dinero",
+        "alijo-loro",
+        "mapa-interactivo"
+      ],
+      "video": {
+        "id": "od4yuK67yhk",
+        "titulo": "Almacén rojo: mapa, botín y venta",
+        "autor": "BennyCentral",
+        "inicio": 37,
+        "fin": 93
+      },
+      "paso_video": 2,
+      "mapa": "secreto-apollo-hamlet"
+    },
+    {
+      "id": "bandito-moses",
+      "titulo": "BF Bandito: localizar el buggy y entregarlo a Moses",
+      "categoria": "Coches",
+      "resumen": "El objetivo se mueve por Buckskin Swamp. Requisitos, ruta de búsqueda y alternativas para detenerlo.",
+      "requisitos": [
+        "Completar Daily Driver, en el capítulo 2, y avanzar en los encargos de vehículos de Moses.",
+        "Tener activa la petición del Bandito; no aparece como un coche aparcado en un punto fijo."
+      ],
+      "zona": "Buckskin Swamp, al sureste de Kelly County. La entrega corresponde al taller de Moses en Port Gellhorn.",
+      "recompensa": "PowerPyx indica 3.350 dólares de base y una bonificación por estado. Comprueba el pago de tu encargo.",
+      "pasos": [
+        {
+          "titulo": "Confirma el encargo activo",
+          "texto": "Abre el objetivo de Moses y comprueba que pide el BF Bandito. PowerPyx sitúa esta cadena después de Daily Driver; encontrar un buggy por libre no sustituye el encargo."
+        },
+        {
+          "titulo": "Observa el circuito del pantano",
+          "texto": "Busca el buggy claro que circula con otros vehículos por los caminos de tierra. El clip de Trophy Tom muestra el área, la persecución y la recogida. Es una alternativa con enfrentamiento; no una demostración del método de diálogo."
+        },
+        {
+          "titulo": "Intenta detenerlo sin destrozarlo",
+          "texto": "PC Gamer describe bloquear el camino y usar Mislead cuando el conductor se detiene. PowerPyx también recoge una interacción para hacerlo bajar. Evita confundir esa alternativa con una obligación de disparar: dañar el vehículo puede perjudicar la entrega."
+        },
+        {
+          "titulo": "Sal del pantano y entrega el vehículo",
+          "texto": "Sigue el objetivo hasta Moses y vigila a los perseguidores. Conserva el buggy en buen estado. Entregarlo para el trabajo y registrar otro vehículo para quedártelo son acciones distintas."
+        }
+      ],
+      "problemas": [
+        "No está aparcado: sigue la vuelta del grupo por el área de búsqueda.",
+        "No aparece la petición: revisa el progreso de la cadena de Moses.",
+        "El pago no coincide con otro vídeo: la condición del vehículo influye en la recompensa."
+      ],
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · método de diálogo y bloqueo",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-bf-bandito-location/"
+        },
+        {
+          "nombre": "PowerPyx · requisitos y encargo de Moses",
+          "url": "https://www.powerpyx.com/gta-6-steal-vehicles-for-moses-walkthrough/"
+        },
+        {
+          "nombre": "Trophy Tom · recorrido con enfrentamiento",
+          "url": "https://www.youtube.com/watch?v=Om74H2yAq2Q"
+        }
+      ],
+      "actualizado": "2026-11-23T14:02:02+01:00",
+      "spoiler": "Pistas de exploración: muestra el lugar y cómo completar la ruta. No revela desenlaces de historia.",
+      "relacionadas": [
+        "registrar-coche",
+        "desguace-lowrider",
+        "mapa-interactivo"
+      ],
+      "video": {
+        "id": "Om74H2yAq2Q",
+        "titulo": "Bandito: ruta y recogida, alternativa con enfrentamiento",
+        "autor": "Trophy Tom",
+        "inicio": 10,
+        "fin": 97
+      },
+      "paso_video": 2,
+      "mapa": "secreto-bandito-buckskin"
+    },
+    {
+      "id": "casa-belville",
+      "titulo": "Casa de Belville: la foto del OVNI y el garaje de las teorías",
+      "categoria": "Secretos",
+      "resumen": "Una referencia que conecta San Andreas Definitive Edition con una casa visitable. Qué se ve y qué sigue siendo interpretación.",
+      "requisitos": [
+        "Exploración libre y acceso a Belville.",
+        "Para reproducir el recorrido descrito por PC Gamer, visita la casa durante el día."
+      ],
+      "zona": "Belville. Todavía no tenemos una posición precisa contrastada en la cartografía de LeonidaDex.",
+      "recompensa": "Una referencia visual y un interior para explorar; no se promete dinero, trofeos ni activar una aparición extraterrestre.",
+      "pasos": [
+        {
+          "titulo": "Usa el recorrido como referencia",
+          "texto": "Abre el vídeo original para reconocer la fachada y su entorno. No hay un icono exacto de esta casa en nuestro mapa: es preferible seguir la referencia visual a colocar una coordenada inventada."
+        },
+        {
+          "titulo": "Compara la fachada",
+          "texto": "xGarbett muestra la casa y la imagen que apareció en San Andreas Definitive Edition. PC Gamer explica que la localizó en Belville. La comparación del edificio es el hallazgo; una foto con un OVNI no confirma una aparición en tu partida."
+        },
+        {
+          "titulo": "Mira el garaje de día",
+          "texto": "La cobertura de PC Gamer describe el acceso diurno. Dentro hay un panel con notas sobre Leonida y la idea de una simulación. Observa el entorno sin dar por hecho que cada frase es una misión o un acertijo resuelto."
+        },
+        {
+          "titulo": "Distingue el detalle de la teoría",
+          "texto": "El vídeo permite comprobar el decorado. Las interpretaciones sobre extraterrestres o un personaje consciente son lecturas del hallazgo. Si compartes una captura, señala qué aparece realmente y qué estás interpretando."
+        }
+      ],
+      "problemas": [
+        "No encuentras la fachada: utiliza las imágenes del original; la georreferencia exacta sigue pendiente.",
+        "Una puerta no abre: compara la hora y el acceso mostrado; no prometemos que cualquier entrada funcione.",
+        "No ocurre una escena: esta guía no afirma que exista un disparador de OVNIs."
+      ],
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · visita de su redacción a Belville",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/the-5-year-long-mystery-of-the-ufo-house-has-finally-been-solved-in-gta-6-but-one-npc-knows-too-much/"
+        },
+        {
+          "nombre": "xGarbett · UFO House IS Real in GTA 6!",
+          "url": "https://www.youtube.com/watch?v=vsPFEyMl5aw"
+        }
+      ],
+      "actualizado": "2026-11-23T14:02:02+01:00",
+      "spoiler": "Pistas de exploración: muestra el lugar y cómo completar la ruta. No revela desenlaces de historia.",
+      "relacionadas": [
+        "huevo-torre",
+        "kirk-skunk-ape",
+        "mapa-interactivo"
+      ],
+      "video": {
+        "id": "vsPFEyMl5aw",
+        "titulo": "Belville: fachada y recorrido de la casa",
+        "autor": "xGarbett",
+        "inicio": 0,
+        "fin": 164
+      },
+      "paso_video": 2
+    },
+    {
+      "id": "sombrero-arthur",
+      "titulo": "Sombrero de Arthur Morgan: encontrar el Genuine Cowboy Hat",
+      "categoria": "Secretos",
+      "resumen": "La venta de garaje de Port Gellhorn y el sombrero que recuerda a Red Dead Redemption 2. Incluye recorrido original.",
+      "requisitos": [
+        "Poder explorar el sur de Port Gellhorn. GamesRadar indica que el acceso resulta más sencillo desde el capítulo 2.",
+        "Llevar efectivo y comprobar el precio que muestra tu partida."
+      ],
+      "zona": "Venta de garaje al sur de Port Gellhorn, señalizada con carteles Yard Sale y globos. El mapa señala la zona, no la casa.",
+      "recompensa": "Comprar el Genuine Cowboy Hat. La referencia a Arthur no significa que el personaje aparezca en persona.",
+      "pasos": [
+        {
+          "titulo": "Sigue las señales de la venta",
+          "texto": "Busca los carteles Yard Sale y los globos por el sur de Port Gellhorn. PC Gamer sitúa la venta en un pequeño grupo de viviendas al noroeste de Dirt Merchants. Usa el vídeo para reconocer el acceso final."
+        },
+        {
+          "titulo": "Localiza el sofá y la funda de guitarra",
+          "texto": "El recorrido de IGN y las capturas de los dos medios muestran el puesto. El sombrero descansa sobre una funda de guitarra, en un sofá al fondo de la venta. Comprueba el nombre Genuine Cowboy Hat antes de comprar."
+        },
+        {
+          "titulo": "Lee el precio de tu partida",
+          "texto": "No damos un importe universal: PC Gamer documentó 5 dólares y GamesRadar 35. Son ejemplos distintos. Acepta únicamente el precio que aparezca en tu juego; no hace falta buscar un supuesto código para conseguirlo."
+        },
+        {
+          "titulo": "Comprueba el vestuario",
+          "texto": "GamesRadar describe que la compra añade el sombrero al inventario de ropa. Revísalo después. El parecido con el sombrero de Arthur es la referencia documentada; las teorías sobre la identidad de la vendedora no están confirmadas."
+        }
+      ],
+      "problemas": [
+        "El marcador no coincide con una puerta: solo es una referencia del sur de Port Gellhorn.",
+        "El precio es distinto: las fuentes ya muestran importes diferentes.",
+        "No ves el objeto: compara el puesto y el nombre con el vídeo antes de repetir la ruta."
+      ],
+      "fuentes": [
+        {
+          "nombre": "GamesRadar · ubicación, compra y precio observado",
+          "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-arthur-morgans-hat/"
+        },
+        {
+          "nombre": "PC Gamer · recorrido propio y otro precio",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/arthur-morgan-hat-location-rdr2/"
+        },
+        {
+          "nombre": "IGN · vídeo de la localización",
+          "url": "https://www.youtube.com/watch?v=HAIx2b9ThL8"
+        }
+      ],
+      "actualizado": "2026-11-23T14:02:02+01:00",
+      "spoiler": "Pistas de exploración: muestra el lugar y cómo completar la ruta. No revela desenlaces de historia.",
+      "relacionadas": [
+        "casa-belville",
+        "huevo-torre",
+        "mapa-interactivo"
+      ],
+      "video": {
+        "id": "HAIx2b9ThL8",
+        "titulo": "Venta de garaje y Genuine Cowboy Hat",
+        "autor": "IGN",
+        "inicio": 30,
+        "fin": 109
+      },
+      "paso_video": 2,
+      "mapa": "secreto-sombrero-gellhorn"
     },
     {
       "id": "mapa-interactivo",

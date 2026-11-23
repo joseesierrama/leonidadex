@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-11-21T12:43:47+01:00",
+    "actualizado": "2026-11-23T14:02:02+01:00",
     "lanzamiento": "2026-11-19T00:00:00",
     "nota_lanzamiento": "Disponible desde el 19 de noviembre · PS5 y Xbox Series X|S",
     "fase": "lanzado",
@@ -197,6 +197,108 @@
     }
   ],
   "noticias": [
+    {
+      "id": "granero-rojo-20261123",
+      "fecha": "2026-11-23",
+      "titulo": "El granero rojo de GTA 6: dónde buscar botín y por qué recogerlo no equivale a cobrar",
+      "categoria": "Dinero",
+      "estado": "prensa",
+      "resumen": "Un almacén al noreste de Hamlet aparece en el recorrido de BennyCentral y en la guía de Insider Gaming. Añadimos los pasos de recogida, transporte y venta. El supuesto respawn se distingue de una recompensa garantizada: ni cantidad fija ni dinero infinito confirmado.",
+      "fuentes": [
+        {
+          "nombre": "Insider Gaming",
+          "url": "https://insider-gaming.com/gta-6-infinite-money-glitch/"
+        },
+        {
+          "nombre": "BennyCentral",
+          "url": "https://www.youtube.com/watch?v=od4yuK67yhk&t=37s"
+        },
+        {
+          "nombre": "Guía y vídeo en LeonidaDex",
+          "url": "https://leonidadex.net/guias/granero-rojo-apollo/"
+        }
+      ]
+    },
+    {
+      "id": "bandito-moses-20261123",
+      "fecha": "2026-11-23",
+      "titulo": "BF Bandito en GTA 6: el buggy de Moses que no espera aparcado",
+      "categoria": "Coches",
+      "estado": "prensa",
+      "resumen": "La petición lleva a Buckskin Swamp y el objetivo circula por caminos de tierra. Nuestra guía separa los requisitos de Moses, la alternativa de diálogo y el recorrido con enfrentamiento. La conservación del vehículo influye en el cobro.",
+      "fuentes": [
+        {
+          "nombre": "PowerPyx",
+          "url": "https://www.powerpyx.com/gta-6-steal-vehicles-for-moses-walkthrough/"
+        },
+        {
+          "nombre": "PC Gamer",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-bf-bandito-location/"
+        },
+        {
+          "nombre": "Guía y vídeo en LeonidaDex",
+          "url": "https://leonidadex.net/guias/bandito-moses/"
+        }
+      ]
+    },
+    {
+      "id": "belville-casa-20261123",
+      "fecha": "2026-11-23",
+      "titulo": "La casa de Belville conecta GTA 6 con la foto misteriosa de San Andreas",
+      "categoria": "Secretos",
+      "estado": "prensa",
+      "resumen": "PC Gamer y el vídeo de xGarbett documentan la fachada y un garaje lleno de teorías. Publicamos un recorrido sin dar por confirmadas interpretaciones extraterrestres. La posición exacta sigue pendiente en nuestro mapa; no añadimos un icono inventado.",
+      "fuentes": [
+        {
+          "nombre": "PC Gamer",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/the-5-year-long-mystery-of-the-ufo-house-has-finally-been-solved-in-gta-6-but-one-npc-knows-too-much/"
+        },
+        {
+          "nombre": "xGarbett",
+          "url": "https://www.youtube.com/watch?v=vsPFEyMl5aw"
+        },
+        {
+          "nombre": "Guía y vídeo en LeonidaDex",
+          "url": "https://leonidadex.net/guias/casa-belville/"
+        }
+      ]
+    },
+    {
+      "id": "sombrero-arthur-20261123",
+      "fecha": "2026-11-23",
+      "titulo": "El sombrero inspirado en Arthur Morgan ya tiene guía y vídeo en LeonidaDex",
+      "categoria": "Secretos",
+      "estado": "prensa",
+      "resumen": "El Genuine Cowboy Hat se compra en una venta de garaje de Port Gellhorn. Las partidas documentadas por PC Gamer y GamesRadar muestran precios diferentes: por eso la guía explica la ruta y pide comprobar el importe en pantalla.",
+      "fuentes": [
+        {
+          "nombre": "GamesRadar",
+          "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-arthur-morgans-hat/"
+        },
+        {
+          "nombre": "PC Gamer",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/arthur-morgan-hat-location-rdr2/"
+        },
+        {
+          "nombre": "Guía y vídeo en LeonidaDex",
+          "url": "https://leonidadex.net/guias/sombrero-arthur/"
+        }
+      ]
+    },
+    {
+      "id": "playlists-ocultas-20261123",
+      "fecha": "2026-11-23",
+      "titulo": "GTA 6 esconde dos playlists desbloqueables mediante carteles",
+      "categoria": "Música",
+      "estado": "prensa",
+      "resumen": "PC Gamer documenta The Sniper of La Perle y The Vault Radio. La primera requiere cuatro carteles y uno se alcanza al visitar Jack of Hearts en el capítulo 3; la segunda se desbloquea con el cartel de The Vault. No confundas una playlist bloqueada con canciones ausentes.",
+      "fuentes": [
+        {
+          "nombre": "PC Gamer · carteles y requisitos",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-unique-playlists/"
+        }
+      ]
+    },
     {
       "id": "alijo-loro-20261121",
       "fecha": "2026-11-21",
@@ -2408,6 +2510,69 @@
       "precision": "Referencia: Hamlet. Pendiente trasladar la entrada exacta del desguace a nuestra cartografía.",
       "actualizado": "2026-11-21",
       "guia_tipo": "guias"
+    },
+    {
+      "id": "secreto-apollo-hamlet",
+      "nombre": "Apollo Aggregates · almacén rojo",
+      "region": "grassrivers",
+      "cat": "dinero",
+      "x": 454.58,
+      "y": 601.88,
+      "estado": "prensa",
+      "texto": "El recorrido muestra botín en un almacén rojo al noreste de Hamlet. La cantidad y la repetición del botín no están garantizadas.",
+      "fuente": {
+        "nombre": "Recorrido de prensa y vídeo en la guía",
+        "url": "https://insider-gaming.com/gta-6-infinite-money-glitch/"
+      },
+      "exacta": false,
+      "secreto": true,
+      "gtadb": "L2453",
+      "guia": "granero-rojo-apollo",
+      "guia_tipo": "guias",
+      "actualizado": "2026-11-23",
+      "precision": "Referencia de área apoyada en GTADB. El icono no señala la posición exacta del objeto, la puerta ni el vehículo. Completa el último tramo con el vídeo."
+    },
+    {
+      "id": "secreto-bandito-buckskin",
+      "nombre": "BF Bandito · área de búsqueda",
+      "region": "gellhorn",
+      "cat": "raros",
+      "x": 382.85,
+      "y": 482.93,
+      "estado": "prensa",
+      "texto": "El buggy circula por Buckskin Swamp durante el encargo de Moses. El icono es una referencia de área y no un aparcamiento fijo.",
+      "fuente": {
+        "nombre": "Recorrido de prensa y vídeo en la guía",
+        "url": "https://www.powerpyx.com/gta-6-steal-vehicles-for-moses-walkthrough/"
+      },
+      "exacta": false,
+      "secreto": true,
+      "gtadb": "L2781",
+      "guia": "bandito-moses",
+      "guia_tipo": "guias",
+      "actualizado": "2026-11-23",
+      "precision": "Referencia de área apoyada en GTADB. El icono no señala la posición exacta del objeto, la puerta ni el vehículo. Completa el último tramo con el vídeo."
+    },
+    {
+      "id": "secreto-sombrero-gellhorn",
+      "nombre": "Genuine Cowboy Hat · sur de Gellhorn",
+      "region": "gellhorn",
+      "cat": "raros",
+      "x": 314.08,
+      "y": 425.33,
+      "estado": "prensa",
+      "texto": "Sigue los carteles de Yard Sale y reconoce la venta con el vídeo. Comprueba el precio en tu partida.",
+      "fuente": {
+        "nombre": "Recorrido de prensa y vídeo en la guía",
+        "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-arthur-morgans-hat/"
+      },
+      "exacta": false,
+      "secreto": true,
+      "gtadb": "L283",
+      "guia": "sombrero-arthur",
+      "guia_tipo": "guias",
+      "actualizado": "2026-11-23",
+      "precision": "Referencia de área apoyada en GTADB. El icono no señala la posición exacta del objeto, la puerta ni el vehículo. Completa el último tramo con el vídeo."
     }
   ],
   "articulos_nuevos": [

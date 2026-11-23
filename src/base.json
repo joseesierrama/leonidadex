@@ -4689,6 +4689,14 @@
         "nombre": "GTABoss (contenido de ediciones)",
         "url": "https://www.gtaboss.gg/gta-6/guides/gta-6-map"
       }
+    },
+    {
+      "nombre": "Casa de Belville · referencia del OVNI",
+      "texto": "La fachada y el interior están documentados, pero falta contrastar una coordenada exacta con nuestra cartografía. Consulta la guía y el vídeo antes de buscarla.",
+      "fuente": {
+        "nombre": "Guía y vídeo de Belville en LeonidaDex",
+        "url": "https://leonidadex.net/guias/casa-belville/"
+      }
     }
   ],
   "fuentes_secciones": {
@@ -4756,7 +4764,7 @@
     ]
   },
   "mapa_revision": {
-    "fecha": "2026-11-21",
-    "texto": "Revisión del 21 de noviembre: 3.663 puntos y 139 áreas de GTADB. Frente al día 19: 12 altas, 23 registros revisados (9 con coordenadas distintas) y 0 bajas. Añadidas 8 referencias de área para secretos, ocultas hasta activar su capa. No son coordenadas exactas del botín ni cartografía oficial."
+    "fecha": "2026-11-23",
+    "texto": "Revisión del 23 de noviembre: GTADB conserva 3.663 puntos y 139 áreas, sin altas, bajas ni cambios frente a la copia anterior. Añadidas 3 referencias de área para el almacén rojo, el Bandito y el sombrero. Son 11 pistas de secretos en total; se muestran al activar su capa. La casa de Belville queda sin posición exacta. No es cartografía oficial."
   }
 }

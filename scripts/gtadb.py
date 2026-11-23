@@ -1,6 +1,7 @@
 import json,re,sys,datetime,os
 SRC=sys.argv[1]; OUT=sys.argv[2]
-d=json.load(open(SRC))
+with open(SRC, encoding='utf-8') as source:
+    d=json.load(source)
 T=[('h',{'hotel'}),('r',{'residential'}),('c',{'retail','restaurant','office','supermarket','mixed'}),('o',{'leisure','landmark','events'}),
    ('t',{'transportation'}),('n',{'natural','agriculture'}),('i',{'industrial','utilities','construction'}),('p',{'public','government'})]
 def short_rl(s):
@@ -32,5 +33,6 @@ for r in rows: r[2]=ai[r[2]]
 out={"fuente":"GTA VI Landmarks Data (CC BY 4.0) — https://map.gtadb.org","licencia":"https://creativecommons.org/licenses/by/4.0/deed.es",
      "cambios":"Coordenadas convertidas a unidades del mapa, campos simplificados y sin fotos.","fecha":datetime.date.today().isoformat(),
      "areas":areas,"l":rows}
-json.dump(out,open(OUT,'w'),ensure_ascii=False,separators=(',',':'))
+with open(OUT,'w',encoding='utf-8') as target:
+    json.dump(out,target,ensure_ascii=False,separators=(',',':'))
 print(len(rows),'puntos', len(areas),'áreas', round(os.path.getsize(OUT)/1024),'KB')
