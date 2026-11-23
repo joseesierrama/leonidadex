@@ -22,7 +22,7 @@ GitHub es la fuente de la versión vigente. Consulta la rama `main` actual antes
 
 ## Antes de publicar
 
-1. Ejecuta `python -m unittest discover -s tests`, `node --test tests/consent.test.cjs tests/guides.test.cjs` y `python build.py`.
+1. Ejecuta `python -m unittest discover -s tests`, `node --test tests/consent.test.cjs tests/guides.test.cjs tests/map-progress.test.cjs` y `python build.py`.
 2. Revisa el cambio y que las fuentes realmente respalden las afirmaciones. Las pruebas automáticas solo validan estructura y funcionamiento, no veracidad.
 3. No edites `site/` directamente: es el resultado generado.
 4. Publica los cambios comprobados en GitHub. Un cambio en `main` ejecuta comprobaciones y la publicación en Pages. Comprueba que ambos trabajos terminen correctamente y verifica la web pública.
@@ -99,3 +99,12 @@ La programación diaria debe estar configurada en la tarea de Claude. El flujo d
 - El Genuine Cowboy Hat tiene importes distintos documentados por PC Gamer y GamesRadar. No conviertas 5 o 35 dólares en un precio universal ni confirmes teorías sobre la vendedora.
 - El granero documenta recogida y venta. El respawn por guardado/carga se atribuye a Insider Gaming; no se certifica dinero infinito, cifras fijas ni funcionamiento en todas las versiones.
 - El conversor de GTADB usa UTF-8 explícito tanto al leer como al escribir para mantener el mismo resultado en Windows y Linux.
+
+## Mapa de GTA VI: leyenda y progreso
+
+- `/mapa/` es una vista dedicada solo a GTA VI. `map_pages.py` genera sus controles y motor a partir del mismo bloque de `src/template.html`; no dupliques el mapa ni elimines la atribución de GTADB. El directorio también conserva las teselas.
+- Conserva la leyenda con categorías e iconos, los filtros Todos/Pendientes/Completados, los controles móviles y el botón de completar de ambas capas. La lista de fichas respeta los filtros.
+- `src/assets/mapa-progreso.js` mantiene el almacenamiento existente `ldx-found`. Los IDs de fichas siguen intactos y los puntos GTADB usan `g:ID` para evitar colisiones. No renombres IDs al actualizar datos ni borres progreso en una publicación.
+- Las marcas son manuales y locales: no representan el porcentaje de partida. Descargar/Cargar copia permite trasladarlas sin cuentas ni servidores. La importación combina marcas; no elimina las existentes. Mantén la validación del formato GTA VI, la confirmación al reiniciar y el aviso si el navegador bloquea almacenamiento.
+- Los secretos permanecen ocultos hasta que el visitante activa la capa o abre un enlace directo a una pista. El estado completado no convierte una zona aproximada en coordenada exacta.
+- Las pruebas del progreso forman parte de los dos flujos de GitHub. Conserva también la comprobación de enlaces, recursos y la nueva página del mapa.

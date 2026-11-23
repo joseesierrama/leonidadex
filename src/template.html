@@ -744,6 +744,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
 .field-guides{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0 0 28px}.field-guides>p{grid-column:1/-1}.field-guides>a,.spoiler-gate{padding:18px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.035)}.field-guides>a{font-weight:700;line-height:1.5}.spoiler-gate{margin:24px 0}.spoiler-gate summary{cursor:pointer;font-weight:700;color:var(--flamingo);line-height:1.6}.spoiler-gate[open] summary{padding-bottom:16px;border-bottom:1px solid var(--line)}@media(max-width:600px){.field-guides{grid-template-columns:1fr}}
 .mpin.search-zone .pb{stroke-dasharray:3 2}.mpin.search-zone .pl{fill:#ffe7a3}
 </style>
+<link rel="stylesheet" href="assets/mapa.css">
 </head>
 <body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -955,10 +956,15 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
   <div class="wrap">
     <div class="sec-head">
       <p class="eyebrow">06 · Mapa</p>
-      <h2 id="h-mapa">El estado de <em>Leonida</em></h2>
+      <h2 id="h-mapa">Tu mapa de <em>GTA VI</em></h2>
       <p class="lede">Más de 100 fichas con su fuente sobre el mapa de la comunidad <a href="https://map.gtadb.org" target="_blank" rel="noopener">GTADB</a>, con calles, barrios y más de 3.600 puntos de interés comparados con lugares reales de Florida. Filtra, marca lo que vayas descubriendo y comparte cualquier punto. La base es un trabajo de fans: un nombre confirmado no convierte sus coordenadas en oficiales.</p>
       <p class="note" id="mapRevision">Mapa comunitario: consulta la fuente y la precisión de cada ubicación.</p>
       <p><a class="btn btn-ghost" href="guias/mapa-interactivo/">Cómo buscar, filtrar y guardar tus lugares →</a></p>
+    </div>
+    <div class="map-topline">
+      <span class="map-game">SOLO GTA VI · LEONIDA</span>
+      <button class="btn btn-ghost" type="button" id="mapPanelToggle" aria-controls="mapSide" aria-expanded="false">Leyenda y mi progreso</button>
+      <a class="btn btn-primary map-open-page" href="mapa/">Abrir mapa en su propia página ↗</a>
     </div>
     <div class="map-grid">
       <div class="map-box" id="mapBox">
@@ -982,18 +988,33 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
         </div>
         <p class="map-hint" id="mapHelp">Arrastra para moverte, usa la rueda o pellizca para el zoom y haz doble clic para acercar. Al acercarte aparecen los puntos de la comunidad: tócalos para ver su equivalente real. Base cartográfica: «GTA VI Map Tiles» (Yanis y colaboradores) y «GTA VI Landmarks Data», de <a href="https://map.gtadb.org" target="_blank" rel="noopener">map.gtadb.org</a>, con licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" rel="noopener">CC BY 4.0</a>. LeonidaDex los ha recortado, convertido a teselas y traducido. No es el mapa oficial de Rockstar.</p>
       </div>
-      <aside class="map-side" aria-label="Panel del mapa">
-        <div class="ms-progress"><div><b id="foundTxt">0 / 0</b> lugares descubiertos</div><div class="bar" aria-hidden="true"><i id="foundBar"></i></div></div>
+      <aside class="map-side" id="mapSide" aria-label="Leyenda y progreso de GTA VI">
+        <div class="ms-progress" aria-live="polite">
+          <div class="map-progress-title">Mi exploración <span>GTA VI</span></div>
+          <div><b id="foundTxt">0 / 0</b> fichas completadas</div>
+          <div class="bar" aria-hidden="true"><i id="foundBar"></i></div>
+          <small id="communityProgress">Puntos de la comunidad: acerca el mapa o busca un lugar.</small>
+        </div>
+        <div class="map-status" role="group" aria-label="Filtrar por progreso">
+          <button type="button" data-map-status="all" aria-pressed="true">Todos</button>
+          <button type="button" data-map-status="pending" aria-pressed="false">Pendientes</button>
+          <button type="button" data-map-status="done" aria-pressed="false">Completados</button>
+        </div>
         <div class="ms-tabs" role="tablist" aria-label="Panel del mapa">
-          <button type="button" role="tab" id="tab-filtros" aria-selected="true" aria-controls="paneFiltros" data-t="Filtros">Filtros</button>
+          <button type="button" role="tab" id="tab-filtros" aria-selected="true" aria-controls="paneFiltros" data-t="Filtros">Leyenda</button>
           <button type="button" role="tab" id="tab-lista" aria-selected="false" aria-controls="paneLista" data-t="Lista">Lugares</button>
           <button type="button" role="tab" id="tab-region" aria-selected="false" aria-controls="paneRegion" data-t="Region">Regiones</button>
         </div>
         <div class="ms-pane" id="paneFiltros" role="tabpanel" aria-labelledby="tab-filtros">
+          <div class="map-legend-key" aria-label="Significado de los marcadores">
+            <span><i class="map-key-dot" aria-hidden="true"></i>Pendiente</span>
+            <span><b class="map-key-done" aria-hidden="true">✓</b>Completado</span>
+            <span><i class="map-key-zone" aria-hidden="true"></i>Zona aproximada</span>
+          </div>
+          <p class="map-progress-note">El icono y el color indican el tipo de lugar. Abre una ficha para marcarlo como completado.</p>
           <div class="ms-actions"><button type="button" id="catAll">Mostrar todo</button><button type="button" id="catNone">Ocultar todo</button></div>
           <ul class="cat-list" id="catList"></ul>
           <div class="toggles">
-            <label><input type="checkbox" id="tgHideFound"> Ocultar lo descubierto</label>
             <label><input type="checkbox" id="tgOficial"> Solo lugares oficiales</label>
             <label><input type="checkbox" id="tgSecretos"> Pistas y secretos · spoilers de exploración</label>
             <p class="note">Los nuevos iconos son referencias de área, no el botín exacto. Lee la precisión en cada ficha. <a href="reportajes/secretos-gta6-mapa-dinero-armas/">Ver guía de secretos →</a></p>
@@ -1006,12 +1027,17 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
             <p>Edificios y sitios identificados por los colaboradores de GTADB con su equivalente real. Aparecen al acercar el mapa; toca un tipo para ocultarlo.</p>
             <div class="gta-types" id="gtaTypes"></div>
           </div>
-          <button type="button" class="link-btn" id="resetFound">Borrar mi progreso</button>
         </div>
         <div class="ms-pane" id="paneLista" role="tabpanel" aria-labelledby="tab-lista" hidden><div id="placeList"></div></div>
         <div class="ms-pane" id="paneRegion" role="tabpanel" aria-labelledby="tab-region" hidden>
           <div class="region-tabs" id="regionTabs" role="group" aria-label="Elegir región"></div>
           <div class="region-panel" id="regionPanel" aria-live="polite"></div>
+        </div>
+        <div class="map-storage">
+          <p id="mapStorageNote">Guardado en este navegador. Tu progreso se conserva al actualizar la web; no se sincroniza automáticamente con otros dispositivos. Estas listas no son el porcentaje de partida del juego.</p>
+          <div class="ms-actions"><button type="button" id="exportFound">Descargar progreso</button><button type="button" id="importFound">Cargar copia</button></div>
+          <input type="file" id="progressFile" accept="application/json,.json" hidden>
+          <button type="button" class="link-btn" id="resetFound">Reiniciar progreso</button>
         </div>
       </aside>
     </div>
@@ -1200,6 +1226,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
 
 <script type="application/json" id="datos-base">__BASE__</script>
 <script type="application/json" id="datos-fallback">__DYN__</script>
+<script src="assets/mapa-progreso.js"></script>
 <script>
 (function () {
   "use strict";
@@ -1567,6 +1594,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
 
   /* ---------------- Mapa (base: GTADB, CC BY 4.0) ---------------- */
   var region = "vicecity", pinSel = null, gSel = null, zoomBucket = null;
+  var MAP_ROOT = document.body.classList.contains("map-page") ? "../" : "";
   var CROP = { x: 150, y: 150, w: 475, h: 650 };
   var MANI = __MANI__;
   var REG_BOX = { vicecity: [432, 410, 150, 195], keys: [268, 655, 205, 135], grassrivers: [330, 560, 150, 150], gellhorn: [232, 330, 170, 210], ambrosia: [375, 330, 160, 150], kalaga: [290, 200, 235, 140] };
@@ -1592,9 +1620,18 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
   var GT_ORDER = ["h", "c", "r", "o", "t", "n", "i", "p", "x"];
   function lsGet(k, d) { try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } }
   function lsSet(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
-  var found = lsGet("ldx-found", {});
+  var progressStore = null;
+  try { progressStore = window.localStorage; } catch (e) {}
+  var found = LDXMapProgress.read(progressStore);
+  function communityKey(id) { return "g:" + id; }
+  function progressMatches(id) { return LDXMapProgress.matches(found, id, mp.status); }
+  function persistFound() {
+    var saved = LDXMapProgress.write(progressStore, found);
+    $("#mapStorageNote").textContent = saved ? "Guardado en este navegador. Descarga una copia para llevarlo a otro dispositivo. Estas listas no son el porcentaje de partida del juego." : "El navegador no permite guardar el progreso. Puedes seguir marcando lugares y descargar una copia antes de salir.";
+  }
   var mp = Object.assign({ off: {}, gOff: {}, hideFound: false, oficial: false, secretos: false, cluster: true, labels: true, gta: true }, lsGet("ldx-mapa", {}));
   if (!mp.off) mp.off = {}; if (!mp.gOff) mp.gOff = {};
+  if (["all", "pending", "done"].indexOf(mp.status) < 0) mp.status = mp.hideFound ? "pending" : "all";
   function hashN(t) { var h = 0; for (var i = 0; i < t.length; i++) h = (h * 31 + t.charCodeAt(i)) | 0; return h; }
   function allPins() {
     var out = [], seen = {};
@@ -1613,10 +1650,10 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     return out;
   }
   var PINS = [], DYNIDS = {};
-  function pinVisible(p) { return (!p.secreto || mp.secretos) && !mp.off[p.cat] && (!mp.oficial || p.estado === "oficial") && !(mp.hideFound && found[p.id] && p.id !== pinSel); }
+  function pinVisible(p) { return (!p.secreto || mp.secretos) && !mp.off[p.cat] && (!mp.oficial || p.estado === "oficial") && progressMatches(p.id); }
   function pinSVG(p) {
     var c = CAT[p.cat];
-    return '<g class="mpin cat-' + esc(p.cat) + (found[p.id] ? " found" : "") + (DYNIDS[p.id] ? " nuevo" : "") + (p.id === pinSel ? " sel" : "") + (p.secreto ? " search-zone" : "") + '" data-id="' + esc(p.id) + '" data-x="' + p.x + '" data-y="' + p.y + '" tabindex="0" role="button" aria-label="' + esc(p.nombre + ", " + c.n) + '">' +
+    return '<g class="mpin cat-' + esc(p.cat) + (found[p.id] ? " found" : "") + (DYNIDS[p.id] ? " nuevo" : "") + (p.id === pinSel ? " sel" : "") + (p.secreto ? " search-zone" : "") + '" data-id="' + esc(p.id) + '" data-x="' + p.x + '" data-y="' + p.y + '" tabindex="0" role="button" aria-label="' + esc(p.nombre + ", " + c.n + (found[p.id] ? ", completado" : ", pendiente")) + '">' +
       '<circle class="halo" cy="-22" r="16"/><path class="pb" style="fill:' + c.c + '" d="M0 0 C-4 -9 -14 -14 -14 -24 A14 14 0 1 1 14 -24 C14 -14 4 -9 0 0 Z"/><text class="pg" y="-19" text-anchor="middle">' + (found[p.id] ? "✓" : c.g) + "</text>" +
       '<text class="pl" y="-46" text-anchor="middle">' + esc(p.nombre) + "</text></g>";
   }
@@ -1727,7 +1764,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     im.setAttribute("preserveAspectRatio", "none");
     im.addEventListener("load", function () { im.classList.add("ok"); if (+z === 2) stage.classList.add("tiles-ok"); });
     im.addEventListener("error", function () { if (+z === 2) stage.classList.add("no-tiles"); });
-    im.setAttribute("href", "mapa/" + z + "/" + i + "_" + j + "." + MANI.fmt);
+    im.setAttribute("href", MAP_ROOT + "mapa/" + z + "/" + i + "_" + j + "." + MANI.fmt);
     tileG[z].appendChild(im);
   }
   MANI.z[2].t.forEach(function (t) { addTile(2, t[0], t[1]); });
@@ -1749,8 +1786,8 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     if (cb) gtaWait.push(cb);
     if (gtaState === 1) return;
     gtaState = 1; renderGtaBox();
-    fetch("datos/gtadb-6.json").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) {
-      GTA = d; gtaState = 2; renderGtaBox(); gtaWait.splice(0).forEach(function (f) { f(); }); schedule();
+    fetch(MAP_ROOT + "datos/gtadb-6.json").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) {
+      GTA = d; gtaState = 2; renderGtaBox(); renderSide(); gtaWait.splice(0).forEach(function (f) { f(); }); schedule();
     }).catch(function () { gtaState = 3; gtaWait = []; renderGtaBox(); });
   }
   function gtaById(id) { if (!GTA) return null; for (var n = 0; n < GTA.l.length; n++) if (GTA.l[n][0] === id) return GTA.l[n]; return null; }
@@ -1760,11 +1797,12 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     if (!GTA) { loadGta(); return; }
     var u = unitPx(), pad = 10 * u, L = GTA.l, out = [];
     var x0 = vb.x - pad, x1 = vb.x + vb.w + pad, y0 = vb.y - pad, y1 = vb.y + vb.h + pad;
-    for (var n = 0; n < L.length; n++) { var r = L[n]; if (r[3] < x0 || r[3] > x1 || r[4] < y0 || r[4] > y1 || mp.gOff[r[6]]) continue; out.push(r); }
+    for (var n = 0; n < L.length; n++) { var r = L[n]; if (r[3] < x0 || r[3] > x1 || r[4] < y0 || r[4] > y1 || mp.gOff[r[6]] || !progressMatches(communityKey(r[0]))) continue; out.push(r); }
     if (out.length > 900) out = out.filter(function (r) { return r[1] || r[0] === gSel; });
     var html = "", sel = "";
     out.forEach(function (r) {
-      var c = '<circle class="gd' + (r[1] ? " nm" : "") + '" cx="' + r[3] + '" cy="' + r[4] + '" r="' + ((r[1] ? 5.2 : 3.8) * u).toFixed(4) + '" fill="' + GT[r[6]][1] + '"/>';
+      var c = '<circle class="gd' + (found[communityKey(r[0])] ? " done" : "") + (r[1] ? " nm" : "") + '" cx="' + r[3] + '" cy="' + r[4] + '" r="' + ((r[1] ? 5.2 : 3.8) * u).toFixed(4) + '" fill="' + GT[r[6]][1] + '"/>';
+      if (found[communityKey(r[0])]) c += '<text class="gd-check" x="' + r[3] + '" y="' + r[4] + '" text-anchor="middle" dominant-baseline="central" style="font-size:' + (8 * u).toFixed(4) + 'px">✓</text>';
       if (r[0] === gSel) sel = '<circle class="gd-sel" cx="' + r[3] + '" cy="' + r[4] + '" r="' + (11 * u).toFixed(4) + '"/>' + c; else html += c;
     });
     dotsG.innerHTML = html + sel;
@@ -1772,22 +1810,23 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
   function nearestDot(cx, cy) {
     if (!GTA || !mp.gta || vb.w > GTA_W) return null;
     var p = toSvg(cx, cy), u = unitPx(), best = null, bd = Math.pow(13 * u, 2);
-    GTA.l.forEach(function (r) { if (mp.gOff[r[6]]) return; var d = Math.pow(r[3] - p.x, 2) + Math.pow(r[4] - p.y, 2); if (d < bd) { bd = d; best = r; } });
+    GTA.l.forEach(function (r) { if (mp.gOff[r[6]] || !progressMatches(communityKey(r[0]))) return; var d = Math.pow(r[3] - p.x, 2) + Math.pow(r[4] - p.y, 2); if (d < bd) { bd = d; best = r; } });
     return best;
   }
   function renderGtaBox() {
     var n = GTA ? GTA.l.length : 0;
     $("#gtaCount").textContent = GTA ? n.toLocaleString("es-ES") + " puntos" : gtaState === 1 ? "cargando…" : gtaState === 3 ? "no disponibles" : "";
-    var cnt = {}; if (GTA) GTA.l.forEach(function (r) { cnt[r[6]] = (cnt[r[6]] || 0) + 1; });
+    var cnt = {}, done = {}; if (GTA) GTA.l.forEach(function (r) { cnt[r[6]] = (cnt[r[6]] || 0) + 1; if (found[communityKey(r[0])]) done[r[6]] = (done[r[6]] || 0) + 1; });
     $("#gtaTypes").innerHTML = GT_ORDER.map(function (t) {
-      return '<button type="button" class="gt-chip" data-gt="' + t + '" aria-pressed="' + !mp.gOff[t] + '"><i style="background:' + GT[t][1] + '" aria-hidden="true"></i>' + GT[t][0] + (GTA ? " <small>" + (cnt[t] || 0) + "</small>" : "") + "</button>";
+      return '<button type="button" class="gt-chip" data-gt="' + t + '" aria-pressed="' + !mp.gOff[t] + '"><i style="background:' + GT[t][1] + '" aria-hidden="true"></i>' + GT[t][0] + (GTA ? " <small>" + (done[t] || 0) + "/" + (cnt[t] || 0) + "</small>" : "") + "</button>";
     }).join("");
   }
   $("#gtaTypes").addEventListener("click", function (e) { var b = e.target.closest(".gt-chip"); if (!b) return; var t = b.dataset.gt; if (mp.gOff[t]) delete mp.gOff[t]; else mp.gOff[t] = 1; saveMp(); renderGtaBox(); schedule(); });
 
-  var ptrs = {}, moved = 0, lastPinch = 0, lastMid = null, mapActive = false;
+  var ptrs = {}, moved = 0, lastPinch = 0, lastMid = null, mapActive = false, mapHit = null;
   svgM.addEventListener("pointerdown", function (e) {
     if (e.pointerType === "mouse" && e.button !== 0) return;
+    mapHit = e.target.closest(".mpin, .mclu");
     ptrs[e.pointerId] = { x: e.clientX, y: e.clientY }; moved = 0; mapActive = true;
     if (e.pointerType !== "touch" || stage.classList.contains("zoomed") || Object.keys(ptrs).length > 1) { try { svgM.setPointerCapture(e.pointerId); } catch (er) {} }
     var ids = Object.keys(ptrs); if (ids.length === 2) { lastPinch = dist2(); lastMid = mid2(); }
@@ -1819,9 +1858,10 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
   $("#mapBox").addEventListener("pointerleave", function () { mapActive = false; });
   svgM.addEventListener("dblclick", function (e) { e.preventDefault(); var p = toSvg(e.clientX, e.clientY), w = Math.max(ZMIN, vb.w * 0.5); animateTo({ x: p.x - w / 2, y: p.y - (w * ASP) / 2, w: w }); });
   svgM.addEventListener("click", function (e) {
+    var hit = mapHit || e.target; mapHit = null;
     if (moved > 6) { moved = 0; return; }
-    var clu = e.target.closest(".mclu"); if (clu) { zoomCluster(clu); return; }
-    var pin = e.target.closest(".mpin"); if (pin) { selectPin(pin.dataset.id, false); return; }
+    var clu = hit.closest(".mclu"); if (clu) { zoomCluster(clu); return; }
+    var pin = hit.closest(".mpin"); if (pin) { selectPin(pin.dataset.id, false); return; }
     var r = nearestDot(e.clientX, e.clientY); if (r) { selectGta(r[0], false); return; }
   });
   svgM.addEventListener("keydown", function (e) {
@@ -1842,7 +1882,8 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
 
   function applyLayers() {
     svgM.classList.toggle("no-pl", !mp.labels);
-    $("#tgHideFound").checked = mp.hideFound; $("#tgOficial").checked = mp.oficial; $("#tgCluster").checked = mp.cluster;
+    $$("[data-map-status]").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.mapStatus === mp.status)); });
+    $("#tgOficial").checked = mp.oficial; $("#tgCluster").checked = mp.cluster;
     $("#tgSecretos").checked = mp.secretos; $("#tgLabels").checked = mp.labels; $("#tgGta").checked = mp.gta;
     $("#gtaBox").classList.toggle("off", !mp.gta);
   }
@@ -1851,31 +1892,61 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     var available = PINS.filter(function (p) { return !p.secreto || mp.secretos; });
     var tot = available.length, fnd = available.filter(function (p) { return found[p.id]; }).length;
     $("#foundTxt").textContent = fnd + " / " + tot; $("#foundBar").style.width = (tot ? fnd / tot * 100 : 0) + "%";
-    $("#catList").innerHTML = CATS.map(function (c) {
+    if (GTA) $("#communityProgress").textContent = GTA.l.filter(function (r) { return found[communityKey(r[0])]; }).length + " / " + GTA.l.length.toLocaleString("es-ES") + " puntos de la comunidad completados";
+    $("#catList").innerHTML = CATS.filter(function (c) { return available.some(function (p) { return p.cat === c.id; }); }).map(function (c) {
       var L = available.filter(function (p) { return p.cat === c.id; }), f = L.filter(function (p) { return found[p.id]; }).length;
       return '<li class="' + (mp.off[c.id] ? "off" : "") + '"><label><input type="checkbox" data-c="' + c.id + '"' + (mp.off[c.id] ? "" : " checked") + '><span class="dotg" style="background:' + c.c + '" aria-hidden="true">' + c.g + '</span><span class="cn">' + c.n + '</span><span class="cc">' + f + "/" + L.length + '</span><span class="cp" aria-hidden="true"><i style="width:' + (L.length ? f / L.length * 100 : 0) + '%"></i></span></label></li>';
     }).join("");
     $("#placeList").innerHTML = REG_ORDER.map(function (rid) {
-      var L = available.filter(function (p) { return p.region === rid; }).sort(function (a, b) { return a.nombre.localeCompare(b.nombre, "es"); });
+      var L = available.filter(function (p) { return p.region === rid && pinVisible(p); }).sort(function (a, b) { return a.nombre.localeCompare(b.nombre, "es"); });
       if (!L.length) return "";
       var f = L.filter(function (p) { return found[p.id]; }).length;
       return '<div class="pl-group"><h4>' + esc(regName(rid).replace(" National Park", "")) + "<span>" + f + "/" + L.length + "</span></h4>" + L.map(function (p) {
         var c = CAT[p.cat];
-        return '<div class="pl-row' + (found[p.id] ? " done" : "") + '"><input type="checkbox" data-f="' + esc(p.id) + '" aria-label="Descubierto: ' + esc(p.nombre) + '"' + (found[p.id] ? " checked" : "") + '><span class="dotg" style="background:' + c.c + '" aria-hidden="true">' + c.g + '</span><button type="button" data-id="' + esc(p.id) + '">' + esc(p.nombre) + (p.estado !== "oficial" ? " <small>· " + esc(EST_N[p.estado] || "") + "</small>" : "") + "</button></div>";
+        return '<div class="pl-row' + (found[p.id] ? " done" : "") + '"><input type="checkbox" data-f="' + esc(p.id) + '" aria-label="Completado: ' + esc(p.nombre) + '"' + (found[p.id] ? " checked" : "") + '><span class="dotg" style="background:' + c.c + '" aria-hidden="true">' + c.g + '</span><button type="button" data-id="' + esc(p.id) + '">' + esc(p.nombre) + (p.estado !== "oficial" ? " <small>· " + esc(EST_N[p.estado] || "") + "</small>" : "") + "</button></div>";
       }).join("") + "</div>";
-    }).join("") + '<div class="pl-group"><h4>Nombrados, aún sin ubicar<span>' + arr(BASE.mapa_sin_ubicar).length + "</span></h4>" + arr(BASE.mapa_sin_ubicar).map(function (u) {
+    }).join("") || '<p class="map-empty">No hay fichas que coincidan con estos filtros. Cambia a Todos o activa otra categoría en la leyenda.</p>';
+    $("#placeList").innerHTML += '<div class="pl-group"><h4>Nombrados, aún sin ubicar<span>' + arr(BASE.mapa_sin_ubicar).length + "</span></h4>" + arr(BASE.mapa_sin_ubicar).map(function (u) {
       return '<p class="pl-unplaced"><b>' + esc(u.nombre) + "</b>. " + esc(u.texto) + (u.fuente ? ' <a href="' + esc(u.fuente.url) + '" target="_blank" rel="noopener">Fuente</a>' : "") + "</p>";
     }).join("") + "</div>";
   }
-  function setFound(id, v) { if (v) found[id] = 1; else delete found[id]; lsSet("ldx-found", found); renderPins(); renderSide(); if (pinSel === id) renderCard(); }
+  function setFound(id, v) {
+    if (!id) return;
+    if (v) found[id] = 1; else delete found[id];
+    persistFound(); renderPins(); renderSide(); renderGtaBox(); renderCard(); schedule();
+  }
+  $("#mapPanelToggle").addEventListener("click", function () {
+    var open = $("#mapa").classList.toggle("panel-open");
+    this.setAttribute("aria-expanded", String(open));
+    if (open) $("#mapSide").scrollIntoView({block: "start", behavior: reduced ? "auto" : "smooth"});
+  });
+  $$("[data-map-status]").forEach(function (b) { b.addEventListener("click", function () {
+    mp.status = b.dataset.mapStatus; mp.hideFound = mp.status === "pending";
+    saveMp(); applyLayers(); renderPins(); renderSide(); schedule();
+  }); });
+  $("#exportFound").addEventListener("click", function () {
+    var url = URL.createObjectURL(new Blob([LDXMapProgress.backup(found)], {type: "application/json"}));
+    var a = document.createElement("a"); a.href = url; a.download = "leonidadex-gta6-progreso.json";
+    document.body.appendChild(a); a.click(); a.remove(); setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+  });
+  $("#importFound").addEventListener("click", function () { $("#progressFile").click(); });
+  $("#progressFile").addEventListener("change", function () {
+    var file = this.files[0]; if (!file) return;
+    if (file.size > 1024 * 1024) { toast("La copia de progreso es demasiado grande"); this.value = ""; return; }
+    file.text().then(function (text) {
+      found = LDXMapProgress.restore(text, found); persistFound(); renderPins(); renderSide(); renderGtaBox(); renderCard(); schedule(); toast("Copia cargada: se ha combinado con tu progreso");
+    }).catch(function () { toast("Elige una copia JSON de progreso de LeonidaDex para GTA VI"); });
+    this.value = "";
+  });
   $("#catList").addEventListener("change", function (e) { var c = e.target.dataset.c; if (!c) return; if (e.target.checked) delete mp.off[c]; else mp.off[c] = 1; saveMp(); renderPins(); renderSide(); });
   $("#catAll").addEventListener("click", function () { mp.off = {}; saveMp(); renderPins(); renderSide(); });
   $("#catNone").addEventListener("click", function () { CATS.forEach(function (c) { mp.off[c.id] = 1; }); saveMp(); renderPins(); renderSide(); });
-  [["tgHideFound", "hideFound"], ["tgOficial", "oficial"], ["tgSecretos", "secretos"], ["tgCluster", "cluster"], ["tgLabels", "labels"], ["tgGta", "gta"]].forEach(function (t) {
+  [["tgOficial", "oficial"], ["tgSecretos", "secretos"], ["tgCluster", "cluster"], ["tgLabels", "labels"], ["tgGta", "gta"]].forEach(function (t) {
     $("#" + t[0]).addEventListener("change", function (e) { mp[t[1]] = e.target.checked; if (!mp.secretos && PINS.some(function (p) { return p.id === pinSel && p.secreto; })) { pinSel = null; $("#mapCard").hidden = true; }
       saveMp(); applyLayers(); renderPins(); renderSide(); renderRegion(); mapSearch(); applyVB(); });
   });
-  $("#resetFound").addEventListener("click", function () { if (!Object.keys(found).length) { toast("Aún no has marcado ningún lugar"); return; } found = {}; lsSet("ldx-found", found); renderPins(); renderSide(); if (pinSel) renderCard(); toast("Progreso borrado"); });
+  $("#resetFound").addEventListener("click", function () { if (!Object.keys(found).length) { toast("Aún no has marcado ningún lugar"); return; } if (!window.confirm("¿Reiniciar el progreso del mapa de GTA VI en este navegador? Descarga antes una copia si quieres conservarlo.")) return;
+    found = {}; persistFound(); renderPins(); renderSide(); renderGtaBox(); renderCard(); schedule(); toast("Progreso reiniciado"); });
   $("#placeList").addEventListener("change", function (e) { var id = e.target.dataset.f; if (id) setFound(id, e.target.checked); });
   $("#placeList").addEventListener("click", function (e) { var b = e.target.closest("button[data-id]"); if (b) selectPin(b.dataset.id, true); });
   $$(".ms-tabs button").forEach(function (b) { b.addEventListener("click", function () { showTab(b.dataset.t); }); });
@@ -1909,8 +1980,8 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     $("#mapCard").innerHTML = '<div class="mc-top"><span class="mc-cat"><span class="dotg" style="background:' + c.c + '" aria-hidden="true">' + c.g + "</span>" + esc(c.n) + '</span><span class="badge ' + (p.estado === "oficial" ? "oficial" : "prensa") + '">' + esc(EST_N[p.estado] || "Oficial") + '</span><button type="button" class="mc-x" id="mcClose" aria-label="Cerrar ficha">×</button></div>' +
       "<h3>" + esc(p.nombre) + "</h3><p>" + esc(p.texto || "") + "</p>" + (p.inspiracion ? '<p class="mc-insp">Inspirado en: ' + esc(p.inspiracion) + "</p>" : "") +
       '<p class="mc-meta">' + esc(regName(p.region)) + " · " + pos + "</p>" +
-      '<div class="mc-act"><button type="button" id="mcFound" class="' + (found[p.id] ? "done" : "") + '">' + (found[p.id] ? "✓ Descubierto" : "Marcar como descubierto") + '</button><button type="button" id="mcShare">Compartir</button>' +
-      (p.guia ? '<a class="btn btn-ghost" href="' + (p.guia_tipo === "guias" ? "guias/" : "reportajes/") + esc(p.guia) + '/">Ruta y fuentes →</a>' : "") +
+      '<div class="mc-act"><button type="button" id="mcFound" aria-pressed="' + !!found[p.id] + '" class="' + (found[p.id] ? "done" : "") + '">' + (found[p.id] ? "✓ Completado · desmarcar" : "Marcar como completado") + '</button><button type="button" id="mcShare">Compartir</button>' +
+      (p.guia ? '<a class="btn btn-ghost" href="' + MAP_ROOT + (p.guia_tipo === "guias" ? "guias/" : "reportajes/") + esc(p.guia) + '/">Ruta y fuentes →</a>' : "") +
       (p.fuente && p.fuente.url ? '<span class="src"><a href="' + esc(p.fuente.url) + '" target="_blank" rel="noopener">' + esc(p.fuente.nombre || "Fuente") + "</a></span>" : "") + "</div>";
   }
   function renderGtaCard() {
@@ -1925,25 +1996,28 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
       (r[5] ? '<p class="mc-insp">' + (r[7] & 2 ? "Posible equivalente real (sin confirmar): " : "Equivalente real: ") + esc(r[5]) + "</p>" : '<p class="mc-meta">Aún sin equivalente real identificado.</p>') +
       (notes.length ? '<p class="mc-meta">' + esc(notes.join(" · ")) + "</p>" : "") +
       '<p class="mc-meta">Punto L' + r[0] + ' de GTA VI Landmarks Data · CC BY 4.0</p>' +
-      '<div class="mc-act"><button type="button" id="mcShare">Compartir</button><span class="src"><a href="' + gtaLink(r[3], r[4], "L" + r[0]) + '" target="_blank" rel="noopener">Ver en GTADB</a></span></div>';
+      '<div class="mc-act"><button type="button" id="mcFound" aria-pressed="' + !!found[communityKey(r[0])] + '" class="' + (found[communityKey(r[0])] ? "done" : "") + '">' + (found[communityKey(r[0])] ? "✓ Completado · desmarcar" : "Marcar como completado") + '</button><button type="button" id="mcShare">Compartir</button><span class="src"><a href="' + gtaLink(r[3], r[4], "L" + r[0]) + '" target="_blank" rel="noopener">Ver en GTADB</a></span></div>';
   }
   $("#mapCard").addEventListener("click", function (e) {
     if (e.target.closest("#mcClose")) { pinSel = null; gSel = null; $("#mapCard").hidden = true; renderPins(); schedule(); return; }
-    if (e.target.closest("#mcFound")) { setFound(pinSel, !found[pinSel]); return; }
+    if (e.target.closest("#mcFound")) { var key = gSel != null ? communityKey(gSel) : pinSel; setFound(key, !found[key]); return; }
     if (e.target.closest("#mcShare")) { var u = location.href.split("#")[0] + (gSel != null ? "#g=" + gSel : "#l=" + pinSel); copyText(u); }
   });
   function selectPin(id, zoom) {
     var p = PINS.find(function (x) { return x.id === id; }); if (!p) return;
     pinSel = id; gSel = null; region = p.region;
     if (p.secreto) { mp.secretos = true; mp.oficial = false; saveMp(); applyLayers(); renderSide(); }
+    if (!progressMatches(p.id)) { mp.status = "all"; saveMp(); applyLayers(); }
     if (mp.off[p.cat]) { delete mp.off[p.cat]; saveMp(); renderSide(); }
     if (zoom || vb.w > 120) centerOn(p.x, p.y, p.exacta ? 16 : 40);
-    renderPins(); renderCard(); renderRegion(); schedule();
+    renderPins(); renderSide(); renderCard(); renderRegion(); schedule();
+    if (window.matchMedia("(max-width: 980px)").matches) { $("#mapa").classList.remove("panel-open"); $("#mapPanelToggle").setAttribute("aria-expanded", "false"); }
   }
   function selectGta(id, zoom) {
     loadGta(function () {
       var r = gtaById(id); if (!r) return;
       gSel = id; pinSel = null;
+      if (!progressMatches(communityKey(id))) { mp.status = "all"; saveMp(); applyLayers(); renderSide(); }
       if (mp.gOff[r[6]]) { delete mp.gOff[r[6]]; saveMp(); renderGtaBox(); }
       if (!mp.gta) { mp.gta = true; saveMp(); applyLayers(); }
       if (zoom || vb.w > GTA_W) centerOn(r[3], r[4], 18);

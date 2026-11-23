@@ -300,7 +300,7 @@
     },
     {
       "id": "mapa-interactivo",
-      "titulo": "Cómo usar el mapa: filtros, secretos y lugares descubiertos",
+      "titulo": "Cómo usar el mapa de GTA VI: leyenda, filtros y progreso",
       "categoria": "Herramientas",
       "resumen": "Encuentra una zona, entiende la precisión de cada ficha y lleva tu propia lista de exploración en LeonidaDex.",
       "plataformas": "Web móvil y ordenador",
@@ -308,7 +308,7 @@
         "Un navegador con JavaScript para utilizar los controles del mapa.",
         "No necesitas iniciar sesión, aceptar Analytics ni conectar tu cuenta de juego."
       ],
-      "zona": "El mapa interactivo de LeonidaDex, en la página de inicio.",
+      "zona": "El mapa de GTA VI en /mapa/ y el mapa integrado en la página de inicio.",
       "recompensa": "Una búsqueda organizada y tu lista local de lugares visitados. Esta herramienta no entrega recompensas dentro del juego.",
       "pasos": [
         {
@@ -321,28 +321,32 @@
         },
         {
           "titulo": "Reduce el ruido con los filtros",
-          "texto": "En Filtros puedes mostrar u ocultar categorías y controlar por separado los puntos de la comunidad GTADB. «Solo lugares oficiales» selecciona las fichas con esa clasificación; su etiqueta no certifica sus coordenadas. Si estás siguiendo una ruta de prensa o de la comunidad y no aparece, desmarca ese filtro. «Mostrar todo» recupera las categorías; la casilla de secretos sigue siendo una elección aparte."
+          "texto": "En Leyenda, cada icono y color indica un tipo de lugar. Sus casillas permiten mostrar u ocultar categorías y controlar por separado los puntos de la comunidad GTADB. «Solo lugares oficiales» selecciona las fichas con esa clasificación; su etiqueta no certifica sus coordenadas. «Mostrar todo» recupera las categorías; la casilla de secretos sigue siendo una elección aparte. En móvil, pulsa «Leyenda y mi progreso» para abrir o cerrar el panel."
         },
         {
           "titulo": "Lee la precisión antes de seguir una pista de secretos",
           "texto": "Activa «Pistas y secretos» solo si quieres ver spoilers de exploración. Abre un icono y lee la descripción, las fuentes y la precisión. Las referencias de área orientan hacia una zona: no son el punto exacto donde recoger un arma, un coche o un alijo. Cuando la ficha ofrece una guía, úsala para completar la ruta con sus requisitos y pasos. Un nombre conocido y una posición aproximada son datos distintos."
         },
         {
-          "titulo": "Marca tus lugares y comparte una referencia",
-          "texto": "Al abrir una ficha de lugar, pulsa «Marcar como descubierto» si quieres añadirla a tu lista. Con «Ocultar lo descubierto» reduces los iconos ya anotados. Ese progreso es una marca manual del navegador: no lee tu partida y no se sincroniza entre el ordenador y el móvil. «Compartir» prepara un enlace al punto seleccionado para volver a abrir esa referencia; no envía un mensaje automáticamente."
+          "titulo": "Marca lo completado y filtra tu exploración",
+          "texto": "Abre una ficha de LeonidaDex o un punto de la comunidad y pulsa «Marcar como completado». La marca se puede quitar desde el mismo botón. Usa Todos, Pendientes o Completados para cambiar lo visible en el mapa; la pestaña Lugares respeta los filtros de las fichas. El progreso se guarda solo en ese navegador y se conserva al actualizar la web. No lee tu partida ni representa el porcentaje oficial del juego. Las fichas editoriales y los puntos comunitarios tienen contadores separados. «Compartir» copia un enlace al punto; no envía mensajes automáticamente."
+        },
+        {
+          "titulo": "Lleva una copia al móvil o a otro navegador",
+          "texto": "Pulsa «Descargar progreso» para guardar una copia JSON. En el otro navegador, abre el mapa y pulsa «Cargar copia» para seleccionar ese archivo. La copia se combina con las marcas que ya hubiera allí. No hay sincronización automática ni se envían las marcas a un servidor. «Reiniciar progreso» pide confirmación; descarga antes una copia si quieres conservarlo."
         }
       ],
       "problemas": [
-        "No aparece una pista: activa Pistas y secretos, desmarca Solo lugares oficiales y revisa que no hayas ocultado su categoría o marcado el lugar como descubierto.",
+        "No aparece una pista: activa Pistas y secretos, revisa su categoría, desmarca Solo lugares oficiales y selecciona Todos en el filtro de progreso.",
         "Veo pocos puntos de GTADB: activa su casilla y acerca el mapa. Los puntos de la comunidad se muestran según el nivel de detalle.",
         "El mapa se ha alejado de la zona que buscaba: pulsa Ver todo Leonida y elige de nuevo la región o el resultado de búsqueda.",
-        "Mi lista está vacía en otro dispositivo: las marcas se guardan en el navegador donde las hiciste. Borrar sus datos o usar otro perfil no recupera esas marcas.",
+        "Mi lista está vacía en otro dispositivo: descarga el progreso desde el navegador original y usa Cargar copia en el nuevo. Si borraste los datos del original sin copia, no se pueden recuperar desde el servidor.",
         "El lugar no coincide con lo que veo en mi partida: comprueba la precisión y la fuente de la ficha y comunica la URL y la diferencia desde Contacto. No añadas coordenadas supuestas."
       ],
       "fuentes": [
         {
           "nombre": "LeonidaDex · mapa interactivo y sus controles",
-          "url": "https://leonidadex.net/#mapa"
+          "url": "https://leonidadex.net/mapa/"
         },
         {
           "nombre": "GTADB · procedencia de la cartografía comunitaria",
@@ -354,7 +358,7 @@
         }
       ],
       "nota_fuentes": "Documentación original de las funciones de LeonidaDex, contrastada con los controles y el código de esta versión. Describe la herramienta web; no es una comprobación de ubicaciones dentro del juego. La cartografía mantiene su atribución comunitaria.",
-      "actualizado": "2026-11-22T11:54:18+01:00",
+      "actualizado": "2026-11-23T14:40:27+01:00",
       "spoiler": "",
       "relacionadas": [
         "primeros-pasos",

@@ -19,6 +19,7 @@ from site_support import analytics, footer as site_footer, head as site_head, in
 from content_validation import validate_content
 from promotion_pages import pages as promotion_pages
 from guide_pages import load_guides, home_preview, asset_name as guide_asset_name, pages as guide_pages
+from map_pages import page as map_page
 
 ROOT = pathlib.Path(__file__).parent
 SRC = ROOT / "src"
@@ -152,6 +153,7 @@ def main():
     (OUT / "mapa" / "manifest.json").unlink()
     shutil.copy(SRC / "tiles" / "datos" / "gtadb-6.json", OUT / "datos" / "gtadb-6.json")
     urls.append((url, upd))
+    urls.append((map_page(shell, write, url, tpl, embed, base, dyn, mani), upd))
     urls.extend(promotion_pages(shell, write, url, upd))
     urls.extend(guide_pages(shell, write, url, SRC))
 

@@ -104,7 +104,7 @@ def page_body(g,data):
          f'<h1>{E(g["titulo"])}</h1><p class="lede">{E(g["resumen"])}</p><p class="gv-date">Revisada el {date} · {E(g.get("plataformas", "PS5 y Xbox Series X|S"))} · {minutes(g)} min de lectura</p>'
          '<div class="gv-actions"><a class="btn btn-primary" href="#pasos" data-reveal-guide>Ver los pasos ↓</a>'
          +(f'<a class="btn btn-ghost" href="#clip-{E(gid)}" data-reveal-guide>▶ Ver el vídeo</a>' if v else '')
-         +(f'<a class="btn btn-ghost" href="../../#l={E(g["mapa"])}">Zona en el mapa ↗</a>' if g.get('mapa') else '<a class="btn btn-ghost" href="../../#mapa">Abrir mapa interactivo ↗</a>')+'</div></header>')
+         +(f'<a class="btn btn-ghost" href="../../mapa/#l={E(g["mapa"])}">Zona en el mapa ↗</a>' if g.get('mapa') else '<a class="btn btn-ghost" href="../../mapa/">Abrir mapa interactivo ↗</a>')+'</div></header>')
     brief=('<div class="gv-brief"><section><h2>Antes de empezar</h2><ul>'+''.join(f'<li>{E(x)}</li>' for x in g['requisitos'])+'</ul></section>'
            f'<section><h2>Qué consigues</h2><p>{E(g["recompensa"])}</p></section><section><h2>Dónde</h2><p>{E(g["zona"])}</p></section></div>')
     if g.get('mapa'):

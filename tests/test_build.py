@@ -47,8 +47,15 @@ class BuildTests(unittest.TestCase):
                 dyn = json.loads((build.SRC / "actualizaciones.json").read_text("utf-8"))
                 expected = len(base["articulos"]) + len(dyn.get("articulos_nuevos", [])) + 10
                 expected += len(info_pages(build.CONFIG))
-                expected += 1 + len(load_guides(build.SRC)['guias'])
+                expected += 2 + len(load_guides(build.SRC)['guias'])
                 self.assertEqual(len(pages), expected)
+                map_page = (output / 'mapa/index.html').read_text('utf-8')
+                self.assertIn('class="static map-page"', map_page)
+                self.assertIn('data-map-status="done"', map_page)
+                self.assertIn('SOLO GTA VI', map_page)
+                self.assertIn('mapa-progreso.js', map_page)
+                self.assertNotIn('__MANI__', map_page)
+                self.assertNotIn('GTA V = 1', map_page)
                 self.assertEqual((output / "ads.txt").exists(), bool(build.CONFIG["adsense_publisher_id"]))
                 self.assertEqual((output / "privacidad").exists(), privacy_ready(build.CONFIG))
                 self.assertEqual((output / "aviso-legal").exists(), legal_ready(build.CONFIG))
@@ -92,7 +99,7 @@ class BuildTests(unittest.TestCase):
                         self.assertTrue(target.exists(), (page, href))
                         if key == "href" and path.fragment and target in parsed_pages:
                             # These hashes select a point through the map's JS router.
-                            if target == output.resolve() / "index.html" and path.fragment.startswith(("l=", "g=")):
+                            if target in (output.resolve() / "index.html", output.resolve() / "mapa/index.html") and path.fragment.startswith(("l=", "g=")):
                                 continue
                             self.assertIn(unquote(path.fragment), parsed_pages[target].ids, (page, href))
             finally:

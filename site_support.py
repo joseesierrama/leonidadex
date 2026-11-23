@@ -8,7 +8,7 @@ from pathlib import Path
 E = html.escape
 MENU = [("", "Inicio"), ("guias/", "Guías"), ("retos/", "Retos"), ("noticias/", "Noticias"), ("reportajes/", "Reportajes"),
         ("personajes/", "Personajes"), ("leonida/", "Leonida"),
-        ("preguntas-frecuentes/", "Preguntas frecuentes"), ("#mapa", "Mapa interactivo")]
+        ("preguntas-frecuentes/", "Preguntas frecuentes"), ("mapa/", "Mapa interactivo")]
 
 
 def load_config(src):
@@ -125,7 +125,7 @@ def info_pages(config):
             '<h2>Cómo usar una guía</h2><p>Empieza por los requisitos y la zona. Después sigue los pasos y consulta «Si no te sale» antes de repetir una acción. Los enlaces de fuentes permiten volver al recorrido documentado y contrastar nombres, controles y condiciones. Los datos que una fuente deja sin resolver no se completan con suposiciones.</p>'
             '<p>Los vídeos de otros autores se ofrecen mediante su reproductor original y un enlace de salida. La explicación escrita está en español; el audio del vídeo puede estar en otro idioma. Si un autor desactiva la inserción o retira el vídeo, la guía conserva sus pasos y su referencia.</p>'
             '<h2>Qué significa un punto del mapa</h2><p>El nombre de una localización y su posición tienen grados de certeza distintos. La base cartográfica y los puntos de GTADB son un trabajo comunitario, con licencia CC BY 4.0. Las fichas atribuyen las fuentes y las adaptaciones.</p>'
-            '<p>Las pistas de secretos indican su precisión. Una referencia de área te orienta hacia una zona, pero no certifica la coordenada de una recogida. El marcador «Descubierto» es tu propia lista: no comprueba automáticamente tu partida ni la conecta con Rockstar. <a href="../guias/mapa-interactivo/">Ver cómo usar el mapa</a>.</p>'
+            '<p>Las pistas de secretos indican su precisión. Una referencia de área te orienta hacia una zona, pero no certifica la coordenada de una recogida. El marcador «Completado» es tu propia lista: no comprueba automáticamente tu partida ni la conecta con Rockstar. <a href="../guias/mapa-interactivo/">Ver cómo usar el mapa</a>.</p>'
             '<h2>Fechas, cambios y spoilers</h2><p>Las noticias conservan su fecha original. La fecha de revisión corresponde a un cambio editorial registrado, no a una comprobación continua en directo. Una actualización de diseño no implica que se hayan vuelto a verificar todos los hechos del archivo.</p>'
             '<p>Cuando una corrección cambia una explicación, debe quedar identificada junto al contenido afectado. Las soluciones de historia y las ubicaciones sensibles se mantienen bajo un desplegable para que puedas decidir cuándo abrirlas.</p>'
             '<h2>Comunicar un error</h2><p>Envía la URL de LeonidaDex, la frase o el paso afectado y una referencia que permita comprobarlo. Si describes una partida, indica plataforma y progreso relevante; no incluyas datos de acceso. Las peticiones de corrección y de revisión de material pueden enviarse desde <a href="../contacto/">Contacto</a>.</p>'
