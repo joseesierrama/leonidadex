@@ -24,6 +24,7 @@ def page(shell, write, url, template, embed, base, dyn, manifest):
                    'Explora solo GTA VI: leyenda por categorías, secretos con fuentes y marcas manuales de lugares completados. Guarda y lleva tu progreso con una copia.',
                    url + 'mapa/', body)
     result = result.replace('<body class="static">', '<body class="static map-page">')
-    result = result.replace('</head>', '<link rel="stylesheet" href="../assets/mapa.css"></head>', 1)
+    css_href = re.search(r'href="(assets/mapa[^\"]*\.css)"', template).group(1)
+    result = result.replace('</head>', '<link rel="stylesheet" href="../' + css_href + '"></head>', 1)
     write('mapa/index.html', result)
     return url + 'mapa/'

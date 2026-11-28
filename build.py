@@ -10,6 +10,7 @@ Variables de entorno opcionales: BASE_URL (p. ej. https://leonidadex.net/), OWNE
 No modifica los datos: la fecha de actualización la pone quien edita src/actualizaciones.json.
 """
 import html
+import hashlib
 import json
 import os
 import pathlib
@@ -120,11 +121,16 @@ def main():
 
     # --- index ---
     tpl = (SRC / "template.html").read_text("utf-8")
+    # Tie both map entry points to the deployed data, including weekly refreshes.
+    map_version = hashlib.sha256((SRC / 'tiles/datos/gtadb-6.json').read_bytes()).hexdigest()[:16]
+    tpl = tpl.replace('__GTADB_VERSION__', map_version)
+    tpl = tpl.replace('href="assets/mapa.css"', 'href="assets/' + guide_asset_name(SRC, 'mapa.css') + '"')
     css = re.search(r"<style>(.*?)</style>", tpl, re.S).group(1)
     write("assets/estilo.css", css)
     shutil.copytree(SRC / "assets", OUT / "assets", dirs_exist_ok=True)
     for name in ('guias.css','guias.js'):
         write('assets/'+guide_asset_name(SRC,name),(SRC/'assets'/name).read_text('utf-8'))
+    write('assets/'+guide_asset_name(SRC,'mapa.css'),(SRC/'assets/mapa.css').read_text('utf-8'))
     shutil.copy(SRC / "assets" / "favicon.ico", OUT / "favicon.ico")
     write("site.webmanifest", json.dumps({"name": "LeonidaDex", "short_name": "LeonidaDex", "lang": "es",
         "start_url": "./", "scope": "./", "display": "standalone", "background_color": "#120a1c", "theme_color": "#120a1c",

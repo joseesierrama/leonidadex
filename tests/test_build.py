@@ -1,4 +1,5 @@
 import json
+import hashlib
 import pathlib
 import sys
 import tempfile
@@ -55,6 +56,15 @@ class BuildTests(unittest.TestCase):
                 self.assertIn('SOLO GTA VI', map_page)
                 self.assertIn('mapa-progreso.js', map_page)
                 self.assertNotIn('__MANI__', map_page)
+                self.assertNotIn('__GTADB_VERSION__', map_page)
+                fingerprint = hashlib.sha256((build.SRC / 'tiles/datos/gtadb-6.json').read_bytes()).hexdigest()[:16]
+                for text in (map_page, (output / 'index.html').read_text('utf-8')):
+                    self.assertIn('datos/gtadb-6.json?v=' + fingerprint, text)
+                    self.assertIn('id="mapBase"', text)
+                    self.assertIn('data-service-preset="guns"', text)
+                portal = (output / 'reportajes/portal-vice-city-ps2/index.html').read_text('utf-8')
+                self.assertIn('data-video-id="RQKhlKn6AEQ"', portal)
+                self.assertNotIn('<iframe', portal)
                 self.assertNotIn('GTA V = 1', map_page)
                 self.assertEqual((output / "ads.txt").exists(), bool(build.CONFIG["adsense_publisher_id"]))
                 self.assertEqual((output / "privacidad").exists(), privacy_ready(build.CONFIG))

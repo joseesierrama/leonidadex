@@ -1773,10 +1773,10 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     im.setAttribute("href", MAP_ROOT + "mapa/" + z + "/" + i + "_" + j + "." + MANI.fmt);
     tileG[z].appendChild(im);
   }
-  MANI.z[2].t.forEach(function (t) { addTile(2, t[0], t[1]); });
   function tileLevel() { var ppu = stageW() / vb.w * (window.devicePixelRatio || 1); return Math.max(2, Math.min(5, Math.ceil(Math.log(ppu) / Math.LN2 - 0.3))); }
   function updTiles() {
     if (mp.basemap !== "yanis") { updDayTiles(); return; }
+    MANI.z[2].t.forEach(function (t) { addTile(2, t[0], t[1]); });
     var z = tileLevel();
     for (var lz = 3; lz <= 5; lz++) tileG[lz].style.display = lz <= z ? "" : "none";
     if (z < 3) return;
@@ -1818,7 +1818,7 @@ h2 em { text-shadow: 0 0 10px rgba(255, 79, 163, 0.75), 0 0 28px rgba(255, 46, 1
     if (cb) gtaWait.push(cb);
     if (gtaState === 1) return;
     gtaState = 1; renderGtaBox();
-    fetch(MAP_ROOT + "datos/gtadb-6.json").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) {
+    fetch(MAP_ROOT + "datos/gtadb-6.json?v=__GTADB_VERSION__").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) {
       GTA = d; gtaState = 2; renderGtaBox(); renderSide(); gtaWait.splice(0).forEach(function (f) { f(); }); schedule();
     }).catch(function () { gtaState = 3; gtaWait = []; renderGtaBox(); });
   }
