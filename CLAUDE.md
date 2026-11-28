@@ -2,6 +2,10 @@
 
 ## Versión vigente · 28 de noviembre de 2026
 
+- Los puntos visuales se han sustituido por símbolos de la interfaz en `src/assets/mapa-iconos.js`. Conserva su asignación por etiquetas y los recursos locales de `src/assets/map-icons/`, con sus créditos separados de CC BY de GTADB. Los dibujos de hospital y tren son adaptaciones propias; no atribuyas esa licencia a los símbolos de Rockstar.
+- La vista general prioriza servicios; el detalle despliega edificios y separa iconos cercanos. La búsqueda y el filtro conservan todos los registros. No conviertas un lugar sin clasificar en una armería o un secreto por su nombre. El elemento seleccionado conserva su posición exacta y los controles de teclado.
+- Ampliar mapa utiliza una vista dentro de la página, con leyenda accesible en móvil y salida con Escape. No necesita permisos de pantalla completa. Al elegir un resultado comunitario se cierra el panel móvil para mostrar la ficha.
+
 - El mapa conserva sus claves de progreso y ahora contiene 4.694 puntos y 154 áreas de GTADB. Las cifras anteriores de este documento son históricas. La comparación con el 23 normaliza áreas: 1.037 altas, 6 bajas y 1.093 registros revisados, incluidos 1.044 cambios de coordenadas. Al renovar los datos, actualiza las coordenadas de los marcadores editoriales con ancla `gtadb` sin cambiar sus IDs.
 - La cartografía predeterminada es `day`: vista general local `mapa-dia.webp` y teselas detalladas públicas del repositorio de GTADB al acercar. La reconstrucción Yanis sigue disponible como alternativa local. Conserva sus orígenes de coordenadas separados (`MANI.crop` para las teselas antiguas). Atribución CC BY 4.0 visible en el mapa y archivo de créditos del recurso.
 - Los ocho primeros campos de cada fila GTADB se conservan; los siguientes contienen servicios, disponibilidad de foto del juego y versión de esa foto. No cargues fotos antes del clic. La ausencia de estos campos en una copia anterior debe seguir funcionando.

@@ -125,10 +125,11 @@ def main():
     map_version = hashlib.sha256((SRC / 'tiles/datos/gtadb-6.json').read_bytes()).hexdigest()[:16]
     tpl = tpl.replace('__GTADB_VERSION__', map_version)
     tpl = tpl.replace('href="assets/mapa.css"', 'href="assets/' + guide_asset_name(SRC, 'mapa.css') + '"')
+    tpl = tpl.replace('src="assets/mapa-iconos.js"', 'src="assets/' + guide_asset_name(SRC, 'mapa-iconos.js') + '"')
     css = re.search(r"<style>(.*?)</style>", tpl, re.S).group(1)
     write("assets/estilo.css", css)
     shutil.copytree(SRC / "assets", OUT / "assets", dirs_exist_ok=True)
-    for name in ('guias.css','guias.js'):
+    for name in ('guias.css','guias.js','mapa-iconos.js'):
         write('assets/'+guide_asset_name(SRC,name),(SRC/'assets'/name).read_text('utf-8'))
     write('assets/'+guide_asset_name(SRC,'mapa.css'),(SRC/'assets/mapa.css').read_text('utf-8'))
     shutil.copy(SRC / "assets" / "favicon.ico", OUT / "favicon.ico")

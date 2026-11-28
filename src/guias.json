@@ -584,11 +584,11 @@
       "pasos": [
         {
           "titulo": "Elige qué buscas",
-          "texto": "Abre el mapa dedicado. Usa los accesos de armerías, talleres y compradores de botín, o el selector Buscar un servicio. Los resultados llevan directamente a su ficha."
+          "texto": "Abre el mapa dedicado. Los símbolos muestran qué hay en cada lugar: pistola para armerías, llave para talleres, balanza para compradores y otros iconos para servicios. Usa los accesos de la leyenda o busca un nombre. Al elegir un resultado, se abre su ficha y el panel móvil deja libre el mapa."
         },
         {
           "titulo": "Acerca para ver calles y puntos",
-          "texto": "La cartografía day muestra más detalle al acercarte. Si una tesela no carga, queda la vista general; puedes cambiar a la reconstrucción de la comunidad. Hay 4.694 puntos y 154 áreas en la copia revisada el 28 de noviembre."
+          "texto": "Pulsa Ampliar mapa para explorar con más espacio y sal desde el mismo botón o con Escape. Acerca para separar lugares cercanos; las flechas del teclado permiten moverte y +/− ajustar el zoom. La copia revisada el 28 de noviembre contiene 4.694 puntos y 154 áreas. Los símbolos de edificios sin servicio conocido indican su categoría, no un negocio desbloqueado."
         },
         {
           "titulo": "Abre fotos y pistas cuando quieras",

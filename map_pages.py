@@ -19,7 +19,8 @@ def page(shell, write, url, template, embed, base, dyn, manifest):
               + engine.replace('__MANI__', embed(manifest))
               + '\nmapInit();\n})();')
     body = section + '<div class="toast" id="toast" role="status" aria-live="polite"></div>'
-    body += '<script src="../assets/mapa-progreso.js"></script><script>' + script + '</script>'
+    icons_script = re.search(r'src="(assets/mapa-iconos[^\"]*\.js)"', template).group(1)
+    body += '<script src="../' + icons_script + '"></script><script src="../assets/mapa-progreso.js"></script><script>' + script + '</script>'
     result = shell(1, 'Mapa interactivo de GTA VI: leyenda y progreso | LeonidaDex',
                    'Explora solo GTA VI: leyenda por categorías, secretos con fuentes y marcas manuales de lugares completados. Guarda y lleva tu progreso con una copia.',
                    url + 'mapa/', body)
