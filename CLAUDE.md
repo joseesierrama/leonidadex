@@ -1,5 +1,15 @@
 # Actualizaciones diarias de LeonidaDex
 
+## Versión vigente · 28 de noviembre de 2026
+
+- El mapa conserva sus claves de progreso y ahora contiene 4.694 puntos y 154 áreas de GTADB. Las cifras anteriores de este documento son históricas. La comparación con el 23 normaliza áreas: 1.037 altas, 6 bajas y 1.093 registros revisados, incluidos 1.044 cambios de coordenadas. Al renovar los datos, actualiza las coordenadas de los marcadores editoriales con ancla `gtadb` sin cambiar sus IDs.
+- La cartografía predeterminada es `day`: vista general local `mapa-dia.webp` y teselas detalladas públicas del repositorio de GTADB al acercar. La reconstrucción Yanis sigue disponible como alternativa local. Conserva sus orígenes de coordenadas separados (`MANI.crop` para las teselas antiguas). Atribución CC BY 4.0 visible en el mapa y archivo de créditos del recurso.
+- Los ocho primeros campos de cada fila GTADB se conservan; los siguientes contienen servicios, disponibilidad de foto del juego y versión de esa foto. No cargues fotos antes del clic. La ausencia de estos campos en una copia anterior debe seguir funcionando.
+- El filtro de servicios y la búsqueda abren puntos comunitarios. No equivalen a una lista completa de secretos o coleccionables. Los 13 marcadores editoriales de secretos son referencias de área con sus límites publicados; las gorras y el Vamos siguen sin coordenada exacta contrastada.
+- Hay 29 guías. El portal de Vice City incluye 17 pasos marcables, capítulos de HelloItsVG y el especial `/reportajes/portal-vice-city-ps2/` con reproductor a petición. Atribuye el hallazgo a Memeio y los recorridos a sus autores. Es una escena retro del Malibu Club, no todo Vice City desbloqueado. No conviertas las condiciones de un vídeo en garantías para todas las versiones.
+- La revisión oficial del parche remite a las notas de Rockstar del 23 de noviembre. No atribuyas una versión posterior, 60 fps oficial o fecha de PC sin una nueva fuente oficial.
+- AdSense se comprobó el 28: Preparando, revisión solicitada el 22 a las 10:48 CET, ads.txt Autorizado. No significa aprobación. No actives anuncios ni reenvíes la solicitud por el simple transcurso de unos días.
+
 GitHub es la fuente de la versión vigente. Consulta la rama `main` actual antes de editar; no repongas plantillas antiguas ni sobrescribas cambios de otros colaboradores.
 
 ## Contenido diario

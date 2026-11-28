@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-11-23T14:02:02+01:00",
+    "actualizado": "2026-11-28T12:07:00+01:00",
     "lanzamiento": "2026-11-19T00:00:00",
     "nota_lanzamiento": "Disponible desde el 19 de noviembre · PS5 y Xbox Series X|S",
     "fase": "lanzado",
@@ -197,6 +197,114 @@
     }
   ],
   "noticias": [
+    {
+      "id": "portal-vice-city-20261128",
+      "fecha": "2026-11-28",
+      "titulo": "El portal a Vice City de GTA 6: especial con vídeo y ruta ordenada",
+      "resumen": "Reunimos el hallazgo atribuido a Memeio y los recorridos de IGN y HelloItsVG. Consulta las condiciones, el orden de activación y las recompensas sin abrir la solución hasta que quieras.",
+      "categoria": "Secretos",
+      "estado": "prensa",
+      "fuentes": [
+        {
+          "nombre": "VGC · hallazgo de Memeio, 23 de noviembre",
+          "url": "https://www.videogameschronicle.com/news/one-of-gta-6s-most-elaborate-easter-eggs-has-been-solved/"
+        },
+        {
+          "nombre": "IGN · recorrido del portal en vídeo",
+          "url": "https://www.youtube.com/watch?v=gNMTCbS8Ytg"
+        },
+        {
+          "nombre": "Especial y vídeo en LeonidaDex",
+          "url": "https://leonidadex.net/reportajes/portal-vice-city-ps2/"
+        }
+      ]
+    },
+    {
+      "id": "mapa-detalle-20261128",
+      "fecha": "2026-11-28",
+      "titulo": "Mapa de GTA 6 actualizado: 4.694 puntos, servicios y fotos",
+      "resumen": "Nueva cartografía y filtros para localizar armerías, talleres o compradores de botín. Mantén tu progreso, consulta la precisión de cada ficha y descarga una copia antes de cambiar de dispositivo.",
+      "categoria": "LeonidaDex",
+      "estado": "prensa",
+      "fuentes": [
+        {
+          "nombre": "GTA VI Landmarks Data y cartografía · CC BY 4.0",
+          "url": "https://github.com/rolux/gtadb.org"
+        },
+        {
+          "nombre": "Explorar el mapa",
+          "url": "https://leonidadex.net/mapa/"
+        }
+      ]
+    },
+    {
+      "id": "gorras-mario-20261128",
+      "fecha": "2026-11-28",
+      "titulo": "GTA 6 esconde un guiño a Mario y Luigi: guía de las gorras",
+      "resumen": "La ruta con capturas de Mobalytics explica cómo reconocer el escenario y la interacción. Añadimos una guía breve, con la solución protegida y sin inventar coordenadas.",
+      "categoria": "Secretos",
+      "estado": "prensa",
+      "fuentes": [
+        {
+          "nombre": "Mobalytics · recorrido con capturas, 26 de noviembre",
+          "url": "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-super-mario-easter-egg"
+        },
+        {
+          "nombre": "Abrir la guía",
+          "url": "https://leonidadex.net/guias/gorras-mario-luigi/"
+        }
+      ]
+    },
+    {
+      "id": "turistas-gellhorn-20261128",
+      "fecha": "2026-11-28",
+      "titulo": "Turistas desaparecidos de Gellhorn: cómo iniciar la investigación",
+      "resumen": "Del cartel a las tres pistas: nuestra ruta organiza los objetivos de PowerPyx y señala el motel inicial. El desenlace queda fuera de esta guía introductoria.",
+      "categoria": "Guías",
+      "estado": "prensa",
+      "fuentes": [
+        {
+          "nombre": "PowerPyx · Gage, recorrido de los turistas",
+          "url": "https://www.powerpyx.com/gta-6-gellhorns-missing-tourists-walkthrough/"
+        },
+        {
+          "nombre": "Ruta de investigación",
+          "url": "https://leonidadex.net/guias/turistas-desaparecidos-gellhorn/"
+        }
+      ]
+    },
+    {
+      "id": "vamos-garaje-20261128",
+      "fecha": "2026-11-28",
+      "titulo": "Declasse Vamos en GTA 6: una pista abre su garaje escondido",
+      "resumen": "GamesRadar+ ha actualizado su recorrido. Explicamos cómo identificar la propiedad antes de consultar la solución, que corresponde a una sola puerta.",
+      "categoria": "Coches",
+      "estado": "prensa",
+      "fuentes": [
+        {
+          "nombre": "GamesRadar+ · Danielle Rose, actualizado el 27 de noviembre",
+          "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-declasse-vamos-code/"
+        },
+        {
+          "nombre": "Ver ruta y solución",
+          "url": "https://leonidadex.net/guias/declasse-vamos-garaje/"
+        }
+      ]
+    },
+    {
+      "id": "parche-revision-20261128",
+      "fecha": "2026-11-28",
+      "titulo": "Parche de GTA 6: qué corrige Rockstar y qué sigue sin anunciar",
+      "resumen": "Revisión del 28 de noviembre: la página oficial consultada mantiene las notas del 23, con correcciones de estabilidad, autoguardado y objetivos. No añadimos un supuesto parche nuevo ni convertimos glitches en modos oficiales.",
+      "categoria": "Actualizaciones",
+      "estado": "prensa",
+      "fuentes": [
+        {
+          "nombre": "Rockstar Support · notas oficiales del 23 de noviembre",
+          "url": "https://support.rockstargames.com/articles/sN5pEdFYZdlvijKXd6xpJ/grand-theft-auto-vi-launch-updates-ps5-xbox-series-x-or-s"
+        }
+      ]
+    },
     {
       "id": "granero-rojo-20261123",
       "fecha": "2026-11-23",
@@ -2348,8 +2456,8 @@
       "nombre": "Assassin Nipper .38 · zona de búsqueda",
       "region": "keys",
       "cat": "armas",
-      "x": 331.576,
-      "y": 710.746,
+      "x": 331.58,
+      "y": 710.75,
       "estado": "prensa",
       "texto": "Busca la barca varada al oeste de Maroon Key y revisa su compartimento. Consulta las capturas de la ruta antes del último tramo.",
       "fuente": {
@@ -2369,8 +2477,8 @@
       "nombre": "Smuggler Gorse 425 · zona de búsqueda",
       "region": "keys",
       "cat": "armas",
-      "x": 331.576,
-      "y": 710.746,
+      "x": 331.58,
+      "y": 710.75,
       "estado": "prensa",
       "texto": "La ruta documentada se dirige a la costa de la isla más septentrional de Permit Keys, junto a una embarcación.",
       "fuente": {
@@ -2390,8 +2498,8 @@
       "nombre": "Kingfishers W-22 · Fishing Shacks",
       "region": "grassrivers",
       "cat": "armas",
-      "x": 375.086,
-      "y": 661.076,
+      "x": 375.09,
+      "y": 661.08,
       "estado": "prensa",
       "texto": "Zona vigilada en Wetman Bay. La guía enlazada muestra el acceso al rifle; no es el Laird 350 del motel.",
       "fuente": {
@@ -2411,8 +2519,8 @@
       "nombre": "Manatee Motel · dinero y Laird 350",
       "region": "grassrivers",
       "cat": "dinero",
-      "x": 403.243,
-      "y": 661.625,
+      "x": 403.24,
+      "y": 661.62,
       "estado": "prensa",
       "texto": "Busca al nordeste de Cottonmouth Lake, al sur de Hamlet. La prensa documenta botín y un rifle; hay guardias y un tigre.",
       "fuente": {
@@ -2432,8 +2540,8 @@
       "nombre": "Three Sheets · pista del loro",
       "region": "keys",
       "cat": "dinero",
-      "x": 438.452,
-      "y": 684.883,
+      "x": 438.45,
+      "y": 684.88,
       "estado": "prensa",
       "texto": "Empieza en Key Lento. La guía de GTA BOOM explica el patio de la licorería y su alijo.",
       "fuente": {
@@ -2453,8 +2561,8 @@
       "nombre": "Penumbra FF · ruta por Vespucci",
       "region": "vicecity",
       "cat": "raros",
-      "x": 521.541,
-      "y": 472.487,
+      "x": 521.19,
+      "y": 471.88,
       "estado": "prensa",
       "texto": "GAMES.GG muestra el coche en un garaje de Vespucci Island. Recogerlo y registrarlo para conservarlo son pasos distintos.",
       "fuente": {
@@ -2474,8 +2582,8 @@
       "nombre": "Skunk Ape · encuentro al sur de Hamlet",
       "region": "grassrivers",
       "cat": "encuentros",
-      "x": 431.744,
-      "y": 625.027,
+      "x": 431.74,
+      "y": 625.03,
       "estado": "prensa",
       "texto": "PowerPyx documenta un encuentro en la carretera al sur de Hamlet, separado de la cadena de Kirk. No se garantiza una aparición en cualquier momento.",
       "fuente": {
@@ -2495,8 +2603,8 @@
       "nombre": "Nova Auto Junkyard · lowrider y KZ59",
       "region": "grassrivers",
       "cat": "raros",
-      "x": 431.744,
-      "y": 625.027,
+      "x": 431.74,
+      "y": 625.03,
       "estado": "prensa",
       "texto": "BennyCentral muestra un lowrider y una KZ59 de los Marabunta en el desguace de Hamlet. La zona tiene enemigos: no es una entrega de coche sin riesgo.",
       "fuente": {
@@ -2573,9 +2681,130 @@
       "guia_tipo": "guias",
       "actualizado": "2026-11-23",
       "precision": "Referencia de área apoyada en GTADB. El icono no señala la posición exacta del objeto, la puerta ni el vehículo. Completa el último tramo con el vídeo."
+    },
+    {
+      "id": "secreto-portal-vice-city",
+      "nombre": "Portal de Vice City · complejo Tortoise Head",
+      "gtadb": "L881",
+      "x": 464.69,
+      "y": 629.88,
+      "region": "ambrosia",
+      "cat": "encuentros",
+      "guia": "portal-vice-city-ps2",
+      "guia_tipo": "guias",
+      "texto": "Referencia del complejo de Peregrine Bay. Abre la guía: la torre y las doce subestaciones se completan antes de visitar el reactor.",
+      "fuente": {
+        "nombre": "HelloItsVG · recorrido con capítulos",
+        "url": "https://www.youtube.com/watch?v=RQKhlKn6AEQ"
+      },
+      "exacta": false,
+      "secreto": true,
+      "estado": "prensa",
+      "actualizado": "2026-11-28",
+      "precision": "Referencia de edificio o área de GTADB. No representa la puerta, el objeto ni la recompensa exactos. Sigue la ruta y el vídeo para el último tramo."
+    },
+    {
+      "id": "secreto-turistas-gellhorn",
+      "nombre": "Turistas desaparecidos · comienzo de la investigación",
+      "gtadb": "L304",
+      "x": 344.32,
+      "y": 403.36,
+      "region": "gellhorn",
+      "cat": "encuentros",
+      "guia": "turistas-desaparecidos-gellhorn",
+      "guia_tipo": "guias",
+      "texto": "Empieza buscando el cartel de personas desaparecidas. El marcador sitúa el Starlet Motel, no las pruebas posteriores.",
+      "fuente": {
+        "nombre": "PowerPyx · Gage, recorrido de los turistas",
+        "url": "https://www.powerpyx.com/gta-6-gellhorns-missing-tourists-walkthrough/"
+      },
+      "exacta": false,
+      "secreto": true,
+      "estado": "prensa",
+      "actualizado": "2026-11-28",
+      "precision": "Referencia de edificio o área de GTADB. No representa la puerta, el objeto ni la recompensa exactos. Sigue la ruta y el vídeo para el último tramo."
     }
   ],
   "articulos_nuevos": [
+    {
+      "id": "portal-vice-city-ps2",
+      "titulo": "El portal de GTA 6 a Vice City: el homenaje a PS2 explicado con vídeo",
+      "entradilla": "Un regreso retro que exige observar, escuchar y encadenar pistas. Qué se ha documentado, quién lo encontró y cómo seguir la ruta sin inventar ubicaciones.",
+      "categoria": "Especial",
+      "lectura": 4,
+      "fecha": "2026-11-28",
+      "actualizado": "2026-11-28T12:07:00+01:00",
+      "guia": "portal-vice-city-ps2",
+      "spoiler": "Abrir el especial · revela la naturaleza del secreto y sus recompensas",
+      "video": {
+        "id": "RQKhlKn6AEQ",
+        "inicio": 59,
+        "fin": 724,
+        "titulo": "Torre, doce subestaciones y portal: recorrido de HelloItsVG",
+        "autor": "HelloItsVG · hallazgo atribuido a Memeio"
+      },
+      "fuentes": [
+        {
+          "nombre": "VGC · hallazgo de Memeio, 23 de noviembre",
+          "url": "https://www.videogameschronicle.com/news/one-of-gta-6s-most-elaborate-easter-eggs-has-been-solved/"
+        },
+        {
+          "nombre": "HelloItsVG · recorrido con capítulos",
+          "url": "https://www.youtube.com/watch?v=RQKhlKn6AEQ"
+        },
+        {
+          "nombre": "IGN · recorrido del portal en vídeo",
+          "url": "https://www.youtube.com/watch?v=gNMTCbS8Ytg"
+        },
+        {
+          "nombre": "Radio Times · Alex Raisbeck, 25 de noviembre",
+          "url": "https://www.radiotimes.com/technology/gaming/gta-6-time-travel-easter-egg-vice-city-portal-explained/"
+        }
+      ],
+      "cuerpo": [
+        {
+          "h": "Un homenaje, no el juego completo de PlayStation 2"
+        },
+        {
+          "p": "El portal desemboca en una recreación retro del Malibu Club. El interés del secreto está en recuperar la estética y el ambiente de Vice City dentro de una secuencia de GTA VI; no permite recorrer todo el mapa de 2002 ni sustituye a una copia del original."
+        },
+        {
+          "h": "La investigación de la comunidad"
+        },
+        {
+          "p": "VGC atribuye el descubrimiento a Memeio el 23 de noviembre. IGN publicó después un recorrido, y HelloItsVG ofrece la ruta completa con capítulos. Mantenemos esos créditos y sus vídeos originales: LeonidaDex ordena las pistas, pero no presenta el hallazgo como propio ni como anuncio oficial de Rockstar."
+        },
+        {
+          "h": "Qué debes tener preparado"
+        },
+        {
+          "p": "La ruta demostrada utiliza a Jason y enlaza una torre, doce subestaciones y el reactor. Antes de salir, crea un guardado separado. Revisa cada interacción y su confirmación: saltarse un botón es más fácil que confundir una gran zona del mapa."
+        },
+        {
+          "h": "Por qué nuestro mapa no muestra doce puertas inventadas"
+        },
+        {
+          "p": "Disponemos de una referencia comunitaria del complejo de Tortoise Head. Esa referencia ayuda a orientar el final del viaje; no certifica la posición de su puerta. Mientras no contrastemos las doce coordenadas, el último tramo se resuelve con los capítulos del vídeo y las etiquetas de las subestaciones."
+        },
+        {
+          "h": "El recorrido que puedes completar paso a paso"
+        },
+        {
+          "p": "La guía enlazada reúne 17 comprobaciones marcables, el orden de las doce estaciones y el tramo del reactor. Puedes desplegar la solución solo cuando la necesites y llevar la cuenta en este navegador. Las condiciones de reinicio se atribuyen al creador que las documenta; no prometemos idéntico comportamiento en cualquier versión."
+        },
+        {
+          "h": "El premio y el siguiente objetivo"
+        },
+        {
+          "p": "Los vídeos muestran una camisa y una American Glory. Comprueba que conservas las recompensas antes de dar el recorrido por cerrado. Si prefieres una excursión más corta, el catálogo incluye coches, armas, rutas de botín y otras pistas de exploración."
+        }
+      ],
+      "guias_relacionadas": [
+        "gorras-mario-luigi",
+        "turistas-desaparecidos-gellhorn",
+        "mapa-interactivo"
+      ]
+    },
     {
       "id": "gta6-loro-dinero-three-sheets",
       "titulo": "GTA 6: el loro de Three Sheets Liquor y su alijo de dinero",
@@ -2776,6 +3005,12 @@
         },
         {
           "p": "LeonidaDex recopila recorridos de prensa y creadores; no presenta estas rutas como pruebas propias en consola. Seguimos pendientes de trasladar las posiciones exactas al mapa. Si cambia una condición o una actualización altera un recorrido, la ficha conservará su fuente y fecha de revisión."
+        },
+        {
+          "h": "Nuevas rutas revisadas el 28 de noviembre"
+        },
+        {
+          "p": "Añadidos el especial del portal retro, las gorras de los protagonistas, el comienzo de la investigación de Gellhorn y el Vamos. Usa los recorridos relacionados para elegir una ruta completa; los marcadores de área no sustituyen los planos de una puerta o una recompensa."
         }
       ],
       "fuentes": [
@@ -2831,12 +3066,16 @@
       "categoria": "Guías",
       "lectura": 5,
       "fecha": "2026-11-21",
-      "actualizado": "2026-11-22T11:55:51+01:00",
+      "actualizado": "2026-11-28T12:07:00+01:00",
       "spoiler": "Ver pistas de exploración y soluciones · sin desenlaces de la historia",
       "guia": "primeros-pasos",
       "guias_relacionadas": [
-        "mapa-interactivo",
+        "declasse-vamos-garaje",
+        "turistas-desaparecidos-gellhorn",
+        "portal-vice-city-ps2",
         "alijo-loro",
+        "gorras-mario-luigi",
+        "mapa-interactivo",
         "desguace-lowrider"
       ]
     },

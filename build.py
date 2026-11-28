@@ -18,7 +18,7 @@ import shutil
 from site_support import analytics, footer as site_footer, head as site_head, info_pages, load_config, menu, privacy_ready, tiktok_link
 from content_validation import validate_content
 from promotion_pages import pages as promotion_pages
-from guide_pages import load_guides, home_preview, asset_name as guide_asset_name, pages as guide_pages
+from guide_pages import load_guides, home_preview, clip_html, asset_name as guide_asset_name, pages as guide_pages
 from map_pages import page as map_page
 
 ROOT = pathlib.Path(__file__).parent
@@ -199,6 +199,8 @@ def main():
             else:
                 blocks.append(f"<p>{E(x.get('p', ''))}</p>")
         content = "".join(blocks)
+        if a.get("video"):
+            content = clip_html(a["video"], a["id"]) + content
         if a.get("spoiler"):
             content = (f'<details class="spoiler-gate"><summary>{E(a["spoiler"])}</summary>'
                        f'{content}</details>')
@@ -218,9 +220,12 @@ def main():
         body = (f'<p class="crumbs"><a href="../../">LeonidaDex</a> › <a href="../">Reportajes</a></p><article class="prose"><span class="badge">{E(a.get("categoria", ""))}</span>'
                 f'<h1>{E(a["titulo"])}</h1>{editorial_meta}<p class="lede">{E(a.get("entradilla", ""))}</p>{guide_cta}{content}{fuentes(a.get("fuentes"))}{guide_routes}</article>')
         u = url + f"reportajes/{a['id']}/"
-        write(f"reportajes/{a['id']}/index.html", shell(2, f"{a['titulo']} | LeonidaDex", a.get("entradilla", ""), u, body,
+        article_page = shell(2, f"{a['titulo']} | LeonidaDex", a.get("entradilla", ""), u, body,
                                                         {"@context": "https://schema.org", "@type": "Article", "headline": a["titulo"], "description": a.get("entradilla", ""), "datePublished": a.get("fecha", upd), "dateModified": a.get("actualizado", a.get("fecha", upd)), "inLanguage": "es",
-                                                         "author": {"@type": "Organization", "name": "LeonidaDex"}, "publisher": {"@type": "Organization", "name": "LeonidaDex"}, "mainEntityOfPage": u}))
+                                                         "author": {"@type": "Organization", "name": "LeonidaDex"}, "publisher": {"@type": "Organization", "name": "LeonidaDex"}, "mainEntityOfPage": u})
+        if a.get("video"):
+            article_page = article_page.replace('</head>', '<link rel="stylesheet" href="../../assets/' + guide_asset_name(SRC,'guias.css') + '"><script src="../../assets/' + guide_asset_name(SRC,'guias.js') + '" defer></script></head>', 1)
+        write(f"reportajes/{a['id']}/index.html", article_page)
         urls.append((u, a.get("actualizado", a.get("fecha", upd))))
 
     # --- personajes ---

@@ -1,0 +1,9 @@
+{
+  "titulo": "GTA VI Map Tiles · day · vista general adaptada",
+  "fuente": "https://github.com/rolux/gtadb.org/tree/main/maps/tiles/6/day/0",
+  "autoria": "GTADB y colaboradores; material del juego de Rockstar Games",
+  "licencia": "https://creativecommons.org/licenses/by/4.0/",
+  "declaracion_de_licencia": "https://github.com/rolux/gtadb.org/blob/main/LICENSE-DATA",
+  "adaptacion": "LeonidaDex: unión de doce teselas del nivel 0 en un lienzo de 1024 × 1024 y conversión a WebP. Las coordenadas se mantienen sin deformación.",
+  "consultado": "2026-11-28"
+}

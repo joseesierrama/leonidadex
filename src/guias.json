@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-23T14:02:02+01:00",
+  "actualizado": "2026-11-28T12:07:00+01:00",
   "guias": [
     {
       "id": "primeros-pasos",
@@ -46,6 +46,277 @@
         "guardar-dinero",
         "pistola-silenciador"
       ]
+    },
+    {
+      "id": "portal-vice-city-ps2",
+      "titulo": "Portal de Vice City en GTA 6: torre, 12 subestaciones y reactor 2",
+      "categoria": "Secretos",
+      "resumen": "Recorrido en vídeo para el homenaje retro de Vice City: requisitos, orden de activación y comprobaciones si no aparece el portal.",
+      "zona": "Badger R&D en Key Lento → 12 subestaciones → Tortoise Head, Peregrine Bay.",
+      "recompensa": "Secuencia retro y recompensas mostradas en los vídeos: camisa y moto.",
+      "requisitos": [
+        "Jason disponible y acceso a las zonas del recorrido.",
+        "Spoilers de exploración; no incluye desenlaces de la historia.",
+        "Crea un guardado separado antes de empezar."
+      ],
+      "pasos": [
+        {
+          "titulo": "Prepara a Jason y guarda antes",
+          "texto": "Recorrido documentado por HelloItsVG e IGN. Reserva tiempo para hacerlo seguido con Jason. Las condiciones de reinicio proceden de la demostración de HelloItsVG: evita cambiar de protagonista y usar viaje rápido. No hemos reproducido esta ruta en una consola propia."
+        },
+        {
+          "titulo": "Activa la torre de Badger R&D",
+          "texto": "En Key Lento, alcanza el cuarto superior de la torre de radio de Badger R&D: acciona la palanca y después el botón del aparato opuesto. Comprueba el sonido de confirmación. El vídeo muestra la torre a partir de 0:59; no todas las antenas de Key Lento sirven."
+        },
+        {
+          "titulo": "Subestación 01 · Downtown",
+          "texto": "Busca la identificación «L» y pulsa «D». Mantén este orden. Si no reconoces la entrada, abre el capítulo del vídeo enlazado. La etiqueta permite comprobar que estás en el edificio correcto; no basta con llegar al barrio.",
+          "video_inicio": 119
+        },
+        {
+          "titulo": "Subestación 02 · Balsero",
+          "texto": "Busca la identificación «P» y pulsa «D». Mantén este orden. Si no reconoces la entrada, abre el capítulo del vídeo enlazado. La etiqueta permite comprobar que estás en el edificio correcto; no basta con llegar al barrio.",
+          "video_inicio": 152
+        },
+        {
+          "titulo": "Subestación 03 · Norte de Key Lento",
+          "texto": "Busca la identificación «Ei.» y pulsa «•». Mantén este orden. Si no reconoces la entrada, abre el capítulo del vídeo enlazado. La etiqueta permite comprobar que estás en el edificio correcto; no basta con llegar al barrio.",
+          "video_inicio": 213
+        },
+        {
+          "titulo": "Subestación 04 · Penmarch Isle",
+          "texto": "Busca la identificación «S» y pulsa «A». Mantén este orden. Si no reconoces la entrada, abre el capítulo del vídeo enlazado. La etiqueta permite comprobar que estás en el edificio correcto; no basta con llegar al barrio.",
+          "video_inicio": 241
+        },
+        {
+          "titulo": "Subestación 05 · Crosstown",
+          "texto": "Busca la identificación «P» y pulsa «•». Mantén este orden. Si no reconoces la entrada, abre el capítulo del vídeo enlazado. La etiqueta permite comprobar que estás en el edificio correcto; no basta con llegar al barrio.",
+          "video_inicio": 283
+        },
+        {
+          "titulo": "Subestación 06 · Port Gellhorn",
+          "texto": "Busca la identificación «A» y pulsa «A». Mantén este orden. Si no reconoces la entrada, abre el capítulo del vídeo enlazado. La etiqueta permite comprobar que estás en el edificio correcto; no basta con llegar al barrio.",
+          "video_inicio": 326
+        },
+        {
+          "titulo": "Subestación 07 · Este de Hamlet",
+          "texto": "Busca la identificación «Ss» y pulsa «A». Mantén este orden. Si no reconoces la entrada, abre el capítulo del vídeo enlazado. La etiqueta permite comprobar que estás en el edificio correcto; no basta con llegar al barrio.",
+          "video_inicio": 360
+        },
+        {
+          "titulo": "Subestación 08 · Gloriana Key",
+          "texto": "Busca la identificación «iN» y pulsa «A». Mantén este orden. Si no reconoces la entrada, abre el capítulo del vídeo enlazado. La etiqueta permite comprobar que estás en el edificio correcto; no basta con llegar al barrio.",
+          "video_inicio": 376
+        },
+        {
+          "titulo": "Subestación 09 · Oeste de Hamlet",
+          "texto": "Busca la identificación «G» y pulsa «•». Mantén este orden. Si no reconoces la entrada, abre el capítulo del vídeo enlazado. La etiqueta permite comprobar que estás en el edificio correcto; no basta con llegar al barrio.",
+          "video_inicio": 394
+        },
+        {
+          "titulo": "Subestación 10 · Circuito de Gellhorn",
+          "texto": "Busca la identificación «Me» y pulsa «W». Mantén este orden. Si no reconoces la entrada, abre el capítulo del vídeo enlazado. La etiqueta permite comprobar que estás en el edificio correcto; no basta con llegar al barrio.",
+          "video_inicio": 425
+        },
+        {
+          "titulo": "Subestación 11 · Sur de Hamlet",
+          "texto": "Busca la identificación «B» y pulsa «D». Mantén este orden. Si no reconoces la entrada, abre el capítulo del vídeo enlazado. La etiqueta permite comprobar que estás en el edificio correcto; no basta con llegar al barrio.",
+          "video_inicio": 461
+        },
+        {
+          "titulo": "Subestación 12 · Breakwater Quarry",
+          "texto": "Busca la identificación «Y» y pulsa «W». Mantén este orden. Si no reconoces la entrada, abre el capítulo del vídeo enlazado. La etiqueta permite comprobar que estás en el edificio correcto; no basta con llegar al barrio.",
+          "video_inicio": 505
+        },
+        {
+          "titulo": "Espera la confirmación antes de ir a la central",
+          "texto": "Tras las doce interacciones, comprueba el mensaje «U-235 REACTOR2 19-06». Es tu señal de que la secuencia se ha registrado. Si no llega, revisa el orden con los capítulos del vídeo y evita continuar a ciegas."
+        },
+        {
+          "titulo": "Visita el reactor en su horario",
+          "texto": "Dirígete al reactor 2 de Tortoise Head Power Plant, en Peregrine Bay, entre las 19:00 y las 06:00 del reloj del juego. El botón del mapa abre una referencia del complejo, no la puerta exacta. La parte del reactor comienza en 9:33 del vídeo."
+        },
+        {
+          "titulo": "Cruza y comprueba las recompensas",
+          "texto": "La secuencia recrea una escena retro del Malibu Club de Vice City. Es un homenaje localizado: no desbloquea todo el juego de PS2. El recorrido muestra una camisa de estilo Tommy Vercetti y una moto American Glory; comprueba el armario y registra el vehículo antes de dar la ruta por terminada."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "HelloItsVG · recorrido con capítulos",
+          "url": "https://www.youtube.com/watch?v=RQKhlKn6AEQ"
+        },
+        {
+          "nombre": "IGN · recorrido del portal en vídeo",
+          "url": "https://www.youtube.com/watch?v=gNMTCbS8Ytg"
+        },
+        {
+          "nombre": "Radio Times · Alex Raisbeck, 25 de noviembre",
+          "url": "https://www.radiotimes.com/technology/gaming/gta-6-time-travel-easter-egg-vice-city-portal-explained/"
+        },
+        {
+          "nombre": "VGC · hallazgo de Memeio, 23 de noviembre",
+          "url": "https://www.videogameschronicle.com/news/one-of-gta-6s-most-elaborate-easter-eggs-has-been-solved/"
+        }
+      ],
+      "problemas": [
+        "El icono de la central es orientativo; no señala el acceso exacto al reactor.",
+        "No hay doce coordenadas verificadas en nuestro mapa: utiliza los capítulos del vídeo para el último tramo.",
+        "HelloItsVG avisa del cambio de protagonista y del viaje rápido. No asumimos que morir reinicie siempre la ruta en todas las versiones.",
+        "Comprueba el SMS, el reactor 2 y la hora del juego antes de repetir todo."
+      ],
+      "actualizado": "2026-11-28T12:07:00+01:00",
+      "relacionadas": [],
+      "spoiler": "Revelar pistas de exploración y soluciones",
+      "mapa": "secreto-portal-vice-city",
+      "video": {
+        "id": "RQKhlKn6AEQ",
+        "inicio": 59,
+        "fin": 724,
+        "titulo": "Torre, doce subestaciones y portal: recorrido de HelloItsVG",
+        "autor": "HelloItsVG · hallazgo atribuido a Memeio"
+      },
+      "paso_video": 2
+    },
+    {
+      "id": "gorras-mario-luigi",
+      "titulo": "Gorras de Jason y Lucia: el guiño a Mario y Luigi en GTA 6",
+      "categoria": "Secretos",
+      "resumen": "Dónde empezar a buscar el homenaje de las gorras y cómo reconocer la interacción correcta, sin confundir un área con el punto exacto.",
+      "zona": "Ruinas al sur de Moreau, al norte de Mount Kalaga.",
+      "recompensa": "Dos gorras con las iniciales de los protagonistas.",
+      "requisitos": [
+        "Acceso a Moreau.",
+        "La guía revela la solución de un secreto de exploración."
+      ],
+      "pasos": [
+        {
+          "titulo": "Reconoce las ruinas",
+          "texto": "La ruta de Mobalytics muestra un lugar de meditación en unas ruinas al sur de Moreau. Usa sus capturas para comparar el entorno; un nombre de montaña no identifica por sí solo el lugar."
+        },
+        {
+          "titulo": "Busca la lona y la interacción",
+          "texto": "Localiza la lona morada con una pipa de agua e interactúa con ella dentro del juego. La demostración sitúa aquí el comienzo del efecto que permite reconocer el bloque."
+        },
+        {
+          "titulo": "Mira arriba y alcanza el bloque",
+          "texto": "Sigue el efecto visual y sube por los restos del edificio. Colócate debajo del bloque y salta para activarlo."
+        },
+        {
+          "titulo": "Recoge y comprueba las dos gorras",
+          "texto": "La recompensa presentada en las capturas incluye una gorra para cada protagonista. Revisa el vestuario y guarda tu progreso; no son personajes jugables de Nintendo."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Mobalytics · recorrido con capturas, 26 de noviembre",
+          "url": "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-super-mario-easter-egg"
+        }
+      ],
+      "problemas": [
+        "No disponemos de coordenadas exactas contrastadas de las ruinas: no añadimos un pin de recogida inventado.",
+        "Comprueba que es el lugar de las capturas antes de repetir la interacción."
+      ],
+      "actualizado": "2026-11-28T12:07:00+01:00",
+      "relacionadas": [],
+      "spoiler": "Revelar pistas de exploración y soluciones"
+    },
+    {
+      "id": "turistas-desaparecidos-gellhorn",
+      "titulo": "Turistas desaparecidos de Gellhorn: iniciar y seguir las tres pistas",
+      "categoria": "Secretos",
+      "resumen": "Una ruta de investigación desde el cartel inicial hasta las tres fotografías. La solución permanece cerrada hasta que decidas verla.",
+      "zona": "Port Gellhorn y Kelly County. El mapa orienta al Starlet Motel.",
+      "recompensa": "Progreso de la cadena secundaria; esta primera parte no entrega dinero inmediato.",
+      "requisitos": [
+        "Capítulo 2.",
+        "Puede iniciarse con Jason o Lucia.",
+        "Contiene detalles de una investigación criminal secundaria."
+      ],
+      "pasos": [
+        {
+          "titulo": "Inspecciona un cartel",
+          "texto": "El inicio documentado está en la oficina del Starlet Motel. Si no puedes entrar, consulta los carteles del 247 al sur de Delights."
+        },
+        {
+          "titulo": "Consigue las fotografías",
+          "texto": "Ve al edificio largo al norte del taller de Moses. Abre la persiana inicial e inspecciona las tres taquillas. Para volver, la guía indica un hueco en la esquina noreste."
+        },
+        {
+          "titulo": "Pista del árbol",
+          "texto": "Reconoce la pequeña laguna con forma de C entre el aeródromo y Gellhorn. Examina el coche parcialmente sumergido y registra el hallazgo mediante la interacción del juego."
+        },
+        {
+          "titulo": "Pista del desguace",
+          "texto": "Busca el desguace al este del Pay N’ Spray de Port Gellhorn. La pista se relaciona con el maletero de un coche rosa."
+        },
+        {
+          "titulo": "Pista de la caravana",
+          "texto": "La tercera pista está en el parque abandonado junto a la torre de agua, al oeste de Hank’s Waffles. Examina las tablas del suelo de la caravana."
+        },
+        {
+          "titulo": "Comunica las pistas antes de volver",
+          "texto": "Utiliza la interacción para informar de cada hallazgo. Tras los tres, sigue el objetivo de regreso que marque tu partida. Aquí terminamos esta ruta para no adelantar el desenlace."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "PowerPyx · Gage, recorrido de los turistas",
+          "url": "https://www.powerpyx.com/gta-6-gellhorns-missing-tourists-walkthrough/"
+        }
+      ],
+      "problemas": [
+        "El mapa marca el motel como punto de partida, no las tres pruebas.",
+        "Lee el objetivo activo: inspeccionar y comunicar son acciones diferentes.",
+        "No esperes un alijo ni un pago inmediato; es una investigación."
+      ],
+      "actualizado": "2026-11-28T12:07:00+01:00",
+      "relacionadas": [],
+      "spoiler": "Revelar pistas de exploración y soluciones",
+      "mapa": "secreto-turistas-gellhorn"
+    },
+    {
+      "id": "declasse-vamos-garaje",
+      "titulo": "Declasse Vamos: localizar el garaje y entender su código",
+      "categoria": "Coches",
+      "resumen": "Un coche escondido y una pista en las señales. Ruta publicada por GamesRadar+, con la solución tras el aviso de spoilers.",
+      "zona": "Cerca de Grayson, en el sudoeste de Lummox.",
+      "recompensa": "Acceso al Declasse Vamos del garaje descrito por la guía.",
+      "requisitos": [
+        "Acceso a la zona de Grayson.",
+        "Guarda antes de entrar en una propiedad ajena."
+      ],
+      "pasos": [
+        {
+          "titulo": "Reconoce la propiedad",
+          "texto": "GamesRadar+ describe una casa con señales de tráfico robadas y un garaje junto a ella, al norte de Grayson. Contrasta las fotografías antes de intentar códigos en otras puertas."
+        },
+        {
+          "titulo": "Lee las señales",
+          "texto": "Las dos señales junto a la propiedad contienen la pista numérica. Intenta resolverla antes de consultar el paso siguiente."
+        },
+        {
+          "titulo": "Introduce la solución de ese garaje",
+          "texto": "La solución publicada es 2727. Corresponde a este garaje del Vamos: no es una clave universal para cajas fuertes o vehículos."
+        },
+        {
+          "titulo": "Conserva el vehículo",
+          "texto": "Comprueba el coche, sal de la propiedad y utiliza las opciones de guardado o registro disponibles en tu progreso. No añadimos un icono exacto sin una referencia de posición contrastada."
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "GamesRadar+ · Danielle Rose, actualizado el 27 de noviembre",
+          "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-declasse-vamos-code/"
+        }
+      ],
+      "problemas": [
+        "Si el teclado no coincide con las fotos, probablemente estás en otra propiedad.",
+        "No hace falta convertir el encuentro en un tiroteo para comprobar la pista."
+      ],
+      "actualizado": "2026-11-28T12:07:00+01:00",
+      "relacionadas": [],
+      "spoiler": "Revelar pistas de exploración y soluciones"
     },
     {
       "id": "granero-rojo-apollo",
@@ -312,28 +583,24 @@
       "recompensa": "Una búsqueda organizada y tu lista local de lugares visitados. Esta herramienta no entrega recompensas dentro del juego.",
       "pasos": [
         {
-          "titulo": "Abre el mapa y encuentra una zona",
-          "texto": "Pulsa «Abrir mapa interactivo» en esta guía. En el mapa, arrastra para moverte y utiliza + o − para cambiar la escala. En un móvil puedes pellizcar; «Ver todo Leonida», el botón con la flecha circular, recupera la vista general sin borrar tu lista de descubrimientos. La pestaña Regiones sirve para centrar la exploración en una parte del estado."
+          "titulo": "Elige qué buscas",
+          "texto": "Abre el mapa dedicado. Usa los accesos de armerías, talleres y compradores de botín, o el selector Buscar un servicio. Los resultados llevan directamente a su ficha."
         },
         {
-          "titulo": "Busca por nombre antes de recorrer todos los iconos",
-          "texto": "Escribe el nombre de un lugar en «Buscar un lugar…» y elige un resultado. Los resultados pueden corresponder a una ficha de LeonidaDex o a un punto de GTADB. Si buscas un secreto, activa primero «Pistas y secretos»: la búsqueda respeta esa elección para no revelar ubicaciones que has preferido ocultar. No encontrar un nombre no demuestra que ese lugar no exista en el juego."
+          "titulo": "Acerca para ver calles y puntos",
+          "texto": "La cartografía day muestra más detalle al acercarte. Si una tesela no carga, queda la vista general; puedes cambiar a la reconstrucción de la comunidad. Hay 4.694 puntos y 154 áreas en la copia revisada el 28 de noviembre."
         },
         {
-          "titulo": "Reduce el ruido con los filtros",
-          "texto": "En Leyenda, cada icono y color indica un tipo de lugar. Sus casillas permiten mostrar u ocultar categorías y controlar por separado los puntos de la comunidad GTADB. «Solo lugares oficiales» selecciona las fichas con esa clasificación; su etiqueta no certifica sus coordenadas. «Mostrar todo» recupera las categorías; la casilla de secretos sigue siendo una elección aparte. En móvil, pulsa «Leyenda y mi progreso» para abrir o cerrar el panel."
+          "titulo": "Abre fotos y pistas cuando quieras",
+          "texto": "Pulsa Ver foto del lugar para cargar la foto disponible de GTADB. Activa Pistas y secretos si quieres revelar las referencias de exploración. Lee siempre la precisión: una zona no señala el botín exacto."
         },
         {
-          "titulo": "Lee la precisión antes de seguir una pista de secretos",
-          "texto": "Activa «Pistas y secretos» solo si quieres ver spoilers de exploración. Abre un icono y lee la descripción, las fuentes y la precisión. Las referencias de área orientan hacia una zona: no son el punto exacto donde recoger un arma, un coche o un alijo. Cuando la ficha ofrece una guía, úsala para completar la ruta con sus requisitos y pasos. Un nombre conocido y una posición aproximada son datos distintos."
+          "titulo": "Marca lo que completes",
+          "texto": "Abre un marcador y pulsa Marcar como completado. Utiliza Todos, Pendientes o Completados para revisar tu lista. Se guarda en este navegador, sin leer la partida del juego."
         },
         {
-          "titulo": "Marca lo completado y filtra tu exploración",
-          "texto": "Abre una ficha de LeonidaDex o un punto de la comunidad y pulsa «Marcar como completado». La marca se puede quitar desde el mismo botón. Usa Todos, Pendientes o Completados para cambiar lo visible en el mapa; la pestaña Lugares respeta los filtros de las fichas. El progreso se guarda solo en ese navegador y se conserva al actualizar la web. No lee tu partida ni representa el porcentaje oficial del juego. Las fichas editoriales y los puntos comunitarios tienen contadores separados. «Compartir» copia un enlace al punto; no envía mensajes automáticamente."
-        },
-        {
-          "titulo": "Lleva una copia al móvil o a otro navegador",
-          "texto": "Abre «Guardado y copias de progreso» y pulsa «Descargar progreso» para guardar una copia JSON. En el otro navegador, abre el mismo apartado del mapa y pulsa «Cargar copia» para seleccionar ese archivo. La copia se combina con las marcas que ya hubiera allí. No hay sincronización automática ni se envían las marcas a un servidor. «Reiniciar progreso» pide confirmación; descarga antes una copia si quieres conservarlo."
+          "titulo": "Lleva una copia contigo",
+          "texto": "Abre Guardado y copias de progreso y descarga tu JSON. En otro dispositivo usa Cargar copia. Actualizar LeonidaDex mantiene las claves anteriores, pero borrar los datos del navegador puede eliminarlas."
         }
       ],
       "problemas": [
@@ -345,20 +612,16 @@
       ],
       "fuentes": [
         {
-          "nombre": "LeonidaDex · mapa interactivo y sus controles",
+          "nombre": "GTA VI Landmarks Data y cartografía · CC BY 4.0",
+          "url": "https://github.com/rolux/gtadb.org"
+        },
+        {
+          "nombre": "Abrir el mapa de LeonidaDex",
           "url": "https://leonidadex.net/mapa/"
-        },
-        {
-          "nombre": "GTADB · procedencia de la cartografía comunitaria",
-          "url": "https://map.gtadb.org/"
-        },
-        {
-          "nombre": "Creative Commons · atribución CC BY 4.0",
-          "url": "https://creativecommons.org/licenses/by/4.0/deed.es"
         }
       ],
       "nota_fuentes": "Documentación original de las funciones de LeonidaDex, contrastada con los controles y el código de esta versión. Describe la herramienta web; no es una comprobación de ubicaciones dentro del juego. La cartografía mantiene su atribución comunitaria.",
-      "actualizado": "2026-11-23T14:40:27+01:00",
+      "actualizado": "2026-11-28T12:07:00+01:00",
       "spoiler": "",
       "relacionadas": [
         "primeros-pasos",

@@ -1548,6 +1548,16 @@
   ],
   "faq": [
     {
+      "q": "¿Qué novedades oficiales del parche de GTA VI se han comprobado?",
+      "a": "Consulta del 28 de noviembre: Rockstar mantiene las notas del 23. Incluyen correcciones de cierres, clima, autoguardado, llamadas de progreso, nivel de búsqueda, gimnasio y entrega de bolsas. Las notas no anuncian un modo oficial de 60 fps ni una versión de PC.",
+      "fuentes": [
+        {
+          "nombre": "Rockstar Support · notas oficiales del 23 de noviembre",
+          "url": "https://support.rockstargames.com/articles/sN5pEdFYZdlvijKXd6xpJ/grand-theft-auto-vi-launch-updates-ps5-xbox-series-x-or-s"
+        }
+      ]
+    },
+    {
       "q": "¿Ya se puede jugar a GTA VI en España?",
       "a": "Sí: las versiones nativas de PS5 y Xbox Series X|S se lanzaron el 19 de noviembre de 2026 a medianoche local. El streaming tiene requisitos y disponibilidad propios.",
       "fuentes": [
@@ -1974,8 +1984,8 @@
       "nombre": "SW 9th Ave",
       "region": "vicecity",
       "cat": "zona",
-      "x": 469.3,
-      "y": 580.4,
+      "x": 469.5,
+      "y": 579.9,
       "estado": "oficial",
       "texto": "Calle de Vice City nombrada en el material oficial.",
       "fuente": {
@@ -2052,8 +2062,8 @@
       "nombre": "NINE1NINE",
       "region": "vicecity",
       "cat": "ocio",
-      "x": 491.0,
-      "y": 497.4,
+      "x": 490.77,
+      "y": 496.92,
       "estado": "oficial",
       "texto": "El gran club de Vice City, inspirado en E11EVEN.",
       "fuente": {
@@ -2069,8 +2079,8 @@
       "nombre": "The Vault",
       "region": "vicecity",
       "cat": "ocio",
-      "x": 488.4,
-      "y": 497.6,
+      "x": 487.8,
+      "y": 497.4,
       "estado": "oficial",
       "texto": "Club de música electrónica, versión de Club Space.",
       "fuente": {
@@ -2086,8 +2096,8 @@
       "nombre": "Jack of Hearts",
       "region": "vicecity",
       "cat": "ocio",
-      "x": 490.6,
-      "y": 474.7,
+      "x": 490.56,
+      "y": 474.66,
       "estado": "oficial",
       "texto": "El club de striptease de Boobie Ike.",
       "fuente": {
@@ -2102,8 +2112,8 @@
       "nombre": "Sahara Arena",
       "region": "vicecity",
       "cat": "ocio",
-      "x": 502.5,
-      "y": 498.6,
+      "x": 502.41,
+      "y": 497.91,
       "estado": "prensa",
       "texto": "Pabellón de los Vice City Narcos, visto en el primer tráiler.",
       "fuente": {
@@ -2119,8 +2129,8 @@
       "nombre": "Hotel Dixon",
       "region": "vicecity",
       "cat": "ocio",
-      "x": 573.7,
-      "y": 489.0,
+      "x": 573.26,
+      "y": 488.8,
       "estado": "trailer",
       "texto": "Hotel con fachada de neón en primera línea de playa.",
       "fuente": {
@@ -2135,8 +2145,8 @@
       "nombre": "Hotel Boardwalk",
       "region": "vicecity",
       "cat": "ocio",
-      "x": 572.6,
-      "y": 494.4,
+      "x": 572.47,
+      "y": 494.35,
       "estado": "trailer",
       "texto": "Hotel art déco frente al mar visto en el tráiler 1.",
       "fuente": {
@@ -2152,8 +2162,8 @@
       "nombre": "Hotel Neptune",
       "region": "vicecity",
       "cat": "ocio",
-      "x": 572.5,
-      "y": 495.1,
+      "x": 572.3,
+      "y": 495.14,
       "estado": "trailer",
       "texto": "Aparece en una persecución del Extended Look.",
       "fuente": {
@@ -2168,8 +2178,8 @@
       "nombre": "Atlantis Hotel",
       "region": "vicecity",
       "cat": "ocio",
-      "x": 572.1,
-      "y": 499.9,
+      "x": 572.02,
+      "y": 499.88,
       "estado": "trailer",
       "texto": "Hito art déco con letrero de neón sobre la playa.",
       "fuente": {
@@ -2184,8 +2194,8 @@
       "nombre": "Ocean View Hotel",
       "region": "vicecity",
       "cat": "ocio",
-      "x": 573.2,
-      "y": 492.0,
+      "x": 572.81,
+      "y": 491.72,
       "estado": "trailer",
       "texto": "Un letrero que guiña al hotel de GTA Vice City. El edificio está inspirado en el Clevelander de Ocean Drive.",
       "fuente": {
@@ -2201,8 +2211,8 @@
       "nombre": "Rusty Anchor",
       "region": "keys",
       "cat": "ocio",
-      "x": 441.0,
-      "y": 676.3,
+      "x": 441.01,
+      "y": 676.28,
       "estado": "oficial",
       "texto": "Bar de los Cayos que aparece en las capturas oficiales.",
       "fuente": {
@@ -2217,8 +2227,8 @@
       "nombre": "Mercadillo Tisha-Wocka",
       "region": "vicecity",
       "cat": "tiendas",
-      "x": 424.9,
-      "y": 489.6,
+      "x": 424.93,
+      "y": 489.61,
       "estado": "oficial",
       "texto": "Mercadillo de productos de imitación.",
       "fuente": {
@@ -2233,8 +2243,8 @@
       "nombre": "Stock 305",
       "region": "vicecity",
       "cat": "tiendas",
-      "x": 501.7,
-      "y": 456.8,
+      "x": 501.73,
+      "y": 456.81,
       "estado": "oficial",
       "texto": "Tienda de ropa urbana en Stockyard (Ultimate).",
       "fuente": {
@@ -2249,8 +2259,8 @@
       "nombre": "Electric Fang Tattoo",
       "region": "vicecity",
       "cat": "tiendas",
-      "x": 500.2,
-      "y": 454.5,
+      "x": 500.17,
+      "y": 454.51,
       "estado": "oficial",
       "texto": "Estudio de tatuajes en Stockyard (Ultimate).",
       "fuente": {
@@ -2265,8 +2275,8 @@
       "nombre": "PTT Youngin$",
       "region": "vicecity",
       "cat": "tiendas",
-      "x": 458.4,
-      "y": 569.1,
+      "x": 458.43,
+      "y": 569.06,
       "estado": "oficial",
       "texto": "Tienda de artículos ilegales ligada al complejo de Southside (Ultimate).",
       "fuente": {
@@ -2281,8 +2291,8 @@
       "nombre": "Uncle Jack's Liquor",
       "region": "gellhorn",
       "cat": "tiendas",
-      "x": 313.4,
-      "y": 391.2,
+      "x": 313.42,
+      "y": 391.19,
       "estado": "trailer",
       "texto": "La licorería que asaltan Jason y Lucia en el primer tráiler. La comunidad la sitúa en Port Gellhorn, inspirada en una tienda de Panama City.",
       "fuente": {
@@ -2344,7 +2354,7 @@
       "region": "grassrivers",
       "cat": "propiedades",
       "x": 384.25,
-      "y": 587.75,
+      "y": 587.76,
       "estado": "oficial",
       "texto": "Garaje de la edición Ultimate en Watson Bay, con el Dominator Buggy del 67.",
       "fuente": {
@@ -2359,8 +2369,8 @@
       "nombre": "Piso de Jason y Lucia",
       "region": "keys",
       "cat": "propiedades",
-      "x": 438.5,
-      "y": 684.9,
+      "x": 438.45,
+      "y": 684.88,
       "estado": "trailer",
       "texto": "El apartamento de los Cayos donde empiezan, visto en el tráiler 2.",
       "fuente": {
@@ -2467,8 +2477,8 @@
       "nombre": "Muelles y marinas",
       "region": "keys",
       "cat": "transporte",
-      "x": 432.2,
-      "y": 695.1,
+      "x": 432.67,
+      "y": 695.07,
       "estado": "oficial",
       "texto": "Muelles de los Cayos: barcos, motos de agua y pesca.",
       "fuente": {
@@ -2483,8 +2493,8 @@
       "nombre": "Embarcaderos",
       "region": "grassrivers",
       "cat": "transporte",
-      "x": 428.5,
-      "y": 660.6,
+      "x": 428.54,
+      "y": 660.63,
       "estado": "oficial",
       "texto": "Punto de partida para recorrer el pantano en barca.",
       "fuente": {
@@ -2499,8 +2509,8 @@
       "nombre": "Lago Leonida",
       "region": "ambrosia",
       "cat": "naturaleza",
-      "x": 450.3,
-      "y": 364.1,
+      "x": 450.28,
+      "y": 364.13,
       "estado": "oficial",
       "texto": "El gran lago del interior, en la región de Ambrosia.",
       "fuente": {
@@ -2610,7 +2620,7 @@
       "region": "kalaga",
       "cat": "naturaleza",
       "x": 404.8,
-      "y": 313.0,
+      "y": 312.92,
       "estado": "oficial",
       "texto": "El monte que da nombre al parque nacional.",
       "fuente": {
@@ -2625,8 +2635,8 @@
       "nombre": "Moteles y atracciones cerradas",
       "region": "gellhorn",
       "cat": "zona",
-      "x": 321.2,
-      "y": 375.4,
+      "x": 320.95,
+      "y": 376.19,
       "estado": "oficial",
       "texto": "Moteles baratos y antiguas atracciones turísticas cerradas.",
       "fuente": {
@@ -2641,7 +2651,7 @@
       "nombre": "Centros comerciales vacíos",
       "region": "gellhorn",
       "cat": "zona",
-      "x": 314.0,
+      "x": 314.05,
       "y": 389.2,
       "estado": "oficial",
       "texto": "Galerías comerciales abandonadas de la costa olvidada.",
@@ -2687,8 +2697,8 @@
       "nombre": "Cazadores de caimanes",
       "region": "grassrivers",
       "cat": "naturaleza",
-      "x": 403.4,
-      "y": 652.5,
+      "x": 403.35,
+      "y": 652.52,
       "estado": "oficial",
       "texto": "Grupo de cazadores visto en las capturas de Grassrivers.",
       "fuente": {
@@ -2704,7 +2714,7 @@
       "region": "vicecity",
       "cat": "actividades",
       "x": 502.3,
-      "y": 395.0,
+      "y": 394.78,
       "estado": "oficial",
       "texto": "Hay minigolf. Lo situamos de forma orientativa en un minigolf que la comunidad ha localizado al norte.",
       "fuente": {
@@ -2719,8 +2729,8 @@
       "nombre": "Gimnasio",
       "region": "vicecity",
       "cat": "actividades",
-      "x": 556.4,
-      "y": 456.8,
+      "x": 556.38,
+      "y": 456.81,
       "estado": "oficial",
       "texto": "Entrenar cambia el físico y la fuerza. Actividad confirmada; la ubicación del mapa es orientativa.",
       "fuente": {
@@ -2765,8 +2775,8 @@
       "nombre": "Campo de tiro",
       "region": "vicecity",
       "cat": "actividades",
-      "x": 455.4,
-      "y": 589.0,
+      "x": 455.37,
+      "y": 588.95,
       "estado": "oficial",
       "texto": "Actividad confirmada; la ubicación del mapa es orientativa.",
       "fuente": {
@@ -2781,8 +2791,8 @@
       "nombre": "Tenis",
       "region": "vicecity",
       "cat": "actividades",
-      "x": 502.3,
-      "y": 570.3,
+      "x": 502.34,
+      "y": 570.31,
       "estado": "oficial",
       "texto": "Actividad confirmada; la ubicación del mapa es orientativa.",
       "fuente": {
@@ -2827,8 +2837,8 @@
       "nombre": "Zoo",
       "region": "vicecity",
       "cat": "actividades",
-      "x": 519.5,
-      "y": 497.1,
+      "x": 519.53,
+      "y": 497.06,
       "estado": "oficial",
       "texto": "Se puede visitar un zoo. Actividad confirmada; lo situamos de forma orientativa en el equivalente de Jungle Island.",
       "fuente": {
@@ -2858,8 +2868,8 @@
       "nombre": "Buceo",
       "region": "keys",
       "cat": "actividades",
-      "x": 269.0,
-      "y": 724.2,
+      "x": 269.05,
+      "y": 724.22,
       "estado": "oficial",
       "texto": "Submarinismo en aguas de los Cayos. Actividad confirmada; la ubicación del mapa es orientativa.",
       "fuente": {
@@ -2889,8 +2899,8 @@
       "nombre": "Pesca",
       "region": "keys",
       "cat": "actividades",
-      "x": 358.7,
-      "y": 736.5,
+      "x": 358.73,
+      "y": 736.51,
       "estado": "oficial",
       "texto": "Se pesca desde la costa y desde barco. Actividad confirmada; la ubicación del mapa es orientativa.",
       "fuente": {
@@ -2905,8 +2915,8 @@
       "nombre": "Hidrodeslizadores",
       "region": "grassrivers",
       "cat": "actividades",
-      "x": 380.9,
-      "y": 483.2,
+      "x": 380.92,
+      "y": 483.24,
       "estado": "oficial",
       "texto": "Recorre el pantano en fanboat. Actividad confirmada; la ubicación del mapa es orientativa.",
       "fuente": {
@@ -2951,8 +2961,8 @@
       "nombre": "Carreras todoterreno",
       "region": "kalaga",
       "cat": "actividades",
-      "x": 386.8,
-      "y": 363.4,
+      "x": 386.79,
+      "y": 363.37,
       "estado": "oficial",
       "texto": "Actividad confirmada; la ubicación del mapa es orientativa.",
       "fuente": {
@@ -2967,8 +2977,8 @@
       "nombre": "Motocross",
       "region": "ambrosia",
       "cat": "actividades",
-      "x": 418.9,
-      "y": 366.9,
+      "x": 418.94,
+      "y": 366.85,
       "estado": "oficial",
       "texto": "Se ha visto pilotar motos de campo por Kalaga. Actividad confirmada; la ubicación del mapa es orientativa.",
       "fuente": {
@@ -2983,7 +2993,7 @@
       "nombre": "Pesca en el lago",
       "region": "ambrosia",
       "cat": "actividades",
-      "x": 432.2,
+      "x": 432.16,
       "y": 353.6,
       "estado": "oficial",
       "texto": "Pesca en el lago Leonida. Actividad confirmada; la ubicación del mapa es orientativa.",
@@ -3090,7 +3100,7 @@
       "region": "vicecity",
       "cat": "miami",
       "x": 572.9,
-      "y": 476.3,
+      "y": 476.26,
       "estado": "trailer",
       "texto": "Edificio real reconocible en los tráileres. Abre el primer tráiler junto a otros hoteles art déco.",
       "fuente": {
@@ -3106,8 +3116,8 @@
       "nombre": "Edificio 1500 Ocean Drive",
       "region": "vicecity",
       "cat": "miami",
-      "x": 575.7,
-      "y": 481.7,
+      "x": 575.69,
+      "y": 481.67,
       "estado": "trailer",
       "texto": "Edificio real reconocible en los tráileres.",
       "fuente": {
@@ -3123,8 +3133,8 @@
       "nombre": "Hotel de South of Fifth",
       "region": "vicecity",
       "cat": "miami",
-      "x": 574.1,
-      "y": 512.6,
+      "x": 574.14,
+      "y": 512.59,
       "estado": "trailer",
       "texto": "Edificio real reconocible en los tráileres, en el extremo sur de la playa.",
       "fuente": {
@@ -3140,8 +3150,8 @@
       "nombre": "Torre junto al río",
       "region": "vicecity",
       "cat": "miami",
-      "x": 489.5,
-      "y": 536.6,
+      "x": 489.1,
+      "y": 536.35,
       "estado": "trailer",
       "texto": "Edificio real reconocible en los tráileres.",
       "fuente": {
@@ -3157,8 +3167,8 @@
       "nombre": "Torres del museo",
       "region": "vicecity",
       "cat": "miami",
-      "x": 496.7,
-      "y": 497.2,
+      "x": 495.9,
+      "y": 497.08,
       "estado": "trailer",
       "texto": "Edificio real reconocible en los tráileres.",
       "fuente": {
@@ -3174,8 +3184,8 @@
       "nombre": "Flamingo Point",
       "region": "vicecity",
       "cat": "miami",
-      "x": 554.0,
-      "y": 483.2,
+      "x": 553.99,
+      "y": 483.23,
       "estado": "trailer",
       "texto": "Edificio real reconocible en los tráileres.",
       "fuente": {
@@ -3191,8 +3201,8 @@
       "nombre": "Calle de estilo español",
       "region": "vicecity",
       "cat": "miami",
-      "x": 562.8,
-      "y": 483.7,
+      "x": 562.75,
+      "y": 483.66,
       "estado": "trailer",
       "texto": "Edificio real reconocible en los tráileres.",
       "fuente": {
@@ -3208,8 +3218,8 @@
       "nombre": "Paseo comercial",
       "region": "vicecity",
       "cat": "miami",
-      "x": 564.6,
-      "y": 471.5,
+      "x": 564.59,
+      "y": 471.46,
       "estado": "trailer",
       "texto": "Edificio real reconocible en los tráileres.",
       "fuente": {
@@ -3225,8 +3235,8 @@
       "nombre": "Auditorio de cristal",
       "region": "vicecity",
       "cat": "miami",
-      "x": 562.6,
-      "y": 466.7,
+      "x": 562.59,
+      "y": 466.69,
       "estado": "trailer",
       "texto": "Edificio real reconocible en los tráileres.",
       "fuente": {
@@ -3242,8 +3252,8 @@
       "nombre": "Hotel de lujo en la playa",
       "region": "vicecity",
       "cat": "miami",
-      "x": 573.2,
-      "y": 462.3,
+      "x": 573.19,
+      "y": 462.29,
       "estado": "trailer",
       "texto": "Hotel de lujo frente al mar. La comunidad lo identifica en el juego como «Y Vice City».",
       "fuente": {
@@ -3259,8 +3269,8 @@
       "nombre": "Punta sur de la playa",
       "region": "vicecity",
       "cat": "miami",
-      "x": 573.9,
-      "y": 522.6,
+      "x": 573.95,
+      "y": 522.27,
       "estado": "trailer",
       "texto": "Edificio real reconocible en los tráileres.",
       "fuente": {
@@ -3276,8 +3286,8 @@
       "nombre": "Rascacielos de Brickell",
       "region": "vicecity",
       "cat": "miami",
-      "x": 474.6,
-      "y": 557.0,
+      "x": 474.73,
+      "y": 556.17,
       "estado": "trailer",
       "texto": "Edificio real reconocible en los tráileres.",
       "fuente": {
@@ -3294,7 +3304,7 @@
       "region": "vicecity",
       "cat": "miami",
       "x": 497.4,
-      "y": 476.3,
+      "y": 476.21,
       "estado": "trailer",
       "texto": "Edificio real reconocible en los tráileres.",
       "fuente": {
@@ -3310,8 +3320,8 @@
       "nombre": "Vercetti Estate",
       "region": "vicecity",
       "cat": "propiedades",
-      "x": 540.3,
-      "y": 491.3,
+      "x": 540.32,
+      "y": 491.34,
       "gtadb": "L2731",
       "exacta": true,
       "estado": "oficial",
@@ -3343,7 +3353,7 @@
       "nombre": "Sara's Unisex Salon",
       "region": "grassrivers",
       "cat": "tiendas",
-      "x": 432.2,
+      "x": 432.19,
       "y": 618.7,
       "gtadb": "L360",
       "exacta": true,
@@ -3359,8 +3369,8 @@
       "nombre": "Rideout Customs",
       "region": "vicecity",
       "cat": "tiendas",
-      "x": 485.0,
-      "y": 481.5,
+      "x": 484.81,
+      "y": 481.61,
       "gtadb": "L2375",
       "exacta": true,
       "estado": "oficial",
@@ -3390,8 +3400,8 @@
       "nombre": "Gellhorn International Raceway",
       "region": "gellhorn",
       "cat": "actividades",
-      "x": 301.6,
-      "y": 439.3,
+      "x": 301.58,
+      "y": 439.33,
       "gtadb": "L281",
       "exacta": true,
       "estado": "prensa",
@@ -3407,8 +3417,8 @@
       "nombre": "Vice City Oceanarium",
       "region": "vicecity",
       "cat": "ocio",
-      "x": 514.6,
-      "y": 566.7,
+      "x": 514.59,
+      "y": 566.74,
       "gtadb": "L2027",
       "exacta": true,
       "estado": "prensa",
@@ -3424,8 +3434,8 @@
       "nombre": "Apartamento de Lucia",
       "region": "vicecity",
       "cat": "propiedades",
-      "x": 497.2,
-      "y": 473.9,
+      "x": 497.08,
+      "y": 473.85,
       "gtadb": "L475",
       "exacta": true,
       "estado": "prensa",
@@ -3440,8 +3450,8 @@
       "nombre": "Brian's Boat Works & Marina",
       "region": "keys",
       "cat": "transporte",
-      "x": 432.2,
-      "y": 695.1,
+      "x": 432.67,
+      "y": 695.07,
       "gtadb": "L326",
       "exacta": true,
       "estado": "prensa",
@@ -3456,8 +3466,8 @@
       "nombre": "Evergreen Mall",
       "region": "vicecity",
       "cat": "tiendas",
-      "x": 501.6,
-      "y": 385.4,
+      "x": 501.58,
+      "y": 385.37,
       "gtadb": "L163",
       "exacta": true,
       "estado": "prensa",
@@ -3472,8 +3482,8 @@
       "nombre": "Starlet Motel",
       "region": "gellhorn",
       "cat": "propiedades",
-      "x": 344.7,
-      "y": 403.8,
+      "x": 344.32,
+      "y": 403.36,
       "gtadb": "L304",
       "exacta": true,
       "estado": "prensa",
@@ -3488,8 +3498,8 @@
       "nombre": "Thrillbilly Mud Club",
       "region": "gellhorn",
       "cat": "actividades",
-      "x": 386.8,
-      "y": 363.4,
+      "x": 386.79,
+      "y": 363.37,
       "gtadb": "L512",
       "exacta": true,
       "estado": "prensa",
@@ -4697,6 +4707,22 @@
         "nombre": "Guía y vídeo de Belville en LeonidaDex",
         "url": "https://leonidadex.net/guias/casa-belville/"
       }
+    },
+    {
+      "nombre": "Gorras de Jason y Lucia · ruinas de Moreau",
+      "texto": "Ruta documentada con referencias visuales; falta contrastar una coordenada exacta para situar un marcador. Abre la guía antes de desplazarte.",
+      "fuente": {
+        "nombre": "Guía de LeonidaDex",
+        "url": "https://leonidadex.net/guias/gorras-mario-luigi/"
+      }
+    },
+    {
+      "nombre": "Declasse Vamos · garaje cerca de Grayson",
+      "texto": "Ruta documentada con referencias visuales; falta contrastar una coordenada exacta para situar un marcador. Abre la guía antes de desplazarte.",
+      "fuente": {
+        "nombre": "Guía de LeonidaDex",
+        "url": "https://leonidadex.net/guias/declasse-vamos-garaje/"
+      }
     }
   ],
   "fuentes_secciones": {
@@ -4764,7 +4790,7 @@
     ]
   },
   "mapa_revision": {
-    "fecha": "2026-11-23",
-    "texto": "Revisión del 23 de noviembre: GTADB conserva 3.663 puntos y 139 áreas, sin altas, bajas ni cambios frente a la copia anterior. Añadidas 3 referencias de área para el almacén rojo, el Bandito y el sombrero. Son 11 pistas de secretos en total; se muestran al activar su capa. La casa de Belville queda sin posición exacta. No es cartografía oficial."
+    "fecha": "2026-11-28",
+    "texto": "Revisión del 28 de noviembre: 4.694 puntos y 154 áreas de GTADB. Incorporada cartografía day con mayor detalle, filtros de servicios, fotos a petición y dos referencias de área nuevas. Las marcas anteriores se conservan. Los puntos comunitarios no son una lista de todos los secretos ni el porcentaje oficial del juego."
   }
 }

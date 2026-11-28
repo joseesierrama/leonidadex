@@ -25,13 +25,16 @@ for k,v in d.items():
     for code,S in T:
         if tags & S: typ=code; break
     fl=(1 if 'enterable' in tags else 0)|(2 if 'unconfirmed' in tags else 0)|(4 if 'closed' in tags else 0)|(8 if 'demolished' in tags else 0)
-    rows.append([int(k[1:]),name,area,X,Y,short_rl(v[3]),typ,fl])
+    services=sorted(t[1:] for t in tags if t.startswith('#') and re.fullmatch(r"#[a-z0-9'-]+",t))
+    photo=bool(v[2] and len(v[2])==2)
+    photo_updated=v[8][1] if len(v)>8 and len(v[8])>1 else 0
+    rows.append([int(k[1:]),name,area,X,Y,short_rl(v[3]),typ,fl,services,photo,photo_updated])
 rows.sort(key=lambda r:r[0])
 # intern areas
 areas=sorted({r[2] for r in rows}); ai={a:i for i,a in enumerate(areas)}
 for r in rows: r[2]=ai[r[2]]
 out={"fuente":"GTA VI Landmarks Data (CC BY 4.0) — https://map.gtadb.org","licencia":"https://creativecommons.org/licenses/by/4.0/deed.es",
-     "cambios":"Coordenadas convertidas a unidades del mapa, campos simplificados y sin fotos.","fecha":datetime.date.today().isoformat(),
+     "cambios":"Coordenadas convertidas y campos simplificados. Se conservan servicios y disponibilidad de foto del juego; las fotos solo se solicitan al abrirlas.","fecha":datetime.date.today().isoformat(),
      "areas":areas,"l":rows}
 with open(OUT,'w',encoding='utf-8') as target:
     json.dump(out,target,ensure_ascii=False,separators=(',',':'))

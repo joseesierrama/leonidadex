@@ -72,7 +72,7 @@ def card(g,up=''):
             f'<a class="gh-card-link" href="{up}{E(g["id"])}/" aria-label="Abrir guía: {E(g["titulo"])}">Abrir guía <span aria-hidden="true">↗</span></a></article>')
 
 def home_preview(data):
-    selected=['primeros-pasos','granero-rojo-apollo','bandito-moses','sombrero-arthur','casa-belville','mapa-interactivo']
+    selected=['portal-vice-city-ps2','gorras-mario-luigi','turistas-desaparecidos-gellhorn','declasse-vamos-garaje','granero-rojo-apollo','mapa-interactivo']
     by_id={g['id']:g for g in data['guias']}
     return ('<div class="gh-home-intro"><div><p class="eyebrow">Encuentra tu siguiente objetivo</p>'
             '<p>Dinero, armas, coches y herramientas. Abre una guía para ver requisitos, pasos, clips y qué revisar si te atascas.</p></div>'
@@ -114,10 +114,14 @@ def page_body(g,data):
         controls=''
         if p.get('controles'):
             controls='<dl class="gv-controls">'+''.join(f'<div><dt>{E(k)}</dt><dd>{E(text)}</dd></div>' for k,text in p['controles'].items())+'</dl>'
+        chapter=''
+        if v and type(p.get('video_inicio')) is int:
+            second=p['video_inicio']
+            chapter=f'<p><a class="btn btn-ghost" href="https://www.youtube.com/watch?v={E(v["id"])}&amp;t={second}s" target="_blank" rel="noopener noreferrer">Ver este paso en vídeo · {second//60}:{second%60:02} ↗</a></p>'
         video=clip_html(v,gid) if v and n==g['paso_video'] else ''
         steps.append(f'<li id="paso-{n}" class="gv-step"><div class="gv-step-heading"><span class="gv-step-number" aria-hidden="true">{n:02}</span>'
                      f'<h3>{E(p["titulo"])}</h3><label class="gv-done"><input type="checkbox" data-step="{n}" aria-label="Completado: {E(p["titulo"])}">Hecho</label></div>'
-                     f'<p>{E(p["texto"])}</p>{controls}{video}</li>')
+                     f'<p>{E(p["texto"])}</p>{controls}{chapter}{video}</li>')
     content='<section id="pasos"><h2 class="gv-section-heading">Paso a paso</h2><ol class="gv-steps">'+''.join(steps)+'</ol></section>'
     content+='<section id="si-no-sale" class="gv-troubleshoot"><h2>Si no te sale</h2><ul>'+''.join(f'<li>{E(x)}</li>' for x in g['problemas'])+'</ul></section>'
     if has_gate:
